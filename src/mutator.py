@@ -1,90 +1,102 @@
-""" AST Mutator """
 import ast
-import random
 import astunparse
-
+import re
+import random
+#-------------------------------------------------------------------------epoch
 # AST Value Mutator
 class ConstantMutator(ast.NodeTransformer):
-    """Node Traveller"""
+    def __init__(self, target_keyword, new_value):
+        self.target_keyword = target_keyword
+        self.new_value = new_value
 
-    def __init__(self, mutation_name):
-        self.mutation_name = mutation_name
-
-    def visit_Constant(self, node):
-        """The visitor function."""
-        # value type control is for string or not
-        # if type is string return node
-        if not isinstance(node.value, str):
-            # Need to pay attention for this section
-            # if the type is not a string, it will mutate below
-            if isinstance(node.value, bool):
-                # Value mutator is for boolean type
-                # if type is True return False
-                # if type is False return True
-                if node.value is True:
-                    node.value = False
-                    self.generic_visit(node)
-                    return node
-                node.value = True
-                self.generic_visit(node)
-                return node
-            if self.mutation_name == "power":
-                # Value mutator is for integer or double type
-                node.value = exponent_of_two()
-                return node
-            elif self.mutation_name == "zero":
-                # Value return 0
-                node.value = 0
-                return node
-            elif self.mutation_name == "empty":
-                # Value return 0
-                node.value = ""
-                return node
-            elif self.mutation_name == "opposite":
-                # Value return opposite number
-                old_value = node.value
-                node.value = old_value*-1
-                return node
-            elif self.mutation_name == "true_mutator":
-                # Value return True
-                node.value = True
-                return node
-            # Value return None
-            node.value = None
-            return node
-        # if value is string, return empty value
-        node.value = ""
+    def visit_Call(self, node):
+        for keyword in node.keywords:
+            if keyword.arg == self.target_keyword:
+                keyword.value = ast.Str(s=self.new_value)
         return node
 
 
-def value_mutator(target_line, mutation_name):
-    """Node Value Mutator"""
-    node = ast.parse(target_line)
-    renamer = ConstantMutator(mutation_name)
+def modify_code_in_file_epoch(source_code, target_keyword, new_value):
+    
+    code = source_code
+
+    node = ast.parse(code)
+    renamer = ConstantMutator(target_keyword, new_value)
     new_node = renamer.visit(node)
-    unparsed_code = astunparse.unparse(new_node)
-    new_unparsed_code = unparsed_code.strip()
-    if target_line != new_unparsed_code:
-        print(new_unparsed_code)
+    new_code = astunparse.unparse(new_node)
+# Eğer kod değiştirildiyse, yeni kodu "mutator_code.py" adıyla kaydet
+    if code != new_code:
+        with open("mutated_code.py", 'w') as output_file:
+            output_file.write(new_code)
+        print(f"Modified code saved as 'mutator_code.py'")
+    return new_code
+
+#-------------------------------------------------------------------------epoch
+
+# AST Value Mutator---------activation
+class ConstantMutatoractivation(ast.NodeTransformer):
+    def __init__(self, target_keyword, new_value):
+        self.target_keyword = target_keyword
+        self.new_value = new_value
+
+    def visit_keyword(self, node):
+        if node.arg == self.target_keyword:
+            if isinstance(node.value, ast.Str):
+                node.value.s = self.new_value
+        return node
+
+def modify_code_in_file_activation(source_code, target_keyword, new_value):
+    
+    code = source_code
+
+    node = ast.parse(code)
+    renamer = ConstantMutatoractivation(target_keyword, new_value)
+    new_node = renamer.visit(node)
+    new_code = astunparse.unparse(new_node)
+    return new_code
+#--------------------------------------------------------------------Conv2D
 
 
-def exponent_of_two():
-    """retrun exponent of 2"""
-    power = random.randint(1, 10)
-    return pow(2, power)
 
+def modify_code_in_file_Conv2D(source_code, new_value):
+    # Rastgele bir Conv2D çağrısı seçme
+    pattern = r"layers\.Conv2D\(\d+, \(\d+, \d+\)"
+    matches = re.finditer(pattern, source_code)
+    matches_list = list(matches)
 
-# Mutant Types
-# zero = return 0
-# empty = return ''
-# power = return exponent of two
-# none = return None
-# opposite = return 1 to -1
-# true_mutator = return true_mutator
+    if matches_list:
+        # İlk eşleşmeyi al
+        selected_match = matches_list[0]
+        original_code = selected_match.group(0)
+        new_code = new_value  # Yeni kodu belirle
+        source_code = source_code.replace(original_code, new_code, 1)  # İlk eşleşmeyi değiştir
+    return source_code
 
-TARGET_LINE = "nn.Linear(28*28, 512)"
-# TARGET_LINE = "yirmi_sekiz = 28"
-# TARGET_LINE = "nn.Linear(yirmi_sekiz*yirmi_sekiz, sekiz)"
+def modify_code_in_file_MaxPooling2D(source_code, new_value):
+    # MaxPooling2D çağrısını bulma
+    pattern = r"layers\.MaxPooling2D\(\(\d+, \d+\)\)"
+    matches = re.finditer(pattern, source_code)
+    matches_list = list(matches)
 
-MUTATION_NAME = "opposite"
-value_mutator(TARGET_LINE, MUTATION_NAME)
+    if matches_list:
+        # İlk eşleşmeyi al
+        selected_match = matches_list[0]
+        original_code = selected_match.group(0)
+        new_code = new_value  # Yeni kodu belirle
+        source_code = source_code.replace(original_code, new_code, 1)  # İlk eşleşmeyi değiştir
+    return source_code
+
+def modify_code_in_file_InputShape(source_code, new_value):
+    # input_shape içeren Conv2D çağrısını bulma
+    pattern = r"input_shape=\(\d+, \d+, \d+\)"
+    matches = re.finditer(pattern, source_code)
+    matches_list = list(matches)
+
+    if matches_list:
+        # İlk eşleşmeyi al
+        selected_match = matches_list[0]
+        original_code = selected_match.group(0)
+        new_code = new_value  # Yeni kodu belirle
+        source_code = source_code.replace(original_code, new_code, 1)  # İlk eşleşmeyi değiştir
+    return source_code
+

@@ -1,0 +1,6 @@
+astunparse==1.6.3
+fpdf==1.7.2
+matplotlib==3.5.2
+numpy==1.17.4
+PyQt6==6.1.0
+PySide6

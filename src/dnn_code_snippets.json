@@ -1,0 +1,100 @@
+{
+    "code_snippets": [
+        {
+            "Snippets": {
+                "Snippet_Name": "activation_function",
+                "Regex_Code": " activation ",
+                "Title": "Activation Function in TensorFlow",
+                "Process": "Transforms input to output."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "epoch",
+                "Regex_Code": " epochs=",
+                "Title": "Epoch Configuration in TensorFlow",
+                "Process": "Represents one full iteration over input data."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "model_add",
+                "Regex_Code": " model\\.add\\(",
+                "Title": "Adding Layers in TensorFlow",
+                "Process": "Adds a layer to the model."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "optimizer",
+                "Regex_Code": " optimizer=",
+                "Title": "Optimizer in TensorFlow",
+                "Process": "Algorithm for updating network weights."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "learning_rate",
+                "Regex_Code": " learning_rate=",
+                "Title": "Learning Rate Setting in TensorFlow",
+                "Process": "Determines step size in weight updates."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "kernel_regularizer",
+                "Regex_Code": " kernel_regularizer=",
+                "Title": "Kernel Regularization in TensorFlow",
+                "Process": "Applies L1 regularization to the kernel."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "batch_size",
+                "Regex_Code": " batch_size=",
+                "Title": "Batch Size Configuration in TensorFlow",
+                "Process": "Number of samples processed before updating model."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "dropout",
+                "Regex_Code": " dropout=",
+                "Title": "Dropout in TensorFlow",
+                "Process": "Fraction of input units to drop for preventing overfitting."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "filters",
+                "Regex_Code": " filters=",
+                "Title": "Filters in Convolutional Layers",
+                "Process": "Number of output filters in the convolution."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "kernel_size",
+                "Regex_Code": " kernel_size=",
+                "Title": "Kernel Size in Convolutional Layers",
+                "Process": "Determines the dimensions of the convolution window."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "strides",
+                "Regex_Code": " strides=",
+                "Title": "Strides in Convolutional Layers",
+                "Process": "Specifies the stride length of the convolution."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "padding",
+                "Regex_Code": " padding=",
+                "Title": "Padding in Convolutional Layers",
+                "Process": "Determines how the border of the input is handled."
+            }
+        }
+    ]
+}
