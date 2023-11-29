@@ -735,7 +735,7 @@ Button */
               <string/>
              </property>
              <property name="pixmap">
-              <pixmap>images/images/ros-icon.png</pixmap>
+              <pixmap>../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/images/images/ros-icon.png</pixmap>
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>
@@ -1335,7 +1335,7 @@ Button */
                    <string>Refresh</string>
                   </property>
                   <property name="icon">
-                   <iconset resource="resources.qrc">
+                   <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                     <normaloff>:/icons/images/icons/cil-loop-circular.png</normaloff>:/icons/images/icons/cil-loop-circular.png</iconset>
                   </property>
                   <property name="iconSize">
@@ -1358,7 +1358,7 @@ Button */
                    <string>Reset</string>
                   </property>
                   <property name="icon">
-                   <iconset resource="resources.qrc">
+                   <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                     <normaloff>:/icons/images/icons/cil-ban.png</normaloff>:/icons/images/icons/cil-ban.png</iconset>
                   </property>
                   <property name="iconSize">
@@ -1393,7 +1393,7 @@ Button */
                    <string/>
                   </property>
                   <property name="icon">
-                   <iconset resource="resources.qrc">
+                   <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                     <normaloff>:/icons/images/icons/icon_minimize.png</normaloff>:/icons/images/icons/icon_minimize.png</iconset>
                   </property>
                   <property name="iconSize">
@@ -1437,7 +1437,7 @@ Button */
                    <string/>
                   </property>
                   <property name="icon">
-                   <iconset resource="resources.qrc">
+                   <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                     <normaloff>:/icons/images/icons/icon_maximize.png</normaloff>:/icons/images/icons/icon_maximize.png</iconset>
                   </property>
                   <property name="iconSize">
@@ -1472,7 +1472,7 @@ Button */
                    <string/>
                   </property>
                   <property name="icon">
-                   <iconset resource="resources.qrc">
+                   <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                     <normaloff>:/icons/images/icons/icon_close.png</normaloff>:/icons/images/icons/icon_close.png</iconset>
                   </property>
                   <property name="iconSize">
@@ -1669,7 +1669,7 @@ After the execution, the user can see the all results about the mutation process
                             <string/>
                            </property>
                            <property name="pixmap">
-                            <pixmap>images/images/IM-FIT_Mimari.jpg</pixmap>
+                            <pixmap>../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/images/images/IM-FIT_Mimari.jpg</pixmap>
                            </property>
                            <property name="scaledContents">
                             <bool>true</bool>
@@ -1721,7 +1721,7 @@ After the execution, the user can see the all results about the mutation process
                           <string>Start</string>
                          </property>
                          <property name="icon">
-                          <iconset resource="resources.qrc">
+                          <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                            <normaloff>:/icons/images/icons/cil-arrow-circle-right.png</normaloff>:/icons/images/icons/cil-arrow-circle-right.png</iconset>
                          </property>
                         </widget>
@@ -1848,7 +1848,7 @@ After the execution, the user can see the all results about the mutation process
                                 <string>Open</string>
                                </property>
                                <property name="icon">
-                                <iconset resource="resources.qrc">
+                                <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                  <normaloff>:/icons/images/icons/cil-folder-open.png</normaloff>:/icons/images/icons/cil-folder-open.png</iconset>
                                </property>
                               </widget>
@@ -1881,7 +1881,7 @@ After the execution, the user can see the all results about the mutation process
                               <string>Select Snippet</string>
                              </property>
                              <property name="icon">
-                              <iconset resource="resources.qrc">
+                              <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                <normaloff>:/icons/images/icons/cil-hand-point-up.png</normaloff>:/icons/images/icons/cil-hand-point-up.png</iconset>
                              </property>
                             </widget>
@@ -1918,7 +1918,7 @@ After the execution, the user can see the all results about the mutation process
                                 <string>Edit</string>
                                </property>
                                <property name="icon">
-                                <iconset resource="resources.qrc">
+                                <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                  <normaloff>:/icons/images/icons/cil-pencil.png</normaloff>:/icons/images/icons/cil-pencil.png</iconset>
                                </property>
                               </widget>
@@ -1947,7 +1947,7 @@ After the execution, the user can see the all results about the mutation process
                                 <string>Create</string>
                                </property>
                                <property name="icon">
-                                <iconset resource="resources.qrc">
+                                <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                  <normaloff>:/icons/images/icons/cil-plus.png</normaloff>:/icons/images/icons/cil-plus.png</iconset>
                                </property>
                               </widget>
@@ -1973,7 +1973,7 @@ After the execution, the user can see the all results about the mutation process
                                 <string>Clear</string>
                                </property>
                                <property name="icon">
-                                <iconset resource="resources.qrc">
+                                <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                  <normaloff>:/icons/images/icons/cil-x.png</normaloff>:/icons/images/icons/cil-x.png</iconset>
                                </property>
                               </widget>
@@ -2683,7 +2683,7 @@ After the execution, the user can see the all results about the mutation process
                                 <string>Create Code Snippets</string>
                                </property>
                                <property name="icon">
-                                <iconset resource="resources.qrc">
+                                <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                  <normaloff>:/icons/images/icons/cil-code.png</normaloff>:/icons/images/icons/cil-code.png</iconset>
                                </property>
                               </widget>
@@ -2710,7 +2710,7 @@ After the execution, the user can see the all results about the mutation process
                                 <string>Add Custom Snippet</string>
                                </property>
                                <property name="icon">
-                                <iconset resource="resources.qrc">
+                                <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                  <normaloff>:/icons/images/icons/cil-plus.png</normaloff>:/icons/images/icons/cil-plus.png</iconset>
                                </property>
                               </widget>
@@ -2763,7 +2763,7 @@ After the execution, the user can see the all results about the mutation process
                               <string>Remove</string>
                              </property>
                              <property name="icon">
-                              <iconset resource="resources.qrc">
+                              <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                <normaloff>:/icons/images/icons/cil-minus.png</normaloff>:/icons/images/icons/cil-minus.png</iconset>
                              </property>
                             </widget>
@@ -2850,7 +2850,7 @@ After the execution, the user can see the all results about the mutation process
                                 <string>Open</string>
                                </property>
                                <property name="icon">
-                                <iconset resource="resources.qrc">
+                                <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                  <normaloff>:/icons/images/icons/cil-folder-open.png</normaloff>:/icons/images/icons/cil-folder-open.png</iconset>
                                </property>
                               </widget>
@@ -2931,7 +2931,7 @@ After the execution, the user can see the all results about the mutation process
                               <string>Open</string>
                              </property>
                              <property name="icon">
-                              <iconset resource="resources.qrc">
+                              <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                <normaloff>:/icons/images/icons/cil-folder-open.png</normaloff>:/icons/images/icons/cil-folder-open.png</iconset>
                              </property>
                             </widget>
@@ -2965,7 +2965,7 @@ After the execution, the user can see the all results about the mutation process
                                 <string>Edit Source Code</string>
                                </property>
                                <property name="icon">
-                                <iconset resource="resources.qrc">
+                                <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                  <normaloff>:/icons/images/icons/cil-pencil.png</normaloff>:/icons/images/icons/cil-pencil.png</iconset>
                                </property>
                               </widget>
@@ -2997,7 +2997,7 @@ After the execution, the user can see the all results about the mutation process
                                 <string>Clear Source Codes</string>
                                </property>
                                <property name="icon">
-                                <iconset resource="resources.qrc">
+                                <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                  <normaloff>:/icons/images/icons/cil-x.png</normaloff>:/icons/images/icons/cil-x.png</iconset>
                                </property>
                               </widget>
@@ -3070,7 +3070,7 @@ background-color: rgb(52, 59, 72);</string>
                             <string>Scan Page</string>
                            </property>
                            <property name="icon">
-                            <iconset resource="resources.qrc">
+                            <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                              <normaloff>:/icons/images/icons/cil-arrow-circle-right.png</normaloff>:/icons/images/icons/cil-arrow-circle-right.png</iconset>
                            </property>
                           </widget>
@@ -3103,7 +3103,7 @@ background-color: rgb(52, 59, 72);</string>
                             <string>Home Page</string>
                            </property>
                            <property name="icon">
-                            <iconset resource="resources.qrc">
+                            <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                              <normaloff>:/icons/images/icons/cil-arrow-circle-left.png</normaloff>:/icons/images/icons/cil-arrow-circle-left.png</iconset>
                            </property>
                           </widget>
@@ -3197,7 +3197,7 @@ background-color: rgb(52, 59, 72);</string>
                               <string>Remove</string>
                              </property>
                              <property name="icon">
-                              <iconset resource="resources.qrc">
+                              <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                <normaloff>:/icons/images/icons/cil-minus.png</normaloff>:/icons/images/icons/cil-minus.png</iconset>
                              </property>
                             </widget>
@@ -3288,7 +3288,7 @@ background-color: rgb(52, 59, 72);</string>
                               <string>Add to Run Order</string>
                              </property>
                              <property name="icon">
-                              <iconset resource="resources.qrc">
+                              <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                <normaloff>:/icons/images/icons/cil-plus.png</normaloff>:/icons/images/icons/cil-plus.png</iconset>
                              </property>
                             </widget>
@@ -3377,7 +3377,7 @@ background-color: rgb(52, 59, 72);</string>
                                 <string>Select</string>
                                </property>
                                <property name="icon">
-                                <iconset resource="resources.qrc">
+                                <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                  <normaloff>:/icons/images/icons/cil-hand-point-up.png</normaloff>:/icons/images/icons/cil-hand-point-up.png</iconset>
                                </property>
                               </widget>
@@ -3403,7 +3403,7 @@ background-color: rgb(52, 59, 72);</string>
                                 <string>Apply Mutation</string>
                                </property>
                                <property name="icon">
-                                <iconset resource="resources.qrc">
+                                <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                  <normaloff>:/icons/images/icons/cil-media-play.png</normaloff>:/icons/images/icons/cil-media-play.png</iconset>
                                </property>
                               </widget>
@@ -3465,7 +3465,7 @@ background-color: rgb(52, 59, 72);</string>
                                 <string>Remove</string>
                                </property>
                                <property name="icon">
-                                <iconset resource="resources.qrc">
+                                <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                  <normaloff>:/icons/images/icons/cil-minus.png</normaloff>:/icons/images/icons/cil-minus.png</iconset>
                                </property>
                               </widget>
@@ -3506,7 +3506,7 @@ background-color: rgb(52, 59, 72);</string>
                               <string>Run</string>
                              </property>
                              <property name="icon">
-                              <iconset resource="resources.qrc">
+                              <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                <normaloff>:/icons/images/icons/cil-media-play.png</normaloff>:/icons/images/icons/cil-media-play.png</iconset>
                              </property>
                             </widget>
@@ -3526,7 +3526,7 @@ background-color: rgb(52, 59, 72);</string>
                               <string>Scan Codes for Mutation</string>
                              </property>
                              <property name="icon">
-                              <iconset resource="resources.qrc">
+                              <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                <normaloff>:/icons/images/icons/cil-magnifying-glass.png</normaloff>:/icons/images/icons/cil-magnifying-glass.png</iconset>
                              </property>
                             </widget>
@@ -3617,7 +3617,7 @@ background-color: rgb(52, 59, 72);</string>
                               <string>Save</string>
                              </property>
                              <property name="icon">
-                              <iconset resource="resources.qrc">
+                              <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                <normaloff>:/icons/images/icons/cil-save.png</normaloff>:/icons/images/icons/cil-save.png</iconset>
                              </property>
                             </widget>
@@ -3643,7 +3643,7 @@ background-color: rgb(52, 59, 72);</string>
                               <string>Select FI Plan</string>
                              </property>
                              <property name="icon">
-                              <iconset resource="resources.qrc">
+                              <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                <normaloff>:/icons/images/icons/cil-folder-open.png</normaloff>:/icons/images/icons/cil-folder-open.png</iconset>
                              </property>
                             </widget>
@@ -3723,7 +3723,7 @@ background-color: rgb(52, 59, 72);</string>
                             <string>Remove</string>
                            </property>
                            <property name="icon">
-                            <iconset resource="resources.qrc">
+                            <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                              <normaloff>:/icons/images/icons/cil-minus.png</normaloff>:/icons/images/icons/cil-minus.png</iconset>
                            </property>
                           </widget>
@@ -3749,7 +3749,7 @@ background-color: rgb(52, 59, 72);</string>
                             <string>Delete</string>
                            </property>
                            <property name="icon">
-                            <iconset resource="resources.qrc">
+                            <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                              <normaloff>:/icons/images/icons/icon_close.png</normaloff>:/icons/images/icons/icon_close.png</iconset>
                            </property>
                           </widget>
@@ -3817,7 +3817,7 @@ background-color: rgb(52, 59, 72);</string>
                                 <string>Open</string>
                                </property>
                                <property name="icon">
-                                <iconset resource="resources.qrc">
+                                <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                  <normaloff>:/icons/images/icons/cil-folder-open.png</normaloff>:/icons/images/icons/cil-folder-open.png</iconset>
                                </property>
                               </widget>
@@ -3921,7 +3921,7 @@ background-color: rgb(52, 59, 72);</string>
                                 <string>Open</string>
                                </property>
                                <property name="icon">
-                                <iconset resource="resources.qrc">
+                                <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                  <normaloff>:/icons/images/icons/cil-folder-open.png</normaloff>:/icons/images/icons/cil-folder-open.png</iconset>
                                </property>
                               </widget>
@@ -4036,7 +4036,7 @@ background-color: rgb(52, 59, 72);</string>
                             <string>Start Page</string>
                            </property>
                            <property name="icon">
-                            <iconset resource="resources.qrc">
+                            <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                              <normaloff>:/icons/images/icons/cil-arrow-circle-left.png</normaloff>:/icons/images/icons/cil-arrow-circle-left.png</iconset>
                            </property>
                           </widget>
@@ -4062,7 +4062,7 @@ background-color: rgb(52, 59, 72);</string>
                             <string>Execution Page</string>
                            </property>
                            <property name="icon">
-                            <iconset resource="resources.qrc">
+                            <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                              <normaloff>:/icons/images/icons/cil-arrow-circle-right.png</normaloff>:/icons/images/icons/cil-arrow-circle-right.png</iconset>
                            </property>
                           </widget>
@@ -4268,7 +4268,7 @@ color:white;</string>
                             <string>Scan</string>
                            </property>
                            <property name="icon">
-                            <iconset resource="resources.qrc">
+                            <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                              <normaloff>:/icons/images/icons/cil-magnifying-glass.png</normaloff>:/icons/images/icons/cil-magnifying-glass.png</iconset>
                            </property>
                           </widget>
@@ -4311,7 +4311,7 @@ background-color: rgb(52, 59, 72);</string>
                             <string>FI Plan Page</string>
                            </property>
                            <property name="icon">
-                            <iconset resource="resources.qrc">
+                            <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                              <normaloff>:/icons/images/icons/cil-arrow-circle-right.png</normaloff>:/icons/images/icons/cil-arrow-circle-right.png</iconset>
                            </property>
                           </widget>
@@ -4347,7 +4347,7 @@ background-color: rgb(52, 59, 72);</string>
                             <string>Start Page</string>
                            </property>
                            <property name="icon">
-                            <iconset resource="resources.qrc">
+                            <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                              <normaloff>:/icons/images/icons/cil-arrow-circle-left.png</normaloff>:/icons/images/icons/cil-arrow-circle-left.png</iconset>
                            </property>
                           </widget>
@@ -4404,7 +4404,7 @@ font: 13pt &quot;Ubuntu&quot;;</string>
                             <string>Start Mutation</string>
                            </property>
                            <property name="icon">
-                            <iconset resource="resources.qrc">
+                            <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                              <normaloff>:/icons/images/icons/cil-media-play.png</normaloff>:/icons/images/icons/cil-media-play.png</iconset>
                            </property>
                           </widget>
@@ -5468,7 +5468,7 @@ font: 13pt &quot;Ubuntu&quot;;</string>
                               <string>Select Fault</string>
                              </property>
                              <property name="icon">
-                              <iconset resource="resources.qrc">
+                              <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                <normaloff>:/icons/images/icons/cil-hand-point-up.png</normaloff>:/icons/images/icons/cil-hand-point-up.png</iconset>
                              </property>
                             </widget>
@@ -5542,7 +5542,7 @@ font: 11pt &quot;Ubuntu&quot;;
                               <string>Save</string>
                              </property>
                              <property name="icon">
-                              <iconset resource="resources.qrc">
+                              <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                <normaloff>:/icons/images/icons/cil-save.png</normaloff>:/icons/images/icons/cil-save.png</iconset>
                              </property>
                             </widget>
@@ -5562,7 +5562,7 @@ font: 11pt &quot;Ubuntu&quot;;
                               <string>Remove Mutant Code Line</string>
                              </property>
                              <property name="icon">
-                              <iconset resource="resources.qrc">
+                              <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                <normaloff>:/icons/images/icons/cil-minus.png</normaloff>:/icons/images/icons/cil-minus.png</iconset>
                              </property>
                             </widget>
@@ -5601,7 +5601,7 @@ font: 11pt &quot;Ubuntu&quot;;
                               <string>Add FI Plan</string>
                              </property>
                              <property name="icon">
-                              <iconset resource="resources.qrc">
+                              <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                <normaloff>:/icons/images/icons/cil-folder-open.png</normaloff>:/icons/images/icons/cil-folder-open.png</iconset>
                              </property>
                             </widget>
@@ -5694,7 +5694,7 @@ font: 11pt &quot;Ubuntu&quot;;
                               <string>Remove</string>
                              </property>
                              <property name="icon">
-                              <iconset resource="resources.qrc">
+                              <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                <normaloff>:/icons/images/icons/cil-minus.png</normaloff>:/icons/images/icons/cil-minus.png</iconset>
                              </property>
                             </widget>
@@ -5751,7 +5751,7 @@ font: 11pt &quot;Ubuntu&quot;;
                             <string>Create Custom Fault</string>
                            </property>
                            <property name="icon">
-                            <iconset resource="resources.qrc">
+                            <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                              <normaloff>:/icons/images/icons/cil-code.png</normaloff>:/icons/images/icons/cil-code.png</iconset>
                            </property>
                           </widget>
@@ -5789,7 +5789,7 @@ font: 11pt &quot;Ubuntu&quot;;
                               <string>Remove Lİne Fault</string>
                              </property>
                              <property name="icon">
-                              <iconset resource="resources.qrc">
+                              <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                <normaloff>:/icons/images/icons/cil-minus.png</normaloff>:/icons/images/icons/cil-minus.png</iconset>
                              </property>
                             </widget>
@@ -5850,7 +5850,7 @@ font: 11pt &quot;Ubuntu&quot;;
                             <string>Use Random Fault</string>
                            </property>
                            <property name="icon">
-                            <iconset resource="resources.qrc">
+                            <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                              <normaloff>:/icons/images/icons/cil-laptop.png</normaloff>:/icons/images/icons/cil-laptop.png</iconset>
                            </property>
                           </widget>
@@ -5942,7 +5942,7 @@ background-color: rgb(52, 59, 72);</string>
                             <string>Scan Page</string>
                            </property>
                            <property name="icon">
-                            <iconset resource="resources.qrc">
+                            <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                              <normaloff>:/icons/images/icons/cil-arrow-circle-left.png</normaloff>:/icons/images/icons/cil-arrow-circle-left.png</iconset>
                            </property>
                           </widget>
@@ -5978,7 +5978,7 @@ background-color: rgb(52, 59, 72);</string>
                             <string>Execution Page</string>
                            </property>
                            <property name="icon">
-                            <iconset resource="resources.qrc">
+                            <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                              <normaloff>:/icons/images/icons/cil-arrow-circle-right.png</normaloff>:/icons/images/icons/cil-arrow-circle-right.png</iconset>
                            </property>
                           </widget>
@@ -6141,7 +6141,7 @@ background-color: rgb(52, 59, 72);</string>
                               <string>Select Metrics</string>
                              </property>
                              <property name="icon">
-                              <iconset resource="resources.qrc">
+                              <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                <normaloff>:/icons/images/icons/cil-equalizer.png</normaloff>:/icons/images/icons/cil-equalizer.png</iconset>
                              </property>
                             </widget>
@@ -6237,7 +6237,7 @@ background-color: rgb(52, 59, 72);</string>
                                 <string>Export</string>
                                </property>
                                <property name="icon">
-                                <iconset resource="resources.qrc">
+                                <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                  <normaloff>:/icons/images/icons/cil-plus.png</normaloff>:/icons/images/icons/cil-plus.png</iconset>
                                </property>
                               </widget>
@@ -6269,7 +6269,7 @@ background-color: rgb(52, 59, 72);</string>
                                 <string>Remove</string>
                                </property>
                                <property name="icon">
-                                <iconset resource="resources.qrc">
+                                <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                  <normaloff>:/icons/images/icons/cil-minus.png</normaloff>:/icons/images/icons/cil-minus.png</iconset>
                                </property>
                               </widget>
@@ -6338,7 +6338,7 @@ background-color: rgb(52, 59, 72);</string>
                             <string>Remove</string>
                            </property>
                            <property name="icon">
-                            <iconset resource="resources.qrc">
+                            <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                              <normaloff>:/icons/images/icons/icon_minimize.png</normaloff>:/icons/images/icons/icon_minimize.png</iconset>
                            </property>
                           </widget>
@@ -6695,7 +6695,7 @@ background-color: rgb(52, 59, 72);</string>
                                   <string>New Execution Plan</string>
                                  </property>
                                  <property name="icon">
-                                  <iconset resource="resources.qrc">
+                                  <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                    <normaloff>:/icons/images/icons/cil-plus.png</normaloff>:/icons/images/icons/cil-plus.png</iconset>
                                  </property>
                                 </widget>
@@ -6749,7 +6749,7 @@ background-color: rgb(52, 59, 72);</string>
                                   <string>Save</string>
                                  </property>
                                  <property name="icon">
-                                  <iconset resource="resources.qrc">
+                                  <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                    <normaloff>:/icons/images/icons/cil-save.png</normaloff>:/icons/images/icons/cil-save.png</iconset>
                                  </property>
                                 </widget>
@@ -6830,7 +6830,7 @@ color:white;</string>
                                   <string>Start Execution</string>
                                  </property>
                                  <property name="icon">
-                                  <iconset resource="resources.qrc">
+                                  <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                    <normaloff>:/icons/images/icons/cil-caret-right.png</normaloff>:/icons/images/icons/cil-caret-right.png</iconset>
                                  </property>
                                 </widget>
@@ -7040,7 +7040,7 @@ background-color: rgb(52, 59, 72);</string>
                             <string>Monitoring Page</string>
                            </property>
                            <property name="icon">
-                            <iconset resource="resources.qrc">
+                            <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                              <normaloff>:/icons/images/icons/cil-arrow-circle-right.png</normaloff>:/icons/images/icons/cil-arrow-circle-right.png</iconset>
                            </property>
                           </widget>
@@ -7073,7 +7073,7 @@ background-color: rgb(52, 59, 72);</string>
                             <string>FI Plan Page</string>
                            </property>
                            <property name="icon">
-                            <iconset resource="resources.qrc">
+                            <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                              <normaloff>:/icons/images/icons/cil-arrow-circle-left.png</normaloff>:/icons/images/icons/cil-arrow-circle-left.png</iconset>
                            </property>
                           </widget>
@@ -7161,7 +7161,7 @@ color:white;</string>
                                 <string>Create Report</string>
                                </property>
                                <property name="icon">
-                                <iconset resource="resources.qrc">
+                                <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                  <normaloff>:/icons/images/icons/cil-task.png</normaloff>:/icons/images/icons/cil-task.png</iconset>
                                </property>
                               </widget>
@@ -7190,7 +7190,7 @@ color:white;</string>
                                 <string>Start The New One</string>
                                </property>
                                <property name="icon">
-                                <iconset resource="resources.qrc">
+                                <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                  <normaloff>:/icons/images/icons/cil-star.png</normaloff>:/icons/images/icons/cil-star.png</iconset>
                                </property>
                               </widget>
@@ -7381,7 +7381,7 @@ color:white;</string>
                               <string>Create Fault</string>
                              </property>
                              <property name="icon">
-                              <iconset resource="resources.qrc">
+                              <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                <normaloff>:/icons/images/icons/cil-plus.png</normaloff>:/icons/images/icons/cil-plus.png</iconset>
                              </property>
                             </widget>
@@ -7401,7 +7401,7 @@ color:white;</string>
                               <string>Delete Fault</string>
                              </property>
                              <property name="icon">
-                              <iconset resource="resources.qrc">
+                              <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                <normaloff>:/icons/images/icons/cil-x.png</normaloff>:/icons/images/icons/cil-x.png</iconset>
                              </property>
                             </widget>
@@ -7462,7 +7462,7 @@ color:white;</string>
                               <string>Remove</string>
                              </property>
                              <property name="icon">
-                              <iconset resource="resources.qrc">
+                              <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                <normaloff>:/icons/images/icons/cil-minus.png</normaloff>:/icons/images/icons/cil-minus.png</iconset>
                              </property>
                             </widget>
@@ -7589,7 +7589,7 @@ color:white;</string>
                             <string>Back To FI Plan Page</string>
                            </property>
                            <property name="icon">
-                            <iconset resource="resources.qrc">
+                            <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                              <normaloff>:/icons/images/icons/cil-arrow-circle-left.png</normaloff>:/icons/images/icons/cil-arrow-circle-left.png</iconset>
                            </property>
                           </widget>
@@ -7686,7 +7686,7 @@ color:white;</string>
                             <string>Save</string>
                            </property>
                            <property name="icon">
-                            <iconset resource="resources.qrc">
+                            <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                              <normaloff>:/icons/images/icons/cil-save.png</normaloff>:/icons/images/icons/cil-save.png</iconset>
                            </property>
                           </widget>
@@ -7875,7 +7875,7 @@ color:white;</string>
                               <string>Change Workload</string>
                              </property>
                              <property name="icon">
-                              <iconset resource="resources.qrc">
+                              <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                <normaloff>:/icons/images/icons/cil-save.png</normaloff>:/icons/images/icons/cil-save.png</iconset>
                              </property>
                             </widget>
@@ -7947,7 +7947,7 @@ color:white;</string>
                               <string>Open</string>
                              </property>
                              <property name="icon">
-                              <iconset resource="resources.qrc">
+                              <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                <normaloff>:/icons/images/icons/cil-folder-open.png</normaloff>:/icons/images/icons/cil-folder-open.png</iconset>
                              </property>
                             </widget>
@@ -8064,7 +8064,7 @@ color:white;</string>
                               <string>Download Tasks</string>
                              </property>
                              <property name="icon">
-                              <iconset resource="resources.qrc">
+                              <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                <normaloff>:/icons/images/icons/cil-vertical-align-bottom.png</normaloff>:/icons/images/icons/cil-vertical-align-bottom.png</iconset>
                              </property>
                             </widget>
@@ -8125,7 +8125,7 @@ color:white;</string>
                               <string>Select</string>
                              </property>
                              <property name="icon">
-                              <iconset resource="resources.qrc">
+                              <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                <normaloff>:/icons/images/icons/cil-hand-point-up.png</normaloff>:/icons/images/icons/cil-hand-point-up.png</iconset>
                              </property>
                             </widget>
@@ -8165,7 +8165,7 @@ color:white;</string>
                                 <string>Save</string>
                                </property>
                                <property name="icon">
-                                <iconset resource="resources.qrc">
+                                <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                  <normaloff>:/icons/images/icons/cil-save.png</normaloff>:/icons/images/icons/cil-save.png</iconset>
                                </property>
                               </widget>
@@ -8197,7 +8197,7 @@ color:white;</string>
                                 <string>Remove</string>
                                </property>
                                <property name="icon">
-                                <iconset resource="resources.qrc">
+                                <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                  <normaloff>:/icons/images/icons/cil-minus.png</normaloff>:/icons/images/icons/cil-minus.png</iconset>
                                </property>
                               </widget>
@@ -8329,7 +8329,7 @@ color:white;</string>
                           <string>Back To Start Step</string>
                          </property>
                          <property name="icon">
-                          <iconset resource="resources.qrc">
+                          <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                            <normaloff>:/icons/images/icons/cil-arrow-circle-left.png</normaloff>:/icons/images/icons/cil-arrow-circle-left.png</iconset>
                          </property>
                         </widget>
@@ -8374,7 +8374,7 @@ color:white;</string>
                             <string>Back To Code Snippets Step</string>
                            </property>
                            <property name="icon">
-                            <iconset resource="resources.qrc">
+                            <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                              <normaloff>:/icons/images/icons/cil-arrow-circle-left.png</normaloff>:/icons/images/icons/cil-arrow-circle-left.png</iconset>
                            </property>
                           </widget>
@@ -8520,7 +8520,7 @@ color:white;</string>
                             <string>Save Code Snippet</string>
                            </property>
                            <property name="icon">
-                            <iconset resource="resources.qrc">
+                            <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                              <normaloff>:/icons/images/icons/cil-save.png</normaloff>:/icons/images/icons/cil-save.png</iconset>
                            </property>
                           </widget>
@@ -8593,7 +8593,7 @@ color:white;</string>
                               <string>Clear</string>
                              </property>
                              <property name="icon">
-                              <iconset resource="resources.qrc">
+                              <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                <normaloff>:/icons/images/icons/cil-x.png</normaloff>:/icons/images/icons/cil-x.png</iconset>
                              </property>
                             </widget>
@@ -8638,7 +8638,7 @@ color:white;</string>
                               <string>Create</string>
                              </property>
                              <property name="icon">
-                              <iconset resource="resources.qrc">
+                              <iconset resource="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc">
                                <normaloff>:/icons/images/icons/cil-plus.png</normaloff>:/icons/images/icons/cil-plus.png</iconset>
                              </property>
                             </widget>
@@ -9012,7 +9012,52 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </item>
                         <item>
                          <property name="text">
+                          <string>AbstractRNNCell</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Activation</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>ActivityRegularization</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Average</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>AveragePooling1D</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>AveragePooling2D</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>AveragePooling3D</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>momentum</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
                           <string>input_shape</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>AlphaDropout</string>
                          </property>
                         </item>
                         <item>
@@ -9038,6 +9083,11 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         <item>
                          <property name="text">
                           <string>dropout_rate</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Dropout</string>
                          </property>
                         </item>
                         <item>
@@ -9228,7 +9278,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </property>
                         <item>
                          <property name="text">
-                          <string>model.get_weights</string>
+                          <string>tf.keras.layers.MaxPooling2D</string>
                          </property>
                         </item>
                         <item>
@@ -9239,11 +9289,6 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         <item>
                          <property name="text">
                           <string>epoch</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>model.set_weights</string>
                          </property>
                         </item>
                         <item>
@@ -9269,11 +9314,6 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         <item>
                          <property name="text">
                           <string>layer.dropout</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>tf.keras.layers.BatchNormalization</string>
                          </property>
                         </item>
                         <item>
@@ -9308,26 +9348,6 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </item>
                         <item>
                          <property name="text">
-                          <string>layer.padding</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>tf.keras.layers.LSTM</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>tf.keras.layers.GRU</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>tf.keras.preprocessing.image.ImageDataGenerator</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
                           <string>model.optimizer</string>
                          </property>
                         </item>
@@ -9338,42 +9358,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </item>
                         <item>
                          <property name="text">
-                          <string>model.fit</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>layer.activity_regularizer</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>tf.keras.callbacks</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>layer.stride</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
                           <string>tf.keras.layers.Dropout</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>layer.recurrent_initializer</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>model.evaluate</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>model.predict</string>
                          </property>
                         </item>
                         <item>
@@ -9383,72 +9368,12 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </item>
                         <item>
                          <property name="text">
-                          <string>tf.keras.metrics</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>tf.keras.regularizers</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>tf.keras.Model.save</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>tf.train.Checkpoint</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>tf.keras.layers.Embedding</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>tf.keras.layers.Reshape</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>tf.keras.backend.clear_session</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>layer.kernel_regularizer</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>tf.keras.layers.Conv2DTranspose</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
                           <string>tf.keras.initializers.Constant</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>layer.kernel_size</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>tf.keras.layers.MaxPooling2D</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
                           <string>tf.keras.layers.AvgPooling2D</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>tf.keras.layers.Concatenate</string>
                          </property>
                         </item>
                         <item>
@@ -9622,7 +9547,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
   </widget>
  </widget>
  <resources>
-  <include location="resources.qrc"/>
+  <include location="../../../../Desktop/Dnn Module/Yedek/Tailored-Mutation-based-Software-Fault-Injection-Tool-IM-FIT/src/resources.qrc"/>
  </resources>
  <connections/>
 </ui>

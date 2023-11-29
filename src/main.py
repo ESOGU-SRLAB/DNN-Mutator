@@ -1363,8 +1363,39 @@ class MainWindow(QMainWindow):
                 mutated_line = mutator.modify_code_in_file_MaxPooling2D(source_code, change_parameter_with)
             elif mutate_selected_parameters == "input_shape":
                 change_parameter_with = "input_shape=(64, 64, 3)"
-                mutated_line = mutator.modify_code_in_file_MaxPooling2D(source_code, change_parameter_with)            
-
+                mutated_line = mutator.modify_code_in_file_MaxPooling2D(source_code, change_parameter_with)
+            elif mutate_selected_parameters == "AbstractRNNCell":
+                change_parameter_with = "AbstractRNNCell()"
+                layer_name="AbstractRNNCell"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code,layer_name, change_parameter_with)
+            elif mutate_selected_parameters == "Activation":
+                change_parameter_with = "Activation()"
+                layer_name="Activation"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code,layer_name, change_parameter_with)
+            elif mutate_selected_parameters == "ActivityRegularization":
+                change_parameter_with = "ActivityRegularization()"
+                layer_name="ActivityRegularization"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code,layer_name, change_parameter_with)
+            elif mutate_selected_parameters == "AlphaDropout":
+                change_parameter_with = "AlphaDropout()"
+                layer_name="AlphaDropout"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code,layer_name, change_parameter_with)
+            elif mutate_selected_parameters == "Average":
+                change_parameter_with = "Average()"
+                layer_name="Average"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code,layer_name, change_parameter_with)
+            elif mutate_selected_parameters == "AveragePooling1D":
+                change_parameter_with = "AveragePooling1D()"
+                layer_name="AveragePooling1D"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code,layer_name, change_parameter_with)                              
+            elif mutate_selected_parameters == "AveragePooling2D":
+                change_parameter_with = "AveragePooling2D()"
+                layer_name="AveragePooling2D"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code,layer_name, change_parameter_with)
+            elif mutate_selected_parameters == "AveragePooling3D":
+                change_parameter_with = "AveragePooling3D()"
+                layer_name="AveragePooling3D"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code,layer_name, change_parameter_with)                
             # Modify the code using mutator and append it to mutated_code
             
             mutated_code += mutated_line + "\n"

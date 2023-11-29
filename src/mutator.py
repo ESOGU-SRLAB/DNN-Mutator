@@ -100,3 +100,16 @@ def modify_code_in_file_InputShape(source_code, new_value):
         source_code = source_code.replace(original_code, new_code, 1)  # İlk eşleşmeyi değiştir
     return source_code
 
+def modify_tf_layer_in_code(source_code, layer_names,new_value):
+    for layer_name in layer_names:
+        # Katman adını ve sonrasında gelen parantezli ifadeyi bulmak için regex deseni
+        #pattern = rf"(tf\.keras\.layers\.\b{layer_names}\b\s*\()[^)]*\)"
+        #pattern = rf"(tf\.keras\.layers\.\b{layer_names}\b\s*\()[\s\S]*?(\))"
+        pattern = rf"(tf\.keras\.layers\.\b{layer_names}\b\s*\()((?:[^()]|\([^)]*\))*)\)"
+        # Bulunan ifadeyi değiştirmek için yeni değer
+        new_value = f"tf.keras.layers.{layer_names}()"
+        # Regex kullanarak değişiklik yapma
+        source_code = re.sub(pattern, new_value, source_code)
+    return source_code
+
+
