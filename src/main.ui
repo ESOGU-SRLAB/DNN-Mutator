@@ -9012,6 +9012,136 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </item>
                         <item>
                          <property name="text">
+                          <string>ConvLSTM1D</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>ConvLSTM2D</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>ConvLSTM3D</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Convolution1D</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Convolution1DTranspose</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Convolution2D</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Convolution2DTranspose</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Convolution3D</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Convolution3DTranspose</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Cropping1D</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Cropping2D</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Cropping3D</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>AvgPool1D</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>AvgPool2D</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>AvgPool3D</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>BatchNormalization</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Bidirectional</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>CategoryEncoding</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>CenterCrop</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Concatenate</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Conv1D</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Conv1DTranspose</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Conv2D</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Conv2DTranspose</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Conv3D</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Conv3DTranspose</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
                           <string>AbstractRNNCell</string>
                          </property>
                         </item>

@@ -1395,7 +1395,113 @@ class MainWindow(QMainWindow):
             elif mutate_selected_parameters == "AveragePooling3D":
                 change_parameter_with = "AveragePooling3D()"
                 layer_name="AveragePooling3D"
-                mutated_line = mutator.modify_tf_layer_in_code(source_code,layer_name, change_parameter_with)                
+                mutated_line = mutator.modify_tf_layer_in_code(source_code,layer_name, change_parameter_with)
+            elif mutate_selected_parameters == "AvgPool1D":
+                change_parameter_with = "tf.keras.layers.AvgPool1D()"
+                layer_name = "AvgPool1D"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code, layer_name, change_parameter_with)
+            elif mutate_selected_parameters == "AvgPool2D":
+                change_parameter_with = "tf.keras.layers.AvgPool2D()"
+                layer_name = "AvgPool2D"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code, layer_name, change_parameter_with)
+            elif mutate_selected_parameters == "AvgPool3D":
+                change_parameter_with = "tf.keras.layers.AvgPool3D()"
+                layer_name = "AvgPool3D"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code, layer_name, change_parameter_with)
+            elif mutate_selected_parameters == "BatchNormalization":
+                change_parameter_with = "tf.keras.layers.BatchNormalization()"
+                layer_name = "BatchNormalization"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code, layer_name, change_parameter_with)
+            elif mutate_selected_parameters == "Bidirectional":
+                change_parameter_with = "tf.keras.layers.Bidirectional()"
+                layer_name = "Bidirectional"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code, layer_name, change_parameter_with)
+            elif mutate_selected_parameters == "CategoryEncoding":
+                change_parameter_with = "tf.keras.layers.CategoryEncoding()"
+                layer_name = "CategoryEncoding"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code, layer_name, change_parameter_with)
+            elif mutate_selected_parameters == "CenterCrop":
+                change_parameter_with = "tf.keras.layers.CenterCrop()"
+                layer_name = "CenterCrop"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code, layer_name, change_parameter_with)
+            elif mutate_selected_parameters == "Concatenate":
+                change_parameter_with = "tf.keras.layers.Concatenate()"
+                layer_name = "Concatenate"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code, layer_name, change_parameter_with)
+            elif mutate_selected_parameters == "Conv1D":
+                change_parameter_with = "tf.keras.layers.Conv1D()"
+                layer_name = "Conv1D"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code, layer_name, change_parameter_with)
+            elif mutate_selected_parameters == "Conv1DTranspose":
+                change_parameter_with = "tf.keras.layers.Conv1DTranspose()"
+                layer_name = "Conv1DTranspose"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code, layer_name, change_parameter_with)
+            elif mutate_selected_parameters == "Conv2D":
+                change_parameter_with = "tf.keras.layers.Conv2D()"
+                layer_name = "Conv2D"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code, layer_name, change_parameter_with)
+            elif mutate_selected_parameters == "Conv2DTranspose":
+                change_parameter_with = "tf.keras.layers.Conv2DTranspose()"
+                layer_name = "Conv2DTranspose"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code, layer_name, change_parameter_with)
+            elif mutate_selected_parameters == "Conv3D":
+                change_parameter_with = "tf.keras.layers.Conv3D()"
+                layer_name = "Conv3D"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code, layer_name, change_parameter_with)
+            elif mutate_selected_parameters == "Conv3DTranspose":
+                change_parameter_with = "tf.keras.layers.Conv3DTranspose()"
+                layer_name = "Conv3DTranspose"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code, layer_name, change_parameter_with)                
+            elif mutate_selected_parameters == "ConvLSTM1D":
+                change_parameter_with = "tf.keras.layers.ConvLSTM1D()"
+                layer_name = "ConvLSTM1D"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code, layer_name, change_parameter_with)
+            elif mutate_selected_parameters == "ConvLSTM2D":
+                change_parameter_with = "tf.keras.layers.ConvLSTM2D()"
+                layer_name = "ConvLSTM2D"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code, layer_name, change_parameter_with)
+            elif mutate_selected_parameters == "ConvLSTM3D":
+                change_parameter_with = "tf.keras.layers.ConvLSTM3D()"
+                layer_name = "ConvLSTM3D"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code, layer_name, change_parameter_with)
+            elif mutate_selected_parameters == "Convolution1D":
+                change_parameter_with = "tf.keras.layers.Convolution1D()"
+                layer_name = "Convolution1D"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code, layer_name, change_parameter_with)
+            elif mutate_selected_parameters == "Convolution1DTranspose":
+                change_parameter_with = "tf.keras.layers.Convolution1DTranspose()"
+                layer_name = "Convolution1DTranspose"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code, layer_name, change_parameter_with)
+            elif mutate_selected_parameters == "Convolution2D":
+                change_parameter_with = "tf.keras.layers.Convolution2D()"
+                layer_name = "Convolution2D"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code, layer_name, change_parameter_with)
+            elif mutate_selected_parameters == "Convolution2DTranspose":
+                change_parameter_with = "tf.keras.layers.Convolution2DTranspose()"
+                layer_name = "Convolution2DTranspose"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code, layer_name, change_parameter_with)
+            elif mutate_selected_parameters == "Convolution3D":
+                change_parameter_with = "tf.keras.layers.Convolution3D()"
+                layer_name = "Convolution3D"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code, layer_name, change_parameter_with)
+            elif mutate_selected_parameters == "Convolution3DTranspose":
+                change_parameter_with = "tf.keras.layers.Convolution3DTranspose()"
+                layer_name = "Convolution3DTranspose"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code, layer_name, change_parameter_with)
+            elif mutate_selected_parameters == "Cropping1D":
+                change_parameter_with = "tf.keras.layers.Cropping1D()"
+                layer_name = "Cropping1D"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code, layer_name, change_parameter_with)
+            elif mutate_selected_parameters == "Cropping2D":
+                change_parameter_with = "tf.keras.layers.Cropping2D()"
+                layer_name = "Cropping2D"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code, layer_name, change_parameter_with)
+            elif mutate_selected_parameters == "Cropping3D":
+                change_parameter_with = "tf.keras.layers.Cropping3D()"
+                layer_name = "Cropping3D"
+                mutated_line = mutator.modify_tf_layer_in_code(source_code, layer_name, change_parameter_with)
+            # Daha fazla katman için benzer bloklar eklenebilir
+            
             # Modify the code using mutator and append it to mutated_code
             
             mutated_code += mutated_line + "\n"
