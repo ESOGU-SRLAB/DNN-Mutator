@@ -8967,8 +8967,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
                        <widget class="QPushButton" name="pushButton_dnn_mutate">
                         <property name="geometry">
                          <rect>
-                          <x>540</x>
-                          <y>360</y>
+                          <x>550</x>
+                          <y>410</y>
                           <width>151</width>
                           <height>41</height>
                          </rect>
@@ -8997,9 +8997,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         <property name="geometry">
                          <rect>
                           <x>530</x>
-                          <y>60</y>
+                          <y>30</y>
                           <width>171</width>
-                          <height>121</height>
+                          <height>191</height>
                          </rect>
                         </property>
                         <property name="styleSheet">
@@ -9068,6 +9068,81 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         <item>
                          <property name="text">
                           <string>Cropping3D</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>SpectralNormalization</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>StackedRNNCells</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>StringLookup</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Subtract</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>TextVectorization</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>ThresholdedReLU</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>TimeDistributed</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>UnitNormalization</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>UpSampling1D</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>UpSampling2D</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>UpSampling3D</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Wrapper</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>ZeroPadding1D</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>ZeroPadding2D</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>ZeroPadding3D</string>
                          </property>
                         </item>
                         <item>
@@ -9326,8 +9401,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
                        <widget class="QListWidget" name="listWidget_selected_mutate_parameters">
                         <property name="geometry">
                          <rect>
-                          <x>530</x>
-                          <y>210</y>
+                          <x>540</x>
+                          <y>260</y>
                           <width>171</width>
                           <height>141</height>
                          </rect>
@@ -9339,8 +9414,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
                        <widget class="QLabel" name="label_37">
                         <property name="geometry">
                          <rect>
-                          <x>530</x>
-                          <y>190</y>
+                          <x>540</x>
+                          <y>230</y>
                           <width>171</width>
                           <height>16</height>
                          </rect>
@@ -9352,8 +9427,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
                        <widget class="QLabel" name="label_77">
                         <property name="geometry">
                          <rect>
-                          <x>530</x>
-                          <y>40</y>
+                          <x>540</x>
+                          <y>10</y>
                           <width>151</width>
                           <height>16</height>
                          </rect>
@@ -9366,7 +9441,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         <property name="geometry">
                          <rect>
                           <x>560</x>
-                          <y>410</y>
+                          <y>460</y>
                           <width>118</width>
                           <height>23</height>
                          </rect>
