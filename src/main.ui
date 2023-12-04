@@ -9147,6 +9147,116 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </item>
                         <item>
                          <property name="text">
+                          <string>add</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>average</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>concatenate</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>deserialize</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>dot</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>maximum</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>minimum</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>multiply</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>serialize</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>subtract</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>BinaryCrossentropy</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>BinaryFocalCrossentropy</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>CategoricalCrossentropy</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>CategoricalFocalCrossentropy</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>CategoricalHinge</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>CosineSimilarity</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Hinge</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Huber</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>KLD</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>KLDivergence</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>LogCosh</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Loss</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
                           <string>AvgPool1D</string>
                          </property>
                         </item>
