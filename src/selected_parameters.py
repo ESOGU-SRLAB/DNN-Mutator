@@ -349,6 +349,163 @@ def layer_select_mutate(mutate_selected_parameters,source_code ):
             change_parameter_with = "tf.losses.Loss()"
             layer_name = "Loss"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
-        # Daha fazla kayıp fonksiyonu için benzer bloklar eklenebilir
+        elif mutate_selected_parameters == "MAE":
+            change_parameter_with = "tf.losses.MAE()"
+            layer_name = "MAE"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "MAPE":
+            change_parameter_with = "tf.losses.MAPE()"
+            layer_name = "MAPE"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "MSE":
+            change_parameter_with = "tf.losses.MSE()"
+            layer_name = "MSE"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "MSLE":
+            change_parameter_with = "tf.losses.MSLE()"
+            layer_name = "MSLE"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        # ... (Diğer kayıp fonksiyonları için benzer bloklar eklenecek)
+        elif mutate_selected_parameters == "MeanAbsoluteError":
+            change_parameter_with = "tf.losses.MeanAbsoluteError()"
+            layer_name = "MeanAbsoluteError"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "MeanAbsolutePercentageError":
+            change_parameter_with = "tf.losses.MeanAbsolutePercentageError()"
+            layer_name = "MeanAbsolutePercentageError"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "MeanSquaredError":
+            change_parameter_with = "tf.losses.MeanSquaredError()"
+            layer_name = "MeanSquaredError"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "MeanSquaredLogarithmicError":
+            change_parameter_with = "tf.losses.MeanSquaredLogarithmicError()"
+            layer_name = "MeanSquaredLogarithmicError"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "Poisson":
+            change_parameter_with = "tf.losses.Poisson()"
+            layer_name = "Poisson"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "Reduction":
+            change_parameter_with = "tf.losses.Reduction()"
+            layer_name = "Reduction"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "SparseCategoricalCrossentropy":
+            change_parameter_with = "tf.losses.SparseCategoricalCrossentropy()"
+            layer_name = "SparseCategoricalCrossentropy"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "SquaredHinge":
+            change_parameter_with = "tf.losses.SquaredHinge()"
+            layer_name = "SquaredHinge"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "binary_crossentropy":
+            change_parameter_with = "tf.losses.binary_crossentropy()"
+            layer_name = "binary_crossentropy"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "binary_focal_crossentropy":
+            change_parameter_with = "tf.losses.binary_focal_crossentropy()"
+            layer_name = "binary_focal_crossentropy"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "categorical_crossentropy":
+            change_parameter_with = "tf.losses.categorical_crossentropy()"
+            layer_name = "categorical_crossentropy"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "categorical_focal_crossentropy":
+            change_parameter_with = "tf.losses.categorical_focal_crossentropy()"
+            layer_name = "categorical_focal_crossentropy"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "categorical_hinge":
+            change_parameter_with = "tf.losses.categorical_hinge()"
+            layer_name = "categorical_hinge"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "cosine_similarity":
+            change_parameter_with = "tf.losses.cosine_similarity()"
+            layer_name = "cosine_similarity"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "deserialize":
+            change_parameter_with = "tf.losses.deserialize()"
+            layer_name = "deserialize"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "losses.get()":
+            change_parameter_with = "tf.losses.get()"
+            layer_name = "get"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "hinge":
+            change_parameter_with = "tf.losses.hinge()"
+            layer_name = "hinge"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "huber":
+            change_parameter_with = "tf.losses.huber()"
+            layer_name = "huber"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "kl_divergence":
+            change_parameter_with = "tf.losses.kl_divergence()"
+            layer_name = "kl_divergence"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "kld":
+            change_parameter_with = "tf.losses.kld()"
+            layer_name = "kld"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "kullback_leibler_divergence":
+            change_parameter_with = "tf.losses.kullback_leibler_divergence()"
+            layer_name = "kullback_leibler_divergence"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "log_cosh":
+            change_parameter_with = "tf.losses.log_cosh()"
+            layer_name = "log_cosh"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "logcosh":
+            change_parameter_with = "tf.losses.logcosh()"
+            layer_name = "logcosh"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "mae":
+            change_parameter_with = "tf.losses.mae()"
+            layer_name = "mae"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "mape":
+            change_parameter_with = "tf.losses.mape()"
+            layer_name = "mape"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "mean_absolute_error":
+            change_parameter_with = "tf.losses.mean_absolute_error()"
+            layer_name = "mean_absolute_error"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "mean_absolute_percentage_error":
+            change_parameter_with = "tf.losses.mean_absolute_percentage_error()"
+            layer_name = "mean_absolute_percentage_error"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "mean_squared_error":
+            change_parameter_with = "tf.losses.mean_squared_error()"
+            layer_name = "mean_squared_error"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "mean_squared_logarithmic_error":
+            change_parameter_with = "tf.losses.mean_squared_logarithmic_error()"
+            layer_name = "mean_squared_logarithmic_error"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "mse":
+            change_parameter_with = "tf.losses.mse()"
+            layer_name = "mse"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "msle":
+            change_parameter_with = "tf.losses.msle()"
+            layer_name = "msle"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "poisson":
+            change_parameter_with = "tf.losses.poisson()"
+            layer_name = "poisson"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "serialize":
+            change_parameter_with = "tf.losses.serialize()"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "sparse_categorical_crossentropy":
+            change_parameter_with = "tf.losses.sparse_categorical_crossentropy()"
+            layer_name = "sparse_categorical_crossentropy"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "squared_hinge":
+            change_parameter_with = "tf.losses.squared_hinge()"
+            layer_name = "squared_hinge"
+            mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        
+
 
         return mutated_line
