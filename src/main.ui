@@ -9012,342 +9012,342 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </item>
                         <item>
                          <property name="text">
-                          <string>ConvLSTM1D</string>
+                          <string>layers.ConvLSTM1D()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>ConvLSTM2D</string>
+                          <string>layers.ConvLSTM2D()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>ConvLSTM3D</string>
+                          <string>layers.ConvLSTM3D()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>Convolution1D</string>
+                          <string>layers.Convolution1D()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>Convolution1DTranspose</string>
+                          <string>layers.Convolution2DTranspose()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>Convolution2D</string>
+                          <string>layers.Convolution2D()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>Convolution2DTranspose</string>
+                          <string>layers.Convolution2DTranspose()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>Convolution3D</string>
+                          <string>layers.Convolution3D()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>Convolution3DTranspose</string>
+                          <string>layers.Convolution3DTranspose()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>Cropping1D</string>
+                          <string>layers.Cropping1D()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>Cropping2D</string>
+                          <string>layers.Cropping2D()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>Cropping3D</string>
+                          <string>layers.Cropping3D()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>SpectralNormalization</string>
+                          <string>layers.SpectralNormalization()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>StackedRNNCells</string>
+                          <string>layers.StackedRNNCells()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>StringLookup</string>
+                          <string>layers.StringLookup()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>Subtract</string>
+                          <string>layers.Subtract()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>TextVectorization</string>
+                          <string>layers.TextVectorization()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>ThresholdedReLU</string>
+                          <string>layers.ThresholdedReLU()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>TimeDistributed</string>
+                          <string>layers.ThresholdedReLU()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>UnitNormalization</string>
+                          <string>layers.UnitNormalization()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>UpSampling1D</string>
+                          <string>layers.UpSampling1D()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>UpSampling2D</string>
+                          <string>layers.UpSampling2D()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>UpSampling3D</string>
+                          <string>layers.UpSampling3D()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>Wrapper</string>
+                          <string>layers.Wrapper()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>ZeroPadding1D</string>
+                          <string>layers.ZeroPadding1D()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>ZeroPadding2D</string>
+                          <string>layers.ZeroPadding2D()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>ZeroPadding3D</string>
+                          <string>layers.ZeroPadding3D()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>add</string>
+                          <string>layers.add()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>average</string>
+                          <string>layers.average()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>concatenate</string>
+                          <string>layers.concatenate()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>deserialize</string>
+                          <string>layers.deserialize()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>dot</string>
+                          <string>layers.dot()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>maximum</string>
+                          <string>layers.maximum()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>minimum</string>
+                          <string>layers.minimum()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>multiply</string>
+                          <string>layers.multiply()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>serialize</string>
+                          <string>layers.serialize()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>subtract</string>
+                          <string>layers.subtract()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>BinaryCrossentropy</string>
+                          <string>losses.BinaryCrossentropy()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>BinaryFocalCrossentropy</string>
+                          <string>losses.BinaryFocalCrossentropy()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>CategoricalCrossentropy</string>
+                          <string>losses.CategoricalCrossentropy()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>CategoricalFocalCrossentropy</string>
+                          <string>losses.CategoricalFocalCrossentropy()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>CategoricalHinge</string>
+                          <string>losses.CategoricalHinge()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>CosineSimilarity</string>
+                          <string>losses.CosineSimilarity()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>Hinge</string>
+                          <string>losses.Hinge()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>Huber</string>
+                          <string>losses.Huber()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>KLD</string>
+                          <string>losses.KLD()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>KLDivergence</string>
+                          <string>losses.KLDivergence()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>LogCosh</string>
+                          <string>losses.LogCosh()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>Loss</string>
+                          <string>losses.Loss()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>MAE</string>
+                          <string>losses.MAE()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>MAPE</string>
+                          <string>losses.MAPE()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>MSE</string>
+                          <string>losses.MSE()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>MSLE</string>
+                          <string>losses.MSLE()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>MeanAbsoluteError</string>
+                          <string>losses.MeanAbsoluteError()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>MeanAbsolutePercentageError</string>
+                          <string>losses.MeanAbsolutePercentageError()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>MeanSquaredError</string>
+                          <string>losses.MeanSquaredError()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>MeanSquaredLogarithmicError</string>
+                          <string>losses.MeanSquaredLogarithmicError()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>Poisson</string>
+                          <string>losses.Poisson()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>Reduction</string>
+                          <string>losses.Reduction()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>SparseCategoricalCrossentropy</string>
+                          <string>losses.SparseCategoricalCrossentropy()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>SquaredHinge</string>
+                          <string>losses.SquaredHinge()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>binary_crossentropy</string>
+                          <string>losses.binary_crossentropy()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>binary_focal_crossentropy</string>
+                          <string>losses.binary_focal_crossentropy()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>categorical_crossentropy</string>
+                          <string>losses.categorical_crossentropy()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>categorical_focal_crossentropy</string>
+                          <string>losses.categorical_focal_crossentropy()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>categorical_hinge</string>
+                          <string>losses.categorical_hinge()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>cosine_similarity</string>
+                          <string>losses.cosine_similarity()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>deserialize</string>
+                          <string>losses.deserialize()</string>
                          </property>
                         </item>
                         <item>
@@ -9357,167 +9357,167 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </item>
                         <item>
                          <property name="text">
-                          <string>hinge</string>
+                          <string>losses.hinge()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>huber</string>
+                          <string>losses.huber()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>kl_divergence</string>
+                          <string>losses.kl_divergence()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>kld</string>
+                          <string>losses.kld()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>kullback_leibler_divergence</string>
+                          <string>losses.kullback_leibler_divergence()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>log_cosh</string>
+                          <string>losses.log_cosh()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>logcosh</string>
+                          <string>losses.logcosh()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>mae</string>
+                          <string>losses.mae()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>mape</string>
+                          <string>losses.mape()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>mean_absolute_error</string>
+                          <string>losses.mean_absolute_error()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>mean_absolute_percentage_error</string>
+                          <string>losses.mean_absolute_percentage_error()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>mean_squared_error</string>
+                          <string>losses.mean_squared_error()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>mean_squared_logarithmic_error</string>
+                          <string>losses.mean_squared_logarithmic_error()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>mse</string>
+                          <string>losses.mse()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>msle</string>
+                          <string>losses.msle()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>poisson</string>
+                          <string>losses.poisson()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>serialize</string>
+                          <string>losses.serialize()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>sparse_categorical_crossentropy</string>
+                          <string>losses.sparse_categorical_crossentropy()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>squared_hinge</string>
+                          <string>losses.squared_hinge()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>AvgPool1D</string>
+                          <string>layers.AvgPool1D()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>AvgPool2D</string>
+                          <string>layers.AvgPool2D()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>AvgPool3D</string>
+                          <string>layers.AvgPool3D()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>BatchNormalization</string>
+                          <string>layers.BatchNormalization()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>Bidirectional</string>
+                          <string>layers.Bidirectional()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>CategoryEncoding</string>
+                          <string>layers.CategoryEncoding()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>CenterCrop</string>
+                          <string>layers.CenterCrop()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>Concatenate</string>
+                          <string>layers.Concatenate()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>Conv1D</string>
+                          <string>layers.Conv1D()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>Conv1DTranspose</string>
+                          <string>layers.Conv1DTranspose()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>Conv2D</string>
+                          <string>layers.Conv2D()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>Conv2DTranspose</string>
+                          <string>layers.Conv2DTranspose()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>Conv3D</string>
+                          <string>layers.Conv3D()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>Conv3DTranspose</string>
+                          <string>layers.Conv3DTranspose()</string>
                          </property>
                         </item>
                         <item>
