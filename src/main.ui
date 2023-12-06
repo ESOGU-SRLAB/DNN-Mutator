@@ -9522,6 +9522,126 @@ li.checked::marker { content: &quot;\2612&quot;; }
                         </item>
                         <item>
                          <property name="text">
+                          <string>optimizers.Adadelta()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>optimizers.Adafactor()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>optimizers.Adagrad()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>optimizers.Adam()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>optimizers.Adamax()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>optimizers.Ftrl()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>optimizers.Nadam()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>optimizers.RMSprop()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>optimizers.SGD()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>optimizers.deserialize()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>optimizers.get()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>optimizers.legacy.Adadelta()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>optimizers.legacy.Adagrad()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>optimizers.legacy.Adam()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>optimizers.legacy.Adamax()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>optimizers.legacy.Ftrl()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>optimizers.legacy.Nadam()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>optimizers.legacy.RMSprop()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>optimizers.legacy.SGD()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>optimizers.schedules.CosineDecay()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>optimizers.schedules.ExponentialDecay()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>optimizers.schedules.PolynomialDecay()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>optimizers.schedules.deserialize()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>optimizers.schedules.serialize()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
                           <string>AbstractRNNCell</string>
                          </property>
                         </item>

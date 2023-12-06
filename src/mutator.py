@@ -114,9 +114,31 @@ def modify_tf_layer_in_code(source_code, layer_names,new_value):
 
 def modify_tf_losses_in_code(source_code, layer_names,new_value):
     for layer_name in layer_names:
-        pattern = rf"(tf\.keras\.losses\.\b{layer_names}\b\s*\()((?:[^()]|\([^)]*\))*)\)"
+        #pattern = rf"(tf\.keras\.losses\.\b{layer_names}\b\s*\()((?:[^()]|\([^)]*\))*)\)"
+        pattern = rf"(tf\.(keras\.)?losses\.\b{layer_names}\b\s*\()((?:[^()]|\([^)]*\))*)\)"
         # Bulunan ifadeyi değiştirmek için yeni değer
-        new_value = f"tf.keras.layers.{layer_names}()"
+        new_value = f"tf.keras.losses.{layer_names}()"
         # Regex kullanarak değişiklik yapma
         source_code = re.sub(pattern, new_value, source_code)
+    return source_code
+
+
+
+def modify_tf_optimizers_in_code(source_code, layer_names,new_value):
+    
+    for layer_name in layer_names:
+        # 'legacy' ve 'schedules' ifadeleri için özel desenler
+        pattern_legacy = rf"(tf\.keras\.optimizers\.legacy\.\b{layer_names}\b\s*\()((?:[^()]|\([^)]*\))*)\)"
+        pattern_schedules = rf"(tf\.keras\.optimizers\.schedules\.\b{layer_names}\b\s*\()((?:[^()]|\([^)]*\))*)\)"
+        
+        if re.search(pattern_legacy, source_code):
+            # 'legacy' için yeni değer
+            new_value = f"tf.keras.optimizers.{layer_names}()"
+            source_code = re.sub(pattern_legacy, new_value, source_code)
+        elif re.search(pattern_schedules, source_code):
+            # 'schedules' için yeni değer
+            new_value = f"tf.keras.optimizers.{layer_names}()"
+            source_code = re.sub(pattern_schedules, new_value, source_code)
+        #elif():
+            #new_value = f"tf.keras.optimizers.{layer_names}()"
     return source_code
