@@ -4175,6 +4175,114 @@ class Ui_MainWindow(object):
         QListWidgetItem(self.listWidget_mutate_list)
         QListWidgetItem(self.listWidget_mutate_list)
         QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
+        QListWidgetItem(self.listWidget_mutate_list)
         self.listWidget_mutate_list.setObjectName(u"listWidget_mutate_list")
         self.listWidget_mutate_list.setGeometry(QRect(10, 100, 351, 251))
         self.listWidget_mutate_list.setStyleSheet(u"background-color: rgb(52, 59, 72);")
@@ -5683,45 +5791,261 @@ class Ui_MainWindow(object):
         ___qlistwidgetitem536 = self.listWidget_mutate_list.item(214)
         ___qlistwidgetitem536.setText(QCoreApplication.translate("MainWindow", u"nn.with_space_to_batch", None));
         ___qlistwidgetitem537 = self.listWidget_mutate_list.item(215)
-        ___qlistwidgetitem537.setText(QCoreApplication.translate("MainWindow", u"nn.zero_fraction", None));
+        ___qlistwidgetitem537.setText(QCoreApplication.translate("MainWindow", u"raw_ops.BlockLSTM", None));
         ___qlistwidgetitem538 = self.listWidget_mutate_list.item(216)
-        ___qlistwidgetitem538.setText(QCoreApplication.translate("MainWindow", u"AbstractRNNCell", None));
+        ___qlistwidgetitem538.setText(QCoreApplication.translate("MainWindow", u"raw_ops.BlockLSTMGrad", None));
         ___qlistwidgetitem539 = self.listWidget_mutate_list.item(217)
-        ___qlistwidgetitem539.setText(QCoreApplication.translate("MainWindow", u"Activation", None));
+        ___qlistwidgetitem539.setText(QCoreApplication.translate("MainWindow", u"raw_ops.BlockLSTMGradV2", None));
         ___qlistwidgetitem540 = self.listWidget_mutate_list.item(218)
-        ___qlistwidgetitem540.setText(QCoreApplication.translate("MainWindow", u"ActivityRegularization", None));
+        ___qlistwidgetitem540.setText(QCoreApplication.translate("MainWindow", u"raw_ops.BlockLSTMV2", None));
         ___qlistwidgetitem541 = self.listWidget_mutate_list.item(219)
-        ___qlistwidgetitem541.setText(QCoreApplication.translate("MainWindow", u"Average", None));
+        ___qlistwidgetitem541.setText(QCoreApplication.translate("MainWindow", u"raw_ops.BoostedTreesTrainingPredict", None));
         ___qlistwidgetitem542 = self.listWidget_mutate_list.item(220)
-        ___qlistwidgetitem542.setText(QCoreApplication.translate("MainWindow", u"AveragePooling1D", None));
+        ___qlistwidgetitem542.setText(QCoreApplication.translate("MainWindow", u"raw_ops.CSRSparseMatrixToDense", None));
         ___qlistwidgetitem543 = self.listWidget_mutate_list.item(221)
-        ___qlistwidgetitem543.setText(QCoreApplication.translate("MainWindow", u"AveragePooling2D", None));
+        ___qlistwidgetitem543.setText(QCoreApplication.translate("MainWindow", u"raw_ops.CTCLoss", None));
         ___qlistwidgetitem544 = self.listWidget_mutate_list.item(222)
-        ___qlistwidgetitem544.setText(QCoreApplication.translate("MainWindow", u"AveragePooling3D", None));
+        ___qlistwidgetitem544.setText(QCoreApplication.translate("MainWindow", u"raw_ops.CTCLossV2", None));
         ___qlistwidgetitem545 = self.listWidget_mutate_list.item(223)
-        ___qlistwidgetitem545.setText(QCoreApplication.translate("MainWindow", u"momentum", None));
+        ___qlistwidgetitem545.setText(QCoreApplication.translate("MainWindow", u"raw_ops.Conv", None));
         ___qlistwidgetitem546 = self.listWidget_mutate_list.item(224)
-        ___qlistwidgetitem546.setText(QCoreApplication.translate("MainWindow", u"input_shape", None));
+        ___qlistwidgetitem546.setText(QCoreApplication.translate("MainWindow", u"raw_ops.Conv2D", None));
         ___qlistwidgetitem547 = self.listWidget_mutate_list.item(225)
-        ___qlistwidgetitem547.setText(QCoreApplication.translate("MainWindow", u"AlphaDropout", None));
+        ___qlistwidgetitem547.setText(QCoreApplication.translate("MainWindow", u"raw_ops.Conv2DBackpropFilter", None));
         ___qlistwidgetitem548 = self.listWidget_mutate_list.item(226)
-        ___qlistwidgetitem548.setText(QCoreApplication.translate("MainWindow", u"MaxPooling2D", None));
+        ___qlistwidgetitem548.setText(QCoreApplication.translate("MainWindow", u"raw_ops.Conv2DBackpropFilterV2", None));
         ___qlistwidgetitem549 = self.listWidget_mutate_list.item(227)
-        ___qlistwidgetitem549.setText(QCoreApplication.translate("MainWindow", u"Conv2D", None));
+        ___qlistwidgetitem549.setText(QCoreApplication.translate("MainWindow", u"raw_ops.Conv2DBackpropInput", None));
         ___qlistwidgetitem550 = self.listWidget_mutate_list.item(228)
-        ___qlistwidgetitem550.setText(QCoreApplication.translate("MainWindow", u"learning_rate", None));
+        ___qlistwidgetitem550.setText(QCoreApplication.translate("MainWindow", u"raw_ops.Conv2DBackpropInputV2", None));
         ___qlistwidgetitem551 = self.listWidget_mutate_list.item(229)
-        ___qlistwidgetitem551.setText(QCoreApplication.translate("MainWindow", u"batch_size", None));
+        ___qlistwidgetitem551.setText(QCoreApplication.translate("MainWindow", u"raw_ops.Conv3D", None));
         ___qlistwidgetitem552 = self.listWidget_mutate_list.item(230)
-        ___qlistwidgetitem552.setText(QCoreApplication.translate("MainWindow", u"dropout_rate", None));
+        ___qlistwidgetitem552.setText(QCoreApplication.translate("MainWindow", u"raw_ops.Conv3DBackpropFilter", None));
         ___qlistwidgetitem553 = self.listWidget_mutate_list.item(231)
-        ___qlistwidgetitem553.setText(QCoreApplication.translate("MainWindow", u"Dropout", None));
+        ___qlistwidgetitem553.setText(QCoreApplication.translate("MainWindow", u"raw_ops.Conv3DBackpropFilterV2", None));
         ___qlistwidgetitem554 = self.listWidget_mutate_list.item(232)
-        ___qlistwidgetitem554.setText(QCoreApplication.translate("MainWindow", u"regularization", None));
+        ___qlistwidgetitem554.setText(QCoreApplication.translate("MainWindow", u"raw_ops.Conv3DBackpropInput", None));
         ___qlistwidgetitem555 = self.listWidget_mutate_list.item(233)
-        ___qlistwidgetitem555.setText(QCoreApplication.translate("MainWindow", u"loss", None));
+        ___qlistwidgetitem555.setText(QCoreApplication.translate("MainWindow", u"raw_ops.Conv3DBackpropInputV2", None));
         ___qlistwidgetitem556 = self.listWidget_mutate_list.item(234)
-        ___qlistwidgetitem556.setText(QCoreApplication.translate("MainWindow", u"activation", None));
+        ___qlistwidgetitem556.setText(QCoreApplication.translate("MainWindow", u"raw_ops.CudnnRNN", None));
+        ___qlistwidgetitem557 = self.listWidget_mutate_list.item(235)
+        ___qlistwidgetitem557.setText(QCoreApplication.translate("MainWindow", u"raw_ops.CudnnRNNBackprop", None));
+        ___qlistwidgetitem558 = self.listWidget_mutate_list.item(236)
+        ___qlistwidgetitem558.setText(QCoreApplication.translate("MainWindow", u"raw_ops.CudnnRNNBackpropV2", None));
+        ___qlistwidgetitem559 = self.listWidget_mutate_list.item(237)
+        ___qlistwidgetitem559.setText(QCoreApplication.translate("MainWindow", u"raw_ops.CudnnRNNBackpropV3", None));
+        ___qlistwidgetitem560 = self.listWidget_mutate_list.item(238)
+        ___qlistwidgetitem560.setText(QCoreApplication.translate("MainWindow", u"raw_ops.CudnnRNNCanonicalToParams", None));
+        ___qlistwidgetitem561 = self.listWidget_mutate_list.item(239)
+        ___qlistwidgetitem561.setText(QCoreApplication.translate("MainWindow", u"raw_ops.CudnnRNNCanonicalToParamsV2", None));
+        ___qlistwidgetitem562 = self.listWidget_mutate_list.item(240)
+        ___qlistwidgetitem562.setText(QCoreApplication.translate("MainWindow", u"raw_ops.CudnnRNNParamsSize", None));
+        ___qlistwidgetitem563 = self.listWidget_mutate_list.item(241)
+        ___qlistwidgetitem563.setText(QCoreApplication.translate("MainWindow", u"raw_ops.CudnnRNNParamsToCanonical", None));
+        ___qlistwidgetitem564 = self.listWidget_mutate_list.item(242)
+        ___qlistwidgetitem564.setText(QCoreApplication.translate("MainWindow", u"raw_ops.CudnnRNNParamsToCanonicalV2", None));
+        ___qlistwidgetitem565 = self.listWidget_mutate_list.item(243)
+        ___qlistwidgetitem565.setText(QCoreApplication.translate("MainWindow", u"raw_ops.CudnnRNNV2", None));
+        ___qlistwidgetitem566 = self.listWidget_mutate_list.item(244)
+        ___qlistwidgetitem566.setText(QCoreApplication.translate("MainWindow", u"raw_ops.CudnnRNNV3", None));
+        ___qlistwidgetitem567 = self.listWidget_mutate_list.item(245)
+        ___qlistwidgetitem567.setText(QCoreApplication.translate("MainWindow", u"raw_ops.DenseBincount", None));
+        ___qlistwidgetitem568 = self.listWidget_mutate_list.item(246)
+        ___qlistwidgetitem568.setText(QCoreApplication.translate("MainWindow", u"raw_ops.DenseCountSparseOutput", None));
+        ___qlistwidgetitem569 = self.listWidget_mutate_list.item(247)
+        ___qlistwidgetitem569.setText(QCoreApplication.translate("MainWindow", u"raw_ops.DenseToCSRSparseMatrix", None));
+        ___qlistwidgetitem570 = self.listWidget_mutate_list.item(248)
+        ___qlistwidgetitem570.setText(QCoreApplication.translate("MainWindow", u"raw_ops.DenseToDenseSetOperation", None));
+        ___qlistwidgetitem571 = self.listWidget_mutate_list.item(249)
+        ___qlistwidgetitem571.setText(QCoreApplication.translate("MainWindow", u"raw_ops.DenseToSparseBatchDataset", None));
+        ___qlistwidgetitem572 = self.listWidget_mutate_list.item(250)
+        ___qlistwidgetitem572.setText(QCoreApplication.translate("MainWindow", u"raw_ops.DenseToSparseSetOperation", None));
+        ___qlistwidgetitem573 = self.listWidget_mutate_list.item(251)
+        ___qlistwidgetitem573.setText(QCoreApplication.translate("MainWindow", u"raw_ops.DepthwiseConv2dNative", None));
+        ___qlistwidgetitem574 = self.listWidget_mutate_list.item(252)
+        ___qlistwidgetitem574.setText(QCoreApplication.translate("MainWindow", u"raw_ops.DepthwiseConv2dNativeBackpropFilter", None));
+        ___qlistwidgetitem575 = self.listWidget_mutate_list.item(253)
+        ___qlistwidgetitem575.setText(QCoreApplication.translate("MainWindow", u"raw_ops.DepthwiseConv2dNativeBackpropInput", None));
+        ___qlistwidgetitem576 = self.listWidget_mutate_list.item(254)
+        ___qlistwidgetitem576.setText(QCoreApplication.translate("MainWindow", u"raw_ops.FusedPadConv2D", None));
+        ___qlistwidgetitem577 = self.listWidget_mutate_list.item(255)
+        ___qlistwidgetitem577.setText(QCoreApplication.translate("MainWindow", u"raw_ops.FusedResizeAndPadConv2D", None));
+        ___qlistwidgetitem578 = self.listWidget_mutate_list.item(256)
+        ___qlistwidgetitem578.setText(QCoreApplication.translate("MainWindow", u"raw_ops.GRUBlockCell", None));
+        ___qlistwidgetitem579 = self.listWidget_mutate_list.item(257)
+        ___qlistwidgetitem579.setText(QCoreApplication.translate("MainWindow", u"raw_ops.GRUBlockCellGrad", None));
+        ___qlistwidgetitem580 = self.listWidget_mutate_list.item(258)
+        ___qlistwidgetitem580.setText(QCoreApplication.translate("MainWindow", u"raw_ops.L2Loss", None));
+        ___qlistwidgetitem581 = self.listWidget_mutate_list.item(259)
+        ___qlistwidgetitem581.setText(QCoreApplication.translate("MainWindow", u"raw_ops.LSTMBlockCell", None));
+        ___qlistwidgetitem582 = self.listWidget_mutate_list.item(260)
+        ___qlistwidgetitem582.setText(QCoreApplication.translate("MainWindow", u"raw_ops.LSTMBlockCellGrad", None));
+        ___qlistwidgetitem583 = self.listWidget_mutate_list.item(261)
+        ___qlistwidgetitem583.setText(QCoreApplication.translate("MainWindow", u"raw_ops.QuantizedConv2D", None));
+        ___qlistwidgetitem584 = self.listWidget_mutate_list.item(262)
+        ___qlistwidgetitem584.setText(QCoreApplication.translate("MainWindow", u"raw_ops.QuantizedConv2DAndRelu", None));
+        ___qlistwidgetitem585 = self.listWidget_mutate_list.item(263)
+        ___qlistwidgetitem585.setText(QCoreApplication.translate("MainWindow", u"raw_ops.QuantizedConv2DAndReluAndRequantize", None));
+        ___qlistwidgetitem586 = self.listWidget_mutate_list.item(264)
+        ___qlistwidgetitem586.setText(QCoreApplication.translate("MainWindow", u"raw_ops.QuantizedConv2DAndRequantize", None));
+        ___qlistwidgetitem587 = self.listWidget_mutate_list.item(265)
+        ___qlistwidgetitem587.setText(QCoreApplication.translate("MainWindow", u"raw_ops.QuantizedConv2DPerChannel", None));
+        ___qlistwidgetitem588 = self.listWidget_mutate_list.item(266)
+        ___qlistwidgetitem588.setText(QCoreApplication.translate("MainWindow", u"raw_ops.QuantizedConv2DWithBias", None));
+        ___qlistwidgetitem589 = self.listWidget_mutate_list.item(267)
+        ___qlistwidgetitem589.setText(QCoreApplication.translate("MainWindow", u"raw_ops.QuantizedConv2DWithBiasAndRelu", None));
+        ___qlistwidgetitem590 = self.listWidget_mutate_list.item(268)
+        ___qlistwidgetitem590.setText(QCoreApplication.translate("MainWindow", u"raw_ops.QuantizedConv2DWithBiasAndReluAndRequantize", None));
+        ___qlistwidgetitem591 = self.listWidget_mutate_list.item(269)
+        ___qlistwidgetitem591.setText(QCoreApplication.translate("MainWindow", u"raw_ops.QuantizedConv2DWithBiasAndRequantize", None));
+        ___qlistwidgetitem592 = self.listWidget_mutate_list.item(270)
+        ___qlistwidgetitem592.setText(QCoreApplication.translate("MainWindow", u"raw_ops.QuantizedConv2DWithBiasSignedSumAndReluAndRequantize", None));
+        ___qlistwidgetitem593 = self.listWidget_mutate_list.item(271)
+        ___qlistwidgetitem593.setText(QCoreApplication.translate("MainWindow", u"raw_ops.QuantizedConv2DWithBiasSumAndRelu", None));
+        ___qlistwidgetitem594 = self.listWidget_mutate_list.item(272)
+        ___qlistwidgetitem594.setText(QCoreApplication.translate("MainWindow", u"raw_ops.QuantizedConv2DWithBiasSumAndReluAndRequantize", None));
+        ___qlistwidgetitem595 = self.listWidget_mutate_list.item(273)
+        ___qlistwidgetitem595.setText(QCoreApplication.translate("MainWindow", u"raw_ops.QuantizedDepthwiseConv2D", None));
+        ___qlistwidgetitem596 = self.listWidget_mutate_list.item(274)
+        ___qlistwidgetitem596.setText(QCoreApplication.translate("MainWindow", u"raw_ops.QuantizedDepthwiseConv2DWithBias", None));
+        ___qlistwidgetitem597 = self.listWidget_mutate_list.item(275)
+        ___qlistwidgetitem597.setText(QCoreApplication.translate("MainWindow", u"raw_ops.QuantizedDepthwiseConv2DWithBiasAndRelu", None));
+        ___qlistwidgetitem598 = self.listWidget_mutate_list.item(276)
+        ___qlistwidgetitem598.setText(QCoreApplication.translate("MainWindow", u"raw_ops.QuantizedDepthwiseConv2DWithBiasAndReluAndRequantize", None));
+        ___qlistwidgetitem599 = self.listWidget_mutate_list.item(277)
+        ___qlistwidgetitem599.setText(QCoreApplication.translate("MainWindow", u"raw_ops.RecvTPUEmbeddingActivations", None));
+        ___qlistwidgetitem600 = self.listWidget_mutate_list.item(278)
+        ___qlistwidgetitem600.setText(QCoreApplication.translate("MainWindow", u"raw_ops.SdcaOptimizer", None));
+        ___qlistwidgetitem601 = self.listWidget_mutate_list.item(279)
+        ___qlistwidgetitem601.setText(QCoreApplication.translate("MainWindow", u"raw_ops.SdcaOptimizerV2", None));
+        ___qlistwidgetitem602 = self.listWidget_mutate_list.item(280)
+        ___qlistwidgetitem602.setText(QCoreApplication.translate("MainWindow", u"raw_ops.SparseDenseCwiseAdd", None));
+        ___qlistwidgetitem603 = self.listWidget_mutate_list.item(281)
+        ___qlistwidgetitem603.setText(QCoreApplication.translate("MainWindow", u"raw_ops.SparseDenseCwiseDiv", None));
+        ___qlistwidgetitem604 = self.listWidget_mutate_list.item(282)
+        ___qlistwidgetitem604.setText(QCoreApplication.translate("MainWindow", u"raw_ops.SparseDenseCwiseMul", None));
+        ___qlistwidgetitem605 = self.listWidget_mutate_list.item(283)
+        ___qlistwidgetitem605.setText(QCoreApplication.translate("MainWindow", u"raw_ops.SparseTensorDenseAdd", None));
+        ___qlistwidgetitem606 = self.listWidget_mutate_list.item(284)
+        ___qlistwidgetitem606.setText(QCoreApplication.translate("MainWindow", u"raw_ops.SparseTensorDenseMatMul", None));
+        ___qlistwidgetitem607 = self.listWidget_mutate_list.item(285)
+        ___qlistwidgetitem607.setText(QCoreApplication.translate("MainWindow", u"raw_ops.SparseToDense", None));
+        ___qlistwidgetitem608 = self.listWidget_mutate_list.item(286)
+        ___qlistwidgetitem608.setText(QCoreApplication.translate("MainWindow", u"raw_ops.TPUEmbeddingActivations", None));
+        ___qlistwidgetitem609 = self.listWidget_mutate_list.item(287)
+        ___qlistwidgetitem609.setText(QCoreApplication.translate("MainWindow", u"raw_ops.UniformQuantizedConvolution", None));
+        ___qlistwidgetitem610 = self.listWidget_mutate_list.item(288)
+        ___qlistwidgetitem610.setText(QCoreApplication.translate("MainWindow", u"raw_ops.UniformQuantizedConvolutionHybrid", None));
+        ___qlistwidgetitem611 = self.listWidget_mutate_list.item(289)
+        ___qlistwidgetitem611.setText(QCoreApplication.translate("MainWindow", u"raw_ops.RecvTPUEmbeddingActivations", None));
+        ___qlistwidgetitem612 = self.listWidget_mutate_list.item(290)
+        ___qlistwidgetitem612.setText(QCoreApplication.translate("MainWindow", u"raw_ops.SdcaOptimizer", None));
+        ___qlistwidgetitem613 = self.listWidget_mutate_list.item(291)
+        ___qlistwidgetitem613.setText(QCoreApplication.translate("MainWindow", u"raw_ops.SdcaOptimizerV2", None));
+        ___qlistwidgetitem614 = self.listWidget_mutate_list.item(292)
+        ___qlistwidgetitem614.setText(QCoreApplication.translate("MainWindow", u"raw_ops.L2Loss", None));
+        ___qlistwidgetitem615 = self.listWidget_mutate_list.item(293)
+        ___qlistwidgetitem615.setText(QCoreApplication.translate("MainWindow", u"raw_ops.LSTMBlockCell", None));
+        ___qlistwidgetitem616 = self.listWidget_mutate_list.item(294)
+        ___qlistwidgetitem616.setText(QCoreApplication.translate("MainWindow", u"raw_ops.LSTMBlockCellGrad", None));
+        ___qlistwidgetitem617 = self.listWidget_mutate_list.item(295)
+        ___qlistwidgetitem617.setText(QCoreApplication.translate("MainWindow", u"raw_ops.QuantizedConv2D", None));
+        ___qlistwidgetitem618 = self.listWidget_mutate_list.item(296)
+        ___qlistwidgetitem618.setText(QCoreApplication.translate("MainWindow", u"raw_ops.QuantizedConv2DAndRelu", None));
+        ___qlistwidgetitem619 = self.listWidget_mutate_list.item(297)
+        ___qlistwidgetitem619.setText(QCoreApplication.translate("MainWindow", u"raw_ops.QuantizedConv2DAndReluAndRequantize", None));
+        ___qlistwidgetitem620 = self.listWidget_mutate_list.item(298)
+        ___qlistwidgetitem620.setText(QCoreApplication.translate("MainWindow", u"raw_ops.QuantizedConv2DAndRequantize", None));
+        ___qlistwidgetitem621 = self.listWidget_mutate_list.item(299)
+        ___qlistwidgetitem621.setText(QCoreApplication.translate("MainWindow", u"raw_ops.QuantizedConv2DPerChannel", None));
+        ___qlistwidgetitem622 = self.listWidget_mutate_list.item(300)
+        ___qlistwidgetitem622.setText(QCoreApplication.translate("MainWindow", u"raw_ops.QuantizedConv2DWithBias", None));
+        ___qlistwidgetitem623 = self.listWidget_mutate_list.item(301)
+        ___qlistwidgetitem623.setText(QCoreApplication.translate("MainWindow", u"raw_ops.QuantizedConv2DWithBiasAndRelu", None));
+        ___qlistwidgetitem624 = self.listWidget_mutate_list.item(302)
+        ___qlistwidgetitem624.setText(QCoreApplication.translate("MainWindow", u"raw_ops.QuantizedConv2DWithBiasAndReluAndRequantize", None));
+        ___qlistwidgetitem625 = self.listWidget_mutate_list.item(303)
+        ___qlistwidgetitem625.setText(QCoreApplication.translate("MainWindow", u"raw_ops.QuantizedConv2DWithBiasAndRequantize", None));
+        ___qlistwidgetitem626 = self.listWidget_mutate_list.item(304)
+        ___qlistwidgetitem626.setText(QCoreApplication.translate("MainWindow", u"raw_ops.QuantizedConv2DWithBiasSignedSumAndReluAndRequantize", None));
+        ___qlistwidgetitem627 = self.listWidget_mutate_list.item(305)
+        ___qlistwidgetitem627.setText(QCoreApplication.translate("MainWindow", u"raw_ops.QuantizedConv2DWithBiasSumAndRelu", None));
+        ___qlistwidgetitem628 = self.listWidget_mutate_list.item(306)
+        ___qlistwidgetitem628.setText(QCoreApplication.translate("MainWindow", u"raw_ops.QuantizedConv2DWithBiasSumAndReluAndRequantize", None));
+        ___qlistwidgetitem629 = self.listWidget_mutate_list.item(307)
+        ___qlistwidgetitem629.setText(QCoreApplication.translate("MainWindow", u"raw_ops.QuantizedDepthwiseConv2D", None));
+        ___qlistwidgetitem630 = self.listWidget_mutate_list.item(308)
+        ___qlistwidgetitem630.setText(QCoreApplication.translate("MainWindow", u"raw_ops.QuantizedDepthwiseConv2DWithBias", None));
+        ___qlistwidgetitem631 = self.listWidget_mutate_list.item(309)
+        ___qlistwidgetitem631.setText(QCoreApplication.translate("MainWindow", u"raw_ops.QuantizedDepthwiseConv2DWithBiasAndRelu", None));
+        ___qlistwidgetitem632 = self.listWidget_mutate_list.item(310)
+        ___qlistwidgetitem632.setText(QCoreApplication.translate("MainWindow", u"raw_ops.QuantizedDepthwiseConv2DWithBiasAndReluAndRequantize", None));
+        ___qlistwidgetitem633 = self.listWidget_mutate_list.item(311)
+        ___qlistwidgetitem633.setText(QCoreApplication.translate("MainWindow", u"raw_ops.RecvTPUEmbeddingActivations", None));
+        ___qlistwidgetitem634 = self.listWidget_mutate_list.item(312)
+        ___qlistwidgetitem634.setText(QCoreApplication.translate("MainWindow", u"raw_ops.SdcaOptimizer", None));
+        ___qlistwidgetitem635 = self.listWidget_mutate_list.item(313)
+        ___qlistwidgetitem635.setText(QCoreApplication.translate("MainWindow", u"raw_ops.SdcaOptimizerV2", None));
+        ___qlistwidgetitem636 = self.listWidget_mutate_list.item(314)
+        ___qlistwidgetitem636.setText(QCoreApplication.translate("MainWindow", u"raw_ops.SparseDenseCwiseAdd", None));
+        ___qlistwidgetitem637 = self.listWidget_mutate_list.item(315)
+        ___qlistwidgetitem637.setText(QCoreApplication.translate("MainWindow", u"raw_ops.SparseDenseCwiseDiv", None));
+        ___qlistwidgetitem638 = self.listWidget_mutate_list.item(316)
+        ___qlistwidgetitem638.setText(QCoreApplication.translate("MainWindow", u"raw_ops.SparseDenseCwiseMul", None));
+        ___qlistwidgetitem639 = self.listWidget_mutate_list.item(317)
+        ___qlistwidgetitem639.setText(QCoreApplication.translate("MainWindow", u"raw_ops.SparseTensorDenseAdd", None));
+        ___qlistwidgetitem640 = self.listWidget_mutate_list.item(318)
+        ___qlistwidgetitem640.setText(QCoreApplication.translate("MainWindow", u"raw_ops.SparseTensorDenseMatMul", None));
+        ___qlistwidgetitem641 = self.listWidget_mutate_list.item(319)
+        ___qlistwidgetitem641.setText(QCoreApplication.translate("MainWindow", u"raw_ops.SparseToDense", None));
+        ___qlistwidgetitem642 = self.listWidget_mutate_list.item(320)
+        ___qlistwidgetitem642.setText(QCoreApplication.translate("MainWindow", u"raw_ops.TPUEmbeddingActivations", None));
+        ___qlistwidgetitem643 = self.listWidget_mutate_list.item(321)
+        ___qlistwidgetitem643.setText(QCoreApplication.translate("MainWindow", u"raw_ops.UniformQuantizedConvolution", None));
+        ___qlistwidgetitem644 = self.listWidget_mutate_list.item(322)
+        ___qlistwidgetitem644.setText(QCoreApplication.translate("MainWindow", u"raw_ops.UniformQuantizedConvolutionHybrid", None));
+        ___qlistwidgetitem645 = self.listWidget_mutate_list.item(323)
+        ___qlistwidgetitem645.setText(QCoreApplication.translate("MainWindow", u"nn.zero_fraction", None));
+        ___qlistwidgetitem646 = self.listWidget_mutate_list.item(324)
+        ___qlistwidgetitem646.setText(QCoreApplication.translate("MainWindow", u"AbstractRNNCell", None));
+        ___qlistwidgetitem647 = self.listWidget_mutate_list.item(325)
+        ___qlistwidgetitem647.setText(QCoreApplication.translate("MainWindow", u"Activation", None));
+        ___qlistwidgetitem648 = self.listWidget_mutate_list.item(326)
+        ___qlistwidgetitem648.setText(QCoreApplication.translate("MainWindow", u"ActivityRegularization", None));
+        ___qlistwidgetitem649 = self.listWidget_mutate_list.item(327)
+        ___qlistwidgetitem649.setText(QCoreApplication.translate("MainWindow", u"Average", None));
+        ___qlistwidgetitem650 = self.listWidget_mutate_list.item(328)
+        ___qlistwidgetitem650.setText(QCoreApplication.translate("MainWindow", u"AveragePooling1D", None));
+        ___qlistwidgetitem651 = self.listWidget_mutate_list.item(329)
+        ___qlistwidgetitem651.setText(QCoreApplication.translate("MainWindow", u"AveragePooling2D", None));
+        ___qlistwidgetitem652 = self.listWidget_mutate_list.item(330)
+        ___qlistwidgetitem652.setText(QCoreApplication.translate("MainWindow", u"AveragePooling3D", None));
+        ___qlistwidgetitem653 = self.listWidget_mutate_list.item(331)
+        ___qlistwidgetitem653.setText(QCoreApplication.translate("MainWindow", u"momentum", None));
+        ___qlistwidgetitem654 = self.listWidget_mutate_list.item(332)
+        ___qlistwidgetitem654.setText(QCoreApplication.translate("MainWindow", u"input_shape", None));
+        ___qlistwidgetitem655 = self.listWidget_mutate_list.item(333)
+        ___qlistwidgetitem655.setText(QCoreApplication.translate("MainWindow", u"AlphaDropout", None));
+        ___qlistwidgetitem656 = self.listWidget_mutate_list.item(334)
+        ___qlistwidgetitem656.setText(QCoreApplication.translate("MainWindow", u"MaxPooling2D", None));
+        ___qlistwidgetitem657 = self.listWidget_mutate_list.item(335)
+        ___qlistwidgetitem657.setText(QCoreApplication.translate("MainWindow", u"Conv2D", None));
+        ___qlistwidgetitem658 = self.listWidget_mutate_list.item(336)
+        ___qlistwidgetitem658.setText(QCoreApplication.translate("MainWindow", u"learning_rate", None));
+        ___qlistwidgetitem659 = self.listWidget_mutate_list.item(337)
+        ___qlistwidgetitem659.setText(QCoreApplication.translate("MainWindow", u"batch_size", None));
+        ___qlistwidgetitem660 = self.listWidget_mutate_list.item(338)
+        ___qlistwidgetitem660.setText(QCoreApplication.translate("MainWindow", u"dropout_rate", None));
+        ___qlistwidgetitem661 = self.listWidget_mutate_list.item(339)
+        ___qlistwidgetitem661.setText(QCoreApplication.translate("MainWindow", u"Dropout", None));
+        ___qlistwidgetitem662 = self.listWidget_mutate_list.item(340)
+        ___qlistwidgetitem662.setText(QCoreApplication.translate("MainWindow", u"regularization", None));
+        ___qlistwidgetitem663 = self.listWidget_mutate_list.item(341)
+        ___qlistwidgetitem663.setText(QCoreApplication.translate("MainWindow", u"loss", None));
+        ___qlistwidgetitem664 = self.listWidget_mutate_list.item(342)
+        ___qlistwidgetitem664.setText(QCoreApplication.translate("MainWindow", u"activation", None));
         self.listWidget_mutate_list.setSortingEnabled(__sortingEnabled4)
 
         self.label_25.setText(QCoreApplication.translate("MainWindow", u"Mutated Code", None))
@@ -5733,50 +6057,50 @@ class Ui_MainWindow(object):
 
         __sortingEnabled5 = self.dnn_code_snippet_list.isSortingEnabled()
         self.dnn_code_snippet_list.setSortingEnabled(False)
-        ___qlistwidgetitem557 = self.dnn_code_snippet_list.item(0)
-        ___qlistwidgetitem557.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.MaxPooling2D", None));
-        ___qlistwidgetitem558 = self.dnn_code_snippet_list.item(1)
-        ___qlistwidgetitem558.setText(QCoreApplication.translate("MainWindow", u"epochs", None));
-        ___qlistwidgetitem559 = self.dnn_code_snippet_list.item(2)
-        ___qlistwidgetitem559.setText(QCoreApplication.translate("MainWindow", u"epoch", None));
-        ___qlistwidgetitem560 = self.dnn_code_snippet_list.item(3)
-        ___qlistwidgetitem560.setText(QCoreApplication.translate("MainWindow", u"layer.activation", None));
-        ___qlistwidgetitem561 = self.dnn_code_snippet_list.item(4)
-        ___qlistwidgetitem561.setText(QCoreApplication.translate("MainWindow", u"model.add", None));
-        ___qlistwidgetitem562 = self.dnn_code_snippet_list.item(5)
-        ___qlistwidgetitem562.setText(QCoreApplication.translate("MainWindow", u"model.pop", None));
-        ___qlistwidgetitem563 = self.dnn_code_snippet_list.item(6)
-        ___qlistwidgetitem563.setText(QCoreApplication.translate("MainWindow", u"optimizer.lr", None));
-        ___qlistwidgetitem564 = self.dnn_code_snippet_list.item(7)
-        ___qlistwidgetitem564.setText(QCoreApplication.translate("MainWindow", u"layer.dropout", None));
-        ___qlistwidgetitem565 = self.dnn_code_snippet_list.item(8)
-        ___qlistwidgetitem565.setText(QCoreApplication.translate("MainWindow", u"layer.filters", None));
-        ___qlistwidgetitem566 = self.dnn_code_snippet_list.item(9)
-        ___qlistwidgetitem566.setText(QCoreApplication.translate("MainWindow", u"layer.units", None));
-        ___qlistwidgetitem567 = self.dnn_code_snippet_list.item(10)
-        ___qlistwidgetitem567.setText(QCoreApplication.translate("MainWindow", u"layer.kernel_initializer", None));
-        ___qlistwidgetitem568 = self.dnn_code_snippet_list.item(11)
-        ___qlistwidgetitem568.setText(QCoreApplication.translate("MainWindow", u"layer.kernel_constraint", None));
-        ___qlistwidgetitem569 = self.dnn_code_snippet_list.item(12)
-        ___qlistwidgetitem569.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.InputLayer", None));
-        ___qlistwidgetitem570 = self.dnn_code_snippet_list.item(13)
-        ___qlistwidgetitem570.setText(QCoreApplication.translate("MainWindow", u"model.loss", None));
-        ___qlistwidgetitem571 = self.dnn_code_snippet_list.item(14)
-        ___qlistwidgetitem571.setText(QCoreApplication.translate("MainWindow", u"model.optimizer", None));
-        ___qlistwidgetitem572 = self.dnn_code_snippet_list.item(15)
-        ___qlistwidgetitem572.setText(QCoreApplication.translate("MainWindow", u"layer.bias_initializer", None));
-        ___qlistwidgetitem573 = self.dnn_code_snippet_list.item(16)
-        ___qlistwidgetitem573.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Dropout", None));
-        ___qlistwidgetitem574 = self.dnn_code_snippet_list.item(17)
-        ___qlistwidgetitem574.setText(QCoreApplication.translate("MainWindow", u"tf.data.Dataset", None));
-        ___qlistwidgetitem575 = self.dnn_code_snippet_list.item(18)
-        ___qlistwidgetitem575.setText(QCoreApplication.translate("MainWindow", u"tf.keras.initializers.Constant", None));
-        ___qlistwidgetitem576 = self.dnn_code_snippet_list.item(19)
-        ___qlistwidgetitem576.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.AvgPooling2D", None));
-        ___qlistwidgetitem577 = self.dnn_code_snippet_list.item(20)
-        ___qlistwidgetitem577.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Flatten", None));
-        ___qlistwidgetitem578 = self.dnn_code_snippet_list.item(21)
-        ___qlistwidgetitem578.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Input", None));
+        ___qlistwidgetitem665 = self.dnn_code_snippet_list.item(0)
+        ___qlistwidgetitem665.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.MaxPooling2D", None));
+        ___qlistwidgetitem666 = self.dnn_code_snippet_list.item(1)
+        ___qlistwidgetitem666.setText(QCoreApplication.translate("MainWindow", u"epochs", None));
+        ___qlistwidgetitem667 = self.dnn_code_snippet_list.item(2)
+        ___qlistwidgetitem667.setText(QCoreApplication.translate("MainWindow", u"epoch", None));
+        ___qlistwidgetitem668 = self.dnn_code_snippet_list.item(3)
+        ___qlistwidgetitem668.setText(QCoreApplication.translate("MainWindow", u"layer.activation", None));
+        ___qlistwidgetitem669 = self.dnn_code_snippet_list.item(4)
+        ___qlistwidgetitem669.setText(QCoreApplication.translate("MainWindow", u"model.add", None));
+        ___qlistwidgetitem670 = self.dnn_code_snippet_list.item(5)
+        ___qlistwidgetitem670.setText(QCoreApplication.translate("MainWindow", u"model.pop", None));
+        ___qlistwidgetitem671 = self.dnn_code_snippet_list.item(6)
+        ___qlistwidgetitem671.setText(QCoreApplication.translate("MainWindow", u"optimizer.lr", None));
+        ___qlistwidgetitem672 = self.dnn_code_snippet_list.item(7)
+        ___qlistwidgetitem672.setText(QCoreApplication.translate("MainWindow", u"layer.dropout", None));
+        ___qlistwidgetitem673 = self.dnn_code_snippet_list.item(8)
+        ___qlistwidgetitem673.setText(QCoreApplication.translate("MainWindow", u"layer.filters", None));
+        ___qlistwidgetitem674 = self.dnn_code_snippet_list.item(9)
+        ___qlistwidgetitem674.setText(QCoreApplication.translate("MainWindow", u"layer.units", None));
+        ___qlistwidgetitem675 = self.dnn_code_snippet_list.item(10)
+        ___qlistwidgetitem675.setText(QCoreApplication.translate("MainWindow", u"layer.kernel_initializer", None));
+        ___qlistwidgetitem676 = self.dnn_code_snippet_list.item(11)
+        ___qlistwidgetitem676.setText(QCoreApplication.translate("MainWindow", u"layer.kernel_constraint", None));
+        ___qlistwidgetitem677 = self.dnn_code_snippet_list.item(12)
+        ___qlistwidgetitem677.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.InputLayer", None));
+        ___qlistwidgetitem678 = self.dnn_code_snippet_list.item(13)
+        ___qlistwidgetitem678.setText(QCoreApplication.translate("MainWindow", u"model.loss", None));
+        ___qlistwidgetitem679 = self.dnn_code_snippet_list.item(14)
+        ___qlistwidgetitem679.setText(QCoreApplication.translate("MainWindow", u"model.optimizer", None));
+        ___qlistwidgetitem680 = self.dnn_code_snippet_list.item(15)
+        ___qlistwidgetitem680.setText(QCoreApplication.translate("MainWindow", u"layer.bias_initializer", None));
+        ___qlistwidgetitem681 = self.dnn_code_snippet_list.item(16)
+        ___qlistwidgetitem681.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Dropout", None));
+        ___qlistwidgetitem682 = self.dnn_code_snippet_list.item(17)
+        ___qlistwidgetitem682.setText(QCoreApplication.translate("MainWindow", u"tf.data.Dataset", None));
+        ___qlistwidgetitem683 = self.dnn_code_snippet_list.item(18)
+        ___qlistwidgetitem683.setText(QCoreApplication.translate("MainWindow", u"tf.keras.initializers.Constant", None));
+        ___qlistwidgetitem684 = self.dnn_code_snippet_list.item(19)
+        ___qlistwidgetitem684.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.AvgPooling2D", None));
+        ___qlistwidgetitem685 = self.dnn_code_snippet_list.item(20)
+        ___qlistwidgetitem685.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Flatten", None));
+        ___qlistwidgetitem686 = self.dnn_code_snippet_list.item(21)
+        ___qlistwidgetitem686.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Input", None));
         self.dnn_code_snippet_list.setSortingEnabled(__sortingEnabled5)
 
         self.pushButton_dnn_scan.setText(QCoreApplication.translate("MainWindow", u"Scan", None))
