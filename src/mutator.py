@@ -142,3 +142,15 @@ def modify_tf_optimizers_in_code(source_code, layer_names,new_value):
         #elif():
             #new_value = f"tf.keras.optimizers.{layer_names}()"
     return source_code
+
+def modify_tf_nn_function_in_code(source_code, layer_names,new_value):
+    for layer_name in layer_names:
+        # Katman adını ve sonrasında gelen parantezli ifadeyi bulmak için regex deseni
+
+        pattern = rf"(tf\.nn\.\b{layer_names}\b\s*\()((?:[^()]|\([^)]*\))*)\)"
+        # Bulunan ifadeyi değiştirmek için yeni değer
+        new_value = f"tf.nn.layers.{layer_names}()"
+        # Regex kullanarak değişiklik yapma
+        source_code = re.sub(pattern, new_value, source_code)
+    return source_code
+
