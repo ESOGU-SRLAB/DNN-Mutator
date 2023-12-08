@@ -1418,6 +1418,121 @@ def layer_select_mutate(mutate_selected_parameters,source_code ):
             change_parameter_with = "tf.raw_ops.UniformQuantizedConvolutionHybrid()"
             function_name = "UniformQuantizedConvolutionHybrid"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
+
+        #train
+        elif mutate_selected_parameters == "train.BytesList":
+            change_parameter_with = "tf.train.BytesList()"
+            class_name = "BytesList"
+            mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
+        elif mutate_selected_parameters == "train.Checkpoint":
+            change_parameter_with = "tf.train.Checkpoint()"
+            class_name = "Checkpoint"
+            mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
+        elif mutate_selected_parameters == "train.CheckpointManager":
+            change_parameter_with = "tf.train.CheckpointManager()"
+            class_name = "CheckpointManager"
+            mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
+        elif mutate_selected_parameters == "train.CheckpointOptions":
+            change_parameter_with = "tf.train.CheckpointOptions()"
+            class_name = "CheckpointOptions"
+            mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
+        elif mutate_selected_parameters == "train.CheckpointView":
+            change_parameter_with = "tf.train.CheckpointView()"
+            class_name = "CheckpointView"
+            mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
+        elif mutate_selected_parameters == "train.ClusterDef":
+            change_parameter_with = "tf.train.ClusterDef()"
+            class_name = "ClusterDef"
+            mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
+        elif mutate_selected_parameters == "train.ClusterSpec":
+            change_parameter_with = "tf.train.ClusterSpec()"
+            class_name = "ClusterSpec"
+            mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
+        elif mutate_selected_parameters == "train.Coordinator":
+            change_parameter_with = "tf.train.Coordinator()"
+            class_name = "Coordinator"
+            mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
+        elif mutate_selected_parameters == "train.Example":
+            change_parameter_with = "tf.train.Example()"
+            class_name = "Example"
+            mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
+        elif mutate_selected_parameters == "train.ExponentialMovingAverage":
+            change_parameter_with = "tf.train.ExponentialMovingAverage()"
+            class_name = "ExponentialMovingAverage"
+            mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
+        elif mutate_selected_parameters == "train.Feature":
+            change_parameter_with = "tf.train.Feature()"
+            class_name = "Feature"
+            mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
+        elif mutate_selected_parameters == "train.FeatureList":
+            change_parameter_with = "tf.train.FeatureList()"
+            class_name = "FeatureList"
+            mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
+        elif mutate_selected_parameters == "train.FeatureLists":
+            change_parameter_with = "tf.train.FeatureLists()"
+            class_name = "FeatureLists"
+            mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
+        elif mutate_selected_parameters == "train.Features":
+            change_parameter_with = "tf.train.Features()"
+            class_name = "Features"
+            mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
+        elif mutate_selected_parameters == "train.FloatList":
+            change_parameter_with = "tf.train.FloatList()"
+            class_name = "FloatList"
+            mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
+        elif mutate_selected_parameters == "train.Int64List":
+            change_parameter_with = "tf.train.Int64List()"
+            class_name = "Int64List"
+            mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
+        elif mutate_selected_parameters == "train.JobDef":
+            change_parameter_with = "tf.train.JobDef()"
+            class_name = "JobDef"
+            mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
+        elif mutate_selected_parameters == "train.SequenceExample":
+            change_parameter_with = "tf.train.SequenceExample()"
+            class_name = "SequenceExample"
+            mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
+        elif mutate_selected_parameters == "train.ServerDef":
+            change_parameter_with = "tf.train.ServerDef()"
+            class_name = "ServerDef"
+            mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
+        elif mutate_selected_parameters == "train.TrackableView":
+            change_parameter_with = "tf.train.TrackableView()"
+            class_name = "TrackableView"
+            mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
+        elif mutate_selected_parameters == "train.checkpoints_iterator":
+            change_parameter_with = "tf.train.checkpoints_iterator()"
+            function_name = "checkpoints_iterator"
+            mutated_line = mutator.modify_tf_train_class_in_code(source_code, function_name, change_parameter_with)
+        elif mutate_selected_parameters == "train.experimental":
+            change_parameter_with = "tf.train.experimental()"
+            class_name = "experimental"
+            mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
+        elif mutate_selected_parameters == "train.experimental.PythonState":
+            change_parameter_with = "tf.train.experimental.PythonState()"
+            class_name = "experimental.PythonState"
+            mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
+        elif mutate_selected_parameters == "train.get_checkpoint_state":
+            change_parameter_with = "tf.train.get_checkpoint_state()"
+            function_name = "get_checkpoint_state"
+            mutated_line = mutator.modify_tf_train_class_in_code(source_code, function_name, change_parameter_with)
+        elif mutate_selected_parameters == "train.latest_checkpoint":
+            change_parameter_with = "tf.train.latest_checkpoint()"
+            function_name = "latest_checkpoint"
+            mutated_line = mutator.modify_tf_train_class_in_code(source_code, function_name, change_parameter_with)
+        elif mutate_selected_parameters == "train.list_variables":
+            change_parameter_with = "tf.train.list_variables()"
+            function_name = "list_variables"
+            mutated_line = mutator.modify_tf_train_class_in_code(source_code, function_name, change_parameter_with)
+        elif mutate_selected_parameters == "train.load_checkpoint":
+            change_parameter_with = "tf.train.load_checkpoint()"
+            function_name = "load_checkpoint"
+            mutated_line = mutator.modify_tf_train_class_in_code(source_code, function_name, change_parameter_with)
+        elif mutate_selected_parameters == "train.load_variable":
+            change_parameter_with = "tf.train.load_variable()"
+            function_name = "load_variable"
+            mutated_line = mutator.modify_tf_train_class_in_code(source_code, function_name, change_parameter_with)
+        # ... ve böyle devam eder. Diğer tf.train sınıf ve fonksiyonları için de benzer bloklar eklenebilir.
         
 
 

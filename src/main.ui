@@ -9904,6 +9904,11 @@ color:white;</string>
                         </item>
                         <item>
                          <property name="text">
+                          <string>nn.zero_fraction</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
                           <string>raw_ops.BlockLSTM</string>
                          </property>
                         </item>
@@ -10444,7 +10449,142 @@ color:white;</string>
                         </item>
                         <item>
                          <property name="text">
-                          <string>nn.zero_fraction</string>
+                          <string>train.BytesList</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>train.Checkpoint</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>train.CheckpointManager</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>train.CheckpointOptions</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>train.CheckpointView</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>train.ClusterDef</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>train.ClusterSpec</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>train.Coordinator</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>train.Example</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>train.ExponentialMovingAverage</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>train.Feature</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>train.FeatureList</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>train.FeatureLists</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>train.Features</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>train.FloatList</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>train.Int64List</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>train.JobDef</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>train.SequenceExample</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>train.ServerDef</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>train.TrackableView</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>train.checkpoints_iterator</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>train.experimental</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>train.experimental.PythonState</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>train.get_checkpoint_state</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>train.latest_checkpoint</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>train.list_variables</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>train.load_checkpoint</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>train.load_variable</string>
                          </property>
                         </item>
                         <item>

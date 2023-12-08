@@ -149,7 +149,7 @@ def modify_tf_nn_function_in_code(source_code, layer_names,new_value):
 
         pattern = rf"(tf\.nn\.\b{layer_names}\b\s*\()((?:[^()]|\([^)]*\))*)\)"
         # Bulunan ifadeyi değiştirmek için yeni değer
-        new_value = f"tf.nn.layers.{layer_names}()"
+        new_value = f"tf.nn.{layer_names}()"
         # Regex kullanarak değişiklik yapma
         source_code = re.sub(pattern, new_value, source_code)
     return source_code
@@ -160,7 +160,18 @@ def modify_tf_raw_ops_function_in_code(source_code, layer_names,new_value):
 
         pattern = rf"(tf\.raw_ops\.\b{layer_names}\b\s*\()((?:[^()]|\([^)]*\))*)\)"
         # Bulunan ifadeyi değiştirmek için yeni değer
-        new_value = f"tf.nn.layers.{layer_names}()"
+        new_value = f"tf.raw_ops.{layer_names}()"
+        # Regex kullanarak değişiklik yapma
+        source_code = re.sub(pattern, new_value, source_code)
+    return source_code
+
+def modify_tf_train_class_in_code(source_code, layer_names,new_value):
+    for layer_name in layer_names:
+        # Katman adını ve sonrasında gelen parantezli ifadeyi bulmak için regex deseni
+
+        pattern = rf"(tf\.train\.\b{layer_names}\b\s*\()((?:[^()]|\([^)]*\))*)\)"
+        # Bulunan ifadeyi değiştirmek için yeni değer
+        new_value = f"tf.train.{layer_names}()"
         # Regex kullanarak değişiklik yapma
         source_code = re.sub(pattern, new_value, source_code)
     return source_code
