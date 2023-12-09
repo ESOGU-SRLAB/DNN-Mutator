@@ -1327,9 +1327,12 @@ class MainWindow(QMainWindow):
         mutated_line =""
         # Get the initial source code
         source_code = self.ui.plainTextEdit_53.toPlainText()
-
+        
         # Iterate through the selected items
         for item in selected_items:
+
+
+
             mutate_selected_parameters = item
             #find selected_parameters and mutate
             mutated_line=selected_parameters.layer_select_mutate(mutate_selected_parameters,source_code) 
