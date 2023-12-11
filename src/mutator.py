@@ -175,3 +175,14 @@ def modify_tf_train_class_in_code(source_code, layer_names,new_value):
         # Regex kullanarak değişiklik yapma
         source_code = re.sub(pattern, new_value, source_code)
     return source_code
+
+def modify_tf_keras_activations_function_in_code(source_code, layer_names,new_value):
+    for layer_name in layer_names:
+        # Katman adını ve sonrasında gelen parantezli ifadeyi bulmak için regex deseni
+
+        pattern = rf"(tf\.keras\.activations\.\b{layer_names}\b\s*\()((?:[^()]|\([^)]*\))*)\)"
+        # Bulunan ifadeyi değiştirmek için yeni değer
+        new_value = f"tf.activations.{layer_names}()"
+        # Regex kullanarak değişiklik yapma
+        source_code = re.sub(pattern, new_value, source_code)
+    return source_code

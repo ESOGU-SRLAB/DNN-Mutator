@@ -9344,6 +9344,91 @@ color:white;</string>
                         </item>
                         <item>
                          <property name="text">
+                          <string>activations.deserialize()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>activations.elu()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>activations.exponential()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>activations.gelu()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>activations.get()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>activations.hard_sigmoid()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>activations.linear()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>activations.mish()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>activations.relu()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>activations.selu()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>activations.serialize()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>activations.sigmoid()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>activations.softmax()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>activations.softplus()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>activations.softsign()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>activations.swish()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>activations.tanh()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
                           <string>optimizers.Adadelta()</string>
                          </property>
                         </item>

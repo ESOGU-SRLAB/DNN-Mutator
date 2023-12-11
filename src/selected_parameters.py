@@ -300,10 +300,86 @@ def layer_select_mutate(mutate_selected_parameters,source_code ):
         elif mutate_selected_parameters == "layers.subtract()":
             change_parameter_with = "tf.keras.layers.subtract()"
             layer_name = "subtract"
-            
+            mutated_line = mutator.modify_tf_layer_in_code(source_code, layer_name, change_parameter_with)            
+           
+   #activations   
+
+
+        elif mutate_selected_parameters == "activations.deserialize()":
+            change_parameter_with = "tf.keras.activations.deserialize()"
+            function_name = "deserialize"
+            mutated_line = mutator.modify_tf_keras_activations_function_in_code(source_code, function_name, change_parameter_with)
+        elif mutate_selected_parameters == "activations.elu()":
+            change_parameter_with = "tf.keras.activations.elu()"
+            function_name = "elu"
+            mutated_line = mutator.modify_tf_keras_activations_function_in_code(source_code, function_name, change_parameter_with)
+        elif mutate_selected_parameters == "activations.exponential()":
+            change_parameter_with = "tf.keras.activations.exponential()"
+            function_name = "exponential"
+            mutated_line = mutator.modify_tf_keras_activations_function_in_code(source_code, function_name, change_parameter_with)
+        elif mutate_selected_parameters == "activations.gelu()":
+            change_parameter_with = "tf.keras.activations.gelu()"
+            function_name = "gelu"
+            mutated_line = mutator.modify_tf_keras_activations_function_in_code(source_code, function_name, change_parameter_with)
+        elif mutate_selected_parameters == "activations.get()":
+            change_parameter_with = "tf.keras.activations.get()"
+            function_name = "get"
+            mutated_line = mutator.modify_tf_keras_activations_function_in_code(source_code, function_name, change_parameter_with)
+        elif mutate_selected_parameters == "activations.hard_sigmoid()":
+            change_parameter_with = "tf.keras.activations.hard_sigmoid()"
+            function_name = "hard_sigmoid"
+            mutated_line = mutator.modify_tf_keras_activations_function_in_code(source_code, function_name, change_parameter_with)
+        elif mutate_selected_parameters == "activations.linear()":
+            change_parameter_with = "tf.keras.activations.linear()"
+            function_name = "linear"
+            mutated_line = mutator.modify_tf_keras_activations_function_in_code(source_code, function_name, change_parameter_with)
+        elif mutate_selected_parameters == "activations.mish()":
+            change_parameter_with = "tf.keras.activations.mish()"
+            function_name = "mish"
+            mutated_line = mutator.modify_tf_keras_activations_function_in_code(source_code, function_name, change_parameter_with)
+        elif mutate_selected_parameters == "activations.relu()":
+            change_parameter_with = "tf.keras.activations.relu()"
+            function_name = "relu"
+            mutated_line = mutator.modify_tf_keras_activations_function_in_code(source_code, function_name, change_parameter_with)
+        elif mutate_selected_parameters == "activations.selu()":
+            change_parameter_with = "tf.keras.activations.selu()"
+            function_name = "selu"
+            mutated_line = mutator.modify_tf_keras_activations_function_in_code(source_code, function_name, change_parameter_with)
+        elif mutate_selected_parameters == "activations.serialize()":
+            change_parameter_with = "tf.keras.activations.serialize()"
+            function_name = "serialize"
+            mutated_line = mutator.modify_tf_keras_activations_function_in_code(source_code, function_name, change_parameter_with)
+        elif mutate_selected_parameters == "activations.sigmoid()":
+            change_parameter_with = "tf.keras.activations.sigmoid()"
+            function_name = "sigmoid"
+            mutated_line = mutator.modify_tf_keras_activations_function_in_code(source_code, function_name, change_parameter_with)
+        elif mutate_selected_parameters == "activations.softmax()":
+            change_parameter_with = "tf.keras.activations.softmax()"
+            function_name = "softmax"
+            mutated_line = mutator.modify_tf_keras_activations_function_in_code(source_code, function_name, change_parameter_with)
+        elif mutate_selected_parameters == "activations.softplus()":
+            change_parameter_with = "tf.keras.activations.softplus()"
+            function_name = "softplus"
+            mutated_line = mutator.modify_tf_keras_activations_function_in_code(source_code, function_name, change_parameter_with)
+        elif mutate_selected_parameters == "activations.softsign()":
+            change_parameter_with = "tf.keras.activations.softsign()"
+            function_name = "softsign"
+            mutated_line = mutator.modify_tf_keras_activations_function_in_code(source_code, function_name, change_parameter_with)
+        elif mutate_selected_parameters == "activations.swish()":
+            change_parameter_with = "tf.keras.activations.swish()"
+            function_name = "swish"
+            mutated_line = mutator.modify_tf_keras_activations_function_in_code(source_code, function_name, change_parameter_with)
+        elif mutate_selected_parameters == "activations.tanh()":
+            change_parameter_with = "tf.keras.activations.tanh()"
+            function_name = "tanh"
+            mutated_line = mutator.modify_tf_keras_activations_function_in_code(source_code, function_name, change_parameter_with)           
+           
             #losses
 
-            mutated_line = mutator.modify_tf_layer_in_code(source_code, layer_name, change_parameter_with)
+
+
+
+
         elif mutate_selected_parameters == "losses.BinaryCrossentropy()":
             change_parameter_with = " tf.keras.losses.BinaryCrossentropy()"
             layer_name = "BinaryCrossentropy"
