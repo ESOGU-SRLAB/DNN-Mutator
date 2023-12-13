@@ -97,7 +97,7 @@
             }
             
         },
-        
+
         {
             "Snippets": {
                 "Snippet_Name": "tf.keras.layers.AvgPool1D()",
@@ -1545,7 +1545,1504 @@
                 "Title": "tf.nn.elu() in TensorFlow",
                 "Process": "Description not available."
             }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.embedding_lookup()",
+                "Regex_Code": "tf\\.nn\\.embedding_lookup",
+                "Title": "tf.nn.embedding_lookup() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.embedding_lookup_sparse()",
+                "Regex_Code": "tf\\.nn\\.embedding_lookup_sparse",
+                "Title": "tf.nn.embedding_lookup_sparse() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.erosion2d()",
+                "Regex_Code": "tf\\.nn\\.erosion2d",
+                "Title": "tf.nn.erosion2d() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.fixed_unigram_candidate_sampler()",
+                "Regex_Code": "tf\\.nn\\.fixed_unigram_candidate_sampler",
+                "Title": "tf.nn.fixed_unigram_candidate_sampler() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.fractional_avg_pool()",
+                "Regex_Code": "tf\\.nn\\.fractional_avg_pool",
+                "Title": "tf.nn.fractional_avg_pool() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.fractional_max_pool()",
+                "Regex_Code": "tf\\.nn\\.fractional_max_pool",
+                "Title": "tf.nn.fractional_max_pool() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.gelu()",
+                "Regex_Code": "tf\\.nn\\.gelu",
+                "Title": "tf.nn.gelu() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.in_top_k()",
+                "Regex_Code": "tf\\.nn\\.in_top_k",
+                "Title": "tf.nn.in_top_k() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.isotonic_regression()",
+                "Regex_Code": "tf\\.nn\\.isotonic_regression",
+                "Title": "tf.nn.isotonic_regression() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.l2_loss()",
+                "Regex_Code": "tf\\.nn\\.l2_loss",
+                "Title": "tf.nn.l2_loss() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.l2_normalize()",
+                "Regex_Code": "tf\\.nn\\.l2_normalize",
+                "Title": "tf.nn.l2_normalize() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.leaky_relu()",
+                "Regex_Code": "tf\\.nn\\.leaky_relu",
+                "Title": "tf.nn.leaky_relu() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.learned_unigram_candidate_sampler()",
+                "Regex_Code": "tf\\.nn\\.learned_unigram_candidate_sampler",
+                "Title": "tf.nn.learned_unigram_candidate_sampler() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.local_response_normalization()",
+                "Regex_Code": "tf\\.nn\\.local_response_normalization",
+                "Title": "tf.nn.local_response_normalization() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.log_poisson_loss()",
+                "Regex_Code": "tf\\.nn\\.log_poisson_loss",
+                "Title": "tf.nn.log_poisson_loss() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.log_softmax()",
+                "Regex_Code": "tf\\.nn\\.log_softmax",
+                "Title": "tf.nn.log_softmax() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.lrn()",
+                "Regex_Code": "tf\\.nn\\.lrn",
+                "Title": "tf.nn.lrn() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.max_pool()",
+                "Regex_Code": "tf\\.nn\\.max_pool",
+                "Title": "tf.nn.max_pool() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.max_pool1d()",
+                "Regex_Code": "tf\\.nn\\.max_pool1d",
+                "Title": "tf.nn.max_pool1d() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.max_pool2d()",
+                "Regex_Code": "tf\\.nn\\.max_pool2d",
+                "Title": "tf.nn.max_pool2d() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.max_pool3d()",
+                "Regex_Code": "tf\\.nn\\.max_pool3d",
+                "Title": "tf.nn.max_pool3d() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.max_pool_with_argmax()",
+                "Regex_Code": "tf\\.nn\\.max_pool_with_argmax",
+                "Title": "tf.nn.max_pool_with_argmax() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.moments()",
+                "Regex_Code": "tf\\.nn\\.moments",
+                "Title": "tf.nn.moments() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.nce_loss()",
+                "Regex_Code": "tf\\.nn\\.nce_loss",
+                "Title": "tf.nn.nce_loss() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.normalize_moments()",
+                "Regex_Code": "tf\\.nn\\.normalize_moments",
+                "Title": "tf.nn.normalize_moments() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.pool()",
+                "Regex_Code": "tf\\.nn\\.pool",
+                "Title": "tf.nn.pool() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.relu()",
+                "Regex_Code": "tf\\.nn\\.relu",
+                "Title": "tf.nn.relu() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.relu6()",
+                "Regex_Code": "tf\\.nn\\.relu6",
+                "Title": "tf.nn.relu6() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.safe_embedding_lookup_sparse()",
+                "Regex_Code": "tf\\.nn\\.safe_embedding_lookup_sparse",
+                "Title": "tf.nn.safe_embedding_lookup_sparse() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.sampled_softmax_loss()",
+                "Regex_Code": "tf\\.nn\\.sampled_softmax_loss",
+                "Title": "tf.nn.sampled_softmax_loss() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.scale_regularization_loss()",
+                "Regex_Code": "tf\\.nn\\.scale_regularization_loss",
+                "Title": "tf.nn.scale_regularization_loss() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.selu()",
+                "Regex_Code": "tf\\.nn\\.selu",
+                "Title": "tf.nn.selu() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.separable_conv2d()",
+                "Regex_Code": "tf\\.nn\\.separable_conv2d",
+                "Title": "tf.nn.separable_conv2d() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.sigmoid()",
+                "Regex_Code": "tf\\.nn\\.sigmoid",
+                "Title": "tf.nn.sigmoid() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.sigmoid_cross_entropy_with_logits()",
+                "Regex_Code": "tf\\.nn\\.sigmoid_cross_entropy_with_logits",
+                "Title": "tf.nn.sigmoid_cross_entropy_with_logits() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.silu()",
+                "Regex_Code": "tf\\.nn\\.silu",
+                "Title": "tf.nn.silu() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.softmax()",
+                "Regex_Code": "tf\\.nn\\.softmax",
+                "Title": "tf.nn.softmax() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.softmax_cross_entropy_with_logits()",
+                "Regex_Code": "tf\\.nn\\.softmax_cross_entropy_with_logits",
+                "Title": "tf.nn.softmax_cross_entropy_with_logits() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.softplus()",
+                "Regex_Code": "tf\\.nn\\.softplus",
+                "Title": "tf.nn.softplus() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.softsign()",
+                "Regex_Code": "tf\\.nn\\.softsign",
+                "Title": "tf.nn.softsign() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.space_to_batch()",
+                "Regex_Code": "tf\\.nn\\.space_to_batch",
+                "Title": "tf.nn.space_to_batch() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.space_to_depth()",
+                "Regex_Code": "tf\\.nn\\.space_to_depth",
+                "Title": "tf.nn.space_to_depth() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.sparse_softmax_cross_entropy_with_logits()",
+                "Regex_Code": "tf\\.nn\\.sparse_softmax_cross_entropy_with_logits",
+                "Title": "tf.nn.sparse_softmax_cross_entropy_with_logits() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.sufficient_statistics()",
+                "Regex_Code": "tf\\.nn\\.sufficient_statistics",
+                "Title": "tf.nn.sufficient_statistics() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.swish()",
+                "Regex_Code": "tf\\.nn\\.swish",
+                "Title": "tf.nn.swish() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.tanh()",
+                "Regex_Code": "tf\\.nn\\.tanh",
+                "Title": "tf.nn.tanh() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.top_k()",
+                "Regex_Code": "tf\\.nn\\.top_k",
+                "Title": "tf.nn.top_k() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.weighted_cross_entropy_with_logits()",
+                "Regex_Code": "tf\\.nn\\.weighted_cross_entropy_with_logits",
+                "Title": "tf.nn.weighted_cross_entropy_with_logits() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.weighted_moments()",
+                "Regex_Code": "tf\\.nn\\.weighted_moments",
+                "Title": "tf.nn.weighted_moments() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.with_space_to_batch()",
+                "Regex_Code": "tf\\.nn\\.with_space_to_batch",
+                "Title": "tf.nn.with_space_to_batch() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.zero_fraction()",
+                "Regex_Code": "tf\\.nn\\.zero_fraction",
+                "Title": "tf.nn.zero_fraction() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.BlockLSTM()",
+                "Regex_Code": "tf\\.raw_ops\\.BlockLSTM",
+                "Title": "tf.raw_ops.BlockLSTM() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.BlockLSTMGrad()",
+                "Regex_Code": "tf\\.raw_ops\\.BlockLSTMGrad",
+                "Title": "tf.raw_ops.BlockLSTMGrad() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.BlockLSTMGradV2()",
+                "Regex_Code": "tf\\.raw_ops\\.BlockLSTMGradV2",
+                "Title": "tf.raw_ops.BlockLSTMGradV2() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.BlockLSTMV2()",
+                "Regex_Code": "tf\\.raw_ops\\.BlockLSTMV2",
+                "Title": "tf.raw_ops.BlockLSTMV2() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.BoostedTreesTrainingPredict()",
+                "Regex_Code": "tf\\.raw_ops\\.BoostedTreesTrainingPredict",
+                "Title": "tf.raw_ops.BoostedTreesTrainingPredict() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.CSRSparseMatrixToDense()",
+                "Regex_Code": "tf\\.raw_ops\\.CSRSparseMatrixToDense",
+                "Title": "tf.raw_ops.CSRSparseMatrixToDense() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.CTCLoss()",
+                "Regex_Code": "tf\\.raw_ops\\.CTCLoss",
+                "Title": "tf.raw_ops.CTCLoss() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.CTCLossV2()",
+                "Regex_Code": "tf\\.raw_ops\\.CTCLossV2",
+                "Title": "tf.raw_ops.CTCLossV2() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.Conv()",
+                "Regex_Code": "tf\\.raw_ops\\.Conv",
+                "Title": "tf.raw_ops.Conv() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.Conv2D()",
+                "Regex_Code": "tf\\.raw_ops\\.Conv2D",
+                "Title": "tf.raw_ops.Conv2D() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.Conv2DBackpropFilter()",
+                "Regex_Code": "tf\\.raw_ops\\.Conv2DBackpropFilter",
+                "Title": "tf.raw_ops.Conv2DBackpropFilter() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.Conv2DBackpropFilterV2()",
+                "Regex_Code": "tf\\.raw_ops\\.Conv2DBackpropFilterV2",
+                "Title": "tf.raw_ops.Conv2DBackpropFilterV2() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.Conv2DBackpropInput()",
+                "Regex_Code": "tf\\.raw_ops\\.Conv2DBackpropInput",
+                "Title": "tf.raw_ops.Conv2DBackpropInput() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.Conv2DBackpropInputV2()",
+                "Regex_Code": "tf\\.raw_ops\\.Conv2DBackpropInputV2",
+                "Title": "tf.raw_ops.Conv2DBackpropInputV2() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.Conv3D()",
+                "Regex_Code": "tf\\.raw_ops\\.Conv3D",
+                "Title": "tf.raw_ops.Conv3D() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.Conv3DBackpropFilter()",
+                "Regex_Code": "tf\\.raw_ops\\.Conv3DBackpropFilter",
+                "Title": "tf.raw_ops.Conv3DBackpropFilter() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.Conv3DBackpropFilterV2()",
+                "Regex_Code": "tf\\.raw_ops\\.Conv3DBackpropFilterV2",
+                "Title": "tf.raw_ops.Conv3DBackpropFilterV2() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.Conv3DBackpropInput()",
+                "Regex_Code": "tf\\.raw_ops\\.Conv3DBackpropInput",
+                "Title": "tf.raw_ops.Conv3DBackpropInput() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.Conv3DBackpropInputV2()",
+                "Regex_Code": "tf\\.raw_ops\\.Conv3DBackpropInputV2",
+                "Title": "tf.raw_ops.Conv3DBackpropInputV2() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.CudnnRNN()",
+                "Regex_Code": "tf\\.raw_ops\\.CudnnRNN",
+                "Title": "tf.raw_ops.CudnnRNN() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.CudnnRNNBackprop()",
+                "Regex_Code": "tf\\.raw_ops\\.CudnnRNNBackprop",
+                "Title": "tf.raw_ops.CudnnRNNBackprop() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.CudnnRNNBackpropV2()",
+                "Regex_Code": "tf\\.raw_ops\\.CudnnRNNBackpropV2",
+                "Title": "tf.raw_ops.CudnnRNNBackpropV2() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.CudnnRNNBackpropV3()",
+                "Regex_Code": "tf\\.raw_ops\\.CudnnRNNBackpropV3",
+                "Title": "tf.raw_ops.CudnnRNNBackpropV3() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.CudnnRNNCanonicalToParams()",
+                "Regex_Code": "tf\\.raw_ops\\.CudnnRNNCanonicalToParams",
+                "Title": "tf.raw_ops.CudnnRNNCanonicalToParams() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.CudnnRNNCanonicalToParamsV2()",
+                "Regex_Code": "tf\\.raw_ops\\.CudnnRNNCanonicalToParamsV2",
+                "Title": "tf.raw_ops.CudnnRNNCanonicalToParamsV2() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.CudnnRNNParamsSize()",
+                "Regex_Code": "tf\\.raw_ops\\.CudnnRNNParamsSize",
+                "Title": "tf.raw_ops.CudnnRNNParamsSize() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.CudnnRNNParamsToCanonical()",
+                "Regex_Code": "tf\\.raw_ops\\.CudnnRNNParamsToCanonical",
+                "Title": "tf.raw_ops.CudnnRNNParamsToCanonical() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.CudnnRNNParamsToCanonicalV2()",
+                "Regex_Code": "tf\\.raw_ops\\.CudnnRNNParamsToCanonicalV2",
+                "Title": "tf.raw_ops.CudnnRNNParamsToCanonicalV2() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.CudnnRNNV2()",
+                "Regex_Code": "tf\\.raw_ops\\.CudnnRNNV2",
+                "Title": "tf.raw_ops.CudnnRNNV2() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.CudnnRNNV3()",
+                "Regex_Code": "tf\\.raw_ops\\.CudnnRNNV3",
+                "Title": "tf.raw_ops.CudnnRNNV3() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.DenseBincount()",
+                "Regex_Code": "tf\\.raw_ops\\.DenseBincount",
+                "Title": "tf.raw_ops.DenseBincount() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.DenseCountSparseOutput()",
+                "Regex_Code": "tf\\.raw_ops\\.DenseCountSparseOutput",
+                "Title": "tf.raw_ops.DenseCountSparseOutput() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.DenseToCSRSparseMatrix()",
+                "Regex_Code": "tf\\.raw_ops\\.DenseToCSRSparseMatrix",
+                "Title": "tf.raw_ops.DenseToCSRSparseMatrix() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.DenseToDenseSetOperation()",
+                "Regex_Code": "tf\\.raw_ops\\.DenseToDenseSetOperation",
+                "Title": "tf.raw_ops.DenseToDenseSetOperation() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.DenseToSparseBatchDataset()",
+                "Regex_Code": "tf\\.raw_ops\\.DenseToSparseBatchDataset",
+                "Title": "tf.raw_ops.DenseToSparseBatchDataset() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.DenseToSparseSetOperation()",
+                "Regex_Code": "tf\\.raw_ops\\.DenseToSparseSetOperation",
+                "Title": "tf.raw_ops.DenseToSparseSetOperation() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.DepthwiseConv2dNative()",
+                "Regex_Code": "tf\\.raw_ops\\.DepthwiseConv2dNative",
+                "Title": "tf.raw_ops.DepthwiseConv2dNative() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.DepthwiseConv2dNativeBackpropFilter()",
+                "Regex_Code": "tf\\.raw_ops\\.DepthwiseConv2dNativeBackpropFilter",
+                "Title": "tf.raw_ops.DepthwiseConv2dNativeBackpropFilter() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.DepthwiseConv2dNativeBackpropInput()",
+                "Regex_Code": "tf\\.raw_ops\\.DepthwiseConv2dNativeBackpropInput",
+                "Title": "tf.raw_ops.DepthwiseConv2dNativeBackpropInput() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.FusedPadConv2D()",
+                "Regex_Code": "tf\\.raw_ops\\.FusedPadConv2D",
+                "Title": "tf.raw_ops.FusedPadConv2D() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.FusedResizeAndPadConv2D()",
+                "Regex_Code": "tf\\.raw_ops\\.FusedResizeAndPadConv2D",
+                "Title": "tf.raw_ops.FusedResizeAndPadConv2D() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.GRUBlockCell()",
+                "Regex_Code": "tf\\.raw_ops\\.GRUBlockCell",
+                "Title": "tf.raw_ops.GRUBlockCell() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.GRUBlockCellGrad()",
+                "Regex_Code": "tf\\.raw_ops\\.GRUBlockCellGrad",
+                "Title": "tf.raw_ops.GRUBlockCellGrad() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.L2Loss()",
+                "Regex_Code": "tf\\.raw_ops\\.L2Loss",
+                "Title": "tf.raw_ops.L2Loss() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.LSTMBlockCell()",
+                "Regex_Code": "tf\\.raw_ops\\.LSTMBlockCell",
+                "Title": "tf.raw_ops.LSTMBlockCell() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.LSTMBlockCellGrad()",
+                "Regex_Code": "tf\\.raw_ops\\.LSTMBlockCellGrad",
+                "Title": "tf.raw_ops.LSTMBlockCellGrad() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.QuantizedConv2D()",
+                "Regex_Code": "tf\\.raw_ops\\.QuantizedConv2D",
+                "Title": "tf.raw_ops.QuantizedConv2D() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.QuantizedConv2DAndRelu()",
+                "Regex_Code": "tf\\.raw_ops\\.QuantizedConv2DAndRelu",
+                "Title": "tf.raw_ops.QuantizedConv2DAndRelu() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.QuantizedConv2DAndReluAndRequantize()",
+                "Regex_Code": "tf\\.raw_ops\\.QuantizedConv2DAndReluAndRequantize",
+                "Title": "tf.raw_ops.QuantizedConv2DAndReluAndRequantize() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.QuantizedConv2DAndRequantize()",
+                "Regex_Code": "tf\\.raw_ops\\.QuantizedConv2DAndRequantize",
+                "Title": "tf.raw_ops.QuantizedConv2DAndRequantize() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.QuantizedConv2DPerChannel()",
+                "Regex_Code": "tf\\.raw_ops\\.QuantizedConv2DPerChannel",
+                "Title": "tf.raw_ops.QuantizedConv2DPerChannel() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.QuantizedConv2DWithBias()",
+                "Regex_Code": "tf\\.raw_ops\\.QuantizedConv2DWithBias",
+                "Title": "tf.raw_ops.QuantizedConv2DWithBias() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.QuantizedConv2DWithBiasAndRelu()",
+                "Regex_Code": "tf\\.raw_ops\\.QuantizedConv2DWithBiasAndRelu",
+                "Title": "tf.raw_ops.QuantizedConv2DWithBiasAndRelu() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.QuantizedConv2DWithBiasAndReluAndRequantize()",
+                "Regex_Code": "tf\\.raw_ops\\.QuantizedConv2DWithBiasAndReluAndRequantize",
+                "Title": "tf.raw_ops.QuantizedConv2DWithBiasAndReluAndRequantize() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.QuantizedConv2DWithBiasAndRequantize()",
+                "Regex_Code": "tf\\.raw_ops\\.QuantizedConv2DWithBiasAndRequantize",
+                "Title": "tf.raw_ops.QuantizedConv2DWithBiasAndRequantize() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.QuantizedConv2DWithBiasSignedSumAndReluAndRequantize()",
+                "Regex_Code": "tf\\.raw_ops\\.QuantizedConv2DWithBiasSignedSumAndReluAndRequantize",
+                "Title": "tf.raw_ops.QuantizedConv2DWithBiasSignedSumAndReluAndRequantize() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.QuantizedConv2DWithBiasSumAndRelu()",
+                "Regex_Code": "tf\\.raw_ops\\.QuantizedConv2DWithBiasSumAndRelu",
+                "Title": "tf.raw_ops.QuantizedConv2DWithBiasSumAndRelu() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.QuantizedConv2DWithBiasSumAndReluAndRequantize()",
+                "Regex_Code": "tf\\.raw_ops\\.QuantizedConv2DWithBiasSumAndReluAndRequantize",
+                "Title": "tf.raw_ops.QuantizedConv2DWithBiasSumAndReluAndRequantize() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.QuantizedDepthwiseConv2D()",
+                "Regex_Code": "tf\\.raw_ops\\.QuantizedDepthwiseConv2D",
+                "Title": "tf.raw_ops.QuantizedDepthwiseConv2D() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.QuantizedDepthwiseConv2DWithBias()",
+                "Regex_Code": "tf\\.raw_ops\\.QuantizedDepthwiseConv2DWithBias",
+                "Title": "tf.raw_ops.QuantizedDepthwiseConv2DWithBias() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.QuantizedDepthwiseConv2DWithBiasAndRelu()",
+                "Regex_Code": "tf\\.raw_ops\\.QuantizedDepthwiseConv2DWithBiasAndRelu",
+                "Title": "tf.raw_ops.QuantizedDepthwiseConv2DWithBiasAndRelu() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.QuantizedDepthwiseConv2DWithBiasAndReluAndRequantize()",
+                "Regex_Code": "tf\\.raw_ops\\.QuantizedDepthwiseConv2DWithBiasAndReluAndRequantize",
+                "Title": "tf.raw_ops.QuantizedDepthwiseConv2DWithBiasAndReluAndRequantize() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.RecvTPUEmbeddingActivations()",
+                "Regex_Code": "tf\\.raw_ops\\.RecvTPUEmbeddingActivations",
+                "Title": "tf.raw_ops.RecvTPUEmbeddingActivations() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.SdcaOptimizer()",
+                "Regex_Code": "tf\\.raw_ops\\.SdcaOptimizer",
+                "Title": "tf.raw_ops.SdcaOptimizer() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.SdcaOptimizerV2()",
+                "Regex_Code": "tf\\.raw_ops\\.SdcaOptimizerV2",
+                "Title": "tf.raw_ops.SdcaOptimizerV2() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.SparseDenseCwiseAdd()",
+                "Regex_Code": "tf\\.raw_ops\\.SparseDenseCwiseAdd",
+                "Title": "tf.raw_ops.SparseDenseCwiseAdd() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.SparseDenseCwiseDiv()",
+                "Regex_Code": "tf\\.raw_ops\\.SparseDenseCwiseDiv",
+                "Title": "tf.raw_ops.SparseDenseCwiseDiv() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.SparseDenseCwiseMul()",
+                "Regex_Code": "tf\\.raw_ops\\.SparseDenseCwiseMul",
+                "Title": "tf.raw_ops.SparseDenseCwiseMul() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.SparseTensorDenseAdd()",
+                "Regex_Code": "tf\\.raw_ops\\.SparseTensorDenseAdd",
+                "Title": "tf.raw_ops.SparseTensorDenseAdd() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.SparseTensorDenseMatMul()",
+                "Regex_Code": "tf\\.raw_ops\\.SparseTensorDenseMatMul",
+                "Title": "tf.raw_ops.SparseTensorDenseMatMul() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.SparseToDense()",
+                "Regex_Code": "tf\\.raw_ops\\.SparseToDense",
+                "Title": "tf.raw_ops.SparseToDense() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.TPUEmbeddingActivations()",
+                "Regex_Code": "tf\\.raw_ops\\.TPUEmbeddingActivations",
+                "Title": "tf.raw_ops.TPUEmbeddingActivations() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.UniformQuantizedConvolution()",
+                "Regex_Code": "tf\\.raw_ops\\.UniformQuantizedConvolution",
+                "Title": "tf.raw_ops.UniformQuantizedConvolution() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.UniformQuantizedConvolutionHybrid()",
+                "Regex_Code": "tf\\.raw_ops\\.UniformQuantizedConvolutionHybrid",
+                "Title": "tf.raw_ops.UniformQuantizedConvolutionHybrid() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.RecvTPUEmbeddingActivations()",
+                "Regex_Code": "tf\\.raw_ops\\.RecvTPUEmbeddingActivations",
+                "Title": "tf.raw_ops.RecvTPUEmbeddingActivations() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.SdcaOptimizer()",
+                "Regex_Code": "tf\\.raw_ops\\.SdcaOptimizer",
+                "Title": "tf.raw_ops.SdcaOptimizer() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.SdcaOptimizerV2()",
+                "Regex_Code": "tf\\.raw_ops\\.SdcaOptimizerV2",
+                "Title": "tf.raw_ops.SdcaOptimizerV2() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.L2Loss()",
+                "Regex_Code": "tf\\.raw_ops\\.L2Loss",
+                "Title": "tf.raw_ops.L2Loss() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.LSTMBlockCell()",
+                "Regex_Code": "tf\\.raw_ops\\.LSTMBlockCell",
+                "Title": "tf.raw_ops.LSTMBlockCell() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.LSTMBlockCellGrad()",
+                "Regex_Code": "tf\\.raw_ops\\.LSTMBlockCellGrad",
+                "Title": "tf.raw_ops.LSTMBlockCellGrad() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.QuantizedConv2D()",
+                "Regex_Code": "tf\\.raw_ops\\.QuantizedConv2D",
+                "Title": "tf.raw_ops.QuantizedConv2D() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.QuantizedConv2DAndRelu()",
+                "Regex_Code": "tf\\.raw_ops\\.QuantizedConv2DAndRelu",
+                "Title": "tf.raw_ops.QuantizedConv2DAndRelu() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.QuantizedConv2DAndReluAndRequantize()",
+                "Regex_Code": "tf\\.raw_ops\\.QuantizedConv2DAndReluAndRequantize",
+                "Title": "tf.raw_ops.QuantizedConv2DAndReluAndRequantize() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.QuantizedConv2DAndRequantize()",
+                "Regex_Code": "tf\\.raw_ops\\.QuantizedConv2DAndRequantize",
+                "Title": "tf.raw_ops.QuantizedConv2DAndRequantize() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.QuantizedConv2DPerChannel()",
+                "Regex_Code": "tf\\.raw_ops\\.QuantizedConv2DPerChannel",
+                "Title": "tf.raw_ops.QuantizedConv2DPerChannel() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.QuantizedConv2DWithBias()",
+                "Regex_Code": "tf\\.raw_ops\\.QuantizedConv2DWithBias",
+                "Title": "tf.raw_ops.QuantizedConv2DWithBias() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.QuantizedConv2DWithBiasAndRelu()",
+                "Regex_Code": "tf\\.raw_ops\\.QuantizedConv2DWithBiasAndRelu",
+                "Title": "tf.raw_ops.QuantizedConv2DWithBiasAndRelu() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.QuantizedConv2DWithBiasAndReluAndRequantize()",
+                "Regex_Code": "tf\\.raw_ops\\.QuantizedConv2DWithBiasAndReluAndRequantize",
+                "Title": "tf.raw_ops.QuantizedConv2DWithBiasAndReluAndRequantize() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.QuantizedConv2DWithBiasAndRequantize()",
+                "Regex_Code": "tf\\.raw_ops\\.QuantizedConv2DWithBiasAndRequantize",
+                "Title": "tf.raw_ops.QuantizedConv2DWithBiasAndRequantize() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.QuantizedConv2DWithBiasSignedSumAndReluAndRequantize()",
+                "Regex_Code": "tf\\.raw_ops\\.QuantizedConv2DWithBiasSignedSumAndReluAndRequantize",
+                "Title": "tf.raw_ops.QuantizedConv2DWithBiasSignedSumAndReluAndRequantize() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.QuantizedConv2DWithBiasSumAndRelu()",
+                "Regex_Code": "tf\\.raw_ops\\.QuantizedConv2DWithBiasSumAndRelu",
+                "Title": "tf.raw_ops.QuantizedConv2DWithBiasSumAndRelu() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.QuantizedConv2DWithBiasSumAndReluAndRequantize()",
+                "Regex_Code": "tf\\.raw_ops\\.QuantizedConv2DWithBiasSumAndReluAndRequantize",
+                "Title": "tf.raw_ops.QuantizedConv2DWithBiasSumAndReluAndRequantize() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.QuantizedDepthwiseConv2D()",
+                "Regex_Code": "tf\\.raw_ops\\.QuantizedDepthwiseConv2D",
+                "Title": "tf.raw_ops.QuantizedDepthwiseConv2D() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.QuantizedDepthwiseConv2DWithBias()",
+                "Regex_Code": "tf\\.raw_ops\\.QuantizedDepthwiseConv2DWithBias",
+                "Title": "tf.raw_ops.QuantizedDepthwiseConv2DWithBias() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.QuantizedDepthwiseConv2DWithBiasAndRelu()",
+                "Regex_Code": "tf\\.raw_ops\\.QuantizedDepthwiseConv2DWithBiasAndRelu",
+                "Title": "tf.raw_ops.QuantizedDepthwiseConv2DWithBiasAndRelu() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.QuantizedDepthwiseConv2DWithBiasAndReluAndRequantize()",
+                "Regex_Code": "tf\\.raw_ops\\.QuantizedDepthwiseConv2DWithBiasAndReluAndRequantize",
+                "Title": "tf.raw_ops.QuantizedDepthwiseConv2DWithBiasAndReluAndRequantize() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.RecvTPUEmbeddingActivations()",
+                "Regex_Code": "tf\\.raw_ops\\.RecvTPUEmbeddingActivations",
+                "Title": "tf.raw_ops.RecvTPUEmbeddingActivations() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.SdcaOptimizer()",
+                "Regex_Code": "tf\\.raw_ops\\.SdcaOptimizer",
+                "Title": "tf.raw_ops.SdcaOptimizer() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.SdcaOptimizerV2()",
+                "Regex_Code": "tf\\.raw_ops\\.SdcaOptimizerV2",
+                "Title": "tf.raw_ops.SdcaOptimizerV2() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.SparseDenseCwiseAdd()",
+                "Regex_Code": "tf\\.raw_ops\\.SparseDenseCwiseAdd",
+                "Title": "tf.raw_ops.SparseDenseCwiseAdd() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.SparseDenseCwiseDiv()",
+                "Regex_Code": "tf\\.raw_ops\\.SparseDenseCwiseDiv",
+                "Title": "tf.raw_ops.SparseDenseCwiseDiv() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.SparseDenseCwiseMul()",
+                "Regex_Code": "tf\\.raw_ops\\.SparseDenseCwiseMul",
+                "Title": "tf.raw_ops.SparseDenseCwiseMul() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.SparseTensorDenseAdd()",
+                "Regex_Code": "tf\\.raw_ops\\.SparseTensorDenseAdd",
+                "Title": "tf.raw_ops.SparseTensorDenseAdd() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.SparseTensorDenseMatMul()",
+                "Regex_Code": "tf\\.raw_ops\\.SparseTensorDenseMatMul",
+                "Title": "tf.raw_ops.SparseTensorDenseMatMul() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.SparseToDense()",
+                "Regex_Code": "tf\\.raw_ops\\.SparseToDense",
+                "Title": "tf.raw_ops.SparseToDense() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.TPUEmbeddingActivations()",
+                "Regex_Code": "tf\\.raw_ops\\.TPUEmbeddingActivations",
+                "Title": "tf.raw_ops.TPUEmbeddingActivations() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.UniformQuantizedConvolution()",
+                "Regex_Code": "tf\\.raw_ops\\.UniformQuantizedConvolution",
+                "Title": "tf.raw_ops.UniformQuantizedConvolution() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.raw_ops.UniformQuantizedConvolutionHybrid()",
+                "Regex_Code": "tf\\.raw_ops\\.UniformQuantizedConvolutionHybrid",
+                "Title": "tf.raw_ops.UniformQuantizedConvolutionHybrid() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.train.BytesList()",
+                "Regex_Code": "tf\\.train\\.BytesList",
+                "Title": "tf.train.BytesList() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.train.Checkpoint()",
+                "Regex_Code": "tf\\.train\\.Checkpoint",
+                "Title": "tf.train.Checkpoint() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.train.CheckpointManager()",
+                "Regex_Code": "tf\\.train\\.CheckpointManager",
+                "Title": "tf.train.CheckpointManager() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.train.CheckpointOptions()",
+                "Regex_Code": "tf\\.train\\.CheckpointOptions",
+                "Title": "tf.train.CheckpointOptions() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.train.CheckpointView()",
+                "Regex_Code": "tf\\.train\\.CheckpointView",
+                "Title": "tf.train.CheckpointView() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.train.ClusterDef()",
+                "Regex_Code": "tf\\.train\\.ClusterDef",
+                "Title": "tf.train.ClusterDef() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.train.ClusterSpec()",
+                "Regex_Code": "tf\\.train\\.ClusterSpec",
+                "Title": "tf.train.ClusterSpec() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.train.Coordinator()",
+                "Regex_Code": "tf\\.train\\.Coordinator",
+                "Title": "tf.train.Coordinator() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.train.Example()",
+                "Regex_Code": "tf\\.train\\.Example",
+                "Title": "tf.train.Example() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.train.ExponentialMovingAverage()",
+                "Regex_Code": "tf\\.train\\.ExponentialMovingAverage",
+                "Title": "tf.train.ExponentialMovingAverage() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.train.Feature()",
+                "Regex_Code": "tf\\.train\\.Feature",
+                "Title": "tf.train.Feature() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.train.FeatureList()",
+                "Regex_Code": "tf\\.train\\.FeatureList",
+                "Title": "tf.train.FeatureList() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.train.FeatureLists()",
+                "Regex_Code": "tf\\.train\\.FeatureLists",
+                "Title": "tf.train.FeatureLists() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.train.Features()",
+                "Regex_Code": "tf\\.train\\.Features",
+                "Title": "tf.train.Features() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.train.FloatList()",
+                "Regex_Code": "tf\\.train\\.FloatList",
+                "Title": "tf.train.FloatList() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.train.Int64List()",
+                "Regex_Code": "tf\\.train\\.Int64List",
+                "Title": "tf.train.Int64List() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.train.JobDef()",
+                "Regex_Code": "tf\\.train\\.JobDef",
+                "Title": "tf.train.JobDef() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.train.SequenceExample()",
+                "Regex_Code": "tf\\.train\\.SequenceExample",
+                "Title": "tf.train.SequenceExample() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.train.ServerDef()",
+                "Regex_Code": "tf\\.train\\.ServerDef",
+                "Title": "tf.train.ServerDef() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.train.TrackableView()",
+                "Regex_Code": "tf\\.train\\.TrackableView",
+                "Title": "tf.train.TrackableView() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.train.checkpoints_iterator()",
+                "Regex_Code": "tf\\.train\\.checkpoints_iterator",
+                "Title": "tf.train.checkpoints_iterator() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.train.experimental()",
+                "Regex_Code": "tf\\.train\\.experimental",
+                "Title": "tf.train.experimental() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.train.experimental.PythonState()",
+                "Regex_Code": "tf\\.train\\.experimental\\.PythonState",
+                "Title": "tf.train.experimental.PythonState() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.train.get_checkpoint_state()",
+                "Regex_Code": "tf\\.train\\.get_checkpoint_state",
+                "Title": "tf.train.get_checkpoint_state() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.train.latest_checkpoint()",
+                "Regex_Code": "tf\\.train\\.latest_checkpoint",
+                "Title": "tf.train.latest_checkpoint() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.train.list_variables()",
+                "Regex_Code": "tf\\.train\\.list_variables",
+                "Title": "tf.train.list_variables() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.train.load_checkpoint()",
+                "Regex_Code": "tf\\.train\\.load_checkpoint",
+                "Title": "tf.train.load_checkpoint() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.train.load_variable()",
+                "Regex_Code": "tf\\.train\\.load_variable",
+                "Title": "tf.train.load_variable() in TensorFlow",
+                "Process": "Description not available."
+            }
         }
-        
     ]
 }
+        
+
