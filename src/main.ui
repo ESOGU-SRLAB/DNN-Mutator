@@ -10939,12 +10939,22 @@ color:white;</string>
                         </item>
                         <item>
                          <property name="text">
+                          <string>conv2d_transpose</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
                           <string>tf.nn.compute_average_loss()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
                           <string>tf.nn.conv1d()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>dropout</string>
                          </property>
                         </item>
                         <item>

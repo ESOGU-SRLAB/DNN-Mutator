@@ -95,6 +95,15 @@
                 "Title": "Padding in Convolutional Layers",
                 "Process": "Determines how the border of the input is handled."
             }
+            
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "conv2d_transpose",
+                "Regex_Code": "conv2dtranspose",
+                "Title": "Conv2D Transpose Layer in TensorFlow",
+                "Process": "Used in certain architectures like autoencoders for upsampling."
+            }
         }
     ]
 }

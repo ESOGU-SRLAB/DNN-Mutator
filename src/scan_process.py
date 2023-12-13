@@ -15,7 +15,7 @@ def open_dnn_code_snip():
     """Code snippet json file is opened to use for code snippet use cases"""
     with open("dnn_code_snippets.json", encoding="utf-8") as dnn_code_snippets_from_json:
         dnn_code_snippet_regex_code = json.load(dnn_code_snippets_from_json)
-
+    
     return dnn_code_snippet_regex_code
 
 
@@ -216,7 +216,7 @@ def define_code_snippet_no_workload_yes_code_snippet(code_snippet_data_list):
     """Method defines the code snipppets to use for no workload, yes code snippet use case"""
     patterns = []
     code_snippet_regex_code = open_code_snip()
-
+    print(code_snippet_regex_code)
     added_snippet_regex_length = len(code_snippet_regex_code["code_snippets"])
     for i in range(0, added_snippet_regex_length):
         added_snippet_name = code_snippet_regex_code["code_snippets"][i]["Snippets"][
@@ -234,7 +234,7 @@ def define_code_snippet_no_workload_yes_code_snippet(code_snippet_data_list):
 def dnn_define_code_snippet_no_workload_yes_code_snippet(code_snippet_data_list):
     """Method defines the dnn code snipppets to use for no workload, yes code snippet use case"""
     patterns = []
-    code_snippet_regex_code = open_code_snip()
+    code_snippet_regex_code = open_dnn_code_snip()
 
     added_snippet_regex_length = len(code_snippet_regex_code["code_snippets"])
     for i in range(0, added_snippet_regex_length):
@@ -252,9 +252,10 @@ def dnn_define_code_snippet_no_workload_yes_code_snippet(code_snippet_data_list)
 
 def find_target_no_workload_yes_code_snippet(split_text, patterns):
     """Target code lines are found by IM-FIT to use for no workload, yes code snippet use case"""
+    print("Çalıştı")
     faultable_line_list = []
     faultable_line_number_list = []
-
+    print(patterns)
     for i, _ in enumerate(split_text):
         line_from_source_code = split_text[i]
         find_function = re.findall("def:*", line_from_source_code)
@@ -269,7 +270,9 @@ def find_target_no_workload_yes_code_snippet(split_text, patterns):
             and not find_comment
         ):
             for pattern in patterns:
-                result = re.findall(pattern, line_from_source_code, re.MULTILINE)
+                
+                #result = re.findall(pattern, line_from_source_code, re.MULTILINE)
+                result =re.findall(rf"{pattern}", line_from_source_code, re.MULTILINE)
                 if result:
                     faultable_line_list.append(line_from_source_code)
                     faultable_line_number_list.append(i)
