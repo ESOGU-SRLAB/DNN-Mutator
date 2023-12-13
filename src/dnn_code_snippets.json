@@ -18,7 +18,7 @@
         },
         {
             "Snippets": {
-                "Snippet_Name": "model_add",
+                "Snippet_Name": "model.add",
                 "Regex_Code": " model\\.add\\(",
                 "Title": "Adding Layers in TensorFlow",
                 "Process": "Adds a layer to the model."

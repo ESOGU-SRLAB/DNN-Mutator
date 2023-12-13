@@ -3919,25 +3919,25 @@ class Ui_MainWindow(object):
         self.page.setObjectName(u"page")
         self.frame_4 = QFrame(self.page)
         self.frame_4.setObjectName(u"frame_4")
-        self.frame_4.setGeometry(QRect(0, 0, 821, 911))
+        self.frame_4.setGeometry(QRect(0, 0, 1341, 911))
         self.frame_4.setStyleSheet(u"background-color: rgb(40, 40, 40);")
         self.frame_4.setFrameShape(QFrame.StyledPanel)
         self.frame_4.setFrameShadow(QFrame.Raised)
         self.plainTextEdit_dnn_source = QPlainTextEdit(self.frame_4)
         self.plainTextEdit_dnn_source.setObjectName(u"plainTextEdit_dnn_source")
-        self.plainTextEdit_dnn_source.setGeometry(QRect(10, 10, 351, 61))
+        self.plainTextEdit_dnn_source.setGeometry(QRect(10, 10, 271, 61))
         self.plainTextEdit_dnn_source.setStyleSheet(u"background-color: rgb(52, 59, 72);")
         self.plainTextEdit_53 = QPlainTextEdit(self.frame_4)
         self.plainTextEdit_53.setObjectName(u"plainTextEdit_53")
-        self.plainTextEdit_53.setGeometry(QRect(10, 390, 351, 481))
+        self.plainTextEdit_53.setGeometry(QRect(580, 380, 351, 481))
         self.plainTextEdit_53.setStyleSheet(u"background-color: rgb(52, 59, 72);")
         self.pushButton_dnn_mutate = QPushButton(self.frame_4)
         self.pushButton_dnn_mutate.setObjectName(u"pushButton_dnn_mutate")
-        self.pushButton_dnn_mutate.setGeometry(QRect(660, 250, 151, 41))
+        self.pushButton_dnn_mutate.setGeometry(QRect(1180, 300, 151, 31))
         self.pushButton_dnn_mutate.setStyleSheet(u"background-color: rgb(52, 59, 72);")
         self.plainTextEdit_mutated_code = QPlainTextEdit(self.frame_4)
         self.plainTextEdit_mutated_code.setObjectName(u"plainTextEdit_mutated_code")
-        self.plainTextEdit_mutated_code.setGeometry(QRect(370, 390, 391, 481))
+        self.plainTextEdit_mutated_code.setGeometry(QRect(950, 380, 381, 481))
         self.plainTextEdit_mutated_code.setStyleSheet(u"background-color: rgb(52, 59, 72);")
         self.listWidget_mutate_list = QListWidget(self.frame_4)
         QListWidgetItem(self.listWidget_mutate_list)
@@ -4329,17 +4329,17 @@ class Ui_MainWindow(object):
         QListWidgetItem(self.listWidget_mutate_list)
         QListWidgetItem(self.listWidget_mutate_list)
         self.listWidget_mutate_list.setObjectName(u"listWidget_mutate_list")
-        self.listWidget_mutate_list.setGeometry(QRect(10, 100, 351, 251))
+        self.listWidget_mutate_list.setGeometry(QRect(580, 40, 351, 251))
         self.listWidget_mutate_list.setStyleSheet(u"background-color: rgb(52, 59, 72);")
         self.label_25 = QLabel(self.frame_4)
         self.label_25.setObjectName(u"label_25")
-        self.label_25.setGeometry(QRect(370, 370, 91, 20))
+        self.label_25.setGeometry(QRect(960, 350, 91, 20))
         self.label_35 = QLabel(self.frame_4)
         self.label_35.setObjectName(u"label_35")
-        self.label_35.setGeometry(QRect(10, 370, 91, 16))
+        self.label_35.setGeometry(QRect(590, 350, 91, 16))
         self.frame_2 = QFrame(self.frame_4)
         self.frame_2.setObjectName(u"frame_2")
-        self.frame_2.setGeometry(QRect(370, 10, 281, 61))
+        self.frame_2.setGeometry(QRect(300, 10, 271, 61))
         self.frame_2.setStyleSheet(u"background-color: rgb(52, 59, 72);")
         self.frame_2.setFrameShape(QFrame.StyledPanel)
         self.frame_2.setFrameShadow(QFrame.Raised)
@@ -4349,28 +4349,31 @@ class Ui_MainWindow(object):
         self.btn_load_dnn = QPushButton(self.frame_2)
         self.btn_load_dnn.setObjectName(u"btn_load_dnn")
         self.btn_load_dnn.setGeometry(QRect(190, 10, 80, 41))
-        self.btn_load_dnn.setStyleSheet(u"background-color: rgb(80, 59, 73);")
+        self.btn_load_dnn.setStyleSheet(u"background-color: rgb(75, 59, 72);")
         self.listWidget_selected_mutate_parameters = QListWidget(self.frame_4)
         self.listWidget_selected_mutate_parameters.setObjectName(u"listWidget_selected_mutate_parameters")
-        self.listWidget_selected_mutate_parameters.setGeometry(QRect(370, 100, 281, 251))
+        self.listWidget_selected_mutate_parameters.setGeometry(QRect(950, 40, 381, 251))
         self.listWidget_selected_mutate_parameters.setStyleSheet(u"background-color: rgb(52, 59, 72);")
         self.label_37 = QLabel(self.frame_4)
         self.label_37.setObjectName(u"label_37")
-        self.label_37.setGeometry(QRect(370, 80, 171, 16))
+        self.label_37.setGeometry(QRect(950, 10, 171, 16))
         self.label_77 = QLabel(self.frame_4)
         self.label_77.setObjectName(u"label_77")
-        self.label_77.setGeometry(QRect(10, 80, 151, 16))
+        self.label_77.setGeometry(QRect(580, 10, 181, 16))
         self.progressBar_Mutation = QProgressBar(self.frame_4)
         self.progressBar_Mutation.setObjectName(u"progressBar_Mutation")
-        self.progressBar_Mutation.setGeometry(QRect(670, 210, 118, 23))
-        self.progressBar_Mutation.setValue(24)
-        self.frame_5 = QFrame(self.page)
-        self.frame_5.setObjectName(u"frame_5")
-        self.frame_5.setGeometry(QRect(820, 0, 521, 881))
-        self.frame_5.setStyleSheet(u"background-color: rgb(40, 40, 45);")
-        self.frame_5.setFrameShape(QFrame.StyledPanel)
-        self.frame_5.setFrameShadow(QFrame.Raised)
-        self.dnn_code_snippet_list = QListWidget(self.frame_5)
+        self.progressBar_Mutation.setGeometry(QRect(950, 310, 211, 23))
+        self.progressBar_Mutation.setValue(0)
+        self.listWidget_dnn_selected_snippet = QListWidget(self.frame_4)
+        self.listWidget_dnn_selected_snippet.setObjectName(u"listWidget_dnn_selected_snippet")
+        self.listWidget_dnn_selected_snippet.setGeometry(QRect(10, 380, 271, 481))
+        self.listWidget_dnn_selected_snippet.setStyleSheet(u"background-color: rgb(52, 59, 72);")
+        self.label_18 = QLabel(self.frame_4)
+        self.label_18.setObjectName(u"label_18")
+        self.label_18.setGeometry(QRect(10, 90, 91, 16))
+        self.dnn_code_snippet_list = QListWidget(self.frame_4)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
         QListWidgetItem(self.dnn_code_snippet_list)
         QListWidgetItem(self.dnn_code_snippet_list)
         QListWidgetItem(self.dnn_code_snippet_list)
@@ -4394,27 +4397,26 @@ class Ui_MainWindow(object):
         QListWidgetItem(self.dnn_code_snippet_list)
         QListWidgetItem(self.dnn_code_snippet_list)
         self.dnn_code_snippet_list.setObjectName(u"dnn_code_snippet_list")
-        self.dnn_code_snippet_list.setGeometry(QRect(10, 10, 221, 221))
+        self.dnn_code_snippet_list.setGeometry(QRect(10, 110, 271, 181))
         self.dnn_code_snippet_list.setStyleSheet(u"background-color: rgb(52, 59, 72);")
-        self.dnn_selected_snippet = QListWidget(self.frame_5)
+        self.dnn_selected_snippet = QListWidget(self.frame_4)
         self.dnn_selected_snippet.setObjectName(u"dnn_selected_snippet")
-        self.dnn_selected_snippet.setGeometry(QRect(250, 10, 251, 111))
+        self.dnn_selected_snippet.setGeometry(QRect(300, 110, 271, 181))
         self.dnn_selected_snippet.setStyleSheet(u"background-color: rgb(52, 59, 72);")
-        self.pushButton_dnn_scan = QPushButton(self.frame_5)
-        self.pushButton_dnn_scan.setObjectName(u"pushButton_dnn_scan")
-        self.pushButton_dnn_scan.setGeometry(QRect(320, 230, 101, 31))
-        self.pushButton_dnn_scan.setStyleSheet(u"background-color: rgb(80, 59, 73);")
-        self.plainTextEdit_code_snippet_details = QPlainTextEdit(self.frame_5)
+        self.plainTextEdit_code_snippet_details = QPlainTextEdit(self.frame_4)
         self.plainTextEdit_code_snippet_details.setObjectName(u"plainTextEdit_code_snippet_details")
-        self.plainTextEdit_code_snippet_details.setGeometry(QRect(253, 140, 251, 81))
+        self.plainTextEdit_code_snippet_details.setGeometry(QRect(10, 300, 271, 51))
         self.plainTextEdit_code_snippet_details.setStyleSheet(u"background-color: rgb(52, 59, 72);")
-        self.listWidget_dnn_selected_snippet = QListWidget(self.frame_5)
-        self.listWidget_dnn_selected_snippet.setObjectName(u"listWidget_dnn_selected_snippet")
-        self.listWidget_dnn_selected_snippet.setGeometry(QRect(10, 260, 281, 221))
-        self.listWidget_dnn_selected_snippet.setStyleSheet(u"background-color: rgb(52, 59, 72);")
-        self.label_18 = QLabel(self.frame_5)
-        self.label_18.setObjectName(u"label_18")
-        self.label_18.setGeometry(QRect(10, 240, 91, 20))
+        self.pushButton_dnn_scan = QPushButton(self.frame_4)
+        self.pushButton_dnn_scan.setObjectName(u"pushButton_dnn_scan")
+        self.pushButton_dnn_scan.setGeometry(QRect(370, 310, 131, 31))
+        self.pushButton_dnn_scan.setStyleSheet(u"background-color: rgb(52, 59, 72);")
+        self.label_78 = QLabel(self.frame_4)
+        self.label_78.setObjectName(u"label_78")
+        self.label_78.setGeometry(QRect(300, 90, 111, 16))
+        self.label_79 = QLabel(self.frame_4)
+        self.label_79.setObjectName(u"label_79")
+        self.label_79.setGeometry(QRect(10, 350, 141, 16))
         self.stackedWidget.addWidget(self.page)
 
         self.verticalLayout_15.addWidget(self.stackedWidget)
@@ -6187,59 +6189,65 @@ class Ui_MainWindow(object):
         self.label_35.setText(QCoreApplication.translate("MainWindow", u"Source Code", None))
         self.label_8.setText(QCoreApplication.translate("MainWindow", u"Load The Model Source Code", None))
         self.btn_load_dnn.setText(QCoreApplication.translate("MainWindow", u"DNN LOAD", None))
-        self.label_37.setText(QCoreApplication.translate("MainWindow", u"Selected Test Parameters", None))
-        self.label_77.setText(QCoreApplication.translate("MainWindow", u"Select Parameter for Test", None))
+        self.label_37.setText(QCoreApplication.translate("MainWindow", u"Selected Mutation Parameters", None))
+        self.label_77.setText(QCoreApplication.translate("MainWindow", u"Select Parameter for Mutation", None))
+        self.label_18.setText(QCoreApplication.translate("MainWindow", u"Code Snippet", None))
 
         __sortingEnabled5 = self.dnn_code_snippet_list.isSortingEnabled()
         self.dnn_code_snippet_list.setSortingEnabled(False)
         ___qlistwidgetitem710 = self.dnn_code_snippet_list.item(0)
-        ___qlistwidgetitem710.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.MaxPooling2D", None));
+        ___qlistwidgetitem710.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.MaxPooling2D()", None));
         ___qlistwidgetitem711 = self.dnn_code_snippet_list.item(1)
-        ___qlistwidgetitem711.setText(QCoreApplication.translate("MainWindow", u"epochs", None));
+        ___qlistwidgetitem711.setText(QCoreApplication.translate("MainWindow", u"tf.nn.compute_average_loss()", None));
         ___qlistwidgetitem712 = self.dnn_code_snippet_list.item(2)
-        ___qlistwidgetitem712.setText(QCoreApplication.translate("MainWindow", u"epoch", None));
+        ___qlistwidgetitem712.setText(QCoreApplication.translate("MainWindow", u"tf.nn.conv1d()", None));
         ___qlistwidgetitem713 = self.dnn_code_snippet_list.item(3)
-        ___qlistwidgetitem713.setText(QCoreApplication.translate("MainWindow", u"layer.activation", None));
+        ___qlistwidgetitem713.setText(QCoreApplication.translate("MainWindow", u"epochs", None));
         ___qlistwidgetitem714 = self.dnn_code_snippet_list.item(4)
-        ___qlistwidgetitem714.setText(QCoreApplication.translate("MainWindow", u"model.add", None));
+        ___qlistwidgetitem714.setText(QCoreApplication.translate("MainWindow", u"epoch", None));
         ___qlistwidgetitem715 = self.dnn_code_snippet_list.item(5)
-        ___qlistwidgetitem715.setText(QCoreApplication.translate("MainWindow", u"model.pop", None));
+        ___qlistwidgetitem715.setText(QCoreApplication.translate("MainWindow", u"layer.activation", None));
         ___qlistwidgetitem716 = self.dnn_code_snippet_list.item(6)
-        ___qlistwidgetitem716.setText(QCoreApplication.translate("MainWindow", u"optimizer.lr", None));
+        ___qlistwidgetitem716.setText(QCoreApplication.translate("MainWindow", u"model.add", None));
         ___qlistwidgetitem717 = self.dnn_code_snippet_list.item(7)
-        ___qlistwidgetitem717.setText(QCoreApplication.translate("MainWindow", u"layer.dropout", None));
+        ___qlistwidgetitem717.setText(QCoreApplication.translate("MainWindow", u"model.pop", None));
         ___qlistwidgetitem718 = self.dnn_code_snippet_list.item(8)
-        ___qlistwidgetitem718.setText(QCoreApplication.translate("MainWindow", u"layer.filters", None));
+        ___qlistwidgetitem718.setText(QCoreApplication.translate("MainWindow", u"optimizer.lr", None));
         ___qlistwidgetitem719 = self.dnn_code_snippet_list.item(9)
-        ___qlistwidgetitem719.setText(QCoreApplication.translate("MainWindow", u"layer.units", None));
+        ___qlistwidgetitem719.setText(QCoreApplication.translate("MainWindow", u"layer.dropout", None));
         ___qlistwidgetitem720 = self.dnn_code_snippet_list.item(10)
-        ___qlistwidgetitem720.setText(QCoreApplication.translate("MainWindow", u"layer.kernel_initializer", None));
+        ___qlistwidgetitem720.setText(QCoreApplication.translate("MainWindow", u"layer.filters", None));
         ___qlistwidgetitem721 = self.dnn_code_snippet_list.item(11)
-        ___qlistwidgetitem721.setText(QCoreApplication.translate("MainWindow", u"layer.kernel_constraint", None));
+        ___qlistwidgetitem721.setText(QCoreApplication.translate("MainWindow", u"layer.units", None));
         ___qlistwidgetitem722 = self.dnn_code_snippet_list.item(12)
-        ___qlistwidgetitem722.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.InputLayer", None));
+        ___qlistwidgetitem722.setText(QCoreApplication.translate("MainWindow", u"layer.kernel_initializer", None));
         ___qlistwidgetitem723 = self.dnn_code_snippet_list.item(13)
-        ___qlistwidgetitem723.setText(QCoreApplication.translate("MainWindow", u"model.loss", None));
+        ___qlistwidgetitem723.setText(QCoreApplication.translate("MainWindow", u"layer.kernel_constraint", None));
         ___qlistwidgetitem724 = self.dnn_code_snippet_list.item(14)
-        ___qlistwidgetitem724.setText(QCoreApplication.translate("MainWindow", u"model.optimizer", None));
+        ___qlistwidgetitem724.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.InputLayer", None));
         ___qlistwidgetitem725 = self.dnn_code_snippet_list.item(15)
-        ___qlistwidgetitem725.setText(QCoreApplication.translate("MainWindow", u"layer.bias_initializer", None));
+        ___qlistwidgetitem725.setText(QCoreApplication.translate("MainWindow", u"model.loss", None));
         ___qlistwidgetitem726 = self.dnn_code_snippet_list.item(16)
-        ___qlistwidgetitem726.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Dropout", None));
+        ___qlistwidgetitem726.setText(QCoreApplication.translate("MainWindow", u"model.optimizer", None));
         ___qlistwidgetitem727 = self.dnn_code_snippet_list.item(17)
-        ___qlistwidgetitem727.setText(QCoreApplication.translate("MainWindow", u"tf.data.Dataset", None));
+        ___qlistwidgetitem727.setText(QCoreApplication.translate("MainWindow", u"layer.bias_initializer", None));
         ___qlistwidgetitem728 = self.dnn_code_snippet_list.item(18)
-        ___qlistwidgetitem728.setText(QCoreApplication.translate("MainWindow", u"tf.keras.initializers.Constant", None));
+        ___qlistwidgetitem728.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Dropout", None));
         ___qlistwidgetitem729 = self.dnn_code_snippet_list.item(19)
-        ___qlistwidgetitem729.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.AvgPooling2D", None));
+        ___qlistwidgetitem729.setText(QCoreApplication.translate("MainWindow", u"tf.data.Dataset", None));
         ___qlistwidgetitem730 = self.dnn_code_snippet_list.item(20)
-        ___qlistwidgetitem730.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Flatten", None));
+        ___qlistwidgetitem730.setText(QCoreApplication.translate("MainWindow", u"tf.keras.initializers.Constant", None));
         ___qlistwidgetitem731 = self.dnn_code_snippet_list.item(21)
-        ___qlistwidgetitem731.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Input", None));
+        ___qlistwidgetitem731.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.AvgPooling2D", None));
+        ___qlistwidgetitem732 = self.dnn_code_snippet_list.item(22)
+        ___qlistwidgetitem732.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Flatten", None));
+        ___qlistwidgetitem733 = self.dnn_code_snippet_list.item(23)
+        ___qlistwidgetitem733.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Input", None));
         self.dnn_code_snippet_list.setSortingEnabled(__sortingEnabled5)
 
         self.pushButton_dnn_scan.setText(QCoreApplication.translate("MainWindow", u"Scan", None))
-        self.label_18.setText(QCoreApplication.translate("MainWindow", u"Code Snippet", None))
+        self.label_78.setText(QCoreApplication.translate("MainWindow", u"Selected Snippet", None))
+        self.label_79.setText(QCoreApplication.translate("MainWindow", u"Scanned Source Code", None))
         self.creditsLabel.setText("")
         self.version.setText(QCoreApplication.translate("MainWindow", u"v1.0", None))
     # retranslateUi

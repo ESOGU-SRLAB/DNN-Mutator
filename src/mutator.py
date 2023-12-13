@@ -152,7 +152,7 @@ def modify_tf_nn_function_in_code(source_code, layer_names,new_value):
         new_value = f"tf.nn.{layer_names}()"
         # Regex kullanarak değişiklik yapma
         source_code = re.sub(pattern, new_value, source_code)
-    return source_code
+    return new_value
 
 def modify_tf_raw_ops_function_in_code(source_code, layer_names,new_value):
     for layer_name in layer_names:
@@ -163,18 +163,21 @@ def modify_tf_raw_ops_function_in_code(source_code, layer_names,new_value):
         new_value = f"tf.raw_ops.{layer_names}()"
         # Regex kullanarak değişiklik yapma
         source_code = re.sub(pattern, new_value, source_code)
-    return source_code
+    return new_value
 
 def modify_tf_train_class_in_code(source_code, layer_names,new_value):
     for layer_name in layer_names:
         # Katman adını ve sonrasında gelen parantezli ifadeyi bulmak için regex deseni
-
+        temp_source=source_code
         pattern = rf"(tf\.train\.\b{layer_names}\b\s*\()((?:[^()]|\([^)]*\))*)\)"
         # Bulunan ifadeyi değiştirmek için yeni değer
         new_value = f"tf.train.{layer_names}()"
-        # Regex kullanarak değişiklik yapma
         source_code = re.sub(pattern, new_value, source_code)
-    return source_code
+        # Regex kullanarak değişiklik yapma
+        if source_code != temp_source:
+            
+            return new_value
+        return "Mutant Does Not Exist"
 
 def modify_tf_keras_activations_function_in_code(source_code, layer_names,new_value):
     for layer_name in layer_names:
@@ -185,4 +188,4 @@ def modify_tf_keras_activations_function_in_code(source_code, layer_names,new_va
         new_value = f"tf.activations.{layer_names}()"
         # Regex kullanarak değişiklik yapma
         source_code = re.sub(pattern, new_value, source_code)
-    return source_code
+    return new_value
