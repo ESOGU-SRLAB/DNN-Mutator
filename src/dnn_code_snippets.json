@@ -97,13 +97,1455 @@
             }
             
         },
+        
         {
             "Snippets": {
-                "Snippet_Name": "conv2d_transpose",
-                "Regex_Code": "conv2dtranspose",
-                "Title": "Conv2D Transpose Layer in TensorFlow",
-                "Process": "Used in certain architectures like autoencoders for upsampling."
+                "Snippet_Name": "tf.keras.layers.AvgPool1D()",
+                "Regex_Code": "tf\\.keras\\.layers\\.AvgPool1D",
+                "Title": "tf.keras.layers.AvgPool1D() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.AvgPool2D()",
+                "Regex_Code": "tf\\.keras\\.layers\\.AvgPool2D",
+                "Title": "tf.keras.layers.AvgPool2D() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.AvgPool3D()",
+                "Regex_Code": "tf\\.keras\\.layers\\.AvgPool3D",
+                "Title": "tf.keras.layers.AvgPool3D() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.BatchNormalization()",
+                "Regex_Code": "tf\\.keras\\.layers\\.BatchNormalization",
+                "Title": "tf.keras.layers.BatchNormalization() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.Bidirectional()",
+                "Regex_Code": "tf\\.keras\\.layers\\.Bidirectional",
+                "Title": "tf.keras.layers.Bidirectional() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.CategoryEncoding()",
+                "Regex_Code": "tf\\.keras\\.layers\\.CategoryEncoding",
+                "Title": "tf.keras.layers.CategoryEncoding() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.CenterCrop()",
+                "Regex_Code": "tf\\.keras\\.layers\\.CenterCrop",
+                "Title": "tf.keras.layers.CenterCrop() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.Concatenate()",
+                "Regex_Code": "tf\\.keras\\.layers\\.Concatenate",
+                "Title": "tf.keras.layers.Concatenate() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.Conv1D()",
+                "Regex_Code": "tf\\.keras\\.layers\\.Conv1D",
+                "Title": "tf.keras.layers.Conv1D() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.Conv1DTranspose()",
+                "Regex_Code": "tf\\.keras\\.layers\\.Conv1DTranspose",
+                "Title": "tf.keras.layers.Conv1DTranspose() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.Conv2D()",
+                "Regex_Code": "tf\\.keras\\.layers\\.Conv2D",
+                "Title": "tf.keras.layers.Conv2D() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.Conv2DTranspose()",
+                "Regex_Code": "tf\\.keras\\.layers\\.Conv2DTranspose",
+                "Title": "tf.keras.layers.Conv2DTranspose() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.Conv3D()",
+                "Regex_Code": "tf\\.keras\\.layers\\.Conv3D",
+                "Title": "tf.keras.layers.Conv3D() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.Conv3DTranspose()",
+                "Regex_Code": "tf\\.keras\\.layers\\.Conv3DTranspose",
+                "Title": "tf.keras.layers.Conv3DTranspose() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.ConvLSTM1D()",
+                "Regex_Code": "tf\\.keras\\.layers\\.ConvLSTM1D",
+                "Title": "tf.keras.layers.ConvLSTM1D() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.ConvLSTM2D()",
+                "Regex_Code": "tf\\.keras\\.layers\\.ConvLSTM2D",
+                "Title": "tf.keras.layers.ConvLSTM2D() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.ConvLSTM3D()",
+                "Regex_Code": "tf\\.keras\\.layers\\.ConvLSTM3D",
+                "Title": "tf.keras.layers.ConvLSTM3D() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.Convolution1D()",
+                "Regex_Code": "tf\\.keras\\.layers\\.Convolution1D",
+                "Title": "tf.keras.layers.Convolution1D() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.Convolution1DTranspose()",
+                "Regex_Code": "tf\\.keras\\.layers\\.Convolution1DTranspose",
+                "Title": "tf.keras.layers.Convolution1DTranspose() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.Convolution2D()",
+                "Regex_Code": "tf\\.keras\\.layers\\.Convolution2D",
+                "Title": "tf.keras.layers.Convolution2D() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.Convolution2DTranspose()",
+                "Regex_Code": "tf\\.keras\\.layers\\.Convolution2DTranspose",
+                "Title": "tf.keras.layers.Convolution2DTranspose() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.Convolution3D()",
+                "Regex_Code": "tf\\.keras\\.layers\\.Convolution3D",
+                "Title": "tf.keras.layers.Convolution3D() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.Convolution3DTranspose()",
+                "Regex_Code": "tf\\.keras\\.layers\\.Convolution3DTranspose",
+                "Title": "tf.keras.layers.Convolution3DTranspose() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.Cropping1D()",
+                "Regex_Code": "tf\\.keras\\.layers\\.Cropping1D",
+                "Title": "tf.keras.layers.Cropping1D() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.Cropping2D()",
+                "Regex_Code": "tf\\.keras\\.layers\\.Cropping2D",
+                "Title": "tf.keras.layers.Cropping2D() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.Cropping3D()",
+                "Regex_Code": "tf\\.keras\\.layers\\.Cropping3D",
+                "Title": "tf.keras.layers.Cropping3D() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.SpectralNormalization()",
+                "Regex_Code": "tf\\.keras\\.layers\\.SpectralNormalization",
+                "Title": "tf.keras.layers.SpectralNormalization() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.StackedRNNCells()",
+                "Regex_Code": "tf\\.keras\\.layers\\.StackedRNNCells",
+                "Title": "tf.keras.layers.StackedRNNCells() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.StringLookup()",
+                "Regex_Code": "tf\\.keras\\.layers\\.StringLookup",
+                "Title": "tf.keras.layers.StringLookup() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.Subtract()",
+                "Regex_Code": "tf\\.keras\\.layers\\.Subtract",
+                "Title": "tf.keras.layers.Subtract() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.TextVectorization()",
+                "Regex_Code": "tf\\.keras\\.layers\\.TextVectorization",
+                "Title": "tf.keras.layers.TextVectorization() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.ThresholdedReLU()",
+                "Regex_Code": "tf\\.keras\\.layers\\.ThresholdedReLU",
+                "Title": "tf.keras.layers.ThresholdedReLU() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.TimeDistributed()",
+                "Regex_Code": "tf\\.keras\\.layers\\.TimeDistributed",
+                "Title": "tf.keras.layers.TimeDistributed() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.UnitNormalization()",
+                "Regex_Code": "tf\\.keras\\.layers\\.UnitNormalization",
+                "Title": "tf.keras.layers.UnitNormalization() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.UpSampling1D()",
+                "Regex_Code": "tf\\.keras\\.layers\\.UpSampling1D",
+                "Title": "tf.keras.layers.UpSampling1D() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.UpSampling2D()",
+                "Regex_Code": "tf\\.keras\\.layers\\.UpSampling2D",
+                "Title": "tf.keras.layers.UpSampling2D() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.UpSampling3D()",
+                "Regex_Code": "tf\\.keras\\.layers\\.UpSampling3D",
+                "Title": "tf.keras.layers.UpSampling3D() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.Wrapper()",
+                "Regex_Code": "tf\\.keras\\.layers\\.Wrapper",
+                "Title": "tf.keras.layers.Wrapper() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.ZeroPadding1D()",
+                "Regex_Code": "tf\\.keras\\.layers\\.ZeroPadding1D",
+                "Title": "tf.keras.layers.ZeroPadding1D() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.ZeroPadding2D()",
+                "Regex_Code": "tf\\.keras\\.layers\\.ZeroPadding2D",
+                "Title": "tf.keras.layers.ZeroPadding2D() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.ZeroPadding3D()",
+                "Regex_Code": "tf\\.keras\\.layers\\.ZeroPadding3D",
+                "Title": "tf.keras.layers.ZeroPadding3D() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.add()",
+                "Regex_Code": "tf\\.keras\\.layers\\.add",
+                "Title": "tf.keras.layers.add() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.average()",
+                "Regex_Code": "tf\\.keras\\.layers\\.average",
+                "Title": "tf.keras.layers.average() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.concatenate()",
+                "Regex_Code": "tf\\.keras\\.layers\\.concatenate",
+                "Title": "tf.keras.layers.concatenate() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.deserialize()",
+                "Regex_Code": "tf\\.keras\\.layers\\.deserialize",
+                "Title": "tf.keras.layers.deserialize() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.dot()",
+                "Regex_Code": "tf\\.keras\\.layers\\.dot",
+                "Title": "tf.keras.layers.dot() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.maximum()",
+                "Regex_Code": "tf\\.keras\\.layers\\.maximum",
+                "Title": "tf.keras.layers.maximum() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.minimum()",
+                "Regex_Code": "tf\\.keras\\.layers\\.minimum",
+                "Title": "tf.keras.layers.minimum() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.multiply()",
+                "Regex_Code": "tf\\.keras\\.layers\\.multiply",
+                "Title": "tf.keras.layers.multiply() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.serialize()",
+                "Regex_Code": "tf\\.keras\\.layers\\.serialize",
+                "Title": "tf.keras.layers.serialize() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.subtract()",
+                "Regex_Code": "tf\\.keras\\.layers\\.subtract",
+                "Title": "tf.keras.layers.subtract() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.activations.deserialize()",
+                "Regex_Code": "tf\\.keras\\.activations\\.deserialize",
+                "Title": "tf.keras.activations.deserialize() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.activations.elu()",
+                "Regex_Code": "tf\\.keras\\.activations\\.elu",
+                "Title": "tf.keras.activations.elu() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.activations.exponential()",
+                "Regex_Code": "tf\\.keras\\.activations\\.exponential",
+                "Title": "tf.keras.activations.exponential() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.activations.gelu()",
+                "Regex_Code": "tf\\.keras\\.activations\\.gelu",
+                "Title": "tf.keras.activations.gelu() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.activations.get()",
+                "Regex_Code": "tf\\.keras\\.activations\\.get",
+                "Title": "tf.keras.activations.get() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.activations.hard_sigmoid()",
+                "Regex_Code": "tf\\.keras\\.activations\\.hard_sigmoid",
+                "Title": "tf.keras.activations.hard_sigmoid() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.activations.linear()",
+                "Regex_Code": "tf\\.keras\\.activations\\.linear",
+                "Title": "tf.keras.activations.linear() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.activations.mish()",
+                "Regex_Code": "tf\\.keras\\.activations\\.mish",
+                "Title": "tf.keras.activations.mish() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.activations.relu()",
+                "Regex_Code": "tf\\.keras\\.activations\\.relu",
+                "Title": "tf.keras.activations.relu() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.activations.selu()",
+                "Regex_Code": "tf\\.keras\\.activations\\.selu",
+                "Title": "tf.keras.activations.selu() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.activations.serialize()",
+                "Regex_Code": "tf\\.keras\\.activations\\.serialize",
+                "Title": "tf.keras.activations.serialize() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.activations.sigmoid()",
+                "Regex_Code": "tf\\.keras\\.activations\\.sigmoid",
+                "Title": "tf.keras.activations.sigmoid() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.activations.softmax()",
+                "Regex_Code": "tf\\.keras\\.activations\\.softmax",
+                "Title": "tf.keras.activations.softmax() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.activations.softplus()",
+                "Regex_Code": "tf\\.keras\\.activations\\.softplus",
+                "Title": "tf.keras.activations.softplus() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.activations.softsign()",
+                "Regex_Code": "tf\\.keras\\.activations\\.softsign",
+                "Title": "tf.keras.activations.softsign() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.activations.swish()",
+                "Regex_Code": "tf\\.keras\\.activations\\.swish",
+                "Title": "tf.keras.activations.swish() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.activations.tanh()",
+                "Regex_Code": "tf\\.keras\\.activations\\.tanh",
+                "Title": "tf.keras.activations.tanh() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.BinaryCrossentropy()",
+                "Regex_Code": "tf\\.keras\\.losses\\.BinaryCrossentropy",
+                "Title": "tf.keras.losses.BinaryCrossentropy() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.BinaryFocalCrossentropy()",
+                "Regex_Code": "tf\\.keras\\.losses\\.BinaryFocalCrossentropy",
+                "Title": "tf.keras.losses.BinaryFocalCrossentropy() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.CategoricalCrossentropy()",
+                "Regex_Code": "tf\\.keras\\.losses\\.CategoricalCrossentropy",
+                "Title": "tf.keras.losses.CategoricalCrossentropy() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.CategoricalFocalCrossentropy()",
+                "Regex_Code": "tf\\.keras\\.losses\\.CategoricalFocalCrossentropy",
+                "Title": "tf.keras.losses.CategoricalFocalCrossentropy() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.CategoricalHinge()",
+                "Regex_Code": "tf\\.keras\\.losses\\.CategoricalHinge",
+                "Title": "tf.keras.losses.CategoricalHinge() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.CosineSimilarity()",
+                "Regex_Code": "tf\\.keras\\.losses\\.CosineSimilarity",
+                "Title": "tf.keras.losses.CosineSimilarity() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.Hinge()",
+                "Regex_Code": "tf\\.keras\\.losses\\.Hinge",
+                "Title": "tf.keras.losses.Hinge() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.Huber()",
+                "Regex_Code": "tf\\.keras\\.losses\\.Huber",
+                "Title": "tf.keras.losses.Huber() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.KLD()",
+                "Regex_Code": "tf\\.keras\\.losses\\.KLD",
+                "Title": "tf.keras.losses.KLD() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.KLDivergence()",
+                "Regex_Code": "tf\\.keras\\.losses\\.KLDivergence",
+                "Title": "tf.keras.losses.KLDivergence() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.LogCosh()",
+                "Regex_Code": "tf\\.keras\\.losses\\.LogCosh",
+                "Title": "tf.keras.losses.LogCosh() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.Loss()",
+                "Regex_Code": "tf\\.keras\\.losses\\.Loss",
+                "Title": "tf.keras.losses.Loss() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.MAE()",
+                "Regex_Code": "tf\\.keras\\.losses\\.MAE",
+                "Title": "tf.keras.losses.MAE() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.MAPE()",
+                "Regex_Code": "tf\\.keras\\.losses\\.MAPE",
+                "Title": "tf.keras.losses.MAPE() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.MSE()",
+                "Regex_Code": "tf\\.keras\\.losses\\.MSE",
+                "Title": "tf.keras.losses.MSE() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.MSLE()",
+                "Regex_Code": "tf\\.keras\\.losses\\.MSLE",
+                "Title": "tf.keras.losses.MSLE() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.MeanAbsoluteError()",
+                "Regex_Code": "tf\\.keras\\.losses\\.MeanAbsoluteError",
+                "Title": "tf.keras.losses.MeanAbsoluteError() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.MeanAbsolutePercentageError()",
+                "Regex_Code": "tf\\.keras\\.losses\\.MeanAbsolutePercentageError",
+                "Title": "tf.keras.losses.MeanAbsolutePercentageError() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.MeanSquaredError()",
+                "Regex_Code": "tf\\.keras\\.losses\\.MeanSquaredError",
+                "Title": "tf.keras.losses.MeanSquaredError() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.MeanSquaredLogarithmicError()",
+                "Regex_Code": "tf\\.keras\\.losses\\.MeanSquaredLogarithmicError",
+                "Title": "tf.keras.losses.MeanSquaredLogarithmicError() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.Poisson()",
+                "Regex_Code": "tf\\.keras\\.losses\\.Poisson",
+                "Title": "tf.keras.losses.Poisson() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.Reduction()",
+                "Regex_Code": "tf\\.keras\\.losses\\.Reduction",
+                "Title": "tf.keras.losses.Reduction() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.SparseCategoricalCrossentropy()",
+                "Regex_Code": "tf\\.keras\\.losses\\.SparseCategoricalCrossentropy",
+                "Title": "tf.keras.losses.SparseCategoricalCrossentropy() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.SquaredHinge()",
+                "Regex_Code": "tf\\.keras\\.losses\\.SquaredHinge",
+                "Title": "tf.keras.losses.SquaredHinge() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.binary_crossentropy()",
+                "Regex_Code": "tf\\.keras\\.losses\\.binary_crossentropy",
+                "Title": "tf.keras.losses.binary_crossentropy() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.binary_focal_crossentropy()",
+                "Regex_Code": "tf\\.keras\\.losses\\.binary_focal_crossentropy",
+                "Title": "tf.keras.losses.binary_focal_crossentropy() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.categorical_crossentropy()",
+                "Regex_Code": "tf\\.keras\\.losses\\.categorical_crossentropy",
+                "Title": "tf.keras.losses.categorical_crossentropy() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.categorical_focal_crossentropy()",
+                "Regex_Code": "tf\\.keras\\.losses\\.categorical_focal_crossentropy",
+                "Title": "tf.keras.losses.categorical_focal_crossentropy() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.categorical_hinge()",
+                "Regex_Code": "tf\\.keras\\.losses\\.categorical_hinge",
+                "Title": "tf.keras.losses.categorical_hinge() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.cosine_similarity()",
+                "Regex_Code": "tf\\.keras\\.losses\\.cosine_similarity",
+                "Title": "tf.keras.losses.cosine_similarity() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.deserialize()",
+                "Regex_Code": "tf\\.keras\\.losses\\.deserialize",
+                "Title": "tf.keras.losses.deserialize() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.get()",
+                "Regex_Code": "tf\\.keras\\.losses\\.get",
+                "Title": "tf.keras.losses.get() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.hinge()",
+                "Regex_Code": "tf\\.keras\\.losses\\.hinge",
+                "Title": "tf.keras.losses.hinge() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.huber()",
+                "Regex_Code": "tf\\.keras\\.losses\\.huber",
+                "Title": "tf.keras.losses.huber() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.kl_divergence()",
+                "Regex_Code": "tf\\.keras\\.losses\\.kl_divergence",
+                "Title": "tf.keras.losses.kl_divergence() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.kld()",
+                "Regex_Code": "tf\\.keras\\.losses\\.kld",
+                "Title": "tf.keras.losses.kld() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.kullback_leibler_divergence()",
+                "Regex_Code": "tf\\.keras\\.losses\\.kullback_leibler_divergence",
+                "Title": "tf.keras.losses.kullback_leibler_divergence() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.log_cosh()",
+                "Regex_Code": "tf\\.keras\\.losses\\.log_cosh",
+                "Title": "tf.keras.losses.log_cosh() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.logcosh()",
+                "Regex_Code": "tf\\.keras\\.losses\\.logcosh",
+                "Title": "tf.keras.losses.logcosh() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.mae()",
+                "Regex_Code": "tf\\.keras\\.losses\\.mae",
+                "Title": "tf.keras.losses.mae() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.mape()",
+                "Regex_Code": "tf\\.keras\\.losses\\.mape",
+                "Title": "tf.keras.losses.mape() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.mean_absolute_error()",
+                "Regex_Code": "tf\\.keras\\.losses\\.mean_absolute_error",
+                "Title": "tf.keras.losses.mean_absolute_error() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.mean_absolute_percentage_error()",
+                "Regex_Code": "tf\\.keras\\.losses\\.mean_absolute_percentage_error",
+                "Title": "tf.keras.losses.mean_absolute_percentage_error() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.mean_squared_error()",
+                "Regex_Code": "tf\\.keras\\.losses\\.mean_squared_error",
+                "Title": "tf.keras.losses.mean_squared_error() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.mean_squared_logarithmic_error()",
+                "Regex_Code": "tf\\.keras\\.losses\\.mean_squared_logarithmic_error",
+                "Title": "tf.keras.losses.mean_squared_logarithmic_error() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.mse()",
+                "Regex_Code": "tf\\.keras\\.losses\\.mse",
+                "Title": "tf.keras.losses.mse() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.msle()",
+                "Regex_Code": "tf\\.keras\\.losses\\.msle",
+                "Title": "tf.keras.losses.msle() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.poisson()",
+                "Regex_Code": "tf\\.keras\\.losses\\.poisson",
+                "Title": "tf.keras.losses.poisson() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.serialize()",
+                "Regex_Code": "tf\\.keras\\.losses\\.serialize",
+                "Title": "tf.keras.losses.serialize() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.sparse_categorical_crossentropy()",
+                "Regex_Code": "tf\\.keras\\.losses\\.sparse_categorical_crossentropy",
+                "Title": "tf.keras.losses.sparse_categorical_crossentropy() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.losses.squared_hinge()",
+                "Regex_Code": "tf\\.keras\\.losses\\.squared_hinge",
+                "Title": "tf.keras.losses.squared_hinge() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.optimizers.Adadelta()",
+                "Regex_Code": "tf\\.keras\\.optimizers\\.Adadelta",
+                "Title": "tf.keras.optimizers.Adadelta() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.optimizers.Adafactor()",
+                "Regex_Code": "tf\\.keras\\.optimizers\\.Adafactor",
+                "Title": "tf.keras.optimizers.Adafactor() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.optimizers.Adagrad()",
+                "Regex_Code": "tf\\.keras\\.optimizers\\.Adagrad",
+                "Title": "tf.keras.optimizers.Adagrad() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.optimizers.Adam()",
+                "Regex_Code": "tf\\.keras\\.optimizers\\.Adam",
+                "Title": "tf.keras.optimizers.Adam() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.optimizers.Adamax()",
+                "Regex_Code": "tf\\.keras\\.optimizers\\.Adamax",
+                "Title": "tf.keras.optimizers.Adamax() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.optimizers.Ftrl()",
+                "Regex_Code": "tf\\.keras\\.optimizers\\.Ftrl",
+                "Title": "tf.keras.optimizers.Ftrl() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.optimizers.Nadam()",
+                "Regex_Code": "tf\\.keras\\.optimizers\\.Nadam",
+                "Title": "tf.keras.optimizers.Nadam() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.optimizers.RMSprop()",
+                "Regex_Code": "tf\\.keras\\.optimizers\\.RMSprop",
+                "Title": "tf.keras.optimizers.RMSprop() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.optimizers.SGD()",
+                "Regex_Code": "tf\\.keras\\.optimizers\\.SGD",
+                "Title": "tf.keras.optimizers.SGD() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.optimizers.deserialize()",
+                "Regex_Code": "tf\\.optimizers\\.deserialize",
+                "Title": "tf.optimizers.deserialize() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.optimizers.get()",
+                "Regex_Code": "tf\\.optimizers\\.get",
+                "Title": "tf.optimizers.get() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.optimizers.legacy.Adadelta()",
+                "Regex_Code": "tf\\.keras\\.optimizers\\.legacy\\.Adadelta",
+                "Title": "tf.keras.optimizers.legacy.Adadelta() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.optimizers.legacy.Adagrad()",
+                "Regex_Code": "tf\\.keras\\.optimizers\\.legacy\\.Adagrad",
+                "Title": "tf.keras.optimizers.legacy.Adagrad() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.optimizers.legacy.Adam()",
+                "Regex_Code": "tf\\.keras\\.optimizers\\.legacy\\.Adam",
+                "Title": "tf.keras.optimizers.legacy.Adam() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.optimizers.legacy.Adamax()",
+                "Regex_Code": "tf\\.keras\\.optimizers\\.legacy\\.Adamax",
+                "Title": "tf.keras.optimizers.legacy.Adamax() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.optimizers.legacy.Ftrl()",
+                "Regex_Code": "tf\\.keras\\.optimizers\\.legacy\\.Ftrl",
+                "Title": "tf.keras.optimizers.legacy.Ftrl() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.optimizers.legacy.Nadam()",
+                "Regex_Code": "tf\\.keras\\.optimizers\\.legacy\\.Nadam",
+                "Title": "tf.keras.optimizers.legacy.Nadam() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.optimizers.legacy.RMSprop()",
+                "Regex_Code": "tf\\.keras\\.optimizers\\.legacy\\.RMSprop",
+                "Title": "tf.keras.optimizers.legacy.RMSprop() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.optimizers.legacy.SGD()",
+                "Regex_Code": "tf\\.keras\\.optimizers\\.legacy\\.SGD",
+                "Title": "tf.keras.optimizers.legacy.SGD() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.optimizers.schedules.CosineDecay()",
+                "Regex_Code": "tf\\.keras\\.optimizers\\.schedules\\.CosineDecay",
+                "Title": "tf.keras.optimizers.schedules.CosineDecay() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.optimizers.schedules.ExponentialDecay()",
+                "Regex_Code": "tf\\.keras\\.optimizers\\.schedules\\.ExponentialDecay",
+                "Title": "tf.keras.optimizers.schedules.ExponentialDecay() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.optimizers.schedules.PolynomialDecay()",
+                "Regex_Code": "tf\\.keras\\.optimizers\\.schedules\\.PolynomialDecay",
+                "Title": "tf.keras.optimizers.schedules.PolynomialDecay() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.optimizers.schedules.deserialize()",
+                "Regex_Code": "tf\\.keras\\.optimizers\\.schedules\\.deserialize",
+                "Title": "tf.keras.optimizers.schedules.deserialize() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.optimizers.schedules.serialize()",
+                "Regex_Code": "tf\\.keras\\.optimizers\\.schedules\\.serialize",
+                "Title": "tf.keras.optimizers.schedules.serialize() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.RNNCellDeviceWrapper()",
+                "Regex_Code": "tf\\.nn\\.RNNCellDeviceWrapper",
+                "Title": "tf.nn.RNNCellDeviceWrapper() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.RNNCellDropoutWrapper()",
+                "Regex_Code": "tf\\.nn\\.RNNCellDropoutWrapper",
+                "Title": "tf.nn.RNNCellDropoutWrapper() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.RNNCellResidualWrapper()",
+                "Regex_Code": "tf\\.nn\\.RNNCellResidualWrapper",
+                "Title": "tf.nn.RNNCellResidualWrapper() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.all_candidate_sampler()",
+                "Regex_Code": "tf\\.nn\\.all_candidate_sampler",
+                "Title": "tf.nn.all_candidate_sampler() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.approx_max_k()",
+                "Regex_Code": "tf\\.nn\\.approx_max_k",
+                "Title": "tf.nn.approx_max_k() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.approx_min_k()",
+                "Regex_Code": "tf\\.nn\\.approx_min_k",
+                "Title": "tf.nn.approx_min_k() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.atrous_conv2d()",
+                "Regex_Code": "tf\\.nn\\.atrous_conv2d",
+                "Title": "tf.nn.atrous_conv2d() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.atrous_conv2d_transpose()",
+                "Regex_Code": "tf\\.nn\\.atrous_conv2d_transpose",
+                "Title": "tf.nn.atrous_conv2d_transpose() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.avg_pool()",
+                "Regex_Code": "tf\\.nn\\.avg_pool",
+                "Title": "tf.nn.avg_pool() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.avg_pool1d()",
+                "Regex_Code": "tf\\.nn\\.avg_pool1d",
+                "Title": "tf.nn.avg_pool1d() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.avg_pool2d()",
+                "Regex_Code": "tf\\.nn\\.avg_pool2d",
+                "Title": "tf.nn.avg_pool2d() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.avg_pool3d()",
+                "Regex_Code": "tf\\.nn\\.avg_pool3d",
+                "Title": "tf.nn.avg_pool3d() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.batch_norm_with_global_normalization()",
+                "Regex_Code": "tf\\.nn\\.batch_norm_with_global_normalization",
+                "Title": "tf.nn.batch_norm_with_global_normalization() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.batch_normalization()",
+                "Regex_Code": "tf\\.nn\\.batch_normalization",
+                "Title": "tf.nn.batch_normalization() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.bias_add()",
+                "Regex_Code": "tf\\.nn\\.bias_add",
+                "Title": "tf.nn.bias_add() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.collapse_repeated()",
+                "Regex_Code": "tf\\.nn\\.collapse_repeated",
+                "Title": "tf.nn.collapse_repeated() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.compute_accidental_hits()",
+                "Regex_Code": "tf\\.nn\\.compute_accidental_hits",
+                "Title": "tf.nn.compute_accidental_hits() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.compute_average_loss()",
+                "Regex_Code": "tf\\.nn\\.compute_average_loss",
+                "Title": "tf.nn.compute_average_loss() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.conv1d()",
+                "Regex_Code": "tf\\.nn\\.conv1d",
+                "Title": "tf.nn.conv1d() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.conv1d_transpose()",
+                "Regex_Code": "tf\\.nn\\.conv1d_transpose",
+                "Title": "tf.nn.conv1d_transpose() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.conv2d()",
+                "Regex_Code": "tf\\.nn\\.conv2d",
+                "Title": "tf.nn.conv2d() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.conv2d_transpose()",
+                "Regex_Code": "tf\\.nn\\.conv2d_transpose",
+                "Title": "tf.nn.conv2d_transpose() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.conv3d()",
+                "Regex_Code": "tf\\.nn\\.conv3d",
+                "Title": "tf.nn.conv3d() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.conv3d_transpose()",
+                "Regex_Code": "tf\\.nn\\.conv3d_transpose",
+                "Title": "tf.nn.conv3d_transpose() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.conv_transpose()",
+                "Regex_Code": "tf\\.nn\\.conv_transpose",
+                "Title": "tf.nn.conv_transpose() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.convolution()",
+                "Regex_Code": "tf\\.nn\\.convolution",
+                "Title": "tf.nn.convolution() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.crelu()",
+                "Regex_Code": "tf\\.nn\\.crelu",
+                "Title": "tf.nn.crelu() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.ctc_beam_search_decoder()",
+                "Regex_Code": "tf\\.nn\\.ctc_beam_search_decoder",
+                "Title": "tf.nn.ctc_beam_search_decoder() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.ctc_greedy_decoder()",
+                "Regex_Code": "tf\\.nn\\.ctc_greedy_decoder",
+                "Title": "tf.nn.ctc_greedy_decoder() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.ctc_loss()",
+                "Regex_Code": "tf\\.nn\\.ctc_loss",
+                "Title": "tf.nn.ctc_loss() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.ctc_unique_labels()",
+                "Regex_Code": "tf\\.nn\\.ctc_unique_labels",
+                "Title": "tf.nn.ctc_unique_labels() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.depth_to_space()",
+                "Regex_Code": "tf\\.nn\\.depth_to_space",
+                "Title": "tf.nn.depth_to_space() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.depthwise_conv2d()",
+                "Regex_Code": "tf\\.nn\\.depthwise_conv2d",
+                "Title": "tf.nn.depthwise_conv2d() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.depthwise_conv2d_backprop_filter()",
+                "Regex_Code": "tf\\.nn\\.depthwise_conv2d_backprop_filter",
+                "Title": "tf.nn.depthwise_conv2d_backprop_filter() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.depthwise_conv2d_backprop_input()",
+                "Regex_Code": "tf\\.nn\\.depthwise_conv2d_backprop_input",
+                "Title": "tf.nn.depthwise_conv2d_backprop_input() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.dilation2d()",
+                "Regex_Code": "tf\\.nn\\.dilation2d",
+                "Title": "tf.nn.dilation2d() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.dropout()",
+                "Regex_Code": "tf\\.nn\\.dropout",
+                "Title": "tf.nn.dropout() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.nn.elu()",
+                "Regex_Code": "tf\\.nn\\.elu",
+                "Title": "tf.nn.elu() in TensorFlow",
+                "Process": "Description not available."
             }
         }
+        
     ]
 }

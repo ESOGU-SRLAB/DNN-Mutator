@@ -10954,6 +10954,11 @@ color:white;</string>
                         </item>
                         <item>
                          <property name="text">
+                          <string>layer_concatenate</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
                           <string>dropout</string>
                          </property>
                         </item>
