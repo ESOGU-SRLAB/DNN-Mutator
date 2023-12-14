@@ -10934,31 +10934,6 @@ color:white;</string>
                         </property>
                         <item>
                          <property name="text">
-                          <string>tf.keras.layers.MaxPooling2D()</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>conv2d_transpose</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>tf.nn.compute_average_loss()</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>tf.nn.conv1d()</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>layer_concatenate</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
                           <string>dropout</string>
                          </property>
                         </item>
@@ -10989,82 +10964,1842 @@ color:white;</string>
                         </item>
                         <item>
                          <property name="text">
-                          <string>optimizer.lr</string>
+                          <string>tf.keras.layers.AvgPool1D()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>layer.dropout</string>
+                          <string>tf.keras.layers.AvgPool2D()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>layer.filters</string>
+                          <string>tf.keras.layers.AvgPool3D()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>layer.units</string>
+                          <string>tf.keras.layers.BatchNormalization()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>layer.kernel_initializer</string>
+                          <string>tf.keras.layers.Bidirectional()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>layer.kernel_constraint</string>
+                          <string>tf.keras.layers.CategoryEncoding()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>tf.keras.layers.InputLayer</string>
+                          <string>tf.keras.layers.CenterCrop()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>model.loss</string>
+                          <string>tf.keras.layers.Concatenate()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>model.optimizer</string>
+                          <string>tf.keras.layers.Conv1D()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>layer.bias_initializer</string>
+                          <string>tf.keras.layers.Conv1DTranspose()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>tf.keras.layers.Dropout</string>
+                          <string>tf.keras.layers.Conv2D()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>tf.data.Dataset</string>
+                          <string>tf.keras.layers.Conv2DTranspose()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>tf.keras.initializers.Constant</string>
+                          <string>tf.keras.layers.Conv3D()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>tf.keras.layers.AvgPooling2D</string>
+                          <string>tf.keras.layers.Conv3DTranspose()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>tf.keras.layers.Flatten</string>
+                          <string>tf.keras.layers.ConvLSTM1D()</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>tf.keras.layers.Input</string>
+                          <string>tf.keras.layers.ConvLSTM2D()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.ConvLSTM3D()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.Convolution1D()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.Convolution1DTranspose()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.Convolution2D()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.Convolution2DTranspose()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.Convolution3D()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.Convolution3DTranspose()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.Cropping1D()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.Cropping2D()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.Cropping3D()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.SpectralNormalization()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.StackedRNNCells()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.StringLookup()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.Subtract()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.TextVectorization()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.ThresholdedReLU()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.TimeDistributed()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.UnitNormalization()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.UpSampling1D()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.UpSampling2D()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.UpSampling3D()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.Wrapper()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.ZeroPadding1D()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.ZeroPadding2D()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.ZeroPadding3D()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.add()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.average()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.concatenate()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.deserialize()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.dot()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.maximum()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.minimum()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.multiply()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.serialize()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.subtract()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.activations.deserialize()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.activations.elu()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.activations.exponential()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.activations.gelu()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.activations.get()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.activations.hard_sigmoid()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.activations.linear()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.activations.mish()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.activations.relu()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.activations.selu()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.activations.serialize()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.activations.sigmoid()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.activations.softmax()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.activations.softplus()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.activations.softsign()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.activations.swish()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.activations.tanh()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.BinaryCrossentropy()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.BinaryFocalCrossentropy()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.CategoricalCrossentropy()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.CategoricalFocalCrossentropy()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.CategoricalHinge()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.CosineSimilarity()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.Hinge()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.Huber()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.KLD()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.KLDivergence()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.LogCosh()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.Loss()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.MAE()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.MAPE()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.MSE()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.MSLE()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.MeanAbsoluteError()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.MeanAbsolutePercentageError()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.MeanSquaredError()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.MeanSquaredLogarithmicError()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.Poisson()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.Reduction()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.SparseCategoricalCrossentropy()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.SquaredHinge()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.binary_crossentropy()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.binary_focal_crossentropy()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.categorical_crossentropy()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.categorical_focal_crossentropy()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.categorical_hinge()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.cosine_similarity()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.deserialize()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.get()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.hinge()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.huber()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.kl_divergence()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.kld()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.kullback_leibler_divergence()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.log_cosh()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.logcosh()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.mae()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.mape()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.mean_absolute_error()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.mean_absolute_percentage_error()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.mean_squared_error()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.mean_squared_logarithmic_error()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.mse()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.msle()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.poisson()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.serialize()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.sparse_categorical_crossentropy()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.losses.squared_hinge()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.optimizers.Adadelta()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.optimizers.Adafactor()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.optimizers.Adagrad()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.optimizers.Adam()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.optimizers.Adamax()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.optimizers.Ftrl()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.optimizers.Nadam()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.optimizers.RMSprop()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.optimizers.SGD()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.optimizers.deserialize()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.optimizers.get()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.optimizers.legacy.Adadelta()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.optimizers.legacy.Adagrad()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.optimizers.legacy.Adam()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.optimizers.legacy.Adamax()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.optimizers.legacy.Ftrl()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.optimizers.legacy.Nadam()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.optimizers.legacy.RMSprop()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.optimizers.legacy.SGD()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.optimizers.schedules.CosineDecay()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.optimizers.schedules.ExponentialDecay()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.optimizers.schedules.PolynomialDecay()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.optimizers.schedules.deserialize()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.optimizers.schedules.serialize()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.RNNCellDeviceWrapper()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.RNNCellDropoutWrapper()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.RNNCellResidualWrapper()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.all_candidate_sampler()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.approx_max_k()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.approx_min_k()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.atrous_conv2d()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.atrous_conv2d_transpose()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.avg_pool()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.avg_pool1d()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.avg_pool2d()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.avg_pool3d()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.batch_norm_with_global_normalization()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.batch_normalization()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.bias_add()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.collapse_repeated()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.compute_accidental_hits()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.compute_average_loss()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.conv1d()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.conv1d_transpose()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.conv2d()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.conv2d_transpose()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.conv3d()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.conv3d_transpose()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.conv_transpose()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.convolution()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.crelu()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.ctc_beam_search_decoder()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.ctc_greedy_decoder()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.ctc_loss()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.ctc_unique_labels()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.depth_to_space()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.depthwise_conv2d()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.depthwise_conv2d_backprop_filter()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.depthwise_conv2d_backprop_input()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.dilation2d()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.dropout()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.elu()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.embedding_lookup()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.embedding_lookup_sparse()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.erosion2d()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.fixed_unigram_candidate_sampler()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.fractional_avg_pool()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.fractional_max_pool()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.gelu()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.in_top_k()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.isotonic_regression()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.l2_loss()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.l2_normalize()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.leaky_relu()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.learned_unigram_candidate_sampler()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.local_response_normalization()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.log_poisson_loss()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.log_softmax()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.lrn()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.max_pool()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.max_pool1d()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.max_pool2d()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.max_pool3d()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.max_pool_with_argmax()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.moments()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.nce_loss()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.normalize_moments()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.pool()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.relu()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.relu6()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.safe_embedding_lookup_sparse()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.sampled_softmax_loss()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.scale_regularization_loss()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.selu()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.separable_conv2d()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.sigmoid()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.sigmoid_cross_entropy_with_logits()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.silu()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.softmax()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.softmax_cross_entropy_with_logits()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.softplus()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.softsign()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.space_to_batch()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.space_to_depth()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.sparse_softmax_cross_entropy_with_logits()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.sufficient_statistics()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.swish()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.tanh()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.top_k()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.weighted_cross_entropy_with_logits()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.weighted_moments()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.with_space_to_batch()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.nn.zero_fraction()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.BlockLSTM()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.BlockLSTMGrad()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.BlockLSTMGradV2()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.BlockLSTMV2()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.BoostedTreesTrainingPredict()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.CSRSparseMatrixToDense()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.CTCLoss()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.CTCLossV2()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.Conv()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.Conv2D()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.Conv2DBackpropFilter()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.Conv2DBackpropFilterV2()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.Conv2DBackpropInput()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.Conv2DBackpropInputV2()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.Conv3D()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.Conv3DBackpropFilter()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.Conv3DBackpropFilterV2()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.Conv3DBackpropInput()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.Conv3DBackpropInputV2()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.CudnnRNN()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.CudnnRNNBackprop()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.CudnnRNNBackpropV2()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.CudnnRNNBackpropV3()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.CudnnRNNCanonicalToParams()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.CudnnRNNCanonicalToParamsV2()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.CudnnRNNParamsSize()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.CudnnRNNParamsToCanonical()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.CudnnRNNParamsToCanonicalV2()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.CudnnRNNV2()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.CudnnRNNV3()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.DenseBincount()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.DenseCountSparseOutput()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.DenseToCSRSparseMatrix()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.DenseToDenseSetOperation()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.DenseToSparseBatchDataset()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.DenseToSparseSetOperation()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.DepthwiseConv2dNative()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.DepthwiseConv2dNativeBackpropFilter()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.DepthwiseConv2dNativeBackpropInput()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.FusedPadConv2D()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.FusedResizeAndPadConv2D()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.GRUBlockCell()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.GRUBlockCellGrad()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.L2Loss()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.LSTMBlockCell()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.LSTMBlockCellGrad()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.QuantizedConv2D()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.QuantizedConv2DAndRelu()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.QuantizedConv2DAndReluAndRequantize()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.QuantizedConv2DAndRequantize()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.QuantizedConv2DPerChannel()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.QuantizedConv2DWithBias()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.QuantizedConv2DWithBiasAndRelu()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.QuantizedConv2DWithBiasAndReluAndRequantize()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.QuantizedConv2DWithBiasAndRequantize()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.QuantizedConv2DWithBiasSignedSumAndReluAndRequantize()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.QuantizedConv2DWithBiasSumAndRelu()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.QuantizedConv2DWithBiasSumAndReluAndRequantize()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.QuantizedDepthwiseConv2D()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.QuantizedDepthwiseConv2DWithBias()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.QuantizedDepthwiseConv2DWithBiasAndRelu()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.QuantizedDepthwiseConv2DWithBiasAndReluAndRequantize()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.RecvTPUEmbeddingActivations()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.SdcaOptimizer()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.SdcaOptimizerV2()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.SparseDenseCwiseAdd()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.SparseDenseCwiseDiv()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.SparseDenseCwiseMul()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.SparseTensorDenseAdd()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.SparseTensorDenseMatMul()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.SparseToDense()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.TPUEmbeddingActivations()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.UniformQuantizedConvolution()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.UniformQuantizedConvolutionHybrid()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.RecvTPUEmbeddingActivations()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.SdcaOptimizer()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.SdcaOptimizerV2()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.L2Loss()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.LSTMBlockCell()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.LSTMBlockCellGrad()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.QuantizedConv2D()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.QuantizedConv2DAndRelu()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.QuantizedConv2DAndReluAndRequantize()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.QuantizedConv2DAndRequantize()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.QuantizedConv2DPerChannel()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.QuantizedConv2DWithBias()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.QuantizedConv2DWithBiasAndRelu()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.QuantizedConv2DWithBiasAndReluAndRequantize()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.QuantizedConv2DWithBiasAndRequantize()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.QuantizedConv2DWithBiasSignedSumAndReluAndRequantize()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.QuantizedConv2DWithBiasSumAndRelu()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.QuantizedConv2DWithBiasSumAndReluAndRequantize()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.QuantizedDepthwiseConv2D()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.QuantizedDepthwiseConv2DWithBias()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.QuantizedDepthwiseConv2DWithBiasAndRelu()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.QuantizedDepthwiseConv2DWithBiasAndReluAndRequantize()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.RecvTPUEmbeddingActivations()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.SdcaOptimizer()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.SdcaOptimizerV2()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.SparseDenseCwiseAdd()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.SparseDenseCwiseDiv()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.SparseDenseCwiseMul()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.SparseTensorDenseAdd()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.SparseTensorDenseMatMul()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.SparseToDense()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.TPUEmbeddingActivations()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.UniformQuantizedConvolution()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.raw_ops.UniformQuantizedConvolutionHybrid()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.train.BytesList()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.train.Checkpoint()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.train.CheckpointManager()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.train.CheckpointOptions()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.train.CheckpointView()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.train.ClusterDef()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.train.ClusterSpec()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.train.Coordinator()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.train.Example()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.train.ExponentialMovingAverage()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.train.Feature()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.train.FeatureList()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.train.FeatureLists()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.train.Features()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.train.FloatList()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.train.Int64List()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.train.JobDef()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.train.SequenceExample()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.train.ServerDef()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.train.TrackableView()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.train.checkpoints_iterator()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.train.experimental()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.train.experimental.PythonState()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.train.get_checkpoint_state()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.train.latest_checkpoint()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.train.list_variables()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.train.load_checkpoint()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.train.load_variable()</string>
                          </property>
                         </item>
                        </widget>

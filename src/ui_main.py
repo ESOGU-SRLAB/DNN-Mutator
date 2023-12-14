@@ -4399,6 +4399,353 @@ class Ui_MainWindow(object):
         QListWidgetItem(self.dnn_code_snippet_list)
         QListWidgetItem(self.dnn_code_snippet_list)
         QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
+        QListWidgetItem(self.dnn_code_snippet_list)
         self.dnn_code_snippet_list.setObjectName(u"dnn_code_snippet_list")
         self.dnn_code_snippet_list.setGeometry(QRect(10, 110, 271, 181))
         self.dnn_code_snippet_list.setStyleSheet(u"background-color: rgb(52, 59, 72);")
@@ -6199,59 +6546,753 @@ class Ui_MainWindow(object):
         __sortingEnabled5 = self.dnn_code_snippet_list.isSortingEnabled()
         self.dnn_code_snippet_list.setSortingEnabled(False)
         ___qlistwidgetitem710 = self.dnn_code_snippet_list.item(0)
-        ___qlistwidgetitem710.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.MaxPooling2D()", None));
+        ___qlistwidgetitem710.setText(QCoreApplication.translate("MainWindow", u"dropout", None));
         ___qlistwidgetitem711 = self.dnn_code_snippet_list.item(1)
-        ___qlistwidgetitem711.setText(QCoreApplication.translate("MainWindow", u"conv2d_transpose", None));
+        ___qlistwidgetitem711.setText(QCoreApplication.translate("MainWindow", u"epochs", None));
         ___qlistwidgetitem712 = self.dnn_code_snippet_list.item(2)
-        ___qlistwidgetitem712.setText(QCoreApplication.translate("MainWindow", u"tf.nn.compute_average_loss()", None));
+        ___qlistwidgetitem712.setText(QCoreApplication.translate("MainWindow", u"epoch", None));
         ___qlistwidgetitem713 = self.dnn_code_snippet_list.item(3)
-        ___qlistwidgetitem713.setText(QCoreApplication.translate("MainWindow", u"tf.nn.conv1d()", None));
+        ___qlistwidgetitem713.setText(QCoreApplication.translate("MainWindow", u"layer.activation", None));
         ___qlistwidgetitem714 = self.dnn_code_snippet_list.item(4)
-        ___qlistwidgetitem714.setText(QCoreApplication.translate("MainWindow", u"layer_concatenate", None));
+        ___qlistwidgetitem714.setText(QCoreApplication.translate("MainWindow", u"model.add", None));
         ___qlistwidgetitem715 = self.dnn_code_snippet_list.item(5)
-        ___qlistwidgetitem715.setText(QCoreApplication.translate("MainWindow", u"dropout", None));
+        ___qlistwidgetitem715.setText(QCoreApplication.translate("MainWindow", u"model.pop", None));
         ___qlistwidgetitem716 = self.dnn_code_snippet_list.item(6)
-        ___qlistwidgetitem716.setText(QCoreApplication.translate("MainWindow", u"epochs", None));
+        ___qlistwidgetitem716.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.AvgPool1D()", None));
         ___qlistwidgetitem717 = self.dnn_code_snippet_list.item(7)
-        ___qlistwidgetitem717.setText(QCoreApplication.translate("MainWindow", u"epoch", None));
+        ___qlistwidgetitem717.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.AvgPool2D()", None));
         ___qlistwidgetitem718 = self.dnn_code_snippet_list.item(8)
-        ___qlistwidgetitem718.setText(QCoreApplication.translate("MainWindow", u"layer.activation", None));
+        ___qlistwidgetitem718.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.AvgPool3D()", None));
         ___qlistwidgetitem719 = self.dnn_code_snippet_list.item(9)
-        ___qlistwidgetitem719.setText(QCoreApplication.translate("MainWindow", u"model.add", None));
+        ___qlistwidgetitem719.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.BatchNormalization()", None));
         ___qlistwidgetitem720 = self.dnn_code_snippet_list.item(10)
-        ___qlistwidgetitem720.setText(QCoreApplication.translate("MainWindow", u"model.pop", None));
+        ___qlistwidgetitem720.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Bidirectional()", None));
         ___qlistwidgetitem721 = self.dnn_code_snippet_list.item(11)
-        ___qlistwidgetitem721.setText(QCoreApplication.translate("MainWindow", u"optimizer.lr", None));
+        ___qlistwidgetitem721.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.CategoryEncoding()", None));
         ___qlistwidgetitem722 = self.dnn_code_snippet_list.item(12)
-        ___qlistwidgetitem722.setText(QCoreApplication.translate("MainWindow", u"layer.dropout", None));
+        ___qlistwidgetitem722.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.CenterCrop()", None));
         ___qlistwidgetitem723 = self.dnn_code_snippet_list.item(13)
-        ___qlistwidgetitem723.setText(QCoreApplication.translate("MainWindow", u"layer.filters", None));
+        ___qlistwidgetitem723.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Concatenate()", None));
         ___qlistwidgetitem724 = self.dnn_code_snippet_list.item(14)
-        ___qlistwidgetitem724.setText(QCoreApplication.translate("MainWindow", u"layer.units", None));
+        ___qlistwidgetitem724.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Conv1D()", None));
         ___qlistwidgetitem725 = self.dnn_code_snippet_list.item(15)
-        ___qlistwidgetitem725.setText(QCoreApplication.translate("MainWindow", u"layer.kernel_initializer", None));
+        ___qlistwidgetitem725.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Conv1DTranspose()", None));
         ___qlistwidgetitem726 = self.dnn_code_snippet_list.item(16)
-        ___qlistwidgetitem726.setText(QCoreApplication.translate("MainWindow", u"layer.kernel_constraint", None));
+        ___qlistwidgetitem726.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Conv2D()", None));
         ___qlistwidgetitem727 = self.dnn_code_snippet_list.item(17)
-        ___qlistwidgetitem727.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.InputLayer", None));
+        ___qlistwidgetitem727.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Conv2DTranspose()", None));
         ___qlistwidgetitem728 = self.dnn_code_snippet_list.item(18)
-        ___qlistwidgetitem728.setText(QCoreApplication.translate("MainWindow", u"model.loss", None));
+        ___qlistwidgetitem728.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Conv3D()", None));
         ___qlistwidgetitem729 = self.dnn_code_snippet_list.item(19)
-        ___qlistwidgetitem729.setText(QCoreApplication.translate("MainWindow", u"model.optimizer", None));
+        ___qlistwidgetitem729.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Conv3DTranspose()", None));
         ___qlistwidgetitem730 = self.dnn_code_snippet_list.item(20)
-        ___qlistwidgetitem730.setText(QCoreApplication.translate("MainWindow", u"layer.bias_initializer", None));
+        ___qlistwidgetitem730.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.ConvLSTM1D()", None));
         ___qlistwidgetitem731 = self.dnn_code_snippet_list.item(21)
-        ___qlistwidgetitem731.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Dropout", None));
+        ___qlistwidgetitem731.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.ConvLSTM2D()", None));
         ___qlistwidgetitem732 = self.dnn_code_snippet_list.item(22)
-        ___qlistwidgetitem732.setText(QCoreApplication.translate("MainWindow", u"tf.data.Dataset", None));
+        ___qlistwidgetitem732.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.ConvLSTM3D()", None));
         ___qlistwidgetitem733 = self.dnn_code_snippet_list.item(23)
-        ___qlistwidgetitem733.setText(QCoreApplication.translate("MainWindow", u"tf.keras.initializers.Constant", None));
+        ___qlistwidgetitem733.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Convolution1D()", None));
         ___qlistwidgetitem734 = self.dnn_code_snippet_list.item(24)
-        ___qlistwidgetitem734.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.AvgPooling2D", None));
+        ___qlistwidgetitem734.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Convolution1DTranspose()", None));
         ___qlistwidgetitem735 = self.dnn_code_snippet_list.item(25)
-        ___qlistwidgetitem735.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Flatten", None));
+        ___qlistwidgetitem735.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Convolution2D()", None));
         ___qlistwidgetitem736 = self.dnn_code_snippet_list.item(26)
-        ___qlistwidgetitem736.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Input", None));
+        ___qlistwidgetitem736.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Convolution2DTranspose()", None));
+        ___qlistwidgetitem737 = self.dnn_code_snippet_list.item(27)
+        ___qlistwidgetitem737.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Convolution3D()", None));
+        ___qlistwidgetitem738 = self.dnn_code_snippet_list.item(28)
+        ___qlistwidgetitem738.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Convolution3DTranspose()", None));
+        ___qlistwidgetitem739 = self.dnn_code_snippet_list.item(29)
+        ___qlistwidgetitem739.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Cropping1D()", None));
+        ___qlistwidgetitem740 = self.dnn_code_snippet_list.item(30)
+        ___qlistwidgetitem740.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Cropping2D()", None));
+        ___qlistwidgetitem741 = self.dnn_code_snippet_list.item(31)
+        ___qlistwidgetitem741.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Cropping3D()", None));
+        ___qlistwidgetitem742 = self.dnn_code_snippet_list.item(32)
+        ___qlistwidgetitem742.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.SpectralNormalization()", None));
+        ___qlistwidgetitem743 = self.dnn_code_snippet_list.item(33)
+        ___qlistwidgetitem743.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.StackedRNNCells()", None));
+        ___qlistwidgetitem744 = self.dnn_code_snippet_list.item(34)
+        ___qlistwidgetitem744.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.StringLookup()", None));
+        ___qlistwidgetitem745 = self.dnn_code_snippet_list.item(35)
+        ___qlistwidgetitem745.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Subtract()", None));
+        ___qlistwidgetitem746 = self.dnn_code_snippet_list.item(36)
+        ___qlistwidgetitem746.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.TextVectorization()", None));
+        ___qlistwidgetitem747 = self.dnn_code_snippet_list.item(37)
+        ___qlistwidgetitem747.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.ThresholdedReLU()", None));
+        ___qlistwidgetitem748 = self.dnn_code_snippet_list.item(38)
+        ___qlistwidgetitem748.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.TimeDistributed()", None));
+        ___qlistwidgetitem749 = self.dnn_code_snippet_list.item(39)
+        ___qlistwidgetitem749.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.UnitNormalization()", None));
+        ___qlistwidgetitem750 = self.dnn_code_snippet_list.item(40)
+        ___qlistwidgetitem750.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.UpSampling1D()", None));
+        ___qlistwidgetitem751 = self.dnn_code_snippet_list.item(41)
+        ___qlistwidgetitem751.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.UpSampling2D()", None));
+        ___qlistwidgetitem752 = self.dnn_code_snippet_list.item(42)
+        ___qlistwidgetitem752.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.UpSampling3D()", None));
+        ___qlistwidgetitem753 = self.dnn_code_snippet_list.item(43)
+        ___qlistwidgetitem753.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.Wrapper()", None));
+        ___qlistwidgetitem754 = self.dnn_code_snippet_list.item(44)
+        ___qlistwidgetitem754.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.ZeroPadding1D()", None));
+        ___qlistwidgetitem755 = self.dnn_code_snippet_list.item(45)
+        ___qlistwidgetitem755.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.ZeroPadding2D()", None));
+        ___qlistwidgetitem756 = self.dnn_code_snippet_list.item(46)
+        ___qlistwidgetitem756.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.ZeroPadding3D()", None));
+        ___qlistwidgetitem757 = self.dnn_code_snippet_list.item(47)
+        ___qlistwidgetitem757.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.add()", None));
+        ___qlistwidgetitem758 = self.dnn_code_snippet_list.item(48)
+        ___qlistwidgetitem758.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.average()", None));
+        ___qlistwidgetitem759 = self.dnn_code_snippet_list.item(49)
+        ___qlistwidgetitem759.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.concatenate()", None));
+        ___qlistwidgetitem760 = self.dnn_code_snippet_list.item(50)
+        ___qlistwidgetitem760.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.deserialize()", None));
+        ___qlistwidgetitem761 = self.dnn_code_snippet_list.item(51)
+        ___qlistwidgetitem761.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.dot()", None));
+        ___qlistwidgetitem762 = self.dnn_code_snippet_list.item(52)
+        ___qlistwidgetitem762.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.maximum()", None));
+        ___qlistwidgetitem763 = self.dnn_code_snippet_list.item(53)
+        ___qlistwidgetitem763.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.minimum()", None));
+        ___qlistwidgetitem764 = self.dnn_code_snippet_list.item(54)
+        ___qlistwidgetitem764.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.multiply()", None));
+        ___qlistwidgetitem765 = self.dnn_code_snippet_list.item(55)
+        ___qlistwidgetitem765.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.serialize()", None));
+        ___qlistwidgetitem766 = self.dnn_code_snippet_list.item(56)
+        ___qlistwidgetitem766.setText(QCoreApplication.translate("MainWindow", u"tf.keras.layers.subtract()", None));
+        ___qlistwidgetitem767 = self.dnn_code_snippet_list.item(57)
+        ___qlistwidgetitem767.setText(QCoreApplication.translate("MainWindow", u"tf.keras.activations.deserialize()", None));
+        ___qlistwidgetitem768 = self.dnn_code_snippet_list.item(58)
+        ___qlistwidgetitem768.setText(QCoreApplication.translate("MainWindow", u"tf.keras.activations.elu()", None));
+        ___qlistwidgetitem769 = self.dnn_code_snippet_list.item(59)
+        ___qlistwidgetitem769.setText(QCoreApplication.translate("MainWindow", u"tf.keras.activations.exponential()", None));
+        ___qlistwidgetitem770 = self.dnn_code_snippet_list.item(60)
+        ___qlistwidgetitem770.setText(QCoreApplication.translate("MainWindow", u"tf.keras.activations.gelu()", None));
+        ___qlistwidgetitem771 = self.dnn_code_snippet_list.item(61)
+        ___qlistwidgetitem771.setText(QCoreApplication.translate("MainWindow", u"tf.keras.activations.get()", None));
+        ___qlistwidgetitem772 = self.dnn_code_snippet_list.item(62)
+        ___qlistwidgetitem772.setText(QCoreApplication.translate("MainWindow", u"tf.keras.activations.hard_sigmoid()", None));
+        ___qlistwidgetitem773 = self.dnn_code_snippet_list.item(63)
+        ___qlistwidgetitem773.setText(QCoreApplication.translate("MainWindow", u"tf.keras.activations.linear()", None));
+        ___qlistwidgetitem774 = self.dnn_code_snippet_list.item(64)
+        ___qlistwidgetitem774.setText(QCoreApplication.translate("MainWindow", u"tf.keras.activations.mish()", None));
+        ___qlistwidgetitem775 = self.dnn_code_snippet_list.item(65)
+        ___qlistwidgetitem775.setText(QCoreApplication.translate("MainWindow", u"tf.keras.activations.relu()", None));
+        ___qlistwidgetitem776 = self.dnn_code_snippet_list.item(66)
+        ___qlistwidgetitem776.setText(QCoreApplication.translate("MainWindow", u"tf.keras.activations.selu()", None));
+        ___qlistwidgetitem777 = self.dnn_code_snippet_list.item(67)
+        ___qlistwidgetitem777.setText(QCoreApplication.translate("MainWindow", u"tf.keras.activations.serialize()", None));
+        ___qlistwidgetitem778 = self.dnn_code_snippet_list.item(68)
+        ___qlistwidgetitem778.setText(QCoreApplication.translate("MainWindow", u"tf.keras.activations.sigmoid()", None));
+        ___qlistwidgetitem779 = self.dnn_code_snippet_list.item(69)
+        ___qlistwidgetitem779.setText(QCoreApplication.translate("MainWindow", u"tf.keras.activations.softmax()", None));
+        ___qlistwidgetitem780 = self.dnn_code_snippet_list.item(70)
+        ___qlistwidgetitem780.setText(QCoreApplication.translate("MainWindow", u"tf.keras.activations.softplus()", None));
+        ___qlistwidgetitem781 = self.dnn_code_snippet_list.item(71)
+        ___qlistwidgetitem781.setText(QCoreApplication.translate("MainWindow", u"tf.keras.activations.softsign()", None));
+        ___qlistwidgetitem782 = self.dnn_code_snippet_list.item(72)
+        ___qlistwidgetitem782.setText(QCoreApplication.translate("MainWindow", u"tf.keras.activations.swish()", None));
+        ___qlistwidgetitem783 = self.dnn_code_snippet_list.item(73)
+        ___qlistwidgetitem783.setText(QCoreApplication.translate("MainWindow", u"tf.keras.activations.tanh()", None));
+        ___qlistwidgetitem784 = self.dnn_code_snippet_list.item(74)
+        ___qlistwidgetitem784.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.BinaryCrossentropy()", None));
+        ___qlistwidgetitem785 = self.dnn_code_snippet_list.item(75)
+        ___qlistwidgetitem785.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.BinaryFocalCrossentropy()", None));
+        ___qlistwidgetitem786 = self.dnn_code_snippet_list.item(76)
+        ___qlistwidgetitem786.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.CategoricalCrossentropy()", None));
+        ___qlistwidgetitem787 = self.dnn_code_snippet_list.item(77)
+        ___qlistwidgetitem787.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.CategoricalFocalCrossentropy()", None));
+        ___qlistwidgetitem788 = self.dnn_code_snippet_list.item(78)
+        ___qlistwidgetitem788.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.CategoricalHinge()", None));
+        ___qlistwidgetitem789 = self.dnn_code_snippet_list.item(79)
+        ___qlistwidgetitem789.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.CosineSimilarity()", None));
+        ___qlistwidgetitem790 = self.dnn_code_snippet_list.item(80)
+        ___qlistwidgetitem790.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.Hinge()", None));
+        ___qlistwidgetitem791 = self.dnn_code_snippet_list.item(81)
+        ___qlistwidgetitem791.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.Huber()", None));
+        ___qlistwidgetitem792 = self.dnn_code_snippet_list.item(82)
+        ___qlistwidgetitem792.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.KLD()", None));
+        ___qlistwidgetitem793 = self.dnn_code_snippet_list.item(83)
+        ___qlistwidgetitem793.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.KLDivergence()", None));
+        ___qlistwidgetitem794 = self.dnn_code_snippet_list.item(84)
+        ___qlistwidgetitem794.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.LogCosh()", None));
+        ___qlistwidgetitem795 = self.dnn_code_snippet_list.item(85)
+        ___qlistwidgetitem795.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.Loss()", None));
+        ___qlistwidgetitem796 = self.dnn_code_snippet_list.item(86)
+        ___qlistwidgetitem796.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.MAE()", None));
+        ___qlistwidgetitem797 = self.dnn_code_snippet_list.item(87)
+        ___qlistwidgetitem797.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.MAPE()", None));
+        ___qlistwidgetitem798 = self.dnn_code_snippet_list.item(88)
+        ___qlistwidgetitem798.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.MSE()", None));
+        ___qlistwidgetitem799 = self.dnn_code_snippet_list.item(89)
+        ___qlistwidgetitem799.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.MSLE()", None));
+        ___qlistwidgetitem800 = self.dnn_code_snippet_list.item(90)
+        ___qlistwidgetitem800.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.MeanAbsoluteError()", None));
+        ___qlistwidgetitem801 = self.dnn_code_snippet_list.item(91)
+        ___qlistwidgetitem801.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.MeanAbsolutePercentageError()", None));
+        ___qlistwidgetitem802 = self.dnn_code_snippet_list.item(92)
+        ___qlistwidgetitem802.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.MeanSquaredError()", None));
+        ___qlistwidgetitem803 = self.dnn_code_snippet_list.item(93)
+        ___qlistwidgetitem803.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.MeanSquaredLogarithmicError()", None));
+        ___qlistwidgetitem804 = self.dnn_code_snippet_list.item(94)
+        ___qlistwidgetitem804.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.Poisson()", None));
+        ___qlistwidgetitem805 = self.dnn_code_snippet_list.item(95)
+        ___qlistwidgetitem805.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.Reduction()", None));
+        ___qlistwidgetitem806 = self.dnn_code_snippet_list.item(96)
+        ___qlistwidgetitem806.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.SparseCategoricalCrossentropy()", None));
+        ___qlistwidgetitem807 = self.dnn_code_snippet_list.item(97)
+        ___qlistwidgetitem807.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.SquaredHinge()", None));
+        ___qlistwidgetitem808 = self.dnn_code_snippet_list.item(98)
+        ___qlistwidgetitem808.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.binary_crossentropy()", None));
+        ___qlistwidgetitem809 = self.dnn_code_snippet_list.item(99)
+        ___qlistwidgetitem809.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.binary_focal_crossentropy()", None));
+        ___qlistwidgetitem810 = self.dnn_code_snippet_list.item(100)
+        ___qlistwidgetitem810.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.categorical_crossentropy()", None));
+        ___qlistwidgetitem811 = self.dnn_code_snippet_list.item(101)
+        ___qlistwidgetitem811.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.categorical_focal_crossentropy()", None));
+        ___qlistwidgetitem812 = self.dnn_code_snippet_list.item(102)
+        ___qlistwidgetitem812.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.categorical_hinge()", None));
+        ___qlistwidgetitem813 = self.dnn_code_snippet_list.item(103)
+        ___qlistwidgetitem813.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.cosine_similarity()", None));
+        ___qlistwidgetitem814 = self.dnn_code_snippet_list.item(104)
+        ___qlistwidgetitem814.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.deserialize()", None));
+        ___qlistwidgetitem815 = self.dnn_code_snippet_list.item(105)
+        ___qlistwidgetitem815.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.get()", None));
+        ___qlistwidgetitem816 = self.dnn_code_snippet_list.item(106)
+        ___qlistwidgetitem816.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.hinge()", None));
+        ___qlistwidgetitem817 = self.dnn_code_snippet_list.item(107)
+        ___qlistwidgetitem817.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.huber()", None));
+        ___qlistwidgetitem818 = self.dnn_code_snippet_list.item(108)
+        ___qlistwidgetitem818.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.kl_divergence()", None));
+        ___qlistwidgetitem819 = self.dnn_code_snippet_list.item(109)
+        ___qlistwidgetitem819.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.kld()", None));
+        ___qlistwidgetitem820 = self.dnn_code_snippet_list.item(110)
+        ___qlistwidgetitem820.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.kullback_leibler_divergence()", None));
+        ___qlistwidgetitem821 = self.dnn_code_snippet_list.item(111)
+        ___qlistwidgetitem821.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.log_cosh()", None));
+        ___qlistwidgetitem822 = self.dnn_code_snippet_list.item(112)
+        ___qlistwidgetitem822.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.logcosh()", None));
+        ___qlistwidgetitem823 = self.dnn_code_snippet_list.item(113)
+        ___qlistwidgetitem823.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.mae()", None));
+        ___qlistwidgetitem824 = self.dnn_code_snippet_list.item(114)
+        ___qlistwidgetitem824.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.mape()", None));
+        ___qlistwidgetitem825 = self.dnn_code_snippet_list.item(115)
+        ___qlistwidgetitem825.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.mean_absolute_error()", None));
+        ___qlistwidgetitem826 = self.dnn_code_snippet_list.item(116)
+        ___qlistwidgetitem826.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.mean_absolute_percentage_error()", None));
+        ___qlistwidgetitem827 = self.dnn_code_snippet_list.item(117)
+        ___qlistwidgetitem827.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.mean_squared_error()", None));
+        ___qlistwidgetitem828 = self.dnn_code_snippet_list.item(118)
+        ___qlistwidgetitem828.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.mean_squared_logarithmic_error()", None));
+        ___qlistwidgetitem829 = self.dnn_code_snippet_list.item(119)
+        ___qlistwidgetitem829.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.mse()", None));
+        ___qlistwidgetitem830 = self.dnn_code_snippet_list.item(120)
+        ___qlistwidgetitem830.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.msle()", None));
+        ___qlistwidgetitem831 = self.dnn_code_snippet_list.item(121)
+        ___qlistwidgetitem831.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.poisson()", None));
+        ___qlistwidgetitem832 = self.dnn_code_snippet_list.item(122)
+        ___qlistwidgetitem832.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.serialize()", None));
+        ___qlistwidgetitem833 = self.dnn_code_snippet_list.item(123)
+        ___qlistwidgetitem833.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.sparse_categorical_crossentropy()", None));
+        ___qlistwidgetitem834 = self.dnn_code_snippet_list.item(124)
+        ___qlistwidgetitem834.setText(QCoreApplication.translate("MainWindow", u"tf.keras.losses.squared_hinge()", None));
+        ___qlistwidgetitem835 = self.dnn_code_snippet_list.item(125)
+        ___qlistwidgetitem835.setText(QCoreApplication.translate("MainWindow", u"tf.keras.optimizers.Adadelta()", None));
+        ___qlistwidgetitem836 = self.dnn_code_snippet_list.item(126)
+        ___qlistwidgetitem836.setText(QCoreApplication.translate("MainWindow", u"tf.keras.optimizers.Adafactor()", None));
+        ___qlistwidgetitem837 = self.dnn_code_snippet_list.item(127)
+        ___qlistwidgetitem837.setText(QCoreApplication.translate("MainWindow", u"tf.keras.optimizers.Adagrad()", None));
+        ___qlistwidgetitem838 = self.dnn_code_snippet_list.item(128)
+        ___qlistwidgetitem838.setText(QCoreApplication.translate("MainWindow", u"tf.keras.optimizers.Adam()", None));
+        ___qlistwidgetitem839 = self.dnn_code_snippet_list.item(129)
+        ___qlistwidgetitem839.setText(QCoreApplication.translate("MainWindow", u"tf.keras.optimizers.Adamax()", None));
+        ___qlistwidgetitem840 = self.dnn_code_snippet_list.item(130)
+        ___qlistwidgetitem840.setText(QCoreApplication.translate("MainWindow", u"tf.keras.optimizers.Ftrl()", None));
+        ___qlistwidgetitem841 = self.dnn_code_snippet_list.item(131)
+        ___qlistwidgetitem841.setText(QCoreApplication.translate("MainWindow", u"tf.keras.optimizers.Nadam()", None));
+        ___qlistwidgetitem842 = self.dnn_code_snippet_list.item(132)
+        ___qlistwidgetitem842.setText(QCoreApplication.translate("MainWindow", u"tf.keras.optimizers.RMSprop()", None));
+        ___qlistwidgetitem843 = self.dnn_code_snippet_list.item(133)
+        ___qlistwidgetitem843.setText(QCoreApplication.translate("MainWindow", u"tf.keras.optimizers.SGD()", None));
+        ___qlistwidgetitem844 = self.dnn_code_snippet_list.item(134)
+        ___qlistwidgetitem844.setText(QCoreApplication.translate("MainWindow", u"tf.optimizers.deserialize()", None));
+        ___qlistwidgetitem845 = self.dnn_code_snippet_list.item(135)
+        ___qlistwidgetitem845.setText(QCoreApplication.translate("MainWindow", u"tf.optimizers.get()", None));
+        ___qlistwidgetitem846 = self.dnn_code_snippet_list.item(136)
+        ___qlistwidgetitem846.setText(QCoreApplication.translate("MainWindow", u"tf.keras.optimizers.legacy.Adadelta()", None));
+        ___qlistwidgetitem847 = self.dnn_code_snippet_list.item(137)
+        ___qlistwidgetitem847.setText(QCoreApplication.translate("MainWindow", u"tf.keras.optimizers.legacy.Adagrad()", None));
+        ___qlistwidgetitem848 = self.dnn_code_snippet_list.item(138)
+        ___qlistwidgetitem848.setText(QCoreApplication.translate("MainWindow", u"tf.keras.optimizers.legacy.Adam()", None));
+        ___qlistwidgetitem849 = self.dnn_code_snippet_list.item(139)
+        ___qlistwidgetitem849.setText(QCoreApplication.translate("MainWindow", u"tf.keras.optimizers.legacy.Adamax()", None));
+        ___qlistwidgetitem850 = self.dnn_code_snippet_list.item(140)
+        ___qlistwidgetitem850.setText(QCoreApplication.translate("MainWindow", u"tf.keras.optimizers.legacy.Ftrl()", None));
+        ___qlistwidgetitem851 = self.dnn_code_snippet_list.item(141)
+        ___qlistwidgetitem851.setText(QCoreApplication.translate("MainWindow", u"tf.keras.optimizers.legacy.Nadam()", None));
+        ___qlistwidgetitem852 = self.dnn_code_snippet_list.item(142)
+        ___qlistwidgetitem852.setText(QCoreApplication.translate("MainWindow", u"tf.keras.optimizers.legacy.RMSprop()", None));
+        ___qlistwidgetitem853 = self.dnn_code_snippet_list.item(143)
+        ___qlistwidgetitem853.setText(QCoreApplication.translate("MainWindow", u"tf.keras.optimizers.legacy.SGD()", None));
+        ___qlistwidgetitem854 = self.dnn_code_snippet_list.item(144)
+        ___qlistwidgetitem854.setText(QCoreApplication.translate("MainWindow", u"tf.keras.optimizers.schedules.CosineDecay()", None));
+        ___qlistwidgetitem855 = self.dnn_code_snippet_list.item(145)
+        ___qlistwidgetitem855.setText(QCoreApplication.translate("MainWindow", u"tf.keras.optimizers.schedules.ExponentialDecay()", None));
+        ___qlistwidgetitem856 = self.dnn_code_snippet_list.item(146)
+        ___qlistwidgetitem856.setText(QCoreApplication.translate("MainWindow", u"tf.keras.optimizers.schedules.PolynomialDecay()", None));
+        ___qlistwidgetitem857 = self.dnn_code_snippet_list.item(147)
+        ___qlistwidgetitem857.setText(QCoreApplication.translate("MainWindow", u"tf.keras.optimizers.schedules.deserialize()", None));
+        ___qlistwidgetitem858 = self.dnn_code_snippet_list.item(148)
+        ___qlistwidgetitem858.setText(QCoreApplication.translate("MainWindow", u"tf.keras.optimizers.schedules.serialize()", None));
+        ___qlistwidgetitem859 = self.dnn_code_snippet_list.item(149)
+        ___qlistwidgetitem859.setText(QCoreApplication.translate("MainWindow", u"tf.nn.RNNCellDeviceWrapper()", None));
+        ___qlistwidgetitem860 = self.dnn_code_snippet_list.item(150)
+        ___qlistwidgetitem860.setText(QCoreApplication.translate("MainWindow", u"tf.nn.RNNCellDropoutWrapper()", None));
+        ___qlistwidgetitem861 = self.dnn_code_snippet_list.item(151)
+        ___qlistwidgetitem861.setText(QCoreApplication.translate("MainWindow", u"tf.nn.RNNCellResidualWrapper()", None));
+        ___qlistwidgetitem862 = self.dnn_code_snippet_list.item(152)
+        ___qlistwidgetitem862.setText(QCoreApplication.translate("MainWindow", u"tf.nn.all_candidate_sampler()", None));
+        ___qlistwidgetitem863 = self.dnn_code_snippet_list.item(153)
+        ___qlistwidgetitem863.setText(QCoreApplication.translate("MainWindow", u"tf.nn.approx_max_k()", None));
+        ___qlistwidgetitem864 = self.dnn_code_snippet_list.item(154)
+        ___qlistwidgetitem864.setText(QCoreApplication.translate("MainWindow", u"tf.nn.approx_min_k()", None));
+        ___qlistwidgetitem865 = self.dnn_code_snippet_list.item(155)
+        ___qlistwidgetitem865.setText(QCoreApplication.translate("MainWindow", u"tf.nn.atrous_conv2d()", None));
+        ___qlistwidgetitem866 = self.dnn_code_snippet_list.item(156)
+        ___qlistwidgetitem866.setText(QCoreApplication.translate("MainWindow", u"tf.nn.atrous_conv2d_transpose()", None));
+        ___qlistwidgetitem867 = self.dnn_code_snippet_list.item(157)
+        ___qlistwidgetitem867.setText(QCoreApplication.translate("MainWindow", u"tf.nn.avg_pool()", None));
+        ___qlistwidgetitem868 = self.dnn_code_snippet_list.item(158)
+        ___qlistwidgetitem868.setText(QCoreApplication.translate("MainWindow", u"tf.nn.avg_pool1d()", None));
+        ___qlistwidgetitem869 = self.dnn_code_snippet_list.item(159)
+        ___qlistwidgetitem869.setText(QCoreApplication.translate("MainWindow", u"tf.nn.avg_pool2d()", None));
+        ___qlistwidgetitem870 = self.dnn_code_snippet_list.item(160)
+        ___qlistwidgetitem870.setText(QCoreApplication.translate("MainWindow", u"tf.nn.avg_pool3d()", None));
+        ___qlistwidgetitem871 = self.dnn_code_snippet_list.item(161)
+        ___qlistwidgetitem871.setText(QCoreApplication.translate("MainWindow", u"tf.nn.batch_norm_with_global_normalization()", None));
+        ___qlistwidgetitem872 = self.dnn_code_snippet_list.item(162)
+        ___qlistwidgetitem872.setText(QCoreApplication.translate("MainWindow", u"tf.nn.batch_normalization()", None));
+        ___qlistwidgetitem873 = self.dnn_code_snippet_list.item(163)
+        ___qlistwidgetitem873.setText(QCoreApplication.translate("MainWindow", u"tf.nn.bias_add()", None));
+        ___qlistwidgetitem874 = self.dnn_code_snippet_list.item(164)
+        ___qlistwidgetitem874.setText(QCoreApplication.translate("MainWindow", u"tf.nn.collapse_repeated()", None));
+        ___qlistwidgetitem875 = self.dnn_code_snippet_list.item(165)
+        ___qlistwidgetitem875.setText(QCoreApplication.translate("MainWindow", u"tf.nn.compute_accidental_hits()", None));
+        ___qlistwidgetitem876 = self.dnn_code_snippet_list.item(166)
+        ___qlistwidgetitem876.setText(QCoreApplication.translate("MainWindow", u"tf.nn.compute_average_loss()", None));
+        ___qlistwidgetitem877 = self.dnn_code_snippet_list.item(167)
+        ___qlistwidgetitem877.setText(QCoreApplication.translate("MainWindow", u"tf.nn.conv1d()", None));
+        ___qlistwidgetitem878 = self.dnn_code_snippet_list.item(168)
+        ___qlistwidgetitem878.setText(QCoreApplication.translate("MainWindow", u"tf.nn.conv1d_transpose()", None));
+        ___qlistwidgetitem879 = self.dnn_code_snippet_list.item(169)
+        ___qlistwidgetitem879.setText(QCoreApplication.translate("MainWindow", u"tf.nn.conv2d()", None));
+        ___qlistwidgetitem880 = self.dnn_code_snippet_list.item(170)
+        ___qlistwidgetitem880.setText(QCoreApplication.translate("MainWindow", u"tf.nn.conv2d_transpose()", None));
+        ___qlistwidgetitem881 = self.dnn_code_snippet_list.item(171)
+        ___qlistwidgetitem881.setText(QCoreApplication.translate("MainWindow", u"tf.nn.conv3d()", None));
+        ___qlistwidgetitem882 = self.dnn_code_snippet_list.item(172)
+        ___qlistwidgetitem882.setText(QCoreApplication.translate("MainWindow", u"tf.nn.conv3d_transpose()", None));
+        ___qlistwidgetitem883 = self.dnn_code_snippet_list.item(173)
+        ___qlistwidgetitem883.setText(QCoreApplication.translate("MainWindow", u"tf.nn.conv_transpose()", None));
+        ___qlistwidgetitem884 = self.dnn_code_snippet_list.item(174)
+        ___qlistwidgetitem884.setText(QCoreApplication.translate("MainWindow", u"tf.nn.convolution()", None));
+        ___qlistwidgetitem885 = self.dnn_code_snippet_list.item(175)
+        ___qlistwidgetitem885.setText(QCoreApplication.translate("MainWindow", u"tf.nn.crelu()", None));
+        ___qlistwidgetitem886 = self.dnn_code_snippet_list.item(176)
+        ___qlistwidgetitem886.setText(QCoreApplication.translate("MainWindow", u"tf.nn.ctc_beam_search_decoder()", None));
+        ___qlistwidgetitem887 = self.dnn_code_snippet_list.item(177)
+        ___qlistwidgetitem887.setText(QCoreApplication.translate("MainWindow", u"tf.nn.ctc_greedy_decoder()", None));
+        ___qlistwidgetitem888 = self.dnn_code_snippet_list.item(178)
+        ___qlistwidgetitem888.setText(QCoreApplication.translate("MainWindow", u"tf.nn.ctc_loss()", None));
+        ___qlistwidgetitem889 = self.dnn_code_snippet_list.item(179)
+        ___qlistwidgetitem889.setText(QCoreApplication.translate("MainWindow", u"tf.nn.ctc_unique_labels()", None));
+        ___qlistwidgetitem890 = self.dnn_code_snippet_list.item(180)
+        ___qlistwidgetitem890.setText(QCoreApplication.translate("MainWindow", u"tf.nn.depth_to_space()", None));
+        ___qlistwidgetitem891 = self.dnn_code_snippet_list.item(181)
+        ___qlistwidgetitem891.setText(QCoreApplication.translate("MainWindow", u"tf.nn.depthwise_conv2d()", None));
+        ___qlistwidgetitem892 = self.dnn_code_snippet_list.item(182)
+        ___qlistwidgetitem892.setText(QCoreApplication.translate("MainWindow", u"tf.nn.depthwise_conv2d_backprop_filter()", None));
+        ___qlistwidgetitem893 = self.dnn_code_snippet_list.item(183)
+        ___qlistwidgetitem893.setText(QCoreApplication.translate("MainWindow", u"tf.nn.depthwise_conv2d_backprop_input()", None));
+        ___qlistwidgetitem894 = self.dnn_code_snippet_list.item(184)
+        ___qlistwidgetitem894.setText(QCoreApplication.translate("MainWindow", u"tf.nn.dilation2d()", None));
+        ___qlistwidgetitem895 = self.dnn_code_snippet_list.item(185)
+        ___qlistwidgetitem895.setText(QCoreApplication.translate("MainWindow", u"tf.nn.dropout()", None));
+        ___qlistwidgetitem896 = self.dnn_code_snippet_list.item(186)
+        ___qlistwidgetitem896.setText(QCoreApplication.translate("MainWindow", u"tf.nn.elu()", None));
+        ___qlistwidgetitem897 = self.dnn_code_snippet_list.item(187)
+        ___qlistwidgetitem897.setText(QCoreApplication.translate("MainWindow", u"tf.nn.embedding_lookup()", None));
+        ___qlistwidgetitem898 = self.dnn_code_snippet_list.item(188)
+        ___qlistwidgetitem898.setText(QCoreApplication.translate("MainWindow", u"tf.nn.embedding_lookup_sparse()", None));
+        ___qlistwidgetitem899 = self.dnn_code_snippet_list.item(189)
+        ___qlistwidgetitem899.setText(QCoreApplication.translate("MainWindow", u"tf.nn.erosion2d()", None));
+        ___qlistwidgetitem900 = self.dnn_code_snippet_list.item(190)
+        ___qlistwidgetitem900.setText(QCoreApplication.translate("MainWindow", u"tf.nn.fixed_unigram_candidate_sampler()", None));
+        ___qlistwidgetitem901 = self.dnn_code_snippet_list.item(191)
+        ___qlistwidgetitem901.setText(QCoreApplication.translate("MainWindow", u"tf.nn.fractional_avg_pool()", None));
+        ___qlistwidgetitem902 = self.dnn_code_snippet_list.item(192)
+        ___qlistwidgetitem902.setText(QCoreApplication.translate("MainWindow", u"tf.nn.fractional_max_pool()", None));
+        ___qlistwidgetitem903 = self.dnn_code_snippet_list.item(193)
+        ___qlistwidgetitem903.setText(QCoreApplication.translate("MainWindow", u"tf.nn.gelu()", None));
+        ___qlistwidgetitem904 = self.dnn_code_snippet_list.item(194)
+        ___qlistwidgetitem904.setText(QCoreApplication.translate("MainWindow", u"tf.nn.in_top_k()", None));
+        ___qlistwidgetitem905 = self.dnn_code_snippet_list.item(195)
+        ___qlistwidgetitem905.setText(QCoreApplication.translate("MainWindow", u"tf.nn.isotonic_regression()", None));
+        ___qlistwidgetitem906 = self.dnn_code_snippet_list.item(196)
+        ___qlistwidgetitem906.setText(QCoreApplication.translate("MainWindow", u"tf.nn.l2_loss()", None));
+        ___qlistwidgetitem907 = self.dnn_code_snippet_list.item(197)
+        ___qlistwidgetitem907.setText(QCoreApplication.translate("MainWindow", u"tf.nn.l2_normalize()", None));
+        ___qlistwidgetitem908 = self.dnn_code_snippet_list.item(198)
+        ___qlistwidgetitem908.setText(QCoreApplication.translate("MainWindow", u"tf.nn.leaky_relu()", None));
+        ___qlistwidgetitem909 = self.dnn_code_snippet_list.item(199)
+        ___qlistwidgetitem909.setText(QCoreApplication.translate("MainWindow", u"tf.nn.learned_unigram_candidate_sampler()", None));
+        ___qlistwidgetitem910 = self.dnn_code_snippet_list.item(200)
+        ___qlistwidgetitem910.setText(QCoreApplication.translate("MainWindow", u"tf.nn.local_response_normalization()", None));
+        ___qlistwidgetitem911 = self.dnn_code_snippet_list.item(201)
+        ___qlistwidgetitem911.setText(QCoreApplication.translate("MainWindow", u"tf.nn.log_poisson_loss()", None));
+        ___qlistwidgetitem912 = self.dnn_code_snippet_list.item(202)
+        ___qlistwidgetitem912.setText(QCoreApplication.translate("MainWindow", u"tf.nn.log_softmax()", None));
+        ___qlistwidgetitem913 = self.dnn_code_snippet_list.item(203)
+        ___qlistwidgetitem913.setText(QCoreApplication.translate("MainWindow", u"tf.nn.lrn()", None));
+        ___qlistwidgetitem914 = self.dnn_code_snippet_list.item(204)
+        ___qlistwidgetitem914.setText(QCoreApplication.translate("MainWindow", u"tf.nn.max_pool()", None));
+        ___qlistwidgetitem915 = self.dnn_code_snippet_list.item(205)
+        ___qlistwidgetitem915.setText(QCoreApplication.translate("MainWindow", u"tf.nn.max_pool1d()", None));
+        ___qlistwidgetitem916 = self.dnn_code_snippet_list.item(206)
+        ___qlistwidgetitem916.setText(QCoreApplication.translate("MainWindow", u"tf.nn.max_pool2d()", None));
+        ___qlistwidgetitem917 = self.dnn_code_snippet_list.item(207)
+        ___qlistwidgetitem917.setText(QCoreApplication.translate("MainWindow", u"tf.nn.max_pool3d()", None));
+        ___qlistwidgetitem918 = self.dnn_code_snippet_list.item(208)
+        ___qlistwidgetitem918.setText(QCoreApplication.translate("MainWindow", u"tf.nn.max_pool_with_argmax()", None));
+        ___qlistwidgetitem919 = self.dnn_code_snippet_list.item(209)
+        ___qlistwidgetitem919.setText(QCoreApplication.translate("MainWindow", u"tf.nn.moments()", None));
+        ___qlistwidgetitem920 = self.dnn_code_snippet_list.item(210)
+        ___qlistwidgetitem920.setText(QCoreApplication.translate("MainWindow", u"tf.nn.nce_loss()", None));
+        ___qlistwidgetitem921 = self.dnn_code_snippet_list.item(211)
+        ___qlistwidgetitem921.setText(QCoreApplication.translate("MainWindow", u"tf.nn.normalize_moments()", None));
+        ___qlistwidgetitem922 = self.dnn_code_snippet_list.item(212)
+        ___qlistwidgetitem922.setText(QCoreApplication.translate("MainWindow", u"tf.nn.pool()", None));
+        ___qlistwidgetitem923 = self.dnn_code_snippet_list.item(213)
+        ___qlistwidgetitem923.setText(QCoreApplication.translate("MainWindow", u"tf.nn.relu()", None));
+        ___qlistwidgetitem924 = self.dnn_code_snippet_list.item(214)
+        ___qlistwidgetitem924.setText(QCoreApplication.translate("MainWindow", u"tf.nn.relu6()", None));
+        ___qlistwidgetitem925 = self.dnn_code_snippet_list.item(215)
+        ___qlistwidgetitem925.setText(QCoreApplication.translate("MainWindow", u"tf.nn.safe_embedding_lookup_sparse()", None));
+        ___qlistwidgetitem926 = self.dnn_code_snippet_list.item(216)
+        ___qlistwidgetitem926.setText(QCoreApplication.translate("MainWindow", u"tf.nn.sampled_softmax_loss()", None));
+        ___qlistwidgetitem927 = self.dnn_code_snippet_list.item(217)
+        ___qlistwidgetitem927.setText(QCoreApplication.translate("MainWindow", u"tf.nn.scale_regularization_loss()", None));
+        ___qlistwidgetitem928 = self.dnn_code_snippet_list.item(218)
+        ___qlistwidgetitem928.setText(QCoreApplication.translate("MainWindow", u"tf.nn.selu()", None));
+        ___qlistwidgetitem929 = self.dnn_code_snippet_list.item(219)
+        ___qlistwidgetitem929.setText(QCoreApplication.translate("MainWindow", u"tf.nn.separable_conv2d()", None));
+        ___qlistwidgetitem930 = self.dnn_code_snippet_list.item(220)
+        ___qlistwidgetitem930.setText(QCoreApplication.translate("MainWindow", u"tf.nn.sigmoid()", None));
+        ___qlistwidgetitem931 = self.dnn_code_snippet_list.item(221)
+        ___qlistwidgetitem931.setText(QCoreApplication.translate("MainWindow", u"tf.nn.sigmoid_cross_entropy_with_logits()", None));
+        ___qlistwidgetitem932 = self.dnn_code_snippet_list.item(222)
+        ___qlistwidgetitem932.setText(QCoreApplication.translate("MainWindow", u"tf.nn.silu()", None));
+        ___qlistwidgetitem933 = self.dnn_code_snippet_list.item(223)
+        ___qlistwidgetitem933.setText(QCoreApplication.translate("MainWindow", u"tf.nn.softmax()", None));
+        ___qlistwidgetitem934 = self.dnn_code_snippet_list.item(224)
+        ___qlistwidgetitem934.setText(QCoreApplication.translate("MainWindow", u"tf.nn.softmax_cross_entropy_with_logits()", None));
+        ___qlistwidgetitem935 = self.dnn_code_snippet_list.item(225)
+        ___qlistwidgetitem935.setText(QCoreApplication.translate("MainWindow", u"tf.nn.softplus()", None));
+        ___qlistwidgetitem936 = self.dnn_code_snippet_list.item(226)
+        ___qlistwidgetitem936.setText(QCoreApplication.translate("MainWindow", u"tf.nn.softsign()", None));
+        ___qlistwidgetitem937 = self.dnn_code_snippet_list.item(227)
+        ___qlistwidgetitem937.setText(QCoreApplication.translate("MainWindow", u"tf.nn.space_to_batch()", None));
+        ___qlistwidgetitem938 = self.dnn_code_snippet_list.item(228)
+        ___qlistwidgetitem938.setText(QCoreApplication.translate("MainWindow", u"tf.nn.space_to_depth()", None));
+        ___qlistwidgetitem939 = self.dnn_code_snippet_list.item(229)
+        ___qlistwidgetitem939.setText(QCoreApplication.translate("MainWindow", u"tf.nn.sparse_softmax_cross_entropy_with_logits()", None));
+        ___qlistwidgetitem940 = self.dnn_code_snippet_list.item(230)
+        ___qlistwidgetitem940.setText(QCoreApplication.translate("MainWindow", u"tf.nn.sufficient_statistics()", None));
+        ___qlistwidgetitem941 = self.dnn_code_snippet_list.item(231)
+        ___qlistwidgetitem941.setText(QCoreApplication.translate("MainWindow", u"tf.nn.swish()", None));
+        ___qlistwidgetitem942 = self.dnn_code_snippet_list.item(232)
+        ___qlistwidgetitem942.setText(QCoreApplication.translate("MainWindow", u"tf.nn.tanh()", None));
+        ___qlistwidgetitem943 = self.dnn_code_snippet_list.item(233)
+        ___qlistwidgetitem943.setText(QCoreApplication.translate("MainWindow", u"tf.nn.top_k()", None));
+        ___qlistwidgetitem944 = self.dnn_code_snippet_list.item(234)
+        ___qlistwidgetitem944.setText(QCoreApplication.translate("MainWindow", u"tf.nn.weighted_cross_entropy_with_logits()", None));
+        ___qlistwidgetitem945 = self.dnn_code_snippet_list.item(235)
+        ___qlistwidgetitem945.setText(QCoreApplication.translate("MainWindow", u"tf.nn.weighted_moments()", None));
+        ___qlistwidgetitem946 = self.dnn_code_snippet_list.item(236)
+        ___qlistwidgetitem946.setText(QCoreApplication.translate("MainWindow", u"tf.nn.with_space_to_batch()", None));
+        ___qlistwidgetitem947 = self.dnn_code_snippet_list.item(237)
+        ___qlistwidgetitem947.setText(QCoreApplication.translate("MainWindow", u"tf.nn.zero_fraction()", None));
+        ___qlistwidgetitem948 = self.dnn_code_snippet_list.item(238)
+        ___qlistwidgetitem948.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.BlockLSTM()", None));
+        ___qlistwidgetitem949 = self.dnn_code_snippet_list.item(239)
+        ___qlistwidgetitem949.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.BlockLSTMGrad()", None));
+        ___qlistwidgetitem950 = self.dnn_code_snippet_list.item(240)
+        ___qlistwidgetitem950.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.BlockLSTMGradV2()", None));
+        ___qlistwidgetitem951 = self.dnn_code_snippet_list.item(241)
+        ___qlistwidgetitem951.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.BlockLSTMV2()", None));
+        ___qlistwidgetitem952 = self.dnn_code_snippet_list.item(242)
+        ___qlistwidgetitem952.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.BoostedTreesTrainingPredict()", None));
+        ___qlistwidgetitem953 = self.dnn_code_snippet_list.item(243)
+        ___qlistwidgetitem953.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.CSRSparseMatrixToDense()", None));
+        ___qlistwidgetitem954 = self.dnn_code_snippet_list.item(244)
+        ___qlistwidgetitem954.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.CTCLoss()", None));
+        ___qlistwidgetitem955 = self.dnn_code_snippet_list.item(245)
+        ___qlistwidgetitem955.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.CTCLossV2()", None));
+        ___qlistwidgetitem956 = self.dnn_code_snippet_list.item(246)
+        ___qlistwidgetitem956.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.Conv()", None));
+        ___qlistwidgetitem957 = self.dnn_code_snippet_list.item(247)
+        ___qlistwidgetitem957.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.Conv2D()", None));
+        ___qlistwidgetitem958 = self.dnn_code_snippet_list.item(248)
+        ___qlistwidgetitem958.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.Conv2DBackpropFilter()", None));
+        ___qlistwidgetitem959 = self.dnn_code_snippet_list.item(249)
+        ___qlistwidgetitem959.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.Conv2DBackpropFilterV2()", None));
+        ___qlistwidgetitem960 = self.dnn_code_snippet_list.item(250)
+        ___qlistwidgetitem960.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.Conv2DBackpropInput()", None));
+        ___qlistwidgetitem961 = self.dnn_code_snippet_list.item(251)
+        ___qlistwidgetitem961.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.Conv2DBackpropInputV2()", None));
+        ___qlistwidgetitem962 = self.dnn_code_snippet_list.item(252)
+        ___qlistwidgetitem962.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.Conv3D()", None));
+        ___qlistwidgetitem963 = self.dnn_code_snippet_list.item(253)
+        ___qlistwidgetitem963.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.Conv3DBackpropFilter()", None));
+        ___qlistwidgetitem964 = self.dnn_code_snippet_list.item(254)
+        ___qlistwidgetitem964.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.Conv3DBackpropFilterV2()", None));
+        ___qlistwidgetitem965 = self.dnn_code_snippet_list.item(255)
+        ___qlistwidgetitem965.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.Conv3DBackpropInput()", None));
+        ___qlistwidgetitem966 = self.dnn_code_snippet_list.item(256)
+        ___qlistwidgetitem966.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.Conv3DBackpropInputV2()", None));
+        ___qlistwidgetitem967 = self.dnn_code_snippet_list.item(257)
+        ___qlistwidgetitem967.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.CudnnRNN()", None));
+        ___qlistwidgetitem968 = self.dnn_code_snippet_list.item(258)
+        ___qlistwidgetitem968.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.CudnnRNNBackprop()", None));
+        ___qlistwidgetitem969 = self.dnn_code_snippet_list.item(259)
+        ___qlistwidgetitem969.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.CudnnRNNBackpropV2()", None));
+        ___qlistwidgetitem970 = self.dnn_code_snippet_list.item(260)
+        ___qlistwidgetitem970.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.CudnnRNNBackpropV3()", None));
+        ___qlistwidgetitem971 = self.dnn_code_snippet_list.item(261)
+        ___qlistwidgetitem971.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.CudnnRNNCanonicalToParams()", None));
+        ___qlistwidgetitem972 = self.dnn_code_snippet_list.item(262)
+        ___qlistwidgetitem972.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.CudnnRNNCanonicalToParamsV2()", None));
+        ___qlistwidgetitem973 = self.dnn_code_snippet_list.item(263)
+        ___qlistwidgetitem973.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.CudnnRNNParamsSize()", None));
+        ___qlistwidgetitem974 = self.dnn_code_snippet_list.item(264)
+        ___qlistwidgetitem974.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.CudnnRNNParamsToCanonical()", None));
+        ___qlistwidgetitem975 = self.dnn_code_snippet_list.item(265)
+        ___qlistwidgetitem975.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.CudnnRNNParamsToCanonicalV2()", None));
+        ___qlistwidgetitem976 = self.dnn_code_snippet_list.item(266)
+        ___qlistwidgetitem976.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.CudnnRNNV2()", None));
+        ___qlistwidgetitem977 = self.dnn_code_snippet_list.item(267)
+        ___qlistwidgetitem977.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.CudnnRNNV3()", None));
+        ___qlistwidgetitem978 = self.dnn_code_snippet_list.item(268)
+        ___qlistwidgetitem978.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.DenseBincount()", None));
+        ___qlistwidgetitem979 = self.dnn_code_snippet_list.item(269)
+        ___qlistwidgetitem979.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.DenseCountSparseOutput()", None));
+        ___qlistwidgetitem980 = self.dnn_code_snippet_list.item(270)
+        ___qlistwidgetitem980.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.DenseToCSRSparseMatrix()", None));
+        ___qlistwidgetitem981 = self.dnn_code_snippet_list.item(271)
+        ___qlistwidgetitem981.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.DenseToDenseSetOperation()", None));
+        ___qlistwidgetitem982 = self.dnn_code_snippet_list.item(272)
+        ___qlistwidgetitem982.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.DenseToSparseBatchDataset()", None));
+        ___qlistwidgetitem983 = self.dnn_code_snippet_list.item(273)
+        ___qlistwidgetitem983.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.DenseToSparseSetOperation()", None));
+        ___qlistwidgetitem984 = self.dnn_code_snippet_list.item(274)
+        ___qlistwidgetitem984.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.DepthwiseConv2dNative()", None));
+        ___qlistwidgetitem985 = self.dnn_code_snippet_list.item(275)
+        ___qlistwidgetitem985.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.DepthwiseConv2dNativeBackpropFilter()", None));
+        ___qlistwidgetitem986 = self.dnn_code_snippet_list.item(276)
+        ___qlistwidgetitem986.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.DepthwiseConv2dNativeBackpropInput()", None));
+        ___qlistwidgetitem987 = self.dnn_code_snippet_list.item(277)
+        ___qlistwidgetitem987.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.FusedPadConv2D()", None));
+        ___qlistwidgetitem988 = self.dnn_code_snippet_list.item(278)
+        ___qlistwidgetitem988.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.FusedResizeAndPadConv2D()", None));
+        ___qlistwidgetitem989 = self.dnn_code_snippet_list.item(279)
+        ___qlistwidgetitem989.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.GRUBlockCell()", None));
+        ___qlistwidgetitem990 = self.dnn_code_snippet_list.item(280)
+        ___qlistwidgetitem990.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.GRUBlockCellGrad()", None));
+        ___qlistwidgetitem991 = self.dnn_code_snippet_list.item(281)
+        ___qlistwidgetitem991.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.L2Loss()", None));
+        ___qlistwidgetitem992 = self.dnn_code_snippet_list.item(282)
+        ___qlistwidgetitem992.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.LSTMBlockCell()", None));
+        ___qlistwidgetitem993 = self.dnn_code_snippet_list.item(283)
+        ___qlistwidgetitem993.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.LSTMBlockCellGrad()", None));
+        ___qlistwidgetitem994 = self.dnn_code_snippet_list.item(284)
+        ___qlistwidgetitem994.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.QuantizedConv2D()", None));
+        ___qlistwidgetitem995 = self.dnn_code_snippet_list.item(285)
+        ___qlistwidgetitem995.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.QuantizedConv2DAndRelu()", None));
+        ___qlistwidgetitem996 = self.dnn_code_snippet_list.item(286)
+        ___qlistwidgetitem996.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.QuantizedConv2DAndReluAndRequantize()", None));
+        ___qlistwidgetitem997 = self.dnn_code_snippet_list.item(287)
+        ___qlistwidgetitem997.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.QuantizedConv2DAndRequantize()", None));
+        ___qlistwidgetitem998 = self.dnn_code_snippet_list.item(288)
+        ___qlistwidgetitem998.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.QuantizedConv2DPerChannel()", None));
+        ___qlistwidgetitem999 = self.dnn_code_snippet_list.item(289)
+        ___qlistwidgetitem999.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.QuantizedConv2DWithBias()", None));
+        ___qlistwidgetitem1000 = self.dnn_code_snippet_list.item(290)
+        ___qlistwidgetitem1000.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.QuantizedConv2DWithBiasAndRelu()", None));
+        ___qlistwidgetitem1001 = self.dnn_code_snippet_list.item(291)
+        ___qlistwidgetitem1001.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.QuantizedConv2DWithBiasAndReluAndRequantize()", None));
+        ___qlistwidgetitem1002 = self.dnn_code_snippet_list.item(292)
+        ___qlistwidgetitem1002.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.QuantizedConv2DWithBiasAndRequantize()", None));
+        ___qlistwidgetitem1003 = self.dnn_code_snippet_list.item(293)
+        ___qlistwidgetitem1003.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.QuantizedConv2DWithBiasSignedSumAndReluAndRequantize()", None));
+        ___qlistwidgetitem1004 = self.dnn_code_snippet_list.item(294)
+        ___qlistwidgetitem1004.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.QuantizedConv2DWithBiasSumAndRelu()", None));
+        ___qlistwidgetitem1005 = self.dnn_code_snippet_list.item(295)
+        ___qlistwidgetitem1005.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.QuantizedConv2DWithBiasSumAndReluAndRequantize()", None));
+        ___qlistwidgetitem1006 = self.dnn_code_snippet_list.item(296)
+        ___qlistwidgetitem1006.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.QuantizedDepthwiseConv2D()", None));
+        ___qlistwidgetitem1007 = self.dnn_code_snippet_list.item(297)
+        ___qlistwidgetitem1007.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.QuantizedDepthwiseConv2DWithBias()", None));
+        ___qlistwidgetitem1008 = self.dnn_code_snippet_list.item(298)
+        ___qlistwidgetitem1008.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.QuantizedDepthwiseConv2DWithBiasAndRelu()", None));
+        ___qlistwidgetitem1009 = self.dnn_code_snippet_list.item(299)
+        ___qlistwidgetitem1009.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.QuantizedDepthwiseConv2DWithBiasAndReluAndRequantize()", None));
+        ___qlistwidgetitem1010 = self.dnn_code_snippet_list.item(300)
+        ___qlistwidgetitem1010.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.RecvTPUEmbeddingActivations()", None));
+        ___qlistwidgetitem1011 = self.dnn_code_snippet_list.item(301)
+        ___qlistwidgetitem1011.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.SdcaOptimizer()", None));
+        ___qlistwidgetitem1012 = self.dnn_code_snippet_list.item(302)
+        ___qlistwidgetitem1012.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.SdcaOptimizerV2()", None));
+        ___qlistwidgetitem1013 = self.dnn_code_snippet_list.item(303)
+        ___qlistwidgetitem1013.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.SparseDenseCwiseAdd()", None));
+        ___qlistwidgetitem1014 = self.dnn_code_snippet_list.item(304)
+        ___qlistwidgetitem1014.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.SparseDenseCwiseDiv()", None));
+        ___qlistwidgetitem1015 = self.dnn_code_snippet_list.item(305)
+        ___qlistwidgetitem1015.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.SparseDenseCwiseMul()", None));
+        ___qlistwidgetitem1016 = self.dnn_code_snippet_list.item(306)
+        ___qlistwidgetitem1016.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.SparseTensorDenseAdd()", None));
+        ___qlistwidgetitem1017 = self.dnn_code_snippet_list.item(307)
+        ___qlistwidgetitem1017.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.SparseTensorDenseMatMul()", None));
+        ___qlistwidgetitem1018 = self.dnn_code_snippet_list.item(308)
+        ___qlistwidgetitem1018.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.SparseToDense()", None));
+        ___qlistwidgetitem1019 = self.dnn_code_snippet_list.item(309)
+        ___qlistwidgetitem1019.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.TPUEmbeddingActivations()", None));
+        ___qlistwidgetitem1020 = self.dnn_code_snippet_list.item(310)
+        ___qlistwidgetitem1020.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.UniformQuantizedConvolution()", None));
+        ___qlistwidgetitem1021 = self.dnn_code_snippet_list.item(311)
+        ___qlistwidgetitem1021.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.UniformQuantizedConvolutionHybrid()", None));
+        ___qlistwidgetitem1022 = self.dnn_code_snippet_list.item(312)
+        ___qlistwidgetitem1022.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.RecvTPUEmbeddingActivations()", None));
+        ___qlistwidgetitem1023 = self.dnn_code_snippet_list.item(313)
+        ___qlistwidgetitem1023.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.SdcaOptimizer()", None));
+        ___qlistwidgetitem1024 = self.dnn_code_snippet_list.item(314)
+        ___qlistwidgetitem1024.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.SdcaOptimizerV2()", None));
+        ___qlistwidgetitem1025 = self.dnn_code_snippet_list.item(315)
+        ___qlistwidgetitem1025.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.L2Loss()", None));
+        ___qlistwidgetitem1026 = self.dnn_code_snippet_list.item(316)
+        ___qlistwidgetitem1026.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.LSTMBlockCell()", None));
+        ___qlistwidgetitem1027 = self.dnn_code_snippet_list.item(317)
+        ___qlistwidgetitem1027.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.LSTMBlockCellGrad()", None));
+        ___qlistwidgetitem1028 = self.dnn_code_snippet_list.item(318)
+        ___qlistwidgetitem1028.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.QuantizedConv2D()", None));
+        ___qlistwidgetitem1029 = self.dnn_code_snippet_list.item(319)
+        ___qlistwidgetitem1029.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.QuantizedConv2DAndRelu()", None));
+        ___qlistwidgetitem1030 = self.dnn_code_snippet_list.item(320)
+        ___qlistwidgetitem1030.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.QuantizedConv2DAndReluAndRequantize()", None));
+        ___qlistwidgetitem1031 = self.dnn_code_snippet_list.item(321)
+        ___qlistwidgetitem1031.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.QuantizedConv2DAndRequantize()", None));
+        ___qlistwidgetitem1032 = self.dnn_code_snippet_list.item(322)
+        ___qlistwidgetitem1032.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.QuantizedConv2DPerChannel()", None));
+        ___qlistwidgetitem1033 = self.dnn_code_snippet_list.item(323)
+        ___qlistwidgetitem1033.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.QuantizedConv2DWithBias()", None));
+        ___qlistwidgetitem1034 = self.dnn_code_snippet_list.item(324)
+        ___qlistwidgetitem1034.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.QuantizedConv2DWithBiasAndRelu()", None));
+        ___qlistwidgetitem1035 = self.dnn_code_snippet_list.item(325)
+        ___qlistwidgetitem1035.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.QuantizedConv2DWithBiasAndReluAndRequantize()", None));
+        ___qlistwidgetitem1036 = self.dnn_code_snippet_list.item(326)
+        ___qlistwidgetitem1036.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.QuantizedConv2DWithBiasAndRequantize()", None));
+        ___qlistwidgetitem1037 = self.dnn_code_snippet_list.item(327)
+        ___qlistwidgetitem1037.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.QuantizedConv2DWithBiasSignedSumAndReluAndRequantize()", None));
+        ___qlistwidgetitem1038 = self.dnn_code_snippet_list.item(328)
+        ___qlistwidgetitem1038.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.QuantizedConv2DWithBiasSumAndRelu()", None));
+        ___qlistwidgetitem1039 = self.dnn_code_snippet_list.item(329)
+        ___qlistwidgetitem1039.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.QuantizedConv2DWithBiasSumAndReluAndRequantize()", None));
+        ___qlistwidgetitem1040 = self.dnn_code_snippet_list.item(330)
+        ___qlistwidgetitem1040.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.QuantizedDepthwiseConv2D()", None));
+        ___qlistwidgetitem1041 = self.dnn_code_snippet_list.item(331)
+        ___qlistwidgetitem1041.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.QuantizedDepthwiseConv2DWithBias()", None));
+        ___qlistwidgetitem1042 = self.dnn_code_snippet_list.item(332)
+        ___qlistwidgetitem1042.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.QuantizedDepthwiseConv2DWithBiasAndRelu()", None));
+        ___qlistwidgetitem1043 = self.dnn_code_snippet_list.item(333)
+        ___qlistwidgetitem1043.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.QuantizedDepthwiseConv2DWithBiasAndReluAndRequantize()", None));
+        ___qlistwidgetitem1044 = self.dnn_code_snippet_list.item(334)
+        ___qlistwidgetitem1044.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.RecvTPUEmbeddingActivations()", None));
+        ___qlistwidgetitem1045 = self.dnn_code_snippet_list.item(335)
+        ___qlistwidgetitem1045.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.SdcaOptimizer()", None));
+        ___qlistwidgetitem1046 = self.dnn_code_snippet_list.item(336)
+        ___qlistwidgetitem1046.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.SdcaOptimizerV2()", None));
+        ___qlistwidgetitem1047 = self.dnn_code_snippet_list.item(337)
+        ___qlistwidgetitem1047.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.SparseDenseCwiseAdd()", None));
+        ___qlistwidgetitem1048 = self.dnn_code_snippet_list.item(338)
+        ___qlistwidgetitem1048.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.SparseDenseCwiseDiv()", None));
+        ___qlistwidgetitem1049 = self.dnn_code_snippet_list.item(339)
+        ___qlistwidgetitem1049.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.SparseDenseCwiseMul()", None));
+        ___qlistwidgetitem1050 = self.dnn_code_snippet_list.item(340)
+        ___qlistwidgetitem1050.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.SparseTensorDenseAdd()", None));
+        ___qlistwidgetitem1051 = self.dnn_code_snippet_list.item(341)
+        ___qlistwidgetitem1051.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.SparseTensorDenseMatMul()", None));
+        ___qlistwidgetitem1052 = self.dnn_code_snippet_list.item(342)
+        ___qlistwidgetitem1052.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.SparseToDense()", None));
+        ___qlistwidgetitem1053 = self.dnn_code_snippet_list.item(343)
+        ___qlistwidgetitem1053.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.TPUEmbeddingActivations()", None));
+        ___qlistwidgetitem1054 = self.dnn_code_snippet_list.item(344)
+        ___qlistwidgetitem1054.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.UniformQuantizedConvolution()", None));
+        ___qlistwidgetitem1055 = self.dnn_code_snippet_list.item(345)
+        ___qlistwidgetitem1055.setText(QCoreApplication.translate("MainWindow", u"tf.raw_ops.UniformQuantizedConvolutionHybrid()", None));
+        ___qlistwidgetitem1056 = self.dnn_code_snippet_list.item(346)
+        ___qlistwidgetitem1056.setText(QCoreApplication.translate("MainWindow", u"tf.train.BytesList()", None));
+        ___qlistwidgetitem1057 = self.dnn_code_snippet_list.item(347)
+        ___qlistwidgetitem1057.setText(QCoreApplication.translate("MainWindow", u"tf.train.Checkpoint()", None));
+        ___qlistwidgetitem1058 = self.dnn_code_snippet_list.item(348)
+        ___qlistwidgetitem1058.setText(QCoreApplication.translate("MainWindow", u"tf.train.CheckpointManager()", None));
+        ___qlistwidgetitem1059 = self.dnn_code_snippet_list.item(349)
+        ___qlistwidgetitem1059.setText(QCoreApplication.translate("MainWindow", u"tf.train.CheckpointOptions()", None));
+        ___qlistwidgetitem1060 = self.dnn_code_snippet_list.item(350)
+        ___qlistwidgetitem1060.setText(QCoreApplication.translate("MainWindow", u"tf.train.CheckpointView()", None));
+        ___qlistwidgetitem1061 = self.dnn_code_snippet_list.item(351)
+        ___qlistwidgetitem1061.setText(QCoreApplication.translate("MainWindow", u"tf.train.ClusterDef()", None));
+        ___qlistwidgetitem1062 = self.dnn_code_snippet_list.item(352)
+        ___qlistwidgetitem1062.setText(QCoreApplication.translate("MainWindow", u"tf.train.ClusterSpec()", None));
+        ___qlistwidgetitem1063 = self.dnn_code_snippet_list.item(353)
+        ___qlistwidgetitem1063.setText(QCoreApplication.translate("MainWindow", u"tf.train.Coordinator()", None));
+        ___qlistwidgetitem1064 = self.dnn_code_snippet_list.item(354)
+        ___qlistwidgetitem1064.setText(QCoreApplication.translate("MainWindow", u"tf.train.Example()", None));
+        ___qlistwidgetitem1065 = self.dnn_code_snippet_list.item(355)
+        ___qlistwidgetitem1065.setText(QCoreApplication.translate("MainWindow", u"tf.train.ExponentialMovingAverage()", None));
+        ___qlistwidgetitem1066 = self.dnn_code_snippet_list.item(356)
+        ___qlistwidgetitem1066.setText(QCoreApplication.translate("MainWindow", u"tf.train.Feature()", None));
+        ___qlistwidgetitem1067 = self.dnn_code_snippet_list.item(357)
+        ___qlistwidgetitem1067.setText(QCoreApplication.translate("MainWindow", u"tf.train.FeatureList()", None));
+        ___qlistwidgetitem1068 = self.dnn_code_snippet_list.item(358)
+        ___qlistwidgetitem1068.setText(QCoreApplication.translate("MainWindow", u"tf.train.FeatureLists()", None));
+        ___qlistwidgetitem1069 = self.dnn_code_snippet_list.item(359)
+        ___qlistwidgetitem1069.setText(QCoreApplication.translate("MainWindow", u"tf.train.Features()", None));
+        ___qlistwidgetitem1070 = self.dnn_code_snippet_list.item(360)
+        ___qlistwidgetitem1070.setText(QCoreApplication.translate("MainWindow", u"tf.train.FloatList()", None));
+        ___qlistwidgetitem1071 = self.dnn_code_snippet_list.item(361)
+        ___qlistwidgetitem1071.setText(QCoreApplication.translate("MainWindow", u"tf.train.Int64List()", None));
+        ___qlistwidgetitem1072 = self.dnn_code_snippet_list.item(362)
+        ___qlistwidgetitem1072.setText(QCoreApplication.translate("MainWindow", u"tf.train.JobDef()", None));
+        ___qlistwidgetitem1073 = self.dnn_code_snippet_list.item(363)
+        ___qlistwidgetitem1073.setText(QCoreApplication.translate("MainWindow", u"tf.train.SequenceExample()", None));
+        ___qlistwidgetitem1074 = self.dnn_code_snippet_list.item(364)
+        ___qlistwidgetitem1074.setText(QCoreApplication.translate("MainWindow", u"tf.train.ServerDef()", None));
+        ___qlistwidgetitem1075 = self.dnn_code_snippet_list.item(365)
+        ___qlistwidgetitem1075.setText(QCoreApplication.translate("MainWindow", u"tf.train.TrackableView()", None));
+        ___qlistwidgetitem1076 = self.dnn_code_snippet_list.item(366)
+        ___qlistwidgetitem1076.setText(QCoreApplication.translate("MainWindow", u"tf.train.checkpoints_iterator()", None));
+        ___qlistwidgetitem1077 = self.dnn_code_snippet_list.item(367)
+        ___qlistwidgetitem1077.setText(QCoreApplication.translate("MainWindow", u"tf.train.experimental()", None));
+        ___qlistwidgetitem1078 = self.dnn_code_snippet_list.item(368)
+        ___qlistwidgetitem1078.setText(QCoreApplication.translate("MainWindow", u"tf.train.experimental.PythonState()", None));
+        ___qlistwidgetitem1079 = self.dnn_code_snippet_list.item(369)
+        ___qlistwidgetitem1079.setText(QCoreApplication.translate("MainWindow", u"tf.train.get_checkpoint_state()", None));
+        ___qlistwidgetitem1080 = self.dnn_code_snippet_list.item(370)
+        ___qlistwidgetitem1080.setText(QCoreApplication.translate("MainWindow", u"tf.train.latest_checkpoint()", None));
+        ___qlistwidgetitem1081 = self.dnn_code_snippet_list.item(371)
+        ___qlistwidgetitem1081.setText(QCoreApplication.translate("MainWindow", u"tf.train.list_variables()", None));
+        ___qlistwidgetitem1082 = self.dnn_code_snippet_list.item(372)
+        ___qlistwidgetitem1082.setText(QCoreApplication.translate("MainWindow", u"tf.train.load_checkpoint()", None));
+        ___qlistwidgetitem1083 = self.dnn_code_snippet_list.item(373)
+        ___qlistwidgetitem1083.setText(QCoreApplication.translate("MainWindow", u"tf.train.load_variable()", None));
         self.dnn_code_snippet_list.setSortingEnabled(__sortingEnabled5)
 
         self.pushButton_dnn_scan.setText(QCoreApplication.translate("MainWindow", u"Scan", None))
