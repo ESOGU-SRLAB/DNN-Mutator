@@ -18,6 +18,7 @@ import astunparse
 import matplotlib.pyplot as plt
 import importlib
 import mutator
+import mutation_library
 import selected_parameters
 import numpy as np
 import tensorflow as tf
@@ -1644,6 +1645,8 @@ class MainWindow(QMainWindow):
 
             if  selected_code_snippet_length > 0:
                 self.dnn_start_no_workload_yes_code_snippet_process()
+            elif self.ui.checkBox_Code_snippet_All.isChecked():
+                self.dnn_start_no_workload_yes_code_snippet_process()
             else:
                 print("eror")
                 
@@ -1815,12 +1818,32 @@ class MainWindow(QMainWindow):
   # Method takes code snippet for "No Workload, Yes Code Snippet" Scan Process
     def dnn_take_code_snippet_no_workload_yes_code_snippet(self):
         """Code snippets are taken by IM-FIT to use on no workload yes code snippet scan process"""
-        selected_code_snippet_length = self.ui.dnn_selected_snippet.count()
         code_snippet_data_list = []
-        for line_number in range(selected_code_snippet_length):
-            line_from_code_snippet_list = self.ui.dnn_selected_snippet.item(line_number).text()
-            code_snippet_data_list.append(line_from_code_snippet_list)
+         # Check if the 'selectAll' checkbox is checked
+        if self.ui.checkBox_Code_snippet_All.isChecked():
+            # If checked, retrieve all code snippets from the mutation library
+            code_snippet_data_list = mutation_library.tf_all_list
+        else:
+            # If not checked, proceed as before
+            selected_code_snippet_length = self.ui.dnn_selected_snippet.count()
+            
+            for line_number in range(selected_code_snippet_length):
+                line_from_code_snippet_list = self.ui.dnn_selected_snippet.item(line_number).text()
+                code_snippet_data_list.append(line_from_code_snippet_list)
+
         return code_snippet_data_list
+        
+        
+        #selected_code_snippet_length = self.ui.dnn_selected_snippet.count()
+        #code_snippet_data_list = []
+        #for line_number in range(selected_code_snippet_length):
+            #line_from_code_snippet_list = self.ui.dnn_selected_snippet.item(line_number).text()
+            #code_snippet_data_list.append(line_from_code_snippet_list)
+        #return code_snippet_data_list
+    
+
+
+       
 #Gökhan------------------------------------------------------------------------------------------------------end
     
     

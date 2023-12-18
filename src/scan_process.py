@@ -216,7 +216,7 @@ def define_code_snippet_no_workload_yes_code_snippet(code_snippet_data_list):
     """Method defines the code snipppets to use for no workload, yes code snippet use case"""
     patterns = []
     code_snippet_regex_code = open_code_snip()
-    print(code_snippet_regex_code)
+    
     added_snippet_regex_length = len(code_snippet_regex_code["code_snippets"])
     for i in range(0, added_snippet_regex_length):
         added_snippet_name = code_snippet_regex_code["code_snippets"][i]["Snippets"][
@@ -252,7 +252,7 @@ def dnn_define_code_snippet_no_workload_yes_code_snippet(code_snippet_data_list)
 
 def find_target_no_workload_yes_code_snippet(split_text, patterns):
     """Target code lines are found by IM-FIT to use for no workload, yes code snippet use case"""
-    print("Çalıştı")
+    
     faultable_line_list = []
     faultable_line_number_list = []
     print(patterns)

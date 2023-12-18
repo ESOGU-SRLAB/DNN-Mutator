@@ -2,16 +2,16 @@
     "code_snippets": [
         {
             "Snippets": {
-                "Snippet_Name": "activation_function",
-                "Regex_Code": " activation ",
+                "Snippet_Name": "activation",
+                "Regex_Code": "activation=",
                 "Title": "Activation Function in TensorFlow",
                 "Process": "Transforms input to output."
             }
         },
         {
             "Snippets": {
-                "Snippet_Name": "epoch",
-                "Regex_Code": " epochs=",
+                "Snippet_Name": "epochs",
+                "Regex_Code": "epochs=\\d+",
                 "Title": "Epoch Configuration in TensorFlow",
                 "Process": "Represents one full iteration over input data."
             }
@@ -97,7 +97,92 @@
             }
             
         },
-
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.AbstractRNNCell()",
+                "Regex_Code": "tf\\.keras\\.layers\\.AbstractRNNCell",
+                "Title": "tf.keras.layers.AbstractRNNCell() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.Activation()",
+                "Regex_Code": "tf\\.keras\\.layers\\.Activation",
+                "Title": "tf.keras.layers.Activation() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.ActivityRegularization()",
+                "Regex_Code": "tf\\.keras\\.layers\\.ActivityRegularization",
+                "Title": "tf.keras.layers.ActivityRegularization() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.Add()",
+                "Regex_Code": "tf\\.keras\\.layers\\.Add",
+                "Title": "tf.keras.layers.Add() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.AdditiveAttention()",
+                "Regex_Code": "tf\\.keras\\.layers\\.AdditiveAttention",
+                "Title": "tf.keras.layers.AdditiveAttention() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.AlphaDropout()",
+                "Regex_Code": "tf\\.keras\\.layers\\.AlphaDropout",
+                "Title": "tf.keras.layers.AlphaDropout() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.Attention()",
+                "Regex_Code": "tf\\.keras\\.layers\\.Attention",
+                "Title": "tf.keras.layers.Attention() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.Average()",
+                "Regex_Code": "tf\\.keras\\.layers\\.Average",
+                "Title": "tf.keras.layers.Average() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.AveragePooling1D()",
+                "Regex_Code": "tf\\.keras\\.layers\\.AveragePooling1D",
+                "Title": "tf.keras.layers.AveragePooling1D() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.AveragePooling2D()",
+                "Regex_Code": "tf\\.keras\\.layers\\.AveragePooling2D",
+                "Title": "tf.keras.layers.AveragePooling2D() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },        {
+            "Snippets": {
+                "Snippet_Name": "tf.keras.layers.AveragePooling3D()",
+                "Regex_Code": "tf\\.keras\\.layers\\.AveragePooling3D",
+                "Title": "tf.keras.layers.AveragePooling3D() in TensorFlow",
+                "Process": "Description not available."
+            }
+        },
         {
             "Snippets": {
                 "Snippet_Name": "tf.keras.layers.AvgPool1D()",

@@ -10934,7 +10934,7 @@ color:white;</string>
                         </property>
                         <item>
                          <property name="text">
-                          <string>dropout</string>
+                          <string>activation</string>
                          </property>
                         </item>
                         <item>
@@ -10944,12 +10944,52 @@ color:white;</string>
                         </item>
                         <item>
                          <property name="text">
-                          <string>epoch</string>
+                          <string>model.add</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>layer.activation</string>
+                          <string>optimizer</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>learning_rate</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>kernel_regularizer</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>batch_size</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>dropout</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>filters</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>kernel_size</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>strides</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>padding</string>
                          </property>
                         </item>
                         <item>
@@ -10960,6 +11000,61 @@ color:white;</string>
                         <item>
                          <property name="text">
                           <string>model.pop</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.AbstractRNNCell()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.Activation()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.ActivityRegularization()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.Add()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.AdditiveAttention()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.AlphaDropout()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.Attention()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.Average()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.AveragePooling1D()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.AveragePooling2D()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>tf.keras.layers.AveragePooling3D()</string>
                          </property>
                         </item>
                         <item>
@@ -12832,7 +12927,7 @@ color:white;</string>
                        <widget class="QPushButton" name="pushButton_dnn_scan">
                         <property name="geometry">
                          <rect>
-                          <x>370</x>
+                          <x>310</x>
                           <y>310</y>
                           <width>131</width>
                           <height>31</height>
@@ -12869,6 +12964,19 @@ color:white;</string>
                         </property>
                         <property name="text">
                          <string>Scanned Source Code</string>
+                        </property>
+                       </widget>
+                       <widget class="QCheckBox" name="checkBox_Code_snippet_All">
+                        <property name="geometry">
+                         <rect>
+                          <x>460</x>
+                          <y>310</y>
+                          <width>101</width>
+                          <height>31</height>
+                         </rect>
+                        </property>
+                        <property name="text">
+                         <string>Scan All</string>
                         </property>
                        </widget>
                       </widget>
