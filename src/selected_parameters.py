@@ -32,6 +32,7 @@ from ui_main import Ui_MainWindow
 def layer_select_mutate(mutate_selected_parameters,source_code ):
         mutated_code =""
         mutated_line =""
+        layer_name=""
         if mutate_selected_parameters == "epochs":
             change_parameter_with = 180
             mutated_line = mutator.modify_code_in_file_epoch(source_code, mutate_selected_parameters, change_parameter_with)
@@ -65,36 +66,36 @@ def layer_select_mutate(mutate_selected_parameters,source_code ):
         elif mutate_selected_parameters == "input_shape":
             change_parameter_with = "input_shape=(64, 64, 3)"
             mutated_line = mutator.modify_code_in_file_MaxPooling2D(source_code, change_parameter_with)                       
-        elif mutate_selected_parameters == "AbstractRNNCell":
-            change_parameter_with = "AbstractRNNCell()"
+        elif mutate_selected_parameters == "layers.AbstractRNNCell()":
+            change_parameter_with = "tf.keras.layers.AbstractRNNCell()"
             layer_name="AbstractRNNCell"
             mutated_line = mutator.modify_tf_layer_in_code(source_code,layer_name, change_parameter_with)
-        elif mutate_selected_parameters == "Activation":
-            change_parameter_with = "Activation()"
+        elif mutate_selected_parameters == "layers.Activation()":
+            change_parameter_with = "tf.keras.layers.Activation()"
             layer_name="Activation"
             mutated_line = mutator.modify_tf_layer_in_code(source_code,layer_name, change_parameter_with)
-        elif mutate_selected_parameters == "ActivityRegularization":
-            change_parameter_with = "ActivityRegularization()"
+        elif mutate_selected_parameters == "layers.ActivityRegularization()":
+            change_parameter_with = "tf.keras.layers.ActivityRegularization()"
             layer_name="ActivityRegularization"
             mutated_line = mutator.modify_tf_layer_in_code(source_code,layer_name, change_parameter_with)
-        elif mutate_selected_parameters == "AlphaDropout":
-            change_parameter_with = "AlphaDropout()"
+        elif mutate_selected_parameters == "layers.AlphaDropout()":
+            change_parameter_with = "tf.keras.layers.AlphaDropout()"
             layer_name="AlphaDropout"
             mutated_line = mutator.modify_tf_layer_in_code(source_code,layer_name, change_parameter_with)
-        elif mutate_selected_parameters == "Average":
-            change_parameter_with = "Average()"
+        elif mutate_selected_parameters == "layers.Average()":
+            change_parameter_with = "tf.keras.layers.Average()"
             layer_name="Average"
             mutated_line = mutator.modify_tf_layer_in_code(source_code,layer_name, change_parameter_with)
-        elif mutate_selected_parameters == "AveragePooling1D":
-            change_parameter_with = "AveragePooling1D()"
+        elif mutate_selected_parameters == "layers.AveragePooling1D()":
+            change_parameter_with = "tf.keras.layers.AveragePooling1D()"
             layer_name="AveragePooling1D"
             mutated_line = mutator.modify_tf_layer_in_code(source_code,layer_name, change_parameter_with)                              
-        elif mutate_selected_parameters == "AveragePooling2D":
-            change_parameter_with = "AveragePooling2D()"
+        elif mutate_selected_parameters == "layers.AveragePooling2D()":
+            change_parameter_with = "tf.keras.layers.AveragePooling2D()"
             layer_name="AveragePooling2D"
             mutated_line = mutator.modify_tf_layer_in_code(source_code,layer_name, change_parameter_with)
-        elif mutate_selected_parameters == "AveragePooling3D":
-            change_parameter_with = "AveragePooling3D()"
+        elif mutate_selected_parameters == "layers.AveragePooling3D()":
+            change_parameter_with = "tf.keras.layers.AveragePooling3D()"
             layer_name="AveragePooling3D"
             mutated_line = mutator.modify_tf_layer_in_code(source_code,layer_name, change_parameter_with)
         elif mutate_selected_parameters == "layers.AvgPool1D()":
@@ -747,11 +748,11 @@ def layer_select_mutate(mutate_selected_parameters,source_code ):
             change_parameter_with = "tf.nn.bias_add()"
             function_name = "bias_add"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
-        elif mutate_selected_parameters == "nn.collapse_repeated":
+        elif mutate_selected_parameters == "nn.collapse_repeated()":
             change_parameter_with = "tf.nn.collapse_repeated()"
             function_name = "collapse_repeated"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
-        elif mutate_selected_parameters == "nn.compute_accidental_hits":
+        elif mutate_selected_parameters == "nn.compute_accidental_hits()":
             change_parameter_with = "tf.nn.compute_accidental_hits()"
             function_name = "compute_accidental_hits"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)

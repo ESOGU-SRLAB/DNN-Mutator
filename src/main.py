@@ -1310,14 +1310,24 @@ class MainWindow(QMainWindow):
 
     def dnn_start_mutate_process(self):
         self.dnn_mutation_process_progress_bar()
-
-        # Get the selected items from the list widget as a list
+        # Check if 'Mutate All' checkbox is checked
         selected_items = []
+        if self.ui.checkBox_Mutate_All.isChecked():
+            # Retrieve all items from the mutation library
+            selected_items = mutation_library.tf_all_mutation_code_list
+        else:
+            # Get the selected items from the list widget as a list
+            selected_items = []    
+            for i in range(self.ui.listWidget_selected_mutate_parameters.count()):
+                    item = self.ui.listWidget_selected_mutate_parameters.item(i)
+                    selected_items.append(item.text())        
+        # Get the selected items from the list widget as a list
+        #selected_items = []
 
-        for i in range(self.ui.listWidget_selected_mutate_parameters.count()):
-            item = self.ui.listWidget_selected_mutate_parameters.item(i)
-            selected_items.append(item.text())
-            print(selected_items[i])
+        #for i in range(self.ui.listWidget_selected_mutate_parameters.count()):
+            #item = self.ui.listWidget_selected_mutate_parameters.item(i)
+            #selected_items.append(item.text())
+            #print(selected_items[i])
 
         # Check if there are selected items
         if not selected_items:
@@ -1333,17 +1343,21 @@ class MainWindow(QMainWindow):
         for item in selected_items:
 
 
-
+            
             mutate_selected_parameters = item
-            #find selected_parameters and mutate
-            mutated_line=selected_parameters.layer_select_mutate(mutate_selected_parameters,source_code) 
-            mutated_code += mutated_line + "\n"
-
+            
+            
+                #find selected_parameters and mutate
+            mutated_line=selected_parameters.layer_select_mutate(mutate_selected_parameters,source_code)
+            if mutated_line:
+                if mutated_line != 0:
+                    mutated_code += mutated_line + "\n"
+        self.ui.plainTextEdit_mutated_code.setPlainText(mutated_code)
             
             # Modify the code using mutator and append it to mutated_code
 
         # Set the mutated code in the plain text edit
-        self.ui.plainTextEdit_mutated_code.setPlainText(mutated_code)
+        
 
             #try:
                 # Mutasyona uğratılan kodu çalıştır ve sonucu yakala

@@ -4789,6 +4789,9 @@ class Ui_MainWindow(object):
         self.checkBox_Code_snippet_All = QCheckBox(self.frame_4)
         self.checkBox_Code_snippet_All.setObjectName(u"checkBox_Code_snippet_All")
         self.checkBox_Code_snippet_All.setGeometry(QRect(460, 310, 101, 31))
+        self.checkBox_Mutate_All = QCheckBox(self.frame_4)
+        self.checkBox_Mutate_All.setObjectName(u"checkBox_Mutate_All")
+        self.checkBox_Mutate_All.setGeometry(QRect(1220, 340, 91, 22))
         self.stackedWidget.addWidget(self.page)
 
         self.verticalLayout_15.addWidget(self.stackedWidget)
@@ -7359,6 +7362,7 @@ class Ui_MainWindow(object):
         self.label_78.setText(QCoreApplication.translate("MainWindow", u"Selected Snippet", None))
         self.label_79.setText(QCoreApplication.translate("MainWindow", u"Scanned Source Code", None))
         self.checkBox_Code_snippet_All.setText(QCoreApplication.translate("MainWindow", u"Scan All", None))
+        self.checkBox_Mutate_All.setText(QCoreApplication.translate("MainWindow", u"Mutate All", None))
         self.creditsLabel.setText("")
         self.version.setText(QCoreApplication.translate("MainWindow", u"v1.0", None))
     # retranslateUi
