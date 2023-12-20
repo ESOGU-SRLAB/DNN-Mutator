@@ -71,6 +71,7 @@ class MainWindow(QMainWindow):
     global FIPLAN_DIRECTORY_LIST
     FIPLAN_DIRECTORY_LIST = []
 
+
     def __init__(self, parent=None):
         super(MainWindow, self).__init__(parent)
 
