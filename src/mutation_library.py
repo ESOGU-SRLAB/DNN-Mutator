@@ -1280,3 +1280,414 @@ tf_all_mutation_code_list = [
 'train.load_checkpoint',
 'train.load_variable',
 ]
+
+tf_keras_layers_AbstractRNNCell_Mutation_List = [
+    # Scenarios with erroneous or inappropriate values
+    "units='invalid_data', activation=123, use_bias='wrong', kernel_initializer=10, recurrent_initializer='unknown', bias_initializer='none'",
+    "units=10000, activation='relu', use_bias=True, kernel_initializer='glorot_uniform', recurrent_initializer='orthogonal', bias_initializer='zeros'",
+    "activation='wrong_function', use_bias=True",
+    "units=128, activation='relu'",
+    "",
+    # Typical parameter combinations
+    "units=128, activation='relu', use_bias=True, kernel_initializer='glorot_uniform', recurrent_initializer='orthogonal', bias_initializer='zeros'",
+    "units=256, activation='tanh', use_bias=False, kernel_initializer='he_normal', recurrent_initializer='orthogonal', bias_initializer='ones'",
+    "units=64, activation='sigmoid', use_bias=True, kernel_initializer='glorot_normal', recurrent_initializer='identity', bias_initializer='zeros'",
+    "units=128, activation='linear', use_bias=False, kernel_initializer='lecun_normal', recurrent_initializer='uniform', bias_initializer='ones'",
+    "units=100, activation='relu', use_bias=True, kernel_initializer='he_uniform', recurrent_initializer='glorot_normal', bias_initializer='zeros'",
+    "units=150, activation='elu', use_bias=False, kernel_initializer='lecun_uniform', recurrent_initializer='glorot_uniform', bias_initializer='ones'",
+    "units=200, activation='relu', use_bias=True, kernel_initializer='normal', recurrent_initializer='he_normal', bias_initializer='zeros'",
+    "units=128, activation='swish', use_bias=False, kernel_initializer='orthogonal', recurrent_initializer='lecun_normal', bias_initializer='ones'",
+    "units=120, activation='selu', use_bias=True, kernel_initializer='identity', recurrent_initializer='he_uniform', bias_initializer='zeros'",
+    "units=256, activation='relu', use_bias=False, kernel_initializer='glorot_uniform', recurrent_initializer='uniform', bias_initializer='ones'"
+]
+tf_keras_layers_ActivityRegularization_Mutation_List = [
+    # Typical parameter combinations
+    "l1=0.01, l2=0.01",
+    "l1=0.1, l2=0.1",
+    "l1=0.5, l2=0.5",
+    "l1=0.05, l2=0.05",
+    "l1=0, l2=0",
+    "l1=0.03, l2=0.03",
+    "l1=0.2, l2=0.2",
+    "l1=0.15, l2=0.15",
+    "l1=0.07, l2=0.07",
+    "l1=0.25, l2=0.25",
+    # Scenarios with erroneous or inappropriate values
+    "l1=-0.01, l2=-0.01",
+    "l1='invalid', l2='invalid'",
+    "l1=None, l2=None",
+    "l1=0.01",
+    "l2=0.01"
+]
+tf_keras_layers_AdditiveAttention_Mutation_List = [
+    # Typical parameter combinations
+    "use_scale=True, causal=True, dropout=0.5", "use_scale=False, causal=False, dropout=0.3",
+    "use_scale=True, dropout=0.1", "use_scale=False, dropout=0.6",
+    "use_scale=True, causal=True, dropout=0", "use_scale=False, causal=True, dropout=0.2",
+    "use_scale=True, dropout=0.4", "use_scale=False, dropout=0.1",
+    "use_scale=True, causal=False, dropout=0.3", "use_scale=False, causal=False, dropout=0.5",
+    # Scenarios with erroneous or inappropriate values
+    "use_scale='invalid', causal=123, dropout=None", "use_scale=None, dropout='invalid'",
+    "causal='true', dropout=1.5", "use_scale=0, dropout=0", "causal=None, dropout=-0.1"
+]
+tf_keras_layers_Activation_Mutation_List = [
+    "activation='relu'", "activation='sigmoid'", "activation='tanh'",
+    "activation='linear'", "activation='softmax'", "activation='softplus'",
+    "activation='softsign'", "activation='selu'", "activation='elu'",
+    "activation='exponential'", "activation='invalid_activation'", "activation=123",
+    "activation=None", "activation=True", "activation=''"
+]
+tf_keras_layers_AlphaDropout_Mutation_List = [
+    "rate=0.2, noise_shape=None, seed=None", "rate=0.3, noise_shape=[1, 2], seed=42",
+    "rate=0.4, noise_shape=[2, 3], seed=100", "rate=0.5, noise_shape=None, seed=50",
+    "rate=0.6, noise_shape=[3, 4], seed=None", "rate=0.1, noise_shape=None, seed=0",
+    "rate=0.25, noise_shape=[1, 1], seed=123", "rate=0.35, noise_shape=[2, 2], seed=200",
+    "rate=0.45, noise_shape=[3, 3], seed=300", "rate=0.55, noise_shape=[4, 4], seed=400",
+    "rate=-0.2, noise_shape='invalid', seed='invalid'", "rate=1.2, noise_shape=100, seed=None",
+    "rate=0, noise_shape=None, seed=-42", "rate='invalid', noise_shape=[-1, -2], seed='none'",
+    "rate=None, noise_shape='invalid', seed='invalid'"
+]
+tf_keras_layers_Attention_Mutation_List = [
+    # Typical parameter combinations
+    "use_scale=True, causal=True, dropout=0.5", "use_scale=False, causal=False, dropout=0.3",
+    "use_scale=True, dropout=0.1", "use_scale=False, dropout=0.6",
+    "use_scale=True, causal=True, dropout=0", "use_scale=False, causal=True, dropout=0.2",
+    "use_scale=True, dropout=0.4", "use_scale=False, dropout=0.1",
+    "use_scale=True, causal=False, dropout=0.3", "use_scale=False, causal=False, dropout=0.5",
+    # Scenarios with erroneous or inappropriate values
+    "use_scale='invalid', causal=123, dropout=None", "use_scale=None, dropout='invalid'",
+    "causal='true', dropout=1.5", "use_scale=0, dropout=0", "causal=None, dropout=-0.1"
+]
+# Belirtilen havuzlama katmanları için Python listesi formatında parametre kombinasyonları oluşturma
+
+tf_keras_layers_AveragePooling1D_Mutation_List = [
+    # Typical parameter combinations
+    "pool_size=2", "pool_size=3", "pool_size=4",
+    "pool_size=5", "pool_size=6", "pool_size=7",
+    "pool_size=8", "pool_size=9", "pool_size=10",
+    "pool_size=11",
+    # Scenarios with erroneous or inappropriate values
+    "pool_size='invalid'", "pool_size=0", "pool_size=-1",
+    "pool_size=1.5", "pool_size=None"
+]
+
+tf_keras_layers_AveragePooling2D_Mutation_List = [
+    # Typical parameter combinations
+    "pool_size=(2, 2)", "pool_size=(3, 3)", "pool_size=(4, 4)",
+    "pool_size=(5, 5)", "pool_size=(6, 6)", "pool_size=(7, 7)",
+    "pool_size=(8, 8)", "pool_size=(9, 9)", "pool_size=(10, 10)",
+    "pool_size=(11, 11)",
+    # Scenarios with erroneous or inappropriate values
+    "pool_size='invalid'", "pool_size=(0, 0)", "pool_size=(-1, -1)",
+    "pool_size=(1.5, 1.5)", "pool_size=None"
+]
+
+tf_keras_layers_AveragePooling3D_Mutation_List = [
+    # Typical parameter combinations
+    "pool_size=(2, 2, 2)", "pool_size=(3, 3, 3)", "pool_size=(4, 4, 4)",
+    "pool_size=(5, 5, 5)", "pool_size=(6, 6, 6)", "pool_size=(7, 7, 7)",
+    "pool_size=(8, 8, 8)", "pool_size=(9, 9, 9)", "pool_size=(10, 10, 10)",
+    "pool_size=(11, 11, 11)",
+    # Scenarios with erroneous or inappropriate values
+    "pool_size='invalid'", "pool_size=(0, 0, 0)", "pool_size=(-1, -1, -1)",
+    "pool_size=(1.5, 1.5, 1.5)", "pool_size=None"
+]
+
+tf_keras_layers_AvgPool1D_Mutation_List = [
+    # Typical parameter combinations
+    "pool_size=2", "pool_size=3", "pool_size=4",
+    "pool_size=5", "pool_size=6", "pool_size=7",
+    "pool_size=8", "pool_size=9", "pool_size=10",
+    "pool_size=11",
+    # Scenarios with erroneous or inappropriate values
+    "pool_size='invalid'", "pool_size=0", "pool_size=-1",
+    "pool_size=1.5", "pool_size=None"
+]
+
+tf_keras_layers_AvgPool2D_Mutation_List = [
+    # Typical parameter combinations
+    "pool_size=(2, 2)", "pool_size=(3, 3)", "pool_size=(4, 4)",
+    "pool_size=(5, 5)", "pool_size=(6, 6)", "pool_size=(7, 7)",
+    "pool_size=(8, 8)", "pool_size=(9, 9)", "pool_size=(10, 10)",
+    "pool_size=(11, 11)",
+    # Scenarios with erroneous or inappropriate values
+    "pool_size='invalid'", "pool_size=(0, 0)", "pool_size=(-1, -1)",
+    "pool_size=(1.5, 1.5)", "pool_size=None"
+]
+
+tf_keras_layers_AvgPool3D_Mutation_List = [
+    # Typical parameter combinations
+    "pool_size=(2, 2, 2)", "pool_size=(3, 3, 3)", "pool_size=(4, 4, 4)",
+    "pool_size=(5, 5, 5)", "pool_size=(6, 6, 6)", "pool_size=(7, 7, 7)",
+    "pool_size=(8, 8, 8)", "pool_size=(9, 9, 9)", "pool_size=(10, 10, 10)",
+    "pool_size=(11, 11, 11)",
+    # Scenarios with erroneous or inappropriate values
+    "pool_size='invalid'", "pool_size=(0, 0, 0)", "pool_size=(-1, -1, -1)",
+    "pool_size=(1.5, 1.5, 1.5)","pool_size=None"
+]  
+
+tf_keras_layers_BatchNormalization_Mutation_List = [
+    # Typical parameter combinations
+    "momentum=0.99, epsilon=0.001", "momentum=0.9, epsilon=0.01", 
+    "momentum=0.95, epsilon=0.005", "momentum=0.9, epsilon=0.1", 
+    "momentum=0.8, epsilon=0.001", "momentum=0.85, epsilon=0.005", 
+    "momentum=0.95, epsilon=0.003", "momentum=0.99, epsilon=0.0001", 
+    "momentum=0.9, epsilon=0.0005", "momentum=0.8, epsilon=0.01",
+    # Scenarios with erroneous or inappropriate values
+    "momentum='invalid', epsilon='invalid'", "momentum=-0.1, epsilon=-0.001", 
+    "momentum=1.1, epsilon=0.001", "momentum=None, epsilon=None", 
+    "momentum=0.9, epsilon='invalid'"
+]
+
+
+tf_keras_layers_Bidirectional_Mutation_List = [
+    # Bidirectional layer typically wraps another layer, here we use a generic "layer" placeholder
+    # Typical parameter combinations
+    "layer=SimpleRNN(10)", "layer=LSTM(20)", "layer=GRU(30)", 
+    "layer=SimpleRNN(15)", "layer=LSTM(25)", "layer=GRU(35)", 
+    "layer=SimpleRNN(20)", "layer=LSTM(30)", "layer=GRU(40)", 
+    "layer=SimpleRNN(25)", "layer=LSTM(35)",
+    # Scenarios with erroneous or inappropriate values
+    "layer='invalid'", "layer=None", "layer=123", 
+    "layer=SimpleRNN(-10)", "layer=LSTM('invalid')"
+]
+
+
+tf_keras_layers_CategoryEncoding_Mutation_List = [
+    # Typical parameter combinations
+    "num_tokens=10, output_mode='one_hot'", "num_tokens=20, output_mode='count'", 
+    "num_tokens=30, output_mode='binary'", "num_tokens=40, output_mode='one_hot'", 
+    "num_tokens=50, output_mode='count'", "num_tokens=15, output_mode='binary'", 
+    "num_tokens=25, output_mode='one_hot'", "num_tokens=35, output_mode='count'", 
+    "num_tokens=45, output_mode='binary'", "num_tokens=55, output_mode='one_hot'",
+    # Scenarios with erroneous or inappropriate values
+    "num_tokens=-10, output_mode='invalid'", "num_tokens='invalid', output_mode='one_hot'", 
+    "num_tokens=20, output_mode=None", "num_tokens=None, output_mode='count'", 
+    "num_tokens=0, output_mode='binary'"
+]
+
+tf_keras_layers_CenterCrop_Mutation_List = [
+    # Typical parameter combinations
+    "height=20, width=20", "height=30, width=30", "height=40, width=40", 
+    "height=50, width=50", "height=60, width=60", "height=70, width=70", 
+    "height=80, width=80", "height=90, width=90", "height=100, width=100", 
+    "height=110, width=110",
+    # Scenarios with erroneous or inappropriate values
+    "height=-20, width=-20", "height='invalid', width='invalid'", 
+    "height=20, width=None", "height=None, width=30", 
+    "height=0, width=0"
+]
+
+
+tf_keras_layers_Concatenate_Mutation_List = [
+    # Typical parameter combinations
+    "axis=-1", "axis=0", "axis=1", "axis=2", "axis=3", 
+    "axis=-2", "axis=-3", "axis=4", "axis=-4", "axis=5",
+    # Scenarios with erroneous or inappropriate values
+    "axis='invalid'", "axis=123", "axis=None", 
+    "axis=-123", "axis=1.5"
+]
+
+tf_keras_layers_Conv1D_Mutation_List = [
+    # Typical parameter combinations
+    "filters=32, kernel_size=3", "filters=64, kernel_size=5", 
+    "filters=128, kernel_size=7", "filters=16, kernel_size=3", 
+    "filters=32, kernel_size=1", "filters=48, kernel_size=2", 
+    "filters=64, kernel_size=4", "filters=96, kernel_size=6", 
+    "filters=128, kernel_size=8", "filters=32, kernel_size=5",
+    # Scenarios with erroneous or inappropriate values
+    "filters='invalid', kernel_size='invalid'", "filters=-32, kernel_size=-3", 
+    "filters=None, kernel_size=None", "filters=0, kernel_size=0", 
+]
+# Conv1DTranspose için tipik ve hatalı parametre kombinasyonları
+tf_keras_layers_Conv1DTranspose_Mutation_List = [
+    # Typical parameter combinations
+    "filters=32, kernel_size=3", "filters=64, kernel_size=5", 
+    "filters=128, kernel_size=7", "filters=16, kernel_size=3", 
+    "filters=32, kernel_size=1", "filters=48, kernel_size=2", 
+    "filters=64, kernel_size=4", "filters=96, kernel_size=6", 
+    "filters=128, kernel_size=8", "filters=32, kernel_size=5",
+    # Scenarios with erroneous or inappropriate values
+    "filters='invalid', kernel_size='invalid'", "filters=-32, kernel_size=-3", 
+    "filters=None, kernel_size=None", "filters=0, kernel_size=0", 
+    "filters=64, kernel_size='invalid'"
+]
+
+# Conv2D için tipik ve hatalı parametre kombinasyonları
+tf_keras_layers_Conv2D_Mutation_List = [
+    # Typical parameter combinations
+    "filters=32, kernel_size=(3, 3)", "filters=64, kernel_size=(5, 5)", 
+    "filters=128, kernel_size=(7, 7)", "filters=16, kernel_size=(3, 3)", 
+    "filters=32, kernel_size=(1, 1)", "filters=48, kernel_size=(2, 2)", 
+    "filters=64, kernel_size=(4, 4)", "filters=96, kernel_size=(6, 6)", 
+    "filters=128, kernel_size=(8, 8)", "filters=32, kernel_size=(5, 5)",
+    # Scenarios with erroneous or inappropriate values
+    "filters='invalid', kernel_size='invalid'", "filters=-32, kernel_size=(-3, -3)", 
+    "filters=None, kernel_size=None", "filters=0, kernel_size=(0, 0)", 
+    "filters=64, kernel_size='invalid'"
+]
+
+
+tf_keras_layers_Conv2DTranspose_Mutation_List = [
+    # Typical parameter combinations
+    # Similar to Conv2D but for transpose operation
+    "filters=32, kernel_size=(3, 3)", "filters=64, kernel_size=(5, 5)", 
+    "filters=128, kernel_size=(7, 7)", "filters=16, kernel_size=(3, 3)", 
+    "filters=32, kernel_size=(1, 1)", "filters=48, kernel_size=(2, 2)", 
+    "filters=64, kernel_size=(4, 4)", "filters=96, kernel_size=(6, 6)", 
+    "filters=128, kernel_size=(8, 8)", "filters=32, kernel_size=(5, 5)",
+    # Scenarios with erroneous or inappropriate values
+    "filters='invalid', kernel_size='invalid'", "filters=-32, kernel_size=(-3, -3)", 
+    "filters=None, kernel_size=None", "filters=0, kernel_size=(0, 0)", 
+    "filters=64, kernel_size='invalid'"
+]
+tf_keras_layers_Conv3D_Mutation_List = [
+    # Typical parameter combinations
+    "filters=32, kernel_size=(3, 3, 3)", "filters=64, kernel_size=(5, 5, 5)", 
+    "filters=128, kernel_size=(7, 7, 7)", "filters=16, kernel_size=(3, 3, 3)", 
+    "filters=32, kernel_size=(1, 1, 1)", "filters=48, kernel_size=(2, 2, 2)", 
+    "filters=64, kernel_size=(4, 4, 4)", "filters=96, kernel_size=(6, 6, 6)", 
+    "filters=128, kernel_size=(8, 8, 8)", "filters=32, kernel_size=(5, 5, 5)",
+    # Scenarios with erroneous or inappropriate values
+    "filters='invalid', kernel_size='invalid'", "filters=-32, kernel_size=(-3, -3, -3)", 
+    "filters=None, kernel_size=None", "filters=0, kernel_size=0", 
+    "filters=64, kernel_size='invalid'"
+]
+
+
+tf_keras_layers_Conv3DTranspose_Mutation_List = [
+    # Typical parameter combinations
+    "filters=32, kernel_size=(3, 3, 3)", "filters=64, kernel_size=(5, 5, 5)", 
+    "filters=128, kernel_size=(7, 7, 7)", "filters=16, kernel_size=(3, 3, 3)", 
+    "filters=32, kernel_size=(1, 1, 1)", "filters=48, kernel_size=(2, 2, 2)", 
+    "filters=64, kernel_size=(4, 4, 4)", "filters=96, kernel_size=(6, 6, 6)", 
+    "filters=128, kernel_size=(8, 8, 8)", "filters=32, kernel_size=(5, 5, 5)",
+    # Scenarios with erroneous or inappropriate values
+    "filters='invalid', kernel_size='invalid'", "filters=-32, kernel_size=(-3, -3, -3)", 
+    "filters=None, kernel_size=None", "filters=0, kernel_size=0", 
+    "filters=64, kernel_size='invalid'"
+]
+
+
+tf_keras_layers_ConvLSTM1D_Mutation_List = [
+    # Typical parameter combinations
+    "filters=32, kernel_size=3", "filters=64, kernel_size=5", 
+    "filters=128, kernel_size=7", "filters=16, kernel_size=3", 
+    "filters=32, kernel_size=1", "filters=48, kernel_size=2", 
+    "filters=64, kernel_size=4", "filters=96, kernel_size=6", 
+    "filters=128, kernel_size=8", "filters=32, kernel_size=5",
+    # Scenarios with erroneous or inappropriate values
+    "filters='invalid', kernel_size='invalid'", "filters=-32, kernel_size=-3", 
+    "filters=None, kernel_size=None", "filters=0, kernel_size=0", 
+    "filters=64, kernel_size='invalid'"
+]
+
+
+tf_keras_layers_ConvLSTM2D_Mutation_List = [
+    # Typical parameter combinations
+    "filters=32, kernel_size=(3, 3)", "filters=64, kernel_size=(5, 5)", 
+    "filters=128, kernel_size=(7, 7)", "filters=16, kernel_size=(3, 3)", 
+    "filters=32, kernel_size=(1, 1)", "filters=48, kernel_size=(2, 2)", 
+    "filters=64, kernel_size=(4, 4)", "filters=96, kernel_size=(6, 6)", 
+    "filters=128, kernel_size=(8, 8)", "filters=32, kernel_size=(5, 5)",
+    # Scenarios with erroneous or inappropriate values
+    "filters='invalid', kernel_size='invalid'", "filters=-32, kernel_size=(-3, -3)", 
+    "filters=None"
+]
+tf_keras_layers_Cropping1D_Mutation_List = [
+    # Typical parameter combinations
+    "cropping=(1, 1)", "cropping=(2, 2)", "cropping=(3, 3)",
+    "cropping=(4, 4)", "cropping=(5, 5)", "cropping=(6, 6)",
+    "cropping=(7, 7)", "cropping=(8, 8)", "cropping=(9, 9)",
+    "cropping=(10, 10)",
+    # Scenarios with erroneous or inappropriate values
+    "cropping='invalid'", "cropping=(0, 0)", "cropping=(-1, -1)",
+    "cropping=(1.5, 1.5)", "cropping=None"
+]
+
+
+tf_keras_layers_Cropping2D_Mutation_List = [
+    # Typical parameter combinations
+    "cropping=((1, 1), (1, 1))", "cropping=((2, 2), (2, 2))", 
+    "cropping=((3, 3), (3, 3))", "cropping=((4, 4), (4, 4))", 
+    "cropping=((5, 5), (5, 5))", "cropping=((6, 6), (6, 6))", 
+    "cropping=((7, 7), (7, 7))", "cropping=((8, 8), (8, 8))", 
+    "cropping=((9, 9), (9, 9))", "cropping=((10, 10), (10, 10))",
+    # Scenarios with erroneous or inappropriate values
+    "cropping='invalid'", "cropping=((0, 0), (0, 0))", 
+    "cropping=((1.5, 1.5), (1.5, 1.5))", "cropping=None", 
+    "cropping=((0, 0), (-1, -1))"
+]
+
+
+tf_keras_layers_Cropping3D_Mutation_List = [
+    # Typical parameter combinations
+    "cropping=((1, 1), (1, 1), (1, 1))", "cropping=((2, 2), (2, 2), (2, 2))", 
+    "cropping=((3, 3), (3, 3), (3, 3))", "cropping=((4, 4), (4, 4), (4, 4))", 
+    "cropping=((5, 5), (5, 5), (5, 5))", "cropping=((6, 6), (6, 6), (6, 6))", 
+    "cropping=((7, 7), (7, 7), (7, 7))", "cropping=((8, 8), (8, 8), (8, 8))", 
+    "cropping=((9, 9), (9, 9), (9, 9))", "cropping=((10, 10), (10, 10), (10, 10))",
+    # Scenarios with erroneous or inappropriate values
+    "cropping='invalid'", "cropping=((0, 0), (0, 0), (0, 0))", 
+    "cropping=((1.5, 1.5), (1.5, 1.5), (1.5, 1.5))", "cropping=None", 
+    "cropping=((0, 0), (-1, -1), (-1, -1))"
+]
+
+
+tf_keras_layers_SpectralNormalization_Mutation_List = [
+    # SpectralNormalization does not have significant parameters, but we can create some scenarios
+    # Typical parameter combinations (as SpectralNormalization does not have parameters, these will be empty)
+    "", "[x1, x2]","[x2, x1]"
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", 
+    "activation='relu'", "dropout=0.3"
+]
+
+tf_keras_layers_StackedRNNCells_Mutation_List = [
+    # StackedRNNCells layer typically wraps other layers, here we use a generic "layer" placeholder
+    # Typical parameter combinations
+    "cells=[SimpleRNNCell(10), SimpleRNNCell(20)]", "cells=[LSTMCell(20), LSTMCell(30)]", 
+    "cells=[GRUCell(30), GRUCell(40)]", "cells=[SimpleRNNCell(15), SimpleRNNCell(25)]", 
+    "cells=[LSTMCell(25), LSTMCell(35)]", "cells=[GRUCell(35), GRUCell(45)]", 
+    "cells=[SimpleRNNCell(20), SimpleRNNCell(30)]", "cells=[LSTMCell(30), LSTMCell(40)]", 
+    "cells=[GRUCell(40), GRUCell(50)]", "cells=[SimpleRNNCell(25), SimpleRNNCell(35)]",
+    # Scenarios with erroneous or inappropriate values
+    "cells='invalid'", "cells=None", "cells=[123, 456]", 
+    "cells=[SimpleRNNCell(-10), LSTMCell('invalid')]", "cells=[GRUCell('invalid'), SimpleRNNCell(0)]"
+]
+
+# StringLookup için tipik ve hatalı parametre kombinasyonları
+tf_keras_layers_StringLookup_Mutation_List = [
+    # Typical parameter combinations
+    "num_tokens=1000, output_mode='int'", "num_tokens=2000, output_mode='multi_hot'", 
+    "num_tokens=3000, output_mode='count'", "num_tokens=4000, output_mode='tf_idf'", 
+    "num_tokens=5000, output_mode='int'", "num_tokens=1500, output_mode='multi_hot'", 
+    "num_tokens=2500, output_mode='count'", "num_tokens=3500, output_mode='tf_idf'", 
+    "num_tokens=4500, output_mode='int'", "num_tokens=5500, output_mode='multi_hot'",
+    # Scenarios with erroneous or inappropriate values
+    "num_tokens=-1000, output_mode='invalid'", "num_tokens='invalid', output_mode='int'", 
+    "num_tokens=2000, output_mode=None", "num_tokens=None, output_mode='multi_hot'", 
+    "num_tokens=0, output_mode='count'"
+]
+
+# Subtract için tipik ve hatalı parametre kombinasyonları
+tf_keras_layers_Subtract_Mutation_List = [
+    # Subtract layer does not have significant parameters, but we can create some scenarios
+    # Typical parameter combinations (as Subtract does not have parameters, these will be empty)
+    "","[x1, x2]","[x2, x3]",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", 
+    "activation='relu'", "dropout=0.3"
+]
+
+# TextVectorization için tipik ve hatalı parametre kombinasyonları
+tf_keras_layers_TextVectorization_Mutation_List = [
+    # Typical parameter combinations
+    "max_tokens=10000, output_mode='int'", "max_tokens=20000, output_mode='binary'", 
+    "max_tokens=30000, output_mode='count'", "max_tokens=40000, output_mode='tf_idf'", 
+    "max_tokens=50000, output_mode='int'", "max_tokens=15000, output_mode='binary'", 
+    "max_tokens=25000, output_mode='count'", "max_tokens=35000, output_mode='tf_idf'", 
+    "max_tokens=45000, output_mode='int'", "max_tokens=55000, output_mode='binary'",
+    # Scenarios with erroneous or inappropriate values
+    "max_tokens=-10000, output_mode='invalid'", "max_tokens='invalid'"
+] 
