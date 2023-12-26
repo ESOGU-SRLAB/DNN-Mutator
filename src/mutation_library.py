@@ -1691,3 +1691,267 @@ tf_keras_layers_TextVectorization_Mutation_List = [
     # Scenarios with erroneous or inappropriate values
     "max_tokens=-10000, output_mode='invalid'", "max_tokens='invalid'"
 ] 
+tf_keras_layers_ThresholdedReLU_Mutation_List = [
+    # Typical parameter combinations
+    "theta=1.0", "theta=0.5", "theta=1.5", 
+    "theta=2.0", "theta=0.2", "theta=0.8", 
+    "theta=1.2", "theta=1.8", "theta=0.3", 
+    "theta=0.7",
+    # Scenarios with erroneous or inappropriate values
+    "theta=-1.0", "theta='invalid'", "theta=None", 
+    "theta=-0.5", "theta=2.5"
+]
+
+
+tf_keras_layers_TimeDistributed_Mutation_List = [
+    # TimeDistributed layer typically wraps another layer, here we use a generic "layer" placeholder
+    # Typical parameter combinations
+    "layer=Dense(10)", "layer=Dense(20)", "layer=Dense(30)", 
+    "layer=Dense(40)", "layer=Dense(50)", "layer=Dense(60)", 
+    "layer=Dense(70)", "layer=Dense(80)", "layer=Dense(90)", 
+    "layer=Dense(100)",
+    # Scenarios with erroneous or inappropriate values
+    "layer='invalid'", "layer=None", "layer=Dense(-10)", 
+    "layer=Dense('invalid')", "layer=123"
+]
+
+
+tf_keras_layers_UnitNormalization_Mutation_List = [
+    # UnitNormalization does not have significant parameters, but we can create some scenarios
+    # Typical parameter combinations (as UnitNormalization does not have parameters, these will be empty)
+    "","[x1, x2]", "[x2, x1]", 
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", 
+    "activation='relu'", "dropout=0.3"
+]
+
+
+tf_keras_layers_UpSampling1D_Mutation_List = [
+    # Typical parameter combinations
+    "size=2", "size=3", "size=4", 
+    "size=5", "size=6", "size=7", 
+    "size=8", "size=9", "size=10", 
+    "size=11",
+    # Scenarios with erroneous or inappropriate values
+    "size=-1", "size='invalid'", "size=None", 
+    "size=0", "size=1.5"
+]
+
+
+tf_keras_layers_UpSampling2D_Mutation_List = [
+    # Typical parameter combinations
+    "size=(2, 2)", "size=(3, 3)", "size=(4, 4)", 
+    "size=(5, 5)", "size=(6, 6)", "size=(7, 7)", 
+    "size=(8, 8)", "size=(9, 9)", "size=(10, 10)", 
+    "size=(11, 11)",
+    # Scenarios with erroneous or inappropriate values
+    "size=(-1, -1)", "size=('invalid', 'invalid')", "size=None", 
+    "size=(0, 0)", "size=(1.5, 1.5)"
+]
+
+
+tf_keras_layers_UpSampling3D_Mutation_List = [
+    # Typical parameter combinations
+    "size=(2, 2, 2)", "size=(3, 3, 3)", "size=(4, 4, 4)", 
+    "size=(5, 5, 5)", "size=(6, 6, 6)", "size=(7, 7, 7)", 
+    "size=(8, 8, 8)", "size=(9, 9, 9)", "size=(10, 10, 10)", 
+    "size=(11, 11, 11)",
+    # Scenarios with erroneous or inappropriate values
+    "size=(-1, -1, -1)", "size=('invalid', 'invalid', 'invalid')", "size=None", 
+    "size=(0, 0, 0)", "size=(1.5, 1.5,1.5)",
+]
+tf_keras_layers_Wrapper_Mutation_List = [
+    # Wrapper layer typically wraps another layer, here we use a generic "layer" placeholder
+    # Typical parameter combinations (as Wrapper does not have specific parameters, these will be empty)
+    "","[x1, x2]", "[x2, x1]", 
+    # Scenarios with erroneous or inappropriate values
+    "layer='invalid'", "layer=None", "layer=123", 
+    "layer=SimpleRNN(-10)", "layer=LSTM('invalid')"
+]
+
+
+tf_keras_layers_ZeroPadding1D_Mutation_List = [
+    # Typical parameter combinations
+    "padding=1", "padding=2", "padding=3", 
+    "padding=4", "padding=5", "padding=6", 
+    "padding=7", "padding=8", "padding=9", 
+    "padding=10",
+    # Scenarios with erroneous or inappropriate values
+    "padding=-1", "padding='invalid'", "padding=None", 
+    "padding=0", "padding=1.5"
+]
+
+tf_keras_layers_ZeroPadding2D_Mutation_List = [
+    # Typical parameter combinations
+    "padding=(1, 1)", "padding=(2, 2)", "padding=(3, 3)", 
+    "padding=(4, 4)", "padding=(5, 5)", "padding=(6, 6)", 
+    "padding=(7, 7)", "padding=(8, 8)", "padding=(9, 9)", 
+    "padding=(10, 10)",
+    # Scenarios with erroneous or inappropriate values
+    "padding=(-1, -1)", "padding=('invalid', 'invalid')", "padding=None", 
+    "padding=(0, 0)", "padding=(1.5, 1.5)"
+]
+
+
+tf_keras_layers_ZeroPadding3D_Mutation_List = [
+    # Typical parameter combinations
+    "padding=((1, 1), (1, 1), (1, 1))", "padding=((2, 2), (2, 2), (2, 2))", 
+    "padding=((3, 3), (3, 3), (3, 3))", "padding=((4, 4), (4, 4), (4, 4))", 
+    "padding=((5, 5), (5, 5), (5, 5))", "padding=((6, 6), (6, 6), (6, 6))", 
+    "padding=((7, 7), (7, 7), (7, 7))", "padding=((8, 8), (8, 8), (8, 8))", 
+    "padding=((9, 9), (9, 9), (9, 9))", "padding=((10, 10), (10, 10), (10, 10))",
+    # Scenarios with erroneous or inappropriate values
+    "padding='invalid'", "padding=((0, 0), (0, 0), (0, 0))", 
+    "padding=((1.5, 1.5), (1.5, 1.5), (1.5, 1.5))", "padding=None", 
+    "padding=((0, 0), (-1, -1), (-1, -1))"
+]
+
+
+tf_keras_layers_add_Mutation_List = [
+    # add layer does not have significant parameters, but we can create some scenarios
+    # Typical parameter combinations (as add does not have parameters, these will be empty)
+    "","[x1, x2]", "[x2, x1]", 
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", 
+    "activation='relu'", "dropout=0.3"
+]
+
+tf_keras_layers_add_Mutation_List = [
+    # add layer does not have significant parameters, but we can create some scenarios
+    # Typical parameter combinations (as add does not have parameters, these will be empty)
+    "", "[x1, x2]", "[x2, x1]",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
+]
+
+tf_keras_layers_average_Mutation_List = [
+    # average layer does not have significant parameters
+    # Typical parameter combinations (as average does not have parameters, these will be empty)
+    "", "[x1, x2]","[x2, x1]", 
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
+]
+
+tf_keras_layers_concatenate_Mutation_List = [
+    # concatenate layer does not have significant parameters
+    # Typical parameter combinations (as concatenate does not have parameters, these will be empty)
+    "", "[x1, x2]", "[x2, x1]"
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
+]
+
+tf_keras_layers_dot_Mutation_List = [
+    # dot layer does not have significant parameters
+    # Typical parameter combinations (as dot does not have parameters, these will be empty)
+    "", "[x1, x2]", "[x2, x1]",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
+]
+
+
+
+tf_keras_layers_deserialize_Mutation_List = [
+    # deserialize does not have parameters
+    # Typical parameter combinations (as deserialize does not have parameters, these will be empty)
+    "", "[x1, x2]", "[x2, x1]",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
+]
+
+tf_keras_layers_serialize_Mutation_List = [
+    # serialize does not have parameters
+    # Typical parameter combinations (as serialize does not have parameters, these will be empty)
+    "", "[x2, x1]", "[x1, x2]",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
+]
+
+# maximum, minimum, multiply işlemsel katmanları için tipik parametre kombinasyonları oluşturma
+# Bu katmanlar parametre almadığı için, bu listeler boş veya hatalı parametre senaryoları içerecek
+
+tf_keras_layers_maximum_Mutation_List = [
+    # maximum does not have parameters
+    # Typical parameter combinations (as maximum does not have parameters, these will be empty)
+    "", "[x2, x1]", "[x2, x1]",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
+]
+
+tf_keras_layers_minimum_Mutation_List = [
+    # minimum does not have parameters
+    # Typical parameter combinations (as minimum does not have parameters, these will be empty)
+    "", "[x1, x2]", "[x2, x1]",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
+]
+
+tf_keras_layers_multiply_Mutation_List = [
+    # multiply does not have parameters
+    # Typical parameter combinations (as multiply does not have parameters, these will be empty)
+    "", "[x1, x2]", "[x2, x1]", 
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
+]
+
+tf_keras_layers_serialize_Mutation_List = [
+    # serialize does not have parameters
+    # Typical parameter combinations (as serialize does not have parameters, these will be empty)
+    "", "[x1, x2]", "[x2, x1]",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
+]
+
+tf_keras_layers_subtract_Mutation_List = [
+    # subtract does not have parameters
+    # Typical parameter combinations (as subtract does not have parameters, these will be empty)
+    "", "[x1, x2]", "[x2, x1]",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
+]
+
+# TensorFlow aktivasyon fonksiyonları için tipik ve hatalı parametre kombinasyonları oluşturma
+# Aktivasyon fonksiyonları genellikle parametre almadığı için, bu listeler boş veya hatalı parametre senaryoları içerecek
+
+tf_keras_activations_deserialize_Mutation_List = [
+    # deserialize for activations does not have parameters
+    # Typical parameter combinations (as deserialize does not have parameters, these will be empty)
+    "", "[x1, x2]", "[x2, x1]",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
+]
+
+tf_keras_activations_elu_Mutation_List = [
+    # elu activation function typically has alpha parameter
+    # Typical parameter combinations
+    "alpha=1.0", "alpha=0.5", "alpha=1.5", 
+    "alpha=2.0", "alpha=0.2", "alpha=0.8", 
+    "alpha=1.2", "alpha=1.8", "alpha=0.3", 
+    "alpha=0.7",
+    # Scenarios with erroneous or inappropriate values
+    "alpha=-1.0", "alpha='invalid'", "alpha=None", 
+    "alpha=-0.5", "alpha=2.5"
+]
+
+tf_keras_activations_exponential_Mutation_List = [
+    # exponential activation function does not have parameters
+    # Typical parameter combinations (as exponential does not have parameters, these will be empty)
+    "", "[x1, x2]", "[x2, x1]",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
+]
+
+tf_keras_activations_gelu_Mutation_List = [
+    # gelu activation function does not have parameters
+    # Typical parameter combinations (as gelu does not have parameters, these will be empty)
+    "", "[x1, x2]", "[x2, x1]",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
+]
+
+tf_keras_activations_get_Mutation_List = [
+    # get for activations does not have parameters
+    # Typical parameter combinations (as get does not have parameters, these will be empty)
+    "", "[x1, x2]", "[x2, x1]",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
+]
