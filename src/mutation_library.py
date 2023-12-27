@@ -264,7 +264,7 @@ tf_keras_optimizers_classes = [
     'Nadam',       # Optimizer that implements the Nadam algorithm.
     'Optimizer',   # Abstract optimizer base class.
     'RMSprop',     # Optimizer that implements the RMSprop algorithm.
-    'SGD',         # Gradient descent (with momentum) optimizer.
+    'SGD', 'sgd' ,       # Gradient descent (with momentum) optimizer.
 ]
 
 tf_keras_regularizers_classes = [
@@ -1955,3 +1955,574 @@ tf_keras_activations_get_Mutation_List = [
     # Scenarios with erroneous or inappropriate values
     "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
 ]
+tf_keras_activations_hard_sigmoid_Mutation_List = [
+    # hard_sigmoid does not have parameters
+    # Typical parameter combinations (as hard_sigmoid does not have parameters, these will be empty)
+     "", "[x1, x2]", "[x2, x1]",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
+]
+
+tf_keras_activations_linear_Mutation_List = [
+    # linear does not have parameters
+    # Typical parameter combinations (as linear does not have parameters, these will be empty)
+    "", "[x1, x2]", "[x2, x1]",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
+]
+
+
+
+tf_keras_losses_BinaryCrossentropy_Mutation_List = [
+    # Typical parameter combinations
+    "from_logits=True", "from_logits=False", 
+    "label_smoothing=0.1", "label_smoothing=0.2", 
+    "label_smoothing=0.3", "label_smoothing=0", 
+    "label_smoothing=0.5", "label_smoothing=0.4", 
+    "label_smoothing=0.6", "label_smoothing=0.7",
+    # Scenarios with erroneous or inappropriate values
+    "from_logits='invalid'", "label_smoothing=-0.1", 
+    "label_smoothing=1.1", "from_logits=None", 
+    "label_smoothing=None"
+]
+
+
+tf_keras_activations_mish_Mutation_List = [
+    # mish does not have parameters
+    # Typical parameter combinations (as mish does not have parameters, these will be empty)
+    "", "[x1, x2]", "[x2, x1]",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", 
+    "activation='relu'", "dropout=0.3"
+]
+
+tf_keras_activations_relu_Mutation_List = [
+    # relu does not have parameters
+    # Typical parameter combinations (as relu does not have parameters, these will be empty)
+    "", "[x1, x2]", "[x2, x1]",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", 
+    "activation='relu'", "dropout=0.3"
+]
+
+tf_keras_activations_selu_Mutation_List = [
+    # selu does not have parameters
+    # Typical parameter combinations (as selu does not have parameters, these will be empty)
+    "", "[x1, x2]", "[x2, x1]",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", 
+    "activation='relu'", "dropout=0.3"
+]
+
+tf_keras_activations_serialize_Mutation_List = [
+    # serialize does not have parameters
+    # Typical parameter combinations (as serialize does not have parameters, these will be empty)
+    "", "[x1, x2]", "[x2, x1]",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", 
+    "activation='relu'", "dropout=0.3"
+]
+
+tf_keras_activations_sigmoid_Mutation_List = [
+    # sigmoid does not have parameters
+    # Typical parameter combinations (as sigmoid does not have parameters, these will be empty)
+    "", "[x1, x2]", "[x2, x1]",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", 
+    "activation='relu'", "dropout=0.3"
+]
+
+tf_keras_activations_softmax_Mutation_List = [
+    # softmax does not have parameters
+    # Typical parameter combinations (as softmax does not have parameters, these will be empty)
+    "", "[x1, x2]", "[x2, x1]",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", 
+    "activation='relu'", "dropout=0.3"
+]
+
+tf_keras_activations_softplus_Mutation_List = [
+    # softplus does not have parameters
+    # Typical parameter combinations (as softplus does not have parameters, these will be empty)
+    "", "[x1, x2]", "[x2, x1]",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", 
+    "activation='relu'", "dropout=0.3"
+]
+
+tf_keras_activations_softsign_Mutation_List = [
+    # softsign does not have parameters
+    # Typical parameter combinations (as softsign does not have parameters, these will be empty)
+    "", "[x1, x2]", "[x2, x1]",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", 
+    "activation='relu'", "dropout=0.3"
+]
+
+tf_keras_activations_swish_Mutation_List = [
+    # swish does not have parameters
+    # Typical parameter combinations (as swish does not have parameters, these will be empty)
+    "", "[x1, x2]", "[x2, x1]",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", 
+    "activation='relu'", "dropout=0.3"
+]
+
+tf_keras_activations_tanh_Mutation_List = [
+    # tanh does not have parameters
+    # Typical parameter combinations (as tanh does not have parameters, these will be empty)
+    "", "[x1, x2]", "[x2, x1]",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", 
+    "activation='relu'", "dropout=0.3"
+]
+tf_keras_activations_swish_Mutation_List = [
+    # swish does not have parameters
+    # Typical parameter combinations (as swish does not have parameters, these will be empty)
+    "", "[x1, x2]", "[x2, x1]",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", 
+    "activation='relu'", "dropout=0.3"
+]
+
+tf_keras_activations_tanh_Mutation_List = [
+    # tanh does not have parameters
+    # Typical parameter combinations (as tanh does not have parameters, these will be empty)
+    "", "[x1, x2]", "[x2, x1]",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", 
+    "activation='relu'", "dropout=0.3"
+]
+
+
+
+tf_keras_losses_BinaryCrossentropy_Mutation_List = [
+    # Typical parameter combinations
+    "from_logits=False, label_smoothing=0", "from_logits=True, label_smoothing=0.1", 
+    "from_logits=False, label_smoothing=0.2", "from_logits=True, label_smoothing=0.3", 
+    "from_logits=False, label_smoothing=0.4", "from_logits=True, label_smoothing=0.5", 
+    "from_logits=False, label_smoothing=0.6", "from_logits=True, label_smoothing=0.7", 
+    "from_logits=False, label_smoothing=0.8", "from_logits=True, label_smoothing=0.9",
+    # Scenarios with erroneous or inappropriate values
+    "from_logits='invalid', label_smoothing=-0.1", "from_logits=None, label_smoothing=1.1", 
+    "from_logits=True, label_smoothing='invalid'", "from_logits=False, label_smoothing=-0.2", 
+    "from_logits=True, label_smoothing=None"
+]
+
+tf_keras_losses_BinaryFocalCrossentropy_Mutation_List = [
+    # Typical parameter combinations
+    "from_logits=False, gamma=2.0, alpha=0.25", "from_logits=True, gamma=2.0, alpha=0.5", 
+    "from_logits=False, gamma=2.0, alpha=0.75", "from_logits=True, gamma=2.0, alpha=1.0", 
+    "from_logits=False, gamma=1.0, alpha=0.25", "from_logits=True, gamma=1.0, alpha=0.5", 
+    "from_logits=False, gamma=1.0, alpha=0.75", "from_logits=True, gamma=1.0, alpha=1.0", 
+    "from_logits=False, gamma=3.0, alpha=0.25", "from_logits=True, gamma=3.0, alpha=0.5",
+    # Scenarios with erroneous or inappropriate values
+    "from_logits='invalid', gamma=-2.0, alpha=-0.25", "from_logits=None, gamma=4.0, alpha=1.25", 
+    "from_logits=True, gamma='invalid', alpha='invalid'", "from_logits=False, gamma=-1.0, alpha=-0.5", 
+    "from_logits=True, gamma=None, alpha=None"
+]
+
+
+tf_keras_losses_CategoricalCrossentropy_Mutation_List = [
+    # Typical parameter combinations
+    "from_logits=False, label_smoothing=0", "from_logits=True, label_smoothing=0.1", 
+    "from_logits=False, label_smoothing=0.2", "from_logits=True, label_smoothing=0.3",
+    "from_logits=False, label_smoothing=0.4", "from_logits=True, label_smoothing=0.5", 
+    "from_logits=False, label_smoothing=0.6", "from_logits=True, label_smoothing=0.7",
+    "from_logits=False, label_smoothing=0.8", "from_logits=True, label_smoothing=0.9",
+    # Scenarios with erroneous or inappropriate values
+    "from_logits='invalid', label_smoothing=-0.1", "from_logits=None, label_smoothing=1.1", 
+    "from_logits=123, label_smoothing='invalid'", "from_logits=False, label_smoothing=-0.5", 
+    "from_logits=True, label_smoothing=1.5"
+]
+
+
+tf_keras_losses_CategoricalFocalCrossentropy_Mutation_List = [
+    # Typical parameter combinations (assuming generic gamma and alpha values as this is a custom loss)
+    "gamma=2.0, alpha=0.25", "gamma=2.0, alpha=0.5", 
+    "gamma=2.0, alpha=0.75", "gamma=1.5, alpha=0.25",
+    "gamma=1.5, alpha=0.5", "gamma=1.5, alpha=0.75", 
+    "gamma=3.0, alpha=0.25", "gamma=3.0, alpha=0.5",
+    "gamma=3.0, alpha=0.75", "gamma=2.5, alpha=0.25",
+    # Scenarios with erroneous or inappropriate values
+    "gamma='invalid', alpha=-0.1", "gamma=None, alpha=1.1", 
+    "gamma=-2.0, alpha='invalid'", "gamma=4.0, alpha=-0.5", 
+    "gamma=0, alpha=1.5"
+]
+
+tf_keras_losses_CategoricalHinge_Mutation_List = [
+    # CategoricalHinge does not have significant parameters
+    # Typical parameter combinations (as CategoricalHinge does not have parameters, these will be empty)
+    "", "[x1, x2]", "[x2, x1]",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", 
+    "activation='relu'", "dropout=0.3"
+]
+
+
+tf_keras_losses_CosineSimilarity_Mutation_List = [
+    # Typical parameter combinations
+    "axis=-1", "axis=0", "axis=1", 
+    "axis=2", "axis=-2", "axis=-3", 
+    "axis=3", "axis=4", "axis=-4",
+    "axis=5",
+    # Scenarios with erroneous or inappropriate values
+    "axis='invalid'", "axis=123", "axis=None", 
+    "axis=-123", "axis=1.5"
+]
+
+# Belirtilen TensorFlow kayıp fonksiyonları için Python listesi formatında parametre kombinasyonları oluşturma
+
+# Hinge için tipik ve hatalı parametre kombinasyonları
+tf_keras_losses_Hinge_Mutation_List = [
+    # Hinge does not have significant parameters, but we can create some scenarios
+    # Typical parameter combinations (as Hinge does not have parameters, these will be empty)
+    "", 
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
+]
+
+# Huber için tipik ve hatalı parametre kombinasyonları
+tf_keras_losses_Huber_Mutation_List = [
+    # Typical parameter combinations
+    "delta=1.0", "delta=0.5", "delta=1.5", 
+    "delta=2.0", "delta=0.2", "delta=0.8", 
+    "delta=1.2", "delta=1.8", "delta=0.3", 
+    "delta=0.7",
+    # Scenarios with erroneous or inappropriate values
+    "delta=-1.0", "delta='invalid'", "delta=None", 
+    "delta=-0.5", "delta=2.5"
+]
+
+# KLD, KLDivergence için tipik ve hatalı parametre kombinasyonları
+# KLD ve KLDivergence aynı fonksiyon olduğu için aynı listeyi kullanacağız
+tf_keras_losses_KLD_Mutation_List = [
+    # KLD does not have significant parameters, but we can create some scenarios
+    # Typical parameter combinations (as KLD does not have parameters, these will be empty)
+    "","y_true,y_pred","y_pred,y_true",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
+]
+
+# LogCosh için tipik ve hatalı parametre kombinasyonları
+tf_keras_losses_LogCosh_Mutation_List = [
+    # LogCosh does not have significant parameters, but we can create some scenarios
+    # Typical parameter combinations (as LogCosh does not have parameters, these will be empty)
+    "","y_true,y_pred","y_pred,y_true" 
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
+]
+
+# Loss için tipik ve hatalı parametre kombinasyonları
+tf_keras_losses_Loss_Mutation_List = [
+    # Loss is a base class for losses, and does not have specific parameters
+    # Typical parameter combinations (as Loss does not have parameters, these will be empty)
+    "","y_true,y_pred","y_pred,y_true",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
+]
+
+# MAE, MAPE, MSE, MSLE, MeanAbsoluteError, MeanAbsolutePercentageError, MeanSquaredError, MeanSquaredLogarithmicError için tipik ve hatalı parametre kombinasyonları
+# Bu kayıp fonksiyonları özgün parametreler içermediği için, bu listeler boş veya hatalı parametre senaryoları içerecek
+
+tf_keras_losses_MAE_Mutation_List = [
+    # MAE does not have significant parameters
+    # Typical parameter combinations (as MAE does not have parameters, these will be empty)
+    "","y_true,y_pred","y_pred,y_true",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
+]
+
+tf_keras_losses_MAPE_Mutation_List = [
+    # MAPE does not have significant parameters
+    # Typical parameter combinations (as MAPE does not have parameters, these will be empty)
+    "","y_true,y_pred","y_pred,y_true",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
+]
+
+# Belirtilen TensorFlow kayıp fonksiyonları için Python listesi formatında parametre kombinasyonları oluşturma
+
+# MSLE (Mean Squared Logarithmic Error) için tipik ve hatalı parametre kombinasyonları
+tf_keras_losses_MSLE_Mutation_List = [
+    # MSLE does not have significant parameters, but we can create some scenarios
+    # Typical parameter combinations (as MSLE does not have parameters, these will be empty)
+    "","y_true,y_pred","y_pred,y_true",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "reduction='none'", "reduction='sum'", "reduction='invalid'"
+]
+
+# MeanAbsoluteError için tipik ve hatalı parametre kombinasyonları
+tf_keras_losses_MeanAbsoluteError_Mutation_List = [
+    # MeanAbsoluteError does not have significant parameters
+    # Typical parameter combinations (as MeanAbsoluteError does not have parameters, these will be empty)
+    "","y_true,y_pred","y_pred,y_true",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "reduction='none'", "reduction='sum'", "reduction='invalid'"
+]
+
+# MeanAbsolutePercentageError için tipik ve hatalı parametre kombinasyonları
+tf_keras_losses_MeanAbsolutePercentageError_Mutation_List = [
+    # MeanAbsolutePercentageError does not have significant parameters
+    # Typical parameter combinations (as MeanAbsolutePercentageError does not have parameters, these will be empty)
+    "","y_true,y_pred","y_pred,y_true",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "reduction='none'", "reduction='sum'", "reduction='invalid'"
+]
+
+# MeanSquaredError için tipik ve hatalı parametre kombinasyonları
+tf_keras_losses_MeanSquaredError_Mutation_List = [
+    # MeanSquaredError does not have significant parameters
+    # Typical parameter combinations (as MeanSquaredError does not have parameters, these will be empty)
+    "","y_true,y_pred","y_pred,y_true",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "reduction='none'", "reduction='sum'", "reduction='invalid'"
+]
+
+# MeanSquaredLogarithmicError için tipik ve hatalı parametre kombinasyonları
+tf_keras_losses_MeanSquaredLogarithmicError_Mutation_List = [
+    # MeanSquaredLogarithmicError does not have significant parameters
+    # Typical parameter combinations (as MeanSquaredLogarithmicError does not have parameters, these will be empty)
+    "","y_true,y_pred","y_pred,y_true",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "reduction='none'", "reduction='sum'", "reduction='invalid'"
+]
+
+# Poisson için tipik ve hatalı parametre kombinasyonları
+tf_keras_losses_Poisson_Mutation_List = [
+    # Poisson does not have significant parameters
+    # Typical parameter combinations (as Poisson does not have parameters, these will be empty)
+    "","y_true,y_pred","y_pred,y_true",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "reduction='none'", "reduction='sum'", "reduction='invalid'"
+]
+
+# Reduction için tipik ve hatalı parametre kombinasyonları
+tf_keras_losses_Reduction_Mutation_List = [
+    # Reduction does not have significant parameters
+    # Typical parameter combinations (as Reduction does not have parameters, these will be empty)
+    "","y_true,y_pred","y_pred,y_true",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "type='none'", "type='sum'", "type='invalid'"
+]
+
+
+# SparseCategoricalCrossentropy için tipik ve hatalı parametre kombinasyonları
+tf_keras_losses_SparseCategoricalCrossentropy_Mutation_List = [
+    # Typical parameter combinations
+    "from_logits=False, reduction='auto', name='sparse_categorical_crossentropy'",
+    "from_logits=True, reduction='sum', name='sparse_categorical_crossentropy'",
+    "from_logits=False, reduction='none', name='sparse_categorical_crossentropy'",
+    "from_logits=True, reduction='sum_over_batch_size', name='sparse_categorical_crossentropy'",
+    # Scenarios with erroneous or inappropriate values
+    "from_logits='invalid', reduction='invalid', name='invalid'",
+    "from_logits=123, reduction=None, name=None",
+    "from_logits=None, reduction='auto', name='sparse_categorical_crossentropy'",
+    "from_logits=False, reduction=123, name='sparse_categorical_crossentropy'",
+    "from_logits=True, reduction='auto', name=123"
+]
+
+# SquaredHinge için tipik ve hatalı parametre kombinasyonları
+tf_keras_losses_SquaredHinge_Mutation_List = [
+    # Typical parameter combinations
+    "reduction='auto', name='squared_hinge'",
+    "reduction='sum', name='squared_hinge'",
+    "reduction='none', name='squared_hinge'",
+    "reduction='sum_over_batch_size', name='squared_hinge'",
+    # Scenarios with erroneous or inappropriate values
+    "reduction='invalid', name='invalid'",
+    "reduction=None, name=None",
+    "reduction=123, name='squared_hinge'",
+    "reduction='auto', name=123"
+]
+
+# binary_crossentropy için tipik ve hatalı parametre kombinasyonları
+tf_keras_losses_binary_crossentropy_Mutation_List = [
+    # binary_crossentropy does not have significant parameters, but we can create some scenarios
+    # Typical parameter combinations (as binary_crossentropy does not have parameters, these will be empty)
+    "","y_true,y_pred","y_pred,y_true",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
+]
+
+# binary_focal_crossentropy için tipik ve hatalı parametre kombinasyonları
+tf_keras_losses_binary_focal_crossentropy_Mutation_List = [
+    # Typical parameter combinations
+    "gamma=2.0, alpha=0.25", "gamma=3.0, alpha=0.5", 
+    "gamma=1.5, alpha=0.75", "gamma=2.5, alpha=0.25", 
+    "gamma=2.0, alpha=0.5", "gamma=3.0, alpha=0.75", 
+    "gamma=1.5, alpha=0.25", "gamma=2.5, alpha=0.5", 
+    "gamma=2.0, alpha=0.75", "gamma=3.0, alpha=0.25",
+    # Scenarios with erroneous or inappropriate values
+    "gamma='invalid', alpha='invalid'", "gamma=-2.0, alpha=-0.25", 
+    "gamma=None, alpha=None", "gamma=0, alpha=0", 
+    "gamma=2.0, alpha='invalid'"
+]
+
+# categorical_crossentropy için tipik ve hatalı parametre kombinasyonları
+tf_keras_losses_categorical_crossentropy_Mutation_List = [
+    # categorical_crossentropy does not have significant parameters, but we can create some scenarios
+    # Typical parameter combinations (as categorical_crossentropy does not have parameters, these will be empty)
+    "","y_true,y_pred","y_pred,y_true",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
+]
+
+# Belirtilen TensorFlow loss fonksiyonları için Python listesi formatında parametre kombinasyonları oluşturma
+
+# binary_focal_crossentropy için tipik ve hatalı parametre kombinasyonları
+tf_keras_losses_binary_focal_crossentropy_Mutation_List = [
+    # Typical parameter combinations
+    "from_logits=False, gamma=2.0", "from_logits=True, gamma=2.5",
+    "from_logits=False, gamma=1.5", "from_logits=True, gamma=3.0",
+    "from_logits=False, gamma=2.2", "from_logits=True, gamma=2.7",
+    "from_logits=False, gamma=1.8", "from_logits=True, gamma=3.2",
+    "from_logits=False, gamma=2.4", "from_logits=True, gamma=2.9",
+    # Scenarios with erroneous or inappropriate values
+    "from_logits='invalid', gamma='invalid'", "from_logits=None, gamma=-2.0",
+    "from_logits=False, gamma=-1.5", "from_logits=True, gamma='invalid'",
+    "from_logits='invalid', gamma=None"
+]
+
+# categorical_crossentropy için tipik ve hatalı parametre kombinasyonları
+tf_keras_losses_categorical_crossentropy_Mutation_List = [
+    # Typical parameter combinations
+    "from_logits=False", "from_logits=True",
+    "from_logits=False", "from_logits=True",
+    "from_logits=False", "from_logits=True",
+    "from_logits=False", "from_logits=True",
+    "from_logits=False", "from_logits=True",
+    # Scenarios with erroneous or inappropriate values
+    "from_logits='invalid'", "from_logits=None",
+    "from_logits=123", "from_logits=-1",
+    "from_logits=1.5"
+]
+
+# categorical_focal_crossentropy için tipik ve hatalı parametre kombinasyonları
+tf_keras_losses_categorical_focal_crossentropy_Mutation_List = [
+    # Typical parameter combinations
+    "from_logits=False, gamma=2.0", "from_logits=True, gamma=2.5",
+    "from_logits=False, gamma=1.5", "from_logits=True, gamma=3.0",
+    "from_logits=False, gamma=2.2", "from_logits=True, gamma=2.7",
+    "from_logits=False, gamma=1.8", "from_logits=True, gamma=3.2",
+    "from_logits=False, gamma=2.4", "from_logits=True, gamma=2.9",
+    # Scenarios with erroneous or inappropriate values
+    "from_logits='invalid', gamma='invalid'", "from_logits=None, gamma=-2.0",
+    "from_logits=False, gamma=-1.5", "from_logits=True, gamma='invalid'",
+    "from_logits='invalid', gamma=None"
+]
+
+# categorical_hinge için tipik ve hatalı parametre kombinasyonları
+tf_keras_losses_categorical_hinge_Mutation_List = [
+    # Typical parameter combinations (as categorical_hinge does not have significant parameters, these will be empty)
+    "","y_true,y_pred","y_pred,y_true",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
+]
+
+# cosine_similarity için tipik ve hatalı parametre kombinasyonları
+tf_keras_losses_cosine_similarity_Mutation_List = [
+    # Typical parameter combinations
+    "axis=-1", "axis=0", "axis=1", "axis=2", "axis=3",
+    "axis=-2", "axis=-3", "axis=4", "axis=-4", "axis=5",
+    # Scenarios with erroneous or inappropriate values
+    "axis='invalid'", "axis=123", "axis=None",
+    "axis=-123", "axis=1.5"
+]
+
+# deserialize için tipik ve hatalı parametre kombinasyonları
+tf_keras_losses_deserialize_Mutation_List = [
+    # deserialize does not have parameters
+    # Typical parameter combinations (as deserialize does not have parameters, these will be empty)
+    "","y_true,y_pred","y_pred,y_true",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
+]
+
+# Belirtilen TensorFlow kayıp fonksiyonları için Python listesi formatında parametre kombinasyonları oluşturma
+
+# tf.keras.losses.get için tipik ve hatalı parametre kombinasyonları
+tf_keras_losses_get_Mutation_List = [
+    # Typical parameter combinations
+    "name='categorical_crossentropy'", "name='sparse_categorical_crossentropy'",
+    "name='binary_crossentropy'", "name='mean_squared_error'",
+    "name='mean_absolute_error'", "name='mean_absolute_percentage_error'",
+    "name='mean_squared_logarithmic_error'", "name='cosine_similarity'",
+    "name='hinge'", "name='squared_hinge'",
+    # Scenarios with erroneous or inappropriate values
+    "name='invalid'", "name=123", "name=None",
+    "name=True", "name=''"
+]
+
+# tf.keras.losses.hinge ve benzeri kayıp fonksiyonları için tipik ve hatalı parametre kombinasyonları
+# Bu kayıp fonksiyonları özgün parametreler içermediği için, bu listeler boş veya hatalı parametre senaryoları içerecek
+
+tf_keras_losses_hinge_Mutation_List = [
+    # hinge does not have significant parameters
+    # Typical parameter combinations (as hinge does not have parameters, these will be empty)
+    "","y_true,y_pred","y_pred,y_true",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True",
+    "activation='relu'", "dropout=0.3"
+]
+
+tf_keras_losses_huber_Mutation_List = [
+    # Typical parameter combinations
+    "delta=1.0", "delta=0.5", "delta=1.5", 
+    "delta=2.0", "delta=0.2", "delta=0.8", 
+    "delta=1.2", "delta=1.8", "delta=0.3", 
+    "delta=0.7",
+    # Scenarios with erroneous or inappropriate values
+    "delta=-1.0", "delta='invalid'", "delta=None", 
+    "delta=-0.5", "delta=2.5"
+]
+
+# Benzer şekilde, kl_divergence, kld, kullback_leibler_divergence, log_cosh, logcosh, mae, mape için de tipik ve hatalı parametre kombinasyonları oluşturulacak
+
+tf_keras_losses_kl_divergence_Mutation_List = [
+    # kl_divergence does not have significant parameters
+    # Typical parameter combinations (as kl_divergence does not have parameters, these will be empty)
+    "","y_true,y_pred","y_pred,y_true",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True",
+    "activation='relu'", "dropout=0.3"
+]
+
+tf_keras_losses_kld_Mutation_List = [
+    # kld does not have significant parameters
+    # Typical parameter combinations (as kld does not have parameters, these will be empty)
+    "","y_true,y_pred","y_pred,y_true",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True",
+    "activation='relu'", "dropout=0.3"
+]
+
+tf_keras_losses_kullback_leibler_divergence_Mutation_List = [
+    # kullback_leibler_divergence does not have significant parameters
+    # Typical parameter combinations (as kullback_leibler_divergence does not have parameters, these will be empty)
+    "","y_true,y_pred","y_pred,y_true",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True",
+    "activation='relu'", "dropout=0.3"
+]
+
+tf_keras_losses_log_cosh_Mutation_List = [
+    # log_cosh does not have significant parameters
+    # Typical parameter combinations (as log_cosh does not have parameters, these will be empty)
+    "","y_true,y_pred","y_pred,y_true",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True",
+    "activation='relu'", "dropout=0.3"
+]
+
+tf_keras_losses_logcosh_Mutation_List = [
+    # logcosh does not have significant parameters
+    # Typical parameter combinations (as logcosh does not have parameters, these will be empty)
+    "","y_true,y_pred","y_pred,y_true",
+    # Scenarios with erroneous or inappropriate values
+  "invalid_param='invalid'", "1, 2, 3", "use_bias=True",
+    "activation='relu'", "dropout=0.3"
+]
+
+
+
