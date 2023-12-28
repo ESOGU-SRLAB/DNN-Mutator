@@ -835,40 +835,6 @@ tf_all_list=[
 'tf.raw_ops.TPUEmbeddingActivations()',
 'tf.raw_ops.UniformQuantizedConvolution()',
 'tf.raw_ops.UniformQuantizedConvolutionHybrid()',
-'tf.raw_ops.RecvTPUEmbeddingActivations()',
-'tf.raw_ops.SdcaOptimizer()',
-'tf.raw_ops.SdcaOptimizerV2()',
-'tf.raw_ops.L2Loss()',
-'tf.raw_ops.LSTMBlockCell()',
-'tf.raw_ops.LSTMBlockCellGrad()',
-'tf.raw_ops.QuantizedConv2D()',
-'tf.raw_ops.QuantizedConv2DAndRelu()',
-'tf.raw_ops.QuantizedConv2DAndReluAndRequantize()',
-'tf.raw_ops.QuantizedConv2DAndRequantize()',
-'tf.raw_ops.QuantizedConv2DPerChannel()',
-'tf.raw_ops.QuantizedConv2DWithBias()',
-'tf.raw_ops.QuantizedConv2DWithBiasAndRelu()',
-'tf.raw_ops.QuantizedConv2DWithBiasAndReluAndRequantize()',
-'tf.raw_ops.QuantizedConv2DWithBiasAndRequantize()',
-'tf.raw_ops.QuantizedConv2DWithBiasSignedSumAndReluAndRequantize()',
-'tf.raw_ops.QuantizedConv2DWithBiasSumAndRelu()',
-'tf.raw_ops.QuantizedConv2DWithBiasSumAndReluAndRequantize()',
-'tf.raw_ops.QuantizedDepthwiseConv2D()',
-'tf.raw_ops.QuantizedDepthwiseConv2DWithBias()',
-'tf.raw_ops.QuantizedDepthwiseConv2DWithBiasAndRelu()',
-'tf.raw_ops.QuantizedDepthwiseConv2DWithBiasAndReluAndRequantize()',
-'tf.raw_ops.RecvTPUEmbeddingActivations()',
-'tf.raw_ops.SdcaOptimizer()',
-'tf.raw_ops.SdcaOptimizerV2()',
-'tf.raw_ops.SparseDenseCwiseAdd()',
-'tf.raw_ops.SparseDenseCwiseDiv()',
-'tf.raw_ops.SparseDenseCwiseMul()',
-'tf.raw_ops.SparseTensorDenseAdd()',
-'tf.raw_ops.SparseTensorDenseMatMul()',
-'tf.raw_ops.SparseToDense()',
-'tf.raw_ops.TPUEmbeddingActivations()',
-'tf.raw_ops.UniformQuantizedConvolution()',
-'tf.raw_ops.UniformQuantizedConvolutionHybrid()',
 'tf.train.BytesList()',
 'tf.train.Checkpoint()',
 'tf.train.CheckpointManager()',
@@ -1186,40 +1152,6 @@ tf_all_mutation_code_list = [
 'raw_ops.FusedResizeAndPadConv2D',
 'raw_ops.GRUBlockCell',
 'raw_ops.GRUBlockCellGrad',
-'raw_ops.L2Loss',
-'raw_ops.LSTMBlockCell',
-'raw_ops.LSTMBlockCellGrad',
-'raw_ops.QuantizedConv2D',
-'raw_ops.QuantizedConv2DAndRelu',
-'raw_ops.QuantizedConv2DAndReluAndRequantize',
-'raw_ops.QuantizedConv2DAndRequantize',
-'raw_ops.QuantizedConv2DPerChannel',
-'raw_ops.QuantizedConv2DWithBias',
-'raw_ops.QuantizedConv2DWithBiasAndRelu',
-'raw_ops.QuantizedConv2DWithBiasAndReluAndRequantize',
-'raw_ops.QuantizedConv2DWithBiasAndRequantize',
-'raw_ops.QuantizedConv2DWithBiasSignedSumAndReluAndRequantize',
-'raw_ops.QuantizedConv2DWithBiasSumAndRelu',
-'raw_ops.QuantizedConv2DWithBiasSumAndReluAndRequantize',
-'raw_ops.QuantizedDepthwiseConv2D',
-'raw_ops.QuantizedDepthwiseConv2DWithBias',
-'raw_ops.QuantizedDepthwiseConv2DWithBiasAndRelu',
-'raw_ops.QuantizedDepthwiseConv2DWithBiasAndReluAndRequantize',
-'raw_ops.RecvTPUEmbeddingActivations',
-'raw_ops.SdcaOptimizer',
-'raw_ops.SdcaOptimizerV2',
-'raw_ops.SparseDenseCwiseAdd',
-'raw_ops.SparseDenseCwiseDiv',
-'raw_ops.SparseDenseCwiseMul',
-'raw_ops.SparseTensorDenseAdd',
-'raw_ops.SparseTensorDenseMatMul',
-'raw_ops.SparseToDense',
-'raw_ops.TPUEmbeddingActivations',
-'raw_ops.UniformQuantizedConvolution',
-'raw_ops.UniformQuantizedConvolutionHybrid',
-'raw_ops.RecvTPUEmbeddingActivations',
-'raw_ops.SdcaOptimizer',
-'raw_ops.SdcaOptimizerV2',
 'raw_ops.L2Loss',
 'raw_ops.LSTMBlockCell',
 'raw_ops.LSTMBlockCellGrad',
@@ -3526,7 +3458,897 @@ tf_nn_zero_fraction_Mutation_List = [
     # Typical parameter combinations
     "value=[0, 1, 0, 2, 0]",
     "value=[1, 2, 3, 4, 5]",
+    "value=[1, 3, 2, 4, 5]",
+    "value=[1, 3, 2, 0, 2]",
     # Scenarios with erroneous or inappropriate values
     "value='invalid'",
     "value=[]"
 ]
+tf_raw_ops_BlockLSTM_Mutation_List = [
+    # Typical parameter combinations
+    "seq_len_max=5, x=[[0.1, 0.2], [0.3, 0.4]], cs_prev=[[0, 0], [0, 0]], h_prev=[[0, 0], [0, 0]], w=[[0.5, 0.6], [0.7, 0.8]], b=[0.1, 0.2]",
+    "seq_len_max=10, x=[[0.2, 0.3], [0.4, 0.5]], cs_prev=[[1, 1], [1, 1]], h_prev=[[1, 1], [1, 1]], w=[[0.6, 0.7], [0.8, 0.9]], b=[0.3, 0.4]",
+    # Additional combinations
+    "seq_len_max=7, x=[[0.3, 0.4], [0.5, 0.6]], cs_prev=[[2, 2], [2, 2]], h_prev=[[2, 2], [2, 2]], w=[[0.7, 0.8], [0.9, 1.0]], b=[0.5, 0.6]",
+    "seq_len_max=8, x=[[0.4, 0.5], [0.6, 0.7]], cs_prev=[[3, 3], [3, 3]], h_prev=[[3, 3], [3, 3]], w=[[0.8, 0.9], [1.0, 1.1]], b=[0.7, 0.8]",
+    "seq_len_max=6, x=[[0.5, 0.6], [0.7, 0.8]], cs_prev=[[4, 4], [4, 4]], h_prev=[[4, 4], [4, 4]], w=[[0.9, 1.0], [1.1, 1.2]], b=[0.9, 1.0]"
+]
+tf_raw_ops_BlockLSTMGrad_Mutation_List = [
+    # Typical parameter combinations
+    "seq_len_max=5, x=[[0.1, 0.2], [0.3, 0.4]], cs_prev=[[0.1, 0.1], [0.2, 0.2]], h_prev=[[0.3, 0.3], [0.4, 0.4]], w=[[0.5, 0.5], [0.6, 0.6]], wci=[[0.7, 0.7], [0.8, 0.8]], wcf=[[0.9, 0.9], [1.0, 1.0]], wco=[[1.1, 1.1], [1.2, 1.2]], b=[[1.3, 1.3], [1.4, 1.4]], i=[[1.5, 1.5], [1.6, 1.6]], cs=[[1.7, 1.7], [1.8, 1.8]], f=[[1.9, 1.9], [2.0, 2.0]], o=[[2.1, 2.1], [2.2, 2.2]], ci=[[2.3, 2.3], [2.4, 2.4]], co=[[2.5, 2.5], [2.6, 2.6]], cs_grad=[[2.7, 2.7], [2.8, 2.8]], h_grad=[[2.9, 2.9], [3.0, 3.0]]",
+    # Scenarios with erroneous or inappropriate values
+    "seq_len_max=-1, x='invalid', cs_prev='invalid', h_prev='invalid', w='invalid', wci='invalid', wcf='invalid', wco='invalid', b='invalid', i='invalid', cs='invalid', f='invalid', o='invalid', ci='invalid', co='invalid', cs_grad='invalid', h_grad='invalid'"
+]
+
+tf_raw_ops_BlockLSTMGradV2_Mutation_List = [
+    # Typical parameter combinations (Note: This is a complex operation, examples are simplified)
+    "seq_len_max=10, x=[[0.1, 0.2]], cs_prev=[[0.3, 0.4]], h_prev=[[0.5, 0.6]], w=[[0.7, 0.8]], wci=[[0.9, 1.0]], wcf=[[1.1, 1.2]], wco=[[1.3, 1.4]], b=[[1.5, 1.6]]",
+    # Scenarios with erroneous or inappropriate values
+    "seq_len_max=-1, x='invalid', cs_prev='invalid', h_prev='invalid', w='invalid', wci='invalid', wcf='invalid', wco='invalid', b='invalid'"
+]
+
+tf_raw_ops_BlockLSTMV2_Mutation_List = [
+    # Typical parameter combinations (Note: This is a complex operation, examples are simplified)
+    "seq_len_max=10, x=[[0.1, 0.2]], cs_prev=[[0.3, 0.4]], h_prev=[[0.5, 0.6]], w=[[0.7, 0.8]], wci=[[0.9, 1.0]], wcf=[[1.1, 1.2]], wco=[[1.3, 1.4]], b=[[1.5, 1.6]]",
+    # Scenarios with erroneous or inappropriate values
+    "seq_len_max=-1, x='invalid', cs_prev='invalid', h_prev='invalid', w='invalid', wci='invalid', wcf='invalid', wco='invalid', b='invalid'"
+]
+
+tf_raw_ops_BoostedTreesTrainingPredict_Mutation_List = [
+    # Typical parameter combinations (Note: This is a complex operation, examples are simplified)
+    "tree_ensemble_handle='ensemble', bucketized_features=[[0.1, 0.2]], logits_dimension=2",
+
+    # Scenarios with erroneous or inappropriate values
+    "tree_ensemble_handle='invalid', bucketized_features='invalid', logits_dimension=-1"
+]
+
+tf_raw_ops_CSRSparseMatrixToDense_Mutation_List = [
+    # Typical parameter combinations
+    "sparse_input=[[0.1, 0.2], [0.3, 0.4]], type=tf.float32",
+    # Scenarios with erroneous or inappropriate values
+    "sparse_input='invalid', type='invalid'"
+]
+
+tf_raw_ops_CTCLoss_Mutation_List = [
+    # Typical parameter combinations
+    "inputs=[[0.1, 0.2]], labels=[[1, 2]], label_length=[2], logit_length=[2]",
+    "inputs=[[0.2, 0.1]], labels=[[2, 1]], label_length=[2], logit_length=[2]",
+    # Scenarios with erroneous or inappropriate values
+    "inputs='invalid', labels='invalid', label_length='invalid', logit_length='invalid'"
+]
+
+tf_raw_ops_CTCLossV2_Mutation_List = [
+    # Typical parameter combinations
+    "inputs=[[0.1, 0.2]], labels=[[1, 2]], label_length=[2], logit_length=[2]",
+    "inputs=[[0.2, 0.1]], labels=[[2, 1]], label_length=[2], logit_length=[2]",
+    # Scenarios with erroneous or inappropriate values
+    "inputs='invalid', labels='invalid', label_length='invalid', logit_length='invalid'"
+]
+
+tf_raw_ops_Conv_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], filter=[[1, 0], [0, 1]], strides=[1, 1], padding='VALID'",
+    "input=[[2, 1], [4, 3]], filter=[[1, 0], [0, 1]], strides=[1, 1], padding='VALID'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filter='invalid', strides='invalid', padding='invalid'"
+]
+
+tf_raw_ops_Conv2D_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], filter=[[1, 0], [0, 1]], strides=[1, 1], padding='VALID'",
+    "input=[[2, 1], [4, 3]], filter=[[1, 0], [0, 1]], strides=[1, 1], padding='VALID'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filter='invalid', strides='invalid', padding='invalid'"
+]
+tf_raw_ops_Conv2DBackpropFilter_Mutation_List = [
+    # Typical parameter combinations
+    "input_sizes=[10, 10, 3, 3], filter_sizes=[3, 3, 3, 3], out_backprop=[[1, 2], [3, 4]], strides=[1, 1], padding='VALID'",
+    "input_sizes=[10, 10, 3, 3], filter_sizes=[5, 5, 3, 3], out_backprop=[[2, 3], [4, 5]], strides=[2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input_sizes='invalid', filter_sizes='invalid', out_backprop='invalid', strides='invalid', padding='invalid'",
+    "input_sizes=[], filter_sizes=[], out_backprop=[], strides=[], padding='SAME'"
+]
+
+tf_raw_ops_Conv2DBackpropInput_Mutation_List = [
+    # Typical parameter combinations
+    "input_sizes=[10, 10, 3, 3], filter=[[1, 0], [0, 1]], out_backprop=[[1, 2], [3, 4]], strides=[1, 1], padding='VALID'",
+    "input_sizes=[10, 10, 3, 3], filter=[[0, 1], [1, 0]], out_backprop=[[2, 3], [4, 5]], strides=[2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input_sizes='invalid', filter='invalid', out_backprop='invalid', strides='invalid', padding='invalid'",
+    "input_sizes=[], filter=[], out_backprop=[], strides=[], padding='SAME'"
+]
+
+tf_raw_ops_Conv3D_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2, 3], [4, 5, 6]], filter=[[1, 0], [0, 1]], strides=[1, 1, 1], padding='VALID'",
+    "input=[[2, 3, 4], [5, 6, 7]], filter=[[1, 1], [1, 1]], strides=[2, 2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filter='invalid', strides=[-1, -1, -1], padding='invalid'",
+    "input=[], filter=[], strides=[0, 0, 0], padding='SAME'"
+]
+
+tf_raw_ops_Conv3DBackpropFilter_Mutation_List = [
+    # Typical parameter combinations
+    "input_sizes=[10, 10, 10, 3, 3], filter_sizes=[3, 3, 3, 3, 3], out_backprop=[[1, 2, 3], [4, 5, 6]], strides=[1, 1, 1], padding='VALID'",
+    "input_sizes=[10, 10, 10, 3, 3], filter_sizes=[5, 5, 5, 3, 3], out_backprop=[[2, 3, 4], [5, 6, 7]], strides=[2, 2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input_sizes='invalid', filter_sizes='invalid', out_backprop='invalid', strides='invalid', padding='invalid'",
+    "input_sizes=[], filter_sizes=[], out_backprop=[], strides=[], padding='SAME'"
+]
+
+tf_raw_ops_Conv3DBackpropInput_Mutation_List = [
+    # Typical parameter combinations
+    "input_sizes=[10, 10, 10, 3, 3], filter=[[1, 0], [0, 1]], out_backprop=[[1, 2, 3], [4, 5, 6]], strides=[1, 1, 1], padding='VALID'",
+    "input_sizes=[10, 10, 10, 3, 3], filter=[[0, 1], [1, 0]], out_backprop=[[2, 3, 4], [5, 6, 7]], strides=[2, 2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input_sizes='invalid', filter='invalid', out_backprop='invalid', strides='invalid', padding='invalid'",
+    "input_sizes=[], filter=[], out_backprop=[], strides=[], padding='SAME'"
+]
+tf_raw_ops_Conv3D_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2, 3], [4, 5, 6]], filter=[[1, 0, 1], [0, 1, 0]], strides=[1, 1, 1], padding='VALID'",
+    "input=[[2, 3, 4], [5, 6, 7]], filter=[[0, 1, 0], [1, 0, 1]], strides=[2, 2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filter='invalid', strides='invalid', padding='invalid'",
+    "input=[], filter=[], strides=[], padding='SAME'"
+]
+
+tf_raw_ops_Conv3DBackpropFilter_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2, 3], [4, 5, 6]], filter_sizes=[2, 2, 2], out_backprop=[[1, 0, 1], [0, 1, 0]], strides=[1, 1, 1], padding='VALID'",
+    "input=[[2, 3, 4], [5, 6, 7]], filter_sizes=[3, 3, 3], out_backprop=[[0, 1, 0], [1, 0, 1]], strides=[2, 2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filter_sizes='invalid', out_backprop='invalid', strides='invalid', padding='invalid'",
+    "input=[], filter_sizes=[], out_backprop=[], strides=[], padding='SAME'"
+]
+
+tf_raw_ops_Conv3DBackpropFilterV2_Mutation_List = [
+    # Typical parameter combinations
+    "input_sizes=[1, 1, 1], filter=[[1, 0, 1], [0, 1, 0]], out_backprop=[[1, 0, 1], [0, 1, 0]], strides=[1, 1, 1], padding='VALID'",
+    "input_sizes=[2, 2, 2], filter=[[0, 1, 0], [1, 0, 1]], out_backprop=[[0, 1, 0], [1, 0, 1]], strides=[2, 2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input_sizes='invalid', filter='invalid', out_backprop='invalid', strides='invalid', padding='invalid'",
+    "input_sizes=[], filter=[], out_backprop=[], strides=[], padding='SAME'"
+]
+
+tf_raw_ops_Conv3DBackpropInput_Mutation_List = [
+    # Typical parameter combinations
+    "input_sizes=[1, 1, 1], filter=[[1, 0, 1], [0, 1, 0]], out_backprop=[[1, 0, 1], [0, 1, 0]], strides=[1, 1, 1], padding='VALID'",
+    "input_sizes=[2, 2, 2], filter=[[0, 1, 0], [1, 0, 1]], out_backprop=[[0, 1, 0], [1, 0, 1]], strides=[2, 2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input_sizes='invalid', filter='invalid', out_backprop='invalid', strides='invalid', padding='invalid'",
+    "input_sizes=[], filter=[], out_backprop=[], strides=[], padding='SAME'"
+]
+
+tf_raw_ops_Conv3DBackpropInputV2_Mutation_List = [
+    # Typical parameter combinations
+    "input_sizes=[1, 1, 1], filter=[[1, 0, 1], [0, 1, 0]], out_backprop=[[1, 0, 1], [0, 1, 0]], strides=[1, 1, 1], padding='VALID'",
+    "input_sizes=[2, 2, 2], filter=[[0, 1, 0], [1, 0, 1]], out_backprop=[[0, 1, 0], [1, 0, 1]], strides=[2, 2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input_sizes='invalid', filter='invalid', out_backprop='invalid', strides='invalid', padding='invalid'",
+    "input_sizes=[], filter=[], out_backprop=[], strides=[], padding='SAME'"
+]
+
+tf_raw_ops_CudnnRNN_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], input_h=[[1, 1]], input_c=[[0, 0]], params=[0.1, 0.2], rnn_mode='lstm'",
+    "input=[[2, 3], [4, 5]], input_h=[[0, 0]], input_c=[[1, 1]], params=[0.3, 0.4], rnn_mode='gru'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', input_h='invalid', input_c='invalid', params='invalid', rnn_mode='invalid'",
+    "input=[], input_h=[], input_c=[], params=[], rnn_mode=None"
+]
+
+tf_raw_ops_CudnnRNNBackprop_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], input_h=[[1, 1]], input_c=[[0, 0]], params=[0.1, 0.2], output=[[1, 1]], output_h=[[0, 0]], output_c=[[1, 1]], rnn_mode='lstm'",
+    "input=[[2, 3], [4, 5]], input_h=[[0, 0]], input_c=[[1, 1]], params=[0.3, 0.4], output=[[0, 0]], output_h=[[1, 1]], output_c=[[0, 0]], rnn_mode='gru'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', input_h='invalid', input_c='invalid', params='invalid', output='invalid', output_h='invalid', output_c='invalid', rnn_mode='invalid'",
+    "input=[], input_h=[], input_c=[], params=[], output=[], output_h=[], output_c=[], rnn_mode=None"
+]
+tf_raw_ops_CudnnRNNBackpropV2_Mutation_List = [
+    # Typical parameter combinations (As this is a specialized RNN operation, examples will be generic)
+    "input=[[1, 2], [3, 4]], input_h=[[1, 0], [0, 1]], input_c=[[1, 1], [0, 0]], params=[[0.1, 0.2], [0.3, 0.4]], sequence_lengths=[2, 2], rnn_mode='lstm'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', input_h='invalid', input_c='invalid', params='invalid', sequence_lengths='invalid', rnn_mode='invalid'",
+]
+
+tf_raw_ops_CudnnRNNBackpropV3_Mutation_List = [
+    # Similar to the V2 mutation list, with V3 specific parameters
+    "input=[[1, 2], [3, 4]], input_h=[[1, 0], [0, 1]], input_c=[[1, 1], [0, 0]], params=[[0.1, 0.2], [0.3, 0.4]], sequence_lengths=[2, 2], rnn_mode='lstm'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', input_h='invalid', input_c='invalid', params='invalid', sequence_lengths='invalid', rnn_mode='invalid'",
+]
+
+tf_raw_ops_CudnnRNNCanonicalToParams_Mutation_List = [
+    # Typical parameter combinations
+    "num_layers=2, num_units=4, input_size=3, weights=[0.1, 0.2, 0.3], biases=[0.4, 0.5, 0.6], rnn_mode='lstm'",
+    # Scenarios with erroneous or inappropriate values
+    "num_layers=-1, num_units=-1, input_size=-1, weights='invalid', biases='invalid', rnn_mode='invalid'",
+]
+
+tf_raw_ops_CudnnRNNCanonicalToParamsV2_Mutation_List = [
+    # Similar to the non-V2 mutation list, with V2 specific parameters
+    "num_layers=2, num_units=4, input_size=3, weights=[0.1, 0.2, 0.3], biases=[0.4, 0.5, 0.6], rnn_mode='lstm'",
+    # Scenarios with erroneous or inappropriate values
+    "num_layers=-1, num_units=-1, input_size=-1, weights='invalid', biases='invalid', rnn_mode='invalid'",
+]
+
+tf_raw_ops_CudnnRNNParamsSize_Mutation_List = [
+    # Typical parameter combinations
+    "num_layers=2, num_units=4, input_size=3, rnn_mode='lstm', input_mode='linear_input', direction='unidirectional'",
+    # Scenarios with erroneous or inappropriate values
+    "num_layers=-1, num_units=-1, input_size=-1, rnn_mode='invalid', input_mode='invalid', direction='invalid'",
+]
+
+tf_raw_ops_CudnnRNNParamsToCanonical_Mutation_List = [
+    # Typical parameter combinations
+    "num_layers=2, num_units=4, input_size=3, params=[[0.1, 0.2], [0.3, 0.4]], rnn_mode='lstm'",
+    # Scenarios with erroneous or inappropriate values
+    "num_layers=-1, num_units=-1, input_size=-1, params='invalid', rnn_mode='invalid'",
+]
+
+tf_raw_ops_CudnnRNNParamsToCanonicalV2_Mutation_List = [
+    # Similar to the non-V2 mutation list, with V2 specific parameters
+    "num_layers=2, num_units=4, input_size=3, params=[[0.1, 0.2], [0.3, 0.4]], rnn_mode='lstm'",
+    # Scenarios with erroneous or inappropriate values
+    "num_layers=-1, num_units=-1, input_size=-1, params='invalid', rnn_mode='invalid'",
+]
+
+tf_raw_ops_CudnnRNN_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], input_h=[[1, 1]], input_c=[[1, 1]], params=[[0.1, 0.2]], rnn_mode='lstm'",
+    "input=[[2, 3], [4, 5]], input_h=[[2, 2]], input_c=[[2, 2]], params=[[0.2, 0.3]], rnn_mode='gru'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', input_h='invalid', input_c='invalid', params='invalid', rnn_mode='invalid'",
+    "input=[], input_h=[], input_c=[], params=[], rnn_mode=None"
+]
+
+tf_raw_ops_CudnnRNNBackprop_Mutation_List = [
+    # Typical parameter combinations (generic due to complexity)
+    "input_data_shape=[10, 5, 20], input_h_shape=[5, 10], input_c_shape=[5, 10], params_size=100",
+    "input_data_shape=[15, 8, 25], input_h_shape=[8, 15], input_c_shape=[8, 15], params_size=150",
+    # Scenarios with erroneous or inappropriate values
+    "input_data_shape='invalid', input_h_shape='invalid', input_c_shape='invalid', params_size=-1",
+    "input_data_shape=[], input_h_shape=[], input_c_shape=[], params_size=0"
+]
+
+tf_raw_ops_CudnnRNNBackpropV2_Mutation_List = [
+    # Similar to CudnnRNNBackprop, with additional versioning
+    "input_data_shape=[10, 5, 20], input_h_shape=[5, 10], input_c_shape=[5, 10], params_size=100",
+    "input_data_shape=[15, 8, 25], input_h_shape=[8, 15], input_c_shape=[8, 15], params_size=150",
+    # Scenarios with erroneous or inappropriate values
+    "input_data_shape='invalid', input_h_shape='invalid', input_c_shape='invalid', params_size=-1",
+    "input_data_shape=[], input_h_shape=[], input_c_shape=[], params_size=0"
+]
+
+tf_raw_ops_CudnnRNNBackpropV3_Mutation_List = [
+    # Similar to CudnnRNNBackprop, with additional versioning and options
+    "input_data_shape=[10, 5, 20], input_h_shape=[5, 10], input_c_shape=[5, 10], params_size=100",
+    "input_data_shape=[15, 8, 25], input_h_shape=[8, 15], input_c_shape=[8, 15], params_size=150",
+    # Scenarios with erroneous or inappropriate values
+    "input_data_shape='invalid', input_h_shape='invalid', input_c_shape='invalid', params_size=-1",
+    "input_data_shape=[], input_h_shape=[], input_c_shape=[], params_size=0"
+]
+
+tf_raw_ops_CudnnRNNCanonicalToParams_Mutation_List = [
+    # Typical parameter combinations (generic due to complexity)
+    "num_layers=2, num_units=10, input_size=20, num_params=5, rnn_mode='lstm'",
+    "num_layers=3, num_units=15, input_size=25, num_params=8, rnn_mode='gru'",
+    # Scenarios with erroneous or inappropriate values
+    "num_layers=-1, num_units='invalid', input_size='invalid', num_params=-1, rnn_mode='invalid'",
+    "num_layers=0, num_units=0, input_size=0, num_params=0, rnn_mode=None"
+]
+tf_raw_ops_CudnnRNNCanonicalToParamsV2_Mutation_List = [
+    # Typical parameter combinations
+    "num_layers=2, num_units=10, input_size=5, weights=[0.1, 0.2], biases=[0.1, 0.2]",
+    # Scenarios with erroneous or inappropriate values
+    "num_layers=-1, num_units=-10, input_size=-5, weights='invalid', biases='invalid'"
+]
+
+tf_raw_ops_CudnnRNNParamsSize_Mutation_List = [
+    # Typical parameter combinations
+    "num_layers=2, num_units=10, input_size=5, dtype=tf.float32, rnn_mode='lstm'",
+    # Scenarios with erroneous or inappropriate values
+    "num_layers=-1, num_units=-10, input_size=-5, dtype='invalid', rnn_mode='invalid'"
+]
+
+tf_raw_ops_CudnnRNNParamsToCanonical_Mutation_List = [
+    # Typical parameter combinations
+    "num_layers=2, num_units=10, input_size=5, params=[0.1, 0.2]",
+    # Scenarios with erroneous or inappropriate values
+    "num_layers=-1, num_units=-10, input_size=-5, params='invalid'"
+]
+
+tf_raw_ops_CudnnRNNParamsToCanonicalV2_Mutation_List = [
+    # Typical parameter combinations
+    "num_layers=2, num_units=10, input_size=5, params=[0.1, 0.2], rnn_mode='lstm'",
+    # Scenarios with erroneous or inappropriate values
+    "num_layers=-1, num_units=-10, input_size=-5, params='invalid', rnn_mode='invalid'"
+]
+
+tf_raw_ops_CudnnRNNV2_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], input_h=[[1, 2]], input_c=[[1, 2]], params=[0.1, 0.2], rnn_mode='lstm'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', input_h='invalid', input_c='invalid', params='invalid', rnn_mode='invalid'"
+]
+
+tf_raw_ops_CudnnRNNV3_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], input_h=[[1, 2]], input_c=[[1, 2]], params=[0.1, 0.2], rnn_mode='lstm', is_training=True",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', input_h='invalid', input_c='invalid', params='invalid', rnn_mode='invalid', is_training='invalid'"
+]
+tf_raw_ops_DenseBincount_Mutation_List = [
+    # Typical parameter combinations
+    "input=[1, 2, 3], size=5, weights=[0.1, 0.2, 0.3]",
+    "input=[2, 3, 4], size=6, weights=[0.2, 0.3, 0.4]",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', size=-1, weights='invalid'",
+    "input=[], size=0, weights=[]"
+]
+
+tf_raw_ops_DenseCountSparseOutput_Mutation_List = [
+    # Typical parameter combinations
+    "values=[1, 2, 3], weights=[0.1, 0.2, 0.3], binary_output=False",
+    # Scenarios with erroneous or inappropriate values
+    "values='invalid', weights='invalid', binary_output='invalid'"
+]
+
+tf_raw_ops_DenseToCSRSparseMatrix_Mutation_List = [
+    # Typical parameter combinations
+    "dense_input=[[1, 0], [0, 2]]",
+    # Scenarios with erroneous or inappropriate values
+    "dense_input='invalid'"
+]
+
+tf_raw_ops_DenseToDenseSetOperation_Mutation_List = [
+    # Typical parameter combinations
+    "set1=[[1, 2], [3, 4]], set2=[[2, 3], [4, 5]], set_operation='intersection'",
+    # Scenarios with erroneous or inappropriate values
+    "set1='invalid', set2='invalid', set_operation='invalid'"
+]
+tf_raw_ops_DenseToSparseBatchDataset_Mutation_List = [
+    # Typical parameter combinations
+    "input_dataset='dataset', batch_size=2, row_shape=[2]",
+    "input_dataset='dataset', batch_size=3, row_shape=[3]",
+    # Scenarios with erroneous or inappropriate values
+    "input_dataset='invalid', batch_size=-1, row_shape='invalid'",
+    "input_dataset=None, batch_size=0, row_shape=[]"
+]
+
+tf_raw_ops_DenseToSparseSetOperation_Mutation_List = [
+    # Typical parameter combinations
+    "set1=[[1, 2], [3, 4]], set2=[[5, 6], [7, 8]], set_operation='intersection'",
+    "set1=[[2, 3], [4, 5]], set2=[[6, 7], [8, 9]], set_operation='union'",
+    # Scenarios with erroneous or inappropriate values
+    "set1='invalid', set2='invalid', set_operation='invalid'",
+    "set1=[], set2=[], set_operation=None"
+]
+
+tf_raw_ops_DepthwiseConv2dNative_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], filter=[[1, 0], [0, 1]], strides=[1, 1], padding='VALID'",
+    "input=[[2, 3], [4, 5]], filter=[[1, 1], [1, 1]], strides=[2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filter='invalid', strides='invalid', padding='invalid'",
+    "input=[], filter=[], strides=[], padding='SAME'"
+]
+
+tf_raw_ops_DepthwiseConv2dNativeBackpropFilter_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], filter_sizes=[2, 2], out_backprop=[[1, 0], [0, 1]], strides=[1, 1], padding='VALID'",
+    "input=[[2, 3], [4, 5]], filter_sizes=[3, 3], out_backprop=[[1, 1], [1, 1]], strides=[2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filter_sizes='invalid', out_backprop='invalid', strides='invalid', padding='invalid'",
+    "input=[], filter_sizes=[], out_backprop=[], strides=[], padding='SAME'"
+]
+
+tf_raw_ops_DepthwiseConv2dNativeBackpropInput_Mutation_List = [
+    # Typical parameter combinations
+    "input_sizes=[2, 2], filter=[[1, 0], [0, 1]], out_backprop=[[1, 0], [0, 1]], strides=[1, 1], padding='VALID'",
+    "input_sizes=[3, 3], filter=[[1, 1], [1, 1]], out_backprop=[[1, 1], [1, 1]], strides=[2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input_sizes='invalid', filter='invalid', out_backprop='invalid', strides='invalid', padding='invalid'",
+    "input_sizes=[], filter=[], out_backprop=[], strides=[], padding='SAME'"
+]
+
+tf_raw_ops_FusedPadConv2D_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], paddings=[[0, 0], [1, 1]], filter=[[1, 0], [0, 1]], mode='REFLECT'",
+    "input=[[2, 3], [4, 5]], paddings=[[1, 1], [2, 2]], filter=[[0, 1], [1, 0]], mode='SYMMETRIC'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', paddings='invalid', filter='invalid', mode='invalid'",
+    "input=[], paddings=[], filter=[], mode=None"
+]
+
+tf_raw_ops_FusedResizeAndPadConv2D_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], size=[2, 2], paddings=[[0, 0], [1, 1]], filter=[[1, 0], [0, 1]], resize_align_corners=False, mode='REFLECT'",
+    "input=[[2, 3], [4, 5]], size=[3, 3], paddings=[[1, 1], [2, 2]], filter=[[0, 1], [1, 0]], resize_align_corners=True, mode='SYMMETRIC'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', size='invalid', paddings='invalid', filter='invalid', resize_align_corners='invalid', mode='invalid'",
+    "input=[], size=[], paddings=[], filter=[], resize_align_corners=None, mode=None"
+]
+
+tf_raw_ops_GRUBlockCell_Mutation_List = [
+    # Typical parameter combinations
+    "x=[[0.1, 0.2]], h_prev=[[0.3, 0.4]], w_ru=[[0.5, 0.6]], w_c=[[0.7, 0.8]], b_ru=[[0.9, 1.0]], b_c=[[1.1, 1.2]]",
+    "x=[[0.2, 0.3]], h_prev=[[0.4, 0.5]], w_ru=[[0.6, 0.7]], w_c=[[0.8, 0.9]], b_ru=[[1.0, 1.1]], b_c=[[1.2, 1.3]]",
+    # Scenarios with erroneous or inappropriate values
+    "x='invalid', h_prev='invalid', w_ru='invalid', w_c='invalid', b_ru='invalid', b_c='invalid'",
+    "x=[], h_prev=[], w_ru=[], w_c=[], b_ru=[], b_c=[]"
+]
+
+tf_raw_ops_GRUBlockCellGrad_Mutation_List = [
+    # Typical parameter combinations
+    "x=[[0.1, 0.2]], h_prev=[[0.3, 0.4]], w_ru=[[0.5, 0.6]], w_c=[[0.7, 0.8]], b_ru=[[0.9, 1.0]], b_c=[[1.1, 1.2]], d_h=[[1.3, 1.4]]",
+    "x=[[0.2, 0.3]], h_prev=[[0.4, 0.5]], w_ru=[[0.6, 0.7]], w_c=[[0.8, 0.9]], b_ru=[[1.0, 1.1]], b_c=[[1.2, 1.3]], d_h=[[1.4, 1.5]]",
+    # Scenarios with erroneous or inappropriate values
+    "x='invalid', h_prev='invalid', w_ru='invalid', w_c='invalid', b_ru='invalid', b_c='invalid', d_h='invalid'",
+    "x=[], h_prev=[], w_ru=[], w_c=[], b_ru=[], b_c=[], d_h=[]"
+]
+
+tf_raw_ops_L2Loss_Mutation_List = [
+    # Typical parameter combinations
+    "t=[[0.1, 0.2], [0.3, 0.4]]",
+    "t=[[0.5, 0.6], [0.7, 0.8]]",
+    # Scenarios with erroneous or inappropriate values
+    "t='invalid'",
+    "t=[]"
+]
+tf_raw_ops_LSTMBlockCell_Mutation_List = [
+    # Typical parameter combinations (as raw_ops are low-level operations, examples will be generic)
+    "x=[0.1, 0.2, 0.3], cs_prev=[0.4, 0.5, 0.6], h_prev=[0.7, 0.8, 0.9], w=[1, 1, 1], b=[0.1, 0.2, 0.3]",
+    # Scenarios with erroneous or inappropriate values
+    "x='invalid', cs_prev='invalid', h_prev='invalid', w='invalid', b='invalid'",
+    "x=[], cs_prev=[], h_prev=[], w=[], b=[]"
+]
+
+tf_raw_ops_LSTMBlockCellGrad_Mutation_List = [
+    # Typical parameter combinations
+    "x=[0.1, 0.2, 0.3], cs_prev=[0.4, 0.5, 0.6], h_prev=[0.7, 0.8, 0.9], w=[1, 1, 1], b=[0.1, 0.2, 0.3], grad=[0.1, 0.2, 0.3]",
+    # Scenarios with erroneous or inappropriate values
+    "x='invalid', cs_prev='invalid', h_prev='invalid', w='invalid', b='invalid', grad='invalid'",
+    "x=[], cs_prev=[], h_prev=[], w=[], b=[], grad=[]"
+]
+
+tf_raw_ops_QuantizedConv2D_Mutation_List = [
+    # Typical parameter combinations
+    "input=[1, 2, 3, 4], filter=[5, 6, 7, 8], min_input=0.0, max_input=1.0, min_filter=0.0, max_filter=1.0, strides=[1, 1, 1, 1], padding='VALID'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filter='invalid', min_input='invalid', max_input='invalid', min_filter='invalid', max_filter='invalid', strides='invalid', padding='invalid'",
+    "input=[], filter=[], min_input=0, max_input=0, min_filter=0, max_filter=0, strides=[], padding='SAME'"
+]
+tf_raw_ops_QuantizedConv2DAndRelu_Mutation_List = [
+    # Typical parameter combinations (generic, as actual parameters can be complex)
+    "input=[1, 2, 3], filter=[4, 5, 6], min_input=0.0, max_input=1.0, min_filter=0.0, max_filter=1.0, strides=[1, 1], padding='VALID'",
+    "input=[2, 3, 4], filter=[5, 6, 7], min_input=0.0, max_input=2.0, min_filter=0.0, max_filter=2.0, strides=[2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filter='invalid', min_input='invalid', max_input='invalid', min_filter='invalid', max_filter='invalid', strides='invalid', padding='invalid'",
+    "input=[], filter=[], min_input=0, max_input=0, min_filter=0, max_filter=0, strides=[], padding='SAME'"
+]
+tf_raw_ops_QuantizedConv2DAndReluAndRequantize_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], filter=[[1, 0], [0, 1]], min_input=0, max_input=4, min_filter=0, max_filter=4, out_type=tf.float32",
+    "input=[[2, 3], [4, 5]], filter=[[1, 1], [1, 1]], min_input=0, max_input=5, min_filter=0, max_filter=5, out_type=tf.float32",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filter='invalid', min_input='invalid', max_input='invalid', min_filter='invalid', max_filter='invalid', out_type='invalid'",
+    "input=[], filter=[], min_input=None, max_input=None, min_filter=None, max_filter=None, out_type=None"
+]
+
+tf_raw_ops_QuantizedConv2DAndRequantize_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], filter=[[1, 0], [0, 1]], min_input=0, max_input=4, min_filter=0, max_filter=4, out_type=tf.float32",
+    "input=[[2, 3], [4, 5]], filter=[[1, 1], [1, 1]], min_input=0, max_input=5, min_filter=0, max_filter=5, out_type=tf.float32",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filter='invalid', min_input='invalid', max_input='invalid', min_filter='invalid', max_filter='invalid', out_type='invalid'",
+    "input=[], filter=[], min_input=None, max_input=None, min_filter=None, max_filter=None, out_type=None"
+]
+
+tf_raw_ops_QuantizedConv2DPerChannel_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], filter=[[1, 0], [0, 1]], min_input=0, max_input=4, min_filter=0, max_filter=4",
+    "input=[[2, 3], [4, 5]], filter=[[1, 1], [1, 1]], min_input=0, max_input=5, min_filter=0, max_filter=5",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filter='invalid', min_input='invalid', max_input='invalid', min_filter='invalid', max_filter='invalid'",
+    "input=[], filter=[], min_input=None, max_input=None, min_filter=None, max_filter=None"
+]
+tf_raw_ops_QuantizedConv2DWithBias_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], filter=[[1, 0], [0, 1]], min_input=0.0, max_input=1.0, min_filter=0.0, max_filter=1.0, strides=[1, 1], padding='VALID'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filter='invalid', min_input=-1.0, max_input=-1.0, min_filter=-1.0, max_filter=-1.0, strides='invalid', padding='invalid'"
+]
+
+tf_raw_ops_QuantizedConv2DWithBiasAndRelu_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], filter=[[1, 0], [0, 1]], min_input=0.0, max_input=1.0, min_filter=0.0, max_filter=1.0, strides=[1, 1], padding='VALID'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filter='invalid', min_input=-1.0, max_input=-1.0, min_filter=-1.0, max_filter=-1.0, strides='invalid', padding='invalid'"
+]
+tf_raw_ops_QuantizedConv2DWithBiasAndReluAndRequantize_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], filter=[[1, 0], [0, 1]], min_input=0, max_input=4, min_filter=0, max_filter=4, min_freezed_output=0, max_freezed_output=4",
+    "input=[[2, 3], [4, 5]], filter=[[0, 1], [1, 0]], min_input=1, max_input=5, min_filter=1, max_filter=5, min_freezed_output=1, max_freezed_output=5",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filter='invalid', min_input='invalid', max_input='invalid', min_filter='invalid', max_filter='invalid', min_freezed_output='invalid', max_freezed_output='invalid'",
+    "input=[], filter=[], min_input=-1, max_input=-1, min_filter=-1, max_filter=-1, min_freezed_output=-1, max_freezed_output=-1"
+]
+
+tf_raw_ops_QuantizedConv2DWithBiasAndRequantize_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], filter=[[1, 0], [0, 1]], min_input=0, max_input=4, min_filter=0, max_filter=4",
+    "input=[[2, 3], [4, 5]], filter=[[0, 1], [1, 0]], min_input=1, max_input=5, min_filter=1, max_filter=5",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filter='invalid', min_input='invalid', max_input='invalid', min_filter='invalid', max_filter='invalid'",
+    "input=[], filter=[], min_input=-1, max_input=-1, min_filter=-1, max_filter=-1"
+]
+
+tf_raw_ops_QuantizedConv2DWithBiasSignedSumAndReluAndRequantize_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], summand=[[0.5, 0.5], [0.5, 0.5]], filter=[[1, 0], [0, 1]], min_input=0, max_input=4, min_filter=0, max_filter=4, min_freezed_output=0, max_freezed_output=4",
+    "input=[[2, 3], [4, 5]], summand=[[0.6, 0.4], [0.4, 0.6]], filter=[[0, 1], [1, 0]], min_input=1, max_input=5, min_filter=1, max_filter=5, min_freezed_output=1, max_freezed_output=5",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', summand='invalid', filter='invalid', min_input='invalid', max_input='invalid', min_filter='invalid', max_filter='invalid', min_freezed_output='invalid', max_freezed_output='invalid'",
+    "input=[], summand=[], filter=[], min_input=-1, max_input=-1, min_filter=-1, max_filter=-1, min_freezed_output=-1, max_freezed_output=-1"
+]
+
+tf_raw_ops_QuantizedConv2DWithBiasSumAndRelu_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], summand=[[0.5, 0.5], [0.5, 0.5]], filter=[[1, 0], [0, 1]], min_input=0, max_input=4, min_filter=0, max_filter=4",
+    "input=[[2, 3], [4, 5]], summand=[[0.6, 0.4], [0.4, 0.6]], filter=[[0, 1], [1, 0]], min_input=1, max_input=5, min_filter=1, max_filter=5",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', summand='invalid', filter='invalid', min_input='invalid', max_input='invalid', min_filter='invalid', max_filter='invalid'",
+    "input=[], summand=[], filter=[], min_input=-1, max_input=-1, min_filter=-1, max_filter=-1"
+]
+tf_raw_ops_QuantizedDepthwiseConv2DWithBias_Mutation_List = [
+    # Typical parameter combinations
+    "input=[0.1, 0.2], filter=[0.3, 0.4], min_input=0.0, max_input=1.0, min_filter=0.0, max_filter=1.0, bias=[0.1, 0.2]",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filter='invalid', min_input=-1.0, max_input=-1.0, min_filter=-1.0, max_filter=-1.0, bias='invalid'"
+]
+
+tf_raw_ops_QuantizedDepthwiseConv2DWithBiasAndRelu_Mutation_List = [
+    # Typical parameter combinations
+    "input=[0.1, 0.2], filter=[0.3, 0.4], min_input=0.0, max_input=1.0, min_filter=0.0, max_filter=1.0, bias=[0.1, 0.2]",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filter='invalid', min_input=-1.0, max_input=-1.0, min_filter=-1.0, max_filter=-1.0, bias='invalid'"
+]
+
+tf_raw_ops_QuantizedDepthwiseConv2DWithBiasAndReluAndRequantize_Mutation_List = [
+    # Typical parameter combinations
+    "input=[0.1, 0.2], filter=[0.3, 0.4], min_input=0.0, max_input=1.0, min_filter=0.0, max_filter=1.0, bias=[0.1, 0.2]",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filter='invalid', min_input=-1.0, max_input=-1.0, min_filter=-1.0, max_filter=-1.0, bias='invalid'"
+]
+
+tf_raw_ops_RecvTPUEmbeddingActivations_Mutation_List = [
+    # Typical parameter combinations (generic as this is a TPU-specific operation)
+    "config='sample_config', max_sequence_length=128",
+    # Scenarios with erroneous or inappropriate values
+    "config='invalid', max_sequence_length=-1"
+]
+tf_raw_ops_SdcaOptimizer_Mutation_List = [
+    # Typical parameter combinations
+    "sparse_example_indices=[1, 2], sparse_feature_indices=[3, 4], sparse_feature_values=[0.1, 0.2], dense_features=[[0.3, 0.4]], example_weights=[0.5, 0.6], example_labels=[0, 1], sparse_indices=[7, 8], sparse_weights=[0.7, 0.8], dense_weights=[[0.9, 1.0]], l1_regularization_strength=0.01, l2_regularization_strength=0.02",
+    # Scenarios with erroneous or inappropriate values
+    "sparse_example_indices='invalid', sparse_feature_indices='invalid', sparse_feature_values='invalid', dense_features='invalid', example_weights='invalid', example_labels='invalid', sparse_indices='invalid', sparse_weights='invalid', dense_weights='invalid', l1_regularization_strength='invalid', l2_regularization_strength='invalid'"
+]
+
+tf_raw_ops_SdcaOptimizerV2_Mutation_List = [
+    # Typical parameter combinations
+    "sparse_example_indices=[1, 2], sparse_feature_indices=[3, 4], sparse_feature_values=[0.1, 0.2], dense_features=[[0.3, 0.4]], example_weights=[0.5, 0.6], example_labels=[0, 1], sparse_indices=[7, 8], sparse_weights=[0.7, 0.8], dense_weights=[[0.9, 1.0]], l1_regularization_strength=0.01, l2_regularization_strength=0.02, adaptative=True",
+    # Scenarios with erroneous or inappropriate values
+    "sparse_example_indices='invalid', sparse_feature_indices='invalid', sparse_feature_values='invalid', dense_features='invalid', example_weights='invalid', example_labels='invalid', sparse_indices='invalid', sparse_weights='invalid', dense_weights='invalid', l1_regularization_strength='invalid', l2_regularization_strength='invalid', adaptative='invalid'"
+]
+
+tf_raw_ops_SparseDenseCwiseAdd_Mutation_List = [
+    # Typical parameter combinations
+    "sp_indices=[[0, 0], [1, 1]], sp_values=[1, 2], sp_shape=[2, 2], dense=[3, 4]",
+    # Scenarios with erroneous or inappropriate values
+    "sp_indices='invalid', sp_values='invalid', sp_shape='invalid', dense='invalid'"
+]
+
+tf_raw_ops_SparseDenseCwiseDiv_Mutation_List = [
+    # Typical parameter combinations
+    "sp_indices=[[0, 0], [1, 1]], sp_values=[1, 2], sp_shape=[2, 2], dense=[3, 4]",
+    # Scenarios with erroneous or inappropriate values
+    "sp_indices='invalid', sp_values='invalid', sp_shape='invalid', dense='invalid'"
+]
+
+tf_raw_ops_SparseDenseCwiseMul_Mutation_List = [
+    # Typical parameter combinations
+    "sp_indices=[[0, 0], [1, 1]], sp_values=[1, 2], sp_shape=[2, 2], dense=[3, 4]",
+    # Scenarios with erroneous or inappropriate values
+    "sp_indices='invalid', sp_values='invalid', sp_shape='invalid', dense='invalid'"
+]
+
+tf_raw_ops_SparseTensorDenseAdd_Mutation_List = [
+    # Typical parameter combinations
+    "sp_indices=[[0, 0], [1, 1]], sp_values=[1, 2], sp_shape=[2, 2], dense=[[3, 4], [5, 6]]",
+    # Scenarios with erroneous or inappropriate values
+    "sp_indices='invalid', sp_values='invalid', sp_shape='invalid', dense='invalid'"
+]
+
+tf_raw_ops_SparseTensorDenseMatMul_Mutation_List = [
+    # Typical parameter combinations
+    "sp_indices=[[0, 0], [1, 1]], sp_values=[1, 2], sp_shape=[2, 2], dense=[[3, 4], [5, 6]], adjoint_a=False, adjoint_b=False",
+    # Scenarios with erroneous or inappropriate values
+    "sp_indices='invalid', sp_values='invalid', sp_shape='invalid', dense='invalid', adjoint_a='invalid', adjoint_b='invalid'"
+]
+tf_raw_ops_SparseToDense_Mutation_List = [
+    # Typical parameter combinations
+    "sparse_indices=[[0, 0], [1, 1]], output_shape=[2, 2], sparse_values=[1, 2], default_value=0",
+    "sparse_indices=[[1, 0], [0, 1]], output_shape=[2, 2], sparse_values=[3, 4], default_value=1",
+    # Scenarios with erroneous or inappropriate values
+    "sparse_indices='invalid', output_shape='invalid', sparse_values='invalid', default_value='invalid'",
+    "sparse_indices=[], output_shape=[], sparse_values=[], default_value=None"
+]
+
+tf_raw_ops_TpuEmbeddingActivations_Mutation_List = [
+    # Typical parameter combinations (As this function is for TPU embedding, examples will be generic)
+    "activations=[0.1, 0.2, 0.3], table_id=0, lookup_id=1",
+    "activations=[0.4, 0.5, 0.6], table_id=1, lookup_id=2",
+    # Scenarios with erroneous or inappropriate values
+    "activations='invalid', table_id=-1, lookup_id=-1",
+    "activations=[], table_id=0, lookup_id=0"
+]
+
+tf_raw_ops_UniformQuantizedConvolution_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], filter=[[1, 0], [0, 1]], min_input=0, max_input=10, min_filter=0, max_filter=10, strides=[1, 1], padding='VALID'",
+    "input=[[2, 3], [4, 5]], filter=[[1, 1], [1, 1]], min_input=0, max_input=10, min_filter=0, max_filter=10, strides=[2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filter='invalid', min_input='invalid', max_input='invalid', min_filter='invalid', max_filter='invalid', strides='invalid', padding='invalid'",
+    "input=[], filter=[], min_input=0, max_input=0, min_filter=0, max_filter=0, strides=[], padding='SAME'"
+]
+
+tf_raw_ops_UniformQuantizedConvolutionHybrid_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], filter=[[1, 0], [0, 1]], min_input=0, max_input=10, min_filter=0, max_filter=10, strides=[1, 1], padding='VALID'",
+    "input=[[2, 3], [4, 5]], filter=[[1, 1], [1, 1]], min_input=0, max_input=10, min_filter=0, max_filter=10, strides=[2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filter='invalid', min_input='invalid', max_input='invalid', min_filter='invalid', max_filter='invalid', strides='invalid', padding='invalid'",
+    "input=[], filter=[], min_input=0, max_input=0, min_filter=0, max_filter=0, strides=[], padding='SAME'"
+]
+tf_train_BytesList_Mutation_List = [
+    # Typical parameter combinations
+    "value=[b'example1', b'example2']",
+    # Scenarios with erroneous or inappropriate values
+    "value='invalid'",
+    "value=[]"
+]
+
+tf_train_Checkpoint_Mutation_List = [
+    # Typical parameter combinations
+    # As Checkpoint is used to save and restore variables, examples will be generic
+    "a=tf.Variable(1.0), b=tf.Variable(2.0)",
+    # Scenarios with erroneous or inappropriate values
+    "a='invalid', b='invalid'",
+    "a=None, b=None"
+]
+
+tf_train_CheckpointManager_Mutation_List = [
+    # Typical parameter combinations
+    "checkpoint=tf.train.Checkpoint(), directory='/path/to/dir', max_to_keep=5",
+    # Scenarios with erroneous or inappropriate values
+    "checkpoint='invalid', directory='invalid', max_to_keep=-1",
+    "checkpoint=None, directory='', max_to_keep=0"
+]
+
+tf_train_CheckpointOptions_Mutation_List = [
+    # Typical parameter combinations
+    "experimental_io_device='/job:localhost'",
+    # Scenarios with erroneous or inappropriate values
+    "experimental_io_device='invalid'",
+    "experimental_io_device=None"
+]
+
+tf_train_CheckpointView_Mutation_List = [
+    # Typical parameter combinations
+    # As CheckpointView is used to inspect checkpoint contents, examples will be generic
+    "checkpoint_path='/path/to/checkpoint'",
+    # Scenarios with erroneous or inappropriate values
+    "checkpoint_path='invalid'",
+    "checkpoint_path=None"
+]
+
+tf_train_ClusterDef_Mutation_List = [
+    # Typical parameter combinations
+    # As ClusterDef is used for TensorFlow cluster specifications, examples will be generic
+    "job={name='worker', tasks={0='localhost:2222'}}",
+    # Scenarios with erroneous or inappropriate values
+    "job='invalid'",
+    "job=None"
+]
+
+tf_train_ClusterSpec_Mutation_List = [
+    # Typical parameter combinations
+    "cluster={'worker': ['localhost:2222', 'localhost:2223']}",
+    # Scenarios with erroneous or inappropriate values
+    "cluster='invalid'",
+    "cluster=None"
+]
+
+tf_train_Coordinator_Mutation_List = [
+    # Typical parameter combinations
+    # As Coordinator is used for coordinating threads, examples will be generic
+    "",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'"
+]
+
+tf_train_Example_Mutation_List = [
+    # Typical parameter combinations
+    "features=tf.train.Features(feature={'feature1': tf.train.Feature()})",
+    # Scenarios with erroneous or inappropriate values
+    "features='invalid'",
+    "features=None"
+]
+
+tf_train_ExponentialMovingAverage_Mutation_List = [
+    # Typical parameter combinations
+    "decay=0.99, num_updates=100",
+    # Scenarios with erroneous or inappropriate values
+    "decay='invalid', num_updates=-1",
+    "decay=None, num_updates=0"
+]
+tf_train_Feature_Mutation_List = [
+    # Typical parameter combinations
+    "kind={'bytes_list': BytesList(value=[b'Hello', b'World'])}",
+    "kind={'int64_list': Int64List(value=[1, 2, 3])}",
+    # Scenarios with erroneous or inappropriate values
+    "kind='invalid'",
+    "kind={}"
+]
+
+tf_train_FeatureList_Mutation_List = [
+    # Typical parameter combinations
+    "feature=[Feature(kind={'bytes_list': BytesList(value=[b'Hello']))], Feature(kind={'int64_list': Int64List(value=[1]))]",
+    "feature=[Feature(kind={'bytes_list': BytesList(value=[b'World']))], Feature(kind={'int64_list': Int64List(value=[2]))]",
+    # Scenarios with erroneous or inappropriate values
+    "feature='invalid'",
+    "feature=[]"
+]
+
+tf_train_FeatureLists_Mutation_List = [
+    # Typical parameter combinations
+    "feature_list={'list1': FeatureList(feature=[Feature(kind={'bytes_list': BytesList(value=[b'Hello']))])}",
+    "feature_list={'list2': FeatureList(feature=[Feature(kind={'int64_list': Int64List(value=[1]))])}",
+    # Scenarios with erroneous or inappropriate values
+    "feature_list='invalid'",
+    "feature_list={}"
+]
+
+tf_train_Features_Mutation_List = [
+    # Typical parameter combinations
+    "feature={'feature1': Feature(kind={'bytes_list': BytesList(value=[b'Hello']))}",
+    "feature={'feature2': Feature(kind={'int64_list': Int64List(value=[1]))}",
+    # Scenarios with erroneous or inappropriate values
+    "feature='invalid'",
+    "feature={}"
+]
+
+tf_train_FloatList_Mutation_List = [
+    # Typical parameter combinations
+    "value=[1.0, 2.0, 3.0]",
+    "value=[4.0, 5.0, 6.0]",
+    # Scenarios with erroneous or inappropriate values
+    "value='invalid'",
+    "value=[]"
+]
+
+tf_train_Int64List_Mutation_List = [
+    # Typical parameter combinations
+    "value=[1, 2, 3]",
+    "value=[4, 5, 6]",
+    # Scenarios with erroneous or inappropriate values
+    "value='invalid'",
+    "value=[]"
+]
+
+tf_train_JobDef_Mutation_List = [
+    # Typical parameter combinations (generic, as JobDef is typically used for distributed training)
+    "name='worker', tasks={0: 'localhost:2222'}",
+    "name='ps', tasks={0: 'localhost:2223'}",
+    # Scenarios with erroneous or inappropriate values
+    "name='invalid', tasks='invalid'",
+    "name='', tasks={}"
+]
+
+tf_train_SequenceExample_Mutation_List = [
+    # Typical parameter combinations
+    "context=Features(feature={'feature1': Feature(kind={'bytes_list': BytesList(value=[b'Hello']))}), feature_lists=FeatureLists(feature_list={'list1': FeatureList(feature=[Feature(kind={'int64_list': Int64List(value=[1]))])})",
+    "context=Features(feature={'feature2': Feature(kind={'bytes_list': BytesList(value=[b'World']))}), feature_lists=FeatureLists(feature_list={'list2': FeatureList(feature=[Feature(kind={'int64_list': Int64List(value=[2]))])})",
+    # Scenarios with erroneous or inappropriate values
+    "context='invalid', feature_lists='invalid'",
+    "context={}, feature_lists={}"
+]
+tf_train_ServerDef_Mutation_List = [
+    # Typical parameter combinations
+    "cluster={'worker': ['worker0:2222', 'worker1:2222'], 'ps': ['ps0:2222']}, job_name='worker', task_index=0, protocol='grpc'",
+    "cluster={'worker': ['worker0:2222', 'worker1:2222'], 'ps': ['ps0:2222', 'ps1:2222']}, job_name='ps', task_index=1, protocol='grpc+ssl'",
+    # Scenarios with erroneous or inappropriate values
+    "cluster='invalid', job_name='invalid', task_index=-1, protocol='invalid'",
+    "cluster={}, job_name=None, task_index=None, protocol=None"
+]
+
+tf_train_TrackableView_Mutation_List = [
+    # Typical parameter combinations (as a placeholder since this is a view object)
+    "object=SomeTensorFlowObject", 
+    "object=AnotherTensorFlowObject",
+    # Scenarios with erroneous or inappropriate values
+    "object='invalid'", 
+    "object=None"
+]
+
+tf_train_checkpoints_iterator_Mutation_List = [
+    # Typical parameter combinations
+    "checkpoint_dir='/path/to/checkpoints', min_interval_secs=30, timeout=None",
+    "checkpoint_dir='/another/path/to/checkpoints', min_interval_secs=60, timeout=120",
+    # Scenarios with erroneous or inappropriate values
+    "checkpoint_dir='invalid', min_interval_secs=-30, timeout='invalid'",
+    "checkpoint_dir=None, min_interval_secs=0, timeout=0"
+]
+
+tf_train_experimental_Mutation_List = [
+    # This is a module, so no typical parameter combinations. Providing placeholders
+    "", 
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
+]
+
+tf_train_experimental_PythonState_Mutation_List = [
+    # This is a class for Python state management, so no typical parameter combinations. Providing placeholders
+    "",
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
+]
+
+tf_train_get_checkpoint_state_Mutation_List = [
+    # Typical parameter combinations
+    "checkpoint_dir='/path/to/checkpoints'", 
+    "checkpoint_dir='/another/path/to/checkpoints'",
+    # Scenarios with erroneous or inappropriate values
+    "checkpoint_dir='invalid'", 
+    "checkpoint_dir=None"
+]
+
+tf_train_latest_checkpoint_Mutation_List = [
+    # Typical parameter combinations
+    "checkpoint_dir='/path/to/checkpoints'", 
+    "checkpoint_dir='/another/path/to/checkpoints'",
+    # Scenarios with erroneous or inappropriate values
+    "checkpoint_dir='invalid'", 
+    "checkpoint_dir=None"
+]
+
+tf_train_list_variables_Mutation_List = [
+    # Typical parameter combinations
+    "ckpt_dir_or_file='/path/to/checkpoint'", 
+    "ckpt_dir_or_file='/another/path/to/checkpoint'",
+    # Scenarios with erroneous or inappropriate values
+    "ckpt_dir_or_file='invalid'", 
+    "ckpt_dir_or_file=None"
+]
+
+tf_train_load_checkpoint_Mutation_List = [
+    # Typical parameter combinations
+    "ckpt_dir_or_file='/path/to/checkpoint'", 
+    "ckpt_dir_or_file='/another/path/to/checkpoint'",
+    # Scenarios with erroneous or inappropriate values
+    "ckpt_dir_or_file='invalid'", 
+    "ckpt_dir_or_file=None"
+]
+
+tf_train_load_variable_Mutation_List = [
+    # Typical parameter combinations
+    "ckpt_dir_or_file='/path/to/checkpoint', name='variable_name'", 
+    "ckpt_dir_or_file='/another/path/to/checkpoint', name='another_variable_name'",
+    # Scenarios with erroneous or inappropriate values
+    "ckpt_dir_or_file='invalid', name='invalid'", 
+    "ckpt_dir_or_file=None, name=None"
+]
+
