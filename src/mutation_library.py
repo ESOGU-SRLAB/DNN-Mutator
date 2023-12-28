@@ -2384,7 +2384,7 @@ tf_keras_losses_binary_focal_crossentropy_Mutation_List = [
     "from_logits='invalid', gamma=None"
 ]
 
-# categorical_crossentropy için tipik ve hatalı parametre kombinasyonları
+
 tf_keras_losses_categorical_crossentropy_Mutation_List = [
     # Typical parameter combinations
     "from_logits=False", "from_logits=True",
@@ -2398,7 +2398,7 @@ tf_keras_losses_categorical_crossentropy_Mutation_List = [
     "from_logits=1.5"
 ]
 
-# categorical_focal_crossentropy için tipik ve hatalı parametre kombinasyonları
+
 tf_keras_losses_categorical_focal_crossentropy_Mutation_List = [
     # Typical parameter combinations
     "from_logits=False, gamma=2.0", "from_logits=True, gamma=2.5",
@@ -2412,7 +2412,7 @@ tf_keras_losses_categorical_focal_crossentropy_Mutation_List = [
     "from_logits='invalid', gamma=None"
 ]
 
-# categorical_hinge için tipik ve hatalı parametre kombinasyonları
+
 tf_keras_losses_categorical_hinge_Mutation_List = [
     # Typical parameter combinations (as categorical_hinge does not have significant parameters, these will be empty)
     "","y_true,y_pred","y_pred,y_true",
@@ -2420,7 +2420,7 @@ tf_keras_losses_categorical_hinge_Mutation_List = [
     "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
 ]
 
-# cosine_similarity için tipik ve hatalı parametre kombinasyonları
+
 tf_keras_losses_cosine_similarity_Mutation_List = [
     # Typical parameter combinations
     "axis=-1", "axis=0", "axis=1", "axis=2", "axis=3",
@@ -2430,7 +2430,7 @@ tf_keras_losses_cosine_similarity_Mutation_List = [
     "axis=-123", "axis=1.5"
 ]
 
-# deserialize için tipik ve hatalı parametre kombinasyonları
+
 tf_keras_losses_deserialize_Mutation_List = [
     # deserialize does not have parameters
     # Typical parameter combinations (as deserialize does not have parameters, these will be empty)
@@ -2439,9 +2439,7 @@ tf_keras_losses_deserialize_Mutation_List = [
     "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
 ]
 
-# Belirtilen TensorFlow kayıp fonksiyonları için Python listesi formatında parametre kombinasyonları oluşturma
 
-# tf.keras.losses.get için tipik ve hatalı parametre kombinasyonları
 tf_keras_losses_get_Mutation_List = [
     # Typical parameter combinations
     "name='categorical_crossentropy'", "name='sparse_categorical_crossentropy'",
@@ -2454,8 +2452,7 @@ tf_keras_losses_get_Mutation_List = [
     "name=True", "name=''"
 ]
 
-# tf.keras.losses.hinge ve benzeri kayıp fonksiyonları için tipik ve hatalı parametre kombinasyonları
-# Bu kayıp fonksiyonları özgün parametreler içermediği için, bu listeler boş veya hatalı parametre senaryoları içerecek
+
 
 tf_keras_losses_hinge_Mutation_List = [
     # hinge does not have significant parameters
@@ -2477,7 +2474,6 @@ tf_keras_losses_huber_Mutation_List = [
     "delta=-0.5", "delta=2.5"
 ]
 
-# Benzer şekilde, kl_divergence, kld, kullback_leibler_divergence, log_cosh, logcosh, mae, mape için de tipik ve hatalı parametre kombinasyonları oluşturulacak
 
 tf_keras_losses_kl_divergence_Mutation_List = [
     # kl_divergence does not have significant parameters
@@ -2524,5 +2520,1013 @@ tf_keras_losses_logcosh_Mutation_List = [
     "activation='relu'", "dropout=0.3"
 ]
 
+tf_keras_losses_mae_Mutation_List = [    
+    "","y_true,y_pred","y_pred,y_true",
+    # Scenarios with erroneous or inappropriate values
+  "invalid_param='invalid'", "1, 2, 3", "use_bias=True",
+    "activation='relu'", "dropout=0.3"] 
+tf_keras_losses_mape_Mutation_List = [   
+     "","y_true,y_pred","y_pred,y_true",
+    # Scenarios with erroneous or inappropriate values
+  "invalid_param='invalid'", "1, 2, 3", "use_bias=True",
+    "activation='relu'", "dropout=0.3"]  
+tf_keras_losses_mean_absolute_percentage_error_Mutation_List = [    
+    "","y_true,y_pred","y_pred,y_true",
+    # Scenarios with erroneous or inappropriate values
+  "invalid_param='invalid'", "1, 2, 3", "use_bias=True",
+    "activation='relu'", "dropout=0.3"]  
+tf_keras_losses_mean_squared_error_Mutation_List = [    
+    "","y_true,y_pred","y_pred,y_true",
+    # Scenarios with erroneous or inappropriate values
+  "invalid_param='invalid'", "1, 2, 3", "use_bias=True",
+    "activation='relu'", "dropout=0.3"]  
+tf_keras_losses_mean_squared_logarithmic_error_Mutation_List = [    
+    "","y_true,y_pred","y_pred,y_true",
+    # Scenarios with erroneous or inappropriate values
+  "invalid_param='invalid'", "1, 2, 3", "use_bias=True",
+    "activation='relu'", "dropout=0.3"]  
+tf_keras_losses_mse_Mutation_List = [    
+    "","y_true,y_pred","y_pred,y_true",
+    # Scenarios with erroneous or inappropriate values
+  "invalid_param='invalid'", "1, 2, 3", "use_bias=True",
+    "activation='relu'", "dropout=0.3"]  
+tf_keras_losses_msle_Mutation_List = [    
+    "","y_true,y_pred","y_pred,y_true",
+    # Scenarios with erroneous or inappropriate values
+  "invalid_param='invalid'", "1, 2, 3", "use_bias=True",
+    "activation='relu'", "dropout=0.3"]  
+tf_keras_losses_poisson_Mutation_List = [    
+    "","y_true,y_pred","y_pred,y_true",
+    # Scenarios with erroneous or inappropriate values
+  "invalid_param='invalid'", "1, 2, 3", "use_bias=True",
+    "activation='relu'", "dropout=0.3"]  
+tf_keras_losses_serialize_Mutation_List = [    
+    "","y_true,y_pred","y_pred,y_true",
+    # Scenarios with erroneous or inappropriate values
+  "invalid_param='invalid'", "1, 2, 3", "use_bias=True",
+    "activation='relu'", "dropout=0.3"]  
+tf_keras_losses_sparse_categorical_crossentropy_Mutation_List = [    
+    "","y_true,y_pred","y_pred,y_true",
+    # Scenarios with erroneous or inappropriate values
+  "invalid_param='invalid'", "1, 2, 3", "use_bias=True",
+    "activation='relu'", "dropout=0.3"]  
+tf_keras_losses_squared_hinge_Mutation_List = [    
+    "","y_true,y_pred","y_pred,y_true",
+    # Scenarios with erroneous or inappropriate values
+  "invalid_param='invalid'", "1, 2, 3", "use_bias=True",
+    "activation='relu'", "dropout=0.3"] 
+
+tf_keras_optimizers_Adadelta_Mutation_List = [
+    "learning_rate=1.0, rho=0.95", "learning_rate=0.5, rho=0.9",
+    "learning_rate=0.1, rho=0.85", "learning_rate=0.01, rho=0.8",
+    # Scenarios with erroneous or inappropriate values
+    "learning_rate='invalid', rho=-1" 
+]
+tf_keras_optimizers_Adafactor_Mutation_List = [
+    "learning_rate=1.0", "learning_rate=0.5", "learning_rate=0.1",
+    "learning_rate=0.01", 
+    # Scenarios with erroneous or inappropriate values
+    "learning_rate='invalid'"  
+]
+tf_keras_optimizers_Adagrad_Mutation_List = [
+    "learning_rate=0.1, initial_accumulator_value=0.1",
+    "learning_rate=0.01, initial_accumulator_value=0.01",
+    "learning_rate=0.001, initial_accumulator_value=0.001",
+    # Scenarios with erroneous or inappropriate values
+    "learning_rate='invalid', initial_accumulator_value=-1"  
+]
+tf_keras_optimizers_Adam_Mutation_List = [
+    "learning_rate=0.001, beta_1=0.9, beta_2=0.999",
+    "learning_rate=0.01, beta_1=0.9, beta_2=0.999",
+    "learning_rate=0.1, beta_1=0.9, beta_2=0.999",
+    # Scenarios with erroneous or inappropriate values
+    "learning_rate='invalid', beta_1=-1, beta_2=-1"  
+]
+tf_keras_optimizers_Adamax_Mutation_List = [
+    "learning_rate=0.002, beta_1=0.9, beta_2=0.999",
+    "learning_rate=0.01, beta_1=0.9, beta_2=0.999",
+    "learning_rate=0.1, beta_1=0.9, beta_2=0.999",
+    # Scenarios with erroneous or inappropriate values
+    "learning_rate='invalid', beta_1=-1, beta_2=-1"  
+]
+
+tf_keras_optimizers_Ftrl_Mutation_List = [
+    # Typical parameter combinations
+    "learning_rate=0.01, learning_rate_power=-0.5",
+    "learning_rate=0.1, learning_rate_power=-0.5",
+    "learning_rate=1.0, learning_rate_power=-0.5",
+    # Scenarios with erroneous or inappropriate values
+    "learning_rate='invalid', learning_rate_power='invalid'",
+    "learning_rate=-0.01, learning_rate_power=0.5"
+]
+
+# Nadam optimizer's typical and erroneous parameter combinations
+tf_keras_optimizers_Nadam_Mutation_List = [
+    # Typical parameter combinations
+    "learning_rate=0.002, beta_1=0.9, beta_2=0.999",
+    "learning_rate=0.01, beta_1=0.9, beta_2=0.999",
+    "learning_rate=0.1, beta_1=0.9, beta_2=0.999",
+    # Scenarios with erroneous or inappropriate values
+    "learning_rate='invalid', beta_1=-1, beta_2=-1",
+    "learning_rate=0, beta_1=1.1, beta_2=1.1"
+]
+
+# RMSprop optimizer's typical and erroneous parameter combinations
+tf_keras_optimizers_RMSprop_Mutation_List = [
+    # Typical parameter combinations
+    "learning_rate=0.001, rho=0.9, momentum=0.0",
+    "learning_rate=0.01, rho=0.9, momentum=0.0",
+    "learning_rate=0.1, rho=0.9, momentum=0.0",
+    # Scenarios with erroneous or inappropriate values
+    "learning_rate='invalid', rho=-1, momentum=-1",
+    "learning_rate=0, rho=1.1, momentum=1.1"
+]
+
+# SGD optimizer's typical and erroneous parameter combinations
+tf_keras_optimizers_SGD_Mutation_List = [
+    # Typical parameter combinations
+    "learning_rate=0.01, momentum=0.0, nesterov=False",
+    "learning_rate=0.1, momentum=0.5, nesterov=True",
+    "learning_rate=1.0, momentum=0.9, nesterov=True",
+    # Scenarios with erroneous or inappropriate values
+    "learning_rate='invalid', momentum=-1, nesterov='invalid'",
+    "learning_rate=0, momentum=1.1, nesterov=False"
+]
+
+# Optimizer deserialize function's typical and erroneous parameter combinations
+tf_optimizers_deserialize_Mutation_List = [
+    # deserialize does not have parameters
+    #No Typical parameter combinations (as deserialize does not have parameters, these will be empty)
+    "", 
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
+]
+
+tf_keras_optimizers_legacy_Adadelta_Mutation_List = [
+    # Typical parameter combinations
+    "learning_rate=1.0, rho=0.95", "learning_rate=0.5, rho=0.9", "learning_rate=0.1, rho=0.85",
+    # Scenarios with erroneous or inappropriate values
+    "learning_rate='invalid', rho=-1", "learning_rate=-0.01, rho=1.1"
+]
+
+tf_keras_optimizers_legacy_Adagrad_Mutation_List = [
+    # Typical parameter combinations
+    "learning_rate=0.1, initial_accumulator_value=0.1", 
+    "learning_rate=0.01, initial_accumulator_value=0.01", 
+    "learning_rate=0.001, initial_accumulator_value=0.001",
+    # Scenarios with erroneous or inappropriate values
+    "learning_rate='invalid', initial_accumulator_value=-1", 
+    "learning_rate=0, initial_accumulator_value=1.1"
+]
+
+tf_keras_optimizers_legacy_Adam_Mutation_List = [
+    # Typical parameter combinations
+    "learning_rate=0.001, beta_1=0.9, beta_2=0.999", 
+    "learning_rate=0.01, beta_1=0.9, beta_2=0.999", 
+    "learning_rate=0.1, beta_1=0.9, beta_2=0.999",
+    # Scenarios with erroneous or inappropriate values
+    "learning_rate='invalid', beta_1=-1, beta_2=-1", 
+    "learning_rate=0, beta_1=1.1, beta_2=1.1"
+]
+
+tf_keras_optimizers_legacy_Adamax_Mutation_List = [
+    # Typical parameter combinations
+    "learning_rate=0.002, beta_1=0.9, beta_2=0.999", 
+    "learning_rate=0.01, beta_1=0.9, beta_2=0.999", 
+    "learning_rate=0.1, beta_1=0.9, beta_2=0.999",
+    # Scenarios with erroneous or inappropriate values
+    "learning_rate='invalid', beta_1=-1, beta_2=-1", 
+    "learning_rate=0, beta_1=1.1, beta_2=1.1"
+]
+
+tf_keras_optimizers_legacy_Ftrl_Mutation_List = [
+    # Typical parameter combinations
+    "learning_rate=0.01, learning_rate_power=-0.5",
+      "learning_rate=0.1, learning_rate_power=-0.5", 
+      "learning_rate=1.0, learning_rate_power=-0.5",
+    # Scenarios with erroneous or inappropriate values
+    "learning_rate='invalid', learning_rate_power='invalid'", 
+    "learning_rate=-0.01, learning_rate_power=0.5"
+]
+
+tf_keras_optimizers_legacy_Nadam_Mutation_List = [
+    # Typical parameter combinations
+    "learning_rate=0.002, beta_1=0.9, beta_2=0.999", 
+    "learning_rate=0.01, beta_1=0.9, beta_2=0.999", 
+    "learning_rate=0.1, beta_1=0.9, beta_2=0.999",
+    # Scenarios with erroneous or inappropriate values
+    "learning_rate='invalid', beta_1=-1, beta_2=-1", 
+    "learning_rate=0, beta_1=1.1, beta_2=1.1"
+]
+
+tf_keras_optimizers_legacy_RMSprop_Mutation_List = [
+    # Typical parameter combinations
+    "learning_rate=0.001, rho=0.9, momentum=0.0", 
+    "learning_rate=0.01, rho=0.9, momentum=0.0", 
+    "learning_rate=0.1, rho=0.9, momentum=0.0",
+    # Scenarios with erroneous or inappropriate values
+    "learning_rate='invalid', rho=-1, momentum=-1", 
+    "learning_rate=0, rho=1.1, momentum=1.1"
+]
+tf_keras_optimizers_legacy_SGD_Mutation_List = [
+    # Typical parameter combinations
+    "learning_rate=0.01, momentum=0.0, nesterov=False", 
+    "learning_rate=0.1, momentum=0.5, nesterov=True", 
+    "learning_rate=1.0, momentum=0.9, nesterov=True",
+    # Scenarios with erroneous or inappropriate values
+    "learning_rate='invalid', momentum=-1, nesterov='invalid'", 
+    "learning_rate=0, momentum=1.1, nesterov=False"
+]
+
+# tf.keras.optimizers.schedules functions
+tf_keras_optimizers_schedules_Deserialize_Mutation_List = [
+    # deserialize function typically does not have parameters
+    # Typical parameter combinations (empty as deserialize does not have parameters)
+    "", 
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
+]
+
+tf_keras_optimizers_schedules_Serialize_Mutation_List = [
+    # serialize function typically does not have parameters
+    # Typical parameter combinations (empty as serialize does not have parameters)
+    "", 
+    # Scenarios with erroneous or inappropriate values
+    "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
+]
+
+# tf.nn functions
+tf_nn_RNNCellDeviceWrapper_Mutation_List = [
+    # Typical parameter combinations
+    "cell=LSTMCell(10)", "cell=GRUCell(20)",
+    # Scenarios with erroneous or inappropriate values
+    "cell='invalid'", "cell=None"
+]
+
+tf_nn_RNNCellDropoutWrapper_Mutation_List = [
+    # Typical parameter combinations
+    "cell=LSTMCell(10), dropout=0.2", "cell=GRUCell(20), dropout=0.3",
+    # Scenarios with erroneous or inappropriate values
+    "cell='invalid', dropout=-0.1", "cell=None, dropout=1.1"
+]
+
+tf_nn_RNNCellResidualWrapper_Mutation_List = [
+    # Typical parameter combinations
+    "cell=LSTMCell(10)", "cell=GRUCell(20)",
+    # Scenarios with erroneous or inappropriate values
+    "cell='invalid'", "cell=None"
+]
+tf_nn_all_candidate_sampler_Mutation_List = [
+    # Typical parameter combinations (as a placeholder since this function might not have significant customizable parameters)
+    "num_true=1, num_sampled=10, unique=True", 
+    "num_true=2, num_sampled=20, unique=False",
+    # Scenarios with erroneous or inappropriate values
+    "num_true=-1, num_sampled=-10, unique='invalid'", 
+    "num_true='invalid', num_sampled='invalid', unique=None"
+]
+
+tf_nn_approx_max_k_Mutation_List = [
+    # Typical parameter combinations
+    "values=[0.1, 0.2, 0.3], k=2", 
+    "values=[0.5, 0.6, 0.7], k=3",
+    # Scenarios with erroneous or inappropriate values
+    "values='invalid', k=-1", 
+    "values=[], k=0"
+]
+
+tf_nn_approx_min_k_Mutation_List = [
+    # Typical parameter combinations
+    "values=[0.1, 0.2, 0.3], k=2", 
+    "values=[0.5, 0.6, 0.7], k=3",
+    # Scenarios with erroneous or inappropriate values
+    "values='invalid', k=-1", 
+    "values=[], k=0"
+]
+
+tf_nn_atrous_conv2d_Mutation_List = [
+    # Typical parameter combinations
+    "value=[[1, 2], [3, 4]], filters=[[1, 0], [0, 1]], rate=2, padding='SAME'", 
+    "value=[[1, 2, 3], [4, 5, 6]], filters=[[1, 0], [0, 1]], rate=3, padding='VALID'",
+    # Scenarios with erroneous or inappropriate values
+    "value='invalid', filters='invalid', rate=-1, padding='invalid'", 
+    "value=[[1]], filters=[[1]], rate=0, padding='SAME'"
+]
+
+tf_nn_atrous_conv2d_transpose_Mutation_List = [
+    # Typical parameter combinations
+    "value=[[1, 2], [3, 4]], filters=[[1, 0], [0, 1]], rate=2, padding='SAME'", 
+    "value=[[1, 2, 3], [4, 5, 6]], filters=[[1, 0], [0, 1]], rate=3, padding='VALID'",
+    # Scenarios with erroneous or inappropriate values
+    "value='invalid', filters='invalid', rate=-1, padding='invalid'", 
+    "value=[[1]], filters=[[1]], rate=0, padding='SAME'"
+]
+tf_nn_avg_pool_Mutation_List = [
+    # Typical parameter combinations
+    "ksize=2, strides=2, padding='SAME'", 
+    "ksize=3, strides=2, padding='VALID'",
+    # Scenarios with erroneous or inappropriate values
+    "ksize=-1, strides=-1, padding='invalid'", 
+    "ksize=0, strides=0, padding='SAME'"
+]
 
 
+tf_nn_avg_pool1d_Mutation_List = [
+    # Typical parameter combinations
+    "ksize=2, strides=2, padding='SAME'", 
+    "ksize=3, strides=2, padding='VALID'",
+    # Scenarios with erroneous or inappropriate values
+    "ksize=-1, strides=-1, padding='invalid'", 
+    "ksize=0, strides=0, padding='SAME'"
+]
+
+tf_nn_avg_pool2d_Mutation_List = [
+    # Typical parameter combinations
+    "ksize=[2, 2], strides=[2, 2], padding='SAME'", 
+    "ksize=[3, 3], strides=[2, 2], padding='VALID'",
+    # Scenarios with erroneous or inappropriate values
+    "ksize='invalid', strides=-1, padding='invalid'", 
+    "ksize=[0, 0], strides=[0, 0], padding='SAME'"
+]
+tf_nn_avg_pool3d_Mutation_List = [
+    # Typical parameter combinations
+    "ksize=[2, 2, 2], strides=[2, 2, 2], padding='SAME'", 
+    "ksize=[3, 3, 3], strides=[2, 2, 2], padding='VALID'",
+    # Scenarios with erroneous or inappropriate values
+    "ksize='invalid', strides=-1, padding='invalid'", 
+    "ksize=[0, 0, 0], strides=[0, 0,0], padding='SAME'"
+]   
+ 
+tf_nn_avg_pool_Mutation_List = [
+    # Typical parameter combinations
+    "ksize=[2, 2], strides=[2, 2], padding='SAME'", 
+    "ksize=[3, 3], strides=[2, 2], padding='VALID'",
+    # Scenarios with erroneous or inappropriate values
+    "ksize='invalid', strides=-1, padding='invalid'", 
+    "ksize=[0, 0], strides=[0, 0], padding='SAME'"
+]
+
+tf_nn_batch_norm_with_global_normalization_Mutation_List = [
+    # Typical parameter combinations
+    "t=[1, 2], m=[3, 4], v=[5, 6], beta=[7, 8], gamma=[9, 10], variance_epsilon=0.001, scale_after_normalization=True",
+    "t=[2, 3], m=[4, 5], v=[6, 7], beta=[8, 9], gamma=[10, 11], variance_epsilon=0.01, scale_after_normalization=False",
+    # Scenarios with erroneous or inappropriate values
+    "t='invalid', m='invalid', v='invalid', beta='invalid', gamma='invalid', variance_epsilon=-0.001, scale_after_normalization='invalid'",
+    "t=[], m=[], v=[], beta=[], gamma=[], variance_epsilon=0, scale_after_normalization=None"
+]
+
+tf_nn_batch_normalization_Mutation_List = [
+    # Typical parameter combinations
+    "x=[1, 2, 3], mean=[1], variance=[2], offset=[3], scale=[4], variance_epsilon=0.001",
+    "x=[2, 3, 4], mean=[2], variance=[3], offset=[4], scale=[5], variance_epsilon=0.01",
+    # Scenarios with erroneous or inappropriate values
+    "x='invalid', mean='invalid', variance='invalid', offset='invalid', scale='invalid', variance_epsilon=-0.001",
+    "x=[], mean=[], variance=[], offset=[], scale=[], variance_epsilon=0"
+]
+
+tf_nn_bias_add_Mutation_List = [
+    # Typical parameter combinations
+    "value=[1, 2, 3], bias=[4, 5, 6], data_format='NHWC'",
+    "value=[4, 5, 6], bias=[7, 8, 9], data_format='NCHW'",
+    # Scenarios with erroneous or inappropriate values
+    "value='invalid', bias='invalid', data_format='invalid'",
+    "value=[], bias=[], data_format=None"
+]
+
+tf_nn_collapse_repeated_Mutation_List = [
+    # Typical parameter combinations
+    "input=[1, 2, 2, 3], seq_lengths=[4], truth=True",
+    "input=[1, 1, 2], seq_lengths=[3], truth=False",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', seq_lengths='invalid', truth='invalid'",
+    "input=[], seq_lengths=[], truth=None"
+]
+
+tf_nn_compute_accidental_hits_Mutation_List = [
+    # Typical parameter combinations
+    "true_classes=[1, 2, 3], sampled_candidates=[4, 5, 6], num_true=1, seed=12345",
+    "true_classes=[2, 3, 4], sampled_candidates=[5, 6, 7], num_true=2, seed=67890",
+    # Scenarios with erroneous or inappropriate values
+    "true_classes='invalid', sampled_candidates='invalid', num_true=-1, seed='invalid'",
+    "true_classes=[], sampled_candidates=[], num_true=0, seed=None"
+]
+
+tf_nn_compute_average_loss_Mutation_List = [
+    # Typical parameter combinations
+    "per_example_loss=[0.1, 0.2, 0.3], global_batch_size=10",
+    "per_example_loss=[0.4, 0.5, 0.6], global_batch_size=20",
+    # Scenarios with erroneous or inappropriate values
+    "per_example_loss='invalid', global_batch_size=-1",
+    "per_example_loss=[], global_batch_size=0"
+]
+tf_nn_conv1d_Mutation_List = [
+    # Typical parameter combinations
+    "input=[1, 2, 3], filters=[4, 5, 6], stride=1, padding='VALID'", 
+    "input=[3, 4, 5], filters=[6, 7, 8], stride=2, padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filters='invalid', stride=-1, padding='invalid'", 
+    "input=[], filters=[], stride=0, padding='SAME'"
+]
+
+tf_nn_conv1d_transpose_Mutation_List = [
+    # Typical parameter combinations
+    "input=[1, 2, 3], filters=[4, 5, 6], stride=1, padding='VALID'", 
+    "input=[3, 4, 5], filters=[6, 7, 8], stride=2, padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filters='invalid', stride=-1, padding='invalid'", 
+    "input=[], filters=[], stride=0, padding='SAME'"
+]
+
+tf_nn_conv2d_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], filter=[[1, 0], [0, 1]], strides=[1, 1], padding='VALID'", 
+    "input=[[2, 3], [4, 5]], filter=[[1, 1], [1, 1]], strides=[2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filter='invalid', strides=[-1, -1], padding='invalid'", 
+    "input=[], filter=[], strides=[0, 0], padding='SAME'"
+]
+
+tf_nn_conv2d_transpose_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], filter=[[1, 0], [0, 1]], strides=[1, 1], padding='VALID'", 
+    "input=[[2, 3], [4, 5]], filter=[[1, 1], [1, 1]], strides=[2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filter='invalid', strides=[-1, -1], padding='invalid'", 
+    "input=[], filter=[], strides=[0, 0], padding='SAME'"
+]
+
+tf_nn_conv3d_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], filter=[[1, 0], [0, 1]], strides=[1, 1, 1], padding='VALID'", 
+    "input=[[2, 3], [4, 5]], filter=[[1, 1], [1, 1]], strides=[2, 2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filter='invalid', strides=[-1, -1, -1], padding='invalid'", 
+    "input=[], filter=[], strides=[0, 0, 0], padding='SAME'"
+]
+
+tf_nn_conv3d_transpose_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], filter=[[1, 0], [0, 1]], strides=[1, 1, 1], padding='VALID'", 
+    "input=[[2, 3], [4, 5]], filter=[[1, 1], [1, 1]], strides=[2, 2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filter='invalid', strides=[-1, -1, -1], padding='invalid'", 
+    "input=[], filter=[], strides=[0, 0, 0], padding='SAME'"
+]
+tf_nn_conv_transpose_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], filters=[[1, 0], [0, 1]], strides=[1, 1], padding='VALID'", 
+    "input=[[2, 3], [4, 5]], filters=[[1, 1], [1, 1]], strides=[2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filters='invalid', strides=[-1, -1], padding='invalid'", 
+    "input=[], filters=[], strides=[0, 0], padding='SAME'"
+]
+
+tf_nn_convolution_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], filters=[[1, 0], [0, 1]], strides=[1, 1], padding='VALID', dilation_rate=[1, 1]", 
+    "input=[[2, 3], [4, 5]], filters=[[1, 1], [1, 1]], strides=[2, 2], padding='SAME', dilation_rate=[2, 2]",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filters='invalid', strides=[-1, -1], padding='invalid', dilation_rate='invalid'", 
+    "input=[], filters=[], strides=[0, 0], padding='SAME', dilation_rate=[]"
+]
+
+tf_nn_crelu_Mutation_List = [
+    # Typical parameter combinations
+    "features=[0.1, -0.2, 0.3], axis=-1", 
+    "features=[-0.1, 0.2, -0.3], axis=0",
+    # Scenarios with erroneous or inappropriate values
+    "features='invalid', axis='invalid'", 
+    "features=[], axis=-2"
+]
+
+tf_nn_ctc_beam_search_decoder_Mutation_List = [
+    # Typical parameter combinations
+    "inputs=[[0.6, 0.4], [0.8, 0.2]], sequence_length=[2], beam_width=10", 
+    "inputs=[[0.7, 0.3], [0.9, 0.1]], sequence_length=[2], beam_width=20",
+    # Scenarios with erroneous or inappropriate values
+    "inputs='invalid', sequence_length='invalid', beam_width=-1", 
+    "inputs=[], sequence_length=[], beam_width=0"
+]
+
+tf_nn_ctc_greedy_decoder_Mutation_List = [
+    # Typical parameter combinations
+    "inputs=[[0.6, 0.4], [0.8, 0.2]], sequence_length=[2]", 
+    "inputs=[[0.7, 0.3], [0.9, 0.1]], sequence_length=[2]",
+    # Scenarios with erroneous or inappropriate values
+    "inputs='invalid', sequence_length='invalid'", 
+    "inputs=[], sequence_length=[]"
+]
+
+tf_nn_ctc_loss_Mutation_List = [
+    # Typical parameter combinations
+    "labels=[[1, 2]], logits=[[0.1, 0.9]], label_length=[2], logit_length=[2]", 
+    "labels=[[2, 1]], logits=[[0.2, 0.8]], label_length=[2], logit_length=[2]",
+    # Scenarios with erroneous or inappropriate values
+    "labels='invalid', logits='invalid', label_length='invalid', logit_length='invalid'", 
+    "labels=[], logits=[], label_length=[], logit_length=[]"
+]
+
+tf_nn_ctc_unique_labels_Mutation_List = [
+    # Typical parameter combinations
+    "labels=[1, 2, 3, 4]", 
+    "labels=[2, 3, 4, 5]",
+    # Scenarios with erroneous or inappropriate values
+    "labels='invalid'", 
+    "labels=[]"
+]
+tf_nn_depth_to_space_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], block_size=2", 
+    "input=[[2, 3], [4, 5]], block_size=3",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', block_size=-1", 
+    "input=[], block_size=0"
+]
+
+tf_nn_depthwise_conv2d_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], filter=[[1, 0], [0, 1]], strides=[1, 1], padding='VALID'", 
+    "input=[[2, 3], [4, 5]], filter=[[1, 1], [1, 1]], strides=[2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filter='invalid', strides=[-1, -1], padding='invalid'", 
+    "input=[], filter=[], strides=[0, 0], padding='SAME'"
+]
+
+tf_nn_depthwise_conv2d_backprop_filter_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], filter_sizes=[2, 2], out_backprop=[[1, 0], [0, 1]], strides=[1, 1], padding='VALID'", 
+    "input=[[2, 3], [4, 5]], filter_sizes=[3, 3], out_backprop=[[1, 1], [1, 1]], strides=[2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filter_sizes='invalid', out_backprop='invalid', strides=[-1, -1], padding='invalid'", 
+    "input=[], filter_sizes=[], out_backprop=[], strides=[0, 0], padding='SAME'"
+]
+
+tf_nn_depthwise_conv2d_backprop_input_Mutation_List = [
+    # Typical parameter combinations
+    "input_sizes=[2, 2], filter=[[1, 0], [0, 1]], out_backprop=[[1, 0], [0, 1]], strides=[1, 1], padding='VALID'", 
+    "input_sizes=[3, 3], filter=[[1, 1], [1, 1]], out_backprop=[[1, 1], [1, 1]], strides=[2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input_sizes='invalid', filter='invalid', out_backprop='invalid', strides=[-1, -1], padding='invalid'", 
+    "input_sizes=[], filter=[], out_backprop=[], strides=[0, 0], padding='SAME'"
+]
+
+tf_nn_dilation2d_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], filter=[[1, 0], [0, 1]], strides=[1, 1], rates=[1, 1], padding='VALID'", 
+    "input=[[2, 3], [4, 5]], filter=[[1, 1], [1, 1]], strides=[2, 2], rates=[2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filter='invalid', strides=[-1, -1], rates='invalid', padding='invalid'", 
+    "input=[], filter=[], strides=[0, 0], rates=[], padding='SAME'"
+]
+
+tf_nn_dropout_Mutation_List = [
+    # Typical parameter combinations
+    "x=[0.1, 0.2, 0.3], keep_prob=0.5", 
+    "x=[0.4, 0.5, 0.6], keep_prob=0.8",
+    # Scenarios with erroneous or inappropriate values
+    "x='invalid', keep_prob=-0.1", 
+    "x=[], keep_prob=1.1"
+]
+tf_nn_elu_Mutation_List = [
+    # Typical parameter combinations
+    "features=[0.1, -0.2, 0.3]", 
+    "features=[-0.1, 0.2, -0.3]",
+    # Scenarios with erroneous or inappropriate values
+    "features='invalid'", 
+    "features=[]"
+]
+
+tf_nn_embedding_lookup_Mutation_List = [
+    # Typical parameter combinations
+    "params=[[0.1, 0.2], [0.3, 0.4]], ids=[1, 2]", 
+    "params=[[0.5, 0.6], [0.7, 0.8]], ids=[3, 4]",
+    # Scenarios with erroneous or inappropriate values
+    "params='invalid', ids='invalid'", 
+    "params=[], ids=[]"
+]
+
+tf_nn_embedding_lookup_sparse_Mutation_List = [
+    # Typical parameter combinations
+    "params=[[0.1, 0.2], [0.3, 0.4]], sp_ids=[[1, 2], [3, 4]], sp_weights=[[0.5, 0.5], [0.5, 0.5]]", 
+    "params=[[0.5, 0.6], [0.7, 0.8]], sp_ids=[[5, 6], [7, 8]], sp_weights=[[0.6, 0.4], [0.4, 0.6]]",
+    # Scenarios with erroneous or inappropriate values
+    "params='invalid', sp_ids='invalid', sp_weights='invalid'", 
+    "params=[], sp_ids=[], sp_weights=[]"
+]
+
+tf_nn_erosion2d_Mutation_List = [
+    # Typical parameter combinations
+    "value=[[1, 2], [3, 4]], kernel=[[1, 0], [0, 1]], strides=[1, 1], rates=[1, 1], padding='VALID'", 
+    "value=[[2, 3], [4, 5]], kernel=[[1, 1], [1, 1]], strides=[2, 2], rates=[2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "value='invalid', kernel='invalid', strides=[-1, -1], rates='invalid', padding='invalid'", 
+    "value=[], kernel=[], strides=[0, 0], rates=[], padding='SAME'"
+]
+
+tf_nn_fixed_unigram_candidate_sampler_Mutation_List = [
+    # Typical parameter combinations
+    "true_classes=[1, 2, 3], num_true=2, num_sampled=5, unique=True", 
+    "true_classes=[4, 5, 6], num_true=3, num_sampled=10, unique=False",
+    # Scenarios with erroneous or inappropriate values
+    "true_classes='invalid', num_true=-1, num_sampled=-5, unique='invalid'", 
+    "true_classes=[], num_true=0, num_sampled=0, unique=None"
+]
+
+tf_nn_fractional_avg_pool_Mutation_List = [
+    # Typical parameter combinations
+    "value=[[1, 2], [3, 4]], pooling_ratio=[1.0, 1.4, 1.4]", 
+    "value=[[2, 3], [4, 5]], pooling_ratio=[1.0, 1.5, 1.5]",
+    # Scenarios with erroneous or inappropriate values
+    "value='invalid', pooling_ratio='invalid'", 
+    "value=[], pooling_ratio=[]"
+]
+
+tf_nn_fractional_max_pool_Mutation_List = [
+    # Typical parameter combinations
+    "value=[[1, 2], [3, 4]], pooling_ratio=[1.0, 1.4, 1.4]", 
+    "value=[[2, 3], [4, 5]], pooling_ratio=[1.0, 1.5, 1.5]",
+    # Scenarios with erroneous or inappropriate values
+    "value='invalid', pooling_ratio='invalid'", 
+    "value=[], pooling_ratio=[]"
+]
+
+tf_nn_gelu_Mutation_List = [
+    # Typical parameter combinations
+    "features=[0.1, 0.2, 0.3]", 
+    "features=[-0.1, -0.2, -0.3]",
+    # Scenarios with erroneous or inappropriate values
+    "features='invalid'", 
+    "features=[]"
+]
+
+tf_nn_in_top_k_Mutation_List = [
+    # Typical parameter combinations
+    "predictions=[[0.1, 0.9], [0.2, 0.8]], targets=[0, 1], k=1", 
+    "predictions=[[0.3, 0.7], [0.6, 0.4]], targets=[1, 0], k=2",
+    # Scenarios with erroneous or inappropriate values
+    "predictions='invalid', targets='invalid', k=-1", 
+    "predictions=[], targets=[], k=0"
+]
+
+tf_nn_isotonic_regression_Mutation_List = [
+    # Typical parameter combinations
+    "y=[0.1, 0.2, 0.3], weights=[1, 1, 1], increasing=True", 
+    "y=[0.3, 0.2, 0.1], weights=[1, 2, 3], increasing=False",
+    # Scenarios with erroneous or inappropriate values
+    "y='invalid', weights='invalid', increasing='invalid'", 
+    "y=[], weights=[], increasing=None"
+]
+
+tf_nn_l2_loss_Mutation_List = [
+    # Typical parameter combinations
+    "t=[0.1, 0.2, 0.3]", 
+    "t=[0.4, 0.5, 0.6]",
+    # Scenarios with erroneous or inappropriate values
+    "t='invalid'", 
+    "t=[]"
+]
+
+tf_nn_l2_normalize_Mutation_List = [
+    # Typical parameter combinations
+    "x=[0.1, 0.2, 0.3], axis=0", 
+    "x=[0.4, 0.5, 0.6], axis=1",
+    # Scenarios with erroneous or inappropriate values
+    "x='invalid', axis='invalid'", 
+    "x=[], axis=-1"
+]
+
+tf_nn_leaky_relu_Mutation_List = [
+    # Typical parameter combinations
+    "features=[0.1, 0.2, 0.3], alpha=0.2", 
+    "features=[-0.1, -0.2, -0.3], alpha=0.3",
+    # Scenarios with erroneous or inappropriate values
+    "features='invalid', alpha=-0.1", 
+    "features=[], alpha=1.1"
+]
+
+tf_nn_learned_unigram_candidate_sampler_Mutation_List = [
+    # Typical parameter combinations
+    "true_classes=[1, 2, 3], num_true=2, num_sampled=5, unique=True", 
+    "true_classes=[4, 5, 6], num_true=3, num_sampled=10, unique=False",
+    # Scenarios with erroneous or inappropriate values
+    "true_classes='invalid', num_true=-1, num_sampled=-5, unique='invalid'", 
+    "true_classes=[], num_true=0, num_sampled=0, unique=None"
+]
+
+tf_nn_local_response_normalization_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], depth_radius=2, bias=1, alpha=0.1, beta=0.5", 
+    "input=[[2, 3], [4, 5]], depth_radius=3, bias=2, alpha=0.2, beta=0.6",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', depth_radius=-1, bias='invalid', alpha=-0.1, beta=-0.5", 
+    "input=[], depth_radius=0, bias=0, alpha=0, beta=0"
+]
+
+tf_nn_log_poisson_loss_Mutation_List = [
+    # Typical parameter combinations
+    "logits=[0.1, 0.2, 0.3], targets=[1, 2, 3]", 
+    "logits=[0.4, 0.5, 0.6], targets=[4, 5, 6]",
+    # Scenarios with erroneous or inappropriate values
+    "logits='invalid', targets='invalid'", 
+    "logits=[], targets=[]"
+]
+tf_nn_log_poisson_loss_Mutation_List = [
+    # Typical parameter combinations
+    "logits=[0.1, 0.2, 0.3], targets=[1, 2, 3]", 
+    "logits=[0.4, 0.5, 0.6], targets=[4, 5, 6]",
+    # Scenarios with erroneous or inappropriate values
+    "logits='invalid', targets='invalid'", 
+    "logits=[], targets=[]"
+]
+
+tf_nn_log_softmax_Mutation_List = [
+    # Typical parameter combinations
+    "logits=[0.1, 0.2, 0.3]", 
+    "logits=[0.4, 0.5, 0.6]",
+    # Scenarios with erroneous or inappropriate values
+    "logits='invalid'", 
+    "logits=[]"
+]
+
+tf_nn_lrn_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], depth_radius=2, bias=1, alpha=0.1, beta=0.5", 
+    "input=[[2, 3], [4, 5]], depth_radius=3, bias=2, alpha=0.2, beta=0.6",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', depth_radius=-1, bias='invalid', alpha=-0.1, beta=-0.5", 
+    "input=[], depth_radius=0, bias=0, alpha=0, beta=0"
+]
+
+tf_nn_max_pool_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], ksize=[2, 2], strides=[2, 2], padding='VALID'", 
+    "input=[[2, 3], [4, 5]], ksize=[3, 3], strides=[2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', ksize='invalid', strides='invalid', padding='invalid'", 
+    "input=[], ksize=[], strides=[], padding='SAME'"
+]
+
+tf_nn_max_pool1d_Mutation_List = [
+    # Typical parameter combinations
+    "input=[1, 2, 3], ksize=2, strides=2, padding='VALID'", 
+    "input=[2, 3, 4], ksize=3, strides=2, padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', ksize=-1, strides=-1, padding='invalid'", 
+    "input=[], ksize=0, strides=0, padding='SAME'"
+]
+
+tf_nn_max_pool2d_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], ksize=[2, 2], strides=[2, 2], padding='VALID'", 
+    "input=[[2, 3], [4, 5]], ksize=[3, 3], strides=[2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', ksize='invalid', strides='invalid', padding='invalid'", 
+    "input=[], ksize=[], strides=[], padding='SAME'"
+]
+
+tf_nn_max_pool3d_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2, 3], [4, 5, 6]], ksize=[2, 2, 2], strides=[2, 2, 2], padding='VALID'", 
+    "input=[[2, 3, 4], [5, 6, 7]], ksize=[3, 3, 3], strides=[2, 2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', ksize='invalid', strides='invalid', padding='invalid'", 
+    "input=[], ksize=[], strides=[], padding='SAME'"
+]
+
+tf_nn_max_pool_with_argmax_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], ksize=[2, 2], strides=[2, 2], padding='VALID', include_batch_in_index=True", 
+    "input=[[2, 3], [4, 5]], ksize=[3, 3], strides=[2, 2], padding='SAME', include_batch_in_index=False",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', ksize='invalid', strides='invalid', padding='invalid', include_batch_in_index='invalid'", 
+    "input=[], ksize=[], strides=[], padding='SAME', include_batch_in_index=None"
+]
+tf_nn_moments_Mutation_List = [
+    # Typical parameter combinations
+    "x=[0.1, 0.2, 0.3], axes=[0]", 
+    "x=[0.4, 0.5, 0.6], axes=[1]",
+    # Scenarios with erroneous or inappropriate values
+    "x='invalid', axes='invalid'", 
+    "x=[], axes=[]"
+]
+
+tf_nn_nce_loss_Mutation_List = [
+    # Typical parameter combinations
+    "weights=[[0.1, 0.2], [0.3, 0.4]], biases=[0.1, 0.2], labels=[[1, 2]], inputs=[[0.1, 0.2]], num_sampled=2, num_classes=4", 
+    "weights=[[0.5, 0.6], [0.7, 0.8]], biases=[0.3, 0.4], labels=[[3, 4]], inputs=[[0.3, 0.4]], num_sampled=3, num_classes=5",
+    # Scenarios with erroneous or inappropriate values
+    "weights='invalid', biases='invalid', labels='invalid', inputs='invalid', num_sampled=-1, num_classes=-1", 
+    "weights=[], biases=[], labels=[], inputs=[], num_sampled=0, num_classes=0"
+]
+
+tf_nn_normalize_moments_Mutation_List = [
+    # Typical parameter combinations
+    "counts=[10, 20], mean_ss=[0.1, 0.2], variance_ss=[0.01, 0.02], shift=0.0", 
+    "counts=[15, 25], mean_ss=[0.15, 0.25], variance_ss=[0.015, 0.025], shift=0.1",
+    # Scenarios with erroneous or inappropriate values
+    "counts='invalid', mean_ss='invalid', variance_ss='invalid', shift='invalid'", 
+    "counts=[], mean_ss=[], variance_ss=[], shift=None"
+]
+
+tf_nn_pool_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], window_shape=[2, 2], pooling_type='AVG', strides=[1, 1], padding='VALID'", 
+    "input=[[2, 3], [4, 5]], window_shape=[3, 3], pooling_type='MAX', strides=[2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', window_shape='invalid', pooling_type='invalid', strides='invalid', padding='invalid'", 
+    "input=[], window_shape=[], pooling_type=None, strides=[], padding='SAME'"
+]
+
+tf_nn_relu_Mutation_List = [
+    # Typical parameter combinations
+    "features=[0.1, -0.2, 0.3]", 
+    "features=[-0.1, 0.2, -0.3]",
+    # Scenarios with erroneous or inappropriate values
+    "features='invalid'", 
+    "features=[]"
+]
+
+tf_nn_relu6_Mutation_List = [
+    # Typical parameter combinations
+    "features=[0.1, -0.2, 0.3]", 
+    "features=[-0.1, 0.2, -0.3]",
+    # Scenarios with erroneous or inappropriate values
+    "features='invalid'", 
+    "features=[]"
+]
+
+tf_nn_safe_embedding_lookup_sparse_Mutation_List = [
+    # Typical parameter combinations
+    "embedding_matrix=[[0.1, 0.2], [0.3, 0.4]], sp_ids=[[1, 2]], sp_weights=[[0.5, 0.5]]", 
+    "embedding_matrix=[[0.5, 0.6], [0.7, 0.8]], sp_ids=[[3, 4]], sp_weights=[[0.6, 0.4]]",
+    # Scenarios with erroneous or inappropriate values
+    "embedding_matrix='invalid', sp_ids='invalid', sp_weights='invalid'", 
+    "embedding_matrix=[], sp_ids=[], sp_weights=[]"
+]
+tf_nn_separable_conv2d_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], depthwise_filter=[[1, 0], [0, 1]], pointwise_filter=[[1, 1], [1, 1]], strides=[1, 1], padding='VALID'",
+    "input=[[2, 3], [4, 5]], depthwise_filter=[[0, 1], [1, 0]], pointwise_filter=[[1, 1], [1, 1]], strides=[2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', depthwise_filter='invalid', pointwise_filter='invalid', strides='invalid', padding='invalid'",
+    "input=[], depthwise_filter=[], pointwise_filter=[], strides=[], padding='SAME'"
+]
+
+tf_nn_sigmoid_Mutation_List = [
+    # Typical parameter combinations
+    "x=[0.1, 0.2, 0.3]",
+    "x=[-0.1, -0.2, -0.3]",
+    # Scenarios with erroneous or inappropriate values
+    "x='invalid'",
+    "x=[]"
+]
+
+tf_nn_sigmoid_cross_entropy_with_logits_Mutation_List = [
+    # Typical parameter combinations
+    "labels=[0, 1], logits=[-1.0, 1.0]",
+    "labels=[1, 0], logits=[1.0, -1.0]",
+    # Scenarios with erroneous or inappropriate values
+    "labels='invalid', logits='invalid'",
+    "labels=[], logits=[]"
+]
+
+tf_nn_silu_Mutation_List = [
+    # Typical parameter combinations
+    "features=[0.1, 0.2, 0.3]",
+    "features=[-0.1, -0.2, -0.3]",
+    # Scenarios with erroneous or inappropriate values
+    "features='invalid'",
+    "features=[]"
+]
+
+tf_nn_softmax_Mutation_List = [
+    # Typical parameter combinations
+    "logits=[0.1, 0.2, 0.3]",
+    "logits=[-0.1, -0.2, -0.3]",
+    # Scenarios with erroneous or inappropriate values
+    "logits='invalid'",
+    "logits=[]"
+]
+
+tf_nn_softmax_cross_entropy_with_logits_Mutation_List = [
+    # Typical parameter combinations
+    "labels=[[0, 1], [1, 0]], logits=[[1.0, -1.0], [-1.0, 1.0]]",
+    "labels=[[1, 0], [0, 1]], logits=[[-1.0, 1.0], [1.0, -1.0]]",
+    # Scenarios with erroneous or inappropriate values
+    "labels='invalid', logits='invalid'",
+    "labels=[], logits=[]"
+]
+
+tf_nn_softplus_Mutation_List = [
+    # Typical parameter combinations
+    "features=[0.1, 0.2, 0.3]",
+    "features=[-0.1, -0.2, -0.3]",
+    # Scenarios with erroneous or inappropriate values
+    "features='invalid'",
+    "features=[]"
+]
+
+tf_nn_softsign_Mutation_List = [
+    # Typical parameter combinations
+    "features=[0.1, 0.2, 0.3]",
+    "features=[-0.1, -0.2, -0.3]",
+    # Scenarios with erroneous or inappropriate values
+    "features='invalid'",
+    "features=[]"
+]
+tf_nn_space_to_batch_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], block_shape=[2, 2], paddings=[[0, 0], [0, 0]]",
+    "input=[[2, 3], [4, 5]], block_shape=[3, 3], paddings=[[1, 1], [1, 1]]",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', block_shape='invalid', paddings='invalid'",
+    "input=[], block_shape=[], paddings=[]"
+]
+
+tf_nn_space_to_depth_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], block_size=2",
+    "input=[[2, 3], [4, 5]], block_size=3",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', block_size=-1",
+    "input=[], block_size=0"
+]
+
+tf_nn_sparse_softmax_cross_entropy_with_logits_Mutation_List = [
+    # Typical parameter combinations
+    "labels=[0, 1], logits=[[1.0, -1.0], [-1.0, 1.0]]",
+    "labels=[1, 0], logits=[[-1.0, 1.0], [1.0, -1.0]]",
+    # Scenarios with erroneous or inappropriate values
+    "labels='invalid', logits='invalid'",
+    "labels=[], logits=[]"
+]
+
+tf_nn_sufficient_statistics_Mutation_List = [
+    # Typical parameter combinations
+    "x=[0.1, 0.2, 0.3], axes=[0], shift=None",
+    "x=[0.4, 0.5, 0.6], axes=[1], shift=0.1",
+    # Scenarios with erroneous or inappropriate values
+    "x='invalid', axes='invalid', shift='invalid'",
+    "x=[], axes=[], shift=None"
+]
+
+tf_nn_swish_Mutation_List = [
+    # Typical parameter combinations
+    "features=[0.1, 0.2, 0.3]",
+    "features=[-0.1, -0.2, -0.3]",
+    # Scenarios with erroneous or inappropriate values
+    "features='invalid'",
+    "features=[]"
+]
+
+tf_nn_tanh_Mutation_List = [
+    # Typical parameter combinations
+    "x=[0.1, 0.2, 0.3]",
+    "x=[-0.1, -0.2, -0.3]",
+    # Scenarios with erroneous or inappropriate values
+    "x='invalid'",
+    "x=[]"
+]
+
+tf_nn_top_k_Mutation_List = [
+    # Typical parameter combinations
+    "input=[0.1, 0.2, 0.3], k=2",
+    "input=[0.4, 0.5, 0.6], k=3",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', k=-1",
+    "input=[], k=0"
+]
+tf_nn_weighted_cross_entropy_with_logits_Mutation_List = [
+    # Typical parameter combinations
+    "targets=[0, 1], logits=[-1.0, 1.0], pos_weight=2.0",
+    "targets=[1, 0], logits=[1.0, -1.0], pos_weight=3.0",
+    # Scenarios with erroneous or inappropriate values
+    "targets='invalid', logits='invalid', pos_weight='invalid'",
+    "targets=[], logits=[], pos_weight=-1"
+]
+
+tf_nn_weighted_moments_Mutation_List = [
+    # Typical parameter combinations
+    "x=[0.1, 0.2, 0.3], axes=[0], frequency_weights=[1, 2, 3]",
+    "x=[0.4, 0.5, 0.6], axes=[1], frequency_weights=[2, 3, 4]",
+    # Scenarios with erroneous or inappropriate values
+    "x='invalid', axes='invalid', frequency_weights='invalid'",
+    "x=[], axes=[], frequency_weights=[]"
+]
+
+tf_nn_with_space_to_batch_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], block_shape=[2, 2], paddings=[[0, 0], [0, 0]]",
+    "input=[[2, 3], [4, 5]], block_shape=[3, 3], paddings=[[1, 1], [1, 1]]",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', block_shape='invalid', paddings='invalid'",
+    "input=[], block_shape=[], paddings=[]"
+]
+
+tf_nn_zero_fraction_Mutation_List = [
+    # Typical parameter combinations
+    "value=[0, 1, 0, 2, 0]",
+    "value=[1, 2, 3, 4, 5]",
+    # Scenarios with erroneous or inappropriate values
+    "value='invalid'",
+    "value=[]"
+]
