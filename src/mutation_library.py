@@ -1526,6 +1526,71 @@ tf_keras_layers_ConvLSTM2D_Mutation_List = [
     "filters='invalid', kernel_size='invalid'", "filters=-32, kernel_size=(-3, -3)", 
     "filters=None"
 ]
+tf_keras_layers_ConvLSTM3D_Mutation_List = [
+    # Typical parameter combinations
+    "filters=32, kernel_size=(3, 3,3)", "filters=64, kernel_size=(5, 5,5)", 
+    "filters=128, kernel_size=(7, 7,7)", "filters=16, kernel_size=(3, 3,3)", 
+    "filters=32, kernel_size=(1, 1,1)", "filters=48, kernel_size=(2, 2,2)", 
+    "filters=64, kernel_size=(4, 4,4)", "filters=96, kernel_size=(6, 6,6)", 
+    "filters=128, kernel_size=(8, 8,8)", "filters=32, kernel_size=(5, 5,5)",
+    # Scenarios with erroneous or inappropriate values
+    "filters='invalid', kernel_size='invalid'", "filters=-32, kernel_size=(-3, -3)", 
+    "filters=None"
+]
+tf_keras_layers_Convolution1D_Mutation_List = [
+    # Typical parameter combinations
+    "filters=32, kernel_size=3, strides=1, padding='valid', activation='relu'",
+    "filters=64, kernel_size=5, strides=2, padding='same', activation='tanh'",
+    # Scenarios with erroneous or inappropriate values
+    "filters=-1, kernel_size=0, strides=-1, padding='invalid', activation=123",
+    "filters='invalid', kernel_size='invalid', strides='invalid', padding=[], activation=None"
+]
+
+tf_keras_layers_Convolution2D_Mutation_List = [
+    # Typical parameter combinations
+    "filters=32, kernel_size=(3, 3), strides=(1, 1), padding='valid', activation='relu'",
+    "filters=64, kernel_size=(5, 5), strides=(2, 2), padding='same', activation='sigmoid'",
+    # Scenarios with erroneous or inappropriate values
+    "filters=-1, kernel_size=(0, 0), strides=(-1, -1), padding='invalid', activation=123",
+    "filters='invalid', kernel_size='invalid', strides='invalid', padding=[], activation=None"
+]
+
+tf_keras_layers_Convolution3D_Mutation_List = [
+    # Typical parameter combinations
+    "filters=32, kernel_size=(3, 3, 3), strides=(1, 1, 1), padding='valid', activation='relu'",
+    "filters=64, kernel_size=(5, 5, 5), strides=(2, 2, 2), padding='same', activation='softmax'",
+    # Scenarios with erroneous or inappropriate values
+    "filters=-1, kernel_size=(0, 0, 0), strides=(-1, -1, -1), padding='invalid', activation=123",
+    "filters='invalid', kernel_size='invalid', strides='invalid', padding=[], activation=None"
+]
+
+tf_keras_layers_Convolution1DTranspose_Mutation_List = [
+    # Typical parameter combinations
+    "filters=32, kernel_size=3, strides=1, padding='valid', activation='relu'",
+    "filters=64, kernel_size=5, strides=2, padding='same', activation='tanh'",
+    # Scenarios with erroneous or inappropriate values
+    "filters=-1, kernel_size=0, strides=-1, padding='invalid', activation=123",
+    "filters='invalid', kernel_size='invalid', strides='invalid', padding=[], activation=None"
+]
+
+tf_keras_layers_Convolution2DTranspose_Mutation_List = [
+    # Typical parameter combinations
+    "filters=32, kernel_size=(3, 3), strides=(1, 1), padding='valid', activation='relu'",
+    "filters=64, kernel_size=(5, 5), strides=(2, 2), padding='same', activation='sigmoid'",
+    # Scenarios with erroneous or inappropriate values
+    "filters=-1, kernel_size=(0, 0), strides=(-1, -1), padding='invalid', activation=123",
+    "filters='invalid', kernel_size='invalid', strides='invalid', padding=[], activation=None"
+]
+
+tf_keras_layers_Convolution3DTranspose_Mutation_List = [
+    # Typical parameter combinations
+    "filters=32, kernel_size=(3, 3, 3), strides=(1, 1, 1), padding='valid', activation='relu'",
+    "filters=64, kernel_size=(5, 5, 5), strides=(2, 2, 2), padding='same', activation='softmax'",
+    # Scenarios with erroneous or inappropriate values
+    "filters=-1, kernel_size=(0, 0, 0), strides=(-1, -1, -1), padding='invalid', activation=123",
+    "filters='invalid', kernel_size='invalid', strides='invalid', padding=[], activation=None"
+]
+
 tf_keras_layers_Cropping1D_Mutation_List = [
     # Typical parameter combinations
     "cropping=(1, 1)", "cropping=(2, 2)", "cropping=(3, 3)",
