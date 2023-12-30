@@ -2179,7 +2179,7 @@ tf_keras_losses_Hinge_Mutation_List = [
     "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
 ]
 
-# Huber için tipik ve hatalı parametre kombinasyonları
+
 tf_keras_losses_Huber_Mutation_List = [
     # Typical parameter combinations
     "delta=1.0", "delta=0.5", "delta=1.5", 
@@ -2191,8 +2191,8 @@ tf_keras_losses_Huber_Mutation_List = [
     "delta=-0.5", "delta=2.5"
 ]
 
-# KLD, KLDivergence için tipik ve hatalı parametre kombinasyonları
-# KLD ve KLDivergence aynı fonksiyon olduğu için aynı listeyi kullanacağız
+
+ 
 tf_keras_losses_KLD_Mutation_List = [
     # KLD does not have significant parameters, but we can create some scenarios
     # Typical parameter combinations (as KLD does not have parameters, these will be empty)
@@ -2200,8 +2200,15 @@ tf_keras_losses_KLD_Mutation_List = [
     # Scenarios with erroneous or inappropriate values
     "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
 ]
+tf_losses_KLDivergence_Mutation_List = [
+    # Typical parameter combinations
+    "y_true=[0.1, 0.9], y_pred=[0.2, 0.8]",
+    "y_true=[0.3, 0.7], y_pred=[0.4, 0.6]",
+    # Scenarios with erroneous or inappropriate values
+    "y_true='invalid', y_pred='invalid'",
+    "y_true=[], y_pred=[]"
+]
 
-# LogCosh için tipik ve hatalı parametre kombinasyonları
 tf_keras_losses_LogCosh_Mutation_List = [
     # LogCosh does not have significant parameters, but we can create some scenarios
     # Typical parameter combinations (as LogCosh does not have parameters, these will be empty)
