@@ -2534,6 +2534,17 @@ tf_keras_losses_mape_Mutation_List = [
     # Scenarios with erroneous or inappropriate values
   "invalid_param='invalid'", "1, 2, 3", "use_bias=True",
     "activation='relu'", "dropout=0.3"]  
+
+
+tf_losses_mean_absolute_error_Mutation_List = [
+    # Typical parameter combinations
+    "y_true=[1, 2, 3], y_pred=[1, 2, 3]", 
+    "y_true=[1, 2, 3], y_pred=[3, 2, 1]",
+    # Scenarios with erroneous or inappropriate values
+    "y_true='invalid', y_pred='invalid'", 
+    "y_true=[], y_pred=[]"
+]
+
 tf_keras_losses_mean_absolute_percentage_error_Mutation_List = [    
     "","y_true,y_pred","y_pred,y_true",
     # Scenarios with erroneous or inappropriate values
@@ -2665,7 +2676,21 @@ tf_optimizers_deserialize_Mutation_List = [
     # Scenarios with erroneous or inappropriate values
     "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
 ]
-
+tf_optimizers_get_Mutation_List = [
+    # Typical parameter combinations with different optimizer names
+    "optimizer_name='SGD'",
+    "optimizer_name='sgd'",
+    "optimizer_name='RMSprop'",
+    "optimizer_name='Adam'",
+    "optimizer_name='Adadelta'",
+    "optimizer_name='Adagrad'",
+    "optimizer_name='Adamax'",
+    "optimizer_name='Nadam'",
+    "optimizer_name='Ftrl'",
+    # Scenarios with erroneous or inappropriate values
+    "optimizer_name='invalid'",  # Non-existent optimizer name
+    "optimizer_name=None"        # None as an optimizer name
+]
 tf_keras_optimizers_legacy_Adadelta_Mutation_List = [
     # Typical parameter combinations
     "learning_rate=1.0, rho=0.95", "learning_rate=0.5, rho=0.9", "learning_rate=0.1, rho=0.85",

@@ -455,234 +455,240 @@ def layer_select_mutate(mutate_selected_parameters,source_code ):
             layer_name = "MeanAbsolutePercentageError"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
         elif mutate_selected_parameters == "losses.MeanSquaredError()":
-            change_parameter_with = "tf.keras.losses.MeanSquaredError()"
+            change_parameter_with = mutation_library.tf_keras_losses_MeanSquaredError_Mutation_List
             layer_name = "MeanSquaredError"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
         elif mutate_selected_parameters == "losses.MeanSquaredLogarithmicError()":
-            change_parameter_with = "tf.keras.losses.MeanSquaredLogarithmicError()"
+            change_parameter_with = mutation_library.tf_keras_losses_MeanSquaredLogarithmicError_Mutation_List
             layer_name = "MeanSquaredLogarithmicError"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
         elif mutate_selected_parameters == "losses.Poisson()":
-            change_parameter_with = "tf.keras.losses.Poisson()"
+            change_parameter_with = mutation_library.tf_keras_losses_Poisson_Mutation_List
             layer_name = "Poisson"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
         elif mutate_selected_parameters == "losses.Reduction()":
-            change_parameter_with = "tf.keras.losses.Reduction()"
+            change_parameter_with = mutation_library.tf_keras_losses_Reduction_Mutation_List
             layer_name = "Reduction"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
         elif mutate_selected_parameters == "losses.SparseCategoricalCrossentropy()":
-            change_parameter_with = "tf.keras.losses.SparseCategoricalCrossentropy()"
+            change_parameter_with = mutation_library.tf_keras_losses_SparseCategoricalCrossentropy_Mutation_List
             layer_name = "SparseCategoricalCrossentropy"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
         elif mutate_selected_parameters == "losses.SquaredHinge()":
-            change_parameter_with = "tf.keras.losses.SquaredHinge()"
+            change_parameter_with = mutation_library.tf_keras_losses_SquaredHinge_Mutation_List
             layer_name = "SquaredHinge"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
         elif mutate_selected_parameters == "losses.binary_crossentropy()":
-            change_parameter_with = "tf.keras.losses.binary_crossentropy()"
+            change_parameter_with = mutation_library.tf_keras_losses_binary_crossentropy_Mutation_List
             layer_name = "binary_crossentropy"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        
         elif mutate_selected_parameters == "losses.binary_focal_crossentropy()":
-            change_parameter_with = "tf.keras.losses.binary_focal_crossentropy()"
+            change_parameter_with = mutation_library.tf_keras_losses_binary_focal_crossentropy_Mutation_List
             layer_name = "binary_focal_crossentropy"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        
         elif mutate_selected_parameters == "losses.categorical_crossentropy()":
-            change_parameter_with = "tf.keras.losses.categorical_crossentropy()"
+            change_parameter_with = mutation_library.tf_keras_losses_categorical_crossentropy_Mutation_List
             layer_name = "categorical_crossentropy"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        
         elif mutate_selected_parameters == "losses.categorical_focal_crossentropy()":
-            change_parameter_with = "tf.keras.losses.categorical_focal_crossentropy()"
+            change_parameter_with = mutation_library.tf_keras_losses_categorical_focal_crossentropy_Mutation_List
             layer_name = "categorical_focal_crossentropy"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        
         elif mutate_selected_parameters == "losses.categorical_hinge()":
-            change_parameter_with = "tf.keras.losses.categorical_hinge()"
+            change_parameter_with = mutation_library.tf_keras_losses_categorical_hinge_Mutation_List
             layer_name = "categorical_hinge"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        
         elif mutate_selected_parameters == "losses.cosine_similarity()":
-            change_parameter_with = "tf.keras.losses.cosine_similarity()"
+            change_parameter_with = mutation_library.tf_keras_losses_cosine_similarity_Mutation_List
             layer_name = "cosine_similarity"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
+        
         elif mutate_selected_parameters == "losses.deserialize()":
-            change_parameter_with = "tf.keras.losses.deserialize()"
+            change_parameter_with = mutation_library.tf_keras_losses_deserialize_Mutation_List
             layer_name = "deserialize"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
         elif mutate_selected_parameters == "losses.get()":
-            change_parameter_with = "tf.keras.losses.get()"
+            change_parameter_with = mutation_library.tf_keras_losses_get_Mutation_List
             layer_name = "get"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
         elif mutate_selected_parameters == "losses.hinge()":
-            change_parameter_with = "tf.keras.losses.hinge()"
+            change_parameter_with = mutation_library.tf_keras_losses_hinge_Mutation_List
             layer_name = "hinge"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
         elif mutate_selected_parameters == "losses.huber()":
-            change_parameter_with = "tf.keras.losses.huber()"
+            change_parameter_with = mutation_library.tf_keras_losses_huber_Mutation_List
             layer_name = "huber"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
         elif mutate_selected_parameters == "losses.kl_divergence()":
-            change_parameter_with = "tf.keras.losses.kl_divergence()"
+            change_parameter_with = mutation_library.tf_keras_losses_kl_divergence_Mutation_List
             layer_name = "kl_divergence"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
         elif mutate_selected_parameters == "losses.kld()":
-            change_parameter_with = "tf.keras.losses.kld()"
+            change_parameter_with = mutation_library.tf_keras_losses_kld_Mutation_List
             layer_name = "kld"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
         elif mutate_selected_parameters == "losses.kullback_leibler_divergence()":
-            change_parameter_with = "tf.keras.losses.kullback_leibler_divergence()"
+            change_parameter_with = mutation_library.tf_keras_losses_kullback_leibler_divergence_Mutation_List
             layer_name = "kullback_leibler_divergence"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
         elif mutate_selected_parameters == "losses.log_cosh()":
-            change_parameter_with = "tf.keras.losses.log_cosh()"
+            change_parameter_with = mutation_library.tf_keras_losses_log_cosh_Mutation_List
             layer_name = "log_cosh"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
         elif mutate_selected_parameters == "losses.logcosh()":
-            change_parameter_with = "tf.keras.losses.logcosh()"
+            change_parameter_with = mutation_library.tf_keras_losses_logcosh_Mutation_List
             layer_name = "logcosh"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
         elif mutate_selected_parameters == "losses.mae()":
-            change_parameter_with = "tf.keras.losses.mae()"
+            change_parameter_with = mutation_library.tf_keras_losses_mae_Mutation_List
             layer_name = "mae"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
         elif mutate_selected_parameters == "losses.mape()":
-            change_parameter_with = "tf.keras.losses.mape()"
+            change_parameter_with = mutation_library.tf_keras_losses_mape_Mutation_List
             layer_name = "mape"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
         elif mutate_selected_parameters == "losses.mean_absolute_error()":
-            change_parameter_with = "tf.keras.losses.mean_absolute_error()"
+            change_parameter_with = mutation_library.tf_losses_mean_absolute_error_Mutation_List
             layer_name = "mean_absolute_error"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
         elif mutate_selected_parameters == "losses.mean_absolute_percentage_error()":
-            change_parameter_with = "tf.keras.losses.mean_absolute_percentage_error()"
+            change_parameter_with = mutation_library.tf_keras_losses_mean_absolute_percentage_error_Mutation_List
             layer_name = "mean_absolute_percentage_error"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
         elif mutate_selected_parameters == "losses.mean_squared_error()":
-            change_parameter_with = "tf.keras.losses.mean_squared_error()"
+            change_parameter_with = mutation_library.tf_keras_losses_mean_squared_error_Mutation_List
             layer_name = "mean_squared_error"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
         elif mutate_selected_parameters == "losses.mean_squared_logarithmic_error()":
-            change_parameter_with = "tf.keras.losses.mean_squared_logarithmic_error()"
+            change_parameter_with = mutation_library.tf_keras_losses_mean_squared_logarithmic_error_Mutation_List
             layer_name = "mean_squared_logarithmic_error"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
         elif mutate_selected_parameters == "losses.mse()":
-            change_parameter_with = "tf.keras.losses.mse()"
+            change_parameter_with = mutation_library.tf_keras_losses_mse_Mutation_List
             layer_name = "mse"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
         elif mutate_selected_parameters == "losses.msle()":
-            change_parameter_with = "tf.keras.losses.msle()"
+            change_parameter_with = mutation_library.tf_keras_losses_msle_Mutation_List
             layer_name = "msle"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
         elif mutate_selected_parameters == "losses.poisson()":
-            change_parameter_with = "tf.keras.losses.poisson()"
+            change_parameter_with = mutation_library.tf_keras_losses_poisson_Mutation_List
             layer_name = "poisson"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
         elif mutate_selected_parameters == "losses.serialize()":
-            change_parameter_with = "tf.keras.losses.serialize()"
+            change_parameter_with = mutation_library.tf_keras_losses_serialize_Mutation_List
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
         elif mutate_selected_parameters == "losses.sparse_categorical_crossentropy()":
-            change_parameter_with = "tf.keras.losses.sparse_categorical_crossentropy()"
+            change_parameter_with = mutation_library.tf_keras_losses_sparse_categorical_crossentropy_Mutation_List
             layer_name = "sparse_categorical_crossentropy"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
         elif mutate_selected_parameters == "losses.squared_hinge()":
-            change_parameter_with = "tf.keras.losses.squared_hinge()"
+            change_parameter_with = mutation_library.tf_keras_losses_squared_hinge_Mutation_List
             layer_name = "squared_hinge"
             mutated_line = mutator.modify_tf_losses_in_code(source_code, layer_name, change_parameter_with)
         
         # optimizers
 
         elif mutate_selected_parameters == "optimizers.Adadelta()":
-            change_parameter_with = "tf.keras.optimizers.Adadelta()"
+            change_parameter_with = mutation_library.tf_keras_optimizers_Adadelta_Mutation_List
             optimizer_name = "Adadelta"
             mutated_line = mutator.modify_tf_optimizers_in_code(source_code, optimizer_name, change_parameter_with)
         elif mutate_selected_parameters == "optimizers.Adafactor()":
-            change_parameter_with = "tf.keras.optimizers.Adafactor()"
+            change_parameter_with = mutation_library.tf_keras_optimizers_Adafactor_Mutation_List
             optimizer_name = "Adafactor"
             mutated_line = mutator.modify_tf_optimizers_in_code(source_code, optimizer_name, change_parameter_with)
         elif mutate_selected_parameters == "optimizers.Adagrad()":
-            change_parameter_with = "tf.keras.optimizers.Adagrad()"
+            change_parameter_with = mutation_library.tf_keras_optimizers_Adagrad_Mutation_List
             optimizer_name = "Adagrad"
             mutated_line = mutator.modify_tf_optimizers_in_code(source_code, optimizer_name, change_parameter_with)
         elif mutate_selected_parameters == "optimizers.Adam()":
-            change_parameter_with = "tf.keras.optimizers.Adam()"
+            change_parameter_with = mutation_library.tf_keras_optimizers_Adam_Mutation_List
             optimizer_name = "Adam"
             mutated_line = mutator.modify_tf_optimizers_in_code(source_code, optimizer_name, change_parameter_with)
         elif mutate_selected_parameters == "optimizers.Adamax()":
-            change_parameter_with = "tf.keras.optimizers.Adamax()"
+            change_parameter_with = mutation_library.tf_keras_optimizers_Adamax_Mutation_List
             optimizer_name = "Adamax"
             mutated_line = mutator.modify_tf_optimizers_in_code(source_code, optimizer_name, change_parameter_with)
         elif mutate_selected_parameters == "optimizers.Ftrl()":
-            change_parameter_with = "tf.keras.optimizers.Ftrl()"
+            change_parameter_with = mutation_library.tf_keras_optimizers_Ftrl_Mutation_List
             optimizer_name = "Ftrl"
             mutated_line = mutator.modify_tf_optimizers_in_code(source_code, optimizer_name, change_parameter_with)
         elif mutate_selected_parameters == "optimizers.Nadam()":
-            change_parameter_with = "tf.keras.optimizers.Nadam()"
+            change_parameter_with = mutation_library.tf_keras_optimizers_Nadam_Mutation_List
             optimizer_name = "Nadam"
             mutated_line = mutator.modify_tf_optimizers_in_code(source_code, optimizer_name, change_parameter_with)
         elif mutate_selected_parameters == "optimizers.RMSprop()":
-            change_parameter_with = "tf.keras.optimizers.RMSprop()"
+            change_parameter_with = mutation_library.tf_keras_optimizers_RMSprop_Mutation_List
             optimizer_name = "RMSprop"
             mutated_line = mutator.modify_tf_optimizers_in_code(source_code, optimizer_name, change_parameter_with)
         elif mutate_selected_parameters == "optimizers.SGD()":
-            change_parameter_with = "tf.keras.optimizers.SGD()"
+            change_parameter_with = mutation_library.tf_keras_optimizers_SGD_Mutation_List
             optimizer_name = "SGD"
             mutated_line = mutator.modify_tf_optimizers_in_code(source_code, optimizer_name, change_parameter_with)
         elif mutate_selected_parameters == "optimizers.deserialize()":
-            change_parameter_with = "tf.optimizers.deserialize()"
+            change_parameter_with = mutation_library.tf_optimizers_deserialize_Mutation_List
             optimizer_name = "deserialize"
             mutated_line = mutator.modify_tf_optimizers_in_code(source_code, optimizer_name, change_parameter_with)         
         elif mutate_selected_parameters == "optimizers.get()":
-            change_parameter_with = "tf.optimizers.get()"
+            change_parameter_with = mutation_library.tf_optimizers_get_Mutation_List
             optimizer_name = "get"
             mutated_line = mutator.modify_tf_optimizers_in_code(source_code, optimizer_name, change_parameter_with)         
 
         elif mutate_selected_parameters == "optimizers.legacy.Adadelta()":
-            change_parameter_with = "tf.keras.optimizers.legacy.Adadelta()"
+            change_parameter_with = mutation_library.tf_keras_optimizers_legacy_Adadelta_Mutation_List
             optimizer_name = "Adadelta"
             mutated_line = mutator.modify_tf_optimizers_in_code(source_code, optimizer_name, change_parameter_with)
         elif mutate_selected_parameters == "optimizers.legacy.Adagrad()":
-            change_parameter_with = "tf.keras.optimizers.legacy.Adagrad()"
+            change_parameter_with = mutation_library.tf_keras_optimizers_legacy_Adagrad_Mutation_List
             optimizer_name = "Adagrad"
             mutated_line = mutator.modify_tf_optimizers_in_code(source_code, optimizer_name, change_parameter_with)
         elif mutate_selected_parameters == "optimizers.legacy.Adam()":
-            change_parameter_with = "tf.keras.optimizers.legacy.Adam()"
+            change_parameter_with = mutation_library.tf_keras_optimizers_legacy_Adam_Mutation_List
             optimizer_name = "Adam"
             mutated_line = mutator.modify_tf_optimizers_in_code(source_code, optimizer_name, change_parameter_with)
         elif mutate_selected_parameters == "optimizers.legacy.Adamax()":
-            change_parameter_with = "tf.keras.optimizers.legacy.Adamax()"
+            change_parameter_with = mutation_library.tf_keras_optimizers_legacy_Adamax_Mutation_List
             optimizer_name = "Adamax"
             mutated_line = mutator.modify_tf_optimizers_in_code(source_code, optimizer_name, change_parameter_with)
         elif mutate_selected_parameters == "optimizers.legacy.Ftrl()":
-            change_parameter_with = "tf.keras.optimizers.legacy.Ftrl()"
+            change_parameter_with = mutation_library.tf_keras_optimizers_legacy_Ftrl_Mutation_List
             optimizer_name = "Ftrl"
             mutated_line = mutator.modify_tf_optimizers_in_code(source_code, optimizer_name, change_parameter_with)
         elif mutate_selected_parameters == "optimizers.legacy.Nadam()":
-            change_parameter_with = "tf.keras.optimizers.legacy.Nadam()"
+            change_parameter_with = mutation_library.tf_keras_optimizers_legacy_Nadam_Mutation_List
             optimizer_name = "Nadam"
             mutated_line = mutator.modify_tf_optimizers_in_code(source_code, optimizer_name, change_parameter_with)
         elif mutate_selected_parameters == "optimizers.legacy.RMSprop()":
-            change_parameter_with = "tf.keras.optimizers.legacy.RMSprop()"
+            change_parameter_with = mutation_library.tf_keras_optimizers_legacy_RMSprop_Mutation_List
             optimizer_name = "RMSprop"
             mutated_line = mutator.modify_tf_optimizers_in_code(source_code, optimizer_name, change_parameter_with)
         elif mutate_selected_parameters == "optimizers.legacy.SGD()":
-            change_parameter_with = "tf.keras.optimizers.legacy.SGD()"
+            change_parameter_with = mutation_library.tf_keras_optimizers_legacy_SGD_Mutation_List
             optimizer_name = "SGD"
             mutated_line = mutator.modify_tf_optimizers_in_code(source_code, optimizer_name, change_parameter_with)
         elif mutate_selected_parameters == "optimizers.schedules.CosineDecay()":
-            change_parameter_with = "tf.keras.optimizers.schedules.CosineDecay()"
+            change_parameter_with = mutation_library.tf_keras_optimizers_schedules_CosineDecay_Mutation_List
             optimizer_name = "CosineDecay"
             mutated_line = mutator.modify_tf_optimizers_in_code(source_code, optimizer_name, change_parameter_with)
         elif mutate_selected_parameters == "optimizers.schedules.ExponentialDecay()":
-            change_parameter_with = "tf.keras.optimizers.schedules.ExponentialDecay()"
+            change_parameter_with = mutation_library.tf_keras_optimizers_schedules_ExponentialDecay_Mutation_List
             optimizer_name = "ExponentialDecay"
             mutated_line = mutator.modify_tf_optimizers_in_code(source_code, optimizer_name, change_parameter_with)
         elif mutate_selected_parameters == "optimizers.schedules.PolynomialDecay()":
-            change_parameter_with = "tf.keras.optimizers.schedules.PolynomialDecay()"
+            change_parameter_with = mutation_library.tf_keras_optimizers_schedules_PolynomialDecay_Mutation_List
             optimizer_name = "schedules.PolynomialDecay"
             mutated_line = mutator.modify_tf_optimizers_in_code(source_code, optimizer_name, change_parameter_with)
         elif mutate_selected_parameters == "optimizers.schedules.deserialize()":
-            change_parameter_with = "tf.keras.optimizers.schedules.deserialize()"
+            change_parameter_with = mutation_library.tf_keras_optimizers_schedules_Deserialize_Mutation_List
             optimizer_name = "schedules.deserialize"
             mutated_line = mutator.modify_tf_optimizers_in_code(source_code, optimizer_name, change_parameter_with)       
         elif mutate_selected_parameters == "optimizers.schedules.serialize()":
-            change_parameter_with = "tf.keras.optimizers.schedules.serialize()"
+            change_parameter_with = mutation_library.tf_keras_optimizers_schedules_Serialize_Mutation_List
             optimizer_name = "schedules.serialize"
             mutated_line = mutator.modify_tf_optimizers_in_code(source_code, optimizer_name, change_parameter_with)   
         
@@ -690,51 +696,51 @@ def layer_select_mutate(mutate_selected_parameters,source_code ):
 
 
         elif mutate_selected_parameters == "nn.RNNCellDeviceWrapper":
-            change_parameter_with = "tf.nn.RNNCellDeviceWrapper()"
+            change_parameter_with = mutation_library.tf_nn_RNNCellDeviceWrapper_Mutation_List
             function_name = "RNNCellDeviceWrapper"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.RNNCellDropoutWrapper":
-            change_parameter_with = "tf.nn.RNNCellDropoutWrapper()"
+            change_parameter_with = mutation_library.tf_nn_RNNCellDropoutWrapper_Mutation_List
             function_name = "RNNCellDropoutWrapper"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.RNNCellResidualWrapper":
-            change_parameter_with = "tf.nn.RNNCellResidualWrapper()"
+            change_parameter_with = mutation_library.tf_nn_RNNCellResidualWrapper_Mutation_List
             function_name = "RNNCellResidualWrapper"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.all_candidate_sampler":
-            change_parameter_with = "tf.nn.all_candidate_sampler()"
+            change_parameter_with = mutation_library.tf_nn_all_candidate_sampler_Mutation_List
             function_name = "all_candidate_sampler"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.approx_max_k":
-            change_parameter_with = "tf.nn.approx_max_k()"
+            change_parameter_with = mutation_library.tf_nn_approx_max_k_Mutation_List
             function_name = "approx_max_k"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.approx_min_k":
-            change_parameter_with = "tf.nn.approx_min_k()"
+            change_parameter_with = mutation_library.tf_nn_approx_min_k_Mutation_List
             function_name = "approx_min_k"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.atrous_conv2d":
-            change_parameter_with = "tf.nn.atrous_conv2d()"
+            change_parameter_with = mutation_library.tf_nn_atrous_conv2d_Mutation_List
             function_name = "atrous_conv2d"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.atrous_conv2d_transpose":
-            change_parameter_with = "tf.nn.atrous_conv2d_transpose()"
+            change_parameter_with = mutation_library.tf_nn_atrous_conv2d_transpose_Mutation_List
             function_name = "atrous_conv2d_transpose"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.avg_pool":
-            change_parameter_with = "tf.nn.avg_pool()"
+            change_parameter_with = mutation_library.tf_nn_avg_pool_Mutation_List
             function_name = "avg_pool"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.avg_pool1d":
-            change_parameter_with = "tf.nn.avg_pool1d()"
+            change_parameter_with = mutation_library.tf_nn_avg_pool1d_Mutation_List
             function_name = "avg_pool1d"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.avg_pool2d":
-            change_parameter_with = "tf.nn.avg_pool2d()"
+            change_parameter_with = mutation_library.tf_nn_avg_pool2d_Mutation_List
             function_name = "avg_pool2d"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.avg_pool3d":
-            change_parameter_with = "tf.nn.avg_pool3d()"
+            change_parameter_with = mutation_library.tf_nn_avg_pool3d_Mutation_List
             function_name = "avg_pool3d"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.batch_norm_with_global_normalization":
