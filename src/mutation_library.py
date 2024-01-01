@@ -2657,7 +2657,8 @@ tf_keras_optimizers_RMSprop_Mutation_List = [
     "learning_rate=0, rho=1.1, momentum=1.1"
 ]
 
-# SGD optimizer's typical and erroneous parameter combinations
+# 
+#  optimizer's typical and erroneous parameter combinations
 tf_keras_optimizers_SGD_Mutation_List = [
     # Typical parameter combinations
     "learning_rate=0.01, momentum=0.0, nesterov=False",
@@ -2667,7 +2668,32 @@ tf_keras_optimizers_SGD_Mutation_List = [
     "learning_rate='invalid', momentum=-1, nesterov='invalid'",
     "learning_rate=0, momentum=1.1, nesterov=False"
 ]
+tf_keras_optimizers_schedules_CosineDecay_Mutation_List = [
+    # Typical parameter combinations
+    "initial_learning_rate=0.1, decay_steps=1000, alpha=0.0", 
+    "initial_learning_rate=0.01, decay_steps=100, alpha=0.5",
+    # Scenarios with erroneous or inappropriate values
+    "initial_learning_rate='invalid', decay_steps=-100, alpha=-0.5", 
+    "initial_learning_rate=0, decay_steps=0, alpha=1.1"
+]
 
+tf_keras_optimizers_schedules_ExponentialDecay_Mutation_List = [
+    # Typical parameter combinations
+    "initial_learning_rate=0.1, decay_steps=1000, decay_rate=0.9, staircase=False", 
+    "initial_learning_rate=0.01, decay_steps=100, decay_rate=0.95, staircase=True",
+    # Scenarios with erroneous or inappropriate values
+    "initial_learning_rate='invalid', decay_steps=-100, decay_rate=-0.5, staircase='invalid'", 
+    "initial_learning_rate=0, decay_steps=0, decay_rate=1.1, staircase=False"
+]
+
+tf_keras_optimizers_schedules_PolynomialDecay_Mutation_List = [
+    # Typical parameter combinations
+    "initial_learning_rate=0.1, decay_steps=1000, end_learning_rate=0.01, power=1.0, cycle=False", 
+    "initial_learning_rate=0.01, decay_steps=100, end_learning_rate=0.001, power=0.5, cycle=True",
+    # Scenarios with erroneous or inappropriate values
+    "initial_learning_rate='invalid', decay_steps=-100, end_learning_rate=-0.01, power='invalid', cycle='invalid'", 
+    "initial_learning_rate=0, decay_steps=0, end_learning_rate=1.1, power=0, cycle=False"
+]
 # Optimizer deserialize function's typical and erroneous parameter combinations
 tf_optimizers_deserialize_Mutation_List = [
     # deserialize does not have parameters
@@ -2676,6 +2702,7 @@ tf_optimizers_deserialize_Mutation_List = [
     # Scenarios with erroneous or inappropriate values
     "invalid_param='invalid'", "1, 2, 3", "use_bias=True", "activation='relu'", "dropout=0.3"
 ]
+
 tf_optimizers_get_Mutation_List = [
     # Typical parameter combinations with different optimizer names
     "optimizer_name='SGD'",
@@ -3391,6 +3418,33 @@ tf_nn_safe_embedding_lookup_sparse_Mutation_List = [
     "embedding_matrix='invalid', sp_ids='invalid', sp_weights='invalid'", 
     "embedding_matrix=[], sp_ids=[], sp_weights=[]"
 ]
+tf_nn_sampled_softmax_loss_Mutation_List = [
+    # Typical parameter combinations
+    "weights=[[0.1, 0.2], [0.3, 0.4]], biases=[0.1, 0.2], labels=[[1, 2]], inputs=[[0.1, 0.2]], num_sampled=2, num_classes=4",
+    "weights=[[0.5, 0.6], [0.7, 0.8]], biases=[0.3, 0.4], labels=[[3, 4]], inputs=[[0.3, 0.4]], num_sampled=3, num_classes=5",
+    # Scenarios with erroneous or inappropriate values
+    "weights='invalid', biases='invalid', labels='invalid', inputs='invalid', num_sampled=-1, num_classes=-1",
+    "weights=[], biases=[], labels=[], inputs=[], num_sampled=0, num_classes=0"
+]
+
+tf_nn_scale_regularization_loss_Mutation_List = [
+    # Typical parameter combinations (As this function is used to scale regularization loss, examples will be generic)
+    "loss=0.1, regularization_amount=0.01",
+    "loss=0.2, regularization_amount=0.02",
+    # Scenarios with erroneous or inappropriate values
+    "loss='invalid', regularization_amount='invalid'",
+    "loss=0, regularization_amount=0"
+]
+
+tf_nn_selu_Mutation_List = [
+    # Typical parameter combinations
+    "features=[0.1, 0.2, 0.3]",
+    "features=[-0.1, -0.2, -0.3]",
+    # Scenarios with erroneous or inappropriate values
+    "features='invalid'",
+    "features=[]"
+]
+
 tf_nn_separable_conv2d_Mutation_List = [
     # Typical parameter combinations
     "input=[[1, 2], [3, 4]], depthwise_filter=[[1, 0], [0, 1]], pointwise_filter=[[1, 1], [1, 1]], strides=[1, 1], padding='VALID'",
@@ -3654,6 +3708,14 @@ tf_raw_ops_Conv2DBackpropInput_Mutation_List = [
     "input_sizes='invalid', filter='invalid', out_backprop='invalid', strides='invalid', padding='invalid'",
     "input_sizes=[], filter=[], out_backprop=[], strides=[], padding='SAME'"
 ]
+tf_raw_ops_Conv2DBackpropInput_Mutation_List = [
+    # Typical parameter combinations
+    "input_sizes=[1, 5, 5, 1], filter=[[1, 1, 1, 1], [1, 1, 1, 1]], out_backprop=[[1, 2], [3, 4]], strides=[1, 1, 1, 1], padding='VALID'",
+    "input_sizes=[1, 5, 5, 1], filter=[[2, 2, 1, 1], [2, 2, 1, 1]], out_backprop=[[2, 3], [4, 5]], strides=[1, 2, 2, 1], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input_sizes='invalid', filter='invalid', out_backprop='invalid', strides='invalid', padding='invalid'",
+    "input_sizes=[], filter=[], out_backprop=[], strides=[], padding='SAME'"
+]
 
 tf_raw_ops_Conv3D_Mutation_List = [
     # Typical parameter combinations
@@ -3663,7 +3725,23 @@ tf_raw_ops_Conv3D_Mutation_List = [
     "input='invalid', filter='invalid', strides=[-1, -1, -1], padding='invalid'",
     "input=[], filter=[], strides=[0, 0, 0], padding='SAME'"
 ]
+tf_raw_ops_Conv2DBackpropFilterV2_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], filter_sizes=[2, 2], out_backprop=[[1, 0], [0, 1]], strides=[1, 1], padding='VALID'", 
+    "input=[[2, 3], [4, 5]], filter_sizes=[3, 3], out_backprop=[[1, 1], [1, 1]], strides=[2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filter_sizes='invalid', out_backprop='invalid', strides='invalid', padding='invalid'", 
+    "input=[], filter_sizes=[], out_backprop=[], strides=[], padding='SAME'"
+]
 
+tf_raw_ops_Conv2DBackpropInputV2_Mutation_List = [
+    # Typical parameter combinations
+    "input_sizes=[2, 2], filter=[[1, 0], [0, 1]], out_backprop=[[1, 0], [0, 1]], strides=[1, 1], padding='VALID'", 
+    "input_sizes=[3, 3], filter=[[1, 1], [1, 1]], out_backprop=[[1, 1], [1, 1]], strides=[2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input_sizes='invalid', filter='invalid', out_backprop='invalid', strides='invalid', padding='invalid'", 
+    "input_sizes=[], filter=[], out_backprop=[], strides=[], padding='SAME'"
+]
 tf_raw_ops_Conv3DBackpropFilter_Mutation_List = [
     # Typical parameter combinations
     "input_sizes=[10, 10, 10, 3, 3], filter_sizes=[3, 3, 3, 3, 3], out_backprop=[[1, 2, 3], [4, 5, 6]], strides=[1, 1, 1], padding='VALID'",

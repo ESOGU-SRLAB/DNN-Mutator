@@ -744,316 +744,316 @@ def layer_select_mutate(mutate_selected_parameters,source_code ):
             function_name = "avg_pool3d"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.batch_norm_with_global_normalization":
-            change_parameter_with = "tf.nn.batch_norm_with_global_normalization()"
+            change_parameter_with = mutation_library.tf_nn_batch_norm_with_global_normalization_Mutation_List
             function_name = "batch_norm_with_global_normalization"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.batch_normalization":
-            change_parameter_with = "tf.nn.batch_normalization()"
+            change_parameter_with = mutation_library.tf_nn_batch_normalization_Mutation_List
             function_name = "batch_normalization"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.bias_add":
-            change_parameter_with = "tf.nn.bias_add()"
+            change_parameter_with = mutation_library.tf_nn_bias_add_Mutation_List
             function_name = "bias_add"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.collapse_repeated()":
-            change_parameter_with = "tf.nn.collapse_repeated()"
+            change_parameter_with = mutation_library.tf_nn_collapse_repeated_Mutation_List
             function_name = "collapse_repeated"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.compute_accidental_hits()":
-            change_parameter_with = "tf.nn.compute_accidental_hits()"
+            change_parameter_with = mutation_library.tf_nn_compute_accidental_hits_Mutation_List
             function_name = "compute_accidental_hits"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.compute_average_loss":
-            change_parameter_with = "tf.nn.compute_average_loss()"
+            change_parameter_with = mutation_library.tf_nn_compute_average_loss_Mutation_List
             function_name = "compute_average_loss"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.conv1d":
-            change_parameter_with = "tf.nn.conv1d()"
+            change_parameter_with = mutation_library.tf_nn_conv1d_Mutation_List
             function_name = "conv1d"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.conv1d_transpose":
-            change_parameter_with = "tf.nn.conv1d_transpose()"
+            change_parameter_with = mutation_library.tf_nn_conv1d_transpose_Mutation_List
             function_name = "conv1d_transpose"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
 
 
         elif mutate_selected_parameters == "nn.conv2d":
-            change_parameter_with = "tf.nn.conv2d()"
+            change_parameter_with = mutation_library.tf_nn_conv2d_Mutation_List
             function_name = "conv2d"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.conv2d_transpose":
-            change_parameter_with = "tf.nn.conv2d_transpose()"
+            change_parameter_with = mutation_library.tf_nn_conv2d_transpose_Mutation_List
             function_name = "conv2d_transpose"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.conv3d":
-            change_parameter_with = "tf.nn.conv3d()"
+            change_parameter_with = mutation_library.tf_nn_conv3d_Mutation_List
             function_name = "conv3d"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.conv3d_transpose":
-            change_parameter_with = "tf.nn.conv3d_transpose()"
+            change_parameter_with = mutation_library.tf_nn_conv3d_transpose_Mutation_List
             function_name = "conv3d_transpose"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.conv_transpose":
-            change_parameter_with = "tf.nn.conv_transpose()"
+            change_parameter_with = mutation_library.tf_nn_conv_transpose_Mutation_List
             function_name = "conv_transpose"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.convolution":
-            change_parameter_with = "tf.nn.convolution()"
+            change_parameter_with = mutation_library.tf_nn_convolution_Mutation_List
             function_name = "convolution"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.crelu":
-            change_parameter_with = "tf.nn.crelu()"
+            change_parameter_with = mutation_library.tf_nn_crelu_Mutation_List
             function_name = "crelu"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.ctc_beam_search_decoder":
-            change_parameter_with = "tf.nn.ctc_beam_search_decoder()"
+            change_parameter_with = mutation_library.tf_nn_ctc_beam_search_decoder_Mutation_List
             function_name = "ctc_beam_search_decoder"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.ctc_greedy_decoder":
-            change_parameter_with = "tf.nn.ctc_greedy_decoder()"
+            change_parameter_with = mutation_library.tf_nn_ctc_greedy_decoder_Mutation_List
             function_name = "ctc_greedy_decoder"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.ctc_loss":
-            change_parameter_with = "tf.nn.ctc_loss()"
+            change_parameter_with = mutation_library.tf_nn_ctc_loss_Mutation_List
             function_name = "ctc_loss"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.ctc_unique_labels":
-            change_parameter_with = "tf.nn.ctc_unique_labels()"
+            change_parameter_with = mutation_library.tf_nn_ctc_unique_labels_Mutation_List
             function_name = "ctc_unique_labels"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.depth_to_space":
-            change_parameter_with = "tf.nn.depth_to_space()"
+            change_parameter_with = mutation_library.tf_nn_depth_to_space_Mutation_List
             function_name = "depth_to_space"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.depthwise_conv2d":
-            change_parameter_with = "tf.nn.depthwise_conv2d()"
+            change_parameter_with = mutation_library.tf_nn_depthwise_conv2d_Mutation_List
             function_name = "depthwise_conv2d"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.depthwise_conv2d_backprop_filter":
-            change_parameter_with = "tf.nn.depthwise_conv2d_backprop_filter()"
+            change_parameter_with = mutation_library.tf_nn_depthwise_conv2d_backprop_filter_Mutation_List
             function_name = "depthwise_conv2d_backprop_filter"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.depthwise_conv2d_backprop_input":
-            change_parameter_with = "tf.nn.depthwise_conv2d_backprop_input()"
+            change_parameter_with = mutation_library.tf_nn_depthwise_conv2d_backprop_input_Mutation_List
             function_name = "depthwise_conv2d_backprop_input"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.dilation2d":
-            change_parameter_with = "tf.nn.dilation2d()"
+            change_parameter_with = mutation_library.tf_nn_dilation2d_Mutation_List
             function_name = "dilation2d"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.dropout":
-            change_parameter_with = "tf.nn.dropout()"
+            change_parameter_with = mutation_library.tf_nn_dropout_Mutation_List
             function_name = "dropout"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.elu":
-            change_parameter_with = "tf.nn.elu()"
+            change_parameter_with = mutation_library.tf_nn_elu_Mutation_List
             function_name = "elu"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.embedding_lookup":
-            change_parameter_with = "tf.nn.embedding_lookup()"
+            change_parameter_with = mutation_library.tf_nn_embedding_lookup_Mutation_List
             function_name = "embedding_lookup"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.embedding_lookup_sparse":
-            change_parameter_with = "tf.nn.embedding_lookup_sparse()"
+            change_parameter_with = mutation_library.tf_nn_embedding_lookup_sparse_Mutation_List
             function_name = "embedding_lookup_sparse"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.erosion2d":
-            change_parameter_with = "tf.nn.erosion2d()"
+            change_parameter_with = mutation_library.tf_nn_erosion2d_Mutation_List
             function_name = "erosion2d"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.fixed_unigram_candidate_sampler":
-            change_parameter_with = "tf.nn.fixed_unigram_candidate_sampler()"
+            change_parameter_with = mutation_library.tf_nn_fixed_unigram_candidate_sampler_Mutation_List
             function_name = "fixed_unigram_candidate_sampler"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
 # ...
 
         elif mutate_selected_parameters == "nn.fractional_avg_pool":
-            change_parameter_with = "tf.nn.fractional_avg_pool()"
+            change_parameter_with = mutation_library.tf_nn_fractional_avg_pool_Mutation_List
             function_name = "fractional_avg_pool"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.fractional_max_pool":
-            change_parameter_with = "tf.nn.fractional_max_pool()"
+            change_parameter_with = mutation_library.tf_nn_fractional_max_pool_Mutation_List
             function_name = "fractional_max_pool"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.gelu":
-            change_parameter_with = "tf.nn.gelu()"
+            change_parameter_with = mutation_library.tf_nn_gelu_Mutation_List
             function_name = "gelu"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.in_top_k":
-            change_parameter_with = "tf.nn.in_top_k()"
+            change_parameter_with = mutation_library.tf_nn_in_top_k_Mutation_List
             function_name = "in_top_k"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.isotonic_regression":
-            change_parameter_with = "tf.nn.isotonic_regression()"
+            change_parameter_with = mutation_library.tf_nn_isotonic_regression_Mutation_List
             function_name = "isotonic_regression"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.l2_loss":
-            change_parameter_with = "tf.nn.l2_loss()"
+            change_parameter_with = mutation_library.tf_nn_l2_loss_Mutation_List
             function_name = "l2_loss"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.l2_normalize":
-            change_parameter_with = "tf.nn.l2_normalize()"
+            change_parameter_with = mutation_library.tf_nn_l2_normalize_Mutation_List
             function_name = "l2_normalize"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.leaky_relu":
-            change_parameter_with = "tf.nn.leaky_relu()"
+            change_parameter_with = mutation_library.tf_nn_leaky_relu_Mutation_List
             function_name = "leaky_relu"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.learned_unigram_candidate_sampler":
-            change_parameter_with = "tf.nn.learned_unigram_candidate_sampler()"
+            change_parameter_with = mutation_library.tf_nn_learned_unigram_candidate_sampler_Mutation_List
             function_name = "learned_unigram_candidate_sampler"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.local_response_normalization":
-            change_parameter_with = "tf.nn.local_response_normalization()"
+            change_parameter_with = mutation_library.tf_nn_local_response_normalization_Mutation_List
             function_name = "local_response_normalization"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.log_poisson_loss":
-            change_parameter_with = "tf.nn.log_poisson_loss()"
+            change_parameter_with = mutation_library.tf_nn_log_poisson_loss_Mutation_List
             function_name = "log_poisson_loss"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.log_softmax":
-            change_parameter_with = "tf.nn.log_softmax()"
+            change_parameter_with = mutation_library.tf_nn_log_softmax_Mutation_List
             function_name = "log_softmax"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.lrn":
-            change_parameter_with = "tf.nn.lrn()"
+            change_parameter_with = mutation_library.tf_nn_lrn_Mutation_List
             function_name = "lrn"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.max_pool":
-            change_parameter_with = "tf.nn.max_pool()"
+            change_parameter_with = mutation_library.tf_nn_max_pool_Mutation_List
             function_name = "max_pool"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.max_pool1d":
-            change_parameter_with = "tf.nn.max_pool1d()"
+            change_parameter_with = mutation_library.tf_nn_max_pool1d_Mutation_List
             function_name = "max_pool1d"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.max_pool2d":
-            change_parameter_with = "tf.nn.max_pool2d()"
+            change_parameter_with = mutation_library.tf_nn_max_pool2d_Mutation_List
             function_name = "max_pool2d"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
 
         elif mutate_selected_parameters == "nn.max_pool3d":
-            change_parameter_with = "tf.nn.max_pool3d()"
+            change_parameter_with = mutation_library.tf_nn_max_pool3d_Mutation_List
             function_name = "max_pool3d"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.max_pool_with_argmax":
-            change_parameter_with = "tf.nn.max_pool_with_argmax()"
+            change_parameter_with = mutation_library.tf_nn_max_pool_with_argmax_Mutation_List
             function_name = "max_pool_with_argmax"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.moments":
-            change_parameter_with = "tf.nn.moments()"
+            change_parameter_with = mutation_library.tf_nn_moments_Mutation_List
             function_name = "moments"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.nce_loss":
-            change_parameter_with = "tf.nn.nce_loss()"
+            change_parameter_with = mutation_library.tf_nn_nce_loss_Mutation_List
             function_name = "nce_loss"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.normalize_moments":
-            change_parameter_with = "tf.nn.normalize_moments()"
+            change_parameter_with = mutation_library.tf_nn_normalize_moments_Mutation_List
             function_name = "normalize_moments"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.pool":
-            change_parameter_with = "tf.nn.pool()"
+            change_parameter_with = mutation_library.tf_nn_pool_Mutation_List
             function_name = "pool"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.relu":
-            change_parameter_with = "tf.nn.relu()"
+            change_parameter_with = mutation_library.tf_nn_relu_Mutation_List
             function_name = "relu"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.relu6":
-            change_parameter_with = "tf.nn.relu6()"
+            change_parameter_with = mutation_library.tf_nn_relu6_Mutation_List
             function_name = "relu6"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.safe_embedding_lookup_sparse":
-            change_parameter_with = "tf.nn.safe_embedding_lookup_sparse()"
+            change_parameter_with = mutation_library.tf_nn_safe_embedding_lookup_sparse_Mutation_List
             function_name = "safe_embedding_lookup_sparse"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.sampled_softmax_loss":
-            change_parameter_with = "tf.nn.sampled_softmax_loss()"
+            change_parameter_with = mutation_library.tf_nn_sampled_softmax_loss_Mutation_List
             function_name = "sampled_softmax_loss"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.scale_regularization_loss":
-            change_parameter_with = "tf.nn.scale_regularization_loss()"
+            change_parameter_with = mutation_library.tf_nn_scale_regularization_loss_Mutation_List
             function_name = "scale_regularization_loss"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.selu":
-            change_parameter_with = "tf.nn.selu()"
+            change_parameter_with = mutation_library.tf_nn_selu_Mutation_List
             function_name = "selu"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.separable_conv2d":
-            change_parameter_with = "tf.nn.separable_conv2d()"
+            change_parameter_with = mutation_library.tf_nn_separable_conv2d_Mutation_List
             function_name = "separable_conv2d"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.sigmoid":
-            change_parameter_with = "tf.nn.sigmoid()"
+            change_parameter_with = mutation_library.tf_nn_sigmoid_Mutation_List
             function_name = "sigmoid"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.sigmoid_cross_entropy_with_logits":
-            change_parameter_with = "tf.nn.sigmoid_cross_entropy_with_logits()"
+            change_parameter_with = mutation_library.tf_nn_sigmoid_cross_entropy_with_logits_Mutation_List
             function_name = "sigmoid_cross_entropy_with_logits"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.silu":
-            change_parameter_with = "tf.nn.silu()"
+            change_parameter_with = mutation_library.tf_nn_silu_Mutation_List
             function_name = "silu"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.softmax":
-            change_parameter_with = "tf.nn.softmax()"
+            change_parameter_with = mutation_library.tf_nn_softmax_Mutation_List
             function_name = "softmax"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.softmax_cross_entropy_with_logits":
-            change_parameter_with = "tf.nn.softmax_cross_entropy_with_logits()"
+            change_parameter_with = mutation_library.tf_nn_softmax_cross_entropy_with_logits_Mutation_List
             function_name = "softmax_cross_entropy_with_logits"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.softplus":
-            change_parameter_with = "tf.nn.softplus()"
+            change_parameter_with = mutation_library.tf_nn_softplus_Mutation_List
             function_name = "softplus"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.softsign":
-            change_parameter_with = "tf.nn.softsign()"
+            change_parameter_with = mutation_library.tf_nn_softsign_Mutation_List
             function_name = "softsign"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.space_to_batch":
-            change_parameter_with = "tf.nn.space_to_batch()"
+            change_parameter_with = mutation_library.tf_nn_space_to_batch_Mutation_List
             function_name = "space_to_batch"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.space_to_depth":
-            change_parameter_with = "tf.nn.space_to_depth()"
+            change_parameter_with = mutation_library.tf_nn_space_to_depth_Mutation_List
             function_name = "space_to_depth"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.sparse_softmax_cross_entropy_with_logits":
-            change_parameter_with = "tf.nn.sparse_softmax_cross_entropy_with_logits()"
+            change_parameter_with = mutation_library.tf_nn_sparse_softmax_cross_entropy_with_logits_Mutation_List
             function_name = "sparse_softmax_cross_entropy_with_logits"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.sufficient_statistics":
-            change_parameter_with = "tf.nn.sufficient_statistics()"
+            change_parameter_with = mutation_library.tf_nn_sufficient_statistics_Mutation_List
             function_name = "sufficient_statistics"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.swish":
-            change_parameter_with = "tf.nn.swish()"
+            change_parameter_with = mutation_library.tf_nn_swish_Mutation_List
             function_name = "swish"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.tanh":
-            change_parameter_with = "tf.nn.tanh()"
+            change_parameter_with = mutation_library.tf_nn_tanh_Mutation_List
             function_name = "tanh"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.top_k":
-            change_parameter_with = "tf.nn.top_k()"
+            change_parameter_with = mutation_library.tf_nn_top_k_Mutation_List
             function_name = "top_k"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.weighted_cross_entropy_with_logits":
-            change_parameter_with = "tf.nn.weighted_cross_entropy_with_logits()"
+            change_parameter_with = mutation_library.tf_nn_weighted_cross_entropy_with_logits_Mutation_List
             function_name = "weighted_cross_entropy_with_logits"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.weighted_moments":
-            change_parameter_with = "tf.nn.weighted_moments()"
+            change_parameter_with = mutation_library.tf_nn_weighted_moments_Mutation_List
             function_name = "weighted_moments"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.with_space_to_batch":
-            change_parameter_with = "tf.nn.with_space_to_batch()"
+            change_parameter_with = mutation_library.tf_nn_with_space_to_batch_Mutation_List
             function_name = "with_space_to_batch"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "nn.zero_fraction":
-            change_parameter_with = "tf.nn.zero_fraction()"
+            change_parameter_with = mutation_library.tf_nn_zero_fraction_Mutation_List
             function_name = "zero_fraction"
             mutated_line = mutator.modify_tf_nn_function_in_code(source_code, function_name, change_parameter_with)
 
@@ -1061,92 +1061,92 @@ def layer_select_mutate(mutate_selected_parameters,source_code ):
         #raw_ops
 
         elif mutate_selected_parameters == "raw_ops.BlockLSTM":
-            change_parameter_with = "tf.raw_ops.BlockLSTM()"
+            change_parameter_with = mutation_library.tf_raw_ops_BlockLSTM_Mutation_List
             function_name = "BlockLSTM"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.BlockLSTMGrad":
-            change_parameter_with = "tf.raw_ops.BlockLSTMGrad()"
+            change_parameter_with = mutation_library.tf_raw_ops_BlockLSTMGrad_Mutation_List
             function_name = "BlockLSTMGrad"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.BlockLSTMGradV2":
-            change_parameter_with = "tf.raw_ops.BlockLSTMGradV2()"
+            change_parameter_with = mutation_library.tf_raw_ops_BlockLSTMGradV2_Mutation_List
             function_name = "BlockLSTMGradV2"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.BlockLSTMV2":
-            change_parameter_with = "tf.raw_ops.BlockLSTMV2()"
+            change_parameter_with = mutation_library.tf_raw_ops_BlockLSTMV2_Mutation_List
             function_name = "BlockLSTMV2"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.BoostedTreesTrainingPredict":
-            change_parameter_with = "tf.raw_ops.BoostedTreesTrainingPredict()"
+            change_parameter_with = mutation_library.tf_raw_ops_BoostedTreesTrainingPredict_Mutation_List
             function_name = "BoostedTreesTrainingPredict"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.CSRSparseMatrixToDense":
-            change_parameter_with = "tf.raw_ops.CSRSparseMatrixToDense()"
+            change_parameter_with = mutation_library.tf_raw_ops_CSRSparseMatrixToDense_Mutation_List
             function_name = "CSRSparseMatrixToDense"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.CTCLoss":
-            change_parameter_with = "tf.raw_ops.CTCLoss()"
+            change_parameter_with = mutation_library.tf_raw_ops_CTCLoss_Mutation_List
             function_name = "CTCLoss"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.CTCLossV2":
-            change_parameter_with = "tf.raw_ops.CTCLossV2()"
+            change_parameter_with = mutation_library.tf_raw_ops_CTCLossV2_Mutation_List
             function_name = "CTCLossV2"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.Conv":
-            change_parameter_with = "tf.raw_ops.Conv()"
+            change_parameter_with = mutation_library.tf_raw_ops_Conv_Mutation_List
             function_name = "Conv"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.Conv2D":
-            change_parameter_with = "tf.raw_ops.Conv2D()"
+            change_parameter_with = mutation_library.tf_raw_ops_Conv2D_Mutation_List
             function_name = "Conv2D"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.Conv2DBackpropFilter":
-            change_parameter_with = "tf.raw_ops.Conv2DBackpropFilter()"
+            change_parameter_with = mutation_library.tf_raw_ops_Conv2DBackpropFilter_Mutation_List
             function_name = "Conv2DBackpropFilter"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.Conv2DBackpropFilterV2":
-            change_parameter_with = "tf.raw_ops.Conv2DBackpropFilterV2()"
+            change_parameter_with = mutation_library.tf_raw_ops_Conv2DBackpropFilterV2_Mutation_List
             function_name = "Conv2DBackpropFilterV2"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.Conv2DBackpropInput":
-            change_parameter_with = "tf.raw_ops.Conv2DBackpropInput()"
+            change_parameter_with = mutation_library.tf_raw_ops_Conv2DBackpropInput_Mutation_List
             function_name = "Conv2DBackpropInput"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.Conv2DBackpropInputV2":
-            change_parameter_with = "tf.raw_ops.Conv2DBackpropInputV2()"
+            change_parameter_with = mutation_library.tf_raw_ops_Conv2DBackpropInputV2_Mutation_List
             function_name = "Conv2DBackpropInputV2"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.Conv3D":
-            change_parameter_with = "tf.raw_ops.Conv3D()"
+            change_parameter_with = mutation_library.tf_raw_ops_Conv3D_Mutation_List
             function_name = "Conv3D"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.Conv3DBackpropFilter":
-            change_parameter_with = "tf.raw_ops.Conv3DBackpropFilter()"
+            change_parameter_with = mutation_library.tf_raw_ops_Conv3DBackpropFilter_Mutation_List
             function_name = "Conv3DBackpropFilter"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.Conv3DBackpropFilterV2":
-            change_parameter_with = "tf.raw_ops.Conv3DBackpropFilterV2()"
+            change_parameter_with = mutation_library.tf_raw_ops_Conv3DBackpropFilterV2_Mutation_List
             function_name = "Conv3DBackpropFilterV2"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.Conv3DBackpropInput":
-            change_parameter_with = "tf.raw_ops.Conv3DBackpropInput()"
+            change_parameter_with = mutation_library.tf_raw_ops_Conv3DBackpropInput_Mutation_List
             function_name = "Conv3DBackpropInput"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.Conv3DBackpropInputV2":
-            change_parameter_with = "tf.raw_ops.Conv3DBackpropInputV2()"
+            change_parameter_with = mutation_library.tf_raw_ops_Conv3DBackpropInputV2_Mutation_List
             function_name = "Conv3DBackpropInputV2"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
 
         elif mutate_selected_parameters == "raw_ops.CudnnRNN":
-            change_parameter_with = "tf.raw_ops.CudnnRNN()"
+            change_parameter_with = mutation_library.tf_raw_ops_CudnnRNN_Mutation_List
             function_name = "CudnnRNN"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.CudnnRNNBackprop":
-            change_parameter_with = "tf.raw_ops.CudnnRNNBackprop()"
+            change_parameter_with = mutation_library.tf_raw_ops_CudnnRNNBackprop_Mutation_List
             function_name = "CudnnRNNBackprop"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.CudnnRNNBackpropV2":
-            change_parameter_with = "tf.raw_ops.CudnnRNNBackpropV2()"
+            change_parameter_with = mutation_library.tf_raw_ops_CudnnRNNBackpropV2_Mutation_List
             function_name = "CudnnRNNBackpropV2"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.CudnnRNNBackpropV3":
@@ -1505,118 +1505,114 @@ def layer_select_mutate(mutate_selected_parameters,source_code ):
 
         #train
         elif mutate_selected_parameters == "train.BytesList":
-            change_parameter_with = "tf.train.BytesList()"
+            change_parameter_with = mutation_library.tf_train_BytesList_Mutation_List
             class_name = "BytesList"
             mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
         elif mutate_selected_parameters == "train.Checkpoint":
-            change_parameter_with = "tf.train.Checkpoint()"
+            change_parameter_with = mutation_library.tf_train_Checkpoint_Mutation_List
             class_name = "Checkpoint"
             mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
         elif mutate_selected_parameters == "train.CheckpointManager":
-            change_parameter_with = "tf.train.CheckpointManager()"
+            change_parameter_with = mutation_library.tf_train_CheckpointManager_Mutation_List
             class_name = "CheckpointManager"
             mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
         elif mutate_selected_parameters == "train.CheckpointOptions":
-            change_parameter_with = "tf.train.CheckpointOptions()"
+            change_parameter_with = mutation_library.tf_train_CheckpointOptions_Mutation_List
             class_name = "CheckpointOptions"
             mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
         elif mutate_selected_parameters == "train.CheckpointView":
-            change_parameter_with = "tf.train.CheckpointView()"
+            change_parameter_with = mutation_library.tf_train_CheckpointView_Mutation_List
             class_name = "CheckpointView"
             mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
         elif mutate_selected_parameters == "train.ClusterDef":
-            change_parameter_with = "tf.train.ClusterDef()"
+            change_parameter_with = mutation_library.tf_train_ClusterDef_Mutation_List
             class_name = "ClusterDef"
             mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
         elif mutate_selected_parameters == "train.ClusterSpec":
-            change_parameter_with = "tf.train.ClusterSpec()"
+            change_parameter_with = mutation_library.tf_train_ClusterSpec_Mutation_List
             class_name = "ClusterSpec"
             mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
         elif mutate_selected_parameters == "train.Coordinator":
-            change_parameter_with = "tf.train.Coordinator()"
+            change_parameter_with = mutation_library.tf_train_Coordinator_Mutation_List
             class_name = "Coordinator"
             mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
         elif mutate_selected_parameters == "train.Example":
-            change_parameter_with = "tf.train.Example()"
+            change_parameter_with = mutation_library.tf_train_Example_Mutation_List
             class_name = "Example"
             mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
         elif mutate_selected_parameters == "train.ExponentialMovingAverage":
-            change_parameter_with = "tf.train.ExponentialMovingAverage()"
+            change_parameter_with = mutation_library.tf_train_ExponentialMovingAverage_Mutation_List
             class_name = "ExponentialMovingAverage"
             mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
         elif mutate_selected_parameters == "train.Feature":
-            change_parameter_with = "tf.train.Feature()"
+            change_parameter_with = mutation_library.tf_train_Feature_Mutation_List
             class_name = "Feature"
             mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
         elif mutate_selected_parameters == "train.FeatureList":
-            change_parameter_with = "tf.train.FeatureList()"
+            change_parameter_with = mutation_library.tf_train_FeatureList_Mutation_List
             class_name = "FeatureList"
             mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
-        elif mutate_selected_parameters == "train.FeatureLists":
-            change_parameter_with = "tf.train.FeatureLists()"
-            class_name = "FeatureLists"
-            mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
         elif mutate_selected_parameters == "train.Features":
-            change_parameter_with = "tf.train.Features()"
+            change_parameter_with = mutation_library.tf_train_Features_Mutation_List
             class_name = "Features"
             mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
         elif mutate_selected_parameters == "train.FloatList":
-            change_parameter_with = "tf.train.FloatList()"
+            change_parameter_with = mutation_library.tf_train_FloatList_Mutation_List
             class_name = "FloatList"
             mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
         elif mutate_selected_parameters == "train.Int64List":
-            change_parameter_with = "tf.train.Int64List()"
+            change_parameter_with = mutation_library.tf_train_Int64List_Mutation_List
             class_name = "Int64List"
             mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
         elif mutate_selected_parameters == "train.JobDef":
-            change_parameter_with = "tf.train.JobDef()"
+            change_parameter_with = mutation_library.tf_train_JobDef_Mutation_List
             class_name = "JobDef"
             mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
         elif mutate_selected_parameters == "train.SequenceExample":
-            change_parameter_with = "tf.train.SequenceExample()"
+            change_parameter_with = mutation_library.tf_train_SequenceExample_Mutation_List
             class_name = "SequenceExample"
             mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
         elif mutate_selected_parameters == "train.ServerDef":
-            change_parameter_with = "tf.train.ServerDef()"
+            change_parameter_with = mutation_library.tf_train_ServerDef_Mutation_List
             class_name = "ServerDef"
             mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
         elif mutate_selected_parameters == "train.TrackableView":
-            change_parameter_with = "tf.train.TrackableView()"
+            change_parameter_with = mutation_library.tf_train_TrackableView_Mutation_List
             class_name = "TrackableView"
             mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
         elif mutate_selected_parameters == "train.checkpoints_iterator":
-            change_parameter_with = "tf.train.checkpoints_iterator()"
+            change_parameter_with = mutation_library.tf_train_checkpoints_iterator_Mutation_List
             function_name = "checkpoints_iterator"
             mutated_line = mutator.modify_tf_train_class_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "train.experimental":
-            change_parameter_with = "tf.train.experimental()"
+            change_parameter_with = mutation_library.tf_train_experimental_Mutation_List
             class_name = "experimental"
             mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
         elif mutate_selected_parameters == "train.experimental.PythonState":
-            change_parameter_with = "tf.train.experimental.PythonState()"
+            change_parameter_with = mutation_library.tf_train_experimental_PythonState_Mutation_List
             class_name = "experimental.PythonState"
             mutated_line = mutator.modify_tf_train_class_in_code(source_code, class_name, change_parameter_with)
         elif mutate_selected_parameters == "train.get_checkpoint_state":
-            change_parameter_with = "tf.train.get_checkpoint_state()"
+            change_parameter_with = mutation_library.tf_train_get_checkpoint_state_Mutation_List
             function_name = "get_checkpoint_state"
             mutated_line = mutator.modify_tf_train_class_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "train.latest_checkpoint":
-            change_parameter_with = "tf.train.latest_checkpoint()"
+            change_parameter_with = mutation_library.tf_train_latest_checkpoint_Mutation_List
             function_name = "latest_checkpoint"
             mutated_line = mutator.modify_tf_train_class_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "train.list_variables":
-            change_parameter_with = "tf.train.list_variables()"
+            change_parameter_with = mutation_library.tf_train_list_variables_Mutation_List
             function_name = "list_variables"
             mutated_line = mutator.modify_tf_train_class_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "train.load_checkpoint":
-            change_parameter_with = "tf.train.load_checkpoint()"
+            change_parameter_with = mutation_library.tf_train_load_checkpoint_Mutation_List
             function_name = "load_checkpoint"
             mutated_line = mutator.modify_tf_train_class_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "train.load_variable":
-            change_parameter_with = "tf.train.load_variable()"
+            change_parameter_with = mutation_library.tf_train_load_variable_Mutation_List
             function_name = "load_variable"
             mutated_line = mutator.modify_tf_train_class_in_code(source_code, function_name, change_parameter_with)
-        # ... ve böyle devam eder. Diğer tf.train sınıf ve fonksiyonları için de benzer bloklar eklenebilir.
+       
         
 
 
