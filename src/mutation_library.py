@@ -3814,10 +3814,15 @@ tf_raw_ops_CudnnRNN_Mutation_List = [
 ]
 
 tf_raw_ops_CudnnRNNBackprop_Mutation_List = [
+    
     # Typical parameter combinations
+    "input_data_shape=[10, 5, 20], input_h_shape=[5, 10], input_c_shape=[5, 10], params_size=100",
+    "input_data_shape=[15, 8, 25], input_h_shape=[8, 15], input_c_shape=[8, 15], params_size=150",
     "input=[[1, 2], [3, 4]], input_h=[[1, 1]], input_c=[[0, 0]], params=[0.1, 0.2], output=[[1, 1]], output_h=[[0, 0]], output_c=[[1, 1]], rnn_mode='lstm'",
     "input=[[2, 3], [4, 5]], input_h=[[0, 0]], input_c=[[1, 1]], params=[0.3, 0.4], output=[[0, 0]], output_h=[[1, 1]], output_c=[[0, 0]], rnn_mode='gru'",
     # Scenarios with erroneous or inappropriate values
+    "input_data_shape='invalid', input_h_shape='invalid', input_c_shape='invalid', params_size=-1",
+    "input_data_shape=[], input_h_shape=[], input_c_shape=[], params_size=0",
     "input='invalid', input_h='invalid', input_c='invalid', params='invalid', output='invalid', output_h='invalid', output_c='invalid', rnn_mode='invalid'",
     "input=[], input_h=[], input_c=[], params=[], output=[], output_h=[], output_c=[], rnn_mode=None"
 ]
@@ -3879,14 +3884,6 @@ tf_raw_ops_CudnnRNN_Mutation_List = [
     "input=[], input_h=[], input_c=[], params=[], rnn_mode=None"
 ]
 
-tf_raw_ops_CudnnRNNBackprop_Mutation_List = [
-    # Typical parameter combinations (generic due to complexity)
-    "input_data_shape=[10, 5, 20], input_h_shape=[5, 10], input_c_shape=[5, 10], params_size=100",
-    "input_data_shape=[15, 8, 25], input_h_shape=[8, 15], input_c_shape=[8, 15], params_size=150",
-    # Scenarios with erroneous or inappropriate values
-    "input_data_shape='invalid', input_h_shape='invalid', input_c_shape='invalid', params_size=-1",
-    "input_data_shape=[], input_h_shape=[], input_c_shape=[], params_size=0"
-]
 
 tf_raw_ops_CudnnRNNBackpropV2_Mutation_List = [
     # Similar to CudnnRNNBackprop, with additional versioning
@@ -4143,6 +4140,15 @@ tf_raw_ops_QuantizedConv2DWithBiasAndRelu_Mutation_List = [
     # Scenarios with erroneous or inappropriate values
     "input='invalid', filter='invalid', min_input=-1.0, max_input=-1.0, min_filter=-1.0, max_filter=-1.0, strides='invalid', padding='invalid'"
 ]
+
+tf_raw_ops_QuantizedConv2DWithBiasSumAndReluAndRequantize_Mutation_List = [
+    # Typical parameter combinations
+    "input_min=0.0, input_max=10.0, filter_min=0.0, filter_max=10.0, bias_min=0.0, bias_max=10.0, sum_min=0.0, sum_max=10.0, out_type=tf.float32",
+    "input_min=-5.0, input_max=5.0, filter_min=-5.0, filter_max=5.0, bias_min=-5.0, bias_max=5.0, sum_min=-5.0, sum_max=5.0, out_type=tf.float32",
+    # Scenarios with erroneous or inappropriate values
+    "input_min='invalid', input_max='invalid', filter_min='invalid', filter_max='invalid', bias_min='invalid', bias_max='invalid', sum_min='invalid', sum_max='invalid', out_type='invalid'",
+    "input_min=10.0, input_max=0.0, filter_min=10.0, filter_max=0.0, bias_min=10.0, bias_max=0.0, sum_min=10.0, sum_max=0.0, out_type=tf.int32"
+]
 tf_raw_ops_QuantizedConv2DWithBiasAndReluAndRequantize_Mutation_List = [
     # Typical parameter combinations
     "input=[[1, 2], [3, 4]], filter=[[1, 0], [0, 1]], min_input=0, max_input=4, min_filter=0, max_filter=4, min_freezed_output=0, max_freezed_output=4",
@@ -4198,7 +4204,14 @@ tf_raw_ops_QuantizedDepthwiseConv2DWithBiasAndReluAndRequantize_Mutation_List = 
     # Scenarios with erroneous or inappropriate values
     "input='invalid', filter='invalid', min_input=-1.0, max_input=-1.0, min_filter=-1.0, max_filter=-1.0, bias='invalid'"
 ]
-
+tf_raw_ops_QuantizedDepthwiseConv2D_Mutation_List = [
+    # Typical parameter combinations
+    "input=[[1, 2], [3, 4]], filter=[[1, 0], [0, 1]], min_input=0.0, max_input=3.0, min_filter=0.0, max_filter=1.0, strides=[1, 1], padding='VALID'",
+    "input=[[2, 3], [4, 5]], filter=[[1, 1], [1, 1]], min_input=0.0, max_input=4.0, min_filter=0.0, max_filter=2.0, strides=[2, 2], padding='SAME'",
+    # Scenarios with erroneous or inappropriate values
+    "input='invalid', filter='invalid', min_input='invalid', max_input='invalid', min_filter='invalid', max_filter='invalid', strides='invalid', padding='invalid'",
+    "input=[], filter=[], min_input=-1.0, max_input=-2.0, min_filter=-1.0, max_filter=-2.0, strides=[], padding='SAME'"
+]
 tf_raw_ops_RecvTPUEmbeddingActivations_Mutation_List = [
     # Typical parameter combinations (generic as this is a TPU-specific operation)
     "config='sample_config', max_sequence_length=128",

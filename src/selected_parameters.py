@@ -1150,359 +1150,237 @@ def layer_select_mutate(mutate_selected_parameters,source_code ):
             function_name = "CudnnRNNBackpropV2"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.CudnnRNNBackpropV3":
-            change_parameter_with = "tf.raw_ops.CudnnRNNBackpropV3()"
+            change_parameter_with = mutation_library.tf_raw_ops_CudnnRNNBackpropV3_Mutation_List
             function_name = "CudnnRNNBackpropV3"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.CudnnRNNCanonicalToParams":
-            change_parameter_with = "tf.raw_ops.CudnnRNNCanonicalToParams()"
+            change_parameter_with = mutation_library.tf_raw_ops_CudnnRNNCanonicalToParams_Mutation_List
             function_name = "CudnnRNNCanonicalToParams"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.CudnnRNNCanonicalToParamsV2":
-            change_parameter_with = "tf.raw_ops.CudnnRNNCanonicalToParamsV2()"
+            change_parameter_with = mutation_library.tf_raw_ops_CudnnRNNCanonicalToParamsV2_Mutation_List
             function_name = "CudnnRNNCanonicalToParamsV2"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.CudnnRNNParamsSize":
-            change_parameter_with = "tf.raw_ops.CudnnRNNParamsSize()"
+            change_parameter_with = mutation_library.tf_raw_ops_CudnnRNNParamsSize_Mutation_List
             function_name = "CudnnRNNParamsSize"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.CudnnRNNParamsToCanonical":
-            change_parameter_with = "tf.raw_ops.CudnnRNNParamsToCanonical()"
+            change_parameter_with = mutation_library.tf_raw_ops_CudnnRNNParamsToCanonical_Mutation_List
             function_name = "CudnnRNNParamsToCanonical"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.CudnnRNNParamsToCanonicalV2":
-            change_parameter_with = "tf.raw_ops.CudnnRNNParamsToCanonicalV2()"
+            change_parameter_with = mutation_library.tf_raw_ops_CudnnRNNParamsToCanonicalV2_Mutation_List
             function_name = "CudnnRNNParamsToCanonicalV2"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.CudnnRNNV2":
-            change_parameter_with = "tf.raw_ops.CudnnRNNV2()"
+            change_parameter_with = mutation_library.tf_raw_ops_CudnnRNN_Mutation_List
             function_name = "CudnnRNNV2"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.CudnnRNNV3":
-            change_parameter_with = "tf.raw_ops.CudnnRNNV3()"
+            change_parameter_with = mutation_library.tf_raw_ops_CudnnRNNBackpropV3_Mutation_List
             function_name = "CudnnRNNV3"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.DenseBincount":
-            change_parameter_with = "tf.raw_ops.DenseBincount()"
+            change_parameter_with = mutation_library.tf_raw_ops_DenseBincount_Mutation_List
             function_name = "DenseBincount"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.DenseCountSparseOutput":
-            change_parameter_with = "tf.raw_ops.DenseCountSparseOutput()"
+            change_parameter_with = mutation_library.tf_raw_ops_DenseCountSparseOutput_Mutation_List
             function_name = "DenseCountSparseOutput"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.DenseToCSRSparseMatrix":
-            change_parameter_with = "tf.raw_ops.DenseToCSRSparseMatrix()"
+            change_parameter_with = mutation_library.tf_raw_ops_DenseToCSRSparseMatrix_Mutation_List
             function_name = "DenseToCSRSparseMatrix"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.DenseToDenseSetOperation":
-            change_parameter_with = "tf.raw_ops.DenseToDenseSetOperation()"
+            change_parameter_with = mutation_library.tf_raw_ops_DenseToDenseSetOperation_Mutation_List
             function_name = "DenseToDenseSetOperation"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.DenseToSparseBatchDataset":
-            change_parameter_with = "tf.raw_ops.DenseToSparseBatchDataset()"
+            change_parameter_with = mutation_library.tf_raw_ops_DenseToSparseBatchDataset_Mutation_List
             function_name = "DenseToSparseBatchDataset"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.DenseToSparseSetOperation":
-            change_parameter_with = "tf.raw_ops.DenseToSparseSetOperation()"
+            change_parameter_with = mutation_library.tf_raw_ops_DenseToSparseSetOperation_Mutation_List
             function_name = "DenseToSparseSetOperation"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.DepthwiseConv2dNative":
-            change_parameter_with = "tf.raw_ops.DepthwiseConv2dNative()"
+            change_parameter_with = mutation_library.tf_raw_ops_DepthwiseConv2dNative_Mutation_List
             function_name = "DepthwiseConv2dNative"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.DepthwiseConv2dNativeBackpropFilter":
-            change_parameter_with = "tf.raw_ops.DepthwiseConv2dNativeBackpropFilter()"
+            change_parameter_with = mutation_library.tf_raw_ops_DepthwiseConv2dNativeBackpropFilter_Mutation_List
             function_name = "DepthwiseConv2dNativeBackpropFilter"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.DepthwiseConv2dNativeBackpropInput":
-            change_parameter_with = "tf.raw_ops.DepthwiseConv2dNativeBackpropInput()"
+            change_parameter_with = mutation_library.tf_raw_ops_DepthwiseConv2dNativeBackpropInput_Mutation_List
             function_name = "DepthwiseConv2dNativeBackpropInput"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.FusedPadConv2D":
-            change_parameter_with = "tf.raw_ops.FusedPadConv2D()"
+            change_parameter_with = mutation_library.tf_raw_ops_FusedPadConv2D_Mutation_List
             function_name = "FusedPadConv2D"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.FusedResizeAndPadConv2D":
-            change_parameter_with = "tf.raw_ops.FusedResizeAndPadConv2D()"
+            change_parameter_with = mutation_library.tf_raw_ops_FusedResizeAndPadConv2D_Mutation_List
             function_name = "FusedResizeAndPadConv2D"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
-        # ...
-
         elif mutate_selected_parameters == "raw_ops.GRUBlockCell":
-            change_parameter_with = "tf.raw_ops.GRUBlockCell()"
+            change_parameter_with = mutation_library.tf_raw_ops_GRUBlockCell_Mutation_List
             function_name = "GRUBlockCell"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.GRUBlockCellGrad":
-            change_parameter_with = "tf.raw_ops.GRUBlockCellGrad()"
+            change_parameter_with = mutation_library.tf_raw_ops_GRUBlockCellGrad_Mutation_List
             function_name = "GRUBlockCellGrad"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.L2Loss":
-            change_parameter_with = "tf.raw_ops.L2Loss()"
+            change_parameter_with = mutation_library.tf_raw_ops_L2Loss_Mutation_List
             function_name = "L2Loss"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.LSTMBlockCell":
-            change_parameter_with = "tf.raw_ops.LSTMBlockCell()"
+            change_parameter_with = mutation_library.tf_raw_ops_LSTMBlockCell_Mutation_List
             function_name = "LSTMBlockCell"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.LSTMBlockCellGrad":
-            change_parameter_with = "tf.raw_ops.LSTMBlockCellGrad()"
+            change_parameter_with = mutation_library.tf_raw_ops_LSTMBlockCellGrad_Mutation_List
             function_name = "LSTMBlockCellGrad"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.QuantizedConv2D":
-            change_parameter_with = "tf.raw_ops.QuantizedConv2D()"
+            change_parameter_with = mutation_library.tf_raw_ops_QuantizedConv2D_Mutation_List
             function_name = "QuantizedConv2D"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.QuantizedConv2DAndRelu":
-            change_parameter_with = "tf.raw_ops.QuantizedConv2DAndRelu()"
+            change_parameter_with = mutation_library.tf_raw_ops_QuantizedConv2DAndRelu_Mutation_List
             function_name = "QuantizedConv2DAndRelu"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.QuantizedConv2DAndReluAndRequantize":
-            change_parameter_with = "tf.raw_ops.QuantizedConv2DAndReluAndRequantize()"
+            change_parameter_with = mutation_library.tf_raw_ops_QuantizedConv2DAndReluAndRequantize_Mutation_List
             function_name = "QuantizedConv2DAndReluAndRequantize"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.QuantizedConv2DAndRequantize":
-            change_parameter_with = "tf.raw_ops.QuantizedConv2DAndRequantize()"
+            change_parameter_with = mutation_library.tf_raw_ops_QuantizedConv2DAndRequantize_Mutation_List
             function_name = "QuantizedConv2DAndRequantize"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.QuantizedConv2DPerChannel":
-            change_parameter_with = "tf.raw_ops.QuantizedConv2DPerChannel()"
+            change_parameter_with = mutation_library.tf_raw_ops_QuantizedConv2DPerChannel_Mutation_List
             function_name = "QuantizedConv2DPerChannel"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.QuantizedConv2DWithBias":
-            change_parameter_with = "tf.raw_ops.QuantizedConv2DWithBias()"
+            change_parameter_with = mutation_library.tf_raw_ops_QuantizedConv2DWithBias_Mutation_List
             function_name = "QuantizedConv2DWithBias"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.QuantizedConv2DWithBiasAndRelu":
-            change_parameter_with = "tf.raw_ops.QuantizedConv2DWithBiasAndRelu()"
+            change_parameter_with = mutation_library.tf_raw_ops_QuantizedConv2DWithBiasAndRelu_Mutation_List
             function_name = "QuantizedConv2DWithBiasAndRelu"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.QuantizedConv2DWithBiasAndReluAndRequantize":
-            change_parameter_with = "tf.raw_ops.QuantizedConv2DWithBiasAndReluAndRequantize()"
+            change_parameter_with = mutation_library.tf_raw_ops_QuantizedConv2DWithBiasAndReluAndRequantize_Mutation_List
             function_name = "QuantizedConv2DWithBiasAndReluAndRequantize"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.QuantizedConv2DWithBiasAndRequantize":
-            change_parameter_with = "tf.raw_ops.QuantizedConv2DWithBiasAndRequantize()"
+            change_parameter_with = mutation_library.tf_raw_ops_QuantizedConv2DWithBiasAndRequantize_Mutation_List
             function_name = "QuantizedConv2DWithBiasAndRequantize"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.QuantizedConv2DWithBiasSignedSumAndReluAndRequantize":
-            change_parameter_with = "tf.raw_ops.QuantizedConv2DWithBiasSignedSumAndReluAndRequantize()"
+            change_parameter_with = mutation_library.tf_raw_ops_QuantizedConv2DWithBiasSignedSumAndReluAndRequantize_Mutation_List
             function_name = "QuantizedConv2DWithBiasSignedSumAndReluAndRequantize"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.QuantizedConv2DWithBiasSumAndRelu":
-            change_parameter_with = "tf.raw_ops.QuantizedConv2DWithBiasSumAndRelu()"
+            change_parameter_with = mutation_library.tf_raw_ops_QuantizedConv2DWithBiasSumAndRelu_Mutation_List
             function_name = "QuantizedConv2DWithBiasSumAndRelu"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.QuantizedConv2DWithBiasSumAndReluAndRequantize":
-            change_parameter_with = "tf.raw_ops.QuantizedConv2DWithBiasSumAndReluAndRequantize()"
+            change_parameter_with = mutation_library.tf_raw_ops_QuantizedConv2DWithBiasSumAndReluAndRequantize_Mutation_List
             function_name = "QuantizedConv2DWithBiasSumAndReluAndRequantize"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.QuantizedDepthwiseConv2D":
-            change_parameter_with = "tf.raw_ops.QuantizedDepthwiseConv2D()"
+            change_parameter_with = mutation_library.tf_raw_ops_QuantizedDepthwiseConv2D_Mutation_List
             function_name = "QuantizedDepthwiseConv2D"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.QuantizedDepthwiseConv2DWithBias":
-            change_parameter_with = "tf.raw_ops.QuantizedDepthwiseConv2DWithBias()"
+            change_parameter_with = mutation_library.tf_raw_ops_QuantizedDepthwiseConv2DWithBias_Mutation_List
             function_name = "QuantizedDepthwiseConv2DWithBias"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.QuantizedDepthwiseConv2DWithBiasAndRelu":
-            change_parameter_with = "tf.raw_ops.QuantizedDepthwiseConv2DWithBiasAndRelu()"
+            change_parameter_with = mutation_library.tf_raw_ops_QuantizedDepthwiseConv2DWithBiasAndRelu_Mutation_List
             function_name = "QuantizedDepthwiseConv2DWithBiasAndRelu"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.QuantizedDepthwiseConv2DWithBiasAndReluAndRequantize":
-            change_parameter_with = "tf.raw_ops.QuantizedDepthwiseConv2DWithBiasAndReluAndRequantize()"
+            change_parameter_with = mutation_library.tf_raw_ops_QuantizedDepthwiseConv2DWithBiasAndReluAndRequantize_Mutation_List
             function_name = "QuantizedDepthwiseConv2DWithBiasAndReluAndRequantize"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.RecvTPUEmbeddingActivations":
-            change_parameter_with = "tf.raw_ops.RecvTPUEmbeddingActivations()"
+            change_parameter_with = mutation_library.tf_raw_ops_RecvTPUEmbeddingActivations_Mutation_List
             function_name = "RecvTPUEmbeddingActivations"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.SdcaOptimizer":
-            change_parameter_with = "tf.raw_ops.SdcaOptimizer()"
+            change_parameter_with = mutation_library.tf_raw_ops_SdcaOptimizer_Mutation_List
             function_name = "SdcaOptimizer"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.SdcaOptimizerV2":
-            change_parameter_with = "tf.raw_ops.SdcaOptimizerV2()"
+            change_parameter_with = mutation_library.tf_raw_ops_SdcaOptimizerV2_Mutation_List
             function_name = "SdcaOptimizerV2"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.SparseDenseCwiseAdd":
-            change_parameter_with = "tf.raw_ops.SparseDenseCwiseAdd()"
+            change_parameter_with = mutation_library.tf_raw_ops_SparseDenseCwiseAdd_Mutation_List
             function_name = "SparseDenseCwiseAdd"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.SparseDenseCwiseDiv":
-            change_parameter_with = "tf.raw_ops.SparseDenseCwiseDiv()"
+            change_parameter_with = mutation_library.tf_raw_ops_SparseDenseCwiseDiv_Mutation_List
             function_name = "SparseDenseCwiseDiv"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.SparseDenseCwiseMul":
-            change_parameter_with = "tf.raw_ops.SparseDenseCwiseMul()"
+            change_parameter_with = mutation_library.tf_raw_ops_SparseDenseCwiseMul_Mutation_List
             function_name = "SparseDenseCwiseMul"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
 
 
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.SparseTensorDenseAdd":
-            change_parameter_with = "tf.raw_ops.SparseTensorDenseAdd()"
+            change_parameter_with = mutation_library.tf_raw_ops_SparseTensorDenseAdd_Mutation_List
             function_name = "SparseTensorDenseAdd"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.SparseTensorDenseMatMul":
-            change_parameter_with = "tf.raw_ops.SparseTensorDenseMatMul()"
+            change_parameter_with = mutation_library.tf_raw_ops_SparseTensorDenseMatMul_Mutation_List
             function_name = "SparseTensorDenseMatMul"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.SparseToDense":
-            change_parameter_with = "tf.raw_ops.SparseToDense()"
+            change_parameter_with = mutation_library.tf_raw_ops_SparseToDense_Mutation_List
             function_name = "SparseToDense"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.TPUEmbeddingActivations":
-            change_parameter_with = "tf.raw_ops.TPUEmbeddingActivations()"
+            change_parameter_with = mutation_library.tf_raw_ops_TpuEmbeddingActivations_Mutation_List
             function_name = "TPUEmbeddingActivations"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.UniformQuantizedConvolution":
-            change_parameter_with = "tf.raw_ops.UniformQuantizedConvolution()"
+            change_parameter_with = mutation_library.tf_raw_ops_UniformQuantizedConvolution_Mutation_List
             function_name = "UniformQuantizedConvolution"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.UniformQuantizedConvolutionHybrid":
-            change_parameter_with = "tf.raw_ops.UniformQuantizedConvolutionHybrid()"
+            change_parameter_with = mutation_library.tf_raw_ops_UniformQuantizedConvolutionHybrid_Mutation_List
             function_name = "UniformQuantizedConvolutionHybrid"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.RecvTPUEmbeddingActivations":
-            change_parameter_with = "tf.raw_ops.RecvTPUEmbeddingActivations()"
+            change_parameter_with = mutation_library.tf_raw_ops_RecvTPUEmbeddingActivations_Mutation_List
             function_name = "RecvTPUEmbeddingActivations"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.SdcaOptimizer":
-            change_parameter_with = "tf.raw_ops.SdcaOptimizer()"
+            change_parameter_with = mutation_library.tf_raw_ops_SdcaOptimizer_Mutation_List
             function_name = "SdcaOptimizer"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.SdcaOptimizerV2":
-            change_parameter_with = "tf.raw_ops.SdcaOptimizerV2()"
+            change_parameter_with = mutation_library.tf_raw_ops_SdcaOptimizerV2_Mutation_List
             function_name = "SdcaOptimizerV2"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.L2Loss":
-            change_parameter_with = "tf.raw_ops.L2Loss()"
+            change_parameter_with = mutation_library.tf_raw_ops_L2Loss_Mutation_List
             function_name = "L2Loss"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
         elif mutate_selected_parameters == "raw_ops.LSTMBlockCell":
-            change_parameter_with = "tf.raw_ops.LSTMBlockCell()"
+            change_parameter_with = mutation_library.tf_raw_ops_LSTMBlockCell_Mutation_List
             function_name = "LSTMBlockCell"
             mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
-        elif mutate_selected_parameters == "raw_ops.LSTMBlockCellGrad":
-            change_parameter_with = "tf.raw_ops.LSTMBlockCellGrad()"
-            function_name = "LSTMBlockCellGrad"
-            mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
-        elif mutate_selected_parameters == "raw_ops.QuantizedConv2D":
-            change_parameter_with = "tf.raw_ops.QuantizedConv2D()"
-            function_name = "QuantizedConv2D"
-            mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
-        elif mutate_selected_parameters == "raw_ops.QuantizedConv2DAndRelu":
-            change_parameter_with = "tf.raw_ops.QuantizedConv2DAndRelu()"
-            function_name = "QuantizedConv2DAndRelu"
-            mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
-        elif mutate_selected_parameters == "raw_ops.QuantizedConv2DAndReluAndRequantize":
-            change_parameter_with = "tf.raw_ops.QuantizedConv2DAndReluAndRequantize()"
-            function_name = "QuantizedConv2DAndReluAndRequantize"
-            mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
-        elif mutate_selected_parameters == "raw_ops.QuantizedConv2DAndRequantize":
-            change_parameter_with = "tf.raw_ops.QuantizedConv2DAndRequantize()"
-            function_name = "QuantizedConv2DAndRequantize"
-            mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
-        elif mutate_selected_parameters == "raw_ops.QuantizedConv2DPerChannel":
-            change_parameter_with = "tf.raw_ops.QuantizedConv2DPerChannel()"
-            function_name = "QuantizedConv2DPerChannel"
-            mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
-        elif mutate_selected_parameters == "raw_ops.QuantizedConv2DWithBias":
-            change_parameter_with = "tf.raw_ops.QuantizedConv2DWithBias()"
-            function_name = "QuantizedConv2DWithBias"
-            mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
-        elif mutate_selected_parameters == "raw_ops.QuantizedConv2DWithBiasAndRelu":
-            change_parameter_with = "tf.raw_ops.QuantizedConv2DWithBiasAndRelu()"
-            function_name = "QuantizedConv2DWithBiasAndRelu"
-            mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
-        elif mutate_selected_parameters == "raw_ops.QuantizedConv2DWithBiasAndReluAndRequantize":
-            change_parameter_with = "tf.raw_ops.QuantizedConv2DWithBiasAndReluAndRequantize()"
-            function_name = "QuantizedConv2DWithBiasAndReluAndRequantize"
-            mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
-        elif mutate_selected_parameters == "raw_ops.QuantizedConv2DWithBiasAndRequantize":
-            change_parameter_with = "tf.raw_ops.QuantizedConv2DWithBiasAndRequantize()"
-            function_name = "QuantizedConv2DWithBiasAndRequantize"
-            mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
-        elif mutate_selected_parameters == "raw_ops.QuantizedConv2DWithBiasSignedSumAndReluAndRequantize":
-            change_parameter_with = "tf.raw_ops.QuantizedConv2DWithBiasSignedSumAndReluAndRequantize()"
-            function_name = "QuantizedConv2DWithBiasSignedSumAndReluAndRequantize"
-            mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
-        elif mutate_selected_parameters == "raw_ops.QuantizedConv2DWithBiasSumAndRelu":
-            change_parameter_with = "tf.raw_ops.QuantizedConv2DWithBiasSumAndRelu()"
-            function_name = "QuantizedConv2DWithBiasSumAndRelu"
-            mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
-        elif mutate_selected_parameters == "raw_ops.QuantizedConv2DWithBiasSumAndReluAndRequantize":
-            change_parameter_with = "tf.raw_ops.QuantizedConv2DWithBiasSumAndReluAndRequantize()"
-            function_name = "QuantizedConv2DWithBiasSumAndReluAndRequantize"
-            mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
-        elif mutate_selected_parameters == "raw_ops.QuantizedDepthwiseConv2D":
-            change_parameter_with = "tf.raw_ops.QuantizedDepthwiseConv2D()"
-            function_name = "QuantizedDepthwiseConv2D"
-            mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
-
-
-# ...
-
-        elif mutate_selected_parameters == "raw_ops.QuantizedDepthwiseConv2DWithBias":
-            change_parameter_with = "tf.raw_ops.QuantizedDepthwiseConv2DWithBias()"
-            function_name = "QuantizedDepthwiseConv2DWithBias"
-            mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
-        elif mutate_selected_parameters == "raw_ops.QuantizedDepthwiseConv2DWithBiasAndRelu":
-            change_parameter_with = "tf.raw_ops.QuantizedDepthwiseConv2DWithBiasAndRelu()"
-            function_name = "QuantizedDepthwiseConv2DWithBiasAndRelu"
-            mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
-        elif mutate_selected_parameters == "raw_ops.QuantizedDepthwiseConv2DWithBiasAndReluAndRequantize":
-            change_parameter_with = "tf.raw_ops.QuantizedDepthwiseConv2DWithBiasAndReluAndRequantize()"
-            function_name = "QuantizedDepthwiseConv2DWithBiasAndReluAndRequantize"
-            mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
-        elif mutate_selected_parameters == "raw_ops.RecvTPUEmbeddingActivations":
-            change_parameter_with = "tf.raw_ops.RecvTPUEmbeddingActivations()"
-            function_name = "RecvTPUEmbeddingActivations"
-            mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
-        elif mutate_selected_parameters == "raw_ops.SdcaOptimizer":
-            change_parameter_with = "tf.raw_ops.SdcaOptimizer()"
-            function_name = "SdcaOptimizer"
-            mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
-        elif mutate_selected_parameters == "raw_ops.SdcaOptimizerV2":
-            change_parameter_with = "tf.raw_ops.SdcaOptimizerV2()"
-            function_name = "SdcaOptimizerV2"
-            mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
-        elif mutate_selected_parameters == "raw_ops.SparseDenseCwiseAdd":
-            change_parameter_with = "tf.raw_ops.SparseDenseCwiseAdd()"
-            function_name = "SparseDenseCwiseAdd"
-            mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
-        elif mutate_selected_parameters == "raw_ops.SparseDenseCwiseDiv":
-            change_parameter_with = "tf.raw_ops.SparseDenseCwiseDiv()"
-            function_name = "SparseDenseCwiseDiv"
-            mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
-        elif mutate_selected_parameters == "raw_ops.SparseDenseCwiseMul":
-            change_parameter_with = "tf.raw_ops.SparseDenseCwiseMul()"
-            function_name = "SparseDenseCwiseMul"
-            mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
-        elif mutate_selected_parameters == "raw_ops.SparseTensorDenseAdd":
-            change_parameter_with = "tf.raw_ops.SparseTensorDenseAdd()"
-            function_name = "SparseTensorDenseAdd"
-            mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
-        elif mutate_selected_parameters == "raw_ops.SparseTensorDenseMatMul":
-            change_parameter_with = "tf.raw_ops.SparseTensorDenseMatMul()"
-            function_name = "SparseTensorDenseMatMul"
-            mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
-        elif mutate_selected_parameters == "raw_ops.SparseToDense":
-            change_parameter_with = "tf.raw_ops.SparseToDense()"
-            function_name = "SparseToDense"
-            mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
-        elif mutate_selected_parameters == "raw_ops.TPUEmbeddingActivations":
-            change_parameter_with = "tf.raw_ops.TPUEmbeddingActivations()"
-            function_name = "TPUEmbeddingActivations"
-            mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
-        elif mutate_selected_parameters == "raw_ops.UniformQuantizedConvolution":
-            change_parameter_with = "tf.raw_ops.UniformQuantizedConvolution()"
-            function_name = "UniformQuantizedConvolution"
-            mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
-        elif mutate_selected_parameters == "raw_ops.UniformQuantizedConvolutionHybrid":
-            change_parameter_with = "tf.raw_ops.UniformQuantizedConvolutionHybrid()"
-            function_name = "UniformQuantizedConvolutionHybrid"
-            mutated_line = mutator.modify_tf_raw_ops_function_in_code(source_code, function_name, change_parameter_with)
-
+        
         #train
         elif mutate_selected_parameters == "train.BytesList":
             change_parameter_with = mutation_library.tf_train_BytesList_Mutation_List
@@ -1613,7 +1491,5 @@ def layer_select_mutate(mutate_selected_parameters,source_code ):
             function_name = "load_variable"
             mutated_line = mutator.modify_tf_train_class_in_code(source_code, function_name, change_parameter_with)
        
-        
-
 
         return mutated_line
