@@ -1,0 +1,1 @@
+<re.Match object; span=(373, 400), match='input_shape=( 32 , 32 , 3 )'>

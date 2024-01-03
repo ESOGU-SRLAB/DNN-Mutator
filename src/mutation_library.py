@@ -22,6 +22,26 @@ tf_keras_activation_functions = [
     'swish',                       # Swish aktivasyon fonksiyonu
     'tanh'                         # Hiperbolik tanjant aktivasyon fonksiyonu
 ]
+tf_input_shape_list = [
+    # Single layer configurations
+    "input_shape=(32,)", "input_shape=(64,)", "input_shape=(128,)", 
+    "input_shape=(256,)", "input_shape=(512,)",
+
+    # Double layer configurations
+    "input_shape=(32, 32)", "input_shape=(64, 64)", "input_shape=(128, 128)", 
+    "input_shape=(256, 256)", "input_shape=(512, 512)",
+
+    # Triple layer configurations
+    "input_shape=(32, 32, 3)", "input_shape=(64, 64, 3)", "input_shape=(128, 128, 3)", 
+    "input_shape=(256, 256, 3)", "input_shape=(512, 512, 3)",
+
+    # Additional configurations for variation
+    "input_shape=(32, 32, 1)", "input_shape=(64, 64, 1)", "input_shape=(128, 128, 1)", 
+    "input_shape=(256, 256, 1)", "input_shape=(512, 512, 1)",
+
+    # More triple layer configurations with different channel numbers
+    "input_shape=(32, 32, 4)", "input_shape=(64, 64, 4)", "input_shape=(128, 128, 4)"
+]
 
 tf_keras_units_list = [8, 16, 32, 64, 128, 256, 512, 1024]
 

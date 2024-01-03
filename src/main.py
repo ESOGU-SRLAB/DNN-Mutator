@@ -139,13 +139,42 @@ class MainWindow(QMainWindow):
                         dnn_source_code_data = json_file.read()
                         # Source code directory is added to the text
                         self.ui.plainTextEdit_dnn_source.setPlainText(str(file_name_dnn[0]))
+                        single_line_code = single_line_parentheses_converter1(dnn_source_code_data)
+                        print(single_line_code)
                         # source adds to the UI
-                        self.ui.plainTextEdit_53.setPlainText(dnn_source_code_data)     #Gökhan
+                        self.ui.plainTextEdit_53.setPlainText(single_line_code)     #Gökhan
                         # rapor_dosyasi = "rapor.txt"
                         # self.dnn_parameter = QComboBox(self)
                         # parameter=self.dnn_parameter.currentText()
                         # tensorflow_parametreleri_bul_ve_degistir(source_code_data,parameter,"if",rapor_dosyasi) #Gökhan--------------------------- 
+        """def single_line_parentheses_converter(code):
+            # Function to replace newlines and excessive spaces within parentheses
+            def replace_newlines(match):
+                # Replace newlines and multiple spaces with a single space
+                return re.sub(r'\s+', ' ', match.group(0))
+            
+            # Regular expression to find all contents inside parentheses
+            pattern = r'\([^()]*\)'
+            # Apply the replace function to all matches
+            single_line_code = re.sub(pattern, replace_newlines, code)
+            return single_line_code"""
+            
 
+        def single_line_parentheses_converter1(code):
+            def clean_parentheses(match):
+                # Replace newlines and multiple spaces with a single space
+                inner_content = match.group(0)
+                cleaned_content = re.sub(r'\s+', ' ', inner_content)
+                return cleaned_content
+
+            # Match parentheses, including nested ones
+            pattern = r'\((?:[^()]|\([^()]*\))*\)'
+            single_line_code = re.sub(pattern, clean_parentheses, code)
+
+            return single_line_code        
+
+                          
+            
         # Take ".json" file for workload
         def workload_get_file_json():
             """Take JSON-based workload files to use for V&V process in IM-FIT"""
@@ -1337,6 +1366,7 @@ class MainWindow(QMainWindow):
         # Initialize a variable to store the mutated code
         mutated_code =""
         mutated_line =""
+        all_matches = []
         # Get the initial source code
         source_code = self.ui.plainTextEdit_53.toPlainText()
         
@@ -1349,14 +1379,22 @@ class MainWindow(QMainWindow):
             
             
                 #find selected_parameters and mutate
-            mutated_line=selected_parameters.layer_select_mutate(mutate_selected_parameters,source_code)
+            mutated_line,matches =selected_parameters.layer_select_mutate(mutate_selected_parameters,source_code)
+            
             if mutated_line:
                 if mutated_line != 0:
+                    
                     mutated_code += mutated_line + "\n"
-        self.ui.plainTextEdit_mutated_code.setPlainText(mutated_code)
-            
-            # Modify the code using mutator and append it to mutated_code
+                    #mutated_code.append(mutated_line + "\n")
 
+                    all_matches.extend(matches)
+        self.ui.plainTextEdit_mutated_code.setPlainText(mutated_code)
+        
+            # Modify the code using mutator and append it to mutated_code
+        with open("matches_output.txt", "w") as file:
+            for match in all_matches:
+                # Her match'i yeni bir satıra yaz
+                file.write(str(match) + "\n")
         # Set the mutated code in the plain text edit
         
 

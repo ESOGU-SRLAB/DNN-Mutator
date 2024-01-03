@@ -8854,7 +8854,7 @@ color:white;</string>
                         </item>
                         <item>
                          <property name="text">
-                          <string>layers.Convolution2DTranspose()</string>
+                          <string>layers.Convolution1DTranspose()</string>
                          </property>
                         </item>
                         <item>

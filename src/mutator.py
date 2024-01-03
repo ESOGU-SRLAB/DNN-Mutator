@@ -17,7 +17,7 @@ class ConstantMutator(ast.NodeTransformer):
         for keyword in node.keywords:
             if keyword.arg == self.target_keyword:
                 keyword.value = ast.Str(s=self.new_value)
-        return node
+        return node,[]
 
 
 def modify_code_in_file_epoch(source_code, target_keyword, new_value):
@@ -33,7 +33,7 @@ def modify_code_in_file_epoch(source_code, target_keyword, new_value):
         with open("mutated_code.py", 'w') as output_file:
             output_file.write(new_code)
         print(f"Modified code saved as 'mutator_code.py'")
-    return new_value
+    return new_value,[]
 
 #-------------------------------------------------------------------------epoch
 
@@ -49,15 +49,41 @@ class ConstantMutatoractivation(ast.NodeTransformer):
                 node.value.s = self.new_value
         return node
 
-def modify_code_in_file_activation(source_code, target_keyword, new_value):
-    
-    code = source_code
+def replace_input_shape(source_code, new_shape):
+    # Regex deseni: 'input_shape=(...)' formundaki ifadeleri bulur
+    i=0
+    pattern = r"input_shape=\(\s*\d+\s*,\s*\d+\s*,\s*\d+\s*\)"
 
-    node = ast.parse(code)
-    renamer = ConstantMutatoractivation(target_keyword, new_value)
-    new_node = renamer.visit(node)
-    new_code = astunparse.unparse(new_node)
-    return new_code
+    # Yeni değerle değiştir
+    updated_code = re.sub(pattern, f"input_shape={new_shape[i]}", source_code)
+    matches = re.finditer(pattern, source_code)
+    matches_list = list(matches)
+    if matches_list:
+        return updated_code,matches_list
+    print(updated_code)
+    i=i+1
+    return new_shape,[]
+
+def modify_tf_activation_in_code(source_code, layer_names, new_value):
+    i=0
+    for layer_name in layer_names:
+        temp_source = source_code
+        # Katman adını ve sonrasında gelen parantezli ifadeyi bulmak için regex deseni
+        pattern = r"activation='[^']*'"
+       
+        # Find matches using regex
+        matches = re.findall(pattern, source_code)
+        # Replace found instances with the new value
+        source_code = re.sub(pattern, "activation="+"'"+new_value[i]+"'", source_code)
+        # Check if the source code has changed
+        print(matches)
+        if source_code != temp_source:
+            i=i+1                   
+            return source_code, matches
+            
+    return 0, []
+
+
 #--------------------------------------------------------------------Conv2D
 
 
@@ -74,7 +100,7 @@ def modify_code_in_file_Conv2D(source_code, new_value):
         original_code = selected_match.group(0)
         new_code = new_value  # Yeni kodu belirle
         source_code = source_code.replace(original_code, new_code, 1)  # İlk eşleşmeyi değiştir
-    return new_value
+    return new_value,[]
 
 def modify_code_in_file_MaxPooling2D(source_code, new_value):
     # MaxPooling2D çağrısını bulma
@@ -102,7 +128,7 @@ def modify_code_in_file_InputShape(source_code, new_value):
         original_code = selected_match.group(0)
         new_code = new_value  # Yeni kodu belirle
         source_code = source_code.replace(original_code, new_code, 1)  # İlk eşleşmeyi değiştir
-    return new_value
+    return new_value,[]
 
 def modify_tf_layer_in_code(source_code, layer_names,new_value):
     path="C:\\Users\\Gökhan\\Desktop\\Mutations\\"
@@ -117,15 +143,15 @@ def modify_tf_layer_in_code(source_code, layer_names,new_value):
         temp_source=source_code
 
         # Bulunan ifadeyi değiştirmek için yeni değer
-        new_value = f"tf.keras.layers.{layer_names}()"
+        new_value = f"tf.keras.layers.{layer_names}(new_value)"
+        matches = re.findall(pattern, source_code)
+
         # Regex kullanarak değişiklik yapma
         source_code = re.sub(pattern, new_value, source_code)
         if source_code != temp_source:
-            with open(f"{path}mutasyon{counter}{name}.py", "w") as file:
-                file.write(source_code)
-            counter+=1             
-            return new_value
-        return 0
+            print(matches)
+            return new_value,matches
+        return 0,[]
 
 def modify_tf_losses_in_code(source_code, layer_names,new_value):
     path="C:\\Users\\Gökhan\\Desktop\\Mutations\\"
@@ -137,14 +163,13 @@ def modify_tf_losses_in_code(source_code, layer_names,new_value):
         temp_source=source_code
         # Bulunan ifadeyi değiştirmek için yeni değer
         new_value = f"tf.keras.losses.{layer_names}()"
+        matches = re.findall(pattern, source_code)
         # Regex kullanarak değişiklik yapma
         source_code = re.sub(pattern, new_value, source_code)
         if source_code != temp_source:
-            with open(f"{path}mutasyon{counter}{name}.py", "w") as file:
-                file.write(source_code)
-            counter+=1                      
-            return new_value
-        return 0
+              
+            return new_value,matches
+        return 0,[]
 
 
 
@@ -159,21 +184,21 @@ def modify_tf_optimizers_in_code(source_code, layer_names,new_value):
         if re.search(pattern_legacy, source_code):
             # 'legacy' için yeni değer
             new_value = f"tf.keras.optimizers.{layer_names}()"
+            matches = re.findall(pattern_legacy, source_code)
             source_code = re.sub(pattern_legacy, new_value, source_code)
             name="_optimizers_legacy"
         elif re.search(pattern_schedules, source_code):
             # 'schedules' için yeni değer
             new_value = f"tf.keras.optimizers.{layer_names}()"
+            matches = re.findall(pattern_schedules, source_code)
             source_code = re.sub(pattern_schedules, new_value, source_code)
         #elif():
             #new_value = f"tf.keras.optimizers.{layer_names}()"
             name="_optimizers_schedules"
         if source_code != temp_source:
-            with open(f"{path}mutasyon{counter}{name}.py", "w") as file:
-                file.write(source_code)
-            counter+=1
-            return new_value
-        return 0
+            
+            return new_value,matches
+        return 0,[]
 
 def modify_tf_nn_function_in_code(source_code, layer_names,new_value):
     path="C:\\Users\\Gökhan\\Desktop\\Mutations\\"
@@ -184,15 +209,14 @@ def modify_tf_nn_function_in_code(source_code, layer_names,new_value):
         temp_source=source_code
         pattern = rf"(tf\.nn\.\b{layer_names}\b\s*\()((?:[^()]|\([^)]*\))*)\)"
         # Bulunan ifadeyi değiştirmek için yeni değer
+        matches = re.findall(pattern, source_code)
         new_value = f"tf.nn.{layer_names}()"
         # Regex kullanarak değişiklik yapma
         source_code = re.sub(pattern, new_value, source_code)
         if source_code != temp_source:
-            with open(f"{path}mutasyon{counter}{name}.py", "w") as file:
-                file.write(source_code)
-            counter+=1          
-            return new_value            
-        return 0
+            
+            return new_value ,matches           
+        return 0,[]
 
 def modify_tf_raw_ops_function_in_code(source_code, layer_names,new_value):
     name="_raw_ops"
@@ -204,14 +228,14 @@ def modify_tf_raw_ops_function_in_code(source_code, layer_names,new_value):
         pattern = rf"(tf\.raw_ops\.\b{layer_names}\b\s*\()((?:[^()]|\([^)]*\))*)\)"
         # Bulunan ifadeyi değiştirmek için yeni değer
         new_value = f"tf.raw_ops.{layer_names}()"
+        matches = re.findall(pattern, source_code)
         # Regex kullanarak değişiklik yapma
         source_code = re.sub(pattern, new_value, source_code)
+        
         if source_code != temp_source:
-            with open(f"{path}mutasyon{counter}{name}.py", "w") as file:
-                file.write(source_code)
-            counter+=1          
-            return new_value
-        return 0
+            
+            return new_value,matches
+        return 0,[]
 
 def modify_tf_train_class_in_code(source_code, layer_names,new_value):
     path="C:\\Users\\Gökhan\\Desktop\\Mutations\\"
@@ -224,14 +248,14 @@ def modify_tf_train_class_in_code(source_code, layer_names,new_value):
         pattern = rf"(tf\.train\.\b{layer_names}\b\s*\()((?:[^()]|\([^)]*\))*)\)"
         # Bulunan ifadeyi değiştirmek için yeni değer
         new_value = f"tf.train.{layer_names}()"
+        matches = re.findall(pattern, source_code)
         source_code = re.sub(pattern, new_value, source_code)
+        
         # Regex kullanarak değişiklik yapma
         if source_code != temp_source:
-            with open(f"{path}mutasyon{counter}{name}.py", "w") as file:
-                file.write(source_code)
-            counter+=1                             
-            return new_value
-        return 0
+            print(matches)                    
+            return new_value,matches
+        return 0,[]
 
 def modify_tf_keras_activations_function_in_code(source_code, layer_names,new_value):
     path="C:\\Users\\Gökhan\\Desktop\\Mutations\\"
@@ -244,11 +268,10 @@ def modify_tf_keras_activations_function_in_code(source_code, layer_names,new_va
         pattern = rf"(tf\.keras\.activations\.\b{layer_names}\b\s*\()((?:[^()]|\([^)]*\))*)\)"
         # Bulunan ifadeyi değiştirmek için yeni değer
         new_value = f"tf.activations.{layer_names}()"
+        matches = re.findall(pattern, source_code)
         # Regex kullanarak değişiklik yapma
         source_code = re.sub(pattern, new_value, source_code)
         if source_code != temp_source:
-            with open(f"{path}mutasyon{counter}{name}.py", "w") as file:
-                file.write(source_code)
-            counter+=1                 
-            return new_value
-        return 0
+            print(matches)   
+            return new_value,matches
+        return 0,[]

@@ -5793,7 +5793,7 @@ class Ui_MainWindow(object):
         ___qlistwidgetitem326 = self.listWidget_mutate_list.item(4)
         ___qlistwidgetitem326.setText(QCoreApplication.translate("MainWindow", u"layers.Convolution1D()", None));
         ___qlistwidgetitem327 = self.listWidget_mutate_list.item(5)
-        ___qlistwidgetitem327.setText(QCoreApplication.translate("MainWindow", u"layers.Convolution2DTranspose()", None));
+        ___qlistwidgetitem327.setText(QCoreApplication.translate("MainWindow", u"layers.Convolution1DTranspose()", None));
         ___qlistwidgetitem328 = self.listWidget_mutate_list.item(6)
         ___qlistwidgetitem328.setText(QCoreApplication.translate("MainWindow", u"layers.Convolution2D()", None));
         ___qlistwidgetitem329 = self.listWidget_mutate_list.item(7)
