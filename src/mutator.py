@@ -76,6 +76,26 @@ def modify_tf_activation_in_code(source_code, layer_names, new_value):
         # Replace found instances with the new value
         source_code = re.sub(pattern, "activation="+"'"+new_value[i]+"'", source_code)
         # Check if the source code has changed
+        activation_list = [f"activation={m}" for m in matches]
+        print(activation_list)
+        if source_code != temp_source:
+            i=i+1                   
+            return source_code, matches
+            
+    return 0, []
+
+def modify_tf_learning_rate_in_code(source_code, layer_names, new_value):
+    i=0
+    for layer_name in layer_names:
+        temp_source = source_code
+        # Katman adını ve sonrasında gelen parantezli ifadeyi bulmak için regex deseni
+        pattern = r"(learning_rate\s*=\s*\d*\.?\d+)"
+       
+        # Find matches using regex
+        matches = re.findall(pattern, source_code)
+        # Replace found instances with the new value
+        source_code = re.sub(pattern, "learning_rate="+"'"+new_value[i]+"'", source_code)
+        # Check if the source code has changed
         print(matches)
         if source_code != temp_source:
             i=i+1                   
@@ -84,7 +104,27 @@ def modify_tf_activation_in_code(source_code, layer_names, new_value):
     return 0, []
 
 
-#--------------------------------------------------------------------Conv2D
+def replace_kernel_size_in_code(source_code,new_kernel_size):
+    i=1
+    # Regex deseni: 'kernel_size=...' formundaki ifadeleri bulur
+    # Hem tek sayı hem de parantez içindeki sayı çiftlerini kapsar
+    pattern = r"kernel_size\s*=\s*((?:\(\s*\d+\s*(?:,\s*\d+\s*)*\))|\d+)"
+
+
+    #pattern = r"kernel_size\s*=\s*(\(\s*\d+\s*,\s*\d+\s*\)|\d+)"
+    #pattern = r"kernel_size\s*=\s*(\d+|\(\s*\d+\s*(,\s*\d+\s*)+\))"
+    matches = re.findall(pattern, source_code)
+
+    # Yeni değerle değiştir
+    updated_code = re.sub(pattern, "learning_rate="+"'"+new_kernel_size[i]+"'", source_code)
+    matches_list = list(matches)
+    kernel_size_list = [f"kernel_size={m}" for m in matches]  # List of original kernel_size values
+    print(kernel_size_list)
+       
+    if matches_list:
+            i=i+1                  
+            return source_code, matches
+    return 0,[]
 
 
 

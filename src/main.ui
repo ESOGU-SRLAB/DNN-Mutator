@@ -10767,6 +10767,11 @@ color:white;</string>
                           <string>activation</string>
                          </property>
                         </item>
+                        <item>
+                         <property name="text">
+                          <string>kernel_size</string>
+                         </property>
+                        </item>
                        </widget>
                        <widget class="QLabel" name="label_25">
                         <property name="geometry">

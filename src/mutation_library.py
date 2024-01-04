@@ -47,6 +47,27 @@ tf_keras_units_list = [8, 16, 32, 64, 128, 256, 512, 1024]
 
 tf_keras_use_bias_list = [True, False]
 
+tf_learning_rate_list = [
+    # Commonly used learning rate values
+    "learning_rate=0.001", "learning_rate=0.01", "learning_rate=0.1", 
+    "learning_rate=0.0001", "learning_rate=0.05",
+
+    # Scenarios with erroneous or inappropriate values
+    "learning_rate=-0.001", "learning_rate='invalid'", "learning_rate=None"
+]
+tf_kernel_size_list = [
+    # 1D kernel sizes
+    "kernel_size=1", "kernel_size=3", "kernel_size=5", 
+    "kernel_size=7", "kernel_size=9",
+
+    # 2D kernel sizes
+    "kernel_size=(1, 1)", "kernel_size=(3, 3)", "kernel_size=(5, 5)", 
+    "kernel_size=(7, 7)", "kernel_size=(9, 9)",
+
+    # 3D kernel sizes
+    "kernel_size=(1, 1, 1)", "kernel_size=(3, 3, 3)", "kernel_size=(5, 5, 5)", 
+    "kernel_size=(7, 7, 7)", "kernel_size=(9, 9, 9)"
+]
 tf_keras_kernel_initializer_list = [
     'Zeros',                  # Initializes weights to zero
     'Ones',                   # Initializes weights to one

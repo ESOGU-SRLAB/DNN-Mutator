@@ -54,12 +54,12 @@ def layer_select_mutate(mutate_selected_parameters,source_code ):
         elif mutate_selected_parameters == "regularization":
             change_parameter_with = "l2"
             mutated_line,matches= mutator.modify_tf_activation_in_code(source_code, mutate_selected_parameters, change_parameter_with)
-        elif mutate_selected_parameters == "loss":
-            change_parameter_with = "mae"
-            mutated_line,matches = mutator.modify_tf_activation_in_code(source_code, mutate_selected_parameters, change_parameter_with)
+        elif mutate_selected_parameters == "kernel_size":
+            change_parameter_with = mutation_library.tf_kernel_size_list
+            mutated_line,matches = mutator.replace_kernel_size_in_code(source_code, change_parameter_with)
         elif mutate_selected_parameters == "learning_rate":
-            change_parameter_with = "0.001"
-            mutated_line,matches = mutator.modify_tf_activation_in_code(source_code, mutate_selected_parameters, change_parameter_with)
+            change_parameter_with = mutation_library.tf_learning_rate_list
+            mutated_line,matches = mutator.modify_tf_learning_rate_in_code(source_code, mutate_selected_parameters, change_parameter_with)
         elif mutate_selected_parameters == "input_shape":
             change_parameter_with = mutation_library.tf_input_shape_list
             mutated_line,matches = mutator.replace_input_shape(source_code, change_parameter_with)                       
