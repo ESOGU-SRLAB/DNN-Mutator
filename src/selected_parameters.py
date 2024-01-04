@@ -54,6 +54,12 @@ def layer_select_mutate(mutate_selected_parameters,source_code ):
         elif mutate_selected_parameters == "regularization":
             change_parameter_with = "l2"
             mutated_line,matches= mutator.modify_tf_activation_in_code(source_code, mutate_selected_parameters, change_parameter_with)
+        elif mutate_selected_parameters == "dropout":
+            change_parameter_with = mutation_library.tf_dropout_rate_list
+            mutated_line,matches= mutator.modify_tf_dropout_in_code(source_code, change_parameter_with)            
+        elif mutate_selected_parameters == "use_bias":
+            change_parameter_with = mutation_library.tf_keras_use_bias_list
+            mutated_line,matches= mutator.modify_tf_use_bias_in_code(source_code, mutate_selected_parameters, change_parameter_with)
         elif mutate_selected_parameters == "kernel_size":
             change_parameter_with = mutation_library.tf_kernel_size_list
             mutated_line,matches = mutator.replace_kernel_size_in_code(source_code, change_parameter_with)

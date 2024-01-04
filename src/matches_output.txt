@@ -1,4 +1,2 @@
-activation='relu'
-activation='relu'
-activation='relu'
-activation='relu'
+dropout=100
+dropout=0.5

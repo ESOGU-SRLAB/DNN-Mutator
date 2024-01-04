@@ -10749,7 +10749,7 @@ color:white;</string>
                         </item>
                         <item>
                          <property name="text">
-                          <string>Dropout</string>
+                          <string>dropout</string>
                          </property>
                         </item>
                         <item>
@@ -10770,6 +10770,11 @@ color:white;</string>
                         <item>
                          <property name="text">
                           <string>kernel_size</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>use_bias</string>
                          </property>
                         </item>
                        </widget>

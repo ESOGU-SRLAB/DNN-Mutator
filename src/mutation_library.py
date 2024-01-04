@@ -45,7 +45,15 @@ tf_input_shape_list = [
 
 tf_keras_units_list = [8, 16, 32, 64, 128, 256, 512, 1024]
 
-tf_keras_use_bias_list = [True, False]
+tf_keras_use_bias_list = ["True", "False"]
+
+tf_dropout_rate_list = [
+    "dropout=0.1",  # A light amount of dropout
+    "dropout=0.2",  # Moderately light dropout
+    "dropout=0.3",  # Moderate dropout
+    "dropout=0.4",  # Moderately high dropout
+    "dropout=0.5"   # A relatively high rate of dropout
+]
 
 tf_learning_rate_list = [
     # Commonly used learning rate values

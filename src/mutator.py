@@ -57,12 +57,32 @@ def replace_input_shape(source_code, new_shape):
     # Yeni değerle değiştir
     updated_code = re.sub(pattern, f"input_shape={new_shape[i]}", source_code)
     matches = re.finditer(pattern, source_code)
-    matches_list = list(matches)
-    if matches_list:
-        return updated_code,matches_list
+    
+    input_shape_list = [f"input_shape={m}" for m in matches]
+    print(input_shape_list)
+    if input_shape_list:
+        return updated_code,input_shape_list
     print(updated_code)
     i=i+1
     return new_shape,[]
+
+def modify_tf_dropout_in_code(source_code, new_dropout_value):
+    i=0
+    # Regex deseni: 'dropout=...' formundaki ifadeleri bulur
+    pattern = r"dropout\s*=\s*\d*\.?\d+"
+    # Find matches using regex
+    matches = re.findall(pattern, source_code)
+    
+    # Check if the source code has changed
+    dropout_list = [f"{m}" for m in matches]
+    print(dropout_list)
+    # Yeni değerle değiştir
+    updated_code = re.sub(pattern, f"{new_dropout_value}", source_code)
+    if matches:
+        return updated_code,dropout_list
+
+
+
 
 def modify_tf_activation_in_code(source_code, layer_names, new_value):
     i=0
@@ -84,6 +104,22 @@ def modify_tf_activation_in_code(source_code, layer_names, new_value):
             
     return 0, []
 
+
+def modify_tf_use_bias_in_code(source_code,layer_names, new_use_bias_value):
+    # Regex deseni: 'use_bias=' sonrası herhangi bir değeri bulur
+    pattern = r"use_bias\s*=\s*[^,)]+"
+    matches = re.findall(pattern, source_code)
+    use_bias_list = [f"{m}" for m in matches]
+    print(use_bias_list)
+    # Yeni değerle değiştir
+    
+    updated_code = re.sub(pattern, f"use_bias={new_use_bias_value}", source_code)
+
+    return updated_code,matches
+
+
+
+
 def modify_tf_learning_rate_in_code(source_code, layer_names, new_value):
     i=0
     for layer_name in layer_names:
@@ -93,10 +129,12 @@ def modify_tf_learning_rate_in_code(source_code, layer_names, new_value):
        
         # Find matches using regex
         matches = re.findall(pattern, source_code)
+        matches_list = list(matches)
+        learning_rate_list = [f"learning_rate={m}" for m in matches] 
         # Replace found instances with the new value
         source_code = re.sub(pattern, "learning_rate="+"'"+new_value[i]+"'", source_code)
         # Check if the source code has changed
-        print(matches)
+        print(learning_rate_list)
         if source_code != temp_source:
             i=i+1                   
             return source_code, matches
