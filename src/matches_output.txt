@@ -3,6 +3,7 @@ dropout=0.5
 use_bias=False
 2
 (2,2,2)
+(2,2,2)
 (2,2)
 learning_rate=0.001
 input_shape=<re.Match object; span=(417, 444), match='input_shape=( 32 , 32 , 3 )'>
@@ -12,7 +13,7 @@ tf.keras.layers.AlphaDropout( rate, noise_shape=None, seed=None, **kwargs )
 tf.keras.layers.AveragePooling2D( pool_size=(2, 2)
 tf.keras.layers.Concatenate( 5 )
 tf.keras.layers.Conv1DTranspose( rate, noise_shape=None, seed=None, **kwargs, rate, noise_shape=None, seed=None, **kwargs )
-('tf.keras.activations.tanh(', ' x ')
+tf.keras.activations.tanh( x )
 tf.keras.losses.BinaryCrossentropy( from_logits=False, label_smoothing=0.0, axis=-1, reduction=losses_utils.ReductionV2.AUTO, name='binary_crossentropy' )
 tf.keras.losses.Loss( reduction=losses_utils.ReductionV2.AUTO, name=None )
 tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)
@@ -20,8 +21,8 @@ tf.keras.losses.SparseCategoricalCrossentropy( from_logits=False, ignore_class=N
 tf.keras.optimizers.legacy.Adamax( learning_rate=0.001, beta_1=0.9, beta_2=0.999, epsilon=1e-07, name='Adamax', **kwargs )
 tf.keras.optimizers.legacy.Adamax( learning_rate=0.001, beta_1=0.9, beta_2=0.999, epsilon=1e-07, name='Adamax', **kwargs )
 tf.keras.optimizers.schedules.ExponentialDecay( initial_learning_rate, decay_steps, decay_rate, staircase=False, name=None )
-('tf.nn.compute_average_loss(', ' per_example_loss, sample_weight=None, global_batch_size=None ')
-('tf.nn.conv2d(', " input, filters, strides, padding, data_format='NHWC', dilations=None, name=None ")
-('tf.nn.with_space_to_batch(', 'input, kernel_size=(2,2,2), input, dilation_rate, padding, op, filter_shape=None, spatial_dims=None, data_format=None ')
-('tf.raw_ops.QuantizedConv2D(', ' input, filter, min_input, max_input, min_filter, max_filter, strides, padding, out_type=tf.dtypes.qint32, dilations=[1, 1, 1, 1], name=None ')
-('tf.train.load_variable(', ' ckpt_dir_or_file, name ')
+tf.nn.compute_average_loss( per_example_loss, sample_weight=None, global_batch_size=None )
+tf.nn.conv2d( input, filters, strides, padding, data_format='NHWC', dilations=None, name=None )
+tf.nn.safe_embedding_lookup_sparse(kernel_size=(2,2,2)
+tf.nn.with_space_to_batch(input, kernel_size=(2,2,2)
+tf.train.load_variable( ckpt_dir_or_file, name )
