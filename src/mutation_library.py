@@ -915,6 +915,11 @@ tf_all_list=[
 ]
 
 tf_all_mutation_code_list = [
+'dropout',    
+'use_bias',    
+'kernel_size',    
+'learning_rate',    
+'input_shape',
 'layers.AbstractRNNCell()',
 'layers.Activation()',
 'layers.ActivityRegularization()',

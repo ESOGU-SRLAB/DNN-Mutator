@@ -60,11 +60,11 @@ def replace_input_shape(source_code, new_shape):
     
     input_shape_list = [f"input_shape={m}" for m in matches]
     print(input_shape_list)
+    new_value = "input_shape="
     if input_shape_list:
-        return updated_code,input_shape_list
-    print(updated_code)
+        return new_value,input_shape_list
     i=i+1
-    return new_shape,[]
+    return new_value,[]
 
 def modify_tf_dropout_in_code(source_code, new_dropout_value):
     i=0
@@ -78,8 +78,9 @@ def modify_tf_dropout_in_code(source_code, new_dropout_value):
     print(dropout_list)
     # Yeni değerle değiştir
     updated_code = re.sub(pattern, f"{new_dropout_value}", source_code)
+    new_value = "dropout="
     if matches:
-        return updated_code,dropout_list
+        return new_value,dropout_list
 
 
 
@@ -93,14 +94,16 @@ def modify_tf_activation_in_code(source_code, layer_names, new_value):
        
         # Find matches using regex
         matches = re.findall(pattern, source_code)
+        
         # Replace found instances with the new value
         source_code = re.sub(pattern, "activation="+"'"+new_value[i]+"'", source_code)
         # Check if the source code has changed
         activation_list = [f"activation={m}" for m in matches]
         print(activation_list)
+        new_value = "activation="
         if source_code != temp_source:
             i=i+1                   
-            return source_code, matches
+            return new_value, matches
             
     return 0, []
 
@@ -109,13 +112,14 @@ def modify_tf_use_bias_in_code(source_code,layer_names, new_use_bias_value):
     # Regex deseni: 'use_bias=' sonrası herhangi bir değeri bulur
     pattern = r"use_bias\s*=\s*[^,)]+"
     matches = re.findall(pattern, source_code)
+    new_value = "use_bias="
     use_bias_list = [f"{m}" for m in matches]
     print(use_bias_list)
     # Yeni değerle değiştir
     
     updated_code = re.sub(pattern, f"use_bias={new_use_bias_value}", source_code)
 
-    return updated_code,matches
+    return new_value,matches
 
 
 
@@ -129,7 +133,7 @@ def modify_tf_learning_rate_in_code(source_code, layer_names, new_value):
        
         # Find matches using regex
         matches = re.findall(pattern, source_code)
-        matches_list = list(matches)
+        new_value = "learning_rate="
         learning_rate_list = [f"learning_rate={m}" for m in matches] 
         # Replace found instances with the new value
         source_code = re.sub(pattern, "learning_rate="+"'"+new_value[i]+"'", source_code)
@@ -137,7 +141,7 @@ def modify_tf_learning_rate_in_code(source_code, layer_names, new_value):
         print(learning_rate_list)
         if source_code != temp_source:
             i=i+1                   
-            return source_code, matches
+            return new_value, matches
             
     return 0, []
 
@@ -152,7 +156,7 @@ def replace_kernel_size_in_code(source_code,new_kernel_size):
     #pattern = r"kernel_size\s*=\s*(\(\s*\d+\s*,\s*\d+\s*\)|\d+)"
     #pattern = r"kernel_size\s*=\s*(\d+|\(\s*\d+\s*(,\s*\d+\s*)+\))"
     matches = re.findall(pattern, source_code)
-
+    new_value = "kernel_size="
     # Yeni değerle değiştir
     updated_code = re.sub(pattern, "learning_rate="+"'"+new_kernel_size[i]+"'", source_code)
     matches_list = list(matches)
@@ -161,7 +165,7 @@ def replace_kernel_size_in_code(source_code,new_kernel_size):
        
     if matches_list:
             i=i+1                  
-            return source_code, matches
+            return new_value, matches
     return 0,[]
 
 
@@ -199,7 +203,7 @@ def modify_code_in_file_InputShape(source_code, new_value):
     pattern = r"input_shape=\(\d+, \d+, \d+\)"
     matches = re.finditer(pattern, source_code)
     matches_list = list(matches)
-
+    new_value = "input_shape="
     if matches_list:
         # İlk eşleşmeyi al
         selected_match = matches_list[0]
@@ -209,15 +213,13 @@ def modify_code_in_file_InputShape(source_code, new_value):
     return new_value,[]
 
 def modify_tf_layer_in_code(source_code, layer_names,new_value):
-    path="C:\\Users\\Gökhan\\Desktop\\Mutations\\"
-    name="_layer" 
-    global counter   
+ 
     for layer_name in layer_names:
         # Katman adını ve sonrasında gelen parantezli ifadeyi bulmak için regex deseni
         #pattern = rf"(tf\.keras\.layers\.\b{layer_names}\b\s*\()[^)]*\)"
         #pattern = rf"(tf\.keras\.layers\.\b{layer_names}\b\s*\()[\s\S]*?(\))"
-        pattern = rf"(tf\.keras\.layers\.\b{layer_names}\b\s*\()((?:[^()]|\([^)]*\))*)\)"
-
+        #pattern = rf"(tf\.keras\.layers\.\b{layer_names}\b\s*\()((?:[^()]|\([^)]*\))*)\)"
+        pattern = rf"tf\.keras\.layers\.{layer_names}\([^\)]*\)"
         temp_source=source_code
 
         # Bulunan ifadeyi değiştirmek için yeni değer
@@ -232,16 +234,18 @@ def modify_tf_layer_in_code(source_code, layer_names,new_value):
         return 0,[]
 
 def modify_tf_losses_in_code(source_code, layer_names,new_value):
-    path="C:\\Users\\Gökhan\\Desktop\\Mutations\\"
-    name="_losses"
     global counter
     for layer_name in layer_names:
         #pattern = rf"(tf\.keras\.losses\.\b{layer_names}\b\s*\()((?:[^()]|\([^)]*\))*)\)"
-        pattern = rf"(tf\.(keras\.)?losses\.\b{layer_names}\b\s*\()((?:[^()]|\([^)]*\))*)\)"
+        #pattern = rf"(tf\.(keras\.)?losses\.\b{layer_names}\b\s*\()((?:[^()]|\([^)]*\))*)\)"
+        pattern = rf"tf\.keras\.losses\.\b{layer_names}\([^\)]*\)"
+
         temp_source=source_code
         # Bulunan ifadeyi değiştirmek için yeni değer
         new_value = f"tf.keras.losses.{layer_names}()"
         matches = re.findall(pattern, source_code)
+        use_losses_list = [f"{m}" for m in matches]
+        print(use_losses_list)
         # Regex kullanarak değişiklik yapma
         source_code = re.sub(pattern, new_value, source_code)
         if source_code != temp_source:
@@ -252,23 +256,29 @@ def modify_tf_losses_in_code(source_code, layer_names,new_value):
 
 
 def modify_tf_optimizers_in_code(source_code, layer_names,new_value):
-    path="C:\\Users\\Gökhan\\Desktop\\Mutations\\"
+    
     global counter
     for layer_name in layer_names:
         # 'legacy' ve 'schedules' ifadeleri için özel desenler
-        pattern_legacy = rf"(tf\.keras\.optimizers\.legacy\.\b{layer_names}\b\s*\()((?:[^()]|\([^)]*\))*)\)"
-        pattern_schedules = rf"(tf\.keras\.optimizers\.schedules\.\b{layer_names}\b\s*\()((?:[^()]|\([^)]*\))*)\)"
+        #pattern_legacy = rf"(tf\.keras\.optimizers\.legacy\.\b{layer_names}\b\s*\()((?:[^()]|\([^)]*\))*)\)"
+        pattern_legacy = rf"tf\.keras\.optimizers\.legacy\.{layer_names}\([^\)]*\)"
+        #pattern_schedules = rf"(tf\.keras\.optimizers\.schedules\.\b{layer_names}\b\s*\()((?:[^()]|\([^)]*\))*)\)"
+        pattern_schedules = rf"tf\.keras\.optimizers\.schedules\.{layer_names}\([^\)]*\)"
         temp_source=source_code
         if re.search(pattern_legacy, source_code):
             # 'legacy' için yeni değer
-            new_value = f"tf.keras.optimizers.{layer_names}()"
+            new_value = f"tf.keras.optimizers.legacy.{layer_names}()"
             matches = re.findall(pattern_legacy, source_code)
+            use_legacy_list = [f"{m}" for m in matches]
+            print(use_legacy_list)
             source_code = re.sub(pattern_legacy, new_value, source_code)
             name="_optimizers_legacy"
         elif re.search(pattern_schedules, source_code):
             # 'schedules' için yeni değer
-            new_value = f"tf.keras.optimizers.{layer_names}()"
-            matches = re.findall(pattern_schedules, source_code)
+            new_value = f"tf.keras.optimizers.schedules.{layer_names}()"
+            matches = re.findall(pattern_schedules, source_code)           
+            use_schedules_list = [f"{m}" for m in matches]
+            print(use_schedules_list)
             source_code = re.sub(pattern_schedules, new_value, source_code)
         #elif():
             #new_value = f"tf.keras.optimizers.{layer_names}()"
