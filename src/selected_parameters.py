@@ -35,11 +35,12 @@ def layer_select_mutate(mutate_selected_parameters,source_code ):
         mutated_line =""
         layer_name=""
         matches=[]
+        change_parameter_with=[]
         if mutate_selected_parameters == "epochs":
             change_parameter_with = 180
             mutated_line,matches = mutator.modify_code_in_file_epoch(source_code, mutate_selected_parameters, change_parameter_with)
         elif mutate_selected_parameters == "Activation":
-            change_parameter_with = mutation_library.tf_keras_activation_functions
+            change_parameter_with = mutation_library.tf_activation_functions
             mutated_line,matches = mutator.modify_tf_activation_in_code(source_code, mutate_selected_parameters, change_parameter_with)
             layer_name="activation"
         elif mutate_selected_parameters == "optimizer":
@@ -74,7 +75,7 @@ def layer_select_mutate(mutate_selected_parameters,source_code ):
             layer_name="AbstractRNNCell"
             mutated_line,matches = mutator.modify_tf_layer_in_code(source_code,layer_name, change_parameter_with)
         elif mutate_selected_parameters == "layers.Activation()":
-            change_parameter_with = mutation_library.tf_keras_activation_functions
+            change_parameter_with = mutation_library.tf_keras_layers_Activation_Full_List
             layer_name="Activation"
             mutated_line,matches = mutator.modify_tf_layer_in_code(source_code,layer_name, change_parameter_with)
         elif mutate_selected_parameters == "layers.ActivityRegularization()":
@@ -268,6 +269,10 @@ def layer_select_mutate(mutate_selected_parameters,source_code ):
         elif mutate_selected_parameters == "layers.add()":
             change_parameter_with = mutation_library.tf_keras_layers_add_Mutation_List
             layer_name = "add"
+            mutated_line,matches = mutator.modify_tf_layer_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "layers.AdditiveAttention()":
+            change_parameter_with = mutation_library.tf_keras_layers_AdditiveAttention_Mutation_List
+            layer_name = "AdditiveAttention"
             mutated_line,matches = mutator.modify_tf_layer_in_code(source_code, layer_name, change_parameter_with)
         elif mutate_selected_parameters == "layers.average()":
             change_parameter_with = mutation_library.tf_keras_layers_average_Mutation_List
@@ -1495,4 +1500,4 @@ def layer_select_mutate(mutate_selected_parameters,source_code ):
             mutated_line,matches = mutator.modify_tf_train_class_in_code(source_code, function_name, change_parameter_with)
        
 
-        return mutated_line,matches
+        return mutated_line,matches,change_parameter_with

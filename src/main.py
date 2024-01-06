@@ -1367,9 +1367,10 @@ class MainWindow(QMainWindow):
         mutated_code =""
         mutated_line =""
         all_matches = []
+        all_faults = []
         # Get the initial source code
         source_code = self.ui.plainTextEdit_53.toPlainText()
-        
+        file_directory="C:/Users/"
         # Iterate through the selected items
         for item in selected_items:
 
@@ -1379,22 +1380,47 @@ class MainWindow(QMainWindow):
             
             
                 #find selected_parameters and mutate
-            mutated_line,matches =selected_parameters.layer_select_mutate(mutate_selected_parameters,source_code)
-            
-            if mutated_line:
-                if mutated_line != 0:
-                    
+            mutated_line,matches,mutation_fault_list =selected_parameters.layer_select_mutate(mutate_selected_parameters,source_code)
+            if mutated_line != 0:
+                if matches:
                     mutated_code += mutated_line + "\n"
+            for mutate_code in matches:
+                for mutation  in mutation_fault_list:
+                    if item not in mutation_library.tf_hyper_parameters_mutation_code_list:
+                        fault = {
+                            "Fault": {
+                                "File_Directory": file_directory,
+                                "Source_Code": mutate_code,
+                                "Mutate_Code": mutation
+                            }
+                        }
+                        all_faults.append(fault)
+                    else:
+                        fault = {
+                            "Fault": {
+                                "File_Directory": file_directory,
+                                "Source_Code": mutate_code,
+                                "Mutate_Code": mutated_line+mutation+")"
+                            } 
+                        }
+                        all_faults.append(fault)
+            
+        with open('dnn_mutation_faults.json', 'w') as f:
+            json.dump(all_faults, f, indent=4)            
+            #if mutated_line:
+                #if mutated_line != 0:
+                    
+                    #mutated_code += mutated_line + "\n"
                     #mutated_code.append(mutated_line + "\n")
 
-                    all_matches.extend(matches)
+                    #all_matches.extend(matches)
         self.ui.plainTextEdit_mutated_code.setPlainText(mutated_code)
         
             # Modify the code using mutator and append it to mutated_code
-        with open("matches_output.txt", "w") as file:
-            for match in all_matches:
+        #with open("matches_output.txt", "w") as file:
+            #for match in all_matches:
                 # Her match'i yeni bir satıra yaz
-                file.write(str(match) + "\n")
+                #file.write(str(match) + "\n")
         # Set the mutated code in the plain text edit
         
 
@@ -3731,7 +3757,54 @@ class MainWindow(QMainWindow):
                 split_text = full_path.split("\n")
                 self.ui.listWidget_11.addItems(split_text)
                 self.ui.listWidget_6.addItems(split_text)
+        if btnName == "btn_save_dnn_fiplan":
+                    
 
+                    selected_task_list_size = self.ui.listWidget_4.count()
+                    created_fault_plan_list = []
+
+                    if selected_task_list_size:
+                        dialog = QFileDialog()
+                        path_name = QFileDialog.getExistingDirectory()
+                        if path_name != "":
+                            file_name = self.ui.plainTextEdit_20.toPlainText() + ".json"
+
+                        mutant_code_list_length = len(SOURCE_AND_MUTANT_CODE)
+                        source_code_directory = self.ui.plainTextEdit_10.toPlainText()
+
+                        for i in range(0, mutant_code_list_length):
+                            if i % 2 == 0:
+                                original_code = SOURCE_AND_MUTANT_CODE[i]
+                            else:
+                                mutant_code = SOURCE_AND_MUTANT_CODE[i]
+
+                                created_fault = {
+                                    "Fault": {
+                                        "File_Directory": source_code_directory,
+                                        "Source_Code": original_code,
+                                        "Mutate_Code": mutant_code,
+                                    }
+                                }
+                                created_fault_plan_list.append(created_fault)
+
+                        with open("fault_plans.json", mode="w", encoding="utf-8") as file:
+                            fault_plan_json_format = json.dumps(
+                                created_fault_plan_list, indent=4
+                            )
+                            file.write(fault_plan_json_format)
+
+                        text = self.ui.plainTextEdit_20.toPlainText() + "_type_python.json"
+                        full_path = os.path.join(path_name, text)
+
+                        with open(full_path, mode="w", encoding="utf-8") as file:
+                            fault_plan_json_format = json.dumps(
+                                created_fault_plan_list, indent=4
+                            )
+                            file.write(fault_plan_json_format)
+
+                        split_text = full_path.split("\n")
+                        self.ui.listWidget_11.addItems(split_text)
+                        self.ui.listWidget_6.addItems(split_text)
         if btnName == "btn_remove_fiplan":
             row = self.ui.listWidget_11.currentRow()
             self.ui.listWidget_11.takeItem(row)

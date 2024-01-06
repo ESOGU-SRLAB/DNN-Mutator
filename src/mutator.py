@@ -121,7 +121,7 @@ def modify_tf_use_bias_in_code(source_code,layer_names, new_use_bias_value):
     
     updated_code = re.sub(pattern, f"use_bias={new_use_bias_value}", source_code)
 
-    return new_value,matches
+    return new_value,use_bias_list
 
 
 
@@ -146,13 +146,13 @@ def modify_tf_learning_rate_in_code(source_code, layer_names, new_value):
         
         if source_code != temp_source:
             i=i+1                   
-            return new_value, matches
+            return new_value, learning_rate_list
             
     return 0, []
 
 
 def replace_kernel_size_in_code(source_code,new_kernel_size):
-    i=1
+  
     # Regex deseni: 'kernel_size=...' formundaki ifadeleri bulur
     # Hem tek sayı hem de parantez içindeki sayı çiftlerini kapsar
     pattern = r"kernel_size\s*=\s*((?:\(\s*\d+\s*(?:,\s*\d+\s*)*\))|\d+)"
@@ -164,15 +164,15 @@ def replace_kernel_size_in_code(source_code,new_kernel_size):
 
     new_value = "kernel_size="
     # Yeni değerle değiştir
-    updated_code = re.sub(pattern, "learning_rate="+"'"+new_kernel_size[i]+"'", source_code)
-    matches_list = list(matches)
+    #updated_code = re.sub(pattern, "learning_rate="+"'"+new_kernel_size+"'", source_code)
+    
     if matches:
         kernel_size_list = [f"kernel_size={m}" for m in matches]  # List of original kernel_size values
         print(kernel_size_list)
        
-    if matches_list:
-            i=i+1                  
-            return new_value, matches
+    if matches:
+                           
+            return new_value, kernel_size_list
     return 0,[]
 
 
@@ -230,7 +230,7 @@ def modify_tf_layer_in_code(source_code, layer_names,new_value):
         temp_source=source_code
 
         # Bulunan ifadeyi değiştirmek için yeni değer
-        new_value = f"tf.keras.layers.{layer_names}(new_value)"
+        new_value = f"tf.keras.layers.{layer_names}("
         matches = re.findall(pattern, source_code)
         if matches:
             kernel_layers_list = [f"{m}" for m in matches]
@@ -239,7 +239,7 @@ def modify_tf_layer_in_code(source_code, layer_names,new_value):
         source_code = re.sub(pattern, new_value, source_code)
         if source_code != temp_source:
             
-            return new_value,matches
+            return new_value,kernel_layers_list
         return 0,[]
 
 def modify_tf_losses_in_code(source_code, layer_names,new_value):
@@ -251,7 +251,7 @@ def modify_tf_losses_in_code(source_code, layer_names,new_value):
 
         temp_source=source_code
         # Bulunan ifadeyi değiştirmek için yeni değer
-        new_value = f"tf.keras.losses.{layer_names}()"
+        new_value = f"tf.keras.losses.{layer_names}("
         matches = re.findall(pattern, source_code)
         if matches:
             use_losses_list = [f"{m}" for m in matches]
@@ -262,7 +262,7 @@ def modify_tf_losses_in_code(source_code, layer_names,new_value):
         source_code = re.sub(pattern, new_value, source_code)
         if source_code != temp_source:
               
-            return new_value,matches
+            return new_value,use_losses_list
         return 0,[]
 
 
@@ -271,6 +271,8 @@ def modify_tf_optimizers_in_code(source_code, layer_names,new_value):
     
     global counter
     for layer_name in layer_names:
+        use_legacy_list=[]
+        use_schedules_list=[]
         # 'legacy' ve 'schedules' ifadeleri için özel desenler
         #pattern_legacy = rf"(tf\.keras\.optimizers\.legacy\.\b{layer_names}\b\s*\()((?:[^()]|\([^)]*\))*)\)"
         pattern_legacy = rf"tf\.keras\.optimizers\.legacy\.{layer_names}\([^\)]*\)"
@@ -279,7 +281,7 @@ def modify_tf_optimizers_in_code(source_code, layer_names,new_value):
         temp_source=source_code
         if re.search(pattern_legacy, source_code):
             # 'legacy' için yeni değer
-            new_value = f"tf.keras.optimizers.legacy.{layer_names}()"
+            new_value = f"tf.keras.optimizers.legacy.{layer_names}("
             matches = re.findall(pattern_legacy, source_code)
             if matches:
                 use_legacy_list = [f"{m}" for m in matches]
@@ -288,7 +290,7 @@ def modify_tf_optimizers_in_code(source_code, layer_names,new_value):
             name="_optimizers_legacy"
         elif re.search(pattern_schedules, source_code):
             # 'schedules' için yeni değer
-            new_value = f"tf.keras.optimizers.schedules.{layer_names}()"
+            new_value = f"tf.keras.optimizers.schedules.{layer_names}("
             matches = re.findall(pattern_schedules, source_code)
             if matches:           
                 use_schedules_list = [f"{m}" for m in matches]
@@ -297,15 +299,17 @@ def modify_tf_optimizers_in_code(source_code, layer_names,new_value):
         #elif():
             #new_value = f"tf.keras.optimizers.{layer_names}()"
             name="_optimizers_schedules"
-        if source_code != temp_source:
-            
-            return new_value,matches
+        if use_legacy_list:
+            return new_value,use_legacy_list
+        if use_schedules_list:
+            return new_value,use_schedules_list
         return 0,[]
 
 def modify_tf_nn_function_in_code(source_code, layer_names,new_value):
 
   
     for layer_name in layer_names:
+        use_nn_list=[]
         # Katman adını ve sonrasında gelen parantezli ifadeyi bulmak için regex deseni
         temp_source=source_code
         #pattern = rf"(tf\.nn\.\b{layer_names}\b\s*\()((?:[^()]|\([^)]*\))*)\)"
@@ -315,24 +319,25 @@ def modify_tf_nn_function_in_code(source_code, layer_names,new_value):
         if matches:
             use_nn_list = [f"{m}" for m in matches]
             print(use_nn_list)
-        new_value = f"tf.nn.{layer_names}()"
+        new_value = f"tf.nn.{layer_names}("
         # Regex kullanarak değişiklik yapma
         source_code = re.sub(pattern, new_value, source_code)
         
         if source_code != temp_source:
             
-            return new_value ,matches           
+            return new_value ,use_nn_list           
         return 0,[]
 
 def modify_tf_raw_ops_function_in_code(source_code, layer_names,new_value):
 
     for layer_name in layer_names:
+        use_raw_ops_list=[]
         # Katman adını ve sonrasında gelen parantezli ifadeyi bulmak için regex deseni
         temp_source=source_code
         #pattern = rf"(tf\.raw_ops\.\b{layer_names}\b\s*\()((?:[^()]|\([^)]*\))*)\)"
-        pattern = rf"tf\.raw_ops\.{layer_name}\([^\)]*\)"
+        pattern = rf"tf\.raw_ops\.{layer_names}\([^\)]*\)"
         # Bulunan ifadeyi değiştirmek için yeni değer
-        new_value = f"tf.raw_ops.{layer_names}()"
+        new_value = f"tf.raw_ops.{layer_names}("
         matches = re.findall(pattern, source_code)
         if matches:
             use_raw_ops_list = [f"{m}" for m in matches]
@@ -342,7 +347,7 @@ def modify_tf_raw_ops_function_in_code(source_code, layer_names,new_value):
         
         if source_code != temp_source:
             
-            return new_value,matches
+            return new_value,use_raw_ops_list
         return 0,[]
 
 def modify_tf_train_class_in_code(source_code, layer_names,new_value):
@@ -354,7 +359,7 @@ def modify_tf_train_class_in_code(source_code, layer_names,new_value):
         #pattern = rf"(tf\.train\.\b{layer_names}\b\s*\()((?:[^()]|\([^)]*\))*)\)"
         pattern = rf"tf\.train\.{layer_names}\([^\)]*\)"
         # Bulunan ifadeyi değiştirmek için yeni değer
-        new_value = f"tf.train.{layer_names}()"
+        new_value = f"tf.train.{layer_names}("
         matches = re.findall(pattern, source_code)
         if matches:
             use_train_list = [f"{m}" for m in matches]
@@ -377,7 +382,7 @@ def modify_tf_keras_activations_function_in_code(source_code, layer_names,new_va
         #pattern = rf"(tf\.keras\.activations\.\b{layer_names}\b\s*\()((?:[^()]|\([^)]*\))*)\)"
         pattern = rf"tf\.keras\.activations\.{layer_names}\([^\)]*\)"
         # Bulunan ifadeyi değiştirmek için yeni değer
-        new_value = f"tf.activations.{layer_names}()"
+        new_value = f"tf.activations.{layer_names}("
         matches = re.findall(pattern, source_code)
         if matches:
             use_activations_list = [f"{m}" for m in matches]
