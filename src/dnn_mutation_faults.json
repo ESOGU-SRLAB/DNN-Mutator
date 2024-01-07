@@ -2,6 +2,111 @@
     {
         "Fault": {
             "File_Directory": "C:/Users/",
+            "Source_Code": "kernel_initializer='glorot_uniform'",
+            "Mutate_Code": "kernel_initializer='zeros'"
+        }
+    },
+    {
+        "Fault": {
+            "File_Directory": "C:/Users/",
+            "Source_Code": "kernel_initializer='glorot_uniform'",
+            "Mutate_Code": "kernel_initializer='ones'"
+        }
+    },
+    {
+        "Fault": {
+            "File_Directory": "C:/Users/",
+            "Source_Code": "kernel_initializer='glorot_uniform'",
+            "Mutate_Code": "kernel_initializer='constant'"
+        }
+    },
+    {
+        "Fault": {
+            "File_Directory": "C:/Users/",
+            "Source_Code": "kernel_initializer='glorot_uniform'",
+            "Mutate_Code": "kernel_initializer='random_normal'"
+        }
+    },
+    {
+        "Fault": {
+            "File_Directory": "C:/Users/",
+            "Source_Code": "kernel_initializer='glorot_uniform'",
+            "Mutate_Code": "kernel_initializer='random_uniform'"
+        }
+    },
+    {
+        "Fault": {
+            "File_Directory": "C:/Users/",
+            "Source_Code": "kernel_initializer='glorot_uniform'",
+            "Mutate_Code": "kernel_initializer='truncated_normal'"
+        }
+    },
+    {
+        "Fault": {
+            "File_Directory": "C:/Users/",
+            "Source_Code": "kernel_initializer='glorot_uniform'",
+            "Mutate_Code": "kernel_initializer='variance_scaling'"
+        }
+    },
+    {
+        "Fault": {
+            "File_Directory": "C:/Users/",
+            "Source_Code": "kernel_initializer='glorot_uniform'",
+            "Mutate_Code": "kernel_initializer='orthogonal'"
+        }
+    },
+    {
+        "Fault": {
+            "File_Directory": "C:/Users/",
+            "Source_Code": "kernel_initializer='glorot_uniform'",
+            "Mutate_Code": "kernel_initializer='lecun_normal'"
+        }
+    },
+    {
+        "Fault": {
+            "File_Directory": "C:/Users/",
+            "Source_Code": "kernel_initializer='glorot_uniform'",
+            "Mutate_Code": "kernel_initializer='lecun_uniform'"
+        }
+    },
+    {
+        "Fault": {
+            "File_Directory": "C:/Users/",
+            "Source_Code": "kernel_initializer='glorot_uniform'",
+            "Mutate_Code": "kernel_initializer='glorot_normal'"
+        }
+    },
+    {
+        "Fault": {
+            "File_Directory": "C:/Users/",
+            "Source_Code": "kernel_initializer='glorot_uniform'",
+            "Mutate_Code": "kernel_initializer='glorot_uniform'"
+        }
+    },
+    {
+        "Fault": {
+            "File_Directory": "C:/Users/",
+            "Source_Code": "kernel_initializer='glorot_uniform'",
+            "Mutate_Code": "kernel_initializer='he_normal'"
+        }
+    },
+    {
+        "Fault": {
+            "File_Directory": "C:/Users/",
+            "Source_Code": "kernel_initializer='glorot_uniform'",
+            "Mutate_Code": "kernel_initializer='he_uniform'"
+        }
+    },
+    {
+        "Fault": {
+            "File_Directory": "C:/Users/",
+            "Source_Code": "kernel_initializer='glorot_uniform'",
+            "Mutate_Code": "kernel_initializer='identity'"
+        }
+    },
+    {
+        "Fault": {
+            "File_Directory": "C:/Users/",
             "Source_Code": "dropout=100",
             "Mutate_Code": "dropout=0.1"
         }
@@ -1248,105 +1353,105 @@
     {
         "Fault": {
             "File_Directory": "C:/Users/",
-            "Source_Code": "tf.keras.layers.Concatenate( 5 )",
+            "Source_Code": "tf.keras.layers.Concatenate(kernel_initializer='glorot_uniform', 5 )",
             "Mutate_Code": "tf.keras.layers.Concatenate(axis=-1)"
         }
     },
     {
         "Fault": {
             "File_Directory": "C:/Users/",
-            "Source_Code": "tf.keras.layers.Concatenate( 5 )",
+            "Source_Code": "tf.keras.layers.Concatenate(kernel_initializer='glorot_uniform', 5 )",
             "Mutate_Code": "tf.keras.layers.Concatenate(axis=0)"
         }
     },
     {
         "Fault": {
             "File_Directory": "C:/Users/",
-            "Source_Code": "tf.keras.layers.Concatenate( 5 )",
+            "Source_Code": "tf.keras.layers.Concatenate(kernel_initializer='glorot_uniform', 5 )",
             "Mutate_Code": "tf.keras.layers.Concatenate(axis=1)"
         }
     },
     {
         "Fault": {
             "File_Directory": "C:/Users/",
-            "Source_Code": "tf.keras.layers.Concatenate( 5 )",
+            "Source_Code": "tf.keras.layers.Concatenate(kernel_initializer='glorot_uniform', 5 )",
             "Mutate_Code": "tf.keras.layers.Concatenate(axis=2)"
         }
     },
     {
         "Fault": {
             "File_Directory": "C:/Users/",
-            "Source_Code": "tf.keras.layers.Concatenate( 5 )",
+            "Source_Code": "tf.keras.layers.Concatenate(kernel_initializer='glorot_uniform', 5 )",
             "Mutate_Code": "tf.keras.layers.Concatenate(axis=3)"
         }
     },
     {
         "Fault": {
             "File_Directory": "C:/Users/",
-            "Source_Code": "tf.keras.layers.Concatenate( 5 )",
+            "Source_Code": "tf.keras.layers.Concatenate(kernel_initializer='glorot_uniform', 5 )",
             "Mutate_Code": "tf.keras.layers.Concatenate(axis=-2)"
         }
     },
     {
         "Fault": {
             "File_Directory": "C:/Users/",
-            "Source_Code": "tf.keras.layers.Concatenate( 5 )",
+            "Source_Code": "tf.keras.layers.Concatenate(kernel_initializer='glorot_uniform', 5 )",
             "Mutate_Code": "tf.keras.layers.Concatenate(axis=-3)"
         }
     },
     {
         "Fault": {
             "File_Directory": "C:/Users/",
-            "Source_Code": "tf.keras.layers.Concatenate( 5 )",
+            "Source_Code": "tf.keras.layers.Concatenate(kernel_initializer='glorot_uniform', 5 )",
             "Mutate_Code": "tf.keras.layers.Concatenate(axis=4)"
         }
     },
     {
         "Fault": {
             "File_Directory": "C:/Users/",
-            "Source_Code": "tf.keras.layers.Concatenate( 5 )",
+            "Source_Code": "tf.keras.layers.Concatenate(kernel_initializer='glorot_uniform', 5 )",
             "Mutate_Code": "tf.keras.layers.Concatenate(axis=-4)"
         }
     },
     {
         "Fault": {
             "File_Directory": "C:/Users/",
-            "Source_Code": "tf.keras.layers.Concatenate( 5 )",
+            "Source_Code": "tf.keras.layers.Concatenate(kernel_initializer='glorot_uniform', 5 )",
             "Mutate_Code": "tf.keras.layers.Concatenate(axis=5)"
         }
     },
     {
         "Fault": {
             "File_Directory": "C:/Users/",
-            "Source_Code": "tf.keras.layers.Concatenate( 5 )",
+            "Source_Code": "tf.keras.layers.Concatenate(kernel_initializer='glorot_uniform', 5 )",
             "Mutate_Code": "tf.keras.layers.Concatenate(axis='invalid')"
         }
     },
     {
         "Fault": {
             "File_Directory": "C:/Users/",
-            "Source_Code": "tf.keras.layers.Concatenate( 5 )",
+            "Source_Code": "tf.keras.layers.Concatenate(kernel_initializer='glorot_uniform', 5 )",
             "Mutate_Code": "tf.keras.layers.Concatenate(axis=123)"
         }
     },
     {
         "Fault": {
             "File_Directory": "C:/Users/",
-            "Source_Code": "tf.keras.layers.Concatenate( 5 )",
+            "Source_Code": "tf.keras.layers.Concatenate(kernel_initializer='glorot_uniform', 5 )",
             "Mutate_Code": "tf.keras.layers.Concatenate(axis=None)"
         }
     },
     {
         "Fault": {
             "File_Directory": "C:/Users/",
-            "Source_Code": "tf.keras.layers.Concatenate( 5 )",
+            "Source_Code": "tf.keras.layers.Concatenate(kernel_initializer='glorot_uniform', 5 )",
             "Mutate_Code": "tf.keras.layers.Concatenate(axis=-123)"
         }
     },
     {
         "Fault": {
             "File_Directory": "C:/Users/",
-            "Source_Code": "tf.keras.layers.Concatenate( 5 )",
+            "Source_Code": "tf.keras.layers.Concatenate(kernel_initializer='glorot_uniform', 5 )",
             "Mutate_Code": "tf.keras.layers.Concatenate(axis=1.5)"
         }
     },

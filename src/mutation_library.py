@@ -97,21 +97,21 @@ tf_kernel_size_list = [
     "kernel_size=(7, 7, 7)", "kernel_size=(9, 9, 9)"
 ]
 tf_keras_kernel_initializer_list = [
-    'Zeros',                  # Initializes weights to zero
-    'Ones',                   # Initializes weights to one
-    'Constant',               # Initializes weights to a constant value
-    'RandomNormal',           # Initializes weights with a normal distribution
-    'RandomUniform',          # Initializes weights with a uniform distribution
-    'TruncatedNormal',        # Initializes weights with a truncated normal distribution
-    'VarianceScaling',        # Initializes weights by scaling the variance based on fan-in or fan-out mode
-    'Orthogonal',             # Initializes weights as orthogonal matrices
-    'LecunNormal',            # LeCun normal initializer
-    'LecunUniform',           # LeCun uniform initializer
-    'GlorotNormal',           # Glorot/Xavier normal initializer
-    'GlorotUniform',          # Glorot/Xavier uniform initializer
-    'HeNormal',               # He normal initializer
-    'HeUniform',              # He uniform variance scaling initializer
-    'Identity'                # Initializes weights as the identity matrix (only for square matrices)
+    "kernel_initializer='zeros'",                  # Initializes weights to zero
+    "kernel_initializer='ones'",                   # Initializes weights to one
+    "kernel_initializer='constant'",               # Initializes weights to a constant value
+    "kernel_initializer='random_normal'",          # Initializes weights with a normal distribution
+    "kernel_initializer='random_uniform'",         # Initializes weights with a uniform distribution
+    "kernel_initializer='truncated_normal'",       # Initializes weights with a truncated normal distribution
+    "kernel_initializer='variance_scaling'",       # Initializes weights by scaling the variance based on fan-in or fan-out mode
+    "kernel_initializer='orthogonal'",             # Initializes weights as orthogonal matrices
+    "kernel_initializer='lecun_normal'",           # LeCun normal initializer
+    "kernel_initializer='lecun_uniform'",          # LeCun uniform initializer
+    "kernel_initializer='glorot_normal'",          # Glorot/Xavier normal initializer
+    "kernel_initializer='glorot_uniform'",         # Glorot/Xavier uniform initializer
+    "kernel_initializer='he_normal'",              # He normal initializer
+    "kernel_initializer='he_uniform'",             # He uniform variance scaling initializer
+    "kernel_initializer='identity'"                # Initializes weights as the identity matrix (only for square matrices)
 ]
 
 tf_keras_layers_classes = [
@@ -575,6 +575,7 @@ tf_math_functions = [
 
 
 tf_all_list=[
+'kernel_initializer',
 'activation',
 'epochs',
 'model.add',
@@ -612,6 +613,7 @@ tf_all_list=[
 'tf.keras.layers.Conv2DTranspose()',
 'tf.keras.layers.Conv3D()',
 'tf.keras.layers.Conv3DTranspose()',
+'tf.keras.layers.Dense()',
 'tf.keras.layers.ConvLSTM1D()',
 'tf.keras.layers.ConvLSTM2D()',
 'tf.keras.layers.ConvLSTM3D()',
@@ -935,6 +937,7 @@ tf_all_list=[
 ]
 
 tf_all_mutation_code_list = [
+'kernel_initializer',
 'dropout',    
 'use_bias',    
 'kernel_size',    
@@ -2165,7 +2168,22 @@ tf_keras_activations_tanh_Mutation_List = [
     "activation='relu'", "dropout=0.3"
 ]
 
+tf_keras_layers_Dense_Mutation_List = [
+    # Commonly used Dense layer configurations
+    "Dense(units=32, activation='relu')", 
+    "Dense(units=64, activation='sigmoid')", 
+    "Dense(units=128, activation='softmax')", 
+    "Dense(units=256, activation='tanh')", 
+    "Dense(units=512, activation='elu')",
+    "Dense(32)","Dense(64)","Dense(128)","Dense(256)",
+    "Dense(512)","Dense(units=32, activation='sigmoid')",
+    "Dense(units=32, activation='softmax')",
 
+    # Scenarios with erroneous or inappropriate values
+    "Dense(units=-1, activation='relu')", 
+    "Dense(units='invalid', activation='sigmoid')", 
+    "Dense(units=None, activation='softmax')"
+]
 
 tf_keras_losses_BinaryCrossentropy_Mutation_List = [
     # Typical parameter combinations
@@ -4652,6 +4670,7 @@ tf_hyper_parameters_mutation_code_list = [
 'layers.Cropping1D()',
 'layers.Cropping2D()',
 'layers.Cropping3D()',
+'tf.keras.layers.Dense()',
 'layers.SpectralNormalization()',
 'layers.StackedRNNCells()',
 'layers.StringLookup()',

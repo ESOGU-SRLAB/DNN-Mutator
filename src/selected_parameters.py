@@ -52,9 +52,9 @@ def layer_select_mutate(mutate_selected_parameters,source_code ):
         elif mutate_selected_parameters == "dropout_rate":
             change_parameter_with = 0.2
             mutated_line,matches = mutator.modify_tf_activation_in_code(source_code, mutate_selected_parameters, change_parameter_with)
-        elif mutate_selected_parameters == "regularization":
-            change_parameter_with = "l2"
-            mutated_line,matches= mutator.modify_tf_activation_in_code(source_code, mutate_selected_parameters, change_parameter_with)
+        elif mutate_selected_parameters == "kernel_initializer":
+            change_parameter_with = mutation_library.tf_keras_kernel_initializer_list
+            mutated_line,matches= mutator.replace_kernel_initializer(source_code, change_parameter_with)
         elif mutate_selected_parameters == "dropout":
             change_parameter_with = mutation_library.tf_dropout_rate_list
             mutated_line,matches= mutator.modify_tf_dropout_in_code(source_code, change_parameter_with)            
@@ -238,6 +238,10 @@ def layer_select_mutate(mutate_selected_parameters,source_code ):
             change_parameter_with = mutation_library.tf_keras_layers_UnitNormalization_Mutation_List
             layer_name = "UnitNormalization"
             mutated_line,matches = mutator.modify_tf_layer_in_code(source_code, layer_name, change_parameter_with)
+        elif mutate_selected_parameters == "tf.keras.layers.Dense()":
+            change_parameter_with = mutation_library.tf_keras_layers_Dense_Mutation_List
+            layer_name = "Dense"
+            mutated_line,matches = mutator.modify_tf_layer_in_code(source_code, layer_name, change_parameter_with)            
         elif mutate_selected_parameters == "layers.UpSampling1D()":
             change_parameter_with = mutation_library.tf_keras_layers_UpSampling1D_Mutation_List
             layer_name = "UpSampling1D"

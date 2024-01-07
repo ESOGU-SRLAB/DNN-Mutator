@@ -175,7 +175,19 @@ def replace_kernel_size_in_code(source_code,new_kernel_size):
             return new_value, kernel_size_list
     return 0,[]
 
+def replace_kernel_initializer(source_code, new_initializer):
+    # Regex deseni: 'kernel_initializer=...' formatındaki ifadeleri bulur
+    # Boşlukları da kapsar
+    pattern = r"kernel_initializer\s*=\s*'[^']*'"
 
+    # Yeni değerle değiştir
+    updated_code = re.sub(pattern, f"kernel_initializer='{new_initializer}'", source_code)
+    matches = re.findall(pattern, source_code)
+    new_value = "kernel_initializer="
+    if matches:
+            kernel_initializer_layers_list = [f"{m}" for m in matches]
+            
+    return new_value,kernel_initializer_layers_list
 
 def modify_code_in_file_Conv2D(source_code, new_value):
     # Rastgele bir Conv2D çağrısı seçme
