@@ -146,7 +146,18 @@ class MainWindow(QMainWindow):
                         # rapor_dosyasi = "rapor.txt"
                         # self.dnn_parameter = QComboBox(self)
                         # parameter=self.dnn_parameter.currentText()
-                        # tensorflow_parametreleri_bul_ve_degistir(source_code_data,parameter,"if",rapor_dosyasi) #Gökhan--------------------------- 
+                        # tensorflow_parametreleri_bul_ve_degistir(source_code_data,parameter,"if",rapor_dosyasi) #Gökhan---------------------------
+        def get_mutation_path():
+            """Open a dialog for the user to select a directory and set it in plainTextEdit_mutant_path."""
+            dialog = QFileDialog()
+            dialog.setFileMode(QFileDialog.Directory)  # Set to directory mode
+            dialog.setOption(QFileDialog.ShowDirsOnly, True)  # Show only directories
+
+            if dialog.exec():
+                selected_directory = dialog.selectedFiles()[0]
+                # Update the plainTextEdit_mutant_path with the selected directory
+                self.ui.plainTextEdit_mutant_path.setPlainText(selected_directory)
+    
         """def single_line_parentheses_converter(code):
             # Function to replace newlines and excessive spaces within parentheses
             def replace_newlines(match):
@@ -1205,7 +1216,6 @@ class MainWindow(QMainWindow):
 
         # START PAGE BUTTON CONNECTS
         self.ui.btn_open_folder.clicked.connect(get_file_py_for_source_code)
-        self.ui.btn_load_dnn.clicked.connect(get_dnn_file_py_for_source_code)
         self.ui.btn_select_workload.clicked.connect(workload_get_file_json)
         self.ui.btn_create_workload.clicked.connect(self.buttonClick)
         self.ui.checkBox_5.clicked.connect(self.buttonClick)
@@ -1242,10 +1252,12 @@ class MainWindow(QMainWindow):
         self.ui.btn_back_code.clicked.connect(self.buttonClick)
         self.ui.btn_scan_process.clicked.connect(self.start_scan_process)
         
-        #DNN SCAN
+        #DNN
         self.ui.pushButton_dnn_scan.clicked.connect(self.dnn_start_scan_process)
         self.ui.pushButton_dnn_mutate.clicked.connect(self.dnn_start_mutate_process)
-        
+        self.ui.btn_load_dnn.clicked.connect(get_dnn_file_py_for_source_code)    
+        self.ui.pushButton_mutants_path.clicked.connect(get_mutation_path)
+
         # FI PLAN PAGE BUTTONS
         self.ui.btn_random_fault.clicked.connect(random_hata_bas)
         self.ui.btn_slct_fiplan.clicked.connect(fiplan_get_file_json)
@@ -1370,6 +1382,7 @@ class MainWindow(QMainWindow):
         all_faults = []
         # Get the initial source code
         source_code = self.ui.plainTextEdit_53.toPlainText()
+        mutation_path = self.ui.plainTextEdit_mutant_path.toPlainText()
         file_directory="C:/Users/"
         # Iterate through the selected items
         for item in selected_items:

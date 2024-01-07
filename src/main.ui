@@ -8763,7 +8763,7 @@ color:white;</string>
                        <widget class="QPlainTextEdit" name="plainTextEdit_dnn_source">
                         <property name="geometry">
                          <rect>
-                          <x>10</x>
+                          <x>290</x>
                           <y>10</y>
                           <width>271</width>
                           <height>61</height>
@@ -8776,9 +8776,9 @@ color:white;</string>
                        <widget class="QPlainTextEdit" name="plainTextEdit_53">
                         <property name="geometry">
                          <rect>
-                          <x>580</x>
-                          <y>380</y>
-                          <width>351</width>
+                          <x>10</x>
+                          <y>390</y>
+                          <width>261</width>
                           <height>481</height>
                          </rect>
                         </property>
@@ -8805,9 +8805,9 @@ color:white;</string>
                        <widget class="QPlainTextEdit" name="plainTextEdit_mutated_code">
                         <property name="geometry">
                          <rect>
-                          <x>950</x>
-                          <y>380</y>
-                          <width>381</width>
+                          <x>580</x>
+                          <y>390</y>
+                          <width>291</width>
                           <height>481</height>
                          </rect>
                         </property>
@@ -10781,21 +10781,21 @@ color:white;</string>
                        <widget class="QLabel" name="label_25">
                         <property name="geometry">
                          <rect>
-                          <x>960</x>
-                          <y>350</y>
+                          <x>580</x>
+                          <y>370</y>
                           <width>91</width>
                           <height>20</height>
                          </rect>
                         </property>
                         <property name="text">
-                         <string>Mutated Code</string>
+                         <string>Mutated Codes</string>
                         </property>
                        </widget>
                        <widget class="QLabel" name="label_35">
                         <property name="geometry">
                          <rect>
-                          <x>590</x>
-                          <y>350</y>
+                          <x>10</x>
+                          <y>370</y>
                           <width>91</width>
                           <height>16</height>
                          </rect>
@@ -10807,7 +10807,7 @@ color:white;</string>
                        <widget class="QFrame" name="frame_2">
                         <property name="geometry">
                          <rect>
-                          <x>300</x>
+                          <x>10</x>
                           <y>10</y>
                           <width>271</width>
                           <height>61</height>
@@ -10907,8 +10907,8 @@ color:white;</string>
                        <widget class="QListWidget" name="listWidget_dnn_selected_snippet">
                         <property name="geometry">
                          <rect>
-                          <x>10</x>
-                          <y>380</y>
+                          <x>290</x>
+                          <y>390</y>
                           <width>271</width>
                           <height>481</height>
                          </rect>
@@ -12966,8 +12966,8 @@ color:white;</string>
                        <widget class="QLabel" name="label_79">
                         <property name="geometry">
                          <rect>
-                          <x>10</x>
-                          <y>350</y>
+                          <x>290</x>
+                          <y>370</y>
                           <width>141</width>
                           <height>16</height>
                          </rect>
@@ -13000,6 +13000,35 @@ color:white;</string>
                         </property>
                         <property name="text">
                          <string>Mutate All</string>
+                        </property>
+                       </widget>
+                       <widget class="QPushButton" name="pushButton_mutants_path">
+                        <property name="geometry">
+                         <rect>
+                          <x>580</x>
+                          <y>310</y>
+                          <width>141</width>
+                          <height>41</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">background-color: rgb(52, 59, 72);</string>
+                        </property>
+                        <property name="text">
+                         <string>Select Mutants Path </string>
+                        </property>
+                       </widget>
+                       <widget class="QPlainTextEdit" name="plainTextEdit_mutant_path">
+                        <property name="geometry">
+                         <rect>
+                          <x>740</x>
+                          <y>300</y>
+                          <width>191</width>
+                          <height>61</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">background-color: rgb(52, 59, 72);</string>
                         </property>
                        </widget>
                       </widget>
