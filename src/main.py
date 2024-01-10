@@ -18,14 +18,16 @@ import astunparse
 import matplotlib.pyplot as plt
 import importlib
 import mutator
+import shutil
+import dnn_execution
 import mutation_library
 import selected_parameters
 import numpy as np
+
 import tensorflow as tf
-from tensorflow.keras.datasets import mnist
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, Flatten
-from tensorflow.keras.optimizers import Adam
+from tensorflow.python.keras.layers import Dense 
+from tensorflow.python.keras.layers.recurrent import LSTM as LSTM_keras
+from tensorflow.python.keras.models import Sequential
 from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBox
 from PySide6 import QtGui
 
@@ -125,7 +127,7 @@ class MainWindow(QMainWindow):
                         self.ui.plainTextEdit_10.setPlainText(str(file_name[0]))
                         # source adds to the UI
                         self.ui.plainTextEdit_9.setPlainText(source_code_data)
-        def get_dnn_file_py_for_source_code():                                     #Gökhan--------------------------- 
+        def get_dnn_file_py_for_source_code():                                     
             """Take Python-based source code to use for V&V process in IM-FIT"""
             dialog = QFileDialog()
             dialog.setFileMode(QFileDialog.AnyFile)
@@ -135,18 +137,21 @@ class MainWindow(QMainWindow):
                 control_status = control_file_directory(file_name_dnn[0])
                 # .py file is choosed by the user
                 if file_name_dnn[0].endswith(".py") and control_status:
-                    with open(file_name_dnn[0], mode="r", encoding="utf-8") as json_file:
-                        dnn_source_code_data = json_file.read()
+                    with open(file_name_dnn[0], mode="r", encoding="utf-8") as file:
+                        dnn_source_code_data = file.read()
+                        backup_file_name = file_name_dnn[0] + ".backup"
+                        shutil.copy(file_name_dnn[0], backup_file_name)
                         # Source code directory is added to the text
                         self.ui.plainTextEdit_dnn_source.setPlainText(str(file_name_dnn[0]))
+                        #deleted /n in sourced code for mutation
                         single_line_code = single_line_parentheses_converter1(dnn_source_code_data)
-                        print(single_line_code)
+                        #print(single_line_code)
                         # source adds to the UI
-                        self.ui.plainTextEdit_53.setPlainText(single_line_code)     #Gökhan
-                        # rapor_dosyasi = "rapor.txt"
-                        # self.dnn_parameter = QComboBox(self)
-                        # parameter=self.dnn_parameter.currentText()
-                        # tensorflow_parametreleri_bul_ve_degistir(source_code_data,parameter,"if",rapor_dosyasi) #Gökhan---------------------------
+                        self.ui.plainTextEdit_53.setPlainText(single_line_code)
+                        #new format saved for execution- old format saved as (file_name).backup    
+                    with open(file_name_dnn[0], mode="w", encoding="utf-8") as file:
+                        file.write(single_line_code)
+
         def get_mutation_path():
             """Open a dialog for the user to select a directory and set it in plainTextEdit_mutant_path."""
             dialog = QFileDialog()
@@ -1363,15 +1368,7 @@ class MainWindow(QMainWindow):
             for i in range(self.ui.listWidget_selected_mutate_parameters.count()):
                     item = self.ui.listWidget_selected_mutate_parameters.item(i)
                     selected_items.append(item.text())        
-        # Get the selected items from the list widget as a list
-        #selected_items = []
-
-        #for i in range(self.ui.listWidget_selected_mutate_parameters.count()):
-            #item = self.ui.listWidget_selected_mutate_parameters.item(i)
-            #selected_items.append(item.text())
-            #print(selected_items[i])
-
-        # Check if there are selected items
+        
         if not selected_items:
             return  # No selected items, exit the function
 
@@ -1383,7 +1380,7 @@ class MainWindow(QMainWindow):
         # Get the initial source code
         source_code = self.ui.plainTextEdit_53.toPlainText()
         mutation_path = self.ui.plainTextEdit_mutant_path.toPlainText()
-        file_directory="C:/Users/"
+        file_directory = self.ui.plainTextEdit_dnn_source.toPlainText()
         # Iterate through the selected items
         for item in selected_items:
 
@@ -1417,33 +1414,55 @@ class MainWindow(QMainWindow):
                             } 
                         }
                         all_faults.append(fault)
-            
-        with open('dnn_mutation_faults.json', 'w') as f:
-            json.dump(all_faults, f, indent=4)            
-            #if mutated_line:
-                #if mutated_line != 0:
-                    
-                    #mutated_code += mutated_line + "\n"
-                    #mutated_code.append(mutated_line + "\n")
+        save_path = self.ui.plainTextEdit_mutant_path.toPlainText()
+        
+        
+        if save_path:
+            save_path=save_path+"/dnn_FI_plan.json"
+            # save JSON to selected path
+            with open(save_path, 'w') as f:
+                json.dump(all_faults, f, indent=4)
+        else:
+            # user_path not selected
+            print("User path not selected")    
+        #with open('dnn_mutation_faults.json', 'w') as f:
+            #json.dump(all_faults, f, indent=4)            
 
-                    #all_matches.extend(matches)
         self.ui.plainTextEdit_mutated_code.setPlainText(mutated_code)
-        
-            # Modify the code using mutator and append it to mutated_code
-        #with open("matches_output.txt", "w") as file:
-            #for match in all_matches:
-                # Her match'i yeni bir satıra yaz
-                #file.write(str(match) + "\n")
-        # Set the mutated code in the plain text edit
+        """
+        Main function to execute the script and print results based on accuracy.
+        """
+        print(file_directory)
+        file_name = (file_directory)
+        print(save_path)
+        fiplan_json_dir = (save_path)
+
+        matching_lines = dnn_execution.find_accuracy_lines(file_name)
+        survived_results=""
+        killed_results=""
+        if matching_lines:
+            print("Execution process is started... Just wait for accuracy value!")
+            threshold = dnn_execution.execute_original_source_code(file_name)
+            print(threshold)
+            if threshold:
+                mutant_files_save_location = dnn_execution.mutation_process(
+                    file_name, fiplan_json_dir,mutation_path)
+                killed, survived, accuracy_list = dnn_execution.execute_file(
+                    threshold, mutant_files_save_location)
+                dnn_execution.show_results(killed,survived,accuracy_list)
+                for survived_code in survived:
+                    survived_results=survived_results+survived_code+ "\n"
+                for killed_code in killed:
+                    killed_results=killed_results+killed_code+ "\n"
+                self.ui.plainTextEdit_DNN_Survived.setPlainText(survived_results)
+                self.ui.plainTextEdit_DNN_Killed.setPlainText(killed_results)
+            else:
+                print("Please be sure to use original source code which has"
+                    " accuracy value!")
+        else:
+            print("Please ensure the script contains an accuracy line.")
         
 
-            #try:
-                # Mutasyona uğratılan kodu çalıştır ve sonucu yakala
-                
-                #exec(mutated_code)
-                
-            #except Exception as e:
-                    #print("Kod çalıştırılırken bir hata oluştu:", e)
         
 
    

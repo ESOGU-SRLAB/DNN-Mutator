@@ -1,2156 +1,2163 @@
 [
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_initializer='glorot_uniform'",
             "Mutate_Code": "kernel_initializer='zeros'"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_initializer='glorot_uniform'",
             "Mutate_Code": "kernel_initializer='ones'"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_initializer='glorot_uniform'",
             "Mutate_Code": "kernel_initializer='constant'"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_initializer='glorot_uniform'",
             "Mutate_Code": "kernel_initializer='random_normal'"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_initializer='glorot_uniform'",
             "Mutate_Code": "kernel_initializer='random_uniform'"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_initializer='glorot_uniform'",
             "Mutate_Code": "kernel_initializer='truncated_normal'"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_initializer='glorot_uniform'",
             "Mutate_Code": "kernel_initializer='variance_scaling'"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_initializer='glorot_uniform'",
             "Mutate_Code": "kernel_initializer='orthogonal'"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_initializer='glorot_uniform'",
             "Mutate_Code": "kernel_initializer='lecun_normal'"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_initializer='glorot_uniform'",
             "Mutate_Code": "kernel_initializer='lecun_uniform'"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_initializer='glorot_uniform'",
             "Mutate_Code": "kernel_initializer='glorot_normal'"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_initializer='glorot_uniform'",
             "Mutate_Code": "kernel_initializer='glorot_uniform'"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_initializer='glorot_uniform'",
             "Mutate_Code": "kernel_initializer='he_normal'"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_initializer='glorot_uniform'",
             "Mutate_Code": "kernel_initializer='he_uniform'"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_initializer='glorot_uniform'",
             "Mutate_Code": "kernel_initializer='identity'"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "dropout=100",
             "Mutate_Code": "dropout=0.1"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "dropout=100",
             "Mutate_Code": "dropout=0.2"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "dropout=100",
             "Mutate_Code": "dropout=0.3"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "dropout=100",
             "Mutate_Code": "dropout=0.4"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "dropout=100",
             "Mutate_Code": "dropout=0.5"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "dropout=0.5",
             "Mutate_Code": "dropout=0.1"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "dropout=0.5",
             "Mutate_Code": "dropout=0.2"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "dropout=0.5",
             "Mutate_Code": "dropout=0.3"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "dropout=0.5",
             "Mutate_Code": "dropout=0.4"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "dropout=0.5",
             "Mutate_Code": "dropout=0.5"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "use_bias=False",
             "Mutate_Code": "True"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "use_bias=False",
             "Mutate_Code": "False"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=2",
             "Mutate_Code": "kernel_size=1"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=2",
             "Mutate_Code": "kernel_size=3"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=2",
             "Mutate_Code": "kernel_size=5"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=2",
             "Mutate_Code": "kernel_size=7"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=2",
             "Mutate_Code": "kernel_size=9"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=2",
             "Mutate_Code": "kernel_size=(1, 1)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=2",
             "Mutate_Code": "kernel_size=(3, 3)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=2",
             "Mutate_Code": "kernel_size=(5, 5)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=2",
             "Mutate_Code": "kernel_size=(7, 7)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=2",
             "Mutate_Code": "kernel_size=(9, 9)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=2",
             "Mutate_Code": "kernel_size=(1, 1, 1)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=2",
             "Mutate_Code": "kernel_size=(3, 3, 3)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=2",
             "Mutate_Code": "kernel_size=(5, 5, 5)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=2",
             "Mutate_Code": "kernel_size=(7, 7, 7)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=2",
             "Mutate_Code": "kernel_size=(9, 9, 9)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2,2)",
             "Mutate_Code": "kernel_size=1"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2,2)",
             "Mutate_Code": "kernel_size=3"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2,2)",
             "Mutate_Code": "kernel_size=5"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2,2)",
             "Mutate_Code": "kernel_size=7"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2,2)",
             "Mutate_Code": "kernel_size=9"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2,2)",
             "Mutate_Code": "kernel_size=(1, 1)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2,2)",
             "Mutate_Code": "kernel_size=(3, 3)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2,2)",
             "Mutate_Code": "kernel_size=(5, 5)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2,2)",
             "Mutate_Code": "kernel_size=(7, 7)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2,2)",
             "Mutate_Code": "kernel_size=(9, 9)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2,2)",
             "Mutate_Code": "kernel_size=(1, 1, 1)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2,2)",
             "Mutate_Code": "kernel_size=(3, 3, 3)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2,2)",
             "Mutate_Code": "kernel_size=(5, 5, 5)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2,2)",
             "Mutate_Code": "kernel_size=(7, 7, 7)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2,2)",
             "Mutate_Code": "kernel_size=(9, 9, 9)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2,2)",
             "Mutate_Code": "kernel_size=1"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2,2)",
             "Mutate_Code": "kernel_size=3"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2,2)",
             "Mutate_Code": "kernel_size=5"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2,2)",
             "Mutate_Code": "kernel_size=7"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2,2)",
             "Mutate_Code": "kernel_size=9"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2,2)",
             "Mutate_Code": "kernel_size=(1, 1)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2,2)",
             "Mutate_Code": "kernel_size=(3, 3)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2,2)",
             "Mutate_Code": "kernel_size=(5, 5)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2,2)",
             "Mutate_Code": "kernel_size=(7, 7)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2,2)",
             "Mutate_Code": "kernel_size=(9, 9)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2,2)",
             "Mutate_Code": "kernel_size=(1, 1, 1)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2,2)",
             "Mutate_Code": "kernel_size=(3, 3, 3)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2,2)",
             "Mutate_Code": "kernel_size=(5, 5, 5)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2,2)",
             "Mutate_Code": "kernel_size=(7, 7, 7)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2,2)",
             "Mutate_Code": "kernel_size=(9, 9, 9)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2)",
             "Mutate_Code": "kernel_size=1"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2)",
             "Mutate_Code": "kernel_size=3"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2)",
             "Mutate_Code": "kernel_size=5"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2)",
             "Mutate_Code": "kernel_size=7"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2)",
             "Mutate_Code": "kernel_size=9"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2)",
             "Mutate_Code": "kernel_size=(1, 1)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2)",
             "Mutate_Code": "kernel_size=(3, 3)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2)",
             "Mutate_Code": "kernel_size=(5, 5)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2)",
             "Mutate_Code": "kernel_size=(7, 7)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2)",
             "Mutate_Code": "kernel_size=(9, 9)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2)",
             "Mutate_Code": "kernel_size=(1, 1, 1)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2)",
             "Mutate_Code": "kernel_size=(3, 3, 3)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2)",
             "Mutate_Code": "kernel_size=(5, 5, 5)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2)",
             "Mutate_Code": "kernel_size=(7, 7, 7)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "kernel_size=(2,2)",
             "Mutate_Code": "kernel_size=(9, 9, 9)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "learning_rate=learning_rate=0.001",
             "Mutate_Code": "learning_rate=0.001"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "learning_rate=learning_rate=0.001",
             "Mutate_Code": "learning_rate=0.01"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "learning_rate=learning_rate=0.001",
             "Mutate_Code": "learning_rate=0.1"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "learning_rate=learning_rate=0.001",
             "Mutate_Code": "learning_rate=0.0001"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "learning_rate=learning_rate=0.001",
             "Mutate_Code": "learning_rate=0.05"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "learning_rate=learning_rate=0.001",
             "Mutate_Code": "learning_rate=-0.001"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "learning_rate=learning_rate=0.001",
             "Mutate_Code": "learning_rate='invalid'"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "learning_rate=learning_rate=0.001",
             "Mutate_Code": "learning_rate=None"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "input_shape=<re.Match object; span=(417, 444), match='input_shape=( 32 , 32 , 3 )'>",
             "Mutate_Code": "input_shape=(32,)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "input_shape=<re.Match object; span=(417, 444), match='input_shape=( 32 , 32 , 3 )'>",
             "Mutate_Code": "input_shape=(64,)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "input_shape=<re.Match object; span=(417, 444), match='input_shape=( 32 , 32 , 3 )'>",
             "Mutate_Code": "input_shape=(128,)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "input_shape=<re.Match object; span=(417, 444), match='input_shape=( 32 , 32 , 3 )'>",
             "Mutate_Code": "input_shape=(256,)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "input_shape=<re.Match object; span=(417, 444), match='input_shape=( 32 , 32 , 3 )'>",
             "Mutate_Code": "input_shape=(512,)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "input_shape=<re.Match object; span=(417, 444), match='input_shape=( 32 , 32 , 3 )'>",
             "Mutate_Code": "input_shape=(32, 32)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "input_shape=<re.Match object; span=(417, 444), match='input_shape=( 32 , 32 , 3 )'>",
             "Mutate_Code": "input_shape=(64, 64)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "input_shape=<re.Match object; span=(417, 444), match='input_shape=( 32 , 32 , 3 )'>",
             "Mutate_Code": "input_shape=(128, 128)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "input_shape=<re.Match object; span=(417, 444), match='input_shape=( 32 , 32 , 3 )'>",
             "Mutate_Code": "input_shape=(256, 256)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "input_shape=<re.Match object; span=(417, 444), match='input_shape=( 32 , 32 , 3 )'>",
             "Mutate_Code": "input_shape=(512, 512)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "input_shape=<re.Match object; span=(417, 444), match='input_shape=( 32 , 32 , 3 )'>",
             "Mutate_Code": "input_shape=(32, 32, 3)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "input_shape=<re.Match object; span=(417, 444), match='input_shape=( 32 , 32 , 3 )'>",
             "Mutate_Code": "input_shape=(64, 64, 3)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "input_shape=<re.Match object; span=(417, 444), match='input_shape=( 32 , 32 , 3 )'>",
             "Mutate_Code": "input_shape=(128, 128, 3)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "input_shape=<re.Match object; span=(417, 444), match='input_shape=( 32 , 32 , 3 )'>",
             "Mutate_Code": "input_shape=(256, 256, 3)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "input_shape=<re.Match object; span=(417, 444), match='input_shape=( 32 , 32 , 3 )'>",
             "Mutate_Code": "input_shape=(512, 512, 3)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "input_shape=<re.Match object; span=(417, 444), match='input_shape=( 32 , 32 , 3 )'>",
             "Mutate_Code": "input_shape=(32, 32, 1)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "input_shape=<re.Match object; span=(417, 444), match='input_shape=( 32 , 32 , 3 )'>",
             "Mutate_Code": "input_shape=(64, 64, 1)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "input_shape=<re.Match object; span=(417, 444), match='input_shape=( 32 , 32 , 3 )'>",
             "Mutate_Code": "input_shape=(128, 128, 1)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "input_shape=<re.Match object; span=(417, 444), match='input_shape=( 32 , 32 , 3 )'>",
             "Mutate_Code": "input_shape=(256, 256, 1)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "input_shape=<re.Match object; span=(417, 444), match='input_shape=( 32 , 32 , 3 )'>",
             "Mutate_Code": "input_shape=(512, 512, 1)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "input_shape=<re.Match object; span=(417, 444), match='input_shape=( 32 , 32 , 3 )'>",
             "Mutate_Code": "input_shape=(32, 32, 4)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "input_shape=<re.Match object; span=(417, 444), match='input_shape=( 32 , 32 , 3 )'>",
             "Mutate_Code": "input_shape=(64, 64, 4)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "input_shape=<re.Match object; span=(417, 444), match='input_shape=( 32 , 32 , 3 )'>",
             "Mutate_Code": "input_shape=(128, 128, 4)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AbstractRNNCell(trainable=True, name=None, dtype=None, dynamic=False, **kwargs)",
             "Mutate_Code": "tf.keras.layers.AbstractRNNCell(units='invalid_data', activation=123, use_bias='wrong', kernel_initializer=10, recurrent_initializer='unknown', bias_initializer='none')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AbstractRNNCell(trainable=True, name=None, dtype=None, dynamic=False, **kwargs)",
             "Mutate_Code": "tf.keras.layers.AbstractRNNCell(units=10000, activation='relu', use_bias=True, kernel_initializer='glorot_uniform', recurrent_initializer='orthogonal', bias_initializer='zeros')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AbstractRNNCell(trainable=True, name=None, dtype=None, dynamic=False, **kwargs)",
             "Mutate_Code": "tf.keras.layers.AbstractRNNCell(activation='wrong_function', use_bias=True)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AbstractRNNCell(trainable=True, name=None, dtype=None, dynamic=False, **kwargs)",
             "Mutate_Code": "tf.keras.layers.AbstractRNNCell(units=128, activation='relu')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AbstractRNNCell(trainable=True, name=None, dtype=None, dynamic=False, **kwargs)",
             "Mutate_Code": "tf.keras.layers.AbstractRNNCell()"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AbstractRNNCell(trainable=True, name=None, dtype=None, dynamic=False, **kwargs)",
             "Mutate_Code": "tf.keras.layers.AbstractRNNCell(units=128, activation='relu', use_bias=True, kernel_initializer='glorot_uniform', recurrent_initializer='orthogonal', bias_initializer='zeros')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AbstractRNNCell(trainable=True, name=None, dtype=None, dynamic=False, **kwargs)",
             "Mutate_Code": "tf.keras.layers.AbstractRNNCell(units=256, activation='tanh', use_bias=False, kernel_initializer='he_normal', recurrent_initializer='orthogonal', bias_initializer='ones')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AbstractRNNCell(trainable=True, name=None, dtype=None, dynamic=False, **kwargs)",
             "Mutate_Code": "tf.keras.layers.AbstractRNNCell(units=64, activation='sigmoid', use_bias=True, kernel_initializer='glorot_normal', recurrent_initializer='identity', bias_initializer='zeros')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AbstractRNNCell(trainable=True, name=None, dtype=None, dynamic=False, **kwargs)",
             "Mutate_Code": "tf.keras.layers.AbstractRNNCell(units=128, activation='linear', use_bias=False, kernel_initializer='lecun_normal', recurrent_initializer='uniform', bias_initializer='ones')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AbstractRNNCell(trainable=True, name=None, dtype=None, dynamic=False, **kwargs)",
             "Mutate_Code": "tf.keras.layers.AbstractRNNCell(units=100, activation='relu', use_bias=True, kernel_initializer='he_uniform', recurrent_initializer='glorot_normal', bias_initializer='zeros')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AbstractRNNCell(trainable=True, name=None, dtype=None, dynamic=False, **kwargs)",
             "Mutate_Code": "tf.keras.layers.AbstractRNNCell(units=150, activation='elu', use_bias=False, kernel_initializer='lecun_uniform', recurrent_initializer='glorot_uniform', bias_initializer='ones')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AbstractRNNCell(trainable=True, name=None, dtype=None, dynamic=False, **kwargs)",
             "Mutate_Code": "tf.keras.layers.AbstractRNNCell(units=200, activation='relu', use_bias=True, kernel_initializer='normal', recurrent_initializer='he_normal', bias_initializer='zeros')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AbstractRNNCell(trainable=True, name=None, dtype=None, dynamic=False, **kwargs)",
             "Mutate_Code": "tf.keras.layers.AbstractRNNCell(units=128, activation='swish', use_bias=False, kernel_initializer='orthogonal', recurrent_initializer='lecun_normal', bias_initializer='ones')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AbstractRNNCell(trainable=True, name=None, dtype=None, dynamic=False, **kwargs)",
             "Mutate_Code": "tf.keras.layers.AbstractRNNCell(units=120, activation='selu', use_bias=True, kernel_initializer='identity', recurrent_initializer='he_uniform', bias_initializer='zeros')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AbstractRNNCell(trainable=True, name=None, dtype=None, dynamic=False, **kwargs)",
             "Mutate_Code": "tf.keras.layers.AbstractRNNCell(units=256, activation='relu', use_bias=False, kernel_initializer='glorot_uniform', recurrent_initializer='uniform', bias_initializer='ones')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
+            "Source_Code": "tf.keras.layers.Activation( activation, **kwargs )",
+            "Mutate_Code": "tf.keras.layers.Activation(activation=)"
+        }
+    },
+    {
+        "Fault": {
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Activation( activation, **kwargs )",
             "Mutate_Code": "tf.keras.layers.Activation(activation='relu')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Activation( activation, **kwargs )",
             "Mutate_Code": "tf.keras.layers.Activation(activation='sigmoid')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Activation( activation, **kwargs )",
             "Mutate_Code": "tf.keras.layers.Activation(activation='softmax')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Activation( activation, **kwargs )",
             "Mutate_Code": "tf.keras.layers.Activation(activation='tanh')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Activation( activation, **kwargs )",
             "Mutate_Code": "tf.keras.layers.Activation(activation='elu')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Activation( activation, **kwargs )",
             "Mutate_Code": "tf.keras.layers.Activation(activation='selu')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Activation( activation, **kwargs )",
             "Mutate_Code": "tf.keras.layers.Activation(activation='softplus')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Activation( activation, **kwargs )",
             "Mutate_Code": "tf.keras.layers.Activation(activation='softsign')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Activation( activation, **kwargs )",
             "Mutate_Code": "tf.keras.layers.Activation(activation='swish')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Activation( activation, **kwargs )",
             "Mutate_Code": "tf.keras.layers.Activation(activation='hard_sigmoid')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Activation( activation, **kwargs )",
             "Mutate_Code": "tf.keras.layers.Activation(activation='exponential')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Activation( activation, **kwargs )",
             "Mutate_Code": "tf.keras.layers.Activation(activation='linear')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Activation( activation, **kwargs )",
             "Mutate_Code": "tf.keras.layers.Activation(activation='not_a_function')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Activation( activation, **kwargs )",
             "Mutate_Code": "tf.keras.layers.Activation(activation='')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Activation( activation, **kwargs )",
             "Mutate_Code": "tf.keras.layers.Activation(activation=123)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AdditiveAttention(use_scale=False, causal=False, dropout=0.5)",
             "Mutate_Code": "tf.keras.layers.AdditiveAttention(use_scale=True, causal=True, dropout=0.5)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AdditiveAttention(use_scale=False, causal=False, dropout=0.5)",
             "Mutate_Code": "tf.keras.layers.AdditiveAttention(use_scale=False, causal=False, dropout=0.3)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AdditiveAttention(use_scale=False, causal=False, dropout=0.5)",
             "Mutate_Code": "tf.keras.layers.AdditiveAttention(use_scale=True, dropout=0.1)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AdditiveAttention(use_scale=False, causal=False, dropout=0.5)",
             "Mutate_Code": "tf.keras.layers.AdditiveAttention(use_scale=False, dropout=0.6)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AdditiveAttention(use_scale=False, causal=False, dropout=0.5)",
             "Mutate_Code": "tf.keras.layers.AdditiveAttention(use_scale=True, causal=True, dropout=0)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AdditiveAttention(use_scale=False, causal=False, dropout=0.5)",
             "Mutate_Code": "tf.keras.layers.AdditiveAttention(use_scale=False, causal=True, dropout=0.2)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AdditiveAttention(use_scale=False, causal=False, dropout=0.5)",
             "Mutate_Code": "tf.keras.layers.AdditiveAttention(use_scale=True, dropout=0.4)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AdditiveAttention(use_scale=False, causal=False, dropout=0.5)",
             "Mutate_Code": "tf.keras.layers.AdditiveAttention(use_scale=False, dropout=0.1)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AdditiveAttention(use_scale=False, causal=False, dropout=0.5)",
             "Mutate_Code": "tf.keras.layers.AdditiveAttention(use_scale=True, causal=False, dropout=0.3)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AdditiveAttention(use_scale=False, causal=False, dropout=0.5)",
             "Mutate_Code": "tf.keras.layers.AdditiveAttention(use_scale=False, causal=False, dropout=0.5)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AdditiveAttention(use_scale=False, causal=False, dropout=0.5)",
             "Mutate_Code": "tf.keras.layers.AdditiveAttention(use_scale='invalid', causal=123, dropout=None)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AdditiveAttention(use_scale=False, causal=False, dropout=0.5)",
             "Mutate_Code": "tf.keras.layers.AdditiveAttention(use_scale=None, dropout='invalid')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AdditiveAttention(use_scale=False, causal=False, dropout=0.5)",
             "Mutate_Code": "tf.keras.layers.AdditiveAttention(causal='true', dropout=1.5)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AdditiveAttention(use_scale=False, causal=False, dropout=0.5)",
             "Mutate_Code": "tf.keras.layers.AdditiveAttention(use_scale=0, dropout=0)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AdditiveAttention(use_scale=False, causal=False, dropout=0.5)",
             "Mutate_Code": "tf.keras.layers.AdditiveAttention(causal=None, dropout=-0.1)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AlphaDropout( rate, noise_shape=None, seed=None, **kwargs )",
             "Mutate_Code": "tf.keras.layers.AlphaDropout(rate=0.2, noise_shape=None, seed=None)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AlphaDropout( rate, noise_shape=None, seed=None, **kwargs )",
             "Mutate_Code": "tf.keras.layers.AlphaDropout(rate=0.3, noise_shape=[1, 2], seed=42)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AlphaDropout( rate, noise_shape=None, seed=None, **kwargs )",
             "Mutate_Code": "tf.keras.layers.AlphaDropout(rate=0.4, noise_shape=[2, 3], seed=100)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AlphaDropout( rate, noise_shape=None, seed=None, **kwargs )",
             "Mutate_Code": "tf.keras.layers.AlphaDropout(rate=0.5, noise_shape=None, seed=50)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AlphaDropout( rate, noise_shape=None, seed=None, **kwargs )",
             "Mutate_Code": "tf.keras.layers.AlphaDropout(rate=0.6, noise_shape=[3, 4], seed=None)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AlphaDropout( rate, noise_shape=None, seed=None, **kwargs )",
             "Mutate_Code": "tf.keras.layers.AlphaDropout(rate=0.1, noise_shape=None, seed=0)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AlphaDropout( rate, noise_shape=None, seed=None, **kwargs )",
             "Mutate_Code": "tf.keras.layers.AlphaDropout(rate=0.25, noise_shape=[1, 1], seed=123)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AlphaDropout( rate, noise_shape=None, seed=None, **kwargs )",
             "Mutate_Code": "tf.keras.layers.AlphaDropout(rate=0.35, noise_shape=[2, 2], seed=200)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AlphaDropout( rate, noise_shape=None, seed=None, **kwargs )",
             "Mutate_Code": "tf.keras.layers.AlphaDropout(rate=0.45, noise_shape=[3, 3], seed=300)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AlphaDropout( rate, noise_shape=None, seed=None, **kwargs )",
             "Mutate_Code": "tf.keras.layers.AlphaDropout(rate=0.55, noise_shape=[4, 4], seed=400)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AlphaDropout( rate, noise_shape=None, seed=None, **kwargs )",
             "Mutate_Code": "tf.keras.layers.AlphaDropout(rate=-0.2, noise_shape='invalid', seed='invalid')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AlphaDropout( rate, noise_shape=None, seed=None, **kwargs )",
             "Mutate_Code": "tf.keras.layers.AlphaDropout(rate=1.2, noise_shape=100, seed=None)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AlphaDropout( rate, noise_shape=None, seed=None, **kwargs )",
             "Mutate_Code": "tf.keras.layers.AlphaDropout(rate=0, noise_shape=None, seed=-42)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AlphaDropout( rate, noise_shape=None, seed=None, **kwargs )",
             "Mutate_Code": "tf.keras.layers.AlphaDropout(rate='invalid', noise_shape=[-1, -2], seed='none')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AlphaDropout( rate, noise_shape=None, seed=None, **kwargs )",
             "Mutate_Code": "tf.keras.layers.AlphaDropout(rate=None, noise_shape='invalid', seed='invalid')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AveragePooling2D( pool_size=(2, 2)",
             "Mutate_Code": "tf.keras.layers.AveragePooling2D(pool_size=(2, 2))"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AveragePooling2D( pool_size=(2, 2)",
             "Mutate_Code": "tf.keras.layers.AveragePooling2D(pool_size=(3, 3))"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AveragePooling2D( pool_size=(2, 2)",
             "Mutate_Code": "tf.keras.layers.AveragePooling2D(pool_size=(4, 4))"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AveragePooling2D( pool_size=(2, 2)",
             "Mutate_Code": "tf.keras.layers.AveragePooling2D(pool_size=(5, 5))"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AveragePooling2D( pool_size=(2, 2)",
             "Mutate_Code": "tf.keras.layers.AveragePooling2D(pool_size=(6, 6))"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AveragePooling2D( pool_size=(2, 2)",
             "Mutate_Code": "tf.keras.layers.AveragePooling2D(pool_size=(7, 7))"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AveragePooling2D( pool_size=(2, 2)",
             "Mutate_Code": "tf.keras.layers.AveragePooling2D(pool_size=(8, 8))"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AveragePooling2D( pool_size=(2, 2)",
             "Mutate_Code": "tf.keras.layers.AveragePooling2D(pool_size=(9, 9))"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AveragePooling2D( pool_size=(2, 2)",
             "Mutate_Code": "tf.keras.layers.AveragePooling2D(pool_size=(10, 10))"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AveragePooling2D( pool_size=(2, 2)",
             "Mutate_Code": "tf.keras.layers.AveragePooling2D(pool_size=(11, 11))"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AveragePooling2D( pool_size=(2, 2)",
             "Mutate_Code": "tf.keras.layers.AveragePooling2D(pool_size='invalid')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AveragePooling2D( pool_size=(2, 2)",
             "Mutate_Code": "tf.keras.layers.AveragePooling2D(pool_size=(0, 0))"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AveragePooling2D( pool_size=(2, 2)",
             "Mutate_Code": "tf.keras.layers.AveragePooling2D(pool_size=(-1, -1))"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AveragePooling2D( pool_size=(2, 2)",
             "Mutate_Code": "tf.keras.layers.AveragePooling2D(pool_size=(1.5, 1.5))"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.AveragePooling2D( pool_size=(2, 2)",
             "Mutate_Code": "tf.keras.layers.AveragePooling2D(pool_size=None)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Concatenate(kernel_initializer='glorot_uniform', 5 )",
             "Mutate_Code": "tf.keras.layers.Concatenate(axis=-1)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Concatenate(kernel_initializer='glorot_uniform', 5 )",
             "Mutate_Code": "tf.keras.layers.Concatenate(axis=0)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Concatenate(kernel_initializer='glorot_uniform', 5 )",
             "Mutate_Code": "tf.keras.layers.Concatenate(axis=1)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Concatenate(kernel_initializer='glorot_uniform', 5 )",
             "Mutate_Code": "tf.keras.layers.Concatenate(axis=2)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Concatenate(kernel_initializer='glorot_uniform', 5 )",
             "Mutate_Code": "tf.keras.layers.Concatenate(axis=3)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Concatenate(kernel_initializer='glorot_uniform', 5 )",
             "Mutate_Code": "tf.keras.layers.Concatenate(axis=-2)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Concatenate(kernel_initializer='glorot_uniform', 5 )",
             "Mutate_Code": "tf.keras.layers.Concatenate(axis=-3)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Concatenate(kernel_initializer='glorot_uniform', 5 )",
             "Mutate_Code": "tf.keras.layers.Concatenate(axis=4)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Concatenate(kernel_initializer='glorot_uniform', 5 )",
             "Mutate_Code": "tf.keras.layers.Concatenate(axis=-4)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Concatenate(kernel_initializer='glorot_uniform', 5 )",
             "Mutate_Code": "tf.keras.layers.Concatenate(axis=5)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Concatenate(kernel_initializer='glorot_uniform', 5 )",
             "Mutate_Code": "tf.keras.layers.Concatenate(axis='invalid')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Concatenate(kernel_initializer='glorot_uniform', 5 )",
             "Mutate_Code": "tf.keras.layers.Concatenate(axis=123)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Concatenate(kernel_initializer='glorot_uniform', 5 )",
             "Mutate_Code": "tf.keras.layers.Concatenate(axis=None)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Concatenate(kernel_initializer='glorot_uniform', 5 )",
             "Mutate_Code": "tf.keras.layers.Concatenate(axis=-123)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Concatenate(kernel_initializer='glorot_uniform', 5 )",
             "Mutate_Code": "tf.keras.layers.Concatenate(axis=1.5)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Conv1DTranspose( rate, noise_shape=None, seed=None, **kwargs, rate, noise_shape=None, seed=None, **kwargs )",
             "Mutate_Code": "tf.keras.layers.Conv1DTranspose(filters=32, kernel_size=3)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Conv1DTranspose( rate, noise_shape=None, seed=None, **kwargs, rate, noise_shape=None, seed=None, **kwargs )",
             "Mutate_Code": "tf.keras.layers.Conv1DTranspose(filters=64, kernel_size=5)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Conv1DTranspose( rate, noise_shape=None, seed=None, **kwargs, rate, noise_shape=None, seed=None, **kwargs )",
             "Mutate_Code": "tf.keras.layers.Conv1DTranspose(filters=128, kernel_size=7)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Conv1DTranspose( rate, noise_shape=None, seed=None, **kwargs, rate, noise_shape=None, seed=None, **kwargs )",
             "Mutate_Code": "tf.keras.layers.Conv1DTranspose(filters=16, kernel_size=3)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Conv1DTranspose( rate, noise_shape=None, seed=None, **kwargs, rate, noise_shape=None, seed=None, **kwargs )",
             "Mutate_Code": "tf.keras.layers.Conv1DTranspose(filters=32, kernel_size=1)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Conv1DTranspose( rate, noise_shape=None, seed=None, **kwargs, rate, noise_shape=None, seed=None, **kwargs )",
             "Mutate_Code": "tf.keras.layers.Conv1DTranspose(filters=48, kernel_size=2)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Conv1DTranspose( rate, noise_shape=None, seed=None, **kwargs, rate, noise_shape=None, seed=None, **kwargs )",
             "Mutate_Code": "tf.keras.layers.Conv1DTranspose(filters=64, kernel_size=4)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Conv1DTranspose( rate, noise_shape=None, seed=None, **kwargs, rate, noise_shape=None, seed=None, **kwargs )",
             "Mutate_Code": "tf.keras.layers.Conv1DTranspose(filters=96, kernel_size=6)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Conv1DTranspose( rate, noise_shape=None, seed=None, **kwargs, rate, noise_shape=None, seed=None, **kwargs )",
             "Mutate_Code": "tf.keras.layers.Conv1DTranspose(filters=128, kernel_size=8)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Conv1DTranspose( rate, noise_shape=None, seed=None, **kwargs, rate, noise_shape=None, seed=None, **kwargs )",
             "Mutate_Code": "tf.keras.layers.Conv1DTranspose(filters=32, kernel_size=5)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Conv1DTranspose( rate, noise_shape=None, seed=None, **kwargs, rate, noise_shape=None, seed=None, **kwargs )",
             "Mutate_Code": "tf.keras.layers.Conv1DTranspose(filters='invalid', kernel_size='invalid')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Conv1DTranspose( rate, noise_shape=None, seed=None, **kwargs, rate, noise_shape=None, seed=None, **kwargs )",
             "Mutate_Code": "tf.keras.layers.Conv1DTranspose(filters=-32, kernel_size=-3)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Conv1DTranspose( rate, noise_shape=None, seed=None, **kwargs, rate, noise_shape=None, seed=None, **kwargs )",
             "Mutate_Code": "tf.keras.layers.Conv1DTranspose(filters=None, kernel_size=None)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Conv1DTranspose( rate, noise_shape=None, seed=None, **kwargs, rate, noise_shape=None, seed=None, **kwargs )",
             "Mutate_Code": "tf.keras.layers.Conv1DTranspose(filters=0, kernel_size=0)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.layers.Conv1DTranspose( rate, noise_shape=None, seed=None, **kwargs, rate, noise_shape=None, seed=None, **kwargs )",
             "Mutate_Code": "tf.keras.layers.Conv1DTranspose(filters=64, kernel_size='invalid')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.activations.tanh( x )",
             "Mutate_Code": "tf.activations.tanh()"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.activations.tanh( x )",
             "Mutate_Code": "tf.activations.tanh([x1, x2])"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.activations.tanh( x )",
             "Mutate_Code": "tf.activations.tanh([x2, x1])"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.activations.tanh( x )",
             "Mutate_Code": "tf.activations.tanh(invalid_param='invalid')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.activations.tanh( x )",
             "Mutate_Code": "tf.activations.tanh(1, 2, 3)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.activations.tanh( x )",
             "Mutate_Code": "tf.activations.tanh(use_bias=True)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.activations.tanh( x )",
             "Mutate_Code": "tf.activations.tanh(activation='relu')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.activations.tanh( x )",
             "Mutate_Code": "tf.activations.tanh(dropout=0.3)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.BinaryCrossentropy( from_logits=False, label_smoothing=0.0, axis=-1, reduction=losses_utils.ReductionV2.AUTO, name='binary_crossentropy' )",
             "Mutate_Code": "tf.keras.losses.BinaryCrossentropy(from_logits=False, label_smoothing=0)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.BinaryCrossentropy( from_logits=False, label_smoothing=0.0, axis=-1, reduction=losses_utils.ReductionV2.AUTO, name='binary_crossentropy' )",
             "Mutate_Code": "tf.keras.losses.BinaryCrossentropy(from_logits=True, label_smoothing=0.1)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.BinaryCrossentropy( from_logits=False, label_smoothing=0.0, axis=-1, reduction=losses_utils.ReductionV2.AUTO, name='binary_crossentropy' )",
             "Mutate_Code": "tf.keras.losses.BinaryCrossentropy(from_logits=False, label_smoothing=0.2)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.BinaryCrossentropy( from_logits=False, label_smoothing=0.0, axis=-1, reduction=losses_utils.ReductionV2.AUTO, name='binary_crossentropy' )",
             "Mutate_Code": "tf.keras.losses.BinaryCrossentropy(from_logits=True, label_smoothing=0.3)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.BinaryCrossentropy( from_logits=False, label_smoothing=0.0, axis=-1, reduction=losses_utils.ReductionV2.AUTO, name='binary_crossentropy' )",
             "Mutate_Code": "tf.keras.losses.BinaryCrossentropy(from_logits=False, label_smoothing=0.4)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.BinaryCrossentropy( from_logits=False, label_smoothing=0.0, axis=-1, reduction=losses_utils.ReductionV2.AUTO, name='binary_crossentropy' )",
             "Mutate_Code": "tf.keras.losses.BinaryCrossentropy(from_logits=True, label_smoothing=0.5)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.BinaryCrossentropy( from_logits=False, label_smoothing=0.0, axis=-1, reduction=losses_utils.ReductionV2.AUTO, name='binary_crossentropy' )",
             "Mutate_Code": "tf.keras.losses.BinaryCrossentropy(from_logits=False, label_smoothing=0.6)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.BinaryCrossentropy( from_logits=False, label_smoothing=0.0, axis=-1, reduction=losses_utils.ReductionV2.AUTO, name='binary_crossentropy' )",
             "Mutate_Code": "tf.keras.losses.BinaryCrossentropy(from_logits=True, label_smoothing=0.7)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.BinaryCrossentropy( from_logits=False, label_smoothing=0.0, axis=-1, reduction=losses_utils.ReductionV2.AUTO, name='binary_crossentropy' )",
             "Mutate_Code": "tf.keras.losses.BinaryCrossentropy(from_logits=False, label_smoothing=0.8)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.BinaryCrossentropy( from_logits=False, label_smoothing=0.0, axis=-1, reduction=losses_utils.ReductionV2.AUTO, name='binary_crossentropy' )",
             "Mutate_Code": "tf.keras.losses.BinaryCrossentropy(from_logits=True, label_smoothing=0.9)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.BinaryCrossentropy( from_logits=False, label_smoothing=0.0, axis=-1, reduction=losses_utils.ReductionV2.AUTO, name='binary_crossentropy' )",
             "Mutate_Code": "tf.keras.losses.BinaryCrossentropy(from_logits='invalid', label_smoothing=-0.1)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.BinaryCrossentropy( from_logits=False, label_smoothing=0.0, axis=-1, reduction=losses_utils.ReductionV2.AUTO, name='binary_crossentropy' )",
             "Mutate_Code": "tf.keras.losses.BinaryCrossentropy(from_logits=None, label_smoothing=1.1)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.BinaryCrossentropy( from_logits=False, label_smoothing=0.0, axis=-1, reduction=losses_utils.ReductionV2.AUTO, name='binary_crossentropy' )",
             "Mutate_Code": "tf.keras.losses.BinaryCrossentropy(from_logits=True, label_smoothing='invalid')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.BinaryCrossentropy( from_logits=False, label_smoothing=0.0, axis=-1, reduction=losses_utils.ReductionV2.AUTO, name='binary_crossentropy' )",
             "Mutate_Code": "tf.keras.losses.BinaryCrossentropy(from_logits=False, label_smoothing=-0.2)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.BinaryCrossentropy( from_logits=False, label_smoothing=0.0, axis=-1, reduction=losses_utils.ReductionV2.AUTO, name='binary_crossentropy' )",
             "Mutate_Code": "tf.keras.losses.BinaryCrossentropy(from_logits=True, label_smoothing=None)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.Loss( reduction=losses_utils.ReductionV2.AUTO, name=None )",
             "Mutate_Code": "tf.keras.losses.Loss()"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.Loss( reduction=losses_utils.ReductionV2.AUTO, name=None )",
             "Mutate_Code": "tf.keras.losses.Loss(y_true,y_pred)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.Loss( reduction=losses_utils.ReductionV2.AUTO, name=None )",
             "Mutate_Code": "tf.keras.losses.Loss(y_pred,y_true)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.Loss( reduction=losses_utils.ReductionV2.AUTO, name=None )",
             "Mutate_Code": "tf.keras.losses.Loss(invalid_param='invalid')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.Loss( reduction=losses_utils.ReductionV2.AUTO, name=None )",
             "Mutate_Code": "tf.keras.losses.Loss(1, 2, 3)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.Loss( reduction=losses_utils.ReductionV2.AUTO, name=None )",
             "Mutate_Code": "tf.keras.losses.Loss(use_bias=True)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.Loss( reduction=losses_utils.ReductionV2.AUTO, name=None )",
             "Mutate_Code": "tf.keras.losses.Loss(activation='relu')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.Loss( reduction=losses_utils.ReductionV2.AUTO, name=None )",
             "Mutate_Code": "tf.keras.losses.Loss(dropout=0.3)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)",
             "Mutate_Code": "tf.keras.losses.SparseCategoricalCrossentropy(from_logits=False, reduction='auto', name='sparse_categorical_crossentropy')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)",
             "Mutate_Code": "tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True, reduction='sum', name='sparse_categorical_crossentropy')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)",
             "Mutate_Code": "tf.keras.losses.SparseCategoricalCrossentropy(from_logits=False, reduction='none', name='sparse_categorical_crossentropy')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)",
             "Mutate_Code": "tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True, reduction='sum_over_batch_size', name='sparse_categorical_crossentropy')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)",
             "Mutate_Code": "tf.keras.losses.SparseCategoricalCrossentropy(from_logits='invalid', reduction='invalid', name='invalid')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)",
             "Mutate_Code": "tf.keras.losses.SparseCategoricalCrossentropy(from_logits=123, reduction=None, name=None)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)",
             "Mutate_Code": "tf.keras.losses.SparseCategoricalCrossentropy(from_logits=None, reduction='auto', name='sparse_categorical_crossentropy')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)",
             "Mutate_Code": "tf.keras.losses.SparseCategoricalCrossentropy(from_logits=False, reduction=123, name='sparse_categorical_crossentropy')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)",
             "Mutate_Code": "tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True, reduction='auto', name=123)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.SparseCategoricalCrossentropy( from_logits=False, ignore_class=None, reduction=losses_utils.ReductionV2.AUTO, name='sparse_categorical_crossentropy' )",
             "Mutate_Code": "tf.keras.losses.SparseCategoricalCrossentropy(from_logits=False, reduction='auto', name='sparse_categorical_crossentropy')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.SparseCategoricalCrossentropy( from_logits=False, ignore_class=None, reduction=losses_utils.ReductionV2.AUTO, name='sparse_categorical_crossentropy' )",
             "Mutate_Code": "tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True, reduction='sum', name='sparse_categorical_crossentropy')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.SparseCategoricalCrossentropy( from_logits=False, ignore_class=None, reduction=losses_utils.ReductionV2.AUTO, name='sparse_categorical_crossentropy' )",
             "Mutate_Code": "tf.keras.losses.SparseCategoricalCrossentropy(from_logits=False, reduction='none', name='sparse_categorical_crossentropy')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.SparseCategoricalCrossentropy( from_logits=False, ignore_class=None, reduction=losses_utils.ReductionV2.AUTO, name='sparse_categorical_crossentropy' )",
             "Mutate_Code": "tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True, reduction='sum_over_batch_size', name='sparse_categorical_crossentropy')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.SparseCategoricalCrossentropy( from_logits=False, ignore_class=None, reduction=losses_utils.ReductionV2.AUTO, name='sparse_categorical_crossentropy' )",
             "Mutate_Code": "tf.keras.losses.SparseCategoricalCrossentropy(from_logits='invalid', reduction='invalid', name='invalid')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.SparseCategoricalCrossentropy( from_logits=False, ignore_class=None, reduction=losses_utils.ReductionV2.AUTO, name='sparse_categorical_crossentropy' )",
             "Mutate_Code": "tf.keras.losses.SparseCategoricalCrossentropy(from_logits=123, reduction=None, name=None)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.SparseCategoricalCrossentropy( from_logits=False, ignore_class=None, reduction=losses_utils.ReductionV2.AUTO, name='sparse_categorical_crossentropy' )",
             "Mutate_Code": "tf.keras.losses.SparseCategoricalCrossentropy(from_logits=None, reduction='auto', name='sparse_categorical_crossentropy')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.SparseCategoricalCrossentropy( from_logits=False, ignore_class=None, reduction=losses_utils.ReductionV2.AUTO, name='sparse_categorical_crossentropy' )",
             "Mutate_Code": "tf.keras.losses.SparseCategoricalCrossentropy(from_logits=False, reduction=123, name='sparse_categorical_crossentropy')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.losses.SparseCategoricalCrossentropy( from_logits=False, ignore_class=None, reduction=losses_utils.ReductionV2.AUTO, name='sparse_categorical_crossentropy' )",
             "Mutate_Code": "tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True, reduction='auto', name=123)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.optimizers.legacy.Adamax( learning_rate=0.001, beta_1=0.9, beta_2=0.999, epsilon=1e-07, name='Adamax', **kwargs )",
             "Mutate_Code": "tf.keras.optimizers.legacy.Adamax(learning_rate=0.002, beta_1=0.9, beta_2=0.999)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.optimizers.legacy.Adamax( learning_rate=0.001, beta_1=0.9, beta_2=0.999, epsilon=1e-07, name='Adamax', **kwargs )",
             "Mutate_Code": "tf.keras.optimizers.legacy.Adamax(learning_rate=0.01, beta_1=0.9, beta_2=0.999)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.optimizers.legacy.Adamax( learning_rate=0.001, beta_1=0.9, beta_2=0.999, epsilon=1e-07, name='Adamax', **kwargs )",
             "Mutate_Code": "tf.keras.optimizers.legacy.Adamax(learning_rate=0.1, beta_1=0.9, beta_2=0.999)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.optimizers.legacy.Adamax( learning_rate=0.001, beta_1=0.9, beta_2=0.999, epsilon=1e-07, name='Adamax', **kwargs )",
             "Mutate_Code": "tf.keras.optimizers.legacy.Adamax(learning_rate='invalid', beta_1=-1, beta_2=-1)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.optimizers.legacy.Adamax( learning_rate=0.001, beta_1=0.9, beta_2=0.999, epsilon=1e-07, name='Adamax', **kwargs )",
             "Mutate_Code": "tf.keras.optimizers.legacy.Adamax(learning_rate=0.002, beta_1=0.9, beta_2=0.999)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.optimizers.legacy.Adamax( learning_rate=0.001, beta_1=0.9, beta_2=0.999, epsilon=1e-07, name='Adamax', **kwargs )",
             "Mutate_Code": "tf.keras.optimizers.legacy.Adamax(learning_rate=0.01, beta_1=0.9, beta_2=0.999)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.optimizers.legacy.Adamax( learning_rate=0.001, beta_1=0.9, beta_2=0.999, epsilon=1e-07, name='Adamax', **kwargs )",
             "Mutate_Code": "tf.keras.optimizers.legacy.Adamax(learning_rate=0.1, beta_1=0.9, beta_2=0.999)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.optimizers.legacy.Adamax( learning_rate=0.001, beta_1=0.9, beta_2=0.999, epsilon=1e-07, name='Adamax', **kwargs )",
             "Mutate_Code": "tf.keras.optimizers.legacy.Adamax(learning_rate='invalid', beta_1=-1, beta_2=-1)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.optimizers.legacy.Adamax( learning_rate=0.001, beta_1=0.9, beta_2=0.999, epsilon=1e-07, name='Adamax', **kwargs )",
             "Mutate_Code": "tf.keras.optimizers.legacy.Adamax(learning_rate=0, beta_1=1.1, beta_2=1.1)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.optimizers.schedules.ExponentialDecay( initial_learning_rate, decay_steps, decay_rate, staircase=False, name=None )",
             "Mutate_Code": "tf.keras.optimizers.schedules.ExponentialDecay(initial_learning_rate=0.1, decay_steps=1000, decay_rate=0.9, staircase=False)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.optimizers.schedules.ExponentialDecay( initial_learning_rate, decay_steps, decay_rate, staircase=False, name=None )",
             "Mutate_Code": "tf.keras.optimizers.schedules.ExponentialDecay(initial_learning_rate=0.01, decay_steps=100, decay_rate=0.95, staircase=True)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.optimizers.schedules.ExponentialDecay( initial_learning_rate, decay_steps, decay_rate, staircase=False, name=None )",
             "Mutate_Code": "tf.keras.optimizers.schedules.ExponentialDecay(initial_learning_rate='invalid', decay_steps=-100, decay_rate=-0.5, staircase='invalid')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.keras.optimizers.schedules.ExponentialDecay( initial_learning_rate, decay_steps, decay_rate, staircase=False, name=None )",
             "Mutate_Code": "tf.keras.optimizers.schedules.ExponentialDecay(initial_learning_rate=0, decay_steps=0, decay_rate=1.1, staircase=False)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.nn.compute_average_loss( per_example_loss, sample_weight=None, global_batch_size=None )",
             "Mutate_Code": "tf.nn.compute_average_loss(per_example_loss=[0.1, 0.2, 0.3], global_batch_size=10)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.nn.compute_average_loss( per_example_loss, sample_weight=None, global_batch_size=None )",
             "Mutate_Code": "tf.nn.compute_average_loss(per_example_loss=[0.4, 0.5, 0.6], global_batch_size=20)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.nn.compute_average_loss( per_example_loss, sample_weight=None, global_batch_size=None )",
             "Mutate_Code": "tf.nn.compute_average_loss(per_example_loss='invalid', global_batch_size=-1)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.nn.compute_average_loss( per_example_loss, sample_weight=None, global_batch_size=None )",
             "Mutate_Code": "tf.nn.compute_average_loss(per_example_loss=[], global_batch_size=0)"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.nn.conv2d( input, filters, strides, padding, data_format='NHWC', dilations=None, name=None )",
             "Mutate_Code": "tf.nn.conv2d(input=[[1, 2], [3, 4]], filter=[[1, 0], [0, 1]], strides=[1, 1], padding='VALID')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.nn.conv2d( input, filters, strides, padding, data_format='NHWC', dilations=None, name=None )",
             "Mutate_Code": "tf.nn.conv2d(input=[[2, 3], [4, 5]], filter=[[1, 1], [1, 1]], strides=[2, 2], padding='SAME')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.nn.conv2d( input, filters, strides, padding, data_format='NHWC', dilations=None, name=None )",
             "Mutate_Code": "tf.nn.conv2d(input='invalid', filter='invalid', strides=[-1, -1], padding='invalid')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.nn.conv2d( input, filters, strides, padding, data_format='NHWC', dilations=None, name=None )",
             "Mutate_Code": "tf.nn.conv2d(input=[], filter=[], strides=[0, 0], padding='SAME')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.nn.safe_embedding_lookup_sparse(kernel_size=(2,2,2)",
             "Mutate_Code": "tf.nn.safe_embedding_lookup_sparse(embedding_matrix=[[0.1, 0.2], [0.3, 0.4]], sp_ids=[[1, 2]], sp_weights=[[0.5, 0.5]])"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.nn.safe_embedding_lookup_sparse(kernel_size=(2,2,2)",
             "Mutate_Code": "tf.nn.safe_embedding_lookup_sparse(embedding_matrix=[[0.5, 0.6], [0.7, 0.8]], sp_ids=[[3, 4]], sp_weights=[[0.6, 0.4]])"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.nn.safe_embedding_lookup_sparse(kernel_size=(2,2,2)",
             "Mutate_Code": "tf.nn.safe_embedding_lookup_sparse(embedding_matrix='invalid', sp_ids='invalid', sp_weights='invalid')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.nn.safe_embedding_lookup_sparse(kernel_size=(2,2,2)",
             "Mutate_Code": "tf.nn.safe_embedding_lookup_sparse(embedding_matrix=[], sp_ids=[], sp_weights=[])"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.nn.with_space_to_batch(input, kernel_size=(2,2,2)",
             "Mutate_Code": "tf.nn.with_space_to_batch(input=[[1, 2], [3, 4]], block_shape=[2, 2], paddings=[[0, 0], [0, 0]])"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.nn.with_space_to_batch(input, kernel_size=(2,2,2)",
             "Mutate_Code": "tf.nn.with_space_to_batch(input=[[2, 3], [4, 5]], block_shape=[3, 3], paddings=[[1, 1], [1, 1]])"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.nn.with_space_to_batch(input, kernel_size=(2,2,2)",
             "Mutate_Code": "tf.nn.with_space_to_batch(input='invalid', block_shape='invalid', paddings='invalid')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.nn.with_space_to_batch(input, kernel_size=(2,2,2)",
             "Mutate_Code": "tf.nn.with_space_to_batch(input=[], block_shape=[], paddings=[])"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.raw_ops.QuantizedConv2D( input, filter, min_input, max_input, min_filter, max_filter, strides, padding, out_type=tf.dtypes.qint32, dilations=[1, 1, 1, 1], name=None )",
             "Mutate_Code": "tf.raw_ops.QuantizedConv2D(input=[1, 2, 3, 4], filter=[5, 6, 7, 8], min_input=0.0, max_input=1.0, min_filter=0.0, max_filter=1.0, strides=[1, 1, 1, 1], padding='VALID')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.raw_ops.QuantizedConv2D( input, filter, min_input, max_input, min_filter, max_filter, strides, padding, out_type=tf.dtypes.qint32, dilations=[1, 1, 1, 1], name=None )",
             "Mutate_Code": "tf.raw_ops.QuantizedConv2D(input='invalid', filter='invalid', min_input='invalid', max_input='invalid', min_filter='invalid', max_filter='invalid', strides='invalid', padding='invalid')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.raw_ops.QuantizedConv2D( input, filter, min_input, max_input, min_filter, max_filter, strides, padding, out_type=tf.dtypes.qint32, dilations=[1, 1, 1, 1], name=None )",
             "Mutate_Code": "tf.raw_ops.QuantizedConv2D(input=[], filter=[], min_input=0, max_input=0, min_filter=0, max_filter=0, strides=[], padding='SAME')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.train.load_variable( ckpt_dir_or_file, name )",
             "Mutate_Code": "tf.train.load_variable(ckpt_dir_or_file='/path/to/checkpoint', name='variable_name')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.train.load_variable( ckpt_dir_or_file, name )",
             "Mutate_Code": "tf.train.load_variable(ckpt_dir_or_file='/another/path/to/checkpoint', name='another_variable_name')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.train.load_variable( ckpt_dir_or_file, name )",
             "Mutate_Code": "tf.train.load_variable(ckpt_dir_or_file='invalid', name='invalid')"
         }
     },
     {
         "Fault": {
-            "File_Directory": "C:/Users/",
+            "File_Directory": "C:/Users/G\u00f6khan/Desktop/Codes Fors Test/densevs.py",
             "Source_Code": "tf.train.load_variable( ckpt_dir_or_file, name )",
             "Mutate_Code": "tf.train.load_variable(ckpt_dir_or_file=None, name=None)"
         }

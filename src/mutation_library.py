@@ -2,8 +2,10 @@
 
 
 #tf.keras
+tf_epochs=["epoch=1"]
 
 tf_activation_functions = [
+    "",
     'deserialize',                 # Aktivasyon fonksiyonlarını deserialize etmek için kullanılır
     'elu',                         # Exponential Linear Unit aktivasyon fonksiyonu
     'exponential',                 # Üssel (e tabanında) aktivasyon fonksiyonu
@@ -23,6 +25,7 @@ tf_activation_functions = [
     'tanh'                         # Hiperbolik tanjant aktivasyon fonksiyonu
 ]
 tf_keras_layers_Activation_Full_List = [
+    "activation=",
     # Standard activation functions
     "activation='relu'", 
     "activation='sigmoid'", 
@@ -937,6 +940,7 @@ tf_all_list=[
 ]
 
 tf_all_mutation_code_list = [
+'activation',
 'kernel_initializer',
 'dropout',    
 'use_bias',    

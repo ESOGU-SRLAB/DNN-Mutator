@@ -39,8 +39,8 @@ def layer_select_mutate(mutate_selected_parameters,source_code ):
         if mutate_selected_parameters == "epochs":
             change_parameter_with = 180
             mutated_line,matches = mutator.modify_code_in_file_epoch(source_code, mutate_selected_parameters, change_parameter_with)
-        elif mutate_selected_parameters == "Activation":
-            change_parameter_with = mutation_library.tf_activation_functions
+        elif mutate_selected_parameters == "activation":
+            change_parameter_with = mutation_library.tf_keras_layers_Activation_Full_List
             mutated_line,matches = mutator.modify_tf_activation_in_code(source_code, mutate_selected_parameters, change_parameter_with)
             layer_name="activation"
         elif mutate_selected_parameters == "optimizer":

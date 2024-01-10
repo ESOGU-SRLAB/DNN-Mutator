@@ -7,19 +7,18 @@ import json
 import shutil
 
 
-def execute_original_source_code(source_code):
+def execute_original_source_code(source_code_path):
     """
     Executes a given Python script and prints the found accuracy from the
     original source code.
     """
-    run_command = f'python3 {source_code}'
+    run_command = f'python3 {source_code_path}'
 
     try:
         result = subprocess.run(
             run_command, shell=True, capture_output=True, text=True)
         output = result.stdout
-        print(output)
-
+        
         accuracy_match = re.search(r'Accuracy: (\d+\.\d+)%', output)
         if accuracy_match:
             accuracy_value = float(accuracy_match.group(1))
@@ -52,6 +51,7 @@ def execute_file(threshold, mutant_files_save_location):
             output = result.stdout
 
             accuracy_match = re.search(r'Accuracy: (\d+\.\d+)%', output)
+            #accuracy_match = re.findall(r'accuracy: (\d+\.\d+)', output)
             if accuracy_match:
                 accuracy_value = float(accuracy_match.group(1))
                 print(f'Found Accuracy: {accuracy_value}%')
@@ -156,7 +156,7 @@ def restore_original_source_code_from_backup(
                 original_source_code_file_dir)
 
 
-def mutation_process(original_source_code_file_dir, fiplan_json_dir):
+def mutation_process(original_source_code_file_dir, fiplan_json_dir,target_location_to_save_mutants):
     """
     Define a function to perform the desired task
     """
@@ -178,9 +178,7 @@ def mutation_process(original_source_code_file_dir, fiplan_json_dir):
         # Replace the source code with the mutate code
         mutated_content = file_dir_content.replace(source_code, mutate_code)
 
-        target_location_to_save_mutants = (
-            "/Users/cembaglum/Desktop/ASRLAB/2_SUIT_1004/Kodlar/"
-            "Execution_Module/mutant_files")
+        target_location_to_save_mutants = (target_location_to_save_mutants)
         mutant_name_with_number = f"/mutant_{i}.py"
 
         # Merge location and mutant file name

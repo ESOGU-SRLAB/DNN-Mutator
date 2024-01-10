@@ -8765,7 +8765,7 @@ color:white;</string>
                          <rect>
                           <x>290</x>
                           <y>10</y>
-                          <width>271</width>
+                          <width>281</width>
                           <height>61</height>
                          </rect>
                         </property>
@@ -13005,10 +13005,10 @@ color:white;</string>
                        <widget class="QPushButton" name="pushButton_mutants_path">
                         <property name="geometry">
                          <rect>
-                          <x>580</x>
-                          <y>310</y>
+                          <x>790</x>
+                          <y>300</y>
                           <width>141</width>
-                          <height>41</height>
+                          <height>51</height>
                          </rect>
                         </property>
                         <property name="styleSheet">
@@ -13021,14 +13021,66 @@ color:white;</string>
                        <widget class="QPlainTextEdit" name="plainTextEdit_mutant_path">
                         <property name="geometry">
                          <rect>
-                          <x>740</x>
+                          <x>580</x>
                           <y>300</y>
-                          <width>191</width>
-                          <height>61</height>
+                          <width>201</width>
+                          <height>51</height>
                          </rect>
                         </property>
                         <property name="styleSheet">
                          <string notr="true">background-color: rgb(52, 59, 72);</string>
+                        </property>
+                       </widget>
+                       <widget class="QPlainTextEdit" name="plainTextEdit_DNN_Survived">
+                        <property name="geometry">
+                         <rect>
+                          <x>890</x>
+                          <y>390</y>
+                          <width>231</width>
+                          <height>111</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">background-color: rgb(52, 59, 72);</string>
+                        </property>
+                       </widget>
+                       <widget class="QPlainTextEdit" name="plainTextEdit_DNN_Killed">
+                        <property name="geometry">
+                         <rect>
+                          <x>890</x>
+                          <y>530</y>
+                          <width>231</width>
+                          <height>341</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">background-color: rgb(52, 59, 72);</string>
+                        </property>
+                       </widget>
+                       <widget class="QLabel" name="label_80">
+                        <property name="geometry">
+                         <rect>
+                          <x>890</x>
+                          <y>370</y>
+                          <width>141</width>
+                          <height>16</height>
+                         </rect>
+                        </property>
+                        <property name="text">
+                         <string>Survived Mutants</string>
+                        </property>
+                       </widget>
+                       <widget class="QLabel" name="label_88">
+                        <property name="geometry">
+                         <rect>
+                          <x>890</x>
+                          <y>510</y>
+                          <width>121</width>
+                          <height>16</height>
+                         </rect>
+                        </property>
+                        <property name="text">
+                         <string>Killed Mutants</string>
                         </property>
                        </widget>
                       </widget>
