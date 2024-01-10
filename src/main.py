@@ -23,7 +23,6 @@ import dnn_execution
 import mutation_library
 import selected_parameters
 import numpy as np
-
 import tensorflow as tf
 from tensorflow.python.keras.layers import Dense 
 from tensorflow.python.keras.layers.recurrent import LSTM as LSTM_keras
@@ -1183,7 +1182,7 @@ class MainWindow(QMainWindow):
         self.ui.dnn_code_snippet_list.itemClicked.connect(
             dnn_code_snippet_select_with_one_clicked
         )
-         #GÖKHAN
+        
         
         # Select Task and Show Task's Details on Workload Page
         self.ui.listWidget_21.itemClicked.connect(task_info_with_one_click)
@@ -1252,7 +1251,7 @@ class MainWindow(QMainWindow):
         self.ui.ros_fiplan_save.clicked.connect(self.buttonClick)
         self.ui.ros_fiplan_remove.clicked.connect(self.buttonClick)
         self.ui.open_target_ros.clicked.connect(self.buttonClick)
-
+        self.ui.pushButton_5.clicked.connect(self.buttonClick)
         # SCAN PAGE BUTTON CONNECTS
         self.ui.btn_back_code.clicked.connect(self.buttonClick)
         self.ui.btn_scan_process.clicked.connect(self.start_scan_process)
@@ -1262,6 +1261,7 @@ class MainWindow(QMainWindow):
         self.ui.pushButton_dnn_mutate.clicked.connect(self.dnn_start_mutate_process)
         self.ui.btn_load_dnn.clicked.connect(get_dnn_file_py_for_source_code)    
         self.ui.pushButton_mutants_path.clicked.connect(get_mutation_path)
+        
 
         # FI PLAN PAGE BUTTONS
         self.ui.btn_random_fault.clicked.connect(random_hata_bas)
@@ -1331,29 +1331,7 @@ class MainWindow(QMainWindow):
         self.ui.refresh_page.clicked.connect(self.refresh_page)
         self.ui.reset_for_all.clicked.connect(self.reset_all)
 
-    #def install_tensorflow_library(self):
-        #try:
-            # Tensorflow kütüphanesini içe aktar, eğer yüklü değilse ImportError alırız
-           #importlib.import_module('tensorflow')
-        
-        #except ImportError:
-            # Tensorflow yüklü değilse yüklemeye çalış
-            #try:
-                #import pip
-                #pip.main(['install', 'tensorflow'])
-            #except Exception as e:
-                #print("Tensorflow yüklenirken bir hata oluştu:", e)
-        #if 'tensorflow' in sys.modules:
-            #from tensorflow.keras.datasets import mnist
-            #from tensorflow.keras.models import Sequential
-            #from tensorflow.keras.layers import Dense, Flatten
-            #from tensorflow.keras.optimizers import Adam
-        #else:
-            #print("TensorFlow yüklü değil. Lütfen yükleyin veya uygun bir yolla içe aktarın.")
-        #print("Tensorflow Yükleme Butonuna Basıldı")
-    # TensorFlow ile çalışmaya başlayabilirsiniz
 
-# Şimdi Tensorflow kütüphanesinin yüklü olduğundan emin olabiliriz
 
     def dnn_start_mutate_process(self):
         self.dnn_mutation_process_progress_bar()
@@ -1440,6 +1418,7 @@ class MainWindow(QMainWindow):
         matching_lines = dnn_execution.find_accuracy_lines(file_name)
         survived_results=""
         killed_results=""
+        mutation_results=""
         if matching_lines:
             print("Execution process is started... Just wait for accuracy value!")
             threshold = dnn_execution.execute_original_source_code(file_name)
@@ -1454,8 +1433,13 @@ class MainWindow(QMainWindow):
                     survived_results=survived_results+survived_code+ "\n"
                 for killed_code in killed:
                     killed_results=killed_results+killed_code+ "\n"
+                for mutation_code in accuracy_list:
+                    mutation_results=mutation_results+mutation_code+ "\n"                    
                 self.ui.plainTextEdit_DNN_Survived.setPlainText(survived_results)
                 self.ui.plainTextEdit_DNN_Killed.setPlainText(killed_results)
+                self.ui.plainTextEdit_DNN_Mutation_Results.setPlainText(mutation_results)
+                pdf_all_in_one="Survived_results:"+"\n"+survived_results+"\n"+"Killed_results:"+"\n"+killed_results+"\n"+"Mutation_results:"+"\n"+mutation_results
+                dnn_execution.create_pdf(pdf_all_in_one,mutation_path+"/Mutation_Results.pdf")
             else:
                 print("Please be sure to use original source code which has"
                     " accuracy value!")
@@ -2305,7 +2289,11 @@ class MainWindow(QMainWindow):
             UIFunctions.resetStyle(self, btnName)
             btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
             self.ui.titleRightInfo.setText("HOME")
-
+        if btnName == "pushButton_5":
+            self.ui.stackedWidget.setCurrentWidget(self.ui.home)
+            UIFunctions.resetStyle(self, btnName)
+            btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
+            self.ui.titleRightInfo.setText("HOME")
         # START PAGE
         if btnName == "btn_start":
             self.ui.stackedWidget.setCurrentWidget(self.ui.start)

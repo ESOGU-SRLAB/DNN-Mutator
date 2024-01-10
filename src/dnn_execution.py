@@ -5,7 +5,8 @@ import subprocess
 import re
 import json
 import shutil
-
+from reportlab.lib.pagesizes import letter
+from reportlab.pdfgen import canvas
 
 def execute_original_source_code(source_code_path):
     """
@@ -234,5 +235,36 @@ def main():
         print("Please ensure the script contains an accuracy line.")
 
 
+
+def create_pdf(text, filename):
+    """
+    Creates a multi-page PDF file with the given text.
+
+    Parameters:
+        text (str): The text to write to the PDF.
+        filename (str): The filename for the PDF.
+    """
+    c = canvas.Canvas(filename, pagesize=letter)
+    text_object = c.beginText(40, 750)
+    text_object.setFont("Times-Roman", 12)
+
+    # Satır başı yüksekliği ve sayfa başına maksimum satır sayısı
+    line_height = 14
+    max_lines_per_page = 50
+    lines = 0
+
+    for line in text.split('\n'):
+        text_object.textLine(line)
+        lines += 1
+        # Eğer maksimum satır sayısına ulaşıldıysa, yeni bir sayfa başlat
+        if lines >= max_lines_per_page:
+            c.drawText(text_object)
+            c.showPage()
+            text_object = c.beginText(40, 750)
+            lines = 0
+
+    # Kalan metni sayfaya yazdır
+    c.drawText(text_object)
+    c.save()
 if __name__ == "__main__":
     main()
