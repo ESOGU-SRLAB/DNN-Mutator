@@ -28,6 +28,7 @@ from tensorflow.python.keras.layers import Dense
 from tensorflow.python.keras.layers.recurrent import LSTM as LSTM_keras
 from tensorflow.python.keras.models import Sequential
 from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBox
+
 from PySide6 import QtGui
 
 from PySide6 import *
@@ -1372,9 +1373,11 @@ class MainWindow(QMainWindow):
             if mutated_line != 0:
                 if matches:
                     mutated_code += mutated_line + "\n"
+            mutate_counter=0
             for mutate_code in matches:
                 for mutation  in mutation_fault_list:
                     if item not in mutation_library.tf_hyper_parameters_mutation_code_list:
+                        mutate_counter=mutate_counter+1
                         fault = {
                             "Fault": {
                                 "File_Directory": file_directory,
@@ -1384,6 +1387,7 @@ class MainWindow(QMainWindow):
                         }
                         all_faults.append(fault)
                     else:
+                        mutate_counter=mutate_counter+1
                         fault = {
                             "Fault": {
                                 "File_Directory": file_directory,
@@ -1392,6 +1396,8 @@ class MainWindow(QMainWindow):
                             } 
                         }
                         all_faults.append(fault)
+        mutate_counter=str(mutate_counter)
+        #self.ui.plainTextEdit_DNN_mutation_number.setPlainText(" Mutant Number:"+mutate_counter)
         save_path = self.ui.plainTextEdit_mutant_path.toPlainText()
         
         

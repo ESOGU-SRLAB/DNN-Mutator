@@ -20,7 +20,8 @@ def execute_original_source_code(source_code_path):
             run_command, shell=True, capture_output=True, text=True)
         output = result.stdout
         
-        accuracy_match = re.search(r'Accuracy: (\d+\.\d+)%', output)
+        #accuracy_match = re.search(r'Accuracy: (\d+\.\d+)%', output)
+        accuracy_match = re.search(r'Accuracy\s*:\s*(\d+\.\d+)\s*%', output)
         if accuracy_match:
             accuracy_value = float(accuracy_match.group(1))
             print(f'The Accuracy of Original Source Code: {accuracy_value}%')
@@ -51,8 +52,8 @@ def execute_file(threshold, mutant_files_save_location):
                 run_command, shell=True, capture_output=True, text=True)
             output = result.stdout
 
-            accuracy_match = re.search(r'Accuracy: (\d+\.\d+)%', output)
-            #accuracy_match = re.findall(r'accuracy: (\d+\.\d+)', output)
+            accuracy_match = re.search(r'Accuracy\s*:\s*(\d+\.\d+)\s*%', output)
+    
             if accuracy_match:
                 accuracy_value = float(accuracy_match.group(1))
                 print(f'Found Accuracy: {accuracy_value}%')

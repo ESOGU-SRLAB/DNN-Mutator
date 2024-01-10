@@ -8777,9 +8777,9 @@ color:white;</string>
                         <property name="geometry">
                          <rect>
                           <x>10</x>
-                          <y>390</y>
+                          <y>380</y>
                           <width>261</width>
-                          <height>481</height>
+                          <height>491</height>
                          </rect>
                         </property>
                         <property name="styleSheet">
@@ -8805,10 +8805,10 @@ color:white;</string>
                        <widget class="QPlainTextEdit" name="plainTextEdit_mutated_code">
                         <property name="geometry">
                          <rect>
-                          <x>560</x>
-                          <y>390</y>
+                          <x>550</x>
+                          <y>380</y>
                           <width>251</width>
-                          <height>481</height>
+                          <height>491</height>
                          </rect>
                         </property>
                         <property name="styleSheet">
@@ -10781,8 +10781,8 @@ color:white;</string>
                        <widget class="QLabel" name="label_25">
                         <property name="geometry">
                          <rect>
-                          <x>560</x>
-                          <y>370</y>
+                          <x>550</x>
+                          <y>360</y>
                           <width>91</width>
                           <height>20</height>
                          </rect>
@@ -10795,7 +10795,7 @@ color:white;</string>
                         <property name="geometry">
                          <rect>
                           <x>10</x>
-                          <y>370</y>
+                          <y>360</y>
                           <width>91</width>
                           <height>16</height>
                          </rect>
@@ -10895,7 +10895,7 @@ color:white;</string>
                         <property name="geometry">
                          <rect>
                           <x>950</x>
-                          <y>310</y>
+                          <y>300</y>
                           <width>211</width>
                           <height>23</height>
                          </rect>
@@ -10907,10 +10907,10 @@ color:white;</string>
                        <widget class="QListWidget" name="listWidget_dnn_selected_snippet">
                         <property name="geometry">
                          <rect>
-                          <x>290</x>
-                          <y>390</y>
+                          <x>280</x>
+                          <y>380</y>
                           <width>261</width>
-                          <height>481</height>
+                          <height>491</height>
                          </rect>
                         </property>
                         <property name="styleSheet">
@@ -12966,8 +12966,8 @@ color:white;</string>
                        <widget class="QLabel" name="label_79">
                         <property name="geometry">
                          <rect>
-                          <x>290</x>
-                          <y>370</y>
+                          <x>280</x>
+                          <y>360</y>
                           <width>141</width>
                           <height>16</height>
                          </rect>
@@ -13034,10 +13034,10 @@ color:white;</string>
                        <widget class="QPlainTextEdit" name="plainTextEdit_DNN_Survived">
                         <property name="geometry">
                          <rect>
-                          <x>820</x>
-                          <y>390</y>
-                          <width>231</width>
-                          <height>121</height>
+                          <x>810</x>
+                          <y>380</y>
+                          <width>221</width>
+                          <height>131</height>
                          </rect>
                         </property>
                         <property name="styleSheet">
@@ -13047,9 +13047,9 @@ color:white;</string>
                        <widget class="QPlainTextEdit" name="plainTextEdit_DNN_Killed">
                         <property name="geometry">
                          <rect>
-                          <x>820</x>
+                          <x>810</x>
                           <y>530</y>
-                          <width>231</width>
+                          <width>221</width>
                           <height>341</height>
                          </rect>
                         </property>
@@ -13060,8 +13060,8 @@ color:white;</string>
                        <widget class="QLabel" name="label_80">
                         <property name="geometry">
                          <rect>
-                          <x>820</x>
-                          <y>370</y>
+                          <x>810</x>
+                          <y>360</y>
                           <width>141</width>
                           <height>16</height>
                          </rect>
@@ -13073,7 +13073,7 @@ color:white;</string>
                        <widget class="QLabel" name="label_88">
                         <property name="geometry">
                          <rect>
-                          <x>820</x>
+                          <x>810</x>
                           <y>510</y>
                           <width>121</width>
                           <height>16</height>
@@ -13086,9 +13086,9 @@ color:white;</string>
                        <widget class="QPlainTextEdit" name="plainTextEdit_DNN_Mutation_Results">
                         <property name="geometry">
                          <rect>
-                          <x>1060</x>
+                          <x>1040</x>
                           <y>530</y>
-                          <width>271</width>
+                          <width>291</width>
                           <height>341</height>
                          </rect>
                         </property>
@@ -13099,7 +13099,7 @@ color:white;</string>
                        <widget class="QLabel" name="label_92">
                         <property name="geometry">
                          <rect>
-                          <x>1060</x>
+                          <x>1050</x>
                           <y>510</y>
                           <width>111</width>
                           <height>16</height>
@@ -13107,6 +13107,25 @@ color:white;</string>
                         </property>
                         <property name="text">
                          <string>Mutation Results</string>
+                        </property>
+                       </widget>
+                       <widget class="QPlainTextEdit" name="plainTextEdit_54">
+                        <property name="geometry">
+                         <rect>
+                          <x>1040</x>
+                          <y>380</y>
+                          <width>291</width>
+                          <height>131</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">background-color: rgb(52, 59, 72);</string>
+                        </property>
+                        <property name="plainText">
+                         <string>&quot;Important Information: To ensure that the mutator can accurately retrieve the model's accuracy, the output must be formatted as follows:
+print(f'Accuracy: {test_accuracy * 100:.2f}%')
+Thus, the printed result should look like
+'Test Accuracy: 95.14%' or 'Accuracy: 95.14%', etc.&quot;</string>
                         </property>
                        </widget>
                       </widget>
