@@ -75,7 +75,7 @@ def replace_batch_size_in_code(source_code, new_shape):
     
     matches = re.findall(pattern, source_code)
     if matches:
-        batch_size_list = [f"batch_size={m}" for m in matches]
+        batch_size_list = [f"{m}" for m in matches]
         #print(input_shape_list)
     new_value = "batch_size="
     if matches:
@@ -92,7 +92,7 @@ def replace_optimizer_in_code(source_code, new_shape):
     
     matches = re.findall(pattern, source_code)
     if matches:
-        optimizer_list = [f"optimizer={m}" for m in matches]
+        optimizer_list = [f"{m}" for m in matches]
         #print(input_shape_list)
     new_value = "optimizer="
     if matches:
@@ -222,7 +222,7 @@ def replace_kernel_size_in_code(source_code,new_kernel_size):
   
     # Regex deseni: 'kernel_size=...' formundaki ifadeleri bulur
     # Hem tek sayı hem de parantez içindeki sayı çiftlerini kapsar
-    pattern = r"kernel_size\s*=\s*((?:\(\s*\d+\s*(?:,\s*\d+\s*)*\))|\d+)"
+    pattern = r"kernel_size=\(\s*\d+\s*,\s*\d+\s*,\s*\d+\s*\)"
     kernel_size_list=[]
 
     #pattern = r"kernel_size\s*=\s*(\(\s*\d+\s*,\s*\d+\s*\)|\d+)"
@@ -234,7 +234,7 @@ def replace_kernel_size_in_code(source_code,new_kernel_size):
     #updated_code = re.sub(pattern, "learning_rate="+"'"+new_kernel_size+"'", source_code)
     
     if matches:
-        kernel_size_list = [f"kernel_size={m}" for m in matches]  # List of original kernel_size values
+        kernel_size_list = [f"{m}" for m in matches]  # List of original kernel_size values
         #print(kernel_size_list)
        
     if matches:
@@ -248,8 +248,6 @@ def replace_kernel_initializer(source_code, new_initializer):
     kernel_initializer_layers_list=[]
     pattern = r"kernel_initializer\s*=\s*'[^']*'"
 
-    # Yeni değerle değiştir
-    updated_code = re.sub(pattern, f"kernel_initializer='{new_initializer}'", source_code)
     matches = re.findall(pattern, source_code)
     new_value = "kernel_initializer="
     if matches:
