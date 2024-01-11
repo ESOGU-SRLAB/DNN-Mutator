@@ -70,8 +70,7 @@ def execute_file(threshold, mutant_files_save_location):
             else:
                 killed.append(mutant_file)
                 mutant_file_and_accuracy = (
-                    "Mutant File: {} Accuracy: Accuracy value not found in the"
-                    " script output.".format(mutant_file))
+                    "Mutant File: {} Accuracy: Accuracy value not found".format(mutant_file))
                 accuracy_list.append(mutant_file_and_accuracy)
 
         except Exception as e:

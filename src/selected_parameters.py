@@ -49,9 +49,9 @@ def layer_select_mutate(mutate_selected_parameters,source_code ):
         elif mutate_selected_parameters == "batch_size":
             change_parameter_with = mutation_library.tf_batch_size_list
             mutated_line,matches = mutator.replace_batch_size_in_code(source_code, change_parameter_with)
-        elif mutate_selected_parameters == "dropout_rate":
-            change_parameter_with = 0.2
-            mutated_line,matches = mutator.modify_tf_activation_in_code(source_code, mutate_selected_parameters, change_parameter_with)
+        elif mutate_selected_parameters == "Dense(":
+            change_parameter_with = mutation_library.tf_dense_list
+            mutated_line,matches = mutator.replace_Dense_in_code(source_code, change_parameter_with)
         elif mutate_selected_parameters == "kernel_initializer":
             change_parameter_with = mutation_library.tf_keras_kernel_initializer_list
             mutated_line,matches= mutator.replace_kernel_initializer(source_code, change_parameter_with)

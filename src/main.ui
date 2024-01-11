@@ -10777,6 +10777,11 @@ color:white;</string>
                           <string>use_bias</string>
                          </property>
                         </item>
+                        <item>
+                         <property name="text">
+                          <string>Dense(</string>
+                         </property>
+                        </item>
                        </widget>
                        <widget class="QLabel" name="label_25">
                         <property name="geometry">

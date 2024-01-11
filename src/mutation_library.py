@@ -45,6 +45,20 @@ tf_keras_layers_Activation_Full_List = [
     "activation=''",  # Empty string
     "activation=123"   # Non-string, invalid type
 ]
+tf_dense_list = [
+    "Dense(10",  # Dense layer with 10 units
+    "Dense(20",  # Dense layer with 20 units
+    "Dense(32",  # Dense layer with 30 units
+    "Dense(40",  # Dense layer with 40 units
+    "Dense(50",  # Dense layer with 50 units
+    "Dense(64",  # Dense layer with 60 units
+    "Dense(70",  # Dense layer with 10 units
+    "Dense(80",  # Dense layer with 20 units
+    "Dense(90",  # Dense layer with 30 units
+    "Dense(100",  # Dense layer with 40 units
+    "Dense(128",  # Dense layer with 50 units
+    "Dense(256",  # Dense layer with 60 units
+]
 tf_optimizers_list = [
     "optimizer='adam'",                # Adam optimizer
     "optimizer='sgd'",                 # Stochastic Gradient Descent optimizer
@@ -614,6 +628,7 @@ tf_math_functions = [
 
 
 tf_all_list=[
+'Dense(',
 'batch_size',
 'kernel_initializer',
 'activation',
@@ -977,6 +992,7 @@ tf_all_list=[
 ]
 
 tf_all_mutation_code_list = [
+'Dense(',
 'optimizer',   
 'batch_size',
 'activation',

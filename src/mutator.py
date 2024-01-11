@@ -56,9 +56,9 @@ def replace_input_shape(source_code, new_shape):
 
     # Yeni değerle değiştir
     
-    matches = re.finditer(pattern, source_code)
+    matches = re.findall(pattern, source_code)
     if matches:
-        input_shape_list = [f"input_shape={m}" for m in matches]
+        input_shape_list = [f"{m}" for m in matches]
         #print(input_shape_list)
     new_value = "input_shape="
     if matches:
@@ -73,7 +73,7 @@ def replace_batch_size_in_code(source_code, new_shape):
 
     # Yeni değerle değiştir
     
-    matches = re.finditer(pattern, source_code)
+    matches = re.findall(pattern, source_code)
     if matches:
         batch_size_list = [f"batch_size={m}" for m in matches]
         #print(input_shape_list)
@@ -90,13 +90,31 @@ def replace_optimizer_in_code(source_code, new_shape):
 
     # Yeni değerle değiştir
     
-    matches = re.finditer(pattern, source_code)
+    matches = re.findall(pattern, source_code)
     if matches:
         optimizer_list = [f"optimizer={m}" for m in matches]
         #print(input_shape_list)
     new_value = "optimizer="
     if matches:
         return new_value,optimizer_list
+    
+    return new_value,[]
+
+def replace_Dense_in_code(source_code, new_shape):
+    # Regex deseni: 'input_shape=(...)' formundaki ifadeleri bulur
+    Dense_list=[]
+    pattern = r"Dense\s*\(\s*(\d+)\s*,"
+              
+
+    # Yeni değerle değiştir
+    
+    matches = re.findall(pattern, source_code)
+    if matches:
+        Dense_list = [f"Dense({m}" for m in matches]
+        #print(input_shape_list)
+    new_value = "Dense("
+    if matches:
+        return new_value,Dense_list
     
     return new_value,[]
 
@@ -150,7 +168,7 @@ def modify_tf_use_bias_in_code(source_code,layer_names, new_use_bias_value):
     matches = re.findall(pattern, source_code)
     new_value = "use_bias="
     if matches:
-        use_bias_list = [f"{m}" for m in matches]
+        use_bias_list = [f"use_bias={m}" for m in matches]
         #print(use_bias_list)
         return new_value,use_bias_list
     return 0, []
@@ -174,7 +192,7 @@ def modify_tf_learning_rate_in_code(source_code, layer_names, new_value):
         new_value = "learning_rate="
         if matches:
             
-            learning_rate_list = [f"learning_rate={m}" for m in matches] 
+            learning_rate_list = [f"{m}" for m in matches] 
             #print(learning_rate_list)               
             return new_value, learning_rate_list
             
