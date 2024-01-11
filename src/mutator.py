@@ -66,6 +66,40 @@ def replace_input_shape(source_code, new_shape):
     
     return new_value,[]
 
+def replace_batch_size_in_code(source_code, new_shape):
+    # Regex deseni: 'input_shape=(...)' formundaki ifadeleri bulur
+    batch_size_list=[]
+    pattern = r"batch_size\s*=\s*\d+"
+
+    # Yeni değerle değiştir
+    
+    matches = re.finditer(pattern, source_code)
+    if matches:
+        batch_size_list = [f"batch_size={m}" for m in matches]
+        #print(input_shape_list)
+    new_value = "batch_size="
+    if matches:
+        return new_value,batch_size_list
+    
+    return new_value,[]
+
+def replace_optimizer_in_code(source_code, new_shape):
+    # Regex deseni: 'input_shape=(...)' formundaki ifadeleri bulur
+    optimizer_list=[]
+    pattern = r"optimizer\s*=\s*'\w+'"
+
+    # Yeni değerle değiştir
+    
+    matches = re.finditer(pattern, source_code)
+    if matches:
+        optimizer_list = [f"optimizer={m}" for m in matches]
+        #print(input_shape_list)
+    new_value = "optimizer="
+    if matches:
+        return new_value,optimizer_list
+    
+    return new_value,[]
+
 def modify_tf_dropout_in_code(source_code, new_dropout_value):
     dropout_list=[]
     # Regex deseni: 'dropout=...' formundaki ifadeleri bulur

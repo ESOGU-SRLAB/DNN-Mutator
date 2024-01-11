@@ -45,6 +45,42 @@ tf_keras_layers_Activation_Full_List = [
     "activation=''",  # Empty string
     "activation=123"   # Non-string, invalid type
 ]
+tf_optimizers_list = [
+    "optimizer='adam'",                # Adam optimizer
+    "optimizer='sgd'",                 # Stochastic Gradient Descent optimizer
+    "optimizer='rmsprop'",             # RMSprop optimizer
+    "optimizer='adagrad'",             # Adagrad optimizer
+    "optimizer='adadelta'",            # Adadelta optimizer
+    "optimizer='adamax'",              # Adamax optimizer
+    "optimizer='nadam'",               # Nadam optimizer
+    "optimizer='ftrl'",                # FTRL optimizer
+    "optimizer='lion'",
+    "optimizer='sgd'",
+    "optimizer='adafactor'",   
+    # Additional optimizers that might be less common
+    "optimizer='l-bfgs'",              # L-BFGS optimizer
+    "optimizer='momentum'",            # Momentum optimizer
+    "optimizer='proximal_gradient_descent'",  # Proximal Gradient Descent optimizer
+    "optimizer='proximal_adagrad'",    # Proximal Adagrad optimizer
+    "optimizer='q-learning'",          # Q-learning optimizer
+]
+tf_batch_size_list = [
+    # Most common batch sizes
+    "batch_size=32", 
+    "batch_size=64", 
+    "batch_size=128", 
+    "batch_size=256", 
+    "batch_size=512",
+    "batch_size=16", 
+    "batch_size=8", 
+    "batch_size=4", 
+    "batch_size=2", 
+    "batch_size=1",
+
+    # Erroneous or inappropriate values
+    "batch_size=-1",  # Negative batch size is invalid
+    "batch_size='invalid'"  # Non-integer or string value is invalid
+]
 tf_input_shape_list = [
     # Single layer configurations
     "input_shape=(32,)", "input_shape=(64,)", "input_shape=(128,)", 
@@ -578,6 +614,7 @@ tf_math_functions = [
 
 
 tf_all_list=[
+'batch_size',
 'kernel_initializer',
 'activation',
 'epochs',
@@ -940,6 +977,8 @@ tf_all_list=[
 ]
 
 tf_all_mutation_code_list = [
+'optimizer',   
+'batch_size',
 'activation',
 'kernel_initializer',
 'dropout',    

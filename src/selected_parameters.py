@@ -44,11 +44,11 @@ def layer_select_mutate(mutate_selected_parameters,source_code ):
             mutated_line,matches = mutator.modify_tf_activation_in_code(source_code, mutate_selected_parameters, change_parameter_with)
             layer_name="activation"
         elif mutate_selected_parameters == "optimizer":
-            change_parameter_with = "mutated--"
-            mutated_line,matches= mutator.modify_tf_activation_in_code(source_code, mutate_selected_parameters, change_parameter_with)
+            change_parameter_with = mutation_library.tf_optimizers_list
+            mutated_line,matches= mutator.replace_optimizer_in_code(source_code, change_parameter_with)
         elif mutate_selected_parameters == "batch_size":
-            change_parameter_with = 64
-            mutated_line,matches = mutator.modify_tf_activation_in_code(source_code, mutate_selected_parameters, change_parameter_with)
+            change_parameter_with = mutation_library.tf_batch_size_list
+            mutated_line,matches = mutator.replace_batch_size_in_code(source_code, change_parameter_with)
         elif mutate_selected_parameters == "dropout_rate":
             change_parameter_with = 0.2
             mutated_line,matches = mutator.modify_tf_activation_in_code(source_code, mutate_selected_parameters, change_parameter_with)
