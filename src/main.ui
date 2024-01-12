@@ -1107,7 +1107,20 @@ Button */
              <item>
               <widget class="QPushButton" name="btn_dnn">
                <property name="text">
-                <string>DNN</string>
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>images/icons/Mutator.png</normaloff>images/icons/Mutator.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>70</width>
+                 <height>70</height>
+                </size>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
                </property>
               </widget>
              </item>
