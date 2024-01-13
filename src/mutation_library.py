@@ -78,6 +78,40 @@ tf_optimizers_list = [
     "optimizer='proximal_adagrad'",    # Proximal Adagrad optimizer
     "optimizer='q-learning'",          # Q-learning optimizer
 ]
+tf_loss_functions_list = [
+    "loss='categorical_crossentropy'",  # Loss function for multi-class classification
+    "loss='sparse_categorical_crossentropy'",  # Sparse version for multi-class classification
+    "loss='binary_crossentropy'",  # Loss function for binary classification
+    "loss='mean_squared_error'",  # Standard loss function for regression
+    "loss='mean_absolute_error'",  # Absolute difference between target and predicted values
+    "loss='mean_absolute_percentage_error'",  # Mean absolute percentage error between target and predicted
+    "loss='mean_squared_logarithmic_error'",  # Mean squared logarithmic error
+    "loss='huber_loss'",  # Huber loss, less sensitive to outliers in data
+    "loss='log_cosh'",  # Logarithm of the hyperbolic cosine of the prediction error
+    "loss='categorical_hinge'",  # Categorical hinge loss for multi-class classification
+    "loss='poisson'",  # Poisson loss for counting models
+    "loss='kullback_leibler_divergence'",  # Kullback-Leibler divergence loss
+    "loss='hinge'",  # Hinge loss for binary classification
+    "loss='squared_hinge'",  # Squared hinge loss, variant of hinge loss
+    "loss='cosine_similarity'",  # Cosine similarity between labels and predictions
+    "loss='log_loss'",  # Logistic loss function
+]
+tf_kernel_regularizer_configurations = [
+    # Common L2 regularizer configurations
+    "kernel_regularizer=l2(0.01)", "kernel_regularizer=l2(0.001)",
+    "kernel_regularizer=l2(0.1)", "kernel_regularizer=l2(0.05)",
+    "kernel_regularizer=l2(0.02)", "kernel_regularizer=l2(0.005)",
+    "kernel_regularizer=l2(0.0001)", "kernel_regularizer=l2(0.0005)",
+    "kernel_regularizer=l2(0.2)", "kernel_regularizer=l2(0.3)",
+
+    # Common L1 regularizer configurations
+    "kernel_regularizer=l1(0.01)", "kernel_regularizer=l1(0.001)",
+    "kernel_regularizer=l1(0.1)", "kernel_regularizer=l1(0.05)",
+    "kernel_regularizer=l1(0.02)", "kernel_regularizer=l1(0.005)",
+    "kernel_regularizer=l1(0.0001)", "kernel_regularizer=l1(0.0005)",
+    "kernel_regularizer=l1(0.2)", "kernel_regularizer=l1(1.0)"
+]
+
 tf_batch_size_list = [
     # Most common batch sizes
     "batch_size=32", 
@@ -628,12 +662,13 @@ tf_math_functions = [
 
 
 tf_all_list=[
+'loss',    
 'Dense(',
 'batch_size',
+'input_shape',
 'kernel_initializer',
 'activation',
 'epochs',
-'model.add',
 'optimizer',
 'learning_rate',
 'kernel_regularizer',
@@ -641,8 +676,6 @@ tf_all_list=[
 'dropout',
 'filters',
 'kernel_size',
-'strides',
-'padding',
 'tf.keras.layers.AbstractRNNCell()',
 'tf.keras.layers.Activation()',
 'tf.keras.layers.ActivityRegularization()',
@@ -992,6 +1025,7 @@ tf_all_list=[
 ]
 
 tf_all_mutation_code_list = [
+'loss',
 'Dense(',
 'optimizer',   
 'batch_size',
@@ -1002,6 +1036,7 @@ tf_all_mutation_code_list = [
 'kernel_size',    
 'learning_rate',    
 'input_shape',
+'kernel_regularizer',
 'layers.AbstractRNNCell()',
 'layers.Activation()',
 'layers.ActivityRegularization()',

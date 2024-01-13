@@ -229,8 +229,8 @@ def define_code_snippet_no_workload_yes_code_snippet(code_snippet_data_list):
             if snippet == added_snippet_name:
                 patterns.append(added_snippet_regex)
     return patterns
-#GÖKHAN--------------------------------------------------------------------------------START
-# No Workload, Yes Code Snippet
+
+
 def dnn_define_code_snippet_no_workload_yes_code_snippet(code_snippet_data_list):
     """Method defines the dnn code snipppets to use for no workload, yes code snippet use case"""
     patterns = []
@@ -248,7 +248,7 @@ def dnn_define_code_snippet_no_workload_yes_code_snippet(code_snippet_data_list)
             if snippet == added_snippet_name:
                 patterns.append(added_snippet_regex)
     return patterns
-#GÖKHAN--------------------------------------------------------------------------------END
+
 
 def find_target_no_workload_yes_code_snippet(split_text, patterns):
     """Target code lines are found by IM-FIT to use for no workload, yes code snippet use case"""

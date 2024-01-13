@@ -23,11 +23,13 @@ import dnn_execution
 import mutation_library
 import selected_parameters
 import numpy as np
+#import tensorflow as tf
+#from tensorflow.python.keras.layers import Dense 
+#from tensorflow.python.keras.layers.recurrent import LSTM as LSTM_keras
+#from tensorflow.python.keras.models import Sequential
+#from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBox
 import tensorflow as tf
-from tensorflow.python.keras.layers import Dense 
-from tensorflow.python.keras.layers.recurrent import LSTM as LSTM_keras
-from tensorflow.python.keras.models import Sequential
-from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBox
+import numpy as np
 
 from PySide6 import QtGui
 
@@ -1967,7 +1969,7 @@ class MainWindow(QMainWindow):
 
 
 
-#GÖKHAN*-------------------------------------------------------------------------------------------------start
+
  # Method start "No Workload, Yes Code Snippet" Scan Process
     def dnn_start_no_workload_yes_code_snippet_process(self): #gökhanbakılacak
         """Method manages no workload yes code snippet scan process"""
@@ -1984,7 +1986,7 @@ class MainWindow(QMainWindow):
         self.scan_process_progress_bar()
         self.dnn_paint_sky_blue(faultable_line_number_list)
         self.add_fi_plan(faultable_line_list)
-#GÖKHAN*-------------------------------------------------------------------------------------------------end
+
     def monitoring_report_faults_list(self):
         """Method shows the detected faults
         after execution process in fault list on monitoring page"""

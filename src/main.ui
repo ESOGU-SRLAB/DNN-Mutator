@@ -8785,6 +8785,9 @@ color:white;</string>
                         <property name="styleSheet">
                          <string notr="true">background-color: rgb(52, 59, 72);</string>
                         </property>
+                        <property name="plainText">
+                         <string>Source Code Name must not include space</string>
+                        </property>
                        </widget>
                        <widget class="QPlainTextEdit" name="plainTextEdit_53">
                         <property name="geometry">
@@ -10722,11 +10725,6 @@ color:white;</string>
                         </item>
                         <item>
                          <property name="text">
-                          <string>momentum</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
                           <string>input_shape</string>
                          </property>
                         </item>
@@ -10972,11 +10970,6 @@ color:white;</string>
                         </item>
                         <item>
                          <property name="text">
-                          <string>model.add</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
                           <string>optimizer</string>
                          </property>
                         </item>
@@ -11002,6 +10995,16 @@ color:white;</string>
                         </item>
                         <item>
                          <property name="text">
+                          <string>input_shape</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>loss</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
                           <string>filters</string>
                          </property>
                         </item>
@@ -11018,16 +11021,6 @@ color:white;</string>
                         <item>
                          <property name="text">
                           <string>padding</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>model.add</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>model.pop</string>
                          </property>
                         </item>
                         <item>
@@ -12945,7 +12938,7 @@ color:white;</string>
                           <x>10</x>
                           <y>300</y>
                           <width>271</width>
-                          <height>51</height>
+                          <height>61</height>
                          </rect>
                         </property>
                         <property name="styleSheet">
@@ -13026,7 +13019,7 @@ color:white;</string>
                           <x>790</x>
                           <y>300</y>
                           <width>141</width>
-                          <height>51</height>
+                          <height>61</height>
                          </rect>
                         </property>
                         <property name="styleSheet">
@@ -13042,11 +13035,14 @@ color:white;</string>
                           <x>580</x>
                           <y>300</y>
                           <width>201</width>
-                          <height>51</height>
+                          <height>61</height>
                          </rect>
                         </property>
                         <property name="styleSheet">
                          <string notr="true">background-color: rgb(52, 59, 72);</string>
+                        </property>
+                        <property name="plainText">
+                         <string>Folder Name must include space</string>
                         </property>
                        </widget>
                        <widget class="QPlainTextEdit" name="plainTextEdit_DNN_Survived">

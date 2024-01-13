@@ -18,10 +18,18 @@
         },
         {
             "Snippets": {
-                "Snippet_Name": "model.add",
-                "Regex_Code": " model\\.add\\(",
-                "Title": "Adding Layers in TensorFlow",
-                "Process": "Adds a layer to the model."
+                "Snippet_Name": "loss",
+                "Regex_Code": "loss=",
+                "Title": "Epoch Configuration in TensorFlow",
+                "Process": "Represents one full iteration over input data."
+            }
+        },
+        {
+            "Snippets": {
+                "Snippet_Name": "Dense(",
+                "Regex_Code": "Dense",
+                "Title": "Epoch Configuration in TensorFlow",
+                "Process": "Represents one full iteration over input data."
             }
         },
         {
@@ -45,7 +53,7 @@
                 "Snippet_Name": "kernel_regularizer",
                 "Regex_Code": " kernel_regularizer=",
                 "Title": "Kernel Regularization in TensorFlow",
-                "Process": "Applies L1 regularization to the kernel."
+                "Process": "Applies L1,L2 regularization to the kernel."
             }
         },
         {
@@ -74,10 +82,18 @@
         },
         {
             "Snippets": {
+                "Snippet_Name": "input_shape",
+                "Regex_Code": "input_shape=",
+                "Title": "Filters in Convolutional Layers",
+                "Process": "Description not available."
+            }
+        },
+        {
+            "Snippets": {
                 "Snippet_Name": "kernel_size",
                 "Regex_Code": " kernel_size=",
                 "Title": "Kernel Size in Convolutional Layers",
-                "Process": "Determines the dimensions of the convolution window."
+                "Process": "Description not available."
             }
         },
         {
