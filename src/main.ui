@@ -8779,14 +8779,14 @@ color:white;</string>
                           <x>290</x>
                           <y>10</y>
                           <width>281</width>
-                          <height>61</height>
+                          <height>71</height>
                          </rect>
                         </property>
                         <property name="styleSheet">
                          <string notr="true">background-color: rgb(52, 59, 72);</string>
                         </property>
                         <property name="plainText">
-                         <string>Source Code Name must not include space</string>
+                         <string>Source Code Name must not include space.Use copy of your project for testing </string>
                         </property>
                        </widget>
                        <widget class="QPlainTextEdit" name="plainTextEdit_53">
@@ -8843,11 +8843,6 @@ color:white;</string>
                         <property name="styleSheet">
                          <string notr="true">background-color: rgb(52, 59, 72);</string>
                         </property>
-                        <item>
-                         <property name="text">
-                          <string>epochs</string>
-                         </property>
-                        </item>
                         <item>
                          <property name="text">
                           <string>layers.ConvLSTM1D()</string>
@@ -10793,6 +10788,16 @@ color:white;</string>
                           <string>Dense(</string>
                          </property>
                         </item>
+                        <item>
+                         <property name="text">
+                          <string>pool_size</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>filters</string>
+                         </property>
+                        </item>
                        </widget>
                        <widget class="QLabel" name="label_25">
                         <property name="geometry">
@@ -10826,7 +10831,7 @@ color:white;</string>
                           <x>10</x>
                           <y>10</y>
                           <width>271</width>
-                          <height>61</height>
+                          <height>71</height>
                          </rect>
                         </property>
                         <property name="styleSheet">
@@ -10965,11 +10970,6 @@ color:white;</string>
                         </item>
                         <item>
                          <property name="text">
-                          <string>epochs</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
                           <string>optimizer</string>
                          </property>
                         </item>
@@ -11015,12 +11015,7 @@ color:white;</string>
                         </item>
                         <item>
                          <property name="text">
-                          <string>strides</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>padding</string>
+                          <string>pool_size</string>
                          </property>
                         </item>
                         <item>
@@ -12916,6 +12911,11 @@ color:white;</string>
                         <item>
                          <property name="text">
                           <string>tf.train.load_variable()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>epochs</string>
                          </property>
                         </item>
                        </widget>

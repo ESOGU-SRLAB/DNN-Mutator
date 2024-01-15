@@ -66,6 +66,14 @@
         },
         {
             "Snippets": {
+                "Snippet_Name": "pool_size",
+                "Regex_Code": " pool_size=",
+                "Title": "Batch Size Configuration in TensorFlow",
+                "Process": "None"
+            }
+        },
+        {
+            "Snippets": {
                 "Snippet_Name": "dropout",
                 "Regex_Code": " dropout=",
                 "Title": "Dropout in TensorFlow",

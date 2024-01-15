@@ -1364,40 +1364,52 @@ class MainWindow(QMainWindow):
         file_directory = self.ui.plainTextEdit_dnn_source.toPlainText()
         # Iterate through the selected items
         for item in selected_items:
-
-
-            
             mutate_selected_parameters = item
-            
-            
-                #find selected_parameters and mutate
-            mutated_line,matches,mutation_fault_list =selected_parameters.layer_select_mutate(mutate_selected_parameters,source_code)
+
+            # Find selected_parameters and mutate
+            mutated_line, matches, mutation_fault_list = selected_parameters.layer_select_mutate(mutate_selected_parameters, source_code)
             if mutated_line != 0:
                 if matches:
                     mutated_code += mutated_line + "\n"
-            mutate_counter=0
+
+            mutate_counter = 0
+            match_counts = {}  # Sözlük oluşturuldu
             for mutate_code in matches:
-                for mutation  in mutation_fault_list:
+                # Eğer mutate_code match_counts'ta yoksa, 0 olarak başlat
+                if mutate_code not in match_counts:
+                    match_counts[mutate_code] = 0
+                # Her görülen öğe için sayıyı artır
+                match_counts[mutate_code] += 1
+
+                for mutation in mutation_fault_list:
                     if item not in mutation_library.tf_hyper_parameters_mutation_code_list:
-                        mutate_counter=mutate_counter+1
+                        mutate_counter += 1
                         fault = {
                             "Fault": {
                                 "File_Directory": file_directory,
                                 "Source_Code": mutate_code,
-                                "Mutate_Code": mutation
+                                "Mutate_Code": mutation,
+                                "Match_Number": match_counts[mutate_code]  # Sözlükten alınan sayı
                             }
                         }
                         all_faults.append(fault)
                     else:
-                        mutate_counter=mutate_counter+1
+                        mutate_counter += 1
                         fault = {
                             "Fault": {
                                 "File_Directory": file_directory,
                                 "Source_Code": mutate_code,
-                                "Mutate_Code": mutated_line+mutation+")"
-                            } 
+                                "Mutate_Code": mutated_line + mutation + ")",
+                                "Match_Number": match_counts[mutate_code]  # Sözlükten alınan sayı
+                            }
                         }
                         all_faults.append(fault)
+
+
+
+
+
+
         mutate_counter=str(mutate_counter)
         #self.ui.plainTextEdit_DNN_mutation_number.setPlainText(" Mutant Number:"+mutate_counter)
         save_path = self.ui.plainTextEdit_mutant_path.toPlainText()

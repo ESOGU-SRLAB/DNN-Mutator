@@ -159,10 +159,7 @@ def restore_original_source_code_from_backup(
                 original_source_code_file_dir)
 
 
-def mutation_process(original_source_code_file_dir, fiplan_json_dir,target_location_to_save_mutants):
-    """
-    Define a function to perform the desired task
-    """
+def mutation_process(original_source_code_file_dir, fiplan_json_dir, target_location_to_save_mutants):
     mutant_file_paths = []
 
     # Take backup of original source code and get the backup file dir
@@ -175,16 +172,16 @@ def mutation_process(original_source_code_file_dir, fiplan_json_dir,target_locat
         file_dir = fault["Fault"]["File_Directory"]
         source_code = fault["Fault"]["Source_Code"]
         mutate_code = fault["Fault"]["Mutate_Code"]
+        match_number = fault["Fault"]["Match_Number"]  # Match numarasını al
 
         file_dir_content = take_target_file_content(file_dir)
 
-        # Replace the source code with the mutate code
-        mutated_content = file_dir_content.replace(source_code, mutate_code)
+        # Belirli bir eşleşmeyi değiştir
+        mutated_content = replace_nth_occurrence(file_dir_content, source_code, mutate_code, match_number - 1)
 
         target_location_to_save_mutants = (target_location_to_save_mutants)
         mutant_name_with_number = f"/mutant_{i}.py"
-
-        # Merge location and mutant file name
+            # Merge location and mutant file name
         merged_mutant_file_location = (
             f"{target_location_to_save_mutants}{mutant_name_with_number}")
         mutant_file_paths.append(merged_mutant_file_location)
@@ -198,6 +195,16 @@ def mutation_process(original_source_code_file_dir, fiplan_json_dir,target_locat
             backup_file_dir, original_source_code_file_dir)
 
     return mutant_file_paths
+
+
+
+    
+def replace_nth_occurrence(string, old, new, n):
+    """Belirtilen n'inci eşleşmede değişiklik yapar."""
+    parts = string.split(old, n+1)
+    if len(parts) <= n+1:
+        return string  # Eşleşme sayısı n'den az ise değişiklik yapma
+    return old.join(parts[:-1]) + new + old.join(parts[-1:])
 
 def show_results(killed,survived,accuracy_list):
     """ Show the results after the execution process """

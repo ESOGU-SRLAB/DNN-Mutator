@@ -51,7 +51,13 @@ def layer_select_mutate(mutate_selected_parameters,source_code ):
             mutated_line,matches = mutator.replace_batch_size_in_code(source_code, change_parameter_with)
         elif mutate_selected_parameters == "kernel_regularizer":
             change_parameter_with = mutation_library.tf_kernel_regularizer_configurations
-            mutated_line,matches = mutator.kernel_regularizer_in_code(source_code, change_parameter_with)        
+            mutated_line,matches = mutator.kernel_regularizer_in_code(source_code, change_parameter_with)  
+        elif mutate_selected_parameters == "filters":
+            change_parameter_with = mutation_library.tf_filters_configurations
+            mutated_line,matches = mutator.replace_filters_in_code(source_code, change_parameter_with)  
+        elif mutate_selected_parameters == "pool_size":
+            change_parameter_with = mutation_library.tf_pool_size_list
+            mutated_line,matches = mutator.replace_pool_size_shape(source_code, change_parameter_with)        
         elif mutate_selected_parameters == "loss":
             change_parameter_with = mutation_library.tf_loss_functions_list
             mutated_line,matches = mutator.replace_loss_in_code(source_code, change_parameter_with)

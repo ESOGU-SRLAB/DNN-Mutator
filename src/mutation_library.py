@@ -154,6 +154,34 @@ tf_keras_units_list = [8, 16, 32, 64, 128, 256, 512, 1024]
 
 tf_keras_use_bias_list = ["True", "False"]
 
+tf_filters_configurations = [
+    "filters=8",
+    "filters=16",  # Common for smaller or initial layers
+    "filters=32",  # Standard for early convolutional layers
+    "filters=64",  # Widely used in various layers
+    "filters=128", # Common in deeper layers
+    "filters=256", # Used in advanced layers for more complex features
+    "filters=512", # High number for very deep layers
+    "filters=1024",# Very large number, used in very deep networks
+]
+
+tf_pool_size_list = [
+    # 1D Pool Sizes
+    "pool_size=2", "pool_size=3", "pool_size=4", 
+    "pool_size=5", "pool_size=6", "pool_size=7", 
+    "pool_size=8",
+
+    # 2D Pool Sizes
+    "pool_size=(2, 2)", "pool_size=(3, 3)", "pool_size=(4, 4)", 
+    "pool_size=(5, 5)", "pool_size=(6, 6)", "pool_size=(7, 7)", 
+    "pool_size=(8, 8)",
+
+    # 3D Pool Sizes
+    "pool_size=(2, 2, 2)", "pool_size=(3, 3, 3)", "pool_size=(4, 4, 4)", 
+    "pool_size=(5, 5, 5)", "pool_size=(6, 6, 6)", "pool_size=(7, 7, 7)", 
+    "pool_size=(8, 8, 8)"
+]
+
 tf_dropout_rate_list = [
     "dropout=0.1",  # A light amount of dropout
     "dropout=0.2",  # Moderately light dropout
@@ -676,6 +704,8 @@ tf_all_list=[
 'dropout',
 'filters',
 'kernel_size',
+'pool_size',
+'filters',
 'tf.keras.layers.AbstractRNNCell()',
 'tf.keras.layers.Activation()',
 'tf.keras.layers.ActivityRegularization()',
@@ -1036,6 +1066,8 @@ tf_all_mutation_code_list = [
 'kernel_size',    
 'learning_rate',    
 'input_shape',
+'pool_size',
+'filters',
 'kernel_regularizer',
 'layers.AbstractRNNCell()',
 'layers.Activation()',

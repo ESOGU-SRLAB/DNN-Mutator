@@ -64,7 +64,25 @@ def replace_input_shape(source_code, new_shape):
     if matches:
         return new_value,input_shape_list
     
-    return new_value,[]
+    return 0,[]
+
+def replace_pool_size_shape(source_code, new_shape):
+    # Regex deseni: 'input_shape=(...)' formundaki ifadeleri bulur
+    pool_size_list=[]
+    pattern = r"pool_size\s*=\s*(\(\s*\d+\s*,\s*\d+\s*\)|\d+)"
+
+    # Yeni değerle değiştir
+    
+    matches = re.findall(pattern, source_code)
+    print(matches,"pool_size")
+    if matches:
+        pool_size_list = [f"pool_size={m}" for m in matches]
+        #print(input_shape_list)
+    new_value = "pool_size="
+    if matches:
+        return new_value,pool_size_list
+    
+    return 0,[]
 
 def replace_batch_size_in_code(source_code, new_shape):
     # Regex deseni: 'input_shape=(...)' formundaki ifadeleri bulur
@@ -81,7 +99,25 @@ def replace_batch_size_in_code(source_code, new_shape):
     if matches:
         return new_value,batch_size_list
     
-    return new_value,[]
+    return 0,[]
+
+def replace_filters_in_code(source_code, new_shape):
+    # Regex deseni: 'input_shape=(...)' formundaki ifadeleri bulur
+    batch_size_list=[]
+    pattern = r"filters\s*=\s*\d+"
+
+    # Yeni değerle değiştir
+    
+    matches = re.findall(pattern, source_code)
+    print(matches,"Filters")
+    if matches:
+        batch_size_list = [f"{m}" for m in matches]
+        #print(input_shape_list)
+    new_value = "filters="
+    if matches:
+        return new_value,batch_size_list
+    
+    return 0,[]
 
 def replace_optimizer_in_code(source_code, new_shape):
     # Regex deseni: 'input_shape=(...)' formundaki ifadeleri bulur
@@ -98,11 +134,11 @@ def replace_optimizer_in_code(source_code, new_shape):
     if matches:
         return new_value,optimizer_list
     
-    return new_value,[]
+    return 0,[]
 
 def replace_loss_in_code(source_code, new_shape):
     # Regex deseni: 'input_shape=(...)' formundaki ifadeleri bulur
-    optimizer_list=[]
+    loss_list=[]
     pattern = r"loss\s*=\s*'\w+'"
 
     # Yeni değerle değiştir
@@ -115,11 +151,11 @@ def replace_loss_in_code(source_code, new_shape):
     if matches:
         return new_value,loss_list
     
-    return new_value,[]
+    return 0,[]
 
 def kernel_regularizer_in_code(source_code, new_shape):
     # Regex deseni: 'input_shape=(...)' formundaki ifadeleri bulur
-    optimizer_list=[]
+    kernel_regularizer_list=[]
     pattern = r'kernel_regularizer=\w+\(\d*\.?\d+\)'
 
     # Yeni değerle değiştir
@@ -132,7 +168,7 @@ def kernel_regularizer_in_code(source_code, new_shape):
     if matches:
         return new_value,kernel_regularizer_list
     
-    return new_value,[]
+    return 0,[]
 
 def replace_Dense_in_code(source_code, new_shape):
     # Regex deseni: 'input_shape=(...)' formundaki ifadeleri bulur
@@ -256,7 +292,8 @@ def replace_kernel_size_in_code(source_code,new_kernel_size):
   
     # Regex deseni: 'kernel_size=...' formundaki ifadeleri bulur
     # Hem tek sayı hem de parantez içindeki sayı çiftlerini kapsar
-    pattern = r"kernel_size=\(\s*\d+\s*,\s*\d+\s*,\s*\d+\s*\)"
+    pattern = r"kernel_size\s*=\s*(\(\s*\d+\s*,\s*\d+\s*(?:,\s*\d+\s*)?\)|\d+)"
+
     kernel_size_list=[]
 
     #pattern = r"kernel_size\s*=\s*(\(\s*\d+\s*,\s*\d+\s*\)|\d+)"
@@ -268,7 +305,7 @@ def replace_kernel_size_in_code(source_code,new_kernel_size):
     #updated_code = re.sub(pattern, "learning_rate="+"'"+new_kernel_size+"'", source_code)
     
     if matches:
-        kernel_size_list = [f"{m}" for m in matches]  # List of original kernel_size values
+        kernel_size_list = [f"kernel_size={m}" for m in matches]  # List of original kernel_size values
         #print(kernel_size_list)
        
     if matches:
@@ -481,7 +518,7 @@ def modify_tf_train_class_in_code(source_code, layer_names,new_value):
         # Regex kullanarak değişiklik yapma
         if source_code != temp_source:
                              
-            return new_value,matches
+            return new_value,use_train_list
         return 0,[]
 
 def modify_tf_keras_activations_function_in_code(source_code, layer_names,new_value):
@@ -502,5 +539,5 @@ def modify_tf_keras_activations_function_in_code(source_code, layer_names,new_va
         # Regex kullanarak değişiklik yapma
         source_code = re.sub(pattern, new_value, source_code)
         if source_code != temp_source:
-            return new_value,matches
+            return new_value,use_activations_list
         return 0,[]
