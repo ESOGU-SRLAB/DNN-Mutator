@@ -205,6 +205,24 @@ def replace_Dense_in_code(source_code, new_shape):
     
     return new_value,[]
 
+def replace_Dropout_in_code(source_code, new_shape):
+    # Regex deseni: 'input_shape=(...)' formundaki ifadeleri bulur
+    Dropout_list=[]
+    pattern = r"Dropout\s*\(\s*(\d+\.\d+|\d+)\s*\)"
+              
+
+    # Yeni değerle değiştir
+    
+    matches = re.findall(pattern, source_code)
+    if matches:
+        Dropout_list = [f"Dropout({m})" for m in matches]
+        #print(input_shape_list)
+    new_value = "Dropout("
+    if matches:
+        return new_value,Dropout_list
+    
+    return new_value,[]
+
 def modify_tf_dropout_in_code(source_code, new_dropout_value):
     dropout_list=[]
     # Regex deseni: 'dropout=...' formundaki ifadeleri bulur

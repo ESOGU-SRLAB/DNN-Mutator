@@ -10865,6 +10865,11 @@ color:white;</string>
                         </item>
                         <item>
                          <property name="text">
+                          <string>Dropout(</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
                           <string>pool_size</string>
                          </property>
                         </item>

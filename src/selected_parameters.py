@@ -84,7 +84,10 @@ def layer_select_mutate(mutate_selected_parameters,source_code ):
             mutated_line,matches = mutator.modify_tf_learning_rate_in_code(source_code, mutate_selected_parameters, change_parameter_with)
         elif mutate_selected_parameters == "input_shape":
             change_parameter_with = mutation_library.tf_input_shape_list
-            mutated_line,matches = mutator.replace_input_shape(source_code, change_parameter_with)                       
+            mutated_line,matches = mutator.replace_input_shape(source_code, change_parameter_with)      
+        elif mutate_selected_parameters == "Dropout(":
+            change_parameter_with = mutation_library.tf_Dropout_rate_list
+            mutated_line,matches = mutator.replace_Dropout_in_code(source_code, change_parameter_with)                  
         elif mutate_selected_parameters == "layers.AbstractRNNCell()":
             change_parameter_with = mutation_library.tf_keras_layers_AbstractRNNCell_Mutation_List
             layer_name="AbstractRNNCell"

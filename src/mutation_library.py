@@ -52,12 +52,12 @@ tf_dense_list = [
     "Dense(40",  # Dense layer with 40 units
     "Dense(50",  # Dense layer with 50 units
     "Dense(64",  # Dense layer with 60 units
-    "Dense(70",  # Dense layer with 10 units
-    "Dense(80",  # Dense layer with 20 units
-    "Dense(90",  # Dense layer with 30 units
-    "Dense(100",  # Dense layer with 40 units
-    "Dense(128",  # Dense layer with 50 units
-    "Dense(256",  # Dense layer with 60 units
+    "Dense(70",  # Dense layer with 70 units
+    "Dense(80",  # Dense layer with 80 units
+    "Dense(90",  # Dense layer with 90 units
+    "Dense(100",  # Dense layer with 100 units
+    "Dense(128",  # Dense layer with 128 units
+    "Dense(256",  # Dense layer with 256 units
 ]
 tf_optimizers_list = [
     "optimizer='adam'",                # Adam optimizer
@@ -201,12 +201,33 @@ tf_dropout_rate_list = [
     "dropout=0.3",  # Moderate dropout
     "dropout=0.4",  # Moderately high dropout
     "dropout=0.5",   # A relatively high rate of dropout
+    "dropout=0.6",
+    "dropout=0.7",
+    "dropout=0.8",
+    "dropout=0.9",
+    "dropout=0.0",
+]
+
+tf_Dropout_rate_list = [
+    "Dropout(0.1)",  # A light amount of dropout
+    "Dropout(0.2)",  # Moderately light dropout
+    "Dropout(0.3)",  # Moderate dropout
+    "Dropout(0.4)",  # Moderately high dropout
+    "Dropout(0.5)",  # A relatively high rate of dropout
+    "Dropout(0.6)",
+    "Dropout(0.7)",
+    "Dropout(0.8)",
+    "Dropout(0.9)",
+    "Dropout(0.0)",
 ]
 
 tf_learning_rate_list = [
     # Commonly used learning rate values
     "learning_rate=0.001", "learning_rate=0.01", "learning_rate=0.1", 
     "learning_rate=0.0001", "learning_rate=0.05",
+    "learning_rate=0.2","learning_rate=0.4",
+    "learning_rate=0.6","learning_rate=0.8",
+    "learning_rate=1",
 
     # Scenarios with erroneous or inappropriate values
     "learning_rate=-0.001", "learning_rate='invalid'", "learning_rate=None"
@@ -720,6 +741,7 @@ tf_all_list=[
 'kernel_size',
 'pool_size',
 'filters',
+'Dropout(',
 'tf.keras.layers.AbstractRNNCell()',
 'tf.keras.layers.Activation()',
 'tf.keras.layers.ActivityRegularization()',
@@ -1083,6 +1105,7 @@ tf_all_mutation_code_list = [
 'input_shape',
 'pool_size',
 'filters',
+'Dropout(',
 'kernel_regularizer',
 'layers.AbstractRNNCell()',
 'layers.Activation()',
