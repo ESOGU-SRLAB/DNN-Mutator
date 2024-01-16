@@ -150,7 +150,20 @@ tf_input_shape_list = [
     "input_shape=(32, 32, 4)", "input_shape=(64, 64, 4)", "input_shape=(128, 128, 4)"
 ]
 
-tf_keras_units_list = [8, 16, 32, 64, 128, 256, 512, 1024]
+
+tf_keras_units_list = [
+    "units=4",    # Very small model or layer
+    "units=8",    # Small model or layer
+    "units=16",   # Slightly larger model or layer
+    "units=32",   # Commonly used size for small to medium models
+    "units=64",   # Medium-sized model or layer
+    "units=128",  # Larger model or layer
+    "units=256",  # Large model or layer
+    "units=512",  # Very large model or layer
+    "units=1024", # Extremely large model or layer
+    "units=2048", # For very complex models or large datasets
+    "units=5096",    
+]
 
 tf_keras_use_bias_list = ["True", "False"]
 
@@ -690,6 +703,7 @@ tf_math_functions = [
 
 
 tf_all_list=[
+'units',
 'loss',    
 'Dense(',
 'batch_size',
@@ -1055,6 +1069,7 @@ tf_all_list=[
 ]
 
 tf_all_mutation_code_list = [
+'units',
 'loss',
 'Dense(',
 'optimizer',   

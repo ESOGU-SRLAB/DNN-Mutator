@@ -101,6 +101,23 @@ def replace_batch_size_in_code(source_code, new_shape):
     
     return 0,[]
 
+def replace_batch_size_in_code(source_code, new_shape):
+    # Regex deseni: 'input_shape=(...)' formundaki ifadeleri bulur
+    units_list=[]
+    pattern = r"units\s*=\s*\d+"
+
+    # Yeni değerle değiştir
+    
+    matches = re.findall(pattern, source_code)
+    if matches:
+        units_list = [f"{m}" for m in matches]
+        #print(input_shape_list)
+    new_value = "units="
+    if matches:
+        return new_value,units_list
+    
+    return 0,[]
+
 def replace_filters_in_code(source_code, new_shape):
     # Regex deseni: 'input_shape=(...)' formundaki ifadeleri bulur
     batch_size_list=[]

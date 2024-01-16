@@ -8845,6 +8845,131 @@ color:white;</string>
                         </property>
                         <item>
                          <property name="text">
+                          <string>layers.AbstractRNNCell()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>layers.Activation()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>layers.ActivityRegularization()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>layers.Add()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>layers.AdditiveAttention()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>layers.AlphaDropout()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>layers.Attention()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>layers.Average()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>layers.AveragePooling1D()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>layers.AveragePooling2D()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>layers.AveragePooling3D()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>layers.AvgPool1D()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>layers.AvgPool2D()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>layers.AvgPool3D()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>layers.BatchNormalization()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>layers.Bidirectional()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>layers.CategoryEncoding()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>layers.CenterCrop()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>layers.Concatenate()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>layers.Conv1D()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>layers.Conv1DTranspose()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>layers.Conv2D()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>layers.Conv2DTranspose()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>layers.Conv3D()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>layers.Conv3DTranspose()</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
                           <string>layers.ConvLSTM1D()</string>
                          </property>
                         </item>
@@ -10685,57 +10810,7 @@ color:white;</string>
                         </item>
                         <item>
                          <property name="text">
-                          <string>AbstractRNNCell</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>Activation</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>ActivityRegularization</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>Average</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>AveragePooling1D</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>AveragePooling2D</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>AveragePooling3D</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
                           <string>input_shape</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>AlphaDropout</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>MaxPooling2D</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>Conv2D</string>
                          </property>
                         </item>
                         <item>
@@ -10796,6 +10871,16 @@ color:white;</string>
                         <item>
                          <property name="text">
                           <string>filters</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>units</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>optimizer</string>
                          </property>
                         </item>
                        </widget>
@@ -11016,6 +11101,11 @@ color:white;</string>
                         <item>
                          <property name="text">
                           <string>pool_size</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>units</string>
                          </property>
                         </item>
                         <item>
