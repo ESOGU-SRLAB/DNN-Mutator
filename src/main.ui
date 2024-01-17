@@ -13137,7 +13137,7 @@ color:white;</string>
                          <string notr="true">background-color: rgb(52, 59, 72);</string>
                         </property>
                         <property name="plainText">
-                         <string>Folder Name must include space</string>
+                         <string>Folder Name must not include space</string>
                         </property>
                        </widget>
                        <widget class="QPlainTextEdit" name="plainTextEdit_DNN_Survived">

@@ -7463,7 +7463,7 @@ class Ui_MainWindow(object):
         self.checkBox_Code_snippet_All.setText(QCoreApplication.translate("MainWindow", u"Scan All", None))
         self.checkBox_Mutate_All.setText(QCoreApplication.translate("MainWindow", u"Mutate All", None))
         self.pushButton_mutants_path.setText(QCoreApplication.translate("MainWindow", u"Select Mutants Path ", None))
-        self.plainTextEdit_mutant_path.setPlainText(QCoreApplication.translate("MainWindow", u"Folder Name must include space", None))
+        self.plainTextEdit_mutant_path.setPlainText(QCoreApplication.translate("MainWindow", u"Folder Name must not include space", None))
         self.label_80.setText(QCoreApplication.translate("MainWindow", u"Survived Mutants", None))
         self.label_88.setText(QCoreApplication.translate("MainWindow", u"Killed Mutants", None))
         self.label_92.setText(QCoreApplication.translate("MainWindow", u"Mutation Results", None))
