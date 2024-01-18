@@ -25,6 +25,7 @@ tf_activation_functions = [
     'tanh'                         # Hiperbolik tanjant aktivasyon fonksiyonu
 ]
 tf_keras_layers_Activation_Full_List = [
+    "",
     "activation=",
     # Standard activation functions
     "activation='relu'", 
@@ -46,6 +47,7 @@ tf_keras_layers_Activation_Full_List = [
     "activation=123"   # Non-string, invalid type
 ]
 tf_dense_list = [
+    "",
     "Dense(10",  # Dense layer with 10 units
     "Dense(20",  # Dense layer with 20 units
     "Dense(32",  # Dense layer with 30 units
@@ -60,6 +62,7 @@ tf_dense_list = [
     "Dense(256",  # Dense layer with 256 units
 ]
 tf_optimizers_list = [
+    "optimizer=''",
     "optimizer='adam'",                # Adam optimizer
     "optimizer='sgd'",                 # Stochastic Gradient Descent optimizer
     "optimizer='rmsprop'",             # RMSprop optimizer
@@ -79,6 +82,7 @@ tf_optimizers_list = [
     "optimizer='q-learning'",          # Q-learning optimizer
 ]
 tf_loss_functions_list = [
+    "",
     "loss='categorical_crossentropy'",  # Loss function for multi-class classification
     "loss='sparse_categorical_crossentropy'",  # Sparse version for multi-class classification
     "loss='binary_crossentropy'",  # Loss function for binary classification
@@ -97,6 +101,7 @@ tf_loss_functions_list = [
     "loss='log_loss'",  # Logistic loss function
 ]
 tf_kernel_regularizer_configurations = [
+    "",
     # Common L2 regularizer configurations
     "kernel_regularizer=l2(0.01)", "kernel_regularizer=l2(0.001)",
     "kernel_regularizer=l2(0.1)", "kernel_regularizer=l2(0.05)",
@@ -113,6 +118,7 @@ tf_kernel_regularizer_configurations = [
 ]
 
 tf_batch_size_list = [
+    "",
     # Most common batch sizes
     "batch_size=32", 
     "batch_size=64", 
@@ -130,6 +136,7 @@ tf_batch_size_list = [
     "batch_size='invalid'"  # Non-integer or string value is invalid
 ]
 tf_input_shape_list = [
+    "",
     # Single layer configurations
     "input_shape=(32,)", "input_shape=(64,)", "input_shape=(128,)", 
     "input_shape=(256,)", "input_shape=(512,)",
@@ -152,6 +159,7 @@ tf_input_shape_list = [
 
 
 tf_keras_units_list = [
+    "",
     "units=4",    # Very small model or layer
     "units=8",    # Small model or layer
     "units=16",   # Slightly larger model or layer
@@ -165,9 +173,10 @@ tf_keras_units_list = [
     "units=5096",    
 ]
 
-tf_keras_use_bias_list = ["True", "False"]
+tf_keras_use_bias_list = ["True", "False","",]
 
 tf_filters_configurations = [
+    "",
     "filters=8",
     "filters=16",  # Common for smaller or initial layers
     "filters=32",  # Standard for early convolutional layers
@@ -179,6 +188,7 @@ tf_filters_configurations = [
 ]
 
 tf_pool_size_list = [
+    "",
     # 1D Pool Sizes
     "pool_size=2", "pool_size=3", "pool_size=4", 
     "pool_size=5", "pool_size=6", "pool_size=7", 
@@ -196,6 +206,7 @@ tf_pool_size_list = [
 ]
 
 tf_dropout_rate_list = [
+    "",
     "dropout=0.1",  # A light amount of dropout
     "dropout=0.2",  # Moderately light dropout
     "dropout=0.3",  # Moderate dropout
@@ -209,6 +220,7 @@ tf_dropout_rate_list = [
 ]
 
 tf_Dropout_rate_list = [
+    "",
     "Dropout(0.1)",  # A light amount of dropout
     "Dropout(0.2)",  # Moderately light dropout
     "Dropout(0.3)",  # Moderate dropout
@@ -222,6 +234,7 @@ tf_Dropout_rate_list = [
 ]
 
 tf_learning_rate_list = [
+    "",
     # Commonly used learning rate values
     "learning_rate=0.001", "learning_rate=0.01", "learning_rate=0.1", 
     "learning_rate=0.0001", "learning_rate=0.05",
@@ -233,6 +246,7 @@ tf_learning_rate_list = [
     "learning_rate=-0.001", "learning_rate='invalid'", "learning_rate=None"
 ]
 tf_kernel_size_list = [
+    "",
     # 1D kernel sizes
     "kernel_size=1", "kernel_size=3", "kernel_size=5", 
     "kernel_size=7", "kernel_size=9",
@@ -246,6 +260,7 @@ tf_kernel_size_list = [
     "kernel_size=(7, 7, 7)", "kernel_size=(9, 9, 9)"
 ]
 tf_keras_kernel_initializer_list = [
+    "",
     "kernel_initializer='zeros'",                  # Initializes weights to zero
     "kernel_initializer='ones'",                   # Initializes weights to one
     "kernel_initializer='constant'",               # Initializes weights to a constant value
@@ -742,6 +757,43 @@ tf_all_list=[
 'pool_size',
 'filters',
 'Dropout(',
+'bias_initializer',
+'strides',
+'padding',
+'data_format',
+'dilation_rate',
+'groups',
+'seed',
+'axis',
+'from_logits',
+'label_smoothing',
+'use_cudnn_on_gpu',
+'ksize',
+'keep_prob',
+'rate',
+'training',
+'momentum',
+'center',
+'scale',
+'beta_initializer',
+'gamma_initializer',
+'moving_mean_initializer',
+'moving_variance_initializer',
+'depth_radius',
+'bias',
+'alpha',
+'l1',
+'l2',
+'trainable',
+'beta1',
+'beta2',
+'epsilon',
+'decay',
+'global_step',
+'decay_steps',
+'decay_rate',
+'capacity',
+'max_to_keep',
 'tf.keras.layers.AbstractRNNCell()',
 'tf.keras.layers.Activation()',
 'tf.keras.layers.ActivityRegularization()',
@@ -1106,6 +1158,43 @@ tf_all_mutation_code_list = [
 'pool_size',
 'filters',
 'Dropout(',
+'bias_initializer',
+'strides',
+'padding',
+'data_format',
+'dilation_rate',
+'groups',
+'seed',
+'axis',
+'from_logits',
+'label_smoothing',
+'use_cudnn_on_gpu',
+'ksize',
+'keep_prob',
+'rate',
+'training',
+'momentum',
+'center',
+'scale',
+'beta_initializer',
+'gamma_initializer',
+'moving_mean_initializer',
+'moving_variance_initializer',
+'depth_radius',
+'bias',
+'alpha',
+'l1',
+'l2',
+'trainable',
+'beta1',
+'beta2',
+'epsilon',
+'decay',
+'global_step',
+'decay_steps',
+'decay_rate',
+'capacity',
+'max_to_keep',
 'kernel_regularizer',
 'layers.AbstractRNNCell()',
 'layers.Activation()',
@@ -5143,4 +5232,392 @@ tf_hyper_parameters_mutation_code_list = [
 'train.list_variables',
 'train.load_checkpoint',
 'train.load_variable',
+]
+
+tf_bias_initializer_list = [
+    "",  # Empty
+    "bias_initializer='zeros'", 
+    "bias_initializer='ones'",
+    "bias_initializer='constant'", 
+    "bias_initializer='random_normal'",
+    "bias_initializer='random_uniform'",
+    "bias_initializer='truncated_normal'",
+    "bias_initializer='glorot_normal'",
+    "bias_initializer='glorot_uniform'",
+    "bias_initializer='he_normal'",
+    "bias_initializer='he_uniform'",
+    "bias_initializer='lecun_normal'",
+    "bias_initializer='lecun_uniform'",
+    "bias_initializer=None",  # Erroneous or edge case
+    "bias_initializer='invalid'"  # Erroneous or edge case
+]
+tf_strides_list = [
+    "",  # Empty
+    "strides=1", 
+    "strides=2", 
+    "strides=(1, 1)",
+    "strides=(2, 2)", 
+    "strides=(1, 2)",
+    "strides=(2, 1)",
+    "strides=(3, 3)",
+    "strides=(2, 2, 2)",
+    "strides=(1, 2, 3)",
+    "strides=(1,)",  # For 1D convolutions
+    "strides=-1",  # Erroneous or edge case
+    "strides='invalid'",  # Erroneous or edge case
+    "strides=None"  # Erroneous or edge case
+]
+tf_padding_list = [
+    "",  # Empty
+    "padding='valid'", 
+    "padding='same'",
+    "padding='causal'",  # Specific to certain layer types like Conv1D
+    "padding=[[0, 0], [1, 1]]",  # Custom padding
+    "padding=[[1, 1], [2, 2]]",  # Custom padding
+    "padding='full'",  # Not standard in TF but used in some contexts
+    "padding=None",  # Erroneous or edge case
+    "padding='invalid'"  # Erroneous or edge case
+]
+tf_data_format_list = [
+    "",  # Empty
+    "data_format='channels_last'", 
+    "data_format='channels_first'", 
+    "data_format='NHWC'", 
+    "data_format='NCHW'", 
+    "data_format=None",  # Erroneous or edge case
+    "data_format='invalid'"  # Erroneous or edge case
+]
+
+tf_dilation_rate_list = [
+    "",  # Empty
+    "dilation_rate=1", 
+    "dilation_rate=2", 
+    "dilation_rate=(1, 1)",
+    "dilation_rate=(2, 2)", 
+    "dilation_rate=(1, 2)",
+    "dilation_rate=(2, 1)",
+    "dilation_rate=(3, 3)",
+    "dilation_rate=(2, 2, 2)",
+    "dilation_rate=(1, 2, 3)",
+    "dilation_rate=(1,)",  # For 1D convolutions
+    "dilation_rate=-1",  # Erroneous or edge case
+    "dilation_rate='invalid'",  # Erroneous or edge case
+    "dilation_rate=None"  # Erroneous or edge case
+]
+tf_groups_list = [
+    "",  # Empty
+    "groups=1",  # Default, no grouping
+    "groups=2",  # Splitting into 2 groups
+    "groups=4",  # Splitting into 4 groups
+    "groups=8",  # Splitting into 8 groups
+    "groups=-1",  # Erroneous or edge case
+    "groups='invalid'",  # Erroneous or edge case
+    "groups=None"  # Erroneous or edge case
+]
+tf_seed_list = [
+    "",  # Empty
+    "seed=42",  # Common seed value
+    "seed=0",   # Another common seed value
+    "seed=123", # Another common seed value
+    "seed=2024",# Current year as seed
+    "seed=-1",  # Erroneous or edge case
+    "seed='invalid'",  # Erroneous or edge case
+    "seed=None" # None is often valid, but listed here as a potential edge case
+]
+tf_axis_list = [
+    "",  # Empty
+    "axis=0",  # First axis
+    "axis=1",  # Second axis
+    "axis=-1", # Last axis
+    "axis=2",  # Third axis (for 3D data)
+    "axis=[0, 1]", # Multiple axes
+    "axis='invalid'",  # Erroneous or edge case
+    "axis=None"  # None can be valid, but included here as an edge case
+]
+tf_from_logits_list = [
+    "",  # Empty
+    "from_logits=True",  # Explicitly state that inputs are raw logits
+    "from_logits=False", # Explicitly state that inputs are probabilities
+    "from_logits='invalid'",  # Erroneous or edge case
+    "from_logits=None"  # None can be valid, but included here as an edge case
+]
+tf_label_smoothing_list = [
+    "",  # Empty
+    "label_smoothing=0.0",  # No label smoothing
+    "label_smoothing=0.1",  # Slight label smoothing
+    "label_smoothing=0.2",  # Moderate label smoothing
+    "label_smoothing=-0.1",  # Erroneous or edge case (negative value)
+    "label_smoothing='invalid'",  # Erroneous or edge case (non-numeric)
+    "label_smoothing=None"  # None can be valid, but included here as an edge case
+]
+tf_use_cudnn_on_gpu_list = [
+    "",  # Empty
+    "use_cudnn_on_gpu=True",  # Use CuDNN on GPU if available
+    "use_cudnn_on_gpu=False", # Do not use CuDNN on GPU
+    "use_cudnn_on_gpu='invalid'",  # Erroneous or edge case
+    "use_cudnn_on_gpu=None"  # None can be valid, but included here as an edge case
+]
+tf_ksize_list = [
+    "",  # Empty
+    "ksize=1", 
+    "ksize=2",
+    "ksize=3",
+    "ksize=[1, 1]", 
+    "ksize=[2, 2]",
+    "ksize=[3, 3]", 
+    "ksize='invalid'",  # Erroneous or edge case
+    "ksize=None"  # None can be valid, but included here as an edge case
+]
+tf_keep_prob_list = [
+    "",  # Empty
+    "keep_prob=1.0",  # No dropout
+    "keep_prob=0.8",  # Moderate dropout
+    "keep_prob=0.5",  # High dropout
+    "keep_prob=-1",  # Erroneous or edge case (negative value)
+    "keep_prob=1.1",  # Erroneous or edge case (value greater than 1)
+    "keep_prob='invalid'",  # Erroneous or edge case (non-numeric)
+    "keep_prob=None"  # None can be valid, but included here as an edge case
+]
+tf_rate_list = [
+    "",  # Empty
+    "rate=0.0",  # No rate, or equivalent to 'keep_prob=1.0'
+    "rate=0.2",  # Moderate rate
+    "rate=0.5",  # High rate
+    "rate=-0.1",  # Erroneous or edge case (negative value)
+    "rate=1.1",  # Erroneous or edge case (value greater than 1)
+    "rate='invalid'",  # Erroneous or edge case (non-numeric)
+    "rate=None"  # None can be valid, but included here as an edge case
+]
+tf_training_list = [
+    "",  # Empty
+    "training=True",  # Model is in training mode
+    "training=False", # Model is in inference mode
+    "training='invalid'",  # Erroneous or edge case
+    "training=None"  # None can be valid, but included here as an edge case
+]
+tf_momentum_list = [
+    "",  # Empty
+    "momentum=0.9",   # Commonly used momentum value
+    "momentum=0.99",  # High momentum
+    "momentum=0.5",   # Lower momentum
+    "momentum=0.1",   # Very low momentum
+    "momentum=-0.1",  # Erroneous or edge case (negative value)
+    "momentum=1.1",   # Erroneous or edge case (value greater than 1)
+    "momentum='invalid'",  # Erroneous or edge case (non-numeric)
+    "momentum=None"   # None can be valid, but included here as an edge case
+]
+tf_center_list = [
+    "",  # Empty
+    "center=True",  # Include center parameter
+    "center=False", # Exclude center parameter
+    "center='invalid'",  # Erroneous or edge case
+    "center=None"   # None can be valid, but included here as an edge case
+]
+tf_scale_list = [
+    "",  # Empty
+    "scale=True",  # Include scale parameter
+    "scale=False", # Exclude scale parameter
+    "scale='invalid'",  # Erroneous or edge case
+    "scale=None"   # None can be valid, but included here as an edge case
+]
+tf_beta_initializer_list = [
+    "",  # Empty
+    "beta_initializer='zeros'", 
+    "beta_initializer='ones'",
+    "beta_initializer='random_normal'", 
+    "beta_initializer='random_uniform'",
+    "beta_initializer='glorot_normal'", 
+    "beta_initializer='glorot_uniform'", 
+    "beta_initializer='he_normal'", 
+    "beta_initializer='he_uniform'",
+    "beta_initializer=None",  # Erroneous or edge case
+    "beta_initializer='invalid'"  # Erroneous or edge case
+]
+tf_gamma_initializer_list = [
+    "",  # Empty
+    "gamma_initializer='zeros'", 
+    "gamma_initializer='ones'",
+    "gamma_initializer='random_normal'", 
+    "gamma_initializer='random_uniform'",
+    "gamma_initializer='glorot_normal'", 
+    "gamma_initializer='glorot_uniform'", 
+    "gamma_initializer='he_normal'", 
+    "gamma_initializer='he_uniform'",
+    "gamma_initializer=None",  # Erroneous or edge case
+    "gamma_initializer='invalid'"  # Erroneous or edge case
+]
+tf_moving_mean_initializer_list = [
+    "",  # Empty
+    "moving_mean_initializer='zeros'", 
+    "moving_mean_initializer='ones'",
+    "moving_mean_initializer='random_normal'", 
+    "moving_mean_initializer='random_uniform'",
+    "moving_mean_initializer='glorot_normal'", 
+    "moving_mean_initializer='glorot_uniform'", 
+    "moving_mean_initializer='he_normal'", 
+    "moving_mean_initializer='he_uniform'",
+    "moving_mean_initializer=None",  # Erroneous or edge case
+    "moving_mean_initializer='invalid'"  # Erroneous or edge case
+]
+tf_moving_variance_initializer_list = [
+    "",  # Empty
+    "moving_variance_initializer='zeros'", 
+    "moving_variance_initializer='ones'",
+    "moving_variance_initializer='random_normal'", 
+    "moving_variance_initializer='random_uniform'",
+    "moving_variance_initializer='glorot_normal'", 
+    "moving_variance_initializer='glorot_uniform'", 
+    "moving_variance_initializer='he_normal'", 
+    "moving_variance_initializer='he_uniform'",
+    "moving_variance_initializer=None",  # Erroneous or edge case
+    "moving_variance_initializer='invalid'"  # Erroneous or edge case
+]
+tf_depth_radius_list = [
+    "",  # Empty
+    "depth_radius=2", 
+    "depth_radius=3", 
+    "depth_radius=5", 
+    "depth_radius=1", 
+    "depth_radius=0",  # Erroneous or edge case
+    "depth_radius=-1",  # Erroneous or edge case
+    "depth_radius='invalid'",  # Erroneous or edge case
+    "depth_radius=None"  # Erroneous or edge case
+]
+tf_bias_list = [
+    "",  # Empty
+    "bias=0.1", 
+    "bias=0.2", 
+    "bias=0.3", 
+    "bias=0.0", 
+    "bias=-0.1",  # Erroneous or edge case
+    "bias='invalid'",  # Erroneous or edge case
+    "bias=None"  # Erroneous or edge case
+]
+tf_alpha_list = [
+    "",  # Empty
+    "alpha=0.1", 
+    "alpha=0.2", 
+    "alpha=0.3", 
+    "alpha=0.0", 
+    "alpha=-0.1",  # Erroneous or edge case
+    "alpha='invalid'",  # Erroneous or edge case
+    "alpha=None"  # Erroneous or edge case
+]
+tf_l1_list = [
+    "",  # Empty
+    "l1=0.01",  # Common L1 regularization value
+    "l1=0.001", # Another common L1 regularization value
+    "l1=0.1",   # Higher L1 regularization value
+    "l1=0.0001",# Lower L1 regularization value
+    "l1=-0.01", # Erroneous or edge case (negative value)
+    "l1='invalid'", # Erroneous or edge case (non-numeric)
+    "l1=None"  # None can be valid, but included here as an edge case
+]
+tf_l2_list = [
+    "",  # Empty
+    "l2=0.01",  # Common L2 regularization value
+    "l2=0.001", # Another common L2 regularization value
+    "l2=0.1",   # Higher L2 regularization value
+    "l2=0.0001",# Lower L2 regularization value
+    "l2=-0.01", # Erroneous or edge case (negative value)
+    "l2='invalid'", # Erroneous or edge case (non-numeric)
+    "l2=None"  # None can be valid, but included here as an edge case
+]
+
+tf_trainable_list = [
+    "",  # Empty
+    "trainable=True",  # Parameter is trainable
+    "trainable=False", # Parameter is not trainable
+    "trainable='invalid'", # Erroneous or edge case (non-boolean)
+    "trainable=None"  # None can be valid, but included here as an edge case
+]
+tf_beta1_list = [
+    "",  # Empty
+    "beta1=0.9",  # Common value for beta1 in optimizers like Adam
+    "beta1=0.99", # Another common value for beta1
+    "beta1=0.5",  # Lower value for beta1
+    "beta1=-0.1", # Erroneous or edge case (negative value)
+    "beta1=1.1",  # Erroneous or edge case (value greater than 1)
+    "beta1='invalid'", # Erroneous or edge case (non-numeric)
+    "beta1=None"  # None can be valid, but included here as an edge case
+]
+tf_beta2_list = [
+    "",  # Empty
+    "beta2=0.999", # Common value for beta2 in optimizers like Adam
+    "beta2=0.99",  # Another common value for beta2
+    "beta2=0.9",   # Lower value for beta2
+    "beta2=-0.1",  # Erroneous or edge case (negative value)
+    "beta2=1.1",   # Erroneous or edge case (value greater than 1)
+    "beta2='invalid'", # Erroneous or edge case (non-numeric)
+    "beta2=None"  # None can be valid, but included here as an edge case
+]
+tf_epsilon_list = [
+    "",  # Empty
+    "epsilon=1e-7",  # Common value for epsilon to prevent division by zero in algorithms
+    "epsilon=1e-9",  # Smaller epsilon for more precision
+    "epsilon=0.1",   # Larger epsilon for less precision
+    "epsilon=1e-10", # Very small epsilon
+    "epsilon=-1e-7", # Erroneous or edge case (negative value)
+    "epsilon='invalid'", # Erroneous or edge case (non-numeric)
+    "epsilon=None"  # None can be valid, but included here as an edge case
+]
+tf_decay_list = [
+    "",  # Empty
+    "decay=0.0",  # No decay, common in many optimizers
+    "decay=0.1",  # Moderate decay
+    "decay=0.01", # Smaller decay
+    "decay=0.001",# Very small decay
+    "decay=-0.1", # Erroneous or edge case (negative value)
+    "decay='invalid'", # Erroneous or edge case (non-numeric)
+    "decay=None"  # None can be valid, but included here as an edge case
+]
+tf_global_step_list = [
+    "",  # Empty
+    "global_step=0",   # Initial step
+    "global_step=100", # An example step
+    "global_step=1000",# A larger step
+    "global_step=5000",# A very large step
+    "global_step=-1",  # Erroneous or edge case (negative value)
+    "global_step='invalid'", # Erroneous or edge case (non-numeric)
+    "global_step=None"  # None can be valid, but included here as an edge case
+]
+tf_decay_steps_list = [
+    "",  # Empty
+    "decay_steps=100",   # Common decay step
+    "decay_steps=1000",  # A larger decay step
+    "decay_steps=10000", # A very large decay step
+    "decay_steps=10",    # A smaller decay step
+    "decay_steps=-100",  # Erroneous or edge case (negative value)
+    "decay_steps='invalid'", # Erroneous or edge case (non-numeric)
+    "decay_steps=None"  # None can be valid, but included here as an edge case
+]
+tf_decay_rate_list = [
+    "",  # Empty
+    "decay_rate=0.1",  # Moderate decay rate
+    "decay_rate=0.01", # Smaller decay rate
+    "decay_rate=0.5",  # Larger decay rate
+    "decay_rate=0.001",# Very small decay rate
+    "decay_rate=-0.1", # Erroneous or edge case (negative value)
+    "decay_rate='invalid'", # Erroneous or edge case (non-numeric)
+    "decay_rate=None"  # None can be valid, but included here as an edge case
+]
+tf_capacity_list = [
+    "",  # Empty
+    "capacity=10",  # Small capacity
+    "capacity=100", # Moderate capacity
+    "capacity=1000",# Large capacity
+    "capacity=10000",# Very large capacity
+    "capacity=-1",  # Erroneous or edge case (negative value)
+    "capacity='invalid'", # Erroneous or edge case (non-numeric)
+    "capacity=None"  # None can be valid, but included here as an edge case
+]
+
+tf_max_to_keep_list = [
+    "",  # Empty
+    "max_to_keep=1",  # Keep only the latest one
+    "max_to_keep=5",  # Keep last 5
+    "max_to_keep=10", # Keep last 10
+    "max_to_keep=-1", # Erroneous or edge case (negative value)
+    "max_to_keep='invalid'", # Erroneous or edge case (non-numeric)
+    "max_to_keep=None"  # None can be valid, but included here as an edge case
 ]

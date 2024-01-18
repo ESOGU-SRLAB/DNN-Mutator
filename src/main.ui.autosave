@@ -10889,191 +10889,190 @@ color:white;</string>
                          </property>
                         </item>
                         <item>
-                        <property name="text">
-                            <string>bias_initializer</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>strides</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>padding</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>data_format</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>dilation_rate</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>groups</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>seed</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>axis</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>from_logits</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>label_smoothing</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>use_cudnn_on_gpu</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>ksize</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>keep_prob</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>rate</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>training</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>momentum</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>center</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>scale</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>beta_initializer</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>gamma_initializer</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>moving_mean_initializer</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>moving_variance_initializer</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>depth_radius</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>bias</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>alpha</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>l1</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>l2</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>trainable</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>beta1</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>beta2</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>epsilon</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>decay</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>global_step</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>decay_steps</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>decay_rate</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>capacity</string>
-                        </property>
-                    </item>
-                    <item>
-                        <property name="text">
-                            <string>max_to_keep</string>
-                        </property>
-                    </item>
-
+                         <property name="text">
+                          <string>bias_initializer</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>strides</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>padding</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>data_format</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>dilation_rate</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>groups</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>seed</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>axis</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>from_logits</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>label_smoothing</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>use_cudnn_on_gpu</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>ksize</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>keep_prob</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>rate</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>training</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>momentum</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>center</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>scale</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>beta_initializer</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>gamma_initializer</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>moving_mean_initializer</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>moving_variance_initializer</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>depth_radius</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>bias</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>alpha</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>l1</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>l2</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>trainable</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>beta1</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>beta2</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>epsilon</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>decay</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>global_step</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>decay_steps</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>decay_rate</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>capacity</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>max_to_keep</string>
+                         </property>
+                        </item>
                        </widget>
                        <widget class="QLabel" name="label_25">
                         <property name="geometry">
@@ -13200,191 +13199,190 @@ color:white;</string>
                          </property>
                         </item>
                         <item>
-                          <property name="text">
-                              <string>bias_initializer</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>strides</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>padding</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>data_format</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>dilation_rate</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>groups</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>seed</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>axis</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>from_logits</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>label_smoothing</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>use_cudnn_on_gpu</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>ksize</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>keep_prob</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>rate</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>training</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>momentum</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>center</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>scale</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>beta_initializer</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>gamma_initializer</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>moving_mean_initializer</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>moving_variance_initializer</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>depth_radius</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>bias</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>alpha</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>l1</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>l2</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>trainable</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>beta1</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>beta2</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>epsilon</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>decay</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>global_step</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>decay_steps</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>decay_rate</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>capacity</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>max_to_keep</string>
-                          </property>
-                      </item>
-
+                         <property name="text">
+                          <string>bias_initializer</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>strides</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>padding</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>data_format</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>dilation_rate</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>groups</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>seed</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>axis</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>from_logits</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>label_smoothing</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>use_cudnn_on_gpu</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>ksize</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>keep_prob</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>rate</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>training</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>momentum</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>center</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>scale</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>beta_initializer</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>gamma_initializer</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>moving_mean_initializer</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>moving_variance_initializer</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>depth_radius</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>bias</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>alpha</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>l1</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>l2</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>trainable</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>beta1</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>beta2</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>epsilon</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>decay</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>global_step</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>decay_steps</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>decay_rate</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>capacity</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>max_to_keep</string>
+                         </property>
+                        </item>
                        </widget>
                        <widget class="QListWidget" name="dnn_selected_snippet">
                         <property name="geometry">

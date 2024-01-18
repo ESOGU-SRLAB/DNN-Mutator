@@ -1520,6 +1520,157 @@ def layer_select_mutate(mutate_selected_parameters,source_code ):
             change_parameter_with = mutation_library.tf_train_load_variable_Mutation_List
             function_name = "load_variable"
             mutated_line,matches = mutator.modify_tf_train_class_in_code(source_code, function_name, change_parameter_with)
-       
+        
+        elif mutate_selected_parameters == "bias_initializer":
+            change_parameter_with = mutation_library.tf_bias_initializer_list
+            mutated_line, matches = mutator.modify_tf_bias_initializer_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "strides":
+            change_parameter_with = mutation_library.tf_strides_list
+            mutated_line, matches = mutator.modify_tf_strides_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "padding":
+            change_parameter_with = mutation_library.tf_padding_list
+            mutated_line, matches = mutator.modify_tf_padding_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "data_format":
+            change_parameter_with = mutation_library.tf_data_format_list
+            mutated_line, matches = mutator.modify_tf_data_format_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "dilation_rate":
+            change_parameter_with = mutation_library.tf_dilation_rate_list
+            mutated_line, matches = mutator.modify_tf_dilation_rate_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "groups":
+            change_parameter_with = mutation_library.tf_groups_list
+            mutated_line, matches = mutator.modify_tf_groups_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "seed":
+            change_parameter_with = mutation_library.tf_seed_list
+            mutated_line, matches = mutator.modify_tf_seed_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "axis":
+            change_parameter_with = mutation_library.tf_axis_list
+            mutated_line, matches = mutator.modify_tf_axis_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "from_logits":
+            change_parameter_with = mutation_library.tf_from_logits_list
+            mutated_line, matches = mutator.modify_tf_from_logits_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "label_smoothing":
+            change_parameter_with = mutation_library.tf_label_smoothing_list
+            mutated_line, matches = mutator.modify_tf_label_smoothing_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "use_cudnn_on_gpu":
+            change_parameter_with = mutation_library.tf_use_cudnn_on_gpu_list
+            mutated_line, matches = mutator.modify_tf_use_cudnn_on_gpu_in_code(source_code, change_parameter_with)
+        
+        elif mutate_selected_parameters == "ksize":
+            change_parameter_with = mutation_library.tf_ksize_list
+            mutated_line, matches = mutator.modify_tf_ksize_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "keep_prob":
+            change_parameter_with = mutation_library.tf_keep_prob_list
+            mutated_line, matches = mutator.modify_tf_keep_prob_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "rate":
+            change_parameter_with = mutation_library.tf_rate_list
+            mutated_line, matches = mutator.modify_tf_rate_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "training":
+            change_parameter_with = mutation_library.tf_training_list
+            mutated_line, matches = mutator.modify_tf_training_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "momentum":
+            change_parameter_with = mutation_library.tf_momentum_list
+            mutated_line, matches = mutator.modify_tf_momentum_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "center":
+            change_parameter_with = mutation_library.tf_center_list
+            mutated_line, matches = mutator.modify_tf_center_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "scale":
+            change_parameter_with = mutation_library.tf_scale_list
+            mutated_line, matches = mutator.modify_tf_scale_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "beta_initializer":
+            change_parameter_with = mutation_library.tf_beta_initializer_list
+            mutated_line, matches = mutator.modify_tf_beta_initializer_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "gamma_initializer":
+            change_parameter_with = mutation_library.tf_gamma_initializer_list
+            mutated_line, matches = mutator.modify_tf_gamma_initializer_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "moving_mean_initializer":
+            change_parameter_with = mutation_library.tf_moving_mean_initializer_list
+            mutated_line, matches = mutator.modify_tf_moving_mean_initializer_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "moving_variance_initializer":
+            change_parameter_with = mutation_library.tf_moving_variance_initializer_list
+            mutated_line, matches = mutator.modify_tf_moving_variance_initializer_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "depth_radius":
+            change_parameter_with = mutation_library.tf_depth_radius_list
+            mutated_line, matches = mutator.modify_tf_depth_radius_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "bias":
+            change_parameter_with = mutation_library.tf_bias_list
+            mutated_line, matches = mutator.modify_tf_bias_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "alpha":
+            change_parameter_with = mutation_library.tf_alpha_list
+            mutated_line, matches = mutator.modify_tf_alpha_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "l1":
+            change_parameter_with = mutation_library.tf_l1_list
+            mutated_line, matches = mutator.modify_l1_regularizer_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "l2":
+            change_parameter_with = mutation_library.tf_l2_list
+            mutated_line, matches = mutator.modify_l2_regularizer_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "trainable":
+            change_parameter_with = mutation_library.tf_trainable_list
+            mutated_line, matches = mutator.modify_tf_trainable_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "beta1":
+            change_parameter_with = mutation_library.tf_beta1_list
+            mutated_line, matches = mutator.modify_tf_beta1_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "beta2":
+            change_parameter_with = mutation_library.tf_beta2_list
+            mutated_line, matches = mutator.modify_tf_beta2_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "epsilon":
+            change_parameter_with = mutation_library.tf_epsilon_list
+            mutated_line, matches = mutator.modify_tf_epsilon_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "decay":
+            change_parameter_with = mutation_library.tf_decay_list
+            mutated_line, matches = mutator.modify_tf_decay_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "global_step":
+            change_parameter_with = mutation_library.tf_global_step_list
+            mutated_line, matches = mutator.modify_tf_global_step_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "decay_steps":
+            change_parameter_with = mutation_library.tf_decay_steps_list
+            mutated_line, matches = mutator.modify_tf_decay_steps_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "decay_rate":
+            change_parameter_with = mutation_library.tf_decay_rate_list
+            mutated_line, matches = mutator.modify_tf_decay_rate_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "capacity":
+            change_parameter_with = mutation_library.tf_capacity_list
+            mutated_line, matches = mutator.modify_tf_capacity_in_code(source_code, change_parameter_with)
+
+        elif mutate_selected_parameters == "max_to_keep":
+            change_parameter_with = mutation_library.tf_max_to_keep_list
+            mutated_line, matches = mutator.modify_tf_max_to_keep_in_code(source_code, change_parameter_with)
+
+
+
+        
 
         return mutated_line,matches,change_parameter_with
