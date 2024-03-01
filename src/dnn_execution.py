@@ -23,12 +23,12 @@ def execute_original_source_code(source_code_path):
         #accuracy_match = re.search(r'Accuracy: (\d+\.\d+)%', output)
         #accuracy_match = re.search(r'Accuracy\s*:\s*(\d+\.\d+)\s*%', output)
         accuracy_match = re.search(r'Accuracy\s*[:=]?\s*(\d+(\.\d+)?)\s*%', output)
-        
-        print(accuracy_match)
+        accuracy_match_r2_score=re.search(r'r2 score:\s*(\d+\.\d+)', output)
+        print(accuracy_match_r2_score)
 
-        if accuracy_match:
-            accuracy_value = float(accuracy_match.group(1))
-            print(f'The Accuracy of Original Source Code: {accuracy_value}%')
+        if accuracy_match_r2_score:
+            accuracy_value = float(accuracy_match_r2_score.group(1))
+            print(f'The Accuracy of Original Source Code: {accuracy_match_r2_score}')
             return accuracy_value
 
     except Exception as e:
@@ -58,12 +58,13 @@ def execute_file(threshold, mutant_files_save_location):
 
             #accuracy_match = re.search(r'Accuracy\s*:\s*(\d+\.\d+)\s*%', output)
             accuracy_match = re.search(r'Accuracy\s*[:=]?\s*(\d+(\.\d+)?)\s*%', output)
-            if accuracy_match:
-                accuracy_value = float(accuracy_match.group(1))
-                print(f'Found Accuracy: {accuracy_value}%')
+            accuracy_match_r2_score=re.search(r'r2 score:\s*(\d+\.\d+)', output)
+            if accuracy_match_r2_score:
+                accuracy_value = float(accuracy_match_r2_score.group(1))
+                print(f'Found the Metric: {accuracy_match_r2_score}')
 
                 mutant_file_and_accuracy = (
-                    f"Mutant File: {mutant_file} Accuracy: {accuracy_value}")
+                    f"Mutant File: {mutant_file} Value: {accuracy_value}")
                 accuracy_list.append(mutant_file_and_accuracy)
 
                 if accuracy_value < threshold:
@@ -74,7 +75,7 @@ def execute_file(threshold, mutant_files_save_location):
             else:
                 killed.append(mutant_file)
                 mutant_file_and_accuracy = (
-                    "Mutant File: {} Accuracy: Accuracy value not found".format(mutant_file))
+                    "Mutant File: {} No Value:".format(mutant_file))
                 accuracy_list.append(mutant_file_and_accuracy)
 
         except Exception as e:
@@ -103,7 +104,7 @@ def find_accuracy_lines(file_name):
     try:
         with open(file_name, 'r') as file:
             for line in file:
-                if ('Accuracy' in line or 'accuracy' in line) and not line.strip().startswith('#'):
+                if ('Accuracy' in line or 'accuracy' in line or 'r2 score' in line) and not line.strip().startswith('#'):
                     matching_lines.append(line.strip())
 
     except FileNotFoundError:
@@ -215,35 +216,9 @@ def show_results(killed,survived,accuracy_list):
     print("\n")
     print("Killed", killed)
     print("Survived", survived)
-    print("Mutant Accuracy List", accuracy_list)
+    print("Mutant Value List", accuracy_list)
 
-def main():
-    """
-    Main function to execute the script and print results based on accuracy.
-    """
-    file_name = (
-        '/Users/cembaglum/Desktop/ASRLAB/2_SUIT_1004/Kodlar/'
-        'Execution_Module/basic_model.py')
-    fiplan_json_dir = (
-        '/Users/cembaglum/Desktop/ASRLAB/2_SUIT_1004/Kodlar/'
-        'Execution_Module/denemelik_fiplan.json')
 
-    matching_lines = find_accuracy_lines(file_name)
-
-    if matching_lines:
-        print("Execution process is started... Just wait for accuracy value!")
-        threshold = execute_original_source_code(file_name)
-        if threshold:
-            mutant_files_save_location = mutation_process(
-                file_name, fiplan_json_dir)
-            killed, survived, accuracy_list = execute_file(
-                threshold, mutant_files_save_location)
-            show_results(killed,survived,accuracy_list)
-        else:
-            print("Please be sure to use original source code which has"
-                  " accuracy value!")
-    else:
-        print("Please ensure the script contains an accuracy line.")
 
 
 
@@ -277,5 +252,3 @@ def create_pdf(text, filename):
     # Kalan metni sayfaya yazdır
     c.drawText(text_object)
     c.save()
-if __name__ == "__main__":
-    main()

@@ -54,7 +54,7 @@ def layer_select_mutate(mutate_selected_parameters,source_code ):
             mutated_line,matches = mutator.kernel_regularizer_in_code(source_code, change_parameter_with)
         elif mutate_selected_parameters == "units":
             change_parameter_with = mutation_library.tf_keras_units_list
-            mutated_line,matches = mutator.replace_batch_size_in_code(source_code, change_parameter_with)    
+            mutated_line,matches = mutator.replace_units_size_in_code(source_code, change_parameter_with)    
         elif mutate_selected_parameters == "filters":
             change_parameter_with = mutation_library.tf_filters_configurations
             mutated_line,matches = mutator.replace_filters_in_code(source_code, change_parameter_with)  

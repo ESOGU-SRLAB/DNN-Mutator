@@ -173,10 +173,11 @@ tf_keras_units_list = [
     "units=5096",    
 ]
 
-tf_keras_use_bias_list = ["True", "False","",]
+tf_keras_use_bias_list = ["use_bias=True", "use_bias=False","use_bias=",]
 
 tf_filters_configurations = [
     "",
+    "filters=",
     "filters=8",
     "filters=16",  # Common for smaller or initial layers
     "filters=32",  # Standard for early convolutional layers
@@ -189,6 +190,7 @@ tf_filters_configurations = [
 
 tf_pool_size_list = [
     "",
+    "pool_size=",
     # 1D Pool Sizes
     "pool_size=2", "pool_size=3", "pool_size=4", 
     "pool_size=5", "pool_size=6", "pool_size=7", 
@@ -5325,14 +5327,36 @@ tf_seed_list = [
     "seed=None" # None is often valid, but listed here as a potential edge case
 ]
 tf_axis_list = [
-    "",  # Empty
-    "axis=0",  # First axis
-    "axis=1",  # Second axis
-    "axis=-1", # Last axis
-    "axis=2",  # Third axis (for 3D data)
-    "axis=[0, 1]", # Multiple axes
-    "axis='invalid'",  # Erroneous or edge case
-    "axis=None"  # None can be valid, but included here as an edge case
+    # Existing Mutations
+    "", "axis=0", "axis=1", "axis=-1", "axis=2", "axis=[0, 1]", "axis='invalid'", "axis=None",
+
+    # Additional Mutations
+    "axis=3",  # 3rd axis (for 3D+ tensors)
+    "axis=-2",  # Second to last axis
+    "axis=-3",  # Third to last axis
+    "axis=[0, -1]",  # Combination of first and last axis
+    "axis=[1, 2]",  # Combination of middle axes (for 3D+ tensors)
+    "axis=[-2, -1]",  # Combination of last two axes
+    "axis='all'",  # Invalid string axis
+    "axis=1.5",  # Non-integer axis
+    "axis=[0, 1, 2]",  # Multiple axes for 3D+ data
+    "axis=[0, '1']",  # Mixed type axis
+    "axis=[0, 1, -1]",  # Redundant axis specification
+    "axis=[1, 1]",  # Duplicate axis
+    "axis=range(2)",  # Axis as a range object
+    "axis=np.array([0, 1])",  # Axis as a numpy array
+    "axis=()",  # Empty tuple
+    "axis=(0,)",  # Single element tuple
+    "axis=(0, 1)",  # Tuple of axes
+    "axis=(1, 'invalid')",  # Tuple with invalid entry
+    "axis='axis=1'",  # String that looks like a parameter assignment
+    "axis=4",  # Axis out of bounds for most 3D data
+    "axis=-5",  # Negative axis out of common range
+    "axis=100",  # Large positive axis
+    "axis=-100",  # Large negative axis
+    "axis=' '",  # Axis as a space character
+    "axis=[0, None]",  # Mixed None with integer
+    "axis=['0', 1]"  # Mixed string with integer
 ]
 tf_from_logits_list = [
     "",  # Empty

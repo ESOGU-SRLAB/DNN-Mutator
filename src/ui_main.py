@@ -4881,7 +4881,7 @@ class Ui_MainWindow(object):
         self.pushButton_dnn_scan.setStyleSheet(u"background-color: rgb(52, 59, 72);")
         self.label_78 = QLabel(self.frame_4)
         self.label_78.setObjectName(u"label_78")
-        self.label_78.setGeometry(QRect(300, 90, 111, 16))
+        self.label_78.setGeometry(QRect(300, 90, 141, 16))
         self.label_79 = QLabel(self.frame_4)
         self.label_79.setObjectName(u"label_79")
         self.label_79.setGeometry(QRect(280, 360, 141, 16))
@@ -6815,7 +6815,7 @@ class Ui_MainWindow(object):
         self.btn_load_dnn.setText(QCoreApplication.translate("MainWindow", u"DNN LOAD", None))
         self.label_37.setText(QCoreApplication.translate("MainWindow", u"Selected Mutation Parameters", None))
         self.label_77.setText(QCoreApplication.translate("MainWindow", u"Select Parameter for Mutation", None))
-        self.label_18.setText(QCoreApplication.translate("MainWindow", u"Code Snippet", None))
+        self.label_18.setText(QCoreApplication.translate("MainWindow", u"Codes to Scan", None))
 
         __sortingEnabled5 = self.dnn_code_snippet_list.isSortingEnabled()
         self.dnn_code_snippet_list.setSortingEnabled(False)
@@ -7680,7 +7680,7 @@ class Ui_MainWindow(object):
         self.dnn_code_snippet_list.setSortingEnabled(__sortingEnabled5)
 
         self.pushButton_dnn_scan.setText(QCoreApplication.translate("MainWindow", u"Scan", None))
-        self.label_78.setText(QCoreApplication.translate("MainWindow", u"Selected Snippet", None))
+        self.label_78.setText(QCoreApplication.translate("MainWindow", u"Selected Codes to Scan", None))
         self.label_79.setText(QCoreApplication.translate("MainWindow", u"Scanned Source Code", None))
         self.checkBox_Code_snippet_All.setText(QCoreApplication.translate("MainWindow", u"Scan All", None))
         self.checkBox_Mutate_All.setText(QCoreApplication.translate("MainWindow", u"Mutate All", None))

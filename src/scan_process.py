@@ -271,7 +271,6 @@ def find_target_no_workload_yes_code_snippet(split_text, patterns):
         ):
             for pattern in patterns:
                 print(pattern)
-                #result = re.findall(pattern, line_from_source_code, re.MULTILINE)
                 result =re.findall(rf"{pattern}", line_from_source_code, re.MULTILINE)
                 if result:
                     faultable_line_list.append(line_from_source_code)

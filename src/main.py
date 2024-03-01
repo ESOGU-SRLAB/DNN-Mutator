@@ -23,11 +23,11 @@ import dnn_execution
 import mutation_library
 import selected_parameters
 import numpy as np
-#import tensorflow as tf
-#from tensorflow.python.keras.layers import Dense 
-#from tensorflow.python.keras.layers.recurrent import LSTM as LSTM_keras
-#from tensorflow.python.keras.models import Sequential
-#from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBox
+import tensorflow as tf
+from tensorflow.python.keras.layers import Dense 
+from tensorflow.python.keras.layers.recurrent import LSTM as LSTM_keras
+from tensorflow.python.keras.models import Sequential
+from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBox
 import tensorflow as tf
 import numpy as np
 
@@ -325,7 +325,7 @@ class MainWindow(QMainWindow):
                 self.ui.listWidget_8.addItems(row)
 
         
-        # Select DNN Snippet Button on Start Page /GÖKHAN-------START
+        
         def dnn_code_snippet_selection():
             dnn_code_snippet_list_is_empty = True
             dnn_len_of_selected_code_snippets = self.ui.dnn_selected_snippet.count()
@@ -342,7 +342,7 @@ class MainWindow(QMainWindow):
                     self.ui.dnn_selected_snippet.addItems(row)
             else:
                 self.ui.dnn_selected_snippet.addItems(row)        
-        #/GÖKHAN -----------------------------------------------------------------END
+        
         #Gökhan---------------------------------Start
         def dnn_mutate_parameter_selection():
             dnn_code_mutate_list_is_empty = True
@@ -1411,7 +1411,7 @@ class MainWindow(QMainWindow):
 
 
         mutate_counter=str(mutate_counter)
-        #self.ui.plainTextEdit_DNN_mutation_number.setPlainText(" Mutant Number:"+mutate_counter)
+
         save_path = self.ui.plainTextEdit_mutant_path.toPlainText()
         
         
@@ -1423,8 +1423,7 @@ class MainWindow(QMainWindow):
         else:
             # user_path not selected
             print("User path not selected")    
-        #with open('dnn_mutation_faults.json', 'w') as f:
-            #json.dump(all_faults, f, indent=4)            
+           
 
         self.ui.plainTextEdit_mutated_code.setPlainText(mutated_code)
         """
@@ -1743,7 +1742,7 @@ class MainWindow(QMainWindow):
             else:
                 self.start_yes_workload_yes_code_snippet_process()
     
-    #GÖKHAN---------------------------------------------------------------------------start
+    
     def dnn_start_scan_process(self):
         """The function decides which scan process path to use"""
         check_detected_parts_list = self.ui.listWidget_dnn_selected_snippet.count()
@@ -1765,7 +1764,7 @@ class MainWindow(QMainWindow):
             else:
                 print("eror")
                 
-    #GÖKHAN---------------------------------------------------------------------------end
+    
     
     
     # Function starts "Yes Workload, Yes Code Snipet" Scan Process
@@ -1929,10 +1928,9 @@ class MainWindow(QMainWindow):
             line_from_code_snippet_list = self.ui.listWidget_17.item(line_number).text()
             code_snippet_data_list.append(line_from_code_snippet_list)
         return code_snippet_data_list
-#Gökhan------------------------------------------------------------------------------------------------------start
-  # Method takes code snippet for "No Workload, Yes Code Snippet" Scan Process
+
     def dnn_take_code_snippet_no_workload_yes_code_snippet(self):
-        """Code snippets are taken by IM-FIT to use on no workload yes code snippet scan process"""
+        
         code_snippet_data_list = []
          # Check if the 'selectAll' checkbox is checked
         if self.ui.checkBox_Code_snippet_All.isChecked():
@@ -1982,8 +1980,8 @@ class MainWindow(QMainWindow):
 
 
 
- # Method start "No Workload, Yes Code Snippet" Scan Process
-    def dnn_start_no_workload_yes_code_snippet_process(self): #gökhanbakılacak
+ 
+    def dnn_start_no_workload_yes_code_snippet_process(self): 
         """Method manages no workload yes code snippet scan process"""
         detected_part_list_size = self.ui.listWidget_dnn_selected_snippet.count()
         code_snippet_data_list = self.dnn_take_code_snippet_no_workload_yes_code_snippet()

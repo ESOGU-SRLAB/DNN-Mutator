@@ -72,8 +72,8 @@ def replace_input_shape(source_code, new_shape):
     
     # Updated regex pattern
     # This pattern now correctly handles the optional trailing comma for a single dimension
-    pattern = r"input_shape=\(\s*(\d+\s*(\*\s*\d+\s*)?)(,)?(\s*\d+\s*,)?(\s*\d+\s*)?\)"
-    
+    #pattern = r"input_shape=\(\s*(\d+\s*(\*\s*\d+\s*)?)(,)?(\s*\d+\s*,)?(\s*\d+\s*)?\)"
+    pattern = r"input_shape=\(\s*((\w+[\w\.\[\]]*\s*(\*\s*\w+[\w\.\[\]]*\s*)?)(,)?(\s*\w+[\w\.\[\]]*\s*,)?(\s*\w+[\w\.\[\]]*\s*)?)\)"
     # Find matches
     matches = re.findall(pattern, source_code)
     if matches:
@@ -115,10 +115,12 @@ def replace_batch_size_in_code(source_code, new_shape):
     
     batch_size_list=[]
     pattern = r"batch_size\s*=\s*\d+"
-
+    pattern_value = r"batch_size\s*=\s*(\d+)"
     # Yeni değerle değiştir
     
     matches = re.findall(pattern, source_code)
+    matches_value = re.findall(pattern_value, source_code)
+    print("Batch Size Value",matches_value)
     if matches:
         batch_size_list = [f"{m}" for m in matches]
         
@@ -128,14 +130,15 @@ def replace_batch_size_in_code(source_code, new_shape):
     
     return 0,[]
 
-def replace_batch_size_in_code(source_code, new_shape):
+def replace_units_size_in_code(source_code, new_shape):
     
     units_list=[]
     pattern = r"units\s*=\s*\d+"
-
+    pattern_value=r"units\s*=\s*(\d+)"
     # Yeni değerle değiştir
     
     matches = re.findall(pattern, source_code)
+    matches_value = re.findall(pattern_value, source_code)
     if matches:
         units_list = [f"{m}" for m in matches]
         
@@ -149,10 +152,11 @@ def replace_filters_in_code(source_code, new_shape):
     
     batch_size_list=[]
     pattern = r"filters\s*=\s*\d+"
-
+    pattern_value = r"filters\s*=\s*(\d+)"
     # Yeni değerle değiştir
     
     matches = re.findall(pattern, source_code)
+    matches_value = re.findall(pattern_value, source_code)
     print(matches,"Filters")
     if matches:
         batch_size_list = [f"{m}" for m in matches]
@@ -300,7 +304,7 @@ def modify_tf_use_bias_in_code(source_code,layer_names, new_use_bias_value):
     matches = re.findall(pattern, source_code)
     new_value = "use_bias="
     if matches:
-        use_bias_list = [f"use_bias={m}" for m in matches]
+        use_bias_list = [f"{m}" for m in matches]
         #print(use_bias_list)
         return new_value,use_bias_list
     return 0, []
@@ -357,15 +361,10 @@ def replace_kernel_size_in_code(source_code,new_kernel_size):
     pattern = r"kernel_size\s*=\s*(\(\s*\d+\s*,\s*\d+\s*(?:,\s*\d+\s*)?\)|\d+)"
 
     kernel_size_list=[]
-
-    #pattern = r"kernel_size\s*=\s*(\(\s*\d+\s*,\s*\d+\s*\)|\d+)"
-    #pattern = r"kernel_size\s*=\s*(\d+|\(\s*\d+\s*(,\s*\d+\s*)+\))"
     matches = re.findall(pattern, source_code)
 
     new_value = "kernel_size="
-    # Yeni değerle değiştir
-    #updated_code = re.sub(pattern, "learning_rate="+"'"+new_kernel_size+"'", source_code)
-    
+   
     if matches:
         kernel_size_list = [f"kernel_size={m}" for m in matches]  # List of original kernel_size values
         #print(kernel_size_list)
@@ -458,9 +457,9 @@ def modify_tf_optimizers_in_code(source_code, layer_names,new_value):
         use_legacy_list=[]
         use_schedules_list=[]
         # 'legacy' ve 'schedules' ifadeleri için özel desenler
-        #pattern_legacy = rf"(tf\.keras\.optimizers\.legacy\.\b{layer_names}\b\s*\()((?:[^()]|\([^)]*\))*)\)"
+        
         pattern_legacy = rf"tf\.keras\.optimizers\.legacy\.{layer_names}\([^\)]*\)"
-        #pattern_schedules = rf"(tf\.keras\.optimizers\.schedules\.\b{layer_names}\b\s*\()((?:[^()]|\([^)]*\))*)\)"
+        
         pattern_schedules = rf"tf\.keras\.optimizers\.schedules\.{layer_names}\([^\)]*\)"
         temp_source=source_code
         if re.search(pattern_legacy, source_code):
