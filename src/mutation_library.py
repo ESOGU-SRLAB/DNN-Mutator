@@ -791,6 +791,7 @@ tf_all_list=[
 'beta2',
 'epsilon',
 'decay',
+'gamma',
 'global_step',
 'decay_steps',
 'decay_rate',
@@ -1192,6 +1193,7 @@ tf_all_mutation_code_list = [
 'beta2',
 'epsilon',
 'decay',
+'gamma',
 'global_step',
 'decay_steps',
 'decay_rate',
@@ -5517,7 +5519,7 @@ tf_bias_list = [
     "bias='invalid'",  # Erroneous or edge case
     "bias=None"  # Erroneous or edge case
 ]
-tf_alpha_list = [
+"""tf_alpha_list = [
     "",  # Empty
     "alpha=0.1", 
     "alpha=0.2", 
@@ -5526,6 +5528,37 @@ tf_alpha_list = [
     "alpha=-0.1",  # Erroneous or edge case
     "alpha='invalid'",  # Erroneous or edge case
     "alpha=None"  # Erroneous or edge case
+]"""""
+tf_alpha_list = [
+    "",               # Empty
+    "alpha=0.1",      # Common alpha value
+    "alpha=0.2",      # Common alpha value
+    "alpha=0.3",      # Common alpha value
+    "alpha=0.0",      # No alpha, common case
+    "alpha=-0.1",     # Erroneous or edge case (negative value)
+    "alpha='invalid'",# Erroneous or edge case (non-numeric)
+    "alpha=None",     # Erroneous or edge case
+    "alpha=0.4",      # Common alpha value
+    "alpha=0.5",      # Common alpha value
+    "alpha=0.6",      # Common alpha value
+    "alpha=0.7",      # Common alpha value
+    "alpha=0.8",      # Common alpha value
+    "alpha=0.9",      # Common alpha value
+    "alpha=1.0",      # Maximum alpha
+    "alpha=1.5",      # Edge case
+    "alpha=2.0",      # Edge case
+    "alpha=5.0",      # Edge case
+    "alpha=10.0",     # Edge case
+    "alpha=100.0",    # Edge case
+    "alpha=0.01",     # Small alpha
+    "alpha=0.001",    # Very small alpha
+    "alpha=0.0001",   # Extremely small alpha
+    "alpha=0.00001",  # Extra small alpha
+    "alpha=0.000001", # Extra small alpha
+    "alpha=0.0000001",# Extra small alpha
+    "alpha=0.00000001", # Extra small alpha
+    "alpha=0.000000001",# Extra small alpha
+    "alpha=0.0000000001",# Extra small alpha
 ]
 tf_l1_list = [
     "",  # Empty
@@ -5575,26 +5608,111 @@ tf_beta2_list = [
     "beta2='invalid'", # Erroneous or edge case (non-numeric)
     "beta2=None"  # None can be valid, but included here as an edge case
 ]
+
 tf_epsilon_list = [
-    "",  # Empty
-    "epsilon=1e-7",  # Common value for epsilon to prevent division by zero in algorithms
-    "epsilon=1e-9",  # Smaller epsilon for more precision
-    "epsilon=0.1",   # Larger epsilon for less precision
-    "epsilon=1e-10", # Very small epsilon
-    "epsilon=-1e-7", # Erroneous or edge case (negative value)
-    "epsilon='invalid'", # Erroneous or edge case (non-numeric)
-    "epsilon=None"  # None can be valid, but included here as an edge case
+    "",                 # Boş
+    "epsilon=1e-7",     # Sık kullanılan epsilon değeri
+    "epsilon=1e-9",     # Sık kullanılan epsilon değeri
+    "epsilon=0.1",      # Daha az hassasiyet için büyük epsilon
+    "epsilon=1e-10",    # Çok küçük epsilon
+    "epsilon=-1e-7",    # Hatalı veya sınır durumu (negatif değer)
+    "epsilon='error'",# Hatalı veya sınır durumu (sayısal olmayan)
+    "epsilon=None",     # None bazen geçerli olabilir, ancak buraya bir sınır durumu olarak dahil edilmiştir
+    "epsilon=1e-6",     # Sık kullanılan epsilon değeri
+    "epsilon=1e-8",     # Sık kullanılan epsilon değeri
+    "epsilon=0.01",     # Daha az hassasiyet için büyük epsilon
+    "epsilon=1e-11",    # Çok küçük epsilon
+    "epsilon=-1e-8",    # Hatalı veya sınır durumu (negatif değer)
+    "epsilon=1e-5",     # Sık kullanılan epsilon değeri
+    "epsilon=1e-12",    # Çok küçük epsilon
+    "epsilon=0.001",    # Daha az hassasiyet için büyük epsilon
+    "epsilon=-1e-9",    # Hatalı veya sınır durumu (negatif değer)
+    "epsilon=1e-13",    # Çok küçük epsilon
+    "epsilon=1e-4",     # Sık kullanılan epsilon değeri
+    "epsilon=1e-14",    # Çok küçük epsilon
+    "epsilon=0.0001",   # Daha az hassasiyet için büyük epsilon
+    "epsilon=-1e-10",   # Hatalı veya sınır durumu (negatif değer)
+    "epsilon=1e-15",    # Çok küçük epsilon
+    "epsilon=1e-16",    # Çok küçük epsilon
+    "epsilon=1e-3",     # Daha az hassasiyet için büyük epsilon
+    "epsilon=-1e-11",   # Hatalı veya sınır durumu (negatif değer)
+    "epsilon=1e-2",     # Daha az hassasiyet için büyük epsilon
+    "epsilon=-1e-12",   # Hatalı veya sınır durumu (negatif değer)
+    "epsilon=1e-1",     # Daha az hassasiyet için büyük epsilon
+    "epsilon=-1e-13",   # Hatalı veya sınır durumu (negatif değer)
+    "epsilon=1e-17",    # Çok küçük epsilon
+    "epsilon=1e-18",    # Çok küçük epsilon
+    "epsilon=1e-19",    # Çok küçük epsilon
+    "epsilon=1e-20",    # Çok küçük epsilon
+    "epsilon=1e-21",    # Çok küçük epsilon
+    "epsilon=1e-22",    # Çok küçük epsilon
+    "epsilon=1.0",      # Daha az hassasiyet için büyük epsilon
+    "epsilon=10.0",     # Daha az hassasiyet için büyük epsilon
+    "epsilon=100.0",    # Daha az hassasiyet için büyük epsilon
+    "epsilon=1000.0",   # Daha az hassasiyet için büyük epsilon
+]
+
+tf_gamma_list = [
+    "",                 # Boş
+    "gamma=0.99",       # Yaygın olarak kullanılan bir değer
+    "gamma=0.9",        # Yaygın olarak kullanılan bir değer
+    "gamma=0.95",       # Yaygın olarak kullanılan bir değer
+    "gamma=0.98",       # Yaygın olarak kullanılan bir değer
+    "gamma=0.85",       # Yaygın olarak kullanılan bir değer
+    "gamma=0.8",        # Yaygın olarak kullanılan bir değer
+    "gamma=0.7",        # Yaygın olarak kullanılan bir değer
+    "gamma=0.6",        # Yaygın olarak kullanılan bir değer
+    "gamma=0.5",        # Yaygın olarak kullanılan bir değer
+    "gamma=0.4",        # Yaygın olarak kullanılan bir değer
+    "gamma=0.3",        # Yaygın olarak kullanılan bir değer
+    "gamma=0.2",        # Yaygın olarak kullanılan bir değer
+    "gamma=0.1",        # Yaygın olarak kullanılan bir değer
+    "gamma=0.01",       # Yaygın olarak kullanılan bir değer
+    "gamma=0.001",      # Yaygın olarak kullanılan bir değer
+    "gamma=0.0001",     # Yaygın olarak kullanılan bir değer
+    "gamma=0.00001",    # Yaygın olarak kullanılan bir değer
+    "gamma=0.000001",   # Yaygın olarak kullanılan bir değer
+    "gamma=1.0",        # Yaygın olarak kullanılan bir değer
+    "gamma=10.0",       # Büyük bir değer
+    "gamma=100.0",      # Büyük bir değer
+    "gamma=1000.0",     # Büyük bir değer
+    "gamma=10000.0",    # Büyük bir değer
+    "gamma=100000.0",   # Büyük bir değer
+    "gamma=1000000.0"   # Büyük bir değer
 ]
 tf_decay_list = [
-    "",  # Empty
-    "decay=0.0",  # No decay, common in many optimizers
-    "decay=0.1",  # Moderate decay
-    "decay=0.01", # Smaller decay
-    "decay=0.001",# Very small decay
-    "decay=-0.1", # Erroneous or edge case (negative value)
-    "decay='invalid'", # Erroneous or edge case (non-numeric)
-    "decay=None"  # None can be valid, but included here as an edge case
+    "",              # Boş
+    "decay=0.0",     # Hiçbir bozulma, birçok optimizerda yaygın olarak kullanılır
+    "decay=0.1",     # Orta düzeyde bozulma
+    "decay=0.05",    # Daha küçük bozulma
+    "decay=0.01",    # Daha küçük bozulma
+    "decay=0.005",   # Çok küçük bozulma
+    "decay=0.001",   # Çok küçük bozulma
+    "decay=0.0005",  # Çok çok küçük bozulma
+    "decay=0.0001",  # Çok çok küçük bozulma
+    "decay=1e-4",    # 1e-4 formatında çok küçük bozulma
+    "decay=1e-5",    # 1e-5 formatında çok küçük bozulma
+    "decay=1e-6",    # 1e-6 formatında çok küçük bozulma
+    "decay=1e-7",    # 1e-7 formatında çok küçük bozulma
+    "decay=1e-8",    # 1e-8 formatında çok küçük bozulma
+    "decay=1e-9",    # 1e-9 formatında çok küçük bozulma
+    "decay=1e-10",   # 1e-10 formatında çok küçük bozulma
+    "decay=1e-11",   # 1e-11 formatında çok küçük bozulma
+    "decay=1e-12",   # 1e-12 formatında çok küçük bozulma
+    "decay=1e-13",   # 1e-13 formatında çok küçük bozulma
+    "decay=1e-14",   # 1e-14 formatında çok küçük bozulma
+    "decay=1e-15",   # 1e-15 formatında çok küçük bozulma
+    "decay=-0.1",    # Yanlış veya sınır durum (negatif değer)
+    "decay='invalid'", # Yanlış veya sınır durum (sayısal olmayan)
+    "decay=None",    # None bazen geçerli olabilir, ancak burada bir sınır durumu olarak dahil edilmiştir
+    "decay=0.3",     # Yüksek bir değer
+    "decay=0.4",     # Yüksek bir değer
+    "decay=0.5",     # Yüksek bir değer
+    "decay=0.6",     # Yüksek bir değer
+    "decay=0.9",     # Çok yüksek bir değer
+    "decay=1.0",     # Maksimum değer
 ]
+
 tf_global_step_list = [
     "",  # Empty
     "global_step=0",   # Initial step

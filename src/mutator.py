@@ -891,7 +891,7 @@ def modify_tf_beta2_in_code(source_code, new_beta2):
 
 def modify_tf_epsilon_in_code(source_code, new_epsilon):
     epsilon_list = []
-    pattern = r"epsilon\s*=\s*[^,)]+"
+    pattern = r"epsilon\s*=\s*\d*\.?\d+"
     matches = re.findall(pattern, source_code)
     if matches:
         epsilon_list = [f"{m}" for m in matches]
@@ -901,14 +901,22 @@ def modify_tf_epsilon_in_code(source_code, new_epsilon):
 
 def modify_tf_decay_in_code(source_code, new_decay):
     decay_list = []
-    pattern = r"decay\s*=\s*[^,)]+"
+    pattern = r"decay\s*=\s*\d*\.?\d+"
     matches = re.findall(pattern, source_code)
     if matches:
         decay_list = [f"{m}" for m in matches]
         new_value = f"decay={new_decay}"
         return new_value, decay_list
     return None, []
-
+def modify_tf_gamma_in_code(source_code, new_decay):
+    decay_list = []
+    pattern = r"\bgamma\s*=\s*\d*\.?\d+"
+    matches = re.findall(pattern, source_code)
+    if matches:
+        decay_list = [f"{m}" for m in matches]
+        new_value = f"decay={new_decay}"
+        return new_value, decay_list
+    return None, []
 def modify_tf_global_step_in_code(source_code, new_global_step):
     global_step_list = []
     pattern = r"global_step\s*=\s*[^,)]+"
@@ -941,7 +949,7 @@ def modify_tf_decay_rate_in_code(source_code, new_decay_rate):
 
 def modify_tf_capacity_in_code(source_code, new_capacity):
     capacity_list = []
-    pattern = r"capacity\s*=\s*[^,)]+"
+    pattern = r" capacity\s*=\s*[^,)]+"
     matches = re.findall(pattern, source_code)
     if matches:
         capacity_list = [f"capacity={m}" for m in matches]

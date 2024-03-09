@@ -24,6 +24,7 @@ def execute_original_source_code(source_code_path):
         #accuracy_match = re.search(r'Accuracy\s*:\s*(\d+\.\d+)\s*%', output)
         accuracy_match = re.search(r'Accuracy\s*[:=]?\s*(\d+(\.\d+)?)\s*%', output)
         accuracy_match_r2_score=re.search(r'r2 score:\s*(\d+\.\d+)', output)
+        accuracy_match_r2_score=re.search(r'Reward_Max:\s*(\d+)', output)
         print(accuracy_match_r2_score)
 
         if accuracy_match_r2_score:
@@ -59,6 +60,8 @@ def execute_file(threshold, mutant_files_save_location):
             #accuracy_match = re.search(r'Accuracy\s*:\s*(\d+\.\d+)\s*%', output)
             accuracy_match = re.search(r'Accuracy\s*[:=]?\s*(\d+(\.\d+)?)\s*%', output)
             accuracy_match_r2_score=re.search(r'r2 score:\s*(\d+\.\d+)', output)
+            accuracy_match_r2_score=re.search(r'Reward_Max:\s*(\d+)', output)
+            
             if accuracy_match_r2_score:
                 accuracy_value = float(accuracy_match_r2_score.group(1))
                 print(f'Found the Metric: {accuracy_match_r2_score}')
@@ -66,8 +69,8 @@ def execute_file(threshold, mutant_files_save_location):
                 mutant_file_and_accuracy = (
                     f"Mutant File: {mutant_file} Value: {accuracy_value}")
                 accuracy_list.append(mutant_file_and_accuracy)
-
-                if accuracy_value < threshold:
+                #RL için value tresholddan büyükse killed olur 
+                if accuracy_value > threshold:
                     killed.append(mutant_file)
                 else:
                     survived.append(mutant_file)
@@ -104,7 +107,7 @@ def find_accuracy_lines(file_name):
     try:
         with open(file_name, 'r') as file:
             for line in file:
-                if ('Accuracy' in line or 'accuracy' in line or 'r2 score' in line) and not line.strip().startswith('#'):
+                if ('Accuracy' in line or 'accuracy' in line or 'r2 score' in line or 'Reward_Max' in line) and not line.strip().startswith('#'):
                     matching_lines.append(line.strip())
 
     except FileNotFoundError:

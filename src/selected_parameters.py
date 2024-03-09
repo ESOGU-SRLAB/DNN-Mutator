@@ -1649,6 +1649,10 @@ def layer_select_mutate(mutate_selected_parameters,source_code ):
             change_parameter_with = mutation_library.tf_decay_list
             mutated_line, matches = mutator.modify_tf_decay_in_code(source_code, change_parameter_with)
 
+        elif mutate_selected_parameters == "gamma":
+            change_parameter_with = mutation_library.tf_gamma_list
+            mutated_line, matches = mutator.modify_tf_gamma_in_code(source_code, change_parameter_with)
+
         elif mutate_selected_parameters == "global_step":
             change_parameter_with = mutation_library.tf_global_step_list
             mutated_line, matches = mutator.modify_tf_global_step_in_code(source_code, change_parameter_with)

@@ -1363,6 +1363,7 @@ class MainWindow(QMainWindow):
         mutation_path = self.ui.plainTextEdit_mutant_path.toPlainText()
         file_directory = self.ui.plainTextEdit_dnn_source.toPlainText()
         # Iterate through the selected items
+        mutate_counter = 0
         for item in selected_items:
             mutate_selected_parameters = item
 
@@ -1372,7 +1373,7 @@ class MainWindow(QMainWindow):
                 if matches:
                     mutated_code += mutated_line + "\n"
 
-            mutate_counter = 0
+            
             match_counts = {}  # Sözlük oluşturuldu
             for mutate_code in matches:
                 # Eğer mutate_code match_counts'ta yoksa, 0 olarak başlat
@@ -1383,26 +1384,30 @@ class MainWindow(QMainWindow):
 
                 for mutation in mutation_fault_list:
                     if item not in mutation_library.tf_hyper_parameters_mutation_code_list:
-                        mutate_counter += 1
+                        
                         fault = {
                             "Fault": {
+                                "Mutant_Number": mutate_counter,
                                 "File_Directory": file_directory,
                                 "Source_Code": mutate_code,
                                 "Mutate_Code": mutation,
                                 "Match_Number": match_counts[mutate_code]  # Sözlükten alınan sayı
                             }
                         }
+                        mutate_counter += 1
                         all_faults.append(fault)
                     else:
-                        mutate_counter += 1
+                        
                         fault = {
                             "Fault": {
+                                "Mutant_Number": mutate_counter,
                                 "File_Directory": file_directory,
                                 "Source_Code": mutate_code,
                                 "Mutate_Code": mutated_line + mutation + ")",
                                 "Match_Number": match_counts[mutate_code]  # Sözlükten alınan sayı
                             }
                         }
+                        mutate_counter += 1
                         all_faults.append(fault)
 
 
@@ -1439,7 +1444,7 @@ class MainWindow(QMainWindow):
         killed_results=""
         mutation_results=""
         if matching_lines:
-            print("Execution process is started... Just wait for accuracy value!")
+            print("Execution process is started... Just wait for the metric value!")
             threshold = dnn_execution.execute_original_source_code(file_name)
             print(threshold)
             if threshold:
@@ -1457,13 +1462,13 @@ class MainWindow(QMainWindow):
                 self.ui.plainTextEdit_DNN_Survived.setPlainText(survived_results)
                 self.ui.plainTextEdit_DNN_Killed.setPlainText(killed_results)
                 self.ui.plainTextEdit_DNN_Mutation_Results.setPlainText(mutation_results)
-                pdf_all_in_one="The Source Code Path: "+file_directory+"\n""Survived_results:"+"\n"+survived_results+"\n"+"Killed_results:"+"\n"+killed_results+"\n"+"Mutation_results:"+"\n"+mutation_results
+                pdf_all_in_one="The threshold is:"+str(threshold)+"\n"+"The Source Code Path: "+file_directory+"\n""Survived_results:"+"\n"+survived_results+"\n"+"Killed_results:"+"\n"+killed_results+"\n"+"Mutation_results:"+"\n"+mutation_results
                 dnn_execution.create_pdf(pdf_all_in_one,mutation_path+"/Mutation_Results.pdf")
             else:
                 print("Please be sure to use original source code which has"
-                    " accuracy value!")
+                    " the metric")
         else:
-            print("Please ensure the script contains an accuracy line.")
+            print("Please ensure the script contains an the metric line.")
         
 
         

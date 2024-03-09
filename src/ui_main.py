@@ -15,11 +15,12 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QCheckBox, QFrame, QGridLayout,
-    QHBoxLayout, QHeaderView, QLabel, QLayout,
-    QListWidget, QListWidgetItem, QMainWindow, QPlainTextEdit,
-    QProgressBar, QPushButton, QSizePolicy, QSpacerItem,
-    QStackedWidget, QTreeView, QVBoxLayout, QWidget)
+from PySide6.QtWidgets import (QApplication, QCheckBox, QComboBox, QFrame,
+    QGridLayout, QHBoxLayout, QHeaderView, QLabel,
+    QLayout, QListWidget, QListWidgetItem, QMainWindow,
+    QPlainTextEdit, QProgressBar, QPushButton, QSizePolicy,
+    QSpacerItem, QStackedWidget, QTreeView, QVBoxLayout,
+    QWidget)
 import resources_rc
 
 class Ui_MainWindow(object):
@@ -3938,7 +3939,7 @@ class Ui_MainWindow(object):
         self.plainTextEdit_53.setStyleSheet(u"background-color: rgb(52, 59, 72);")
         self.pushButton_dnn_mutate = QPushButton(self.frame_4)
         self.pushButton_dnn_mutate.setObjectName(u"pushButton_dnn_mutate")
-        self.pushButton_dnn_mutate.setGeometry(QRect(1180, 300, 151, 31))
+        self.pushButton_dnn_mutate.setGeometry(QRect(1220, 300, 111, 31))
         self.pushButton_dnn_mutate.setStyleSheet(u"background-color: rgb(52, 59, 72);")
         self.plainTextEdit_mutated_code = QPlainTextEdit(self.frame_4)
         self.plainTextEdit_mutated_code.setObjectName(u"plainTextEdit_mutated_code")
@@ -4425,7 +4426,7 @@ class Ui_MainWindow(object):
         self.label_77.setGeometry(QRect(580, 10, 181, 16))
         self.progressBar_Mutation = QProgressBar(self.frame_4)
         self.progressBar_Mutation.setObjectName(u"progressBar_Mutation")
-        self.progressBar_Mutation.setGeometry(QRect(950, 300, 211, 23))
+        self.progressBar_Mutation.setGeometry(QRect(950, 300, 151, 31))
         self.progressBar_Mutation.setValue(0)
         self.listWidget_dnn_selected_snippet = QListWidget(self.frame_4)
         self.listWidget_dnn_selected_snippet.setObjectName(u"listWidget_dnn_selected_snippet")
@@ -4924,6 +4925,13 @@ class Ui_MainWindow(object):
         self.plainTextEdit_54.setObjectName(u"plainTextEdit_54")
         self.plainTextEdit_54.setGeometry(QRect(1040, 380, 291, 131))
         self.plainTextEdit_54.setStyleSheet(u"background-color: rgb(52, 59, 72);")
+        self.comboBox = QComboBox(self.frame_4)
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.setObjectName(u"comboBox")
+        self.comboBox.setGeometry(QRect(1110, 300, 101, 31))
+        self.comboBox.setStyleSheet(u"background-color: rgb(52, 59, 72);")
         self.stackedWidget.addWidget(self.page)
 
         self.verticalLayout_15.addWidget(self.stackedWidget)
@@ -7693,6 +7701,10 @@ class Ui_MainWindow(object):
 "print(f'Accuracy: {test_accuracy * 100:.2f}%')\n"
 "Thus, the printed result should look like\n"
 "'Test Accuracy: 95.14%' or 'Accuracy: 95.14%', etc.\"", None))
+        self.comboBox.setItemText(0, QCoreApplication.translate("MainWindow", u"LSTM", None))
+        self.comboBox.setItemText(1, QCoreApplication.translate("MainWindow", u"Accuracy", None))
+        self.comboBox.setItemText(2, QCoreApplication.translate("MainWindow", u"RL", None))
+
         self.creditsLabel.setText("")
         self.version.setText(QCoreApplication.translate("MainWindow", u"v1.0", None))
     # retranslateUi

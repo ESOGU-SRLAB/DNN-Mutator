@@ -8805,9 +8805,9 @@ color:white;</string>
                        <widget class="QPushButton" name="pushButton_dnn_mutate">
                         <property name="geometry">
                          <rect>
-                          <x>1180</x>
+                          <x>1220</x>
                           <y>300</y>
-                          <width>151</width>
+                          <width>111</width>
                           <height>31</height>
                          </rect>
                         </property>
@@ -11192,8 +11192,8 @@ color:white;</string>
                          <rect>
                           <x>950</x>
                           <y>300</y>
-                          <width>211</width>
-                          <height>23</height>
+                          <width>151</width>
+                          <height>31</height>
                          </rect>
                         </property>
                         <property name="value">
@@ -13606,6 +13606,34 @@ print(f'Accuracy: {test_accuracy * 100:.2f}%')
 Thus, the printed result should look like
 'Test Accuracy: 95.14%' or 'Accuracy: 95.14%', etc.&quot;</string>
                         </property>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox">
+                        <property name="geometry">
+                         <rect>
+                          <x>1110</x>
+                          <y>300</y>
+                          <width>101</width>
+                          <height>31</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">background-color: rgb(52, 59, 72);</string>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>LSTM</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Accuracy</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>RL</string>
+                         </property>
+                        </item>
                        </widget>
                       </widget>
                      </widget>
