@@ -1450,7 +1450,7 @@ class MainWindow(QMainWindow):
             if threshold:
                 mutant_files_save_location = dnn_execution.mutation_process(
                     file_name, fiplan_json_dir,mutation_path)
-                killed, survived, accuracy_list = dnn_execution.execute_file(
+                killed, survived, accuracy_list,survived_count,killed_count = dnn_execution.execute_file(
                     threshold, mutant_files_save_location)
                 dnn_execution.show_results(killed,survived,accuracy_list)
                 for survived_code in survived:
@@ -1462,7 +1462,7 @@ class MainWindow(QMainWindow):
                 self.ui.plainTextEdit_DNN_Survived.setPlainText(survived_results)
                 self.ui.plainTextEdit_DNN_Killed.setPlainText(killed_results)
                 self.ui.plainTextEdit_DNN_Mutation_Results.setPlainText(mutation_results)
-                pdf_all_in_one="The threshold is:"+str(threshold)+"\n"+"The Source Code Path: "+file_directory+"\n""Survived_results:"+"\n"+survived_results+"\n"+"Killed_results:"+"\n"+killed_results+"\n"+"Mutation_results:"+"\n"+mutation_results
+                pdf_all_in_one="The threshold is:"+str(threshold)+"\n"+"Killed Mutant number:"+str(killed_count)+"\n"+"Survived Mutant number:"+str(survived_count)+"\n"+"The Source Code Path: "+file_directory+"\n""Survived_results:"+"\n"+survived_results+"\n"+"Killed_results:"+"\n"+killed_results+"\n"+"Mutation_results:"+"\n"+mutation_results
                 dnn_execution.create_pdf(pdf_all_in_one,mutation_path+"/Mutation_Results.pdf")
             else:
                 print("Please be sure to use original source code which has"

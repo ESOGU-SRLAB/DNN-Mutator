@@ -49,6 +49,8 @@ def execute_file(threshold, mutant_files_save_location):
         the threshold and accuracy list.
     """
     killed, survived, accuracy_list = [], [], []
+    killed_count=0
+    survived_count=0
     for mutant_file in mutant_files_save_location:
         run_command = f'python3 {mutant_file}'
 
@@ -70,13 +72,15 @@ def execute_file(threshold, mutant_files_save_location):
                     f"Mutant File: {mutant_file} Value: {accuracy_value}")
                 accuracy_list.append(mutant_file_and_accuracy)
                 #RL için value tresholddan büyükse killed olur 
-                if accuracy_value > threshold:
+                if accuracy_value+1 > threshold:
                     killed.append(mutant_file)
+                    killed_count=killed_count+1
                 else:
                     survived.append(mutant_file)
-
+                    survived_count=survived_count+1
             else:
                 killed.append(mutant_file)
+                killed_count=killed_count+1
                 mutant_file_and_accuracy = (
                     "Mutant File: {} No Value:".format(mutant_file))
                 accuracy_list.append(mutant_file_and_accuracy)
@@ -88,7 +92,7 @@ def execute_file(threshold, mutant_files_save_location):
                     f"Mutant File: {mutant_file} Accuracy: Exception.")
                 accuracy_list.append(mutant_file_and_accuracy)
 
-    return killed, survived, accuracy_list
+    return killed, survived, accuracy_list,survived_count,killed_count
 
 
 def find_accuracy_lines(file_name):
