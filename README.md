@@ -50,7 +50,7 @@ IM-FIT's scans can be tailored to specific workloads and chosen code snippets. O
 
 During the test run, mutants are categorized as either killed or survived when compared to the original code. The primary aim of the testing process is to kill all mutants. If any mutants survive, it indicates that the software works correctly despite the fault.
 
-![Image of IM-FIT ROS Page](images/imfit-ros-page.png)
+![Image of IM-FIT Dnn Mutation Module Page](images/imfit-dnn-page.png)
 
 <p align="center">
         <b><i>Fig 4. IM-FIT ROS Page</i></b>
@@ -60,21 +60,17 @@ IM-FIT carries out mutation operations on ROS files based on Python, in accordan
 
 ### Credits
 
-<a href="http://valu3s.eu">
+<a href="https://1004.tubitak.gov.tr/tr/node/95">
   <img align=left img src="https://upload.wikimedia.org/wikipedia/tr/d/d0/TUBITAK-Logo.jpg" 
        alt="tübitak_logo" height="100" >
 </a>
 
 ---
 
-This work is supported by [TÜBİTAK](https://www.tubitak.gov.tr/) Project under grant number 120N803 which conducted by the İnovasyon Mühendislik.
+This study has been supported by the Scientific and Technological Research Council of Turkey (TÜBİTAK) under the project number 22AG040, titled "Advanced Technologies Platform for Sustainable Cities (SÜİT)".
 
 ---
 
-<a href="http://valu3s.eu">
-  <img align=right img src="https://valu3s.eu/wp-content/uploads/2020/04/VALU3S_green_transparent-1024x576.png" 
-       alt="valu3s_logo" height="100" >
-</a>
 
 This work is also done by [Inovasyon Muhendislik](https://www.inovasyonmuhendislik.com/) and [ESOGU-ASRLAB](https://srlab.ogu.edu.tr/) under [VALU3S](https://valu3s.eu) project. This project has received funding from the [ECSEL](https://www.ecsel.eu) Joint Undertaking (JU) under grant agreement No 876852. The JU receives support from the European Union’s Horizon 2020 research and innovation programme and Austria, Czech Republic, Germany, Ireland, Italy, Portugal, Spain, Sweden, Turkey.
 
