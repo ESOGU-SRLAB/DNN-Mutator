@@ -50,7 +50,7 @@ IM-FIT's scans can be tailored to specific workloads and chosen code snippets. O
 
 During the test run, mutants are categorized as either killed or survived when compared to the original code. The primary aim of the testing process is to kill all mutants. If any mutants survive, it indicates that the software works correctly despite the fault.
 
-![Image of IM-FIT Dnn Mutation Module Page](images/imfit-dnn-page.png)
+![Image of IM-FIT Dnn Mutation Module Page](src/images/images/imfit-dnn-page.png)
 
 <p align="center">
         <b><i>Fig 4. IM-FIT ROS Page</i></b>
