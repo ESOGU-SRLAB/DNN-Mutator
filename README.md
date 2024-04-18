@@ -53,7 +53,7 @@ During the test run, mutants are categorized as either killed or survived when c
 ![Image of IM-FIT Dnn Mutation Module Page](images/imfit-dnn-page.png)
 
 <p align="center">
-        <b><i>Fig 4. IM-FIT ROS Page</i></b>
+        <b><i>Fig 4. IM-FIT DNN Mutation Module Page</i></b>
 </p>
 
 IM-FIT carries out mutation operations on ROS files based on Python, in accordance with the user's requests and the collected data. Once the mutants are generated, IM-FIT executes them on the execution page. Once the execution process is completed, the user can access the monitoring page to obtain detailed information on the V&V process.
