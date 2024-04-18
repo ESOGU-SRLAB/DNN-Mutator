@@ -56,7 +56,7 @@ During the test run, mutants are categorized as either killed or survived when c
         <b><i>Fig 4. IM-FIT DNN Mutation Module Page</i></b>
 </p>
 
-IM-FIT carries out mutation operations on ROS files based on Python, in accordance with the user's requests and the collected data. Once the mutants are generated, IM-FIT executes them on the execution page. Once the execution process is completed, the user can access the monitoring page to obtain detailed information on the V&V process.
+The continuous development of artificial intelligence and deep learning systems has increased the requirements for training and testing these technologies. In line with this requirement, in order to improve the reliability and robustness of Deep Neural Networks (DNN), the Deep Mutation Module performs customizable tests, error injection and result analysis according to the user's needs.
 
 ### Credits
 
