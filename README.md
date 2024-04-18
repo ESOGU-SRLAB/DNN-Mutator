@@ -2,7 +2,7 @@
 
 ![repo_size](https://img.shields.io/github/repo-size/inomuh/imfit) ![Apache-2.0 License](https://img.shields.io/github/license/inomuh/imfit?color=blue) ![lang](https://img.shields.io/github/languages/top/inomuh/imfit)
 
-IM-FIT applies mutation testing to Python and Python-based ROS file types.
+IM-FIT applies mutation testing to Python.
 
 ## Installations
 
@@ -71,8 +71,6 @@ This study has been supported by the Scientific and Technological Research Counc
 
 ---
 
-
-This work is also done by [Inovasyon Muhendislik](https://www.inovasyonmuhendislik.com/) and [ESOGU-ASRLAB](https://srlab.ogu.edu.tr/) under [VALU3S](https://valu3s.eu) project. This project has received funding from the [ECSEL](https://www.ecsel.eu) Joint Undertaking (JU) under grant agreement No 876852. The JU receives support from the European Union’s Horizon 2020 research and innovation programme and Austria, Czech Republic, Germany, Ireland, Italy, Portugal, Spain, Sweden, Turkey.
 
 ### License
 
