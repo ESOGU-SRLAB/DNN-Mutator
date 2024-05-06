@@ -8,35 +8,47 @@ import shutil
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 
-def execute_original_source_code(source_code_path):
+def execute_original_source_code(source_code_path, user_selection):
     """
     Executes a given Python script and prints the found accuracy from the
     original source code.
     """
-    run_command = f'python3 {source_code_path}'
+    run_command = f'python {source_code_path}'
+    print("Run Command: ", run_command)
 
     try:
         result = subprocess.run(
             run_command, shell=True, capture_output=True, text=True)
         output = result.stdout
-        print(output)
-        #accuracy_match = re.search(r'Accuracy: (\d+\.\d+)%', output)
-        #accuracy_match = re.search(r'Accuracy\s*:\s*(\d+\.\d+)\s*%', output)
-        accuracy_match = re.search(r'Accuracy\s*[:=]?\s*(\d+(\.\d+)?)\s*%', output)
-        accuracy_match_r2_score=re.search(r'r2 score:\s*(\d+\.\d+)', output)
-        accuracy_match_r2_score=re.search(r'Reward_Max:\s*(\d+)', output)
-        print(accuracy_match_r2_score)
+        print("Output: ", output)
+        #accuracy_match_metric = re.search(r'Accuracy: (\d+\.\d+)%', output)
+        #accuracy_match_metric = re.search(r'Accuracy\s*:\s*(\d+\.\d+)\s*%', output)
 
-        if accuracy_match_r2_score:
-            accuracy_value = float(accuracy_match_r2_score.group(1))
-            print(f'The Accuracy of Original Source Code: {accuracy_match_r2_score}')
+        print("USER SELECTION: ", user_selection)
+
+        if user_selection == "Accuracy":
+            accuracy_match_metric = re.search(r'Accuracy\s*[:=]?\s*(\d+(\.\d+)?)\s*%', output)
+        elif user_selection == "LSTM":
+            print("r2 score aranıyor, aranan çıktı", output)
+            accuracy_match_metric = re.search(r'r2 score:\s*(-?\d+\.?\d*)', output)
+            print("## LSTM Metric Control ##", accuracy_match_metric)
+        elif user_selection == "RL":
+            accuracy_match_metric=re.search(r'Reward_Max:\s*(\d+)', output)
+            print("## RL Metric Control ##", accuracy_match_metric)
+        else:
+            print("None of the AI Model for the given selection. Please select the correct AI Model.")
+
+        if accuracy_match_metric:
+            accuracy_value = float(accuracy_match_metric.group(1))
+            print(f'The Accuracy of Original Source Code: {accuracy_match_metric}')
+            print("Accuracy Value", accuracy_value)
             return accuracy_value
 
     except Exception as e:
         print(f'An error occurred while running the original source code: {e}')
 
 
-def execute_file(threshold, mutant_files_save_location):
+def execute_file(threshold, mutant_files_save_location, user_selection):
     """
     Executes a given Python script and prints the found accuracy.
 
@@ -55,29 +67,64 @@ def execute_file(threshold, mutant_files_save_location):
         run_command = f'python3 {mutant_file}'
 
         try:
+            # Run the command and capture the output with subprocess
             result = subprocess.run(
                 run_command, shell=True, capture_output=True, text=True)
+            # Get the output of the command
             output = result.stdout
 
-            #accuracy_match = re.search(r'Accuracy\s*:\s*(\d+\.\d+)\s*%', output)
-            accuracy_match = re.search(r'Accuracy\s*[:=]?\s*(\d+(\.\d+)?)\s*%', output)
-            accuracy_match_r2_score=re.search(r'r2 score:\s*(\d+\.\d+)', output)
-            accuracy_match_r2_score=re.search(r'Reward_Max:\s*(\d+)', output)
+            # accuracy_match = re.search(r'Accuracy\s*:\s*(\d+\.\d+)\s*%', output)
+            # accuracy_match founds the accuracy value in the output with regex search function
+            if user_selection == "CNN":
+                accuracy_match_r2_score = re.search(r'Accuracy\s*[:=]?\s*(\d+(\.\d+)?)\s*%', output)
+            # Which accuracy match r2 score variable is used to find the r2 score value in the output with regex search function?
+            elif user_selection == "LSTM":
+                accuracy_match_r2_score=re.search(r'r2 score:\s*(\d+\.\d+)', output)
+            elif user_selection == "RL":
+                accuracy_match_r2_score=re.search(r'Reward_Max:\s*(\d+)', output)
+            else:
+                print("None of the AI Model for the given selection. Please select the correct AI Model.")
             
             if accuracy_match_r2_score:
-                accuracy_value = float(accuracy_match_r2_score.group(1))
-                print(f'Found the Metric: {accuracy_match_r2_score}')
+                if user_selection == "CNN" or user_selection == "LSTM":
+                    # If the accuracy is found, convert it to a float
+                    accuracy_value = float(accuracy_match_r2_score.group(1))
+                    # When the accuracy is found, print the accuracy
+                    print(f'Found the Metric: {accuracy_match_r2_score}')
 
-                mutant_file_and_accuracy = (
-                    f"Mutant File: {mutant_file} Value: {accuracy_value}")
-                accuracy_list.append(mutant_file_and_accuracy)
-                #RL için value tresholddan büyükse killed olur 
-                if accuracy_value+1 > threshold:
-                    killed.append(mutant_file)
-                    killed_count=killed_count+1
-                else:
-                    survived.append(mutant_file)
-                    survived_count=survived_count+1
+                    mutant_file_and_accuracy = (
+                        f"Mutant File: {mutant_file} Value: {accuracy_value}")
+                    accuracy_list.append(mutant_file_and_accuracy)
+                    #RL için value tresholddan büyükse killed olur 
+                    if accuracy_value < threshold:
+                        # If the accuracy is greater than the threshold, the mutant is killed
+                        killed.append(mutant_file)
+                        killed_count=killed_count+1
+                    else:
+                        # If the accuracy is less than the threshold, the mutant is survived
+                        survived.append(mutant_file)
+                        survived_count=survived_count+1
+                if user_selection == "RL":
+                    # If the accuracy is found, convert it to a float
+                    accuracy_value = float(accuracy_match_r2_score.group(1))
+                    # When the accuracy is found, print the accuracy
+                    print(f'Found the Metric: {accuracy_match_r2_score}')
+
+                    mutant_file_and_accuracy = (
+                        f"Mutant File: {mutant_file} Value: {accuracy_value}")
+                    accuracy_list.append(mutant_file_and_accuracy)
+                    #RL için value tresholddan büyükse killed olur 
+                    if accuracy_value > threshold:
+                        # If the accuracy is greater than the threshold, the mutant is killed
+                        killed.append(mutant_file)
+                        killed_count=killed_count+1
+                    else:
+                        # If the accuracy is less than the threshold, the mutant is survived
+                        survived.append(mutant_file)
+                        survived_count=survived_count+1
+                        
+                        
+
             else:
                 killed.append(mutant_file)
                 killed_count=killed_count+1
@@ -88,6 +135,7 @@ def execute_file(threshold, mutant_files_save_location):
         except Exception as e:
             if mutant_file not in killed:
                 killed.append(mutant_file)
+                killed_count=killed_count+1
                 mutant_file_and_accuracy = (
                     f"Mutant File: {mutant_file} Accuracy: Exception.")
                 accuracy_list.append(mutant_file_and_accuracy)

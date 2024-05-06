@@ -1287,6 +1287,9 @@ class MainWindow(QMainWindow):
         self.ui.btn_remove_fi.clicked.connect(self.buttonClick)
         self.ui.btn_create_mutants.clicked.connect(self.development_process_info)
 
+        #ComboBox Selection
+        # self.ui.comboBox.currentIndexChanged.connect(self.comboBoxSelection)
+
         # DOCKER SETTINGS BUTTONS
         self.ui.btn_create_container.clicked.connect(
             self.development_process_info
@@ -1445,13 +1448,15 @@ class MainWindow(QMainWindow):
         mutation_results=""
         if matching_lines:
             print("Execution process is started... Just wait for the metric value!")
-            threshold = dnn_execution.execute_original_source_code(file_name)
+            user_selection = self.ui.comboBox.currentText()
+            print("User Selection is: ", user_selection)
+            threshold = dnn_execution.execute_original_source_code(file_name, user_selection)
             print(threshold)
             if threshold:
                 mutant_files_save_location = dnn_execution.mutation_process(
                     file_name, fiplan_json_dir,mutation_path)
                 killed, survived, accuracy_list,survived_count,killed_count = dnn_execution.execute_file(
-                    threshold, mutant_files_save_location)
+                    threshold, mutant_files_save_location, user_selection)
                 dnn_execution.show_results(killed,survived,accuracy_list)
                 for survived_code in survived:
                     survived_results=survived_results+survived_code+ "\n"

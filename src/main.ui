@@ -13626,7 +13626,7 @@ Thus, the printed result should look like
                         </item>
                         <item>
                          <property name="text">
-                          <string>Accuracy</string>
+                          <string>CNN</string>
                          </property>
                         </item>
                         <item>
