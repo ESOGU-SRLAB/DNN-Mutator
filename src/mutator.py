@@ -171,7 +171,7 @@ def replace_optimizer_in_code(source_code, new_shape):
     
     optimizer_list=[]
     pattern = r"optimizer\s*=\s*'\w+'"
-
+    pattern = r"(optimizer\s*=\s*['\"]\w+['\"])"
     # Yeni değerle değiştir
     
     matches = re.findall(pattern, source_code)
@@ -188,7 +188,7 @@ def replace_loss_in_code(source_code, new_shape):
     
     loss_list=[]
     pattern = r"loss\s*=\s*'\w+'"
-
+    pattern = r"(loss\s*=\s*['\"]\w+['\"])"
     # Yeni değerle değiştir
     
     matches = re.findall(pattern, source_code)
@@ -280,6 +280,7 @@ def modify_tf_activation_in_code(source_code, layer_names, new_value):
         temp_source = source_code
         # Katman adını ve sonrasında gelen parantezli ifadeyi bulmak için regex deseni
         pattern = r"activation='[^']*'"
+        #pattern = r"(activation\s*=\s*['\"]\w+['\"])"
         activation_list=[]
         # Find matches using regex
         matches = re.findall(pattern, source_code)

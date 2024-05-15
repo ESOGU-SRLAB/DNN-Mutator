@@ -7702,7 +7702,7 @@ class Ui_MainWindow(object):
 "Thus, the printed result should look like\n"
 "'Test Accuracy: 95.14%' or 'Accuracy: 95.14%', etc.\"", None))
         self.comboBox.setItemText(0, QCoreApplication.translate("MainWindow", u"LSTM", None))
-        self.comboBox.setItemText(1, QCoreApplication.translate("MainWindow", u"Accuracy", None))
+        self.comboBox.setItemText(1, QCoreApplication.translate("MainWindow", u"CNN", None))
         self.comboBox.setItemText(2, QCoreApplication.translate("MainWindow", u"RL", None))
 
         self.creditsLabel.setText("")

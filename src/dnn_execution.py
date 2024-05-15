@@ -25,8 +25,8 @@ def execute_original_source_code(source_code_path, user_selection):
         #accuracy_match_metric = re.search(r'Accuracy\s*:\s*(\d+\.\d+)\s*%', output)
 
         print("USER SELECTION: ", user_selection)
-
-        if user_selection == "Accuracy":
+        accuracy_match_metric = None
+        if user_selection == "CNN":
             accuracy_match_metric = re.search(r'Accuracy\s*[:=]?\s*(\d+(\.\d+)?)\s*%', output)
         elif user_selection == "LSTM":
             print("r2 score aranıyor, aranan çıktı", output)
