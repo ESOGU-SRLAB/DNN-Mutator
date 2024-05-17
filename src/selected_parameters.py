@@ -1672,7 +1672,9 @@ def layer_select_mutate(mutate_selected_parameters,source_code ):
         elif mutate_selected_parameters == "max_to_keep":
             change_parameter_with = mutation_library.tf_max_to_keep_list
             mutated_line, matches = mutator.modify_tf_max_to_keep_in_code(source_code, change_parameter_with)
-
+        elif mutate_selected_parameters == "transformer_maxlen":
+            change_parameter_with = mutation_library.tf_maxlen_values
+            mutated_line, matches = mutator.modify_maxlen_in_code(source_code, change_parameter_with)
 
 
         

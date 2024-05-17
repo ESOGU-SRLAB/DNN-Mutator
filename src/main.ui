@@ -11073,6 +11073,11 @@ color:white;</string>
                           <string>max_to_keep</string>
                          </property>
                         </item>
+                        <item>
+                         <property name="text">
+                          <string>transformer_maxlen</string>
+                         </property>
+                        </item>
                        </widget>
                        <widget class="QLabel" name="label_25">
                         <property name="geometry">
@@ -13381,6 +13386,11 @@ color:white;</string>
                         <item>
                          <property name="text">
                           <string>max_to_keep</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>transformer_maxlen</string>
                          </property>
                         </item>
                        </widget>

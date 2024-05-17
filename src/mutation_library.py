@@ -797,6 +797,7 @@ tf_all_list=[
 'decay_rate',
 'capacity',
 'max_to_keep',
+'transformer_maxlen',
 'tf.keras.layers.AbstractRNNCell()',
 'tf.keras.layers.Activation()',
 'tf.keras.layers.ActivityRegularization()',
@@ -1199,6 +1200,7 @@ tf_all_mutation_code_list = [
 'decay_rate',
 'capacity',
 'max_to_keep',
+'transformer_maxlen',
 'kernel_regularizer',
 'layers.AbstractRNNCell()',
 'layers.Activation()',
@@ -5762,4 +5764,11 @@ tf_max_to_keep_list = [
     "max_to_keep=-1", # Erroneous or edge case (negative value)
     "max_to_keep='invalid'", # Erroneous or edge case (non-numeric)
     "max_to_keep=None"  # None can be valid, but included here as an edge case
+]
+tf_maxlen_values = [
+    "64",    # Commonly used for short sequences
+    "128",   # Preferred for medium-length sequences
+    "256",   # Used for longer sequences
+    "512",   # For very long sequences or high resolution
+    "1024"   # For extremely long sequences or detailed analysis
 ]
