@@ -797,6 +797,7 @@ tf_all_list=[
 'decay_rate',
 'capacity',
 'max_to_keep',
+'transformer_vocab_size',
 'transformer_maxlen',
 'tf.keras.layers.AbstractRNNCell()',
 'tf.keras.layers.Activation()',
@@ -1200,6 +1201,7 @@ tf_all_mutation_code_list = [
 'decay_rate',
 'capacity',
 'max_to_keep',
+'transformer_vocab_size',
 'transformer_maxlen',
 'kernel_regularizer',
 'layers.AbstractRNNCell()',
@@ -5770,5 +5772,23 @@ tf_maxlen_values = [
     "128",   # Preferred for medium-length sequences
     "256",   # Used for longer sequences
     "512",   # For very long sequences or high resolution
-    "1024"   # For extremely long sequences or detailed analysis
+    "1024",  # For extremely long sequences or detailed analysis
+    "32",    # For very short sequences, often used in simple tasks
+    "2048",  # For very long sequences in detailed analysis
+    "4096",  # For extremely detailed and extensive sequences
+    "8192",  # For very large-scale sequences, rarely used
+    "16384"  # For experimental or very specific high-resolution tasks
+]
+
+tf_vocab_size_values = [
+    "8000",   # Small vocabularies, often used in mobile applications
+    "16000",  # Medium-sized vocabularies, suitable for many common NLP tasks
+    "32000",  # Larger vocabularies, often used for complex models
+    "50000",  # Very large vocabularies, used for extensive text corpora
+    "64000",  # Extremely large vocabularies, for high precision and detailed analysis
+    "10000",  # Commonly used for small to medium-sized vocabularies
+    "20000",  # Preferred for slightly larger vocabularies
+    "30000",  # Used for large vocabularies
+    "75000",  # For very extensive text corpora
+    "100000"  # For extremely large vocabularies or detailed analysis
 ]

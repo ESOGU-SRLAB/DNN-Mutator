@@ -1002,3 +1002,36 @@ def modify_maxlen_in_code(source_code, new_value):
         return new_source_code, first_param_list
     else:
         return None, []
+
+def modify_vocab_size_in_code(source_code, new_value):
+    second_param_list = []
+    pattern = r"(create_transformer_model\s*\()([^)]*)(\))"
+    
+    # Kaynak kodu satır satır işleyerek ilerleyelim
+    lines = source_code.split('\n')
+    new_lines = []
+    modified = False
+    
+    for line in lines:
+        if 'def create_transformer_model' in line:
+            new_lines.append(line)  # Tanımları olduğu gibi bırak
+        else:
+            matches = re.findall(pattern, line)
+            if matches:
+                for match in matches:
+                    full_match = f"{match[0]}{match[1]}{match[2]}"
+                    params = match[1].split(',')
+                    params = [param.strip() for param in params]
+                    if len(params) >= 2:
+                        second_param_list.append(params[1])
+                        params[1] = str(new_value)  # İkinci parametreyi new_value ile değiştiriyoruz
+                        modified = True
+                    new_code = f"{match[0]}{', '.join(params)}{match[2]}"
+                    line = line.replace(full_match, new_code)
+            new_lines.append(line)
+    
+    new_source_code = '\n'.join(new_lines)
+    if modified:
+        return new_source_code, second_param_list
+    else:
+        return None, []
