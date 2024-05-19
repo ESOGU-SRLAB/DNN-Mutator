@@ -11083,6 +11083,21 @@ color:white;</string>
                           <string>transformer_vocab_size</string>
                          </property>
                         </item>
+                        <item>
+                         <property name="text">
+                          <string>transformer_embed_dim</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>transformer_num_heads</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>transformer_ff_dim</string>
+                         </property>
+                        </item>
                        </widget>
                        <widget class="QLabel" name="label_25">
                         <property name="geometry">
@@ -13401,6 +13416,21 @@ color:white;</string>
                         <item>
                          <property name="text">
                           <string>transformer_vocab_size</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>transformer_embed_dim</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>transformer_num_heads</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>transformer_ff_dim</string>
                          </property>
                         </item>
                        </widget>

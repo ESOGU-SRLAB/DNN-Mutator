@@ -1679,6 +1679,14 @@ def layer_select_mutate(mutate_selected_parameters,source_code ):
             change_parameter_with = mutation_library.tf_vocab_size_values
             mutated_line, matches = mutator.modify_vocab_size_in_code(source_code, change_parameter_with)
 
-        
+        elif mutate_selected_parameters == "transformer_embed_dim":
+            change_parameter_with = mutation_library.tf_embed_dim_values
+            mutated_line, matches = mutator.modify_embed_dim_in_code(source_code, change_parameter_with)
 
+        elif mutate_selected_parameters == "transformer_num_heads":
+            change_parameter_with = mutation_library.tf_num_heads_values
+            mutated_line, matches = mutator.modify_num_heads_in_code(source_code, change_parameter_with)        
+        elif mutate_selected_parameters == "transformer_ff_dim":
+            change_parameter_with = mutation_library.tf_ff_dim_values
+            mutated_line, matches = mutator.modify_dim_values_in_code(source_code, change_parameter_with)
         return mutated_line,matches,change_parameter_with

@@ -1035,3 +1035,104 @@ def modify_vocab_size_in_code(source_code, new_value):
         return new_source_code, second_param_list
     else:
         return None, []
+    
+
+def modify_embed_dim_in_code(source_code, new_value):
+    third_param_list = []
+    pattern = r"(create_transformer_model\s*\()([^)]*)(\))"
+    
+    lines = source_code.split('\n')
+    new_lines = []
+    modified = False
+    
+    for line in lines:
+        if 'def create_transformer_model' in line:
+            new_lines.append(line)
+        else:
+            matches = re.findall(pattern, line)
+            if matches:
+                for match in matches:
+                    full_match = f"{match[0]}{match[1]}{match[2]}"
+                    params = match[1].split(',')
+                    params = [param.strip() for param in params]
+                    if len(params) >= 3:
+                        third_param_list.append(params[2])
+                        params[2] = str(new_value)
+                        modified = True
+                    new_code = f"{match[0]}{', '.join(params)}{match[2]}"
+                    line = line.replace(full_match, new_code)
+            new_lines.append(line)
+    
+    new_source_code = '\n'.join(new_lines)
+    if modified:
+        return new_source_code, third_param_list
+    else:
+        return None, []
+
+
+def modify_num_heads_in_code(source_code, new_value):
+    fourth_param_list = []
+    pattern = r"(create_transformer_model\s*\()([^)]*)(\))"
+    
+    lines = source_code.split('\n')
+    new_lines = []
+    modified = False
+    
+    for line in lines:
+        if 'def create_transformer_model' in line:
+            new_lines.append(line)
+        else:
+            matches = re.findall(pattern, line)
+            if matches:
+                for match in matches:
+                    full_match = f"{match[0]}{match[1]}{match[2]}"
+                    params = match[1].split(',')
+                    params = [param.strip() for param in params]
+                    if len(params) >= 4:
+                        fourth_param_list.append(params[3])
+                        params[3] = str(new_value)
+                        modified = True
+                    new_code = f"{match[0]}{', '.join(params)}{match[2]}"
+                    line = line.replace(full_match, new_code)
+            new_lines.append(line)
+    
+    new_source_code = '\n'.join(new_lines)
+    if modified:
+        return new_source_code, fourth_param_list
+    else:
+        return None, []
+
+
+
+def modify_dim_values_in_code(source_code, new_value):
+    fifth_param_list = []
+    pattern = r"(create_transformer_model\s*\()([^)]*)(\))"
+    
+    lines = source_code.split('\n')
+    new_lines = []
+    modified = False
+    
+    for line in lines:
+        if 'def create_transformer_model' in line:
+            new_lines.append(line)
+        else:
+            matches = re.findall(pattern, line)
+            if matches:
+                for match in matches:
+                    full_match = f"{match[0]}{match[1]}{match[2]}"
+                    params = match[1].split(',')
+                    params = [param.strip() for param in params]
+                    if len(params) >= 5:
+                        fifth_param_list.append(params[4])
+                        params[4] = str(new_value)
+                        modified = True
+                    new_code = f"{match[0]}{', '.join(params)}{match[2]}"
+                    line = line.replace(full_match, new_code)
+            new_lines.append(line)
+    
+    new_source_code = '\n'.join(new_lines)
+    if modified:
+        return new_source_code, fifth_param_list
+    else:
+        return None, []
+

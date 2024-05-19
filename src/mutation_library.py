@@ -799,6 +799,9 @@ tf_all_list=[
 'max_to_keep',
 'transformer_vocab_size',
 'transformer_maxlen',
+'transformer_embed_dim',
+'transformer_num_heads',
+'transformer_ff_dim',
 'tf.keras.layers.AbstractRNNCell()',
 'tf.keras.layers.Activation()',
 'tf.keras.layers.ActivityRegularization()',
@@ -1203,6 +1206,9 @@ tf_all_mutation_code_list = [
 'max_to_keep',
 'transformer_vocab_size',
 'transformer_maxlen',
+'transformer_embed_dim',
+'transformer_num_heads',
+'transformer_ff_dim',
 'kernel_regularizer',
 'layers.AbstractRNNCell()',
 'layers.Activation()',
@@ -5791,4 +5797,40 @@ tf_vocab_size_values = [
     "30000",  # Used for large vocabularies
     "75000",  # For very extensive text corpora
     "100000"  # For extremely large vocabularies or detailed analysis
+]
+tf_embed_dim_values = [
+    "8",     # Very small embedding dimension, often used in simple models
+    "16",    # Small embedding dimension, suitable for lightweight models
+    "32",    # Medium embedding dimension, commonly used in many models
+    "64",    # Larger embedding dimension, for more complex models
+    "128",   # High embedding dimension, used for detailed analysis
+    "256",   # Very high embedding dimension, for extensive feature representation
+    "512",   # Extremely high embedding dimension, rarely used
+    "1024",  # For very specific high-dimensional analysis
+    "2048",  # Experimental or very large-scale models
+    "4096"   # For extremely large and detailed representations
+]
+tf_num_heads_values = [
+    "1",     # Single attention head, used in simple models
+    "2",     # Two attention heads, commonly used
+    "4",     # Four attention heads, suitable for more detailed analysis
+    "8",     # Eight attention heads, for complex models
+    "16",    # High number of attention heads, used for very detailed models
+    "32",    # Very high number of attention heads, rarely used
+    "64",    # Extremely high number of attention heads, for experimental models
+    "128",   # Used in very specific high-resolution tasks
+    "256",   # For very large-scale models
+    "512"    # Extremely detailed and extensive models
+]
+tf_ff_dim_values = [
+    "16",    # Very small hidden layer size, used in lightweight models
+    "32",    # Small hidden layer size, commonly used
+    "64",    # Medium hidden layer size, for more detailed models
+    "128",   # Larger hidden layer size, used in complex models
+    "256",   # High hidden layer size, for extensive analysis
+    "512",   # Very high hidden layer size, rarely used
+    "1024",  # For specific high-dimensional analysis
+    "2048",  # Experimental or very large-scale models
+    "4096",  # Extremely large hidden layer size, for detailed representations
+    "8192"   # For very large and detailed models
 ]
