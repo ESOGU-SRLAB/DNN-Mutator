@@ -970,169 +970,58 @@ def modify_tf_max_to_keep_in_code(source_code, new_max_to_keep):
 
 
 
-def modify_maxlen_in_code(source_code, new_value):
-    first_param_list = []
-    pattern = r"(create_transformer_model\s*\()([^)]*)(\))"
-    
-    # Kaynak kodu satır satır işleyerek ilerleyelim
-    lines = source_code.split('\n')
-    new_lines = []
-    modified = False
-    
-    for line in lines:
-        if 'def create_transformer_model' in line:
-            new_lines.append(line)  # Tanımları olduğu gibi bırak
-        else:
-            matches = re.findall(pattern, line)
-            if matches:
-                for match in matches:
-                    full_match = f"{match[0]}{match[1]}{match[2]}"
-                    params = match[1].split(',')
-                    params = [param.strip() for param in params]
-                    if len(params) >= 1:
-                        first_param_list.append(params[0])
-                        params[0] = str(new_value)  # İlk parametreyi new_value ile değiştiriyoruz
-                        modified = True
-                    new_code = f"{match[0]}{', '.join(params)}{match[2]}"
-                    line = line.replace(full_match, new_code)
-            new_lines.append(line)
-    
-    new_source_code = '\n'.join(new_lines)
-    if modified:
-        return new_source_code, first_param_list
-    else:
-        return None, []
 
-def modify_vocab_size_in_code(source_code, new_value):
-    second_param_list = []
-    pattern = r"(create_transformer_model\s*\()([^)]*)(\))"
-    
-    # Kaynak kodu satır satır işleyerek ilerleyelim
-    lines = source_code.split('\n')
-    new_lines = []
-    modified = False
-    
-    for line in lines:
-        if 'def create_transformer_model' in line:
-            new_lines.append(line)  # Tanımları olduğu gibi bırak
-        else:
-            matches = re.findall(pattern, line)
-            if matches:
-                for match in matches:
-                    full_match = f"{match[0]}{match[1]}{match[2]}"
-                    params = match[1].split(',')
-                    params = [param.strip() for param in params]
-                    if len(params) >= 2:
-                        second_param_list.append(params[1])
-                        params[1] = str(new_value)  # İkinci parametreyi new_value ile değiştiriyoruz
-                        modified = True
-                    new_code = f"{match[0]}{', '.join(params)}{match[2]}"
-                    line = line.replace(full_match, new_code)
-            new_lines.append(line)
-    
-    new_source_code = '\n'.join(new_lines)
-    if modified:
-        return new_source_code, second_param_list
-    else:
-        return None, []
-    
-
-def modify_embed_dim_in_code(source_code, new_value):
-    third_param_list = []
-    pattern = r"(create_transformer_model\s*\()([^)]*)(\))"
-    
-    lines = source_code.split('\n')
-    new_lines = []
-    modified = False
-    
-    for line in lines:
-        if 'def create_transformer_model' in line:
-            new_lines.append(line)
-        else:
-            matches = re.findall(pattern, line)
-            if matches:
-                for match in matches:
-                    full_match = f"{match[0]}{match[1]}{match[2]}"
-                    params = match[1].split(',')
-                    params = [param.strip() for param in params]
-                    if len(params) >= 3:
-                        third_param_list.append(params[2])
-                        params[2] = str(new_value)
-                        modified = True
-                    new_code = f"{match[0]}{', '.join(params)}{match[2]}"
-                    line = line.replace(full_match, new_code)
-            new_lines.append(line)
-    
-    new_source_code = '\n'.join(new_lines)
-    if modified:
-        return new_source_code, third_param_list
-    else:
-        return None, []
+def modify_maxlen_in_code(source_code, new_maxlen):
+    maxlen_list = []
+    pattern = r"maxlen\s*=\s*(\d+)"
+    matches = re.findall(pattern, source_code)
+    if matches:
+        maxlen_list = [f"maxlen={m}" for m in matches]
+        modified_code = re.sub(pattern, f"maxlen={new_maxlen}", source_code)
+        return modified_code, maxlen_list
+    return None, []
 
 
-def modify_num_heads_in_code(source_code, new_value):
-    fourth_param_list = []
-    pattern = r"(create_transformer_model\s*\()([^)]*)(\))"
-    
-    lines = source_code.split('\n')
-    new_lines = []
-    modified = False
-    
-    for line in lines:
-        if 'def create_transformer_model' in line:
-            new_lines.append(line)
-        else:
-            matches = re.findall(pattern, line)
-            if matches:
-                for match in matches:
-                    full_match = f"{match[0]}{match[1]}{match[2]}"
-                    params = match[1].split(',')
-                    params = [param.strip() for param in params]
-                    if len(params) >= 4:
-                        fourth_param_list.append(params[3])
-                        params[3] = str(new_value)
-                        modified = True
-                    new_code = f"{match[0]}{', '.join(params)}{match[2]}"
-                    line = line.replace(full_match, new_code)
-            new_lines.append(line)
-    
-    new_source_code = '\n'.join(new_lines)
-    if modified:
-        return new_source_code, fourth_param_list
-    else:
-        return None, []
+def modify_vocab_size_in_code(source_code, new_vocab_size):
+    vocab_size = []
+    pattern = r"vocab_size\s*=\s*(\d+)"
+    matches = re.findall(pattern, source_code)
+    if matches:
+        vocab_size = [f"vocab_size={m}" for m in matches]
+        modified_code = re.sub(pattern, f"vocab_size={new_vocab_size}", source_code)
+        return modified_code, vocab_size
+    return None, []
 
 
+def modify_embed_dim_in_code(source_code, new_embed_dim):
+    embed_dim = []
+    pattern = r"embed_dim\s*=\s*(\d+)"
+    matches = re.findall(pattern, source_code)
+    if matches:
+        embed_dim = [f"embed_dim={m}" for m in matches]
+        modified_code = re.sub(pattern, f"vocab_size={new_embed_dim}", source_code)
+        return modified_code, embed_dim
+    return None, []
 
-def modify_dim_values_in_code(source_code, new_value):
-    fifth_param_list = []
-    pattern = r"(create_transformer_model\s*\()([^)]*)(\))"
-    
-    lines = source_code.split('\n')
-    new_lines = []
-    modified = False
-    
-    for line in lines:
-        if 'def create_transformer_model' in line:
-            new_lines.append(line)
-        else:
-            matches = re.findall(pattern, line)
-            if matches:
-                for match in matches:
-                    full_match = f"{match[0]}{match[1]}{match[2]}"
-                    params = match[1].split(',')
-                    params = [param.strip() for param in params]
-                    if len(params) >= 5:
-                        fifth_param_list.append(params[4])
-                        params[4] = str(new_value)
-                        modified = True
-                    new_code = f"{match[0]}{', '.join(params)}{match[2]}"
-                    line = line.replace(full_match, new_code)
-            new_lines.append(line)
-    
-    new_source_code = '\n'.join(new_lines)
-    if modified:
-        return new_source_code, fifth_param_list
-    else:
-        return None, []
+
+def modify_num_heads_in_code(source_code, new_num_heads):
+    num_heads = []
+    pattern = r"num_heads\s*=\s*(\d+)"
+    matches = re.findall(pattern, source_code)
+    if matches:
+        num_heads = [f"num_heads={m}" for m in matches]
+        modified_code = re.sub(pattern, f"vocab_size={new_num_heads}", source_code)
+        return modified_code, num_heads
+    return None, []
+
+
+def modify_dim_values_in_code(source_code, new_dim_values):
+    dim_values = []
+    pattern = r"dim_values\s*=\s*(\d+)"
+    matches = re.findall(pattern, source_code)
+    if matches:
+        dim_values = [f"dim_values={m}" for m in matches]
+        modified_code = re.sub(pattern, f"vocab_size={new_dim_values}", source_code)
+        return modified_code, dim_values
+    return None, []
 
