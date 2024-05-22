@@ -892,7 +892,8 @@ def modify_tf_beta2_in_code(source_code, new_beta2):
 
 def modify_tf_epsilon_in_code(source_code, new_epsilon):
     epsilon_list = []
-    pattern = r"epsilon\s*=\s*\d*\.?\d+"
+    #pattern = r"epsilon\s*=\s*\d*\.?\d+"
+    pattern = r"epsilon\s*=\s*[-+]?\d*\.?\d+(?:[eE][-+]?\d+)?"
     matches = re.findall(pattern, source_code)
     if matches:
         epsilon_list = [f"{m}" for m in matches]
@@ -1025,3 +1026,12 @@ def modify_dim_values_in_code(source_code, new_dim_values):
         return modified_code, dim_values
     return None, []
 
+def modify_ff_dim_in_code(source_code, new_ff_dim):
+    ff_dim = []
+    pattern = r"ff_dim\s*=\s*(\d+)"
+    matches = re.findall(pattern, source_code)
+    if matches:
+        ff_dim = [f"ff_dim={m}" for m in matches]
+        modified_code = re.sub(pattern, f"vocab_size={new_ff_dim}", source_code)
+        return modified_code, ff_dim
+    return None, []
