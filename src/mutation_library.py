@@ -5653,13 +5653,8 @@ tf_epsilon_list = [
     "epsilon=1e-17",    # Çok küçük epsilon
     "epsilon=1e-18",    # Çok küçük epsilon
     "epsilon=1e-19",    # Çok küçük epsilon
-    "epsilon=1e-20",    # Çok küçük epsilon
-    "epsilon=1e-21",    # Çok küçük epsilon
-    "epsilon=1e-22",    # Çok küçük epsilon
     "epsilon=1.0",      # Daha az hassasiyet için büyük epsilon
-    "epsilon=10.0",     # Daha az hassasiyet için büyük epsilon
-    "epsilon=100.0",    # Daha az hassasiyet için büyük epsilon
-    "epsilon=1000.0",   # Daha az hassasiyet için büyük epsilon
+
 ]
 
 tf_gamma_list = [
@@ -5686,9 +5681,6 @@ tf_gamma_list = [
     "gamma=10.0",       # Büyük bir değer
     "gamma=100.0",      # Büyük bir değer
     "gamma=1000.0",     # Büyük bir değer
-    "gamma=10000.0",    # Büyük bir değer
-    "gamma=100000.0",   # Büyük bir değer
-    "gamma=1000000.0"   # Büyük bir değer
 ]
 tf_decay_list = [
     "",              # Boş
@@ -5777,13 +5769,8 @@ tf_maxlen_values = [
     "maxlen = 64",    # Commonly used for short sequences
     "maxlen = 128",   # Preferred for medium-length sequences
     "maxlen = 256",   # Used for longer sequences
-    "maxlen = 512",   # For very long sequences or high resolution
-    "maxlen = 1024",  # For extremely long sequences or detailed analysis
-    "maxlen = 32",    # For very short sequences, often used in simple tasks
-    "maxlen = 2048",  # For very long sequences in detailed analysis
-    "maxlen = 4096",  # For extremely detailed and extensive sequences
-    "maxlen = 8192",  # For very large-scale sequences, rarely used
-    "maxlen = 16384"  # For experimental or very specific high-resolution tasks
+    "maxlen = 300",   # For very long sequences or high resolution
+    "maxlen = 512",  
 ]
 
 tf_vocab_size_values = [
@@ -5794,43 +5781,32 @@ tf_vocab_size_values = [
     "vocab_size = 64000",  # Extremely large vocabularies, for high precision and detailed analysis
     "vocab_size = 10000",  # Commonly used for small to medium-sized vocabularies
     "vocab_size = 20000",  # Preferred for slightly larger vocabularies
-    "vocab_size = 30000",  # Used for large vocabularies
-    "vocab_size = 75000",  # For very extensive text corpora
-    "vocab_size = 100000"  # For extremely large vocabularies or detailed analysis
+    "vocab_size = 21000",  
+    "vocab_size = 22000",  
+    "vocab_size = 30000"  
 ]
 tf_embed_dim_values = [
     "embed_dim = 8",     # Very small embedding dimension, often used in simple models
     "embed_dim = 16",    # Small embedding dimension, suitable for lightweight models
     "embed_dim = 32",    # Medium embedding dimension, commonly used in many models
+    "embed_dim = 40",
     "embed_dim = 64",    # Larger embedding dimension, for more complex models
     "embed_dim = 128",   # High embedding dimension, used for detailed analysis
-    "embed_dim = 256",   # Very high embedding dimension, for extensive feature representation
-    "embed_dim = 512",   # Extremely high embedding dimension, rarely used
-    "embed_dim = 1024",  # For very specific high-dimensional analysis
-    "embed_dim = 2048",  # Experimental or very large-scale models
-    "embed_dim = 4096"   # For extremely large and detailed representations
+
 ]
 tf_num_heads_values = [
     "num_heads = 1",     # Single attention head, used in simple models
     "num_heads = 2",     # Two attention heads, commonly used
     "num_heads = 4",     # Four attention heads, suitable for more detailed analysis
-    "num_heads = 8",     # Eight attention heads, for complex models
-    "num_heads = 16",    # High number of attention heads, used for very detailed models
-    "num_heads = 32",    # Very high number of attention heads, rarely used
-    "num_heads = 64",    # Extremely high number of attention heads, for experimental models
-    "num_heads = 128",   # Used in very specific high-resolution tasks
-    "num_heads = 256",   # For very large-scale models
-    "num_heads = 512"    # Extremely detailed and extensive models
+    "num_heads = 6",     
+    "num_heads = 8",   
+
 ]
 tf_ff_dim_values = [
     "ff_dim = 16",    # Very small hidden layer size, used in lightweight models
-    "ff_dim = 32",    # Small hidden layer size, commonly used
-    "ff_dim = 64",    # Medium hidden layer size, for more detailed models
-    "ff_dim = 128",   # Larger hidden layer size, used in complex models
-    "ff_dim = 256",   # High hidden layer size, for extensive analysis
-    "ff_dim = 512",   # Very high hidden layer size, rarely used
-    "ff_dim = 1024",  # For specific high-dimensional analysis
-    "ff_dim = 2048",  # Experimental or very large-scale models
-    "ff_dim = 4096",  # Extremely large hidden layer size, for detailed representations
-    "ff_dim = 8192"   # For very large and detailed models
+    "ff_dim = 20",    # Small hidden layer size, commonly used
+    "ff_dim = 32",    # Medium hidden layer size, for more detailed models
+    "ff_dim = 50",  
+    "ff_dim = 64",
+ 
 ]
