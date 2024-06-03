@@ -13676,6 +13676,11 @@ Thus, the printed result should look like
                         </item>
                         <item>
                          <property name="text">
+                          <string>Transformer</string>
+                         </property>
+                        </item>                        
+                        <item>
+                         <property name="text">
                           <string>CNN</string>
                          </property>
                         </item>

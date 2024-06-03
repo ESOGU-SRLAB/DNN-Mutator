@@ -4939,6 +4939,7 @@ class Ui_MainWindow(object):
         self.comboBox.addItem("")
         self.comboBox.addItem("")
         self.comboBox.addItem("")
+        self.comboBox.addItem("")
         self.comboBox.setObjectName(u"comboBox")
         self.comboBox.setGeometry(QRect(1110, 300, 101, 31))
         self.comboBox.setStyleSheet(u"background-color: rgb(52, 59, 72);")
@@ -7732,8 +7733,9 @@ class Ui_MainWindow(object):
 "Thus, the printed result should look like\n"
 "'Test Accuracy: 95.14%' or 'Accuracy: 95.14%', etc.\"", None))
         self.comboBox.setItemText(0, QCoreApplication.translate("MainWindow", u"LSTM", None))
-        self.comboBox.setItemText(1, QCoreApplication.translate("MainWindow", u"CNN", None))
-        self.comboBox.setItemText(2, QCoreApplication.translate("MainWindow", u"RL", None))
+        self.comboBox.setItemText(1, QCoreApplication.translate("MainWindow", u"Transformer", None))
+        self.comboBox.setItemText(2, QCoreApplication.translate("MainWindow", u"CNN", None))
+        self.comboBox.setItemText(3, QCoreApplication.translate("MainWindow", u"RL", None))
 
         self.creditsLabel.setText("")
         self.version.setText(QCoreApplication.translate("MainWindow", u"v1.0", None))
