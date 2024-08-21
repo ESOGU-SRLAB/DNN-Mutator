@@ -26,7 +26,7 @@ def execute_original_source_code(source_code_path, user_selection):
 
         print("USER SELECTION: ", user_selection)
         accuracy_match_metric = None
-        if user_selection == "CNN":
+        if user_selection == "CNN" or user_selection == "Transformer":
             accuracy_match_metric = re.search(r'Accuracy\s*[:=]?\s*(\d+(\.\d+)?)\s*%', output)
         elif user_selection == "LSTM":
             print("r2 score aranıyor, aranan çıktı", output)
@@ -75,7 +75,7 @@ def execute_file(threshold, mutant_files_save_location, user_selection):
 
             # accuracy_match = re.search(r'Accuracy\s*:\s*(\d+\.\d+)\s*%', output)
             # accuracy_match founds the accuracy value in the output with regex search function
-            if user_selection == "CNN":
+            if user_selection == "CNN" or user_selection == "Transformer":
                 accuracy_match_r2_score = re.search(r'Accuracy\s*[:=]?\s*(\d+(\.\d+)?)\s*%', output)
             # Which accuracy match r2 score variable is used to find the r2 score value in the output with regex search function?
             elif user_selection == "LSTM":
@@ -86,7 +86,7 @@ def execute_file(threshold, mutant_files_save_location, user_selection):
                 print("None of the AI Model for the given selection. Please select the correct AI Model.")
             
             if accuracy_match_r2_score:
-                if user_selection == "CNN" or user_selection == "LSTM":
+                if user_selection == "CNN" or user_selection == "LSTM" or user_selection == "Transformer":
                     # If the accuracy is found, convert it to a float
                     accuracy_value = float(accuracy_match_r2_score.group(1))
                     # When the accuracy is found, print the accuracy
