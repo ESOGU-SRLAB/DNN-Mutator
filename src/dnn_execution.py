@@ -1,6 +1,7 @@
 """
 DNN EXECUTION and MONITORING PROCESS
 """
+import os
 import subprocess
 import re
 import json
@@ -13,7 +14,13 @@ def execute_original_source_code(source_code_path, user_selection):
     Executes a given Python script and prints the found accuracy from the
     original source code.
     """
-    run_command = f'python {source_code_path}'
+    # Insert plot-saving code into the script
+    insert_plot_saving_code(source_code_path)
+
+    if os.name == 'nt':
+        run_command = f'python {source_code_path}'
+    else:
+        run_command = f'python3 {source_code_path}'
     print("Run Command: ", run_command)
 
     try:
@@ -21,12 +28,10 @@ def execute_original_source_code(source_code_path, user_selection):
             run_command, shell=True, capture_output=True, text=True)
         output = result.stdout
         print("Output: ", output)
-        #accuracy_match_metric = re.search(r'Accuracy: (\d+\.\d+)%', output)
-        #accuracy_match_metric = re.search(r'Accuracy\s*:\s*(\d+\.\d+)\s*%', output)
 
         print("USER SELECTION: ", user_selection)
         accuracy_match_metric = None
-        if user_selection == "CNN" or user_selection == "Transformer":
+        if user_selection == "CNN":
             accuracy_match_metric = re.search(r'Accuracy\s*[:=]?\s*(\d+(\.\d+)?)\s*%', output)
         elif user_selection == "LSTM":
             print("r2 score aranıyor, aranan çıktı", output)
@@ -48,6 +53,7 @@ def execute_original_source_code(source_code_path, user_selection):
         print(f'An error occurred while running the original source code: {e}')
 
 
+
 def execute_file(threshold, mutant_files_save_location, user_selection):
     """
     Executes a given Python script and prints the found accuracy.
@@ -64,7 +70,13 @@ def execute_file(threshold, mutant_files_save_location, user_selection):
     killed_count=0
     survived_count=0
     for mutant_file in mutant_files_save_location:
-        run_command = f'python3 {mutant_file}'
+        # Insert plot-saving code into the script
+        insert_plot_saving_code(mutant_file)
+
+        if os.name == 'nt':
+            run_command = f'python {mutant_file}'
+        else:
+            run_command = f'python3 {mutant_file}'
 
         try:
             # Run the command and capture the output with subprocess
@@ -73,11 +85,8 @@ def execute_file(threshold, mutant_files_save_location, user_selection):
             # Get the output of the command
             output = result.stdout
 
-            # accuracy_match = re.search(r'Accuracy\s*:\s*(\d+\.\d+)\s*%', output)
-            # accuracy_match founds the accuracy value in the output with regex search function
-            if user_selection == "CNN" or user_selection == "Transformer":
+            if user_selection == "CNN":
                 accuracy_match_r2_score = re.search(r'Accuracy\s*[:=]?\s*(\d+(\.\d+)?)\s*%', output)
-            # Which accuracy match r2 score variable is used to find the r2 score value in the output with regex search function?
             elif user_selection == "LSTM":
                 accuracy_match_r2_score=re.search(r'r2 score:\s*(\d+\.\d+)', output)
             elif user_selection == "RL":
@@ -86,44 +95,32 @@ def execute_file(threshold, mutant_files_save_location, user_selection):
                 print("None of the AI Model for the given selection. Please select the correct AI Model.")
             
             if accuracy_match_r2_score:
-                if user_selection == "CNN" or user_selection == "LSTM" or user_selection == "Transformer":
-                    # If the accuracy is found, convert it to a float
+                if user_selection == "CNN" or user_selection == "LSTM":
                     accuracy_value = float(accuracy_match_r2_score.group(1))
-                    # When the accuracy is found, print the accuracy
                     print(f'Found the Metric: {accuracy_match_r2_score}')
 
                     mutant_file_and_accuracy = (
                         f"Mutant File: {mutant_file} Value: {accuracy_value}")
                     accuracy_list.append(mutant_file_and_accuracy)
-                    #RL için value tresholddan büyükse killed olur 
                     if accuracy_value < threshold:
-                        # If the accuracy is greater than the threshold, the mutant is killed
                         killed.append(mutant_file)
                         killed_count=killed_count+1
                     else:
-                        # If the accuracy is less than the threshold, the mutant is survived
                         survived.append(mutant_file)
                         survived_count=survived_count+1
                 if user_selection == "RL":
-                    # If the accuracy is found, convert it to a float
                     accuracy_value = float(accuracy_match_r2_score.group(1))
-                    # When the accuracy is found, print the accuracy
                     print(f'Found the Metric: {accuracy_match_r2_score}')
 
                     mutant_file_and_accuracy = (
                         f"Mutant File: {mutant_file} Value: {accuracy_value}")
                     accuracy_list.append(mutant_file_and_accuracy)
-                    #RL için value tresholddan büyükse killed olur 
                     if accuracy_value > threshold:
-                        # If the accuracy is greater than the threshold, the mutant is killed
                         killed.append(mutant_file)
                         killed_count=killed_count+1
                     else:
-                        # If the accuracy is less than the threshold, the mutant is survived
                         survived.append(mutant_file)
                         survived_count=survived_count+1
-                        
-                        
 
             else:
                 killed.append(mutant_file)
@@ -141,6 +138,43 @@ def execute_file(threshold, mutant_files_save_location, user_selection):
                 accuracy_list.append(mutant_file_and_accuracy)
 
     return killed, survived, accuracy_list,survived_count,killed_count
+
+
+def insert_plot_saving_code(file_path):
+    """
+    Inserts code to save all generated plots as PNG files at the end of the given Python script.
+    
+    Parameters:
+        file_path (str): The path to the Python script file.
+    """
+    # Code to be inserted
+    plot_saving_code = """
+import os
+import matplotlib.pyplot as plt
+
+# Get the current file directory
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Get the base filename without extension
+base_filename = os.path.splitext(os.path.basename(__file__))[0]
+
+# Save each figure as a separate PNG file if any figures exist
+for i, fig_num in enumerate(plt.get_fignums(), start=1):
+    plt.figure(fig_num)
+    filename = f"{base_filename}_plot_{i}.png"
+    plt.savefig(os.path.join(current_dir, filename))
+    plt.close()
+"""
+    # Read the original script
+    with open(file_path, 'r') as file:
+        original_code = file.read()
+
+    # Append the plot-saving code
+    modified_code = original_code + "\n" + plot_saving_code
+
+    # Save the modified script to the same file
+    with open(file_path, 'w') as file:
+        file.write(modified_code)
 
 
 def find_accuracy_lines(file_name):
@@ -168,6 +202,7 @@ def find_accuracy_lines(file_name):
         print(f"An error occurred: {e}")
 
     return matching_lines
+ 
 
 
 def take_backup_source_file(original_source_code_file_dir):
